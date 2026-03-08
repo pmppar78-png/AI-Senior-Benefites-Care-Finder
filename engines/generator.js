@@ -162,6 +162,8 @@ class PageGenerator {
   constructor(options = {}) {
     this.dryRun = options.dryRun || false;
     this.engineFilter = options.engineFilter || null;
+    this.engineIds = options.engineIds || null;
+    this.limit = options.limit || null;
     this.engine = new TemplateEngine();
     this.templates = {};
     this.states = [];
@@ -172,6 +174,7 @@ class PageGenerator {
   run() {
     console.log('\n=== Senior Benefits Care Finder — Page Generator ===\n');
     if (this.dryRun) console.log('  [DRY RUN — no files will be written]\n');
+    if (this.limit) console.log(`  [LIMIT — max ${this.limit} pages per engine]\n`);
 
     // Load resources
     this.engine.loadPartials(PARTIALS_DIR);
@@ -180,12 +183,18 @@ class PageGenerator {
 
     // Load engine config
     const config = require('./config');
-    const engines = this.engineFilter
-      ? config.engines.filter(e => e.id === this.engineFilter)
-      : config.engines;
+    let engines;
+
+    if (this.engineIds) {
+      engines = config.engines.filter(e => this.engineIds.includes(e.id));
+    } else if (this.engineFilter) {
+      engines = config.engines.filter(e => e.id === this.engineFilter);
+    } else {
+      engines = config.engines;
+    }
 
     if (engines.length === 0) {
-      console.error(`  No engine found matching "${this.engineFilter}"`);
+      console.error(`  No engines found matching the given filter`);
       process.exit(1);
     }
 
@@ -250,6 +259,12 @@ class PageGenerator {
     if (entries.length === 0) {
       console.log('    No data entries — skipping (populate data file to generate pages)');
       return;
+    }
+
+    // Apply per-engine limit if set
+    if (this.limit && entries.length > this.limit) {
+      console.log(`    Limiting from ${entries.length} to ${this.limit} entries`);
+      entries = entries.slice(0, this.limit);
     }
 
     for (const entry of entries) {
@@ -396,11 +411,12 @@ class PageGenerator {
 // CLI
 // ---------------------------------------------------------------------------
 
-function main() {
-  const args = process.argv.slice(2);
+function parseArgs(args) {
   const options = {
     dryRun: args.includes('--dry-run'),
     engineFilter: null,
+    batch: null,
+    limit: null,
   };
 
   const engineIdx = args.indexOf('--engine');
@@ -408,8 +424,66 @@ function main() {
     options.engineFilter = args[engineIdx + 1];
   }
 
-  const generator = new PageGenerator(options);
-  generator.run();
+  const batchIdx = args.indexOf('--batch');
+  if (batchIdx !== -1 && args[batchIdx + 1]) {
+    options.batch = parseInt(args[batchIdx + 1], 10);
+  }
+
+  const limitIdx = args.indexOf('--limit');
+  if (limitIdx !== -1 && args[limitIdx + 1]) {
+    options.limit = parseInt(args[limitIdx + 1], 10);
+  }
+
+  return options;
+}
+
+/**
+ * Batch mode splits engines into numbered groups so generation
+ * can be run incrementally without exceeding memory/time limits.
+ *
+ * Batch assignments (14 engines, 3 batches):
+ *   Batch 1: medicare, medicaid, assisted-living, social-security, home-care
+ *   Batch 2: prescription-assistance, veterans-benefits, comparison, low-income-programs, disability-benefits
+ *   Batch 3: long-term-care, senior-legal, provider-directory, authority-page
+ */
+const BATCH_MAP = {
+  1: ['medicare', 'medicaid', 'assisted-living', 'social-security', 'home-care'],
+  2: ['prescription-assistance', 'veterans-benefits', 'comparison', 'low-income-programs', 'disability-benefits'],
+  3: ['long-term-care', 'senior-legal', 'provider-directory', 'authority-page'],
+};
+
+function main() {
+  const args = process.argv.slice(2);
+  const options = parseArgs(args);
+
+  // Load engine config
+  const config = require('./config');
+
+  // Resolve which engines to run
+  let engineIds = null;
+
+  if (options.batch) {
+    engineIds = BATCH_MAP[options.batch];
+    if (!engineIds) {
+      console.error(`Unknown batch number: ${options.batch}. Valid batches: ${Object.keys(BATCH_MAP).join(', ')}`);
+      process.exit(1);
+    }
+    console.log(`\n  Batch ${options.batch}: ${engineIds.join(', ')}`);
+  }
+
+  if (options.engineFilter) {
+    engineIds = [options.engineFilter];
+  }
+
+  // Apply engine filter
+  if (engineIds) {
+    options.engineFilter = null; // handled here
+    const generator = new PageGenerator({ ...options, engineIds });
+    generator.run();
+  } else {
+    const generator = new PageGenerator(options);
+    generator.run();
+  }
 }
 
 main();
