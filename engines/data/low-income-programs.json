@@ -1,0 +1,5052 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Low-Income Senior Programs in Alabama (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Alabama. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Alabama offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Alabama Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Alabama?",
+        "answer": "Alabama offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Alabama?",
+        "answer": "Apply online through Alabama's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Alabama Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Low-Income Senior Programs in Alaska (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Alaska. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Alaska offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Alaska Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Alaska?",
+        "answer": "Alaska offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Alaska?",
+        "answer": "Apply online through Alaska's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Alaska Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Low-Income Senior Programs in Arizona (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Arizona. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Arizona offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Arizona Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Arizona?",
+        "answer": "Arizona offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Arizona?",
+        "answer": "Apply online through Arizona's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Arizona Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Low-Income Senior Programs in Arkansas (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Arkansas. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Arkansas offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Arkansas Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Arkansas?",
+        "answer": "Arkansas offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Arkansas?",
+        "answer": "Apply online through Arkansas's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Arkansas Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Low-Income Senior Programs in California (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in California. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "California offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "California Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in California?",
+        "answer": "California offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in California?",
+        "answer": "Apply online through California's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "California Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Low-Income Senior Programs in Colorado (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Colorado. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Colorado offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Colorado Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Colorado?",
+        "answer": "Colorado offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Colorado?",
+        "answer": "Apply online through Colorado's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Colorado Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Low-Income Senior Programs in Connecticut (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Connecticut. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Connecticut offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Connecticut Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Connecticut?",
+        "answer": "Connecticut offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Connecticut?",
+        "answer": "Apply online through Connecticut's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Connecticut Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Low-Income Senior Programs in Delaware (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Delaware. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Delaware offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Delaware Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Delaware?",
+        "answer": "Delaware offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Delaware?",
+        "answer": "Apply online through Delaware's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Delaware Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Low-Income Senior Programs in Florida (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Florida. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Florida offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Florida Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Florida?",
+        "answer": "Florida offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Florida?",
+        "answer": "Apply online through Florida's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Florida Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Low-Income Senior Programs in Georgia (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Georgia. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Georgia offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Georgia Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Georgia?",
+        "answer": "Georgia offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Georgia?",
+        "answer": "Apply online through Georgia's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Georgia Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Low-Income Senior Programs in Hawaii (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Hawaii. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Hawaii offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Hawaii Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Hawaii?",
+        "answer": "Hawaii offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Hawaii?",
+        "answer": "Apply online through Hawaii's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Hawaii Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Low-Income Senior Programs in Idaho (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Idaho. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Idaho offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Idaho Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Idaho?",
+        "answer": "Idaho offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Idaho?",
+        "answer": "Apply online through Idaho's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Idaho Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Low-Income Senior Programs in Illinois (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Illinois. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Illinois offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Illinois Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Illinois?",
+        "answer": "Illinois offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Illinois?",
+        "answer": "Apply online through Illinois's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Illinois Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Low-Income Senior Programs in Indiana (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Indiana. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Indiana offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Indiana Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Indiana?",
+        "answer": "Indiana offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Indiana?",
+        "answer": "Apply online through Indiana's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Indiana Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Low-Income Senior Programs in Iowa (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Iowa. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Iowa offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Iowa Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Iowa?",
+        "answer": "Iowa offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Iowa?",
+        "answer": "Apply online through Iowa's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Iowa Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Low-Income Senior Programs in Kansas (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Kansas. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Kansas offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Kansas Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Kansas?",
+        "answer": "Kansas offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Kansas?",
+        "answer": "Apply online through Kansas's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Kansas Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Low-Income Senior Programs in Kentucky (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Kentucky. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Kentucky offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Kentucky Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Kentucky?",
+        "answer": "Kentucky offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Kentucky?",
+        "answer": "Apply online through Kentucky's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Kentucky Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Low-Income Senior Programs in Louisiana (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Louisiana. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Louisiana offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Louisiana Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Louisiana?",
+        "answer": "Louisiana offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Louisiana?",
+        "answer": "Apply online through Louisiana's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Louisiana Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Low-Income Senior Programs in Maine (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Maine. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Maine offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Maine Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Maine?",
+        "answer": "Maine offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Maine?",
+        "answer": "Apply online through Maine's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Maine Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Low-Income Senior Programs in Maryland (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Maryland. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Maryland offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Maryland Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Maryland?",
+        "answer": "Maryland offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Maryland?",
+        "answer": "Apply online through Maryland's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Maryland Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Low-Income Senior Programs in Massachusetts (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Massachusetts. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Massachusetts offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Massachusetts Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Massachusetts?",
+        "answer": "Massachusetts offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Massachusetts?",
+        "answer": "Apply online through Massachusetts's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Massachusetts Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Low-Income Senior Programs in Michigan (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Michigan. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Michigan offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Michigan Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Michigan?",
+        "answer": "Michigan offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Michigan?",
+        "answer": "Apply online through Michigan's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Michigan Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Low-Income Senior Programs in Minnesota (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Minnesota. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Minnesota offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Minnesota Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Minnesota?",
+        "answer": "Minnesota offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Minnesota?",
+        "answer": "Apply online through Minnesota's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Minnesota Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Low-Income Senior Programs in Mississippi (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Mississippi. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Mississippi offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Mississippi Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Mississippi?",
+        "answer": "Mississippi offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Mississippi?",
+        "answer": "Apply online through Mississippi's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Mississippi Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Low-Income Senior Programs in Missouri (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Missouri. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Missouri offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Missouri Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Missouri?",
+        "answer": "Missouri offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Missouri?",
+        "answer": "Apply online through Missouri's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Missouri Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Low-Income Senior Programs in Montana (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Montana. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Montana offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Montana Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Montana?",
+        "answer": "Montana offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Montana?",
+        "answer": "Apply online through Montana's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Montana Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Low-Income Senior Programs in Nebraska (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Nebraska. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Nebraska offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Nebraska Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Nebraska?",
+        "answer": "Nebraska offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Nebraska?",
+        "answer": "Apply online through Nebraska's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Nebraska Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Low-Income Senior Programs in Nevada (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Nevada. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Nevada offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Nevada Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Nevada?",
+        "answer": "Nevada offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Nevada?",
+        "answer": "Apply online through Nevada's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Nevada Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Low-Income Senior Programs in New Hampshire (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in New Hampshire. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "New Hampshire offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "New Hampshire Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in New Hampshire?",
+        "answer": "New Hampshire offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in New Hampshire?",
+        "answer": "Apply online through New Hampshire's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "New Hampshire Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Low-Income Senior Programs in New Jersey (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in New Jersey. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "New Jersey offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "New Jersey Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in New Jersey?",
+        "answer": "New Jersey offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in New Jersey?",
+        "answer": "Apply online through New Jersey's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "New Jersey Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Low-Income Senior Programs in New Mexico (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in New Mexico. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "New Mexico offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "New Mexico Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in New Mexico?",
+        "answer": "New Mexico offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in New Mexico?",
+        "answer": "Apply online through New Mexico's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "New Mexico Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Low-Income Senior Programs in New York (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in New York. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "New York offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "New York Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in New York?",
+        "answer": "New York offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in New York?",
+        "answer": "Apply online through New York's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "New York Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Low-Income Senior Programs in North Carolina (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in North Carolina. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "North Carolina offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "North Carolina Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in North Carolina?",
+        "answer": "North Carolina offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in North Carolina?",
+        "answer": "Apply online through North Carolina's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "North Carolina Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Low-Income Senior Programs in North Dakota (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in North Dakota. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "North Dakota offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "North Dakota Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in North Dakota?",
+        "answer": "North Dakota offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in North Dakota?",
+        "answer": "Apply online through North Dakota's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "North Dakota Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Low-Income Senior Programs in Ohio (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Ohio. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Ohio offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Ohio Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Ohio?",
+        "answer": "Ohio offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Ohio?",
+        "answer": "Apply online through Ohio's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Ohio Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Low-Income Senior Programs in Oklahoma (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Oklahoma. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Oklahoma offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Oklahoma Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Oklahoma?",
+        "answer": "Oklahoma offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Oklahoma?",
+        "answer": "Apply online through Oklahoma's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Oklahoma Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Low-Income Senior Programs in Oregon (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Oregon. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Oregon offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Oregon Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Oregon?",
+        "answer": "Oregon offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Oregon?",
+        "answer": "Apply online through Oregon's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Oregon Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Low-Income Senior Programs in Pennsylvania (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Pennsylvania. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Pennsylvania offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Pennsylvania Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Pennsylvania?",
+        "answer": "Pennsylvania offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Pennsylvania?",
+        "answer": "Apply online through Pennsylvania's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Pennsylvania Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Low-Income Senior Programs in Rhode Island (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Rhode Island. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Rhode Island offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Rhode Island Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Rhode Island?",
+        "answer": "Rhode Island offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Rhode Island?",
+        "answer": "Apply online through Rhode Island's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Rhode Island Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Low-Income Senior Programs in South Carolina (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in South Carolina. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "South Carolina offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "South Carolina Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in South Carolina?",
+        "answer": "South Carolina offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in South Carolina?",
+        "answer": "Apply online through South Carolina's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "South Carolina Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Low-Income Senior Programs in South Dakota (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in South Dakota. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "South Dakota offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "South Dakota Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in South Dakota?",
+        "answer": "South Dakota offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in South Dakota?",
+        "answer": "Apply online through South Dakota's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "South Dakota Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Low-Income Senior Programs in Tennessee (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Tennessee. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Tennessee offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Tennessee Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Tennessee?",
+        "answer": "Tennessee offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Tennessee?",
+        "answer": "Apply online through Tennessee's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Tennessee Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Low-Income Senior Programs in Texas (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Texas. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Texas offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Texas Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Texas?",
+        "answer": "Texas offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Texas?",
+        "answer": "Apply online through Texas's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Texas Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Low-Income Senior Programs in Utah (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Utah. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Utah offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Utah Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Utah?",
+        "answer": "Utah offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Utah?",
+        "answer": "Apply online through Utah's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Utah Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Low-Income Senior Programs in Vermont (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Vermont. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Vermont offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Vermont Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Vermont?",
+        "answer": "Vermont offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Vermont?",
+        "answer": "Apply online through Vermont's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Vermont Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Low-Income Senior Programs in Virginia (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Virginia. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Virginia offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Virginia Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Virginia?",
+        "answer": "Virginia offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Virginia?",
+        "answer": "Apply online through Virginia's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Virginia Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Low-Income Senior Programs in Washington (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Washington. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Washington offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Washington Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Washington?",
+        "answer": "Washington offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Washington?",
+        "answer": "Apply online through Washington's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Washington Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Low-Income Senior Programs in West Virginia (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in West Virginia. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "West Virginia offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "West Virginia Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in West Virginia?",
+        "answer": "West Virginia offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in West Virginia?",
+        "answer": "Apply online through West Virginia's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "West Virginia Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Low-Income Senior Programs in Wisconsin (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Wisconsin. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Wisconsin offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Wisconsin Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Wisconsin?",
+        "answer": "Wisconsin offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Wisconsin?",
+        "answer": "Apply online through Wisconsin's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Wisconsin Department of Social Services",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Low-Income Senior Programs in Wyoming (2026)",
+    "introText": "<p>Find assistance programs for low-income seniors in Wyoming. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>",
+    "programs": [
+      {
+        "name": "SNAP (Food Stamps)",
+        "category": "Food",
+        "description": "Monthly food assistance for eligible seniors",
+        "eligibility": "Income below 130% FPL",
+        "applicationUrl": "#",
+        "phone": "1-800-221-5689"
+      },
+      {
+        "name": "LIHEAP",
+        "category": "Energy",
+        "description": "Help with heating and cooling bills",
+        "eligibility": "Income below 150% FPL",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Section 8 Housing",
+        "category": "Housing",
+        "description": "Rental assistance vouchers for affordable housing",
+        "eligibility": "Income below 50% AMI",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Lifeline Program",
+        "category": "Phone/Internet",
+        "description": "Discounted phone and internet service",
+        "eligibility": "Income below 135% FPL or Medicaid enrollment",
+        "applicationUrl": "#"
+      },
+      {
+        "name": "Weatherization Assistance",
+        "category": "Home",
+        "description": "Free home energy efficiency improvements",
+        "eligibility": "Income below 200% FPL",
+        "applicationUrl": "#"
+      }
+    ],
+    "snapInfo": {
+      "incomeLimitIndividual": "$1,580/month",
+      "maxBenefit": "$291/month",
+      "applicationUrl": "#"
+    },
+    "liheapInfo": {
+      "maxBenefit": "$500–$1,000/year",
+      "applicationPeriod": "October–March",
+      "url": "#"
+    },
+    "housingInfo": {
+      "programs": [
+        "Section 8 Vouchers",
+        "Public Housing",
+        "Section 202 Senior Housing"
+      ],
+      "waitlistInfo": "Waitlists are common; apply early",
+      "url": "#"
+    },
+    "lifelineInfo": {
+      "discount": "$9.25/month off phone or internet",
+      "eligibility": "Medicaid, SNAP, SSI, or income-based",
+      "url": "https://www.lifelinesupport.org"
+    },
+    "propertyTaxRelief": {
+      "available": true,
+      "description": "Wyoming offers property tax relief programs for qualifying seniors.",
+      "url": "#"
+    },
+    "transportationPrograms": [
+      {
+        "name": "Wyoming Senior Transportation",
+        "description": "Subsidized transportation for medical appointments and errands",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What assistance programs are available for low-income seniors in Wyoming?",
+        "answer": "Wyoming offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors."
+      },
+      {
+        "question": "How do I apply for SNAP in Wyoming?",
+        "answer": "Apply online through Wyoming's SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benefits.gov",
+        "url": "https://www.benefits.gov"
+      },
+      {
+        "title": "Wyoming Department of Social Services",
+        "url": "#"
+      }
+    ]
+  }
+]

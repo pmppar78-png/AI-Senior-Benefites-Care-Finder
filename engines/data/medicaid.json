@@ -1,0 +1,4202 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Medicaid Eligibility in Alabama (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Alabama, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Alabama Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Alabama's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Alabama?",
+        "answer": "In Alabama, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Alabama?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Alabama Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Medicaid Eligibility in Alaska (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Alaska, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Alaska Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Alaska's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Alaska?",
+        "answer": "In Alaska, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Alaska?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Alaska Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Medicaid Eligibility in Arizona (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Arizona, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Arizona Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Arizona's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Arizona?",
+        "answer": "In Arizona, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Arizona?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Arizona Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Medicaid Eligibility in Arkansas (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Arkansas, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Arkansas Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Arkansas's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Arkansas?",
+        "answer": "In Arkansas, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Arkansas?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Arkansas Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Medicaid Eligibility in California (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in California, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Medi-Cal",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through California's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in California?",
+        "answer": "In California, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in California?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "California Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Medicaid Eligibility in Colorado (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Colorado, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Colorado Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Colorado's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Colorado?",
+        "answer": "In Colorado, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Colorado?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Colorado Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Medicaid Eligibility in Connecticut (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Connecticut, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Connecticut Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Connecticut's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Connecticut?",
+        "answer": "In Connecticut, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Connecticut?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Connecticut Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Medicaid Eligibility in Delaware (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Delaware, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Delaware Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Delaware's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Delaware?",
+        "answer": "In Delaware, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Delaware?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Delaware Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Medicaid Eligibility in Florida (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Florida, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Florida Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Florida's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Florida?",
+        "answer": "In Florida, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Florida?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Florida Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Medicaid Eligibility in Georgia (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Georgia, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Georgia Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Georgia's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Georgia?",
+        "answer": "In Georgia, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Georgia?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Georgia Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Medicaid Eligibility in Hawaii (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Hawaii, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Med-QUEST",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Hawaii's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Hawaii?",
+        "answer": "In Hawaii, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Hawaii?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Hawaii Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Medicaid Eligibility in Idaho (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Idaho, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Idaho Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Idaho's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Idaho?",
+        "answer": "In Idaho, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Idaho?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Idaho Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Medicaid Eligibility in Illinois (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Illinois, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Illinois Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Illinois's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Illinois?",
+        "answer": "In Illinois, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Illinois?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Illinois Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Medicaid Eligibility in Indiana (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Indiana, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Indiana Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Indiana's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Indiana?",
+        "answer": "In Indiana, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Indiana?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Indiana Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Medicaid Eligibility in Iowa (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Iowa, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Iowa Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Iowa's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Iowa?",
+        "answer": "In Iowa, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Iowa?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Iowa Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Medicaid Eligibility in Kansas (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Kansas, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Kansas Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Kansas's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Kansas?",
+        "answer": "In Kansas, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Kansas?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Kansas Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Medicaid Eligibility in Kentucky (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Kentucky, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Kentucky Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Kentucky's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Kentucky?",
+        "answer": "In Kentucky, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Kentucky?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Kentucky Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Medicaid Eligibility in Louisiana (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Louisiana, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Louisiana Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Louisiana's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Louisiana?",
+        "answer": "In Louisiana, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Louisiana?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Louisiana Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Medicaid Eligibility in Maine (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Maine, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Maine Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Maine's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Maine?",
+        "answer": "In Maine, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Maine?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Maine Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Medicaid Eligibility in Maryland (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Maryland, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Maryland Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Maryland's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Maryland?",
+        "answer": "In Maryland, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Maryland?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Maryland Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Medicaid Eligibility in Massachusetts (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Massachusetts, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "MassHealth",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Massachusetts's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Massachusetts?",
+        "answer": "In Massachusetts, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Massachusetts?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Massachusetts Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Medicaid Eligibility in Michigan (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Michigan, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Michigan Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Michigan's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Michigan?",
+        "answer": "In Michigan, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Michigan?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Michigan Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Medicaid Eligibility in Minnesota (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Minnesota, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Medical Assistance",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Minnesota's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Minnesota?",
+        "answer": "In Minnesota, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Minnesota?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Minnesota Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Medicaid Eligibility in Mississippi (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Mississippi, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Mississippi Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Mississippi's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Mississippi?",
+        "answer": "In Mississippi, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Mississippi?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Mississippi Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Medicaid Eligibility in Missouri (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Missouri, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Missouri Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Missouri's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Missouri?",
+        "answer": "In Missouri, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Missouri?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Missouri Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Medicaid Eligibility in Montana (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Montana, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Montana Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Montana's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Montana?",
+        "answer": "In Montana, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Montana?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Montana Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Medicaid Eligibility in Nebraska (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Nebraska, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Nebraska Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Nebraska's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Nebraska?",
+        "answer": "In Nebraska, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Nebraska?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Nebraska Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Medicaid Eligibility in Nevada (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Nevada, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Nevada Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Nevada's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Nevada?",
+        "answer": "In Nevada, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Nevada?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Nevada Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Medicaid Eligibility in New Hampshire (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in New Hampshire, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "New Hampshire Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through New Hampshire's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in New Hampshire?",
+        "answer": "In New Hampshire, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in New Hampshire?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "New Hampshire Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Medicaid Eligibility in New Jersey (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in New Jersey, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "New Jersey Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through New Jersey's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in New Jersey?",
+        "answer": "In New Jersey, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in New Jersey?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "New Jersey Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Medicaid Eligibility in New Mexico (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in New Mexico, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "New Mexico Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through New Mexico's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in New Mexico?",
+        "answer": "In New Mexico, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in New Mexico?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "New Mexico Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Medicaid Eligibility in New York (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in New York, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "New York Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through New York's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in New York?",
+        "answer": "In New York, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in New York?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "New York Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Medicaid Eligibility in North Carolina (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in North Carolina, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "North Carolina Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through North Carolina's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in North Carolina?",
+        "answer": "In North Carolina, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in North Carolina?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "North Carolina Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Medicaid Eligibility in North Dakota (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in North Dakota, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "North Dakota Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through North Dakota's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in North Dakota?",
+        "answer": "In North Dakota, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in North Dakota?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "North Dakota Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Medicaid Eligibility in Ohio (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Ohio, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Ohio Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Ohio's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Ohio?",
+        "answer": "In Ohio, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Ohio?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Ohio Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Medicaid Eligibility in Oklahoma (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Oklahoma, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Oklahoma Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Oklahoma's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Oklahoma?",
+        "answer": "In Oklahoma, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Oklahoma?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Oklahoma Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Medicaid Eligibility in Oregon (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Oregon, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Oregon Health Plan",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Oregon's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Oregon?",
+        "answer": "In Oregon, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Oregon?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Oregon Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Medicaid Eligibility in Pennsylvania (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Pennsylvania, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Pennsylvania Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Pennsylvania's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Pennsylvania?",
+        "answer": "In Pennsylvania, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Pennsylvania?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Pennsylvania Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Medicaid Eligibility in Rhode Island (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Rhode Island, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Rhode Island Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Rhode Island's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Rhode Island?",
+        "answer": "In Rhode Island, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Rhode Island?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Rhode Island Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Medicaid Eligibility in South Carolina (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in South Carolina, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "South Carolina Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through South Carolina's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in South Carolina?",
+        "answer": "In South Carolina, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in South Carolina?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "South Carolina Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Medicaid Eligibility in South Dakota (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in South Dakota, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "South Dakota Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through South Dakota's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in South Dakota?",
+        "answer": "In South Dakota, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in South Dakota?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "South Dakota Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Medicaid Eligibility in Tennessee (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Tennessee, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "TennCare",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Tennessee's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Tennessee?",
+        "answer": "In Tennessee, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Tennessee?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Tennessee Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Medicaid Eligibility in Texas (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Texas, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Texas Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Texas's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Texas?",
+        "answer": "In Texas, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Texas?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Texas Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Medicaid Eligibility in Utah (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Utah, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Utah Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Utah's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Utah?",
+        "answer": "In Utah, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Utah?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Utah Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Medicaid Eligibility in Vermont (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Vermont, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Vermont Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Vermont's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Vermont?",
+        "answer": "In Vermont, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Vermont?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Vermont Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Medicaid Eligibility in Virginia (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Virginia, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Virginia Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Virginia's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Virginia?",
+        "answer": "In Virginia, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Virginia?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Virginia Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Medicaid Eligibility in Washington (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Washington, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Washington Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Washington's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Washington?",
+        "answer": "In Washington, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Washington?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Washington Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Medicaid Eligibility in West Virginia (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in West Virginia, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "West Virginia Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through West Virginia's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in West Virginia?",
+        "answer": "In West Virginia, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in West Virginia?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "West Virginia Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Medicaid Eligibility in Wisconsin (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Wisconsin, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "BadgerCare Plus",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Wisconsin's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Wisconsin?",
+        "answer": "In Wisconsin, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Wisconsin?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Wisconsin Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Medicaid Eligibility in Wyoming (2026)",
+    "introText": "<p>Learn about Medicaid eligibility requirements in Wyoming, including income limits, asset requirements, and how to apply for coverage in 2026.</p>",
+    "programName": "Wyoming Medicaid",
+    "expansionStatus": "expanded",
+    "incomeLimit": {
+      "individual": "$1,732/month",
+      "couple": "$2,351/month",
+      "fpl": "138%"
+    },
+    "assetLimit": {
+      "individual": "$2,000",
+      "couple": "$3,000",
+      "exemptions": [
+        "Primary home",
+        "One vehicle",
+        "Personal belongings",
+        "Burial plot"
+      ]
+    },
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply online through Wyoming's Medicaid portal",
+        "url": "#"
+      },
+      {
+        "method": "Phone",
+        "description": "Call your local Department of Social Services",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local county office",
+        "url": "#"
+      }
+    ],
+    "requiredDocuments": [
+      "Photo ID",
+      "Proof of income",
+      "Proof of residency",
+      "Social Security card",
+      "Bank statements"
+    ],
+    "programs": [
+      {
+        "name": "Aged, Blind, and Disabled",
+        "description": "Coverage for seniors 65+ and people with disabilities",
+        "eligibility": "Income below SSI limits",
+        "url": "#"
+      },
+      {
+        "name": "Home and Community-Based Services",
+        "description": "Waiver program for in-home care as an alternative to nursing facilities",
+        "eligibility": "Nursing home level of care needed",
+        "url": "#"
+      }
+    ],
+    "managedCare": true,
+    "processingTime": "30-45 days",
+    "faqs": [
+      {
+        "question": "What are the income limits for Medicaid in Wyoming?",
+        "answer": "In Wyoming, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures."
+      },
+      {
+        "question": "How do I apply for Medicaid in Wyoming?",
+        "answer": "You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicaid.gov",
+        "url": "https://www.medicaid.gov"
+      },
+      {
+        "title": "Wyoming Medicaid Agency",
+        "url": "#"
+      }
+    ]
+  }
+]

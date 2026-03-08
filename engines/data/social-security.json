@@ -1,0 +1,3052 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Social Security & SSI Benefits in Alabama (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Alabama. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1746/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$58/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1576/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Alabama does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Alabama Social Security Office",
+        "address": "Main Street, Alabama",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Alabama?",
+        "answer": "The average monthly Social Security retirement benefit in Alabama varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Alabama tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Alabama's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Social Security & SSI Benefits in Alaska (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Alaska. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1922/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$146/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1474/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Alaska may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Alaska Social Security Office",
+        "address": "Main Street, Alaska",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Alaska?",
+        "answer": "The average monthly Social Security retirement benefit in Alaska varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Alaska tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Alaska's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Social Security & SSI Benefits in Arizona (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Arizona. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1809/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$112/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1441/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Arizona may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Arizona Social Security Office",
+        "address": "Main Street, Arizona",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Arizona?",
+        "answer": "The average monthly Social Security retirement benefit in Arizona varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Arizona tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Arizona's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Social Security & SSI Benefits in Arkansas (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Arkansas. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1991/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$169/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1505/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Arkansas does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Arkansas Social Security Office",
+        "address": "Main Street, Arkansas",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Arkansas?",
+        "answer": "The average monthly Social Security retirement benefit in Arkansas varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Arkansas tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Arkansas's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Social Security & SSI Benefits in California (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in California. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1913/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$108/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1622/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "California does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "California Social Security Office",
+        "address": "Main Street, California",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in California?",
+        "answer": "The average monthly Social Security retirement benefit in California varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does California tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with California's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Social Security & SSI Benefits in Colorado (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Colorado. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2003/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$63/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1410/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Colorado does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Colorado Social Security Office",
+        "address": "Main Street, Colorado",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Colorado?",
+        "answer": "The average monthly Social Security retirement benefit in Colorado varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Colorado tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Colorado's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Social Security & SSI Benefits in Connecticut (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Connecticut. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2051/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$170/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1635/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Connecticut does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Connecticut Social Security Office",
+        "address": "Main Street, Connecticut",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Connecticut?",
+        "answer": "The average monthly Social Security retirement benefit in Connecticut varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Connecticut tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Connecticut's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Social Security & SSI Benefits in Delaware (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Delaware. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1712/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$131/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1474/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Delaware does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Delaware Social Security Office",
+        "address": "Main Street, Delaware",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Delaware?",
+        "answer": "The average monthly Social Security retirement benefit in Delaware varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Delaware tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Delaware's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Social Security & SSI Benefits in Florida (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Florida. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1751/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$108/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1545/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Florida may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Florida Social Security Office",
+        "address": "Main Street, Florida",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Florida?",
+        "answer": "The average monthly Social Security retirement benefit in Florida varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Florida tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Florida's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Social Security & SSI Benefits in Georgia (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Georgia. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1830/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$66/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1623/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Georgia may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Georgia Social Security Office",
+        "address": "Main Street, Georgia",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Georgia?",
+        "answer": "The average monthly Social Security retirement benefit in Georgia varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Georgia tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Georgia's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Social Security & SSI Benefits in Hawaii (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Hawaii. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1847/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$192/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1608/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Hawaii may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Hawaii Social Security Office",
+        "address": "Main Street, Hawaii",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Hawaii?",
+        "answer": "The average monthly Social Security retirement benefit in Hawaii varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Hawaii tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Hawaii's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Social Security & SSI Benefits in Idaho (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Idaho. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1904/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$191/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1428/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Idaho does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Idaho Social Security Office",
+        "address": "Main Street, Idaho",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Idaho?",
+        "answer": "The average monthly Social Security retirement benefit in Idaho varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Idaho tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Idaho's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Social Security & SSI Benefits in Illinois (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Illinois. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2002/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$97/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1577/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Illinois may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Illinois Social Security Office",
+        "address": "Main Street, Illinois",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Illinois?",
+        "answer": "The average monthly Social Security retirement benefit in Illinois varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Illinois tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Illinois's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Social Security & SSI Benefits in Indiana (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Indiana. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2023/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$157/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1568/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Indiana does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Indiana Social Security Office",
+        "address": "Main Street, Indiana",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Indiana?",
+        "answer": "The average monthly Social Security retirement benefit in Indiana varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Indiana tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Indiana's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Social Security & SSI Benefits in Iowa (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Iowa. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1744/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$129/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1682/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Iowa may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Iowa Social Security Office",
+        "address": "Main Street, Iowa",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Iowa?",
+        "answer": "The average monthly Social Security retirement benefit in Iowa varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Iowa tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Iowa's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Social Security & SSI Benefits in Kansas (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Kansas. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1988/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$71/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1544/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Kansas does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Kansas Social Security Office",
+        "address": "Main Street, Kansas",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Kansas?",
+        "answer": "The average monthly Social Security retirement benefit in Kansas varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Kansas tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Kansas's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Social Security & SSI Benefits in Kentucky (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Kentucky. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1921/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$88/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1492/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Kentucky does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Kentucky Social Security Office",
+        "address": "Main Street, Kentucky",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Kentucky?",
+        "answer": "The average monthly Social Security retirement benefit in Kentucky varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Kentucky tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Kentucky's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Social Security & SSI Benefits in Louisiana (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Louisiana. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2074/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$106/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1620/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Louisiana does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Louisiana Social Security Office",
+        "address": "Main Street, Louisiana",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Louisiana?",
+        "answer": "The average monthly Social Security retirement benefit in Louisiana varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Louisiana tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Louisiana's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Social Security & SSI Benefits in Maine (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Maine. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1829/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$137/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1520/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Maine may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Maine Social Security Office",
+        "address": "Main Street, Maine",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Maine?",
+        "answer": "The average monthly Social Security retirement benefit in Maine varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Maine tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Maine's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Social Security & SSI Benefits in Maryland (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Maryland. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1876/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$24/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1451/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Maryland may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Maryland Social Security Office",
+        "address": "Main Street, Maryland",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Maryland?",
+        "answer": "The average monthly Social Security retirement benefit in Maryland varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Maryland tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Maryland's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Social Security & SSI Benefits in Massachusetts (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Massachusetts. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1888/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$186/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1584/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Massachusetts may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Massachusetts Social Security Office",
+        "address": "Main Street, Massachusetts",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Massachusetts?",
+        "answer": "The average monthly Social Security retirement benefit in Massachusetts varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Massachusetts tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Massachusetts's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Social Security & SSI Benefits in Michigan (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Michigan. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1978/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$37/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1606/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Michigan does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Michigan Social Security Office",
+        "address": "Main Street, Michigan",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Michigan?",
+        "answer": "The average monthly Social Security retirement benefit in Michigan varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Michigan tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Michigan's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Social Security & SSI Benefits in Minnesota (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Minnesota. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2080/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$151/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1681/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Minnesota does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Minnesota Social Security Office",
+        "address": "Main Street, Minnesota",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Minnesota?",
+        "answer": "The average monthly Social Security retirement benefit in Minnesota varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Minnesota tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Minnesota's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Social Security & SSI Benefits in Mississippi (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Mississippi. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1826/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$126/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1483/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Mississippi does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Mississippi Social Security Office",
+        "address": "Main Street, Mississippi",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Mississippi?",
+        "answer": "The average monthly Social Security retirement benefit in Mississippi varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Mississippi tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Mississippi's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Social Security & SSI Benefits in Missouri (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Missouri. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1781/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$130/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1691/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Missouri does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Missouri Social Security Office",
+        "address": "Main Street, Missouri",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Missouri?",
+        "answer": "The average monthly Social Security retirement benefit in Missouri varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Missouri tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Missouri's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Social Security & SSI Benefits in Montana (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Montana. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1727/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$45/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1681/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Montana does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Montana Social Security Office",
+        "address": "Main Street, Montana",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Montana?",
+        "answer": "The average monthly Social Security retirement benefit in Montana varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Montana tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Montana's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Social Security & SSI Benefits in Nebraska (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Nebraska. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1868/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$94/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1573/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Nebraska does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Nebraska Social Security Office",
+        "address": "Main Street, Nebraska",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Nebraska?",
+        "answer": "The average monthly Social Security retirement benefit in Nebraska varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Nebraska tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Nebraska's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Social Security & SSI Benefits in Nevada (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Nevada. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1711/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$73/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1443/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Nevada may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Nevada Social Security Office",
+        "address": "Main Street, Nevada",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Nevada?",
+        "answer": "The average monthly Social Security retirement benefit in Nevada varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Nevada tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Nevada's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Social Security & SSI Benefits in New Hampshire (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in New Hampshire. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1842/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$154/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1408/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "New Hampshire may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "New Hampshire Social Security Office",
+        "address": "Main Street, New Hampshire",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in New Hampshire?",
+        "answer": "The average monthly Social Security retirement benefit in New Hampshire varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does New Hampshire tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with New Hampshire's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Social Security & SSI Benefits in New Jersey (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in New Jersey. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2079/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$103/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1670/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "New Jersey may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "New Jersey Social Security Office",
+        "address": "Main Street, New Jersey",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in New Jersey?",
+        "answer": "The average monthly Social Security retirement benefit in New Jersey varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does New Jersey tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with New Jersey's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Social Security & SSI Benefits in New Mexico (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in New Mexico. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1986/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$18/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1509/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "New Mexico does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "New Mexico Social Security Office",
+        "address": "Main Street, New Mexico",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in New Mexico?",
+        "answer": "The average monthly Social Security retirement benefit in New Mexico varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does New Mexico tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with New Mexico's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Social Security & SSI Benefits in New York (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in New York. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1877/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$21/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1474/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "New York may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "New York Social Security Office",
+        "address": "Main Street, New York",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in New York?",
+        "answer": "The average monthly Social Security retirement benefit in New York varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does New York tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with New York's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Social Security & SSI Benefits in North Carolina (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in North Carolina. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1917/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$180/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1440/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "North Carolina may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "North Carolina Social Security Office",
+        "address": "Main Street, North Carolina",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in North Carolina?",
+        "answer": "The average monthly Social Security retirement benefit in North Carolina varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does North Carolina tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with North Carolina's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Social Security & SSI Benefits in North Dakota (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in North Dakota. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1744/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$142/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1670/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "North Dakota does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "North Dakota Social Security Office",
+        "address": "Main Street, North Dakota",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in North Dakota?",
+        "answer": "The average monthly Social Security retirement benefit in North Dakota varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does North Dakota tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with North Dakota's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Social Security & SSI Benefits in Ohio (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Ohio. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1723/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$133/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1540/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Ohio does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Ohio Social Security Office",
+        "address": "Main Street, Ohio",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Ohio?",
+        "answer": "The average monthly Social Security retirement benefit in Ohio varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Ohio tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Ohio's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Social Security & SSI Benefits in Oklahoma (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Oklahoma. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1793/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$116/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1500/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Oklahoma may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Oklahoma Social Security Office",
+        "address": "Main Street, Oklahoma",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Oklahoma?",
+        "answer": "The average monthly Social Security retirement benefit in Oklahoma varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Oklahoma tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Oklahoma's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Social Security & SSI Benefits in Oregon (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Oregon. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2030/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$186/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1508/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Oregon may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Oregon Social Security Office",
+        "address": "Main Street, Oregon",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Oregon?",
+        "answer": "The average monthly Social Security retirement benefit in Oregon varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Oregon tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Oregon's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Social Security & SSI Benefits in Pennsylvania (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Pennsylvania. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2022/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$6/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1543/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Pennsylvania may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Pennsylvania Social Security Office",
+        "address": "Main Street, Pennsylvania",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Pennsylvania?",
+        "answer": "The average monthly Social Security retirement benefit in Pennsylvania varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Pennsylvania tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Pennsylvania's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Social Security & SSI Benefits in Rhode Island (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Rhode Island. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1970/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$79/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1641/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Rhode Island may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Rhode Island Social Security Office",
+        "address": "Main Street, Rhode Island",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Rhode Island?",
+        "answer": "The average monthly Social Security retirement benefit in Rhode Island varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Rhode Island tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Rhode Island's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Social Security & SSI Benefits in South Carolina (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in South Carolina. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2095/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$55/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1539/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "South Carolina does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "South Carolina Social Security Office",
+        "address": "Main Street, South Carolina",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in South Carolina?",
+        "answer": "The average monthly Social Security retirement benefit in South Carolina varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does South Carolina tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with South Carolina's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Social Security & SSI Benefits in South Dakota (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in South Dakota. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1820/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$9/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1493/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "South Dakota may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "South Dakota Social Security Office",
+        "address": "Main Street, South Dakota",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in South Dakota?",
+        "answer": "The average monthly Social Security retirement benefit in South Dakota varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does South Dakota tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with South Dakota's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Social Security & SSI Benefits in Tennessee (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Tennessee. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2035/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$16/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1410/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Tennessee does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Tennessee Social Security Office",
+        "address": "Main Street, Tennessee",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Tennessee?",
+        "answer": "The average monthly Social Security retirement benefit in Tennessee varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Tennessee tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Tennessee's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Social Security & SSI Benefits in Texas (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Texas. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1856/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$48/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1533/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Texas may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Texas Social Security Office",
+        "address": "Main Street, Texas",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Texas?",
+        "answer": "The average monthly Social Security retirement benefit in Texas varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Texas tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Texas's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Social Security & SSI Benefits in Utah (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Utah. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2052/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$101/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1422/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Utah may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Utah Social Security Office",
+        "address": "Main Street, Utah",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Utah?",
+        "answer": "The average monthly Social Security retirement benefit in Utah varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Utah tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Utah's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Social Security & SSI Benefits in Vermont (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Vermont. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$2001/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$50/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1490/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Vermont may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Vermont Social Security Office",
+        "address": "Main Street, Vermont",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Vermont?",
+        "answer": "The average monthly Social Security retirement benefit in Vermont varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Vermont tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Vermont's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Social Security & SSI Benefits in Virginia (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Virginia. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1835/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$94/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1519/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Virginia may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Virginia Social Security Office",
+        "address": "Main Street, Virginia",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Virginia?",
+        "answer": "The average monthly Social Security retirement benefit in Virginia varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Virginia tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Virginia's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Social Security & SSI Benefits in Washington (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Washington. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1913/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$110/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1630/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Washington may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Washington Social Security Office",
+        "address": "Main Street, Washington",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Washington?",
+        "answer": "The average monthly Social Security retirement benefit in Washington varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Washington tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Washington's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Social Security & SSI Benefits in West Virginia (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in West Virginia. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1967/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$15/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1596/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "West Virginia does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "West Virginia Social Security Office",
+        "address": "Main Street, West Virginia",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in West Virginia?",
+        "answer": "The average monthly Social Security retirement benefit in West Virginia varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does West Virginia tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with West Virginia's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Social Security & SSI Benefits in Wisconsin (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Wisconsin. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1943/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": true,
+    "ssiSupplement": "$80/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1686/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Wisconsin may tax Social Security benefits for higher-income residents.",
+    "localOffices": [
+      {
+        "name": "Wisconsin Social Security Office",
+        "address": "Main Street, Wisconsin",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Wisconsin?",
+        "answer": "The average monthly Social Security retirement benefit in Wisconsin varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Wisconsin tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Wisconsin's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Social Security & SSI Benefits in Wyoming (2026)",
+    "introText": "<p>Learn about Social Security retirement, SSDI, and SSI benefits available in Wyoming. See 2026 benefit amounts, eligibility, and how to apply.</p>",
+    "avgRetirementBenefit": "$1868/mo",
+    "maxRetirementBenefit": "$4,018/mo",
+    "hasSsiSupplement": false,
+    "ssiSupplement": "$167/mo",
+    "fullRetirementAge": "67",
+    "earlyRetirementAge": "62",
+    "cola": "2.5%",
+    "ssdiAvgBenefit": "$1508/mo",
+    "ssiMaxBenefit": {
+      "individual": "$943/mo",
+      "couple": "$1,415/mo"
+    },
+    "taxInfo": "Wyoming does not tax Social Security benefits.",
+    "localOffices": [
+      {
+        "name": "Wyoming Social Security Office",
+        "address": "Main Street, Wyoming",
+        "phone": "1-800-772-1213",
+        "hours": "Mon-Fri 9am-4pm"
+      }
+    ],
+    "applicationMethods": [
+      {
+        "method": "Online",
+        "description": "Apply at ssa.gov",
+        "url": "https://www.ssa.gov/apply"
+      },
+      {
+        "method": "Phone",
+        "description": "Call 1-800-772-1213",
+        "url": "#"
+      },
+      {
+        "method": "In Person",
+        "description": "Visit your local Social Security office",
+        "url": "#"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average Social Security benefit in Wyoming?",
+        "answer": "The average monthly Social Security retirement benefit in Wyoming varies but is generally in line with the national average of approximately $1,900 per month."
+      },
+      {
+        "question": "Does Wyoming tax Social Security benefits?",
+        "answer": "Tax treatment of Social Security benefits varies by state. Check with Wyoming's tax authority for current rules."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3852 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Prescription Assistance Programs in Alabama (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Alabama. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Alabama Pharmaceutical Assistance Program",
+    "spapDescription": "Alabama's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Alabama SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Alabama's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Alabama?",
+        "answer": "Alabama residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Alabama?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Prescription Assistance Programs in Alaska (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Alaska. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Alaska Pharmaceutical Assistance Program",
+    "spapDescription": "Alaska's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Alaska SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Alaska's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Alaska?",
+        "answer": "Alaska residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Alaska?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Prescription Assistance Programs in Arizona (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Arizona. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Arizona Pharmaceutical Assistance Program",
+    "spapDescription": "Arizona's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Arizona SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Arizona's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Arizona?",
+        "answer": "Arizona residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Arizona?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Prescription Assistance Programs in Arkansas (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Arkansas. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Arkansas Pharmaceutical Assistance Program",
+    "spapDescription": "Arkansas's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Arkansas SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Arkansas's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Arkansas?",
+        "answer": "Arkansas residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Arkansas?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Prescription Assistance Programs in California (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in California. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "California Pharmaceutical Assistance Program",
+    "spapDescription": "California's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "California SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "California's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in California?",
+        "answer": "California residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in California?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Prescription Assistance Programs in Colorado (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Colorado. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Colorado Pharmaceutical Assistance Program",
+    "spapDescription": "Colorado's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Colorado SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Colorado's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Colorado?",
+        "answer": "Colorado residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Colorado?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Prescription Assistance Programs in Connecticut (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Connecticut. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Connecticut Pharmaceutical Assistance Program",
+    "spapDescription": "Connecticut's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Connecticut SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Connecticut's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Connecticut?",
+        "answer": "Connecticut residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Connecticut?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Prescription Assistance Programs in Delaware (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Delaware. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Delaware Pharmaceutical Assistance Program",
+    "spapDescription": "Delaware's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Delaware SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Delaware's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Delaware?",
+        "answer": "Delaware residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Delaware?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Prescription Assistance Programs in Florida (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Florida. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Florida Pharmaceutical Assistance Program",
+    "spapDescription": "Florida's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Florida SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Florida's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Florida?",
+        "answer": "Florida residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Florida?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Prescription Assistance Programs in Georgia (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Georgia. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Georgia Pharmaceutical Assistance Program",
+    "spapDescription": "Georgia's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Georgia SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Georgia's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Georgia?",
+        "answer": "Georgia residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Georgia?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Prescription Assistance Programs in Hawaii (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Hawaii. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Hawaii Pharmaceutical Assistance Program",
+    "spapDescription": "Hawaii's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Hawaii SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Hawaii's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Hawaii?",
+        "answer": "Hawaii residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Hawaii?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Prescription Assistance Programs in Idaho (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Idaho. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Idaho Pharmaceutical Assistance Program",
+    "spapDescription": "Idaho's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Idaho SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Idaho's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Idaho?",
+        "answer": "Idaho residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Idaho?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Prescription Assistance Programs in Illinois (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Illinois. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Illinois Pharmaceutical Assistance Program",
+    "spapDescription": "Illinois's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Illinois SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Illinois's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Illinois?",
+        "answer": "Illinois residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Illinois?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Prescription Assistance Programs in Indiana (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Indiana. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Indiana Pharmaceutical Assistance Program",
+    "spapDescription": "Indiana's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Indiana SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Indiana's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Indiana?",
+        "answer": "Indiana residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Indiana?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Prescription Assistance Programs in Iowa (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Iowa. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Iowa Pharmaceutical Assistance Program",
+    "spapDescription": "Iowa's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Iowa SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Iowa's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Iowa?",
+        "answer": "Iowa residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Iowa?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Prescription Assistance Programs in Kansas (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Kansas. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Kansas Pharmaceutical Assistance Program",
+    "spapDescription": "Kansas's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Kansas SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Kansas's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Kansas?",
+        "answer": "Kansas residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Kansas?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Prescription Assistance Programs in Kentucky (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Kentucky. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Kentucky Pharmaceutical Assistance Program",
+    "spapDescription": "Kentucky's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Kentucky SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Kentucky's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Kentucky?",
+        "answer": "Kentucky residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Kentucky?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Prescription Assistance Programs in Louisiana (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Louisiana. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Louisiana Pharmaceutical Assistance Program",
+    "spapDescription": "Louisiana's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Louisiana SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Louisiana's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Louisiana?",
+        "answer": "Louisiana residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Louisiana?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Prescription Assistance Programs in Maine (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Maine. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Maine Pharmaceutical Assistance Program",
+    "spapDescription": "Maine's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Maine SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Maine's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Maine?",
+        "answer": "Maine residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Maine?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Prescription Assistance Programs in Maryland (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Maryland. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Maryland Pharmaceutical Assistance Program",
+    "spapDescription": "Maryland's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Maryland SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Maryland's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Maryland?",
+        "answer": "Maryland residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Maryland?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Prescription Assistance Programs in Massachusetts (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Massachusetts. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Massachusetts Pharmaceutical Assistance Program",
+    "spapDescription": "Massachusetts's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Massachusetts SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Massachusetts's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Massachusetts?",
+        "answer": "Massachusetts residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Massachusetts?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Prescription Assistance Programs in Michigan (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Michigan. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Michigan Pharmaceutical Assistance Program",
+    "spapDescription": "Michigan's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Michigan SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Michigan's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Michigan?",
+        "answer": "Michigan residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Michigan?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Prescription Assistance Programs in Minnesota (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Minnesota. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Minnesota Pharmaceutical Assistance Program",
+    "spapDescription": "Minnesota's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Minnesota SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Minnesota's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Minnesota?",
+        "answer": "Minnesota residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Minnesota?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Prescription Assistance Programs in Mississippi (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Mississippi. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Mississippi Pharmaceutical Assistance Program",
+    "spapDescription": "Mississippi's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Mississippi SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Mississippi's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Mississippi?",
+        "answer": "Mississippi residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Mississippi?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Prescription Assistance Programs in Missouri (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Missouri. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Missouri Pharmaceutical Assistance Program",
+    "spapDescription": "Missouri's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Missouri SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Missouri's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Missouri?",
+        "answer": "Missouri residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Missouri?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Prescription Assistance Programs in Montana (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Montana. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Montana Pharmaceutical Assistance Program",
+    "spapDescription": "Montana's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Montana SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Montana's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Montana?",
+        "answer": "Montana residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Montana?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Prescription Assistance Programs in Nebraska (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Nebraska. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Nebraska Pharmaceutical Assistance Program",
+    "spapDescription": "Nebraska's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Nebraska SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Nebraska's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Nebraska?",
+        "answer": "Nebraska residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Nebraska?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Prescription Assistance Programs in Nevada (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Nevada. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Nevada Pharmaceutical Assistance Program",
+    "spapDescription": "Nevada's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Nevada SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Nevada's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Nevada?",
+        "answer": "Nevada residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Nevada?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Prescription Assistance Programs in New Hampshire (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in New Hampshire. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "New Hampshire Pharmaceutical Assistance Program",
+    "spapDescription": "New Hampshire's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "New Hampshire SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "New Hampshire's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in New Hampshire?",
+        "answer": "New Hampshire residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in New Hampshire?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Prescription Assistance Programs in New Jersey (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in New Jersey. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "New Jersey Pharmaceutical Assistance Program",
+    "spapDescription": "New Jersey's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "New Jersey SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "New Jersey's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in New Jersey?",
+        "answer": "New Jersey residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in New Jersey?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Prescription Assistance Programs in New Mexico (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in New Mexico. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "New Mexico Pharmaceutical Assistance Program",
+    "spapDescription": "New Mexico's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "New Mexico SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "New Mexico's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in New Mexico?",
+        "answer": "New Mexico residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in New Mexico?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Prescription Assistance Programs in New York (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in New York. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "New York Pharmaceutical Assistance Program",
+    "spapDescription": "New York's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "New York SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "New York's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in New York?",
+        "answer": "New York residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in New York?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Prescription Assistance Programs in North Carolina (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in North Carolina. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "North Carolina Pharmaceutical Assistance Program",
+    "spapDescription": "North Carolina's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "North Carolina SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "North Carolina's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in North Carolina?",
+        "answer": "North Carolina residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in North Carolina?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Prescription Assistance Programs in North Dakota (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in North Dakota. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "North Dakota Pharmaceutical Assistance Program",
+    "spapDescription": "North Dakota's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "North Dakota SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "North Dakota's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in North Dakota?",
+        "answer": "North Dakota residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in North Dakota?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Prescription Assistance Programs in Ohio (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Ohio. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Ohio Pharmaceutical Assistance Program",
+    "spapDescription": "Ohio's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Ohio SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Ohio's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Ohio?",
+        "answer": "Ohio residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Ohio?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Prescription Assistance Programs in Oklahoma (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Oklahoma. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Oklahoma Pharmaceutical Assistance Program",
+    "spapDescription": "Oklahoma's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Oklahoma SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Oklahoma's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Oklahoma?",
+        "answer": "Oklahoma residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Oklahoma?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Prescription Assistance Programs in Oregon (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Oregon. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Oregon Pharmaceutical Assistance Program",
+    "spapDescription": "Oregon's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Oregon SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Oregon's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Oregon?",
+        "answer": "Oregon residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Oregon?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Prescription Assistance Programs in Pennsylvania (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Pennsylvania. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Pennsylvania Pharmaceutical Assistance Program",
+    "spapDescription": "Pennsylvania's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Pennsylvania SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Pennsylvania's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Pennsylvania?",
+        "answer": "Pennsylvania residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Pennsylvania?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Prescription Assistance Programs in Rhode Island (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Rhode Island. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Rhode Island Pharmaceutical Assistance Program",
+    "spapDescription": "Rhode Island's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Rhode Island SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Rhode Island's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Rhode Island?",
+        "answer": "Rhode Island residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Rhode Island?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Prescription Assistance Programs in South Carolina (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in South Carolina. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "South Carolina Pharmaceutical Assistance Program",
+    "spapDescription": "South Carolina's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "South Carolina SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "South Carolina's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in South Carolina?",
+        "answer": "South Carolina residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in South Carolina?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Prescription Assistance Programs in South Dakota (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in South Dakota. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "South Dakota Pharmaceutical Assistance Program",
+    "spapDescription": "South Dakota's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "South Dakota SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "South Dakota's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in South Dakota?",
+        "answer": "South Dakota residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in South Dakota?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Prescription Assistance Programs in Tennessee (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Tennessee. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Tennessee Pharmaceutical Assistance Program",
+    "spapDescription": "Tennessee's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Tennessee SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Tennessee's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Tennessee?",
+        "answer": "Tennessee residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Tennessee?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Prescription Assistance Programs in Texas (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Texas. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Texas Pharmaceutical Assistance Program",
+    "spapDescription": "Texas's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Texas SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Texas's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Texas?",
+        "answer": "Texas residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Texas?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Prescription Assistance Programs in Utah (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Utah. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Utah Pharmaceutical Assistance Program",
+    "spapDescription": "Utah's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Utah SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Utah's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Utah?",
+        "answer": "Utah residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Utah?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Prescription Assistance Programs in Vermont (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Vermont. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Vermont Pharmaceutical Assistance Program",
+    "spapDescription": "Vermont's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Vermont SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Vermont's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Vermont?",
+        "answer": "Vermont residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Vermont?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Prescription Assistance Programs in Virginia (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Virginia. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Virginia Pharmaceutical Assistance Program",
+    "spapDescription": "Virginia's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Virginia SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Virginia's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Virginia?",
+        "answer": "Virginia residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Virginia?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Prescription Assistance Programs in Washington (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Washington. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "Washington Pharmaceutical Assistance Program",
+    "spapDescription": "Washington's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Washington SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Washington's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Washington?",
+        "answer": "Washington residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Washington?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Prescription Assistance Programs in West Virginia (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in West Virginia. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": false,
+    "spapName": "West Virginia Pharmaceutical Assistance Program",
+    "spapDescription": "West Virginia's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "West Virginia SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "West Virginia's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in West Virginia?",
+        "answer": "West Virginia residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in West Virginia?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Prescription Assistance Programs in Wisconsin (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Wisconsin. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Wisconsin Pharmaceutical Assistance Program",
+    "spapDescription": "Wisconsin's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Wisconsin SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Wisconsin's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Wisconsin?",
+        "answer": "Wisconsin residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Wisconsin?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Prescription Assistance Programs in Wyoming (2026)",
+    "introText": "<p>Find programs to help lower prescription drug costs in Wyoming. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>",
+    "hasStateSPAP": true,
+    "spapName": "Wyoming Pharmaceutical Assistance Program",
+    "spapDescription": "Wyoming's state pharmaceutical assistance program helps eligible residents afford prescription medications.",
+    "spapEligibility": "Income-based eligibility; contact program for details",
+    "extraHelpIncomeLimits": {
+      "individual": "$22,590/year",
+      "couple": "$30,660/year"
+    },
+    "extraHelpAssetLimits": {
+      "individual": "$17,220",
+      "couple": "$34,360"
+    },
+    "programs": [
+      {
+        "name": "Medicare Extra Help (Low-Income Subsidy)",
+        "type": "Federal",
+        "eligibility": "Limited income and resources",
+        "description": "Helps pay Part D premiums, deductibles, and copays",
+        "phone": "1-800-772-1213"
+      },
+      {
+        "name": "Wyoming SPAP",
+        "type": "State",
+        "eligibility": "State income guidelines",
+        "description": "Wyoming's state pharmaceutical assistance program"
+      },
+      {
+        "name": "NeedyMeds",
+        "type": "Nonprofit",
+        "eligibility": "Varies by program",
+        "description": "Database of patient assistance programs from drug manufacturers",
+        "url": "https://www.needymeds.org"
+      },
+      {
+        "name": "RxAssist",
+        "type": "Nonprofit",
+        "eligibility": "Varies",
+        "description": "Comprehensive database of prescription assistance programs",
+        "url": "https://www.rxassist.org"
+      }
+    ],
+    "discountPrograms": [
+      {
+        "name": "GoodRx",
+        "savings": "Up to 80% off",
+        "description": "Free prescription discount card accepted at most pharmacies",
+        "url": "https://www.goodrx.com"
+      },
+      {
+        "name": "Medicare Part D",
+        "savings": "Varies by plan",
+        "description": "Compare Part D plans for your specific medications"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What prescription assistance programs are available in Wyoming?",
+        "answer": "Wyoming residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards."
+      },
+      {
+        "question": "How do I apply for Extra Help in Wyoming?",
+        "answer": "Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov Extra Help",
+        "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+      }
+    ]
+  }
+]

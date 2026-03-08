@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "about",
+    "h1": "About Senior Benefits Care Finder",
+    "title": "About Us",
+    "metaDescription": "Learn about Senior Benefits Care Finder, our mission to help seniors navigate benefits, and our team of experts.",
+    "introText": "<p>Senior Benefits Care Finder is a comprehensive resource helping seniors and their families navigate the complex world of benefits, care options, and financial assistance programs.</p>",
+    "sections": [
+      {
+        "heading": "Our Mission",
+        "content": "<p>We believe every senior deserves access to clear, accurate information about the benefits and programs available to them. Our mission is to simplify the process of finding and enrolling in programs that can improve quality of life.</p>"
+      },
+      {
+        "heading": "What We Cover",
+        "content": "<p>From Medicare and Medicaid to assisted living costs, home care options, veterans benefits, and financial assistance programs — we provide state-by-state guides covering the most important topics for seniors and their caregivers.</p>"
+      },
+      {
+        "heading": "Our Approach",
+        "content": "<p>Every guide is researched and updated regularly to reflect current eligibility requirements, costs, and program details. We compile information from official government sources, industry data, and expert analysis.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "privacy-policy",
+    "h1": "Privacy Policy",
+    "title": "Privacy Policy",
+    "metaDescription": "Read the Senior Benefits Care Finder privacy policy to understand how we collect, use, and protect your information.",
+    "introText": "<p>Your privacy is important to us. This policy describes how Senior Benefits Care Finder collects and uses information.</p>",
+    "policyContent": "<h3>Information We Collect</h3><p>We collect anonymous usage data through analytics tools to improve our content. We do not collect personally identifiable information unless you voluntarily provide it through contact forms.</p><h3>How We Use Information</h3><p>Usage data helps us understand which content is most helpful and how to improve our guides. We never sell personal information to third parties.</p><h3>Cookies</h3><p>We use cookies to improve your browsing experience and analyze site traffic. You can manage cookie preferences through your browser settings.</p><h3>Third-Party Links</h3><p>Our guides contain links to government agencies, organizations, and service providers. We are not responsible for the privacy practices of external sites.</p><h3>Contact</h3><p>If you have questions about this privacy policy, please contact us through our website.</p>"
+  },
+  {
+    "slug": "terms-of-use",
+    "h1": "Terms of Use",
+    "title": "Terms of Use",
+    "metaDescription": "Review the terms of use for Senior Benefits Care Finder.",
+    "introText": "<p>By using Senior Benefits Care Finder, you agree to the following terms.</p>",
+    "policyContent": "<h3>Disclaimer</h3><p>The information provided on Senior Benefits Care Finder is for general informational purposes only. It should not be considered legal, financial, or medical advice. Always consult with qualified professionals before making decisions about benefits enrollment, care options, or financial planning.</p><h3>Accuracy</h3><p>We strive to keep all information accurate and up to date, but program details, eligibility requirements, and costs can change. We encourage you to verify information with official sources.</p><h3>Use of Content</h3><p>All content on this site is protected by copyright. You may not reproduce, distribute, or modify our content without permission.</p>"
+  },
+  {
+    "slug": "contact",
+    "h1": "Contact Us",
+    "title": "Contact Us",
+    "metaDescription": "Get in touch with Senior Benefits Care Finder for questions, feedback, or partnership inquiries.",
+    "introText": "<p>We would love to hear from you. Whether you have a question about benefits, feedback about our guides, or a partnership inquiry, we are here to help.</p>",
+    "sections": [
+      {
+        "heading": "Get in Touch",
+        "content": "<p>Email us with your questions or feedback. Our team reviews every message and strives to respond within 48 hours.</p>"
+      },
+      {
+        "heading": "For Seniors & Families",
+        "content": "<p>If you need help finding a specific program or understanding your benefits options, explore our state-by-state guides or reach out and we will point you in the right direction.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "how-we-research",
+    "h1": "How We Research Our Guides",
+    "title": "Our Research Methodology",
+    "metaDescription": "Learn how Senior Benefits Care Finder researches and verifies information in our senior benefits guides.",
+    "introText": "<p>Accuracy and reliability are the foundation of every guide we publish. Here is how we research and verify our content.</p>",
+    "sections": [
+      {
+        "heading": "Official Sources",
+        "content": "<p>We source information primarily from government agencies including CMS (Medicare/Medicaid), SSA (Social Security), VA (Veterans Affairs), and state departments of health and social services.</p>"
+      },
+      {
+        "heading": "Industry Data",
+        "content": "<p>For cost data, we reference the Genworth Cost of Care Survey, AALTCI reports, and Bureau of Labor Statistics data.</p>"
+      },
+      {
+        "heading": "Regular Updates",
+        "content": "<p>Our guides are reviewed and updated to reflect current-year eligibility rules, benefit amounts, and program changes.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "editorial-policy",
+    "h1": "Editorial Policy",
+    "title": "Editorial Policy",
+    "metaDescription": "Read the editorial standards and policies of Senior Benefits Care Finder.",
+    "introText": "<p>Our editorial policy ensures the information we provide is accurate, balanced, and helpful for seniors and their families.</p>",
+    "sections": [
+      {
+        "heading": "Independence",
+        "content": "<p>Our editorial content is created independently. Advertising and partnerships do not influence our research, ratings, or recommendations.</p>"
+      },
+      {
+        "heading": "Expertise",
+        "content": "<p>Our content is developed by researchers with expertise in senior benefits, healthcare policy, and elder care. All guides undergo a review process for accuracy.</p>"
+      },
+      {
+        "heading": "Corrections",
+        "content": "<p>If you find an error in any of our guides, please contact us. We take accuracy seriously and will correct verified errors promptly.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "sitemap-guide",
+    "h1": "Complete Benefits Guide Directory",
+    "title": "All Benefits Guides",
+    "metaDescription": "Browse all Senior Benefits Care Finder guides organized by topic and state.",
+    "introText": "<p>Find all of our benefits guides organized by category. Browse Medicare, Medicaid, assisted living, home care, and more for every state.</p>",
+    "sections": [
+      {
+        "heading": "Medicare Guides",
+        "content": "<p>State-by-state Medicare plan comparisons, costs, and enrollment information.</p>"
+      },
+      {
+        "heading": "Medicaid Guides",
+        "content": "<p>Eligibility requirements, income limits, and application processes for every state.</p>"
+      },
+      {
+        "heading": "Senior Care Guides",
+        "content": "<p>Assisted living costs, home care rates, and provider directories.</p>"
+      },
+      {
+        "heading": "Financial Assistance",
+        "content": "<p>Low-income programs, prescription assistance, and veterans benefits.</p>"
+      }
+    ]
+  }
+]

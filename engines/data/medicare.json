@@ -1,0 +1,3902 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Medicare Plans in Alabama (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Alabama for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 44,
+    "medigapPlans": 11,
+    "partDPlans": 20,
+    "avgPremiumMA": "$20/mo",
+    "avgPremiumMedigap": "$142/mo",
+    "avgPremiumPartD": "$29/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Alabama SHIP Program",
+        "description": "Free Medicare counseling and assistance for Alabama residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Alabama residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Alabama Department of Insurance",
+        "description": "Contact Alabama's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Alabama?",
+        "answer": "Alabama residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Alabama?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Alabama have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Alabama may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Medicare Plans in Alaska (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Alaska for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 29,
+    "medigapPlans": 12,
+    "partDPlans": 18,
+    "avgPremiumMA": "$24/mo",
+    "avgPremiumMedigap": "$141/mo",
+    "avgPremiumPartD": "$41/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Alaska SHIP Program",
+        "description": "Free Medicare counseling and assistance for Alaska residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Alaska residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Alaska Department of Insurance",
+        "description": "Contact Alaska's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Alaska?",
+        "answer": "Alaska residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Alaska?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Alaska have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Alaska may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Medicare Plans in Arizona (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Arizona for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 46,
+    "medigapPlans": 8,
+    "partDPlans": 18,
+    "avgPremiumMA": "$16/mo",
+    "avgPremiumMedigap": "$178/mo",
+    "avgPremiumPartD": "$27/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Arizona SHIP Program",
+        "description": "Free Medicare counseling and assistance for Arizona residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Arizona residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Arizona Department of Insurance",
+        "description": "Contact Arizona's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Arizona?",
+        "answer": "Arizona residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Arizona?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Arizona have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Arizona may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Medicare Plans in Arkansas (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Arkansas for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 49,
+    "medigapPlans": 10,
+    "partDPlans": 17,
+    "avgPremiumMA": "$19/mo",
+    "avgPremiumMedigap": "$146/mo",
+    "avgPremiumPartD": "$49/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Arkansas SHIP Program",
+        "description": "Free Medicare counseling and assistance for Arkansas residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Arkansas residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Arkansas Department of Insurance",
+        "description": "Contact Arkansas's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Arkansas?",
+        "answer": "Arkansas residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Arkansas?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Arkansas have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Arkansas may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Medicare Plans in California (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in California for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 27,
+    "medigapPlans": 8,
+    "partDPlans": 17,
+    "avgPremiumMA": "$16/mo",
+    "avgPremiumMedigap": "$205/mo",
+    "avgPremiumPartD": "$30/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "California SHIP Program",
+        "description": "Free Medicare counseling and assistance for California residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income California residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "California Department of Insurance",
+        "description": "Contact California's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in California?",
+        "answer": "California residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in California?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does California have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, California may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Medicare Plans in Colorado (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Colorado for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 31,
+    "medigapPlans": 11,
+    "partDPlans": 25,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$188/mo",
+    "avgPremiumPartD": "$26/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Colorado SHIP Program",
+        "description": "Free Medicare counseling and assistance for Colorado residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Colorado residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Colorado Department of Insurance",
+        "description": "Contact Colorado's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Colorado?",
+        "answer": "Colorado residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Colorado?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Colorado have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Colorado may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Medicare Plans in Connecticut (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Connecticut for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 56,
+    "medigapPlans": 12,
+    "partDPlans": 29,
+    "avgPremiumMA": "$0/mo",
+    "avgPremiumMedigap": "$204/mo",
+    "avgPremiumPartD": "$39/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Connecticut SHIP Program",
+        "description": "Free Medicare counseling and assistance for Connecticut residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Connecticut residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Connecticut Department of Insurance",
+        "description": "Contact Connecticut's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Connecticut?",
+        "answer": "Connecticut residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Connecticut?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Connecticut have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Connecticut may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Medicare Plans in Delaware (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Delaware for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 45,
+    "medigapPlans": 9,
+    "partDPlans": 21,
+    "avgPremiumMA": "$24/mo",
+    "avgPremiumMedigap": "$168/mo",
+    "avgPremiumPartD": "$43/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Delaware SHIP Program",
+        "description": "Free Medicare counseling and assistance for Delaware residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Delaware residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Delaware Department of Insurance",
+        "description": "Contact Delaware's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Delaware?",
+        "answer": "Delaware residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Delaware?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Delaware have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Delaware may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Medicare Plans in Florida (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Florida for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 50,
+    "medigapPlans": 10,
+    "partDPlans": 25,
+    "avgPremiumMA": "$5/mo",
+    "avgPremiumMedigap": "$131/mo",
+    "avgPremiumPartD": "$40/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Florida SHIP Program",
+        "description": "Free Medicare counseling and assistance for Florida residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Florida residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Florida Department of Insurance",
+        "description": "Contact Florida's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Florida?",
+        "answer": "Florida residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Florida?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Florida have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Florida may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Medicare Plans in Georgia (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Georgia for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 53,
+    "medigapPlans": 9,
+    "partDPlans": 24,
+    "avgPremiumMA": "$4/mo",
+    "avgPremiumMedigap": "$197/mo",
+    "avgPremiumPartD": "$38/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Georgia SHIP Program",
+        "description": "Free Medicare counseling and assistance for Georgia residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Georgia residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Georgia Department of Insurance",
+        "description": "Contact Georgia's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Georgia?",
+        "answer": "Georgia residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Georgia?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Georgia have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Georgia may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Medicare Plans in Hawaii (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Hawaii for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 58,
+    "medigapPlans": 8,
+    "partDPlans": 19,
+    "avgPremiumMA": "$18/mo",
+    "avgPremiumMedigap": "$143/mo",
+    "avgPremiumPartD": "$43/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Hawaii SHIP Program",
+        "description": "Free Medicare counseling and assistance for Hawaii residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Hawaii residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Hawaii Department of Insurance",
+        "description": "Contact Hawaii's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Hawaii?",
+        "answer": "Hawaii residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Hawaii?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Hawaii have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Hawaii may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Medicare Plans in Idaho (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Idaho for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 21,
+    "medigapPlans": 13,
+    "partDPlans": 16,
+    "avgPremiumMA": "$12/mo",
+    "avgPremiumMedigap": "$190/mo",
+    "avgPremiumPartD": "$40/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Idaho SHIP Program",
+        "description": "Free Medicare counseling and assistance for Idaho residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Idaho residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Idaho Department of Insurance",
+        "description": "Contact Idaho's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Idaho?",
+        "answer": "Idaho residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Idaho?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Idaho have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Idaho may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Medicare Plans in Illinois (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Illinois for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 29,
+    "medigapPlans": 8,
+    "partDPlans": 27,
+    "avgPremiumMA": "$22/mo",
+    "avgPremiumMedigap": "$149/mo",
+    "avgPremiumPartD": "$47/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Illinois SHIP Program",
+        "description": "Free Medicare counseling and assistance for Illinois residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Illinois residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Illinois Department of Insurance",
+        "description": "Contact Illinois's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Illinois?",
+        "answer": "Illinois residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Illinois?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Illinois have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Illinois may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Medicare Plans in Indiana (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Indiana for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 52,
+    "medigapPlans": 8,
+    "partDPlans": 20,
+    "avgPremiumMA": "$21/mo",
+    "avgPremiumMedigap": "$145/mo",
+    "avgPremiumPartD": "$34/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Indiana SHIP Program",
+        "description": "Free Medicare counseling and assistance for Indiana residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Indiana residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Indiana Department of Insurance",
+        "description": "Contact Indiana's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Indiana?",
+        "answer": "Indiana residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Indiana?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Indiana have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Indiana may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Medicare Plans in Iowa (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Iowa for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 22,
+    "medigapPlans": 8,
+    "partDPlans": 18,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$210/mo",
+    "avgPremiumPartD": "$29/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Iowa SHIP Program",
+        "description": "Free Medicare counseling and assistance for Iowa residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Iowa residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Iowa Department of Insurance",
+        "description": "Contact Iowa's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Iowa?",
+        "answer": "Iowa residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Iowa?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Iowa have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Iowa may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Medicare Plans in Kansas (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Kansas for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 28,
+    "medigapPlans": 8,
+    "partDPlans": 26,
+    "avgPremiumMA": "$12/mo",
+    "avgPremiumMedigap": "$193/mo",
+    "avgPremiumPartD": "$40/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Kansas SHIP Program",
+        "description": "Free Medicare counseling and assistance for Kansas residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Kansas residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Kansas Department of Insurance",
+        "description": "Contact Kansas's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Kansas?",
+        "answer": "Kansas residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Kansas?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Kansas have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Kansas may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Medicare Plans in Kentucky (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Kentucky for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 21,
+    "medigapPlans": 12,
+    "partDPlans": 22,
+    "avgPremiumMA": "$16/mo",
+    "avgPremiumMedigap": "$176/mo",
+    "avgPremiumPartD": "$31/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Kentucky SHIP Program",
+        "description": "Free Medicare counseling and assistance for Kentucky residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Kentucky residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Kentucky Department of Insurance",
+        "description": "Contact Kentucky's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Kentucky?",
+        "answer": "Kentucky residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Kentucky?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Kentucky have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Kentucky may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Medicare Plans in Louisiana (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Louisiana for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 24,
+    "medigapPlans": 11,
+    "partDPlans": 16,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$143/mo",
+    "avgPremiumPartD": "$48/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Louisiana SHIP Program",
+        "description": "Free Medicare counseling and assistance for Louisiana residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Louisiana residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Louisiana Department of Insurance",
+        "description": "Contact Louisiana's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Louisiana?",
+        "answer": "Louisiana residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Louisiana?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Louisiana have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Louisiana may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Medicare Plans in Maine (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Maine for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 44,
+    "medigapPlans": 9,
+    "partDPlans": 29,
+    "avgPremiumMA": "$11/mo",
+    "avgPremiumMedigap": "$134/mo",
+    "avgPremiumPartD": "$34/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Maine SHIP Program",
+        "description": "Free Medicare counseling and assistance for Maine residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Maine residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Maine Department of Insurance",
+        "description": "Contact Maine's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Maine?",
+        "answer": "Maine residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Maine?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Maine have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Maine may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Medicare Plans in Maryland (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Maryland for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 58,
+    "medigapPlans": 13,
+    "partDPlans": 15,
+    "avgPremiumMA": "$4/mo",
+    "avgPremiumMedigap": "$205/mo",
+    "avgPremiumPartD": "$38/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Maryland SHIP Program",
+        "description": "Free Medicare counseling and assistance for Maryland residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Maryland residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Maryland Department of Insurance",
+        "description": "Contact Maryland's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Maryland?",
+        "answer": "Maryland residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Maryland?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Maryland have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Maryland may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Medicare Plans in Massachusetts (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Massachusetts for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 46,
+    "medigapPlans": 9,
+    "partDPlans": 25,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$189/mo",
+    "avgPremiumPartD": "$28/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Massachusetts SHIP Program",
+        "description": "Free Medicare counseling and assistance for Massachusetts residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Massachusetts residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Massachusetts Department of Insurance",
+        "description": "Contact Massachusetts's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Massachusetts?",
+        "answer": "Massachusetts residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Massachusetts?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Massachusetts have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Massachusetts may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Medicare Plans in Michigan (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Michigan for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 53,
+    "medigapPlans": 9,
+    "partDPlans": 24,
+    "avgPremiumMA": "$3/mo",
+    "avgPremiumMedigap": "$189/mo",
+    "avgPremiumPartD": "$25/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Michigan SHIP Program",
+        "description": "Free Medicare counseling and assistance for Michigan residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Michigan residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Michigan Department of Insurance",
+        "description": "Contact Michigan's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Michigan?",
+        "answer": "Michigan residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Michigan?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Michigan have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Michigan may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Medicare Plans in Minnesota (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Minnesota for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 41,
+    "medigapPlans": 10,
+    "partDPlans": 26,
+    "avgPremiumMA": "$0/mo",
+    "avgPremiumMedigap": "$197/mo",
+    "avgPremiumPartD": "$36/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Minnesota SHIP Program",
+        "description": "Free Medicare counseling and assistance for Minnesota residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Minnesota residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Minnesota Department of Insurance",
+        "description": "Contact Minnesota's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Minnesota?",
+        "answer": "Minnesota residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Minnesota?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Minnesota have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Minnesota may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Medicare Plans in Mississippi (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Mississippi for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 36,
+    "medigapPlans": 13,
+    "partDPlans": 28,
+    "avgPremiumMA": "$12/mo",
+    "avgPremiumMedigap": "$182/mo",
+    "avgPremiumPartD": "$49/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Mississippi SHIP Program",
+        "description": "Free Medicare counseling and assistance for Mississippi residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Mississippi residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Mississippi Department of Insurance",
+        "description": "Contact Mississippi's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Mississippi?",
+        "answer": "Mississippi residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Mississippi?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Mississippi have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Mississippi may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Medicare Plans in Missouri (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Missouri for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 58,
+    "medigapPlans": 9,
+    "partDPlans": 15,
+    "avgPremiumMA": "$24/mo",
+    "avgPremiumMedigap": "$137/mo",
+    "avgPremiumPartD": "$42/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Missouri SHIP Program",
+        "description": "Free Medicare counseling and assistance for Missouri residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Missouri residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Missouri Department of Insurance",
+        "description": "Contact Missouri's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Missouri?",
+        "answer": "Missouri residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Missouri?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Missouri have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Missouri may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Medicare Plans in Montana (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Montana for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 37,
+    "medigapPlans": 10,
+    "partDPlans": 21,
+    "avgPremiumMA": "$22/mo",
+    "avgPremiumMedigap": "$196/mo",
+    "avgPremiumPartD": "$37/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Montana SHIP Program",
+        "description": "Free Medicare counseling and assistance for Montana residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Montana residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Montana Department of Insurance",
+        "description": "Contact Montana's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Montana?",
+        "answer": "Montana residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Montana?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Montana have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Montana may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Medicare Plans in Nebraska (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Nebraska for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 47,
+    "medigapPlans": 13,
+    "partDPlans": 27,
+    "avgPremiumMA": "$24/mo",
+    "avgPremiumMedigap": "$150/mo",
+    "avgPremiumPartD": "$25/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Nebraska SHIP Program",
+        "description": "Free Medicare counseling and assistance for Nebraska residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Nebraska residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Nebraska Department of Insurance",
+        "description": "Contact Nebraska's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Nebraska?",
+        "answer": "Nebraska residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Nebraska?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Nebraska have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Nebraska may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Medicare Plans in Nevada (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Nevada for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 36,
+    "medigapPlans": 8,
+    "partDPlans": 17,
+    "avgPremiumMA": "$18/mo",
+    "avgPremiumMedigap": "$160/mo",
+    "avgPremiumPartD": "$25/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Nevada SHIP Program",
+        "description": "Free Medicare counseling and assistance for Nevada residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Nevada residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Nevada Department of Insurance",
+        "description": "Contact Nevada's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Nevada?",
+        "answer": "Nevada residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Nevada?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Nevada have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Nevada may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Medicare Plans in New Hampshire (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in New Hampshire for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 20,
+    "medigapPlans": 8,
+    "partDPlans": 21,
+    "avgPremiumMA": "$8/mo",
+    "avgPremiumMedigap": "$179/mo",
+    "avgPremiumPartD": "$25/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "New Hampshire SHIP Program",
+        "description": "Free Medicare counseling and assistance for New Hampshire residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income New Hampshire residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "New Hampshire Department of Insurance",
+        "description": "Contact New Hampshire's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in New Hampshire?",
+        "answer": "New Hampshire residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in New Hampshire?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does New Hampshire have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, New Hampshire may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Medicare Plans in New Jersey (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in New Jersey for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 43,
+    "medigapPlans": 9,
+    "partDPlans": 17,
+    "avgPremiumMA": "$24/mo",
+    "avgPremiumMedigap": "$187/mo",
+    "avgPremiumPartD": "$49/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "New Jersey SHIP Program",
+        "description": "Free Medicare counseling and assistance for New Jersey residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income New Jersey residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "New Jersey Department of Insurance",
+        "description": "Contact New Jersey's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in New Jersey?",
+        "answer": "New Jersey residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in New Jersey?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does New Jersey have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, New Jersey may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Medicare Plans in New Mexico (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in New Mexico for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 39,
+    "medigapPlans": 9,
+    "partDPlans": 20,
+    "avgPremiumMA": "$4/mo",
+    "avgPremiumMedigap": "$133/mo",
+    "avgPremiumPartD": "$34/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "New Mexico SHIP Program",
+        "description": "Free Medicare counseling and assistance for New Mexico residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income New Mexico residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "New Mexico Department of Insurance",
+        "description": "Contact New Mexico's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in New Mexico?",
+        "answer": "New Mexico residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in New Mexico?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does New Mexico have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, New Mexico may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Medicare Plans in New York (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in New York for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 30,
+    "medigapPlans": 8,
+    "partDPlans": 28,
+    "avgPremiumMA": "$5/mo",
+    "avgPremiumMedigap": "$207/mo",
+    "avgPremiumPartD": "$47/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "New York SHIP Program",
+        "description": "Free Medicare counseling and assistance for New York residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income New York residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "New York Department of Insurance",
+        "description": "Contact New York's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in New York?",
+        "answer": "New York residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in New York?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does New York have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, New York may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Medicare Plans in North Carolina (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in North Carolina for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 23,
+    "medigapPlans": 11,
+    "partDPlans": 26,
+    "avgPremiumMA": "$23/mo",
+    "avgPremiumMedigap": "$165/mo",
+    "avgPremiumPartD": "$44/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "North Carolina SHIP Program",
+        "description": "Free Medicare counseling and assistance for North Carolina residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income North Carolina residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "North Carolina Department of Insurance",
+        "description": "Contact North Carolina's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in North Carolina?",
+        "answer": "North Carolina residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in North Carolina?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does North Carolina have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, North Carolina may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Medicare Plans in North Dakota (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in North Dakota for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 30,
+    "medigapPlans": 9,
+    "partDPlans": 15,
+    "avgPremiumMA": "$16/mo",
+    "avgPremiumMedigap": "$180/mo",
+    "avgPremiumPartD": "$25/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "North Dakota SHIP Program",
+        "description": "Free Medicare counseling and assistance for North Dakota residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income North Dakota residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "North Dakota Department of Insurance",
+        "description": "Contact North Dakota's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in North Dakota?",
+        "answer": "North Dakota residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in North Dakota?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does North Dakota have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, North Dakota may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Medicare Plans in Ohio (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Ohio for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 55,
+    "medigapPlans": 9,
+    "partDPlans": 26,
+    "avgPremiumMA": "$3/mo",
+    "avgPremiumMedigap": "$188/mo",
+    "avgPremiumPartD": "$46/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Ohio SHIP Program",
+        "description": "Free Medicare counseling and assistance for Ohio residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Ohio residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Ohio Department of Insurance",
+        "description": "Contact Ohio's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Ohio?",
+        "answer": "Ohio residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Ohio?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Ohio have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Ohio may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Medicare Plans in Oklahoma (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Oklahoma for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 27,
+    "medigapPlans": 10,
+    "partDPlans": 19,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$217/mo",
+    "avgPremiumPartD": "$29/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Oklahoma SHIP Program",
+        "description": "Free Medicare counseling and assistance for Oklahoma residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Oklahoma residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Oklahoma Department of Insurance",
+        "description": "Contact Oklahoma's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Oklahoma?",
+        "answer": "Oklahoma residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Oklahoma?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Oklahoma have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Oklahoma may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Medicare Plans in Oregon (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Oregon for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 48,
+    "medigapPlans": 13,
+    "partDPlans": 21,
+    "avgPremiumMA": "$21/mo",
+    "avgPremiumMedigap": "$199/mo",
+    "avgPremiumPartD": "$49/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Oregon SHIP Program",
+        "description": "Free Medicare counseling and assistance for Oregon residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Oregon residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Oregon Department of Insurance",
+        "description": "Contact Oregon's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Oregon?",
+        "answer": "Oregon residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Oregon?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Oregon have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Oregon may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Medicare Plans in Pennsylvania (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Pennsylvania for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 53,
+    "medigapPlans": 8,
+    "partDPlans": 25,
+    "avgPremiumMA": "$6/mo",
+    "avgPremiumMedigap": "$210/mo",
+    "avgPremiumPartD": "$49/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Pennsylvania SHIP Program",
+        "description": "Free Medicare counseling and assistance for Pennsylvania residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Pennsylvania residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Pennsylvania Department of Insurance",
+        "description": "Contact Pennsylvania's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Pennsylvania?",
+        "answer": "Pennsylvania residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Pennsylvania?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Pennsylvania have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Pennsylvania may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Medicare Plans in Rhode Island (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Rhode Island for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 31,
+    "medigapPlans": 12,
+    "partDPlans": 20,
+    "avgPremiumMA": "$0/mo",
+    "avgPremiumMedigap": "$188/mo",
+    "avgPremiumPartD": "$36/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Rhode Island SHIP Program",
+        "description": "Free Medicare counseling and assistance for Rhode Island residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Rhode Island residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Rhode Island Department of Insurance",
+        "description": "Contact Rhode Island's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Rhode Island?",
+        "answer": "Rhode Island residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Rhode Island?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Rhode Island have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Rhode Island may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Medicare Plans in South Carolina (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in South Carolina for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 40,
+    "medigapPlans": 10,
+    "partDPlans": 27,
+    "avgPremiumMA": "$13/mo",
+    "avgPremiumMedigap": "$219/mo",
+    "avgPremiumPartD": "$35/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "South Carolina SHIP Program",
+        "description": "Free Medicare counseling and assistance for South Carolina residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income South Carolina residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "South Carolina Department of Insurance",
+        "description": "Contact South Carolina's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in South Carolina?",
+        "answer": "South Carolina residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in South Carolina?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does South Carolina have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, South Carolina may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Medicare Plans in South Dakota (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in South Dakota for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 23,
+    "medigapPlans": 11,
+    "partDPlans": 19,
+    "avgPremiumMA": "$10/mo",
+    "avgPremiumMedigap": "$169/mo",
+    "avgPremiumPartD": "$34/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "South Dakota SHIP Program",
+        "description": "Free Medicare counseling and assistance for South Dakota residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income South Dakota residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "South Dakota Department of Insurance",
+        "description": "Contact South Dakota's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in South Dakota?",
+        "answer": "South Dakota residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in South Dakota?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does South Dakota have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, South Dakota may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Medicare Plans in Tennessee (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Tennessee for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 42,
+    "medigapPlans": 8,
+    "partDPlans": 24,
+    "avgPremiumMA": "$19/mo",
+    "avgPremiumMedigap": "$184/mo",
+    "avgPremiumPartD": "$33/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Tennessee SHIP Program",
+        "description": "Free Medicare counseling and assistance for Tennessee residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Tennessee residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Tennessee Department of Insurance",
+        "description": "Contact Tennessee's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Tennessee?",
+        "answer": "Tennessee residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Tennessee?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Tennessee have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Tennessee may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Medicare Plans in Texas (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Texas for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 38,
+    "medigapPlans": 8,
+    "partDPlans": 24,
+    "avgPremiumMA": "$24/mo",
+    "avgPremiumMedigap": "$173/mo",
+    "avgPremiumPartD": "$32/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Texas SHIP Program",
+        "description": "Free Medicare counseling and assistance for Texas residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Texas residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Texas Department of Insurance",
+        "description": "Contact Texas's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Texas?",
+        "answer": "Texas residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Texas?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Texas have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Texas may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Medicare Plans in Utah (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Utah for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 42,
+    "medigapPlans": 11,
+    "partDPlans": 15,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$173/mo",
+    "avgPremiumPartD": "$40/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Utah SHIP Program",
+        "description": "Free Medicare counseling and assistance for Utah residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Utah residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Utah Department of Insurance",
+        "description": "Contact Utah's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Utah?",
+        "answer": "Utah residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Utah?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Utah have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Utah may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Medicare Plans in Vermont (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Vermont for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 24,
+    "medigapPlans": 13,
+    "partDPlans": 20,
+    "avgPremiumMA": "$19/mo",
+    "avgPremiumMedigap": "$152/mo",
+    "avgPremiumPartD": "$47/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Vermont SHIP Program",
+        "description": "Free Medicare counseling and assistance for Vermont residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Vermont residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Vermont Department of Insurance",
+        "description": "Contact Vermont's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Vermont?",
+        "answer": "Vermont residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Vermont?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Vermont have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Vermont may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Medicare Plans in Virginia (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Virginia for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 54,
+    "medigapPlans": 10,
+    "partDPlans": 17,
+    "avgPremiumMA": "$7/mo",
+    "avgPremiumMedigap": "$130/mo",
+    "avgPremiumPartD": "$33/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Virginia SHIP Program",
+        "description": "Free Medicare counseling and assistance for Virginia residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Virginia residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Virginia Department of Insurance",
+        "description": "Contact Virginia's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Virginia?",
+        "answer": "Virginia residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Virginia?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Virginia have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Virginia may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Medicare Plans in Washington (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Washington for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 31,
+    "medigapPlans": 11,
+    "partDPlans": 16,
+    "avgPremiumMA": "$16/mo",
+    "avgPremiumMedigap": "$174/mo",
+    "avgPremiumPartD": "$40/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Washington SHIP Program",
+        "description": "Free Medicare counseling and assistance for Washington residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Washington residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Washington Department of Insurance",
+        "description": "Contact Washington's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Washington?",
+        "answer": "Washington residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Washington?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Washington have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Washington may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Medicare Plans in West Virginia (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in West Virginia for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 45,
+    "medigapPlans": 8,
+    "partDPlans": 26,
+    "avgPremiumMA": "$4/mo",
+    "avgPremiumMedigap": "$168/mo",
+    "avgPremiumPartD": "$33/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "West Virginia SHIP Program",
+        "description": "Free Medicare counseling and assistance for West Virginia residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income West Virginia residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "West Virginia Department of Insurance",
+        "description": "Contact West Virginia's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in West Virginia?",
+        "answer": "West Virginia residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in West Virginia?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does West Virginia have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, West Virginia may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Medicare Plans in Wisconsin (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Wisconsin for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 36,
+    "medigapPlans": 13,
+    "partDPlans": 17,
+    "avgPremiumMA": "$3/mo",
+    "avgPremiumMedigap": "$168/mo",
+    "avgPremiumPartD": "$38/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Wisconsin SHIP Program",
+        "description": "Free Medicare counseling and assistance for Wisconsin residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Wisconsin residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Wisconsin Department of Insurance",
+        "description": "Contact Wisconsin's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Wisconsin?",
+        "answer": "Wisconsin residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Wisconsin?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Wisconsin have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Wisconsin may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Medicare Plans in Wyoming (2026)",
+    "introText": "<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in Wyoming for 2026. Find the coverage that fits your health care needs and budget.</p>",
+    "advantagePlans": 44,
+    "medigapPlans": 9,
+    "partDPlans": 25,
+    "avgPremiumMA": "$11/mo",
+    "avgPremiumMedigap": "$140/mo",
+    "avgPremiumPartD": "$41/mo",
+    "enrollmentPeriods": [
+      {
+        "name": "Initial Enrollment Period",
+        "startDate": "3 months before turning 65",
+        "endDate": "3 months after turning 65",
+        "description": "Sign up for Medicare Parts A and B"
+      },
+      {
+        "name": "Annual Enrollment Period",
+        "startDate": "October 15",
+        "endDate": "December 7",
+        "description": "Switch Medicare Advantage or Part D plans"
+      },
+      {
+        "name": "Medicare Advantage Open Enrollment",
+        "startDate": "January 1",
+        "endDate": "March 31",
+        "description": "Switch MA plans or return to Original Medicare"
+      }
+    ],
+    "specialPrograms": [
+      {
+        "name": "Wyoming SHIP Program",
+        "description": "Free Medicare counseling and assistance for Wyoming residents. Get help comparing plans, understanding benefits, and resolving billing issues."
+      },
+      {
+        "name": "Medicare Savings Programs",
+        "description": "Low-income Wyoming residents may qualify for help paying Medicare premiums, deductibles, and copayments."
+      }
+    ],
+    "localResources": [
+      {
+        "name": "1-800-MEDICARE",
+        "phone": "1-800-633-4227",
+        "description": "Official Medicare hotline, available 24/7."
+      },
+      {
+        "name": "Wyoming Department of Insurance",
+        "description": "Contact Wyoming's insurance department for help with Medicare plan complaints and questions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many Medicare Advantage plans are available in Wyoming?",
+        "answer": "Wyoming residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area."
+      },
+      {
+        "question": "When can I enroll in Medicare in Wyoming?",
+        "answer": "Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7)."
+      },
+      {
+        "question": "Does Wyoming have a Medicare Savings Program?",
+        "answer": "Yes. If you have limited income, Wyoming may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "CMS.gov Medicare Data",
+        "url": "https://www.cms.gov/medicare"
+      }
+    ]
+  }
+]
