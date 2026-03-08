@@ -12,15 +12,41 @@
     <div class="logo-block">
       <div class="logo-icon">AI</div>
       <a href="index.html" class="logo-text" style="text-decoration:none;color:inherit;">
-        <span class="logo-title">AI Senior Benefits &amp; Care Finder</span>
+        <span class="logo-title">Senior Benefits Care Finder</span>
         <span class="logo-subtitle">Trust-first guide for seniors &amp; caregivers</span>
       </a>
     </div>
-    <nav class="header-actions">
-      <a href="index.html" class="phase-pill" style="text-decoration:none;">Review-Safe Build (Phase 1)</a>
-      <a href="chat.html" class="btn-outline">💬 Talk to the AI guide</a>
+    <div class="header-right">
+      <a href="chat.html" class="btn-ai-pill">Try our AI</a>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="chat.html" class="mobile-menu-link">💬 Talk to the AI guide</a>
     </nav>
   </header>
+  <script>
+    (function() {
+      var btn = document.getElementById('hamburgerBtn');
+      var menu = document.getElementById('mobileMenu');
+      btn.addEventListener('click', function() {
+        var open = menu.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
 
   <main class="main">
     <section class="hero hero-senior">
