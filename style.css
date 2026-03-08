@@ -43,10 +43,16 @@ body.chat-body {
   border-bottom: 1px solid var(--border-subtle);
 }
 
+.site-header {
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
 .logo-block {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  min-width: 0;
 }
 
 .logo-icon {
@@ -59,8 +65,11 @@ body.chat-body {
   background: radial-gradient(circle at top left, #1e293b, #020617);
   border: 2px solid var(--accent-border);
   box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.85);
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
+  color: var(--accent);
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -88,8 +97,10 @@ body.chat-body {
 
 .header-right {
   display: flex;
-  align-items: center;
-  gap: 0.6rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+  flex-shrink: 0;
 }
 
 .btn-ai-pill {
@@ -561,7 +572,6 @@ body.chat-body {
 /* Responsive */
 
 @media (max-width: 640px) {
-  .site-header,
   .chat-header {
     flex-wrap: wrap;
   }
