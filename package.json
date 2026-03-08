@@ -5,6 +5,12 @@
   "scripts": {
     "generate": "node engines/generator.js",
     "generate:dry-run": "node engines/generator.js --dry-run",
-    "generate:engine": "node engines/generator.js --engine"
+    "generate:engine": "node engines/generator.js --engine",
+    "generate:batch:1": "node engines/generator.js --batch 1",
+    "generate:batch:2": "node engines/generator.js --batch 2",
+    "generate:batch:3": "node engines/generator.js --batch 3",
+    "generate:batch:1:dry": "node engines/generator.js --batch 1 --dry-run",
+    "generate:batch:2:dry": "node engines/generator.js --batch 2 --dry-run",
+    "generate:batch:3:dry": "node engines/generator.js --batch 3 --dry-run"
   }
 }
