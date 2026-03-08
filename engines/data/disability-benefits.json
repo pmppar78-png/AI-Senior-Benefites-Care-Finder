@@ -1,0 +1,932 @@
+[
+  {
+    "slug": "alzheimers-disease",
+    "condition": "Alzheimer's Disease",
+    "h1": "Benefits for Seniors with Alzheimer's Disease (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Alzheimer's Disease. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Alzheimer's Disease affects approximately 6.7 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "6.7 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Alzheimer's Disease who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Alzheimer's Disease. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Alzheimer's Disease, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Alzheimer's Disease may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Alzheimer's Disease?",
+        "answer": "Yes, if Alzheimer's Disease prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Alzheimer's Disease?",
+        "answer": "Medicare covers medically necessary treatments for Alzheimer's Disease, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "parkinsons-disease",
+    "condition": "Parkinson's Disease",
+    "h1": "Benefits for Seniors with Parkinson's Disease (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Parkinson's Disease. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Parkinson's Disease affects approximately 1 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "1 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Parkinson's Disease who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Parkinson's Disease. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Parkinson's Disease, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Parkinson's Disease may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Parkinson's Disease?",
+        "answer": "Yes, if Parkinson's Disease prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Parkinson's Disease?",
+        "answer": "Medicare covers medically necessary treatments for Parkinson's Disease, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "copd",
+    "condition": "COPD (Chronic Obstructive Pulmonary Disease)",
+    "h1": "Benefits for Seniors with COPD (Chronic Obstructive Pulmonary Disease) (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with COPD (Chronic Obstructive Pulmonary Disease). Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>COPD (Chronic Obstructive Pulmonary Disease) affects approximately 16 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "16 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with COPD (Chronic Obstructive Pulmonary Disease) who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with COPD (Chronic Obstructive Pulmonary Disease). Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for COPD (Chronic Obstructive Pulmonary Disease), including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with COPD (Chronic Obstructive Pulmonary Disease) may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for COPD (Chronic Obstructive Pulmonary Disease)?",
+        "answer": "Yes, if COPD (Chronic Obstructive Pulmonary Disease) prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for COPD (Chronic Obstructive Pulmonary Disease)?",
+        "answer": "Medicare covers medically necessary treatments for COPD (Chronic Obstructive Pulmonary Disease), including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "diabetes",
+    "condition": "Diabetes",
+    "h1": "Benefits for Seniors with Diabetes (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Diabetes. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Diabetes affects approximately 37 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "37 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Diabetes who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Diabetes. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Diabetes, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Diabetes may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Diabetes?",
+        "answer": "Yes, if Diabetes prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Diabetes?",
+        "answer": "Medicare covers medically necessary treatments for Diabetes, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "heart-disease",
+    "condition": "Heart Disease",
+    "h1": "Benefits for Seniors with Heart Disease (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Heart Disease. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Heart Disease affects approximately 30 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "30 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Heart Disease who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Heart Disease. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Heart Disease, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Heart Disease may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Heart Disease?",
+        "answer": "Yes, if Heart Disease prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Heart Disease?",
+        "answer": "Medicare covers medically necessary treatments for Heart Disease, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "arthritis",
+    "condition": "Arthritis",
+    "h1": "Benefits for Seniors with Arthritis (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Arthritis. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Arthritis affects approximately 54 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "54 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Arthritis who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Arthritis. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Arthritis, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Arthritis may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Arthritis?",
+        "answer": "Yes, if Arthritis prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Arthritis?",
+        "answer": "Medicare covers medically necessary treatments for Arthritis, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "stroke",
+    "condition": "Stroke",
+    "h1": "Benefits for Seniors with Stroke (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Stroke. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Stroke affects approximately 7.6 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "7.6 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Stroke who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Stroke. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Stroke, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Stroke may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Stroke?",
+        "answer": "Yes, if Stroke prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Stroke?",
+        "answer": "Medicare covers medically necessary treatments for Stroke, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "cancer",
+    "condition": "Cancer",
+    "h1": "Benefits for Seniors with Cancer (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Cancer. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Cancer affects approximately 18 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "18 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Cancer who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Cancer. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Cancer, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Cancer may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Cancer?",
+        "answer": "Yes, if Cancer prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Cancer?",
+        "answer": "Medicare covers medically necessary treatments for Cancer, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "vision-loss",
+    "condition": "Vision Loss & Blindness",
+    "h1": "Benefits for Seniors with Vision Loss & Blindness (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Vision Loss & Blindness. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Vision Loss & Blindness affects approximately 12 million Americans 40+. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "12 million Americans 40+",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Vision Loss & Blindness who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Vision Loss & Blindness. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Vision Loss & Blindness, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Vision Loss & Blindness may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Vision Loss & Blindness?",
+        "answer": "Yes, if Vision Loss & Blindness prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Vision Loss & Blindness?",
+        "answer": "Medicare covers medically necessary treatments for Vision Loss & Blindness, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "hearing-loss",
+    "condition": "Hearing Loss",
+    "h1": "Benefits for Seniors with Hearing Loss (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Hearing Loss. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Hearing Loss affects approximately 48 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "48 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Hearing Loss who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Hearing Loss. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Hearing Loss, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Hearing Loss may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Hearing Loss?",
+        "answer": "Yes, if Hearing Loss prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Hearing Loss?",
+        "answer": "Medicare covers medically necessary treatments for Hearing Loss, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "osteoporosis",
+    "condition": "Osteoporosis",
+    "h1": "Benefits for Seniors with Osteoporosis (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Osteoporosis. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Osteoporosis affects approximately 10 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "10 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Osteoporosis who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Osteoporosis. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Osteoporosis, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Osteoporosis may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Osteoporosis?",
+        "answer": "Yes, if Osteoporosis prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Osteoporosis?",
+        "answer": "Medicare covers medically necessary treatments for Osteoporosis, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "depression",
+    "condition": "Depression & Anxiety",
+    "h1": "Benefits for Seniors with Depression & Anxiety (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Depression & Anxiety. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Depression & Anxiety affects approximately 7 million seniors. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "7 million seniors",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Depression & Anxiety who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Depression & Anxiety. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Depression & Anxiety, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Depression & Anxiety may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Depression & Anxiety?",
+        "answer": "Yes, if Depression & Anxiety prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Depression & Anxiety?",
+        "answer": "Medicare covers medically necessary treatments for Depression & Anxiety, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "kidney-disease",
+    "condition": "Chronic Kidney Disease",
+    "h1": "Benefits for Seniors with Chronic Kidney Disease (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Chronic Kidney Disease. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Chronic Kidney Disease affects approximately 37 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "37 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Chronic Kidney Disease who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Chronic Kidney Disease. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Chronic Kidney Disease, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Chronic Kidney Disease may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Chronic Kidney Disease?",
+        "answer": "Yes, if Chronic Kidney Disease prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Chronic Kidney Disease?",
+        "answer": "Medicare covers medically necessary treatments for Chronic Kidney Disease, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "dementia",
+    "condition": "Dementia (Non-Alzheimer's)",
+    "h1": "Benefits for Seniors with Dementia (Non-Alzheimer's) (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Dementia (Non-Alzheimer's). Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Dementia (Non-Alzheimer's) affects approximately 5 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "5 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Dementia (Non-Alzheimer's) who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Dementia (Non-Alzheimer's). Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Dementia (Non-Alzheimer's), including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Dementia (Non-Alzheimer's) may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Dementia (Non-Alzheimer's)?",
+        "answer": "Yes, if Dementia (Non-Alzheimer's) prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Dementia (Non-Alzheimer's)?",
+        "answer": "Medicare covers medically necessary treatments for Dementia (Non-Alzheimer's), including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  },
+  {
+    "slug": "multiple-sclerosis",
+    "condition": "Multiple Sclerosis",
+    "h1": "Benefits for Seniors with Multiple Sclerosis (2026)",
+    "introText": "<p>Find benefits, financial assistance, and support programs for seniors living with Multiple Sclerosis. Learn about federal programs, Medicaid and Medicare coverage, and caregiving resources.</p>",
+    "overview": "<p>Multiple Sclerosis affects approximately 1 million Americans. Seniors with this condition may qualify for additional benefits and support services at the federal and state levels.</p>",
+    "prevalence": "1 million Americans",
+    "federalPrograms": [
+      {
+        "name": "SSDI",
+        "description": "Social Security Disability Insurance for people with Multiple Sclerosis who can no longer work",
+        "eligibility": "Work credits + medical evidence",
+        "benefits": "Monthly cash benefit",
+        "url": "https://www.ssa.gov/disability"
+      },
+      {
+        "name": "SSI",
+        "description": "Supplemental Security Income for low-income individuals with disabilities",
+        "eligibility": "Limited income and resources",
+        "benefits": "Up to $943/month",
+        "url": "https://www.ssa.gov/ssi"
+      }
+    ],
+    "medicaidCoverage": "<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with Multiple Sclerosis. Coverage varies by state.</p>",
+    "medicareCoverage": "<p>Medicare covers medically necessary treatments for Multiple Sclerosis, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>",
+    "vaBenefits": "<p>Veterans with Multiple Sclerosis may qualify for VA disability compensation, health care, Aid & Attendance, and other benefits.</p>",
+    "caregiverResources": [
+      {
+        "name": "National Family Caregiver Support Program",
+        "description": "Information, respite, and support for family caregivers",
+        "url": "https://acl.gov/programs/support-caregivers"
+      }
+    ],
+    "supportOrganizations": [
+      {
+        "name": "AARP",
+        "description": "Resources and advocacy for seniors",
+        "phone": "1-888-687-2277",
+        "url": "https://www.aarp.org"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get disability benefits for Multiple Sclerosis?",
+        "answer": "Yes, if Multiple Sclerosis prevents you from working, you may qualify for SSDI or SSI. You'll need medical documentation of your condition."
+      },
+      {
+        "question": "Does Medicare cover treatment for Multiple Sclerosis?",
+        "answer": "Medicare covers medically necessary treatments for Multiple Sclerosis, including doctor visits, hospital care, and prescription medications through Part D."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Social Security Administration",
+        "url": "https://www.ssa.gov"
+      },
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      }
+    ]
+  }
+]

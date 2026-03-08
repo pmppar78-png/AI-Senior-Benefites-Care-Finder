@@ -312,9 +312,9 @@ class PageGenerator {
       engineName: eng.name,
       schemaType: eng.schemaType || 'Article',
 
-      // SEO — built from patterns
-      pageTitle: this._interpolatePattern(eng.seoTitle, entry),
-      metaDescription: this._interpolatePattern(eng.metaDescription, entry),
+      // SEO — built from patterns (merge currentYear + entry for full interpolation)
+      pageTitle: this._interpolatePattern(eng.seoTitle, { ...entry, currentYear }),
+      metaDescription: this._interpolatePattern(eng.metaDescription, { ...entry, currentYear }),
       canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(eng.urlPattern, entry)}`,
 
       // Location data

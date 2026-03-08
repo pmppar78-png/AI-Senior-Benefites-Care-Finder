@@ -1,0 +1,1627 @@
+[
+  {
+    "slug": "medicare-advantage-vs-medigap",
+    "h1": "Medicare Advantage vs. Medigap",
+    "title": "Medicare Advantage vs. Medigap",
+    "metaDescription": "Compare Medicare Advantage vs. Medigap. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Medicare Advantage and Medigap is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Medicare Advantage",
+      "description": "All-in-one plan with network restrictions"
+    },
+    "optionB": {
+      "name": "Medigap",
+      "description": "Supplement to Original Medicare with more flexibility"
+    },
+    "comparisonRows": [
+      {
+        "category": "Monthly Premium",
+        "optionAValue": "$0–$50 typical",
+        "optionBValue": "$100–$300 typical"
+      },
+      {
+        "category": "Provider Network",
+        "optionAValue": "Network required (HMO/PPO)",
+        "optionBValue": "Any doctor accepting Medicare"
+      },
+      {
+        "category": "Out-of-Pocket Max",
+        "optionAValue": "Yes, capped annually",
+        "optionBValue": "No annual cap (but lower cost-sharing)"
+      },
+      {
+        "category": "Drug Coverage",
+        "optionAValue": "Usually included",
+        "optionBValue": "Requires separate Part D plan"
+      },
+      {
+        "category": "Extra Benefits",
+        "optionAValue": "Often includes dental, vision, hearing",
+        "optionBValue": "No extra benefits"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Medicare Advantage may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Medigap may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Medicare Advantage and Medigap serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Medicare Advantage and Medigap?",
+        "answer": "Medicare Advantage is all-in-one plan with network restrictions, while Medigap is supplement to original medicare with more flexibility."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "assisted-living-vs-nursing-home",
+    "h1": "Assisted Living vs. Nursing Home",
+    "title": "Assisted Living vs. Nursing Home",
+    "metaDescription": "Compare Assisted Living vs. Nursing Home. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Assisted Living and Nursing Home is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Assisted Living",
+      "description": "Residential community with personal care support"
+    },
+    "optionB": {
+      "name": "Nursing Home",
+      "description": "24/7 skilled nursing care facility"
+    },
+    "comparisonRows": [
+      {
+        "category": "Average Cost",
+        "optionAValue": "$4,500/month",
+        "optionBValue": "$8,800/month"
+      },
+      {
+        "category": "Care Level",
+        "optionAValue": "Help with daily activities",
+        "optionBValue": "Skilled medical care"
+      },
+      {
+        "category": "Independence",
+        "optionAValue": "More independence, apartment-style",
+        "optionBValue": "Less independence, medical focus"
+      },
+      {
+        "category": "Medicaid Coverage",
+        "optionAValue": "Limited, through waivers",
+        "optionBValue": "Generally covered"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Assisted Living may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Nursing Home may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Assisted Living and Nursing Home serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Assisted Living and Nursing Home?",
+        "answer": "Assisted Living is residential community with personal care support, while Nursing Home is 24/7 skilled nursing care facility."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "home-care-vs-assisted-living",
+    "h1": "Home Care vs. Assisted Living",
+    "title": "Home Care vs. Assisted Living",
+    "metaDescription": "Compare Home Care vs. Assisted Living. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Home Care and Assisted Living is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Home Care",
+      "description": "Care provided in your own home"
+    },
+    "optionB": {
+      "name": "Assisted Living",
+      "description": "Community-based residential care"
+    },
+    "comparisonRows": [
+      {
+        "category": "Average Cost",
+        "optionAValue": "$5,000–$6,000/month (full-time)",
+        "optionBValue": "$4,500/month"
+      },
+      {
+        "category": "Setting",
+        "optionAValue": "Your own home",
+        "optionBValue": "Community facility"
+      },
+      {
+        "category": "Social",
+        "optionAValue": "May feel isolated",
+        "optionBValue": "Built-in social activities"
+      },
+      {
+        "category": "Flexibility",
+        "optionAValue": "Highly flexible scheduling",
+        "optionBValue": "Structured daily routine"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Home Care may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Assisted Living may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Home Care and Assisted Living serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Home Care and Assisted Living?",
+        "answer": "Home Care is care provided in your own home, while Assisted Living is community-based residential care."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "medicare-vs-medicaid",
+    "h1": "Medicare vs. Medicaid",
+    "title": "Medicare vs. Medicaid",
+    "metaDescription": "Compare Medicare vs. Medicaid. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Medicare and Medicaid is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Medicare",
+      "description": "Federal program based on age/disability"
+    },
+    "optionB": {
+      "name": "Medicaid",
+      "description": "Federal-state program based on income"
+    },
+    "comparisonRows": [
+      {
+        "category": "Eligibility",
+        "optionAValue": "Age 65+ or disability",
+        "optionBValue": "Low income"
+      },
+      {
+        "category": "Funding",
+        "optionAValue": "Federal",
+        "optionBValue": "Federal + State"
+      },
+      {
+        "category": "Cost to Enrollee",
+        "optionAValue": "Premiums + cost-sharing",
+        "optionBValue": "Little to no cost"
+      },
+      {
+        "category": "Long-Term Care",
+        "optionAValue": "Limited coverage",
+        "optionBValue": "Extensive coverage"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Medicare may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Medicaid may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Medicare and Medicaid serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Medicare and Medicaid?",
+        "answer": "Medicare is federal program based on age/disability, while Medicaid is federal-state program based on income."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "traditional-ltc-vs-hybrid",
+    "h1": "Traditional LTC Insurance vs. Hybrid Policies",
+    "title": "Traditional LTC Insurance vs. Hybrid Policies",
+    "metaDescription": "Compare Traditional LTC Insurance vs. Hybrid LTC Policy. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Traditional LTC Insurance and Hybrid LTC Policy is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Traditional LTC Insurance",
+      "description": "Standalone long-term care insurance"
+    },
+    "optionB": {
+      "name": "Hybrid LTC Policy",
+      "description": "Life insurance or annuity with LTC benefits"
+    },
+    "comparisonRows": [
+      {
+        "category": "Premiums",
+        "optionAValue": "May increase over time",
+        "optionBValue": "Generally fixed"
+      },
+      {
+        "category": "Death Benefit",
+        "optionAValue": "Use it or lose it",
+        "optionBValue": "Beneficiaries receive unused portion"
+      },
+      {
+        "category": "Cost",
+        "optionAValue": "Lower initial premium",
+        "optionBValue": "Higher upfront or lump sum"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Traditional LTC Insurance may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Hybrid LTC Policy may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Traditional LTC Insurance and Hybrid LTC Policy serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Traditional LTC Insurance and Hybrid LTC Policy?",
+        "answer": "Traditional LTC Insurance is standalone long-term care insurance, while Hybrid LTC Policy is life insurance or annuity with ltc benefits."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "ssdi-vs-ssi",
+    "h1": "SSDI vs. SSI Benefits",
+    "title": "SSDI vs. SSI Benefits",
+    "metaDescription": "Compare SSDI vs. SSI. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between SSDI and SSI is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "SSDI",
+      "description": "Based on work history and payroll taxes"
+    },
+    "optionB": {
+      "name": "SSI",
+      "description": "Based on financial need"
+    },
+    "comparisonRows": [
+      {
+        "category": "Eligibility",
+        "optionAValue": "Work credits required",
+        "optionBValue": "Income/asset limits"
+      },
+      {
+        "category": "Average Benefit",
+        "optionAValue": "$1,500/month",
+        "optionBValue": "$943/month"
+      },
+      {
+        "category": "Health Coverage",
+        "optionAValue": "Medicare (after 24 months)",
+        "optionBValue": "Medicaid (immediately)"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "SSDI may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "SSI may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both SSDI and SSI serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between SSDI and SSI?",
+        "answer": "SSDI is based on work history and payroll taxes, while SSI is based on financial need."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "hmo-vs-ppo-medicare",
+    "h1": "Medicare HMO vs. PPO Plans",
+    "title": "Medicare HMO vs. PPO Plans",
+    "metaDescription": "Compare HMO Plan vs. PPO Plan. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between HMO Plan and PPO Plan is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "HMO Plan",
+      "description": "Requires network doctors and referrals"
+    },
+    "optionB": {
+      "name": "PPO Plan",
+      "description": "More flexibility, higher cost"
+    },
+    "comparisonRows": [
+      {
+        "category": "Out-of-Network",
+        "optionAValue": "Not covered (except emergencies)",
+        "optionBValue": "Covered at higher cost"
+      },
+      {
+        "category": "Referrals",
+        "optionAValue": "Required for specialists",
+        "optionBValue": "Not required"
+      },
+      {
+        "category": "Premium",
+        "optionAValue": "Usually lower",
+        "optionBValue": "Usually higher"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "HMO Plan may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "PPO Plan may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both HMO Plan and PPO Plan serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between HMO Plan and PPO Plan?",
+        "answer": "HMO Plan is requires network doctors and referrals, while PPO Plan is more flexibility, higher cost."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "part-d-vs-advantage-drug",
+    "h1": "Standalone Part D vs. MA Drug Coverage",
+    "title": "Standalone Part D vs. MA Drug Coverage",
+    "metaDescription": "Compare Standalone Part D vs. MA with Drug Coverage. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Standalone Part D and MA with Drug Coverage is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Standalone Part D",
+      "description": "Separate prescription drug plan"
+    },
+    "optionB": {
+      "name": "MA with Drug Coverage",
+      "description": "Bundled in Medicare Advantage"
+    },
+    "comparisonRows": [
+      {
+        "category": "Works With",
+        "optionAValue": "Original Medicare + Medigap",
+        "optionBValue": "Medicare Advantage only"
+      },
+      {
+        "category": "Formulary",
+        "optionAValue": "Varies by plan",
+        "optionBValue": "Varies by plan"
+      },
+      {
+        "category": "Premium",
+        "optionAValue": "$15–$80/month",
+        "optionBValue": "Often included in $0 MA premium"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Standalone Part D may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "MA with Drug Coverage may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Standalone Part D and MA with Drug Coverage serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Standalone Part D and MA with Drug Coverage?",
+        "answer": "Standalone Part D is separate prescription drug plan, while MA with Drug Coverage is bundled in medicare advantage."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "va-care-vs-medicare",
+    "h1": "VA Health Care vs. Medicare",
+    "title": "VA Health Care vs. Medicare",
+    "metaDescription": "Compare VA Health Care vs. Medicare. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between VA Health Care and Medicare is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "VA Health Care",
+      "description": "Comprehensive VA system care"
+    },
+    "optionB": {
+      "name": "Medicare",
+      "description": "Universal senior health insurance"
+    },
+    "comparisonRows": [
+      {
+        "category": "Eligibility",
+        "optionAValue": "Military service required",
+        "optionBValue": "Age 65+ or disability"
+      },
+      {
+        "category": "Cost",
+        "optionAValue": "Low or no cost for many",
+        "optionBValue": "Premiums + cost-sharing"
+      },
+      {
+        "category": "Providers",
+        "optionAValue": "VA facilities primarily",
+        "optionBValue": "Any Medicare-accepting provider"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "VA Health Care may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Medicare may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both VA Health Care and Medicare serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between VA Health Care and Medicare?",
+        "answer": "VA Health Care is comprehensive va system care, while Medicare is universal senior health insurance."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "reverse-mortgage-vs-heloc",
+    "h1": "Reverse Mortgage vs. HELOC for Seniors",
+    "title": "Reverse Mortgage vs. HELOC for Seniors",
+    "metaDescription": "Compare Reverse Mortgage (HECM) vs. HELOC. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Reverse Mortgage (HECM) and HELOC is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Reverse Mortgage (HECM)",
+      "description": "Borrow against home equity, no payments required"
+    },
+    "optionB": {
+      "name": "HELOC",
+      "description": "Home equity line of credit with monthly payments"
+    },
+    "comparisonRows": [
+      {
+        "category": "Monthly Payments",
+        "optionAValue": "None required",
+        "optionBValue": "Monthly payments required"
+      },
+      {
+        "category": "Age Requirement",
+        "optionAValue": "62+",
+        "optionBValue": "None"
+      },
+      {
+        "category": "Interest",
+        "optionAValue": "Accrues over time",
+        "optionBValue": "Paid monthly"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Reverse Mortgage (HECM) may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "HELOC may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Reverse Mortgage (HECM) and HELOC serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Reverse Mortgage (HECM) and HELOC?",
+        "answer": "Reverse Mortgage (HECM) is borrow against home equity, no payments required, while HELOC is home equity line of credit with monthly payments."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "in-home-care-vs-adult-day-care",
+    "h1": "In-Home Care vs. Adult Day Care",
+    "title": "In-Home Care vs. Adult Day Care",
+    "metaDescription": "Compare In-Home Care vs. Adult Day Care. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between In-Home Care and Adult Day Care is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "In-Home Care",
+      "description": "One-on-one care at home"
+    },
+    "optionB": {
+      "name": "Adult Day Care",
+      "description": "Group setting during daytime hours"
+    },
+    "comparisonRows": [
+      {
+        "category": "Cost",
+        "optionAValue": "$25–$40/hour",
+        "optionBValue": "$80–$150/day"
+      },
+      {
+        "category": "Hours",
+        "optionAValue": "Flexible, up to 24/7",
+        "optionBValue": "Daytime hours only"
+      },
+      {
+        "category": "Socialization",
+        "optionAValue": "Limited",
+        "optionBValue": "Group activities, peers"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "In-Home Care may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Adult Day Care may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both In-Home Care and Adult Day Care serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between In-Home Care and Adult Day Care?",
+        "answer": "In-Home Care is one-on-one care at home, while Adult Day Care is group setting during daytime hours."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "medicaid-vs-private-pay-nursing",
+    "h1": "Medicaid vs. Private Pay Nursing Home",
+    "title": "Medicaid vs. Private Pay Nursing Home",
+    "metaDescription": "Compare Medicaid vs. Private Pay. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Medicaid and Private Pay is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Medicaid",
+      "description": "Government-funded nursing home care"
+    },
+    "optionB": {
+      "name": "Private Pay",
+      "description": "Self-funded nursing home care"
+    },
+    "comparisonRows": [
+      {
+        "category": "Cost to Resident",
+        "optionAValue": "Little to none",
+        "optionBValue": "$8,000–$12,000/month"
+      },
+      {
+        "category": "Facility Choice",
+        "optionAValue": "Limited to accepting facilities",
+        "optionBValue": "Any facility"
+      },
+      {
+        "category": "Room Type",
+        "optionAValue": "Often shared room",
+        "optionBValue": "Private room available"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Medicaid may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Private Pay may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Medicaid and Private Pay serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Medicaid and Private Pay?",
+        "answer": "Medicaid is government-funded nursing home care, while Private Pay is self-funded nursing home care."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "snap-vs-senior-food-programs",
+    "h1": "SNAP vs. Senior Food Programs",
+    "title": "SNAP vs. Senior Food Programs",
+    "metaDescription": "Compare SNAP Benefits vs. Senior Food Programs. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between SNAP Benefits and Senior Food Programs is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "SNAP Benefits",
+      "description": "Monthly food assistance on EBT card"
+    },
+    "optionB": {
+      "name": "Senior Food Programs",
+      "description": "Meals on Wheels, congregate meals, food banks"
+    },
+    "comparisonRows": [
+      {
+        "category": "Format",
+        "optionAValue": "Monthly EBT card",
+        "optionBValue": "Prepared meals or food boxes"
+      },
+      {
+        "category": "Choice",
+        "optionAValue": "Choose your own food",
+        "optionBValue": "Set menu or selections"
+      },
+      {
+        "category": "Application",
+        "optionAValue": "Income verification required",
+        "optionBValue": "Often no income check"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "SNAP Benefits may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Senior Food Programs may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both SNAP Benefits and Senior Food Programs serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between SNAP Benefits and Senior Food Programs?",
+        "answer": "SNAP Benefits is monthly food assistance on ebt card, while Senior Food Programs is meals on wheels, congregate meals, food banks."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "power-of-attorney-vs-guardianship",
+    "h1": "Power of Attorney vs. Guardianship",
+    "title": "Power of Attorney vs. Guardianship",
+    "metaDescription": "Compare Power of Attorney vs. Guardianship. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Power of Attorney and Guardianship is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Power of Attorney",
+      "description": "Voluntary delegation of authority"
+    },
+    "optionB": {
+      "name": "Guardianship",
+      "description": "Court-appointed decision maker"
+    },
+    "comparisonRows": [
+      {
+        "category": "How Established",
+        "optionAValue": "Signed document while competent",
+        "optionBValue": "Court proceeding"
+      },
+      {
+        "category": "Cost",
+        "optionAValue": "$100–$500",
+        "optionBValue": "$2,000–$10,000+"
+      },
+      {
+        "category": "Revocability",
+        "optionAValue": "Easily revoked if competent",
+        "optionBValue": "Requires court approval"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Power of Attorney may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Guardianship may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Power of Attorney and Guardianship serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Power of Attorney and Guardianship?",
+        "answer": "Power of Attorney is voluntary delegation of authority, while Guardianship is court-appointed decision maker."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "term-life-vs-whole-life-seniors",
+    "h1": "Term Life vs. Whole Life Insurance for Seniors",
+    "title": "Term Life vs. Whole Life Insurance for Seniors",
+    "metaDescription": "Compare Term Life vs. Whole Life. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Term Life and Whole Life is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Term Life",
+      "description": "Coverage for a specific period"
+    },
+    "optionB": {
+      "name": "Whole Life",
+      "description": "Permanent coverage with cash value"
+    },
+    "comparisonRows": [
+      {
+        "category": "Duration",
+        "optionAValue": "10, 20, or 30 years",
+        "optionBValue": "Lifetime"
+      },
+      {
+        "category": "Premium",
+        "optionAValue": "Lower",
+        "optionBValue": "Higher"
+      },
+      {
+        "category": "Cash Value",
+        "optionAValue": "None",
+        "optionBValue": "Builds over time"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Term Life may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Whole Life may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Term Life and Whole Life serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Term Life and Whole Life?",
+        "answer": "Term Life is coverage for a specific period, while Whole Life is permanent coverage with cash value."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "memory-care-vs-assisted-living",
+    "h1": "Memory Care vs. Assisted Living",
+    "title": "Memory Care vs. Assisted Living",
+    "metaDescription": "Compare Memory Care vs. Assisted Living. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Memory Care and Assisted Living is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Memory Care",
+      "description": "Specialized dementia/Alzheimer's care"
+    },
+    "optionB": {
+      "name": "Assisted Living",
+      "description": "General residential care"
+    },
+    "comparisonRows": [
+      {
+        "category": "Average Cost",
+        "optionAValue": "$6,000–$7,000/month",
+        "optionBValue": "$4,500/month"
+      },
+      {
+        "category": "Security",
+        "optionAValue": "Secured environment",
+        "optionBValue": "Open environment"
+      },
+      {
+        "category": "Staff Training",
+        "optionAValue": "Dementia-specific training",
+        "optionBValue": "General care training"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Memory Care may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Assisted Living may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Memory Care and Assisted Living serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Memory Care and Assisted Living?",
+        "answer": "Memory Care is specialized dementia/alzheimer's care, while Assisted Living is general residential care."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "hospice-vs-palliative-care",
+    "h1": "Hospice vs. Palliative Care",
+    "title": "Hospice vs. Palliative Care",
+    "metaDescription": "Compare Hospice vs. Palliative Care. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Hospice and Palliative Care is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Hospice",
+      "description": "End-of-life comfort care"
+    },
+    "optionB": {
+      "name": "Palliative Care",
+      "description": "Symptom management at any stage"
+    },
+    "comparisonRows": [
+      {
+        "category": "Prognosis",
+        "optionAValue": "6 months or less",
+        "optionBValue": "Any stage of illness"
+      },
+      {
+        "category": "Curative Treatment",
+        "optionAValue": "Discontinued",
+        "optionBValue": "May continue"
+      },
+      {
+        "category": "Medicare Coverage",
+        "optionAValue": "Full coverage under Part A",
+        "optionBValue": "Covered as regular medical care"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Hospice may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Palliative Care may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Hospice and Palliative Care serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Hospice and Palliative Care?",
+        "answer": "Hospice is end-of-life comfort care, while Palliative Care is symptom management at any stage."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "medicare-supplement-plan-g-vs-n",
+    "h1": "Medigap Plan G vs. Plan N",
+    "title": "Medigap Plan G vs. Plan N",
+    "metaDescription": "Compare Plan G vs. Plan N. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Plan G and Plan N is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Plan G",
+      "description": "Most comprehensive Medigap plan"
+    },
+    "optionB": {
+      "name": "Plan N",
+      "description": "Lower premium with small copays"
+    },
+    "comparisonRows": [
+      {
+        "category": "Premium",
+        "optionAValue": "$150–$250/month",
+        "optionBValue": "$80–$160/month"
+      },
+      {
+        "category": "Part B Copay",
+        "optionAValue": "$0",
+        "optionBValue": "Up to $20/visit"
+      },
+      {
+        "category": "Part B Excess",
+        "optionAValue": "Covered",
+        "optionBValue": "Not covered"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Plan G may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Plan N may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Plan G and Plan N serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Plan G and Plan N?",
+        "answer": "Plan G is most comprehensive medigap plan, while Plan N is lower premium with small copays."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "ccrc-vs-assisted-living",
+    "h1": "CCRC vs. Standalone Assisted Living",
+    "title": "CCRC vs. Standalone Assisted Living",
+    "metaDescription": "Compare CCRC (Continuing Care) vs. Standalone Assisted Living. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between CCRC (Continuing Care) and Standalone Assisted Living is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "CCRC (Continuing Care)",
+      "description": "Campus with all levels of care"
+    },
+    "optionB": {
+      "name": "Standalone Assisted Living",
+      "description": "Single-level care community"
+    },
+    "comparisonRows": [
+      {
+        "category": "Entrance Fee",
+        "optionAValue": "$100,000–$500,000",
+        "optionBValue": "None typically"
+      },
+      {
+        "category": "Monthly Fee",
+        "optionAValue": "$3,000–$5,000",
+        "optionBValue": "$3,500–$6,000"
+      },
+      {
+        "category": "Continuum",
+        "optionAValue": "Independent → Assisted → Nursing",
+        "optionBValue": "Assisted living only"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "CCRC (Continuing Care) may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Standalone Assisted Living may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both CCRC (Continuing Care) and Standalone Assisted Living serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between CCRC (Continuing Care) and Standalone Assisted Living?",
+        "answer": "CCRC (Continuing Care) is campus with all levels of care, while Standalone Assisted Living is single-level care community."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  },
+  {
+    "slug": "social-security-62-vs-67-vs-70",
+    "h1": "Claiming Social Security at 62 vs. 67 vs. 70",
+    "title": "Claiming Social Security at 62 vs. 67 vs. 70",
+    "metaDescription": "Compare Claim at 62 vs. Claim at 67 or 70. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026.",
+    "introText": "<p>Choosing between Claim at 62 and Claim at 67 or 70 is one of the most important decisions seniors face. This guide breaks down the key differences to help you make an informed choice.</p>",
+    "optionA": {
+      "name": "Claim at 62",
+      "description": "Earliest possible, reduced benefits"
+    },
+    "optionB": {
+      "name": "Claim at 67 or 70",
+      "description": "Full or delayed benefits"
+    },
+    "comparisonRows": [
+      {
+        "category": "Benefit at 62",
+        "optionAValue": "~70% of full benefit",
+        "optionBValue": "N/A"
+      },
+      {
+        "category": "Benefit at 67",
+        "optionAValue": "N/A",
+        "optionBValue": "100% of full benefit"
+      },
+      {
+        "category": "Benefit at 70",
+        "optionAValue": "N/A",
+        "optionBValue": "124% of full benefit"
+      }
+    ],
+    "prosConsA": {
+      "pros": [
+        "Lower cost option for many",
+        "Simplified coverage"
+      ],
+      "cons": [
+        "Some limitations apply",
+        "May not fit all situations"
+      ]
+    },
+    "prosConsB": {
+      "pros": [
+        "More flexibility and choices",
+        "Broader coverage potential"
+      ],
+      "cons": [
+        "Higher cost in some cases",
+        "More complex to navigate"
+      ]
+    },
+    "whoShouldChooseA": "Claim at 62 may be the better choice if you prioritize simplicity and lower upfront costs.",
+    "whoShouldChooseB": "Claim at 67 or 70 may be better if you want maximum flexibility and comprehensive coverage.",
+    "costComparison": {
+      "optionACost": "Varies",
+      "optionBCost": "Varies",
+      "description": "Costs depend on your specific situation, location, and health needs."
+    },
+    "bottomLine": "<p>Both Claim at 62 and Claim at 67 or 70 serve important roles. The best choice depends on your health needs, budget, and personal preferences. Consider consulting with a licensed professional before making a decision.</p>",
+    "faqs": [
+      {
+        "question": "What is the main difference between Claim at 62 and Claim at 67 or 70?",
+        "answer": "Claim at 62 is earliest possible, reduced benefits, while Claim at 67 or 70 is full or delayed benefits."
+      },
+      {
+        "question": "How do I decide which option is right for me?",
+        "answer": "Consider your health needs, budget, preferred providers, and long-term care goals. Speaking with a licensed insurance agent or counselor can help you make the best choice."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Medicare.gov",
+        "url": "https://www.medicare.gov"
+      },
+      {
+        "title": "AARP",
+        "url": "https://www.aarp.org"
+      }
+    ]
+  }
+]

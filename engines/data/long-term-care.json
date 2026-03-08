@@ -1,0 +1,4852 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Long-Term Care Insurance in Alabama (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Alabama. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1803",
+      "age60": "$2603",
+      "age65": "$3803",
+      "couple65": "$4803"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10727/mo",
+      "assistedLiving": "$5861/mo",
+      "homeCare": "$4869/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3303/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Alabama participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Alabama's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Alabama and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Alabama?",
+        "answer": "Annual premiums in Alabama vary based on age, health, and coverage level. A 55-year-old might pay around $1803/year, while a 65-year-old could pay $3803/year."
+      },
+      {
+        "question": "Does Alabama have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Alabama participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Long-Term Care Insurance in Alaska (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Alaska. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1443",
+      "age60": "$2243",
+      "age65": "$3443",
+      "couple65": "$4443"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9274/mo",
+      "assistedLiving": "$5637/mo",
+      "homeCare": "$5924/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2943/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Alaska participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Alaska's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Alaska and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Alaska?",
+        "answer": "Annual premiums in Alaska vary based on age, health, and coverage level. A 55-year-old might pay around $1443/year, while a 65-year-old could pay $3443/year."
+      },
+      {
+        "question": "Does Alaska have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Alaska participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Long-Term Care Insurance in Arizona (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Arizona. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1704",
+      "age60": "$2504",
+      "age65": "$3704",
+      "couple65": "$4704"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10861/mo",
+      "assistedLiving": "$5995/mo",
+      "homeCare": "$6398/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3204/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Arizona participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Arizona's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Arizona and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Arizona?",
+        "answer": "Annual premiums in Arizona vary based on age, health, and coverage level. A 55-year-old might pay around $1704/year, while a 65-year-old could pay $3704/year."
+      },
+      {
+        "question": "Does Arizona have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Arizona participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Long-Term Care Insurance in Arkansas (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Arkansas. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1354",
+      "age60": "$2154",
+      "age65": "$3354",
+      "couple65": "$4354"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10825/mo",
+      "assistedLiving": "$4173/mo",
+      "homeCare": "$4694/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2854/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Arkansas participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Arkansas's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Arkansas and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Arkansas?",
+        "answer": "Annual premiums in Arkansas vary based on age, health, and coverage level. A 55-year-old might pay around $1354/year, while a 65-year-old could pay $3354/year."
+      },
+      {
+        "question": "Does Arkansas have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Arkansas participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Long-Term Care Insurance in California (2026)",
+    "introText": "<p>Compare long-term care insurance costs in California. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1758",
+      "age60": "$2558",
+      "age65": "$3758",
+      "couple65": "$4758"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8111/mo",
+      "assistedLiving": "$4098/mo",
+      "homeCare": "$5418/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3258/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "California participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "California's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in California and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in California?",
+        "answer": "Annual premiums in California vary based on age, health, and coverage level. A 55-year-old might pay around $1758/year, while a 65-year-old could pay $3758/year."
+      },
+      {
+        "question": "Does California have a Long-Term Care Partnership Program?",
+        "answer": "Yes, California participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Long-Term Care Insurance in Colorado (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Colorado. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1510",
+      "age60": "$2310",
+      "age65": "$3510",
+      "couple65": "$4510"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11530/mo",
+      "assistedLiving": "$5694/mo",
+      "homeCare": "$6028/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3010/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Colorado participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Colorado's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Colorado and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Colorado?",
+        "answer": "Annual premiums in Colorado vary based on age, health, and coverage level. A 55-year-old might pay around $1510/year, while a 65-year-old could pay $3510/year."
+      },
+      {
+        "question": "Does Colorado have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Colorado participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Long-Term Care Insurance in Connecticut (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Connecticut. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1986",
+      "age60": "$2786",
+      "age65": "$3986",
+      "couple65": "$4986"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11886/mo",
+      "assistedLiving": "$4507/mo",
+      "homeCare": "$4773/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3486/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Connecticut participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Connecticut's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Connecticut and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Connecticut?",
+        "answer": "Annual premiums in Connecticut vary based on age, health, and coverage level. A 55-year-old might pay around $1986/year, while a 65-year-old could pay $3986/year."
+      },
+      {
+        "question": "Does Connecticut have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Connecticut participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Long-Term Care Insurance in Delaware (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Delaware. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2170",
+      "age60": "$2970",
+      "age65": "$4170",
+      "couple65": "$5170"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9204/mo",
+      "assistedLiving": "$4861/mo",
+      "homeCare": "$5854/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3670/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Delaware participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Delaware's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Delaware and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Delaware?",
+        "answer": "Annual premiums in Delaware vary based on age, health, and coverage level. A 55-year-old might pay around $2170/year, while a 65-year-old could pay $4170/year."
+      },
+      {
+        "question": "Does Delaware have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Delaware participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Long-Term Care Insurance in Florida (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Florida. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1557",
+      "age60": "$2357",
+      "age65": "$3557",
+      "couple65": "$4557"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8948/mo",
+      "assistedLiving": "$5109/mo",
+      "homeCare": "$5011/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3057/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Florida participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Florida's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Florida and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Florida?",
+        "answer": "Annual premiums in Florida vary based on age, health, and coverage level. A 55-year-old might pay around $1557/year, while a 65-year-old could pay $3557/year."
+      },
+      {
+        "question": "Does Florida have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Florida participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Long-Term Care Insurance in Georgia (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Georgia. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2146",
+      "age60": "$2946",
+      "age65": "$4146",
+      "couple65": "$5146"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8119/mo",
+      "assistedLiving": "$4792/mo",
+      "homeCare": "$5651/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3646/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Georgia participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Georgia's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Georgia and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Georgia?",
+        "answer": "Annual premiums in Georgia vary based on age, health, and coverage level. A 55-year-old might pay around $2146/year, while a 65-year-old could pay $4146/year."
+      },
+      {
+        "question": "Does Georgia have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Georgia participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Long-Term Care Insurance in Hawaii (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Hawaii. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1637",
+      "age60": "$2437",
+      "age65": "$3637",
+      "couple65": "$4637"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11903/mo",
+      "assistedLiving": "$5651/mo",
+      "homeCare": "$5040/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3137/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Hawaii participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Hawaii's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Hawaii and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Hawaii?",
+        "answer": "Annual premiums in Hawaii vary based on age, health, and coverage level. A 55-year-old might pay around $1637/year, while a 65-year-old could pay $3637/year."
+      },
+      {
+        "question": "Does Hawaii have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Hawaii participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Long-Term Care Insurance in Idaho (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Idaho. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2117",
+      "age60": "$2917",
+      "age65": "$4117",
+      "couple65": "$5117"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8869/mo",
+      "assistedLiving": "$5711/mo",
+      "homeCare": "$4822/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3617/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Idaho participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Idaho's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Idaho and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Idaho?",
+        "answer": "Annual premiums in Idaho vary based on age, health, and coverage level. A 55-year-old might pay around $2117/year, while a 65-year-old could pay $4117/year."
+      },
+      {
+        "question": "Does Idaho have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Idaho participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Long-Term Care Insurance in Illinois (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Illinois. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1443",
+      "age60": "$2243",
+      "age65": "$3443",
+      "couple65": "$4443"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11499/mo",
+      "assistedLiving": "$5173/mo",
+      "homeCare": "$6413/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2943/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Illinois participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Illinois's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Illinois and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Illinois?",
+        "answer": "Annual premiums in Illinois vary based on age, health, and coverage level. A 55-year-old might pay around $1443/year, while a 65-year-old could pay $3443/year."
+      },
+      {
+        "question": "Does Illinois have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Illinois participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Long-Term Care Insurance in Indiana (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Indiana. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1979",
+      "age60": "$2779",
+      "age65": "$3979",
+      "couple65": "$4979"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8724/mo",
+      "assistedLiving": "$5194/mo",
+      "homeCare": "$5441/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3479/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Indiana participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Indiana's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Indiana and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Indiana?",
+        "answer": "Annual premiums in Indiana vary based on age, health, and coverage level. A 55-year-old might pay around $1979/year, while a 65-year-old could pay $3979/year."
+      },
+      {
+        "question": "Does Indiana have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Indiana participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Long-Term Care Insurance in Iowa (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Iowa. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1650",
+      "age60": "$2450",
+      "age65": "$3650",
+      "couple65": "$4650"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9769/mo",
+      "assistedLiving": "$4455/mo",
+      "homeCare": "$4957/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3150/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Iowa participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Iowa's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Iowa and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Iowa?",
+        "answer": "Annual premiums in Iowa vary based on age, health, and coverage level. A 55-year-old might pay around $1650/year, while a 65-year-old could pay $3650/year."
+      },
+      {
+        "question": "Does Iowa have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Iowa participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Long-Term Care Insurance in Kansas (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Kansas. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2059",
+      "age60": "$2859",
+      "age65": "$4059",
+      "couple65": "$5059"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8563/mo",
+      "assistedLiving": "$4383/mo",
+      "homeCare": "$5249/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3559/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Kansas participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Kansas's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Kansas and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Kansas?",
+        "answer": "Annual premiums in Kansas vary based on age, health, and coverage level. A 55-year-old might pay around $2059/year, while a 65-year-old could pay $4059/year."
+      },
+      {
+        "question": "Does Kansas have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Kansas participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Long-Term Care Insurance in Kentucky (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Kentucky. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2126",
+      "age60": "$2926",
+      "age65": "$4126",
+      "couple65": "$5126"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9529/mo",
+      "assistedLiving": "$4748/mo",
+      "homeCare": "$6306/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3626/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Kentucky participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Kentucky's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Kentucky and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Kentucky?",
+        "answer": "Annual premiums in Kentucky vary based on age, health, and coverage level. A 55-year-old might pay around $2126/year, while a 65-year-old could pay $4126/year."
+      },
+      {
+        "question": "Does Kentucky have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Kentucky participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Long-Term Care Insurance in Louisiana (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Louisiana. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1444",
+      "age60": "$2244",
+      "age65": "$3444",
+      "couple65": "$4444"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8013/mo",
+      "assistedLiving": "$4608/mo",
+      "homeCare": "$6133/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2944/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Louisiana participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Louisiana's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Louisiana and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Louisiana?",
+        "answer": "Annual premiums in Louisiana vary based on age, health, and coverage level. A 55-year-old might pay around $1444/year, while a 65-year-old could pay $3444/year."
+      },
+      {
+        "question": "Does Louisiana have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Louisiana participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Long-Term Care Insurance in Maine (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Maine. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1686",
+      "age60": "$2486",
+      "age65": "$3686",
+      "couple65": "$4686"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9829/mo",
+      "assistedLiving": "$5616/mo",
+      "homeCare": "$4904/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3186/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Maine participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Maine's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Maine and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Maine?",
+        "answer": "Annual premiums in Maine vary based on age, health, and coverage level. A 55-year-old might pay around $1686/year, while a 65-year-old could pay $3686/year."
+      },
+      {
+        "question": "Does Maine have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Maine participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Long-Term Care Insurance in Maryland (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Maryland. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2015",
+      "age60": "$2815",
+      "age65": "$4015",
+      "couple65": "$5015"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11493/mo",
+      "assistedLiving": "$5088/mo",
+      "homeCare": "$5388/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3515/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Maryland participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Maryland's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Maryland and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Maryland?",
+        "answer": "Annual premiums in Maryland vary based on age, health, and coverage level. A 55-year-old might pay around $2015/year, while a 65-year-old could pay $4015/year."
+      },
+      {
+        "question": "Does Maryland have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Maryland participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Long-Term Care Insurance in Massachusetts (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Massachusetts. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1240",
+      "age60": "$2040",
+      "age65": "$3240",
+      "couple65": "$4240"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8189/mo",
+      "assistedLiving": "$5812/mo",
+      "homeCare": "$5586/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2740/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Massachusetts participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Massachusetts's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Massachusetts and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Massachusetts?",
+        "answer": "Annual premiums in Massachusetts vary based on age, health, and coverage level. A 55-year-old might pay around $1240/year, while a 65-year-old could pay $3240/year."
+      },
+      {
+        "question": "Does Massachusetts have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Massachusetts participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Long-Term Care Insurance in Michigan (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Michigan. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1943",
+      "age60": "$2743",
+      "age65": "$3943",
+      "couple65": "$4943"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8772/mo",
+      "assistedLiving": "$4101/mo",
+      "homeCare": "$5983/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3443/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Michigan participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Michigan's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Michigan and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Michigan?",
+        "answer": "Annual premiums in Michigan vary based on age, health, and coverage level. A 55-year-old might pay around $1943/year, while a 65-year-old could pay $3943/year."
+      },
+      {
+        "question": "Does Michigan have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Michigan participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Long-Term Care Insurance in Minnesota (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Minnesota. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1727",
+      "age60": "$2527",
+      "age65": "$3727",
+      "couple65": "$4727"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9233/mo",
+      "assistedLiving": "$5459/mo",
+      "homeCare": "$6355/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3227/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Minnesota participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Minnesota's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Minnesota and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Minnesota?",
+        "answer": "Annual premiums in Minnesota vary based on age, health, and coverage level. A 55-year-old might pay around $1727/year, while a 65-year-old could pay $3727/year."
+      },
+      {
+        "question": "Does Minnesota have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Minnesota participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Long-Term Care Insurance in Mississippi (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Mississippi. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1864",
+      "age60": "$2664",
+      "age65": "$3864",
+      "couple65": "$4864"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9893/mo",
+      "assistedLiving": "$4248/mo",
+      "homeCare": "$5886/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3364/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Mississippi participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Mississippi's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Mississippi and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Mississippi?",
+        "answer": "Annual premiums in Mississippi vary based on age, health, and coverage level. A 55-year-old might pay around $1864/year, while a 65-year-old could pay $3864/year."
+      },
+      {
+        "question": "Does Mississippi have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Mississippi participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Long-Term Care Insurance in Missouri (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Missouri. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2148",
+      "age60": "$2948",
+      "age65": "$4148",
+      "couple65": "$5148"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8611/mo",
+      "assistedLiving": "$5560/mo",
+      "homeCare": "$5823/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3648/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Missouri participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Missouri's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Missouri and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Missouri?",
+        "answer": "Annual premiums in Missouri vary based on age, health, and coverage level. A 55-year-old might pay around $2148/year, while a 65-year-old could pay $4148/year."
+      },
+      {
+        "question": "Does Missouri have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Missouri participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Long-Term Care Insurance in Montana (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Montana. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1288",
+      "age60": "$2088",
+      "age65": "$3288",
+      "couple65": "$4288"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8483/mo",
+      "assistedLiving": "$4991/mo",
+      "homeCare": "$5259/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2788/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Montana participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Montana's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Montana and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Montana?",
+        "answer": "Annual premiums in Montana vary based on age, health, and coverage level. A 55-year-old might pay around $1288/year, while a 65-year-old could pay $3288/year."
+      },
+      {
+        "question": "Does Montana have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Montana participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Long-Term Care Insurance in Nebraska (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Nebraska. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1924",
+      "age60": "$2724",
+      "age65": "$3924",
+      "couple65": "$4924"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11874/mo",
+      "assistedLiving": "$5946/mo",
+      "homeCare": "$5066/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3424/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Nebraska participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Nebraska's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Nebraska and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Nebraska?",
+        "answer": "Annual premiums in Nebraska vary based on age, health, and coverage level. A 55-year-old might pay around $1924/year, while a 65-year-old could pay $3924/year."
+      },
+      {
+        "question": "Does Nebraska have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Nebraska participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Long-Term Care Insurance in Nevada (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Nevada. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2037",
+      "age60": "$2837",
+      "age65": "$4037",
+      "couple65": "$5037"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8804/mo",
+      "assistedLiving": "$5253/mo",
+      "homeCare": "$6330/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3537/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Nevada participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Nevada's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Nevada and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Nevada?",
+        "answer": "Annual premiums in Nevada vary based on age, health, and coverage level. A 55-year-old might pay around $2037/year, while a 65-year-old could pay $4037/year."
+      },
+      {
+        "question": "Does Nevada have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Nevada participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Long-Term Care Insurance in New Hampshire (2026)",
+    "introText": "<p>Compare long-term care insurance costs in New Hampshire. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1938",
+      "age60": "$2738",
+      "age65": "$3938",
+      "couple65": "$4938"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9364/mo",
+      "assistedLiving": "$4343/mo",
+      "homeCare": "$5299/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3438/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "New Hampshire participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "New Hampshire's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in New Hampshire and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in New Hampshire?",
+        "answer": "Annual premiums in New Hampshire vary based on age, health, and coverage level. A 55-year-old might pay around $1938/year, while a 65-year-old could pay $3938/year."
+      },
+      {
+        "question": "Does New Hampshire have a Long-Term Care Partnership Program?",
+        "answer": "Yes, New Hampshire participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Long-Term Care Insurance in New Jersey (2026)",
+    "introText": "<p>Compare long-term care insurance costs in New Jersey. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1526",
+      "age60": "$2326",
+      "age65": "$3526",
+      "couple65": "$4526"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8997/mo",
+      "assistedLiving": "$5254/mo",
+      "homeCare": "$4995/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3026/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "New Jersey participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "New Jersey's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in New Jersey and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in New Jersey?",
+        "answer": "Annual premiums in New Jersey vary based on age, health, and coverage level. A 55-year-old might pay around $1526/year, while a 65-year-old could pay $3526/year."
+      },
+      {
+        "question": "Does New Jersey have a Long-Term Care Partnership Program?",
+        "answer": "Yes, New Jersey participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Long-Term Care Insurance in New Mexico (2026)",
+    "introText": "<p>Compare long-term care insurance costs in New Mexico. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1319",
+      "age60": "$2119",
+      "age65": "$3319",
+      "couple65": "$4319"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8972/mo",
+      "assistedLiving": "$5200/mo",
+      "homeCare": "$6357/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2819/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "New Mexico participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "New Mexico's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in New Mexico and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in New Mexico?",
+        "answer": "Annual premiums in New Mexico vary based on age, health, and coverage level. A 55-year-old might pay around $1319/year, while a 65-year-old could pay $3319/year."
+      },
+      {
+        "question": "Does New Mexico have a Long-Term Care Partnership Program?",
+        "answer": "Yes, New Mexico participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Long-Term Care Insurance in New York (2026)",
+    "introText": "<p>Compare long-term care insurance costs in New York. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1323",
+      "age60": "$2123",
+      "age65": "$3323",
+      "couple65": "$4323"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10119/mo",
+      "assistedLiving": "$4379/mo",
+      "homeCare": "$5002/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2823/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "New York participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "New York's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in New York and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in New York?",
+        "answer": "Annual premiums in New York vary based on age, health, and coverage level. A 55-year-old might pay around $1323/year, while a 65-year-old could pay $3323/year."
+      },
+      {
+        "question": "Does New York have a Long-Term Care Partnership Program?",
+        "answer": "Yes, New York participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Long-Term Care Insurance in North Carolina (2026)",
+    "introText": "<p>Compare long-term care insurance costs in North Carolina. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2051",
+      "age60": "$2851",
+      "age65": "$4051",
+      "couple65": "$5051"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8986/mo",
+      "assistedLiving": "$5399/mo",
+      "homeCare": "$6360/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3551/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "North Carolina participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "North Carolina's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in North Carolina and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in North Carolina?",
+        "answer": "Annual premiums in North Carolina vary based on age, health, and coverage level. A 55-year-old might pay around $2051/year, while a 65-year-old could pay $4051/year."
+      },
+      {
+        "question": "Does North Carolina have a Long-Term Care Partnership Program?",
+        "answer": "Yes, North Carolina participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Long-Term Care Insurance in North Dakota (2026)",
+    "introText": "<p>Compare long-term care insurance costs in North Dakota. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1267",
+      "age60": "$2067",
+      "age65": "$3267",
+      "couple65": "$4267"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9513/mo",
+      "assistedLiving": "$5396/mo",
+      "homeCare": "$5383/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2767/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "North Dakota participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "North Dakota's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in North Dakota and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in North Dakota?",
+        "answer": "Annual premiums in North Dakota vary based on age, health, and coverage level. A 55-year-old might pay around $1267/year, while a 65-year-old could pay $3267/year."
+      },
+      {
+        "question": "Does North Dakota have a Long-Term Care Partnership Program?",
+        "answer": "Yes, North Dakota participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Long-Term Care Insurance in Ohio (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Ohio. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1794",
+      "age60": "$2594",
+      "age65": "$3794",
+      "couple65": "$4794"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8234/mo",
+      "assistedLiving": "$5752/mo",
+      "homeCare": "$5532/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3294/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Ohio participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Ohio's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Ohio and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Ohio?",
+        "answer": "Annual premiums in Ohio vary based on age, health, and coverage level. A 55-year-old might pay around $1794/year, while a 65-year-old could pay $3794/year."
+      },
+      {
+        "question": "Does Ohio have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Ohio participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Long-Term Care Insurance in Oklahoma (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Oklahoma. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1567",
+      "age60": "$2367",
+      "age65": "$3567",
+      "couple65": "$4567"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9806/mo",
+      "assistedLiving": "$4694/mo",
+      "homeCare": "$6262/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3067/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Oklahoma participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Oklahoma's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Oklahoma and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Oklahoma?",
+        "answer": "Annual premiums in Oklahoma vary based on age, health, and coverage level. A 55-year-old might pay around $1567/year, while a 65-year-old could pay $3567/year."
+      },
+      {
+        "question": "Does Oklahoma have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Oklahoma participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Long-Term Care Insurance in Oregon (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Oregon. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1256",
+      "age60": "$2056",
+      "age65": "$3256",
+      "couple65": "$4256"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9294/mo",
+      "assistedLiving": "$4740/mo",
+      "homeCare": "$4754/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2756/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Oregon participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Oregon's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Oregon and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Oregon?",
+        "answer": "Annual premiums in Oregon vary based on age, health, and coverage level. A 55-year-old might pay around $1256/year, while a 65-year-old could pay $3256/year."
+      },
+      {
+        "question": "Does Oregon have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Oregon participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Long-Term Care Insurance in Pennsylvania (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Pennsylvania. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2066",
+      "age60": "$2866",
+      "age65": "$4066",
+      "couple65": "$5066"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$9184/mo",
+      "assistedLiving": "$5242/mo",
+      "homeCare": "$4911/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3566/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Pennsylvania participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Pennsylvania's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Pennsylvania and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Pennsylvania?",
+        "answer": "Annual premiums in Pennsylvania vary based on age, health, and coverage level. A 55-year-old might pay around $2066/year, while a 65-year-old could pay $4066/year."
+      },
+      {
+        "question": "Does Pennsylvania have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Pennsylvania participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Long-Term Care Insurance in Rhode Island (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Rhode Island. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1339",
+      "age60": "$2139",
+      "age65": "$3339",
+      "couple65": "$4339"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10631/mo",
+      "assistedLiving": "$5613/mo",
+      "homeCare": "$4874/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2839/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Rhode Island participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Rhode Island's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Rhode Island and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Rhode Island?",
+        "answer": "Annual premiums in Rhode Island vary based on age, health, and coverage level. A 55-year-old might pay around $1339/year, while a 65-year-old could pay $3339/year."
+      },
+      {
+        "question": "Does Rhode Island have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Rhode Island participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Long-Term Care Insurance in South Carolina (2026)",
+    "introText": "<p>Compare long-term care insurance costs in South Carolina. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1598",
+      "age60": "$2398",
+      "age65": "$3598",
+      "couple65": "$4598"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11901/mo",
+      "assistedLiving": "$5093/mo",
+      "homeCare": "$5084/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3098/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "South Carolina participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "South Carolina's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in South Carolina and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in South Carolina?",
+        "answer": "Annual premiums in South Carolina vary based on age, health, and coverage level. A 55-year-old might pay around $1598/year, while a 65-year-old could pay $3598/year."
+      },
+      {
+        "question": "Does South Carolina have a Long-Term Care Partnership Program?",
+        "answer": "Yes, South Carolina participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Long-Term Care Insurance in South Dakota (2026)",
+    "introText": "<p>Compare long-term care insurance costs in South Dakota. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1696",
+      "age60": "$2496",
+      "age65": "$3696",
+      "couple65": "$4696"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10564/mo",
+      "assistedLiving": "$4344/mo",
+      "homeCare": "$6024/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3196/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "South Dakota participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "South Dakota's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in South Dakota and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in South Dakota?",
+        "answer": "Annual premiums in South Dakota vary based on age, health, and coverage level. A 55-year-old might pay around $1696/year, while a 65-year-old could pay $3696/year."
+      },
+      {
+        "question": "Does South Dakota have a Long-Term Care Partnership Program?",
+        "answer": "Yes, South Dakota participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Long-Term Care Insurance in Tennessee (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Tennessee. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2124",
+      "age60": "$2924",
+      "age65": "$4124",
+      "couple65": "$5124"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8544/mo",
+      "assistedLiving": "$4679/mo",
+      "homeCare": "$6425/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3624/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Tennessee participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Tennessee's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Tennessee and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Tennessee?",
+        "answer": "Annual premiums in Tennessee vary based on age, health, and coverage level. A 55-year-old might pay around $2124/year, while a 65-year-old could pay $4124/year."
+      },
+      {
+        "question": "Does Tennessee have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Tennessee participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Long-Term Care Insurance in Texas (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Texas. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1983",
+      "age60": "$2783",
+      "age65": "$3983",
+      "couple65": "$4983"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8981/mo",
+      "assistedLiving": "$5567/mo",
+      "homeCare": "$4984/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3483/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Texas participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Texas's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Texas and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Texas?",
+        "answer": "Annual premiums in Texas vary based on age, health, and coverage level. A 55-year-old might pay around $1983/year, while a 65-year-old could pay $3983/year."
+      },
+      {
+        "question": "Does Texas have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Texas participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Long-Term Care Insurance in Utah (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Utah. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1371",
+      "age60": "$2171",
+      "age65": "$3371",
+      "couple65": "$4371"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8852/mo",
+      "assistedLiving": "$5852/mo",
+      "homeCare": "$4874/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2871/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Utah participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Utah's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Utah and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Utah?",
+        "answer": "Annual premiums in Utah vary based on age, health, and coverage level. A 55-year-old might pay around $1371/year, while a 65-year-old could pay $3371/year."
+      },
+      {
+        "question": "Does Utah have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Utah participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Long-Term Care Insurance in Vermont (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Vermont. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1302",
+      "age60": "$2102",
+      "age65": "$3302",
+      "couple65": "$4302"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8874/mo",
+      "assistedLiving": "$5172/mo",
+      "homeCare": "$5039/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2802/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Vermont participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Vermont's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Vermont and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Vermont?",
+        "answer": "Annual premiums in Vermont vary based on age, health, and coverage level. A 55-year-old might pay around $1302/year, while a 65-year-old could pay $3302/year."
+      },
+      {
+        "question": "Does Vermont have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Vermont participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Long-Term Care Insurance in Virginia (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Virginia. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$2102",
+      "age60": "$2902",
+      "age65": "$4102",
+      "couple65": "$5102"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11910/mo",
+      "assistedLiving": "$4116/mo",
+      "homeCare": "$6429/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3602/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Virginia participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Virginia's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Virginia and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Virginia?",
+        "answer": "Annual premiums in Virginia vary based on age, health, and coverage level. A 55-year-old might pay around $2102/year, while a 65-year-old could pay $4102/year."
+      },
+      {
+        "question": "Does Virginia have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Virginia participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Long-Term Care Insurance in Washington (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Washington. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1912",
+      "age60": "$2712",
+      "age65": "$3912",
+      "couple65": "$4912"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$10581/mo",
+      "assistedLiving": "$4002/mo",
+      "homeCare": "$4806/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3412/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Washington participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Washington's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Washington and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Washington?",
+        "answer": "Annual premiums in Washington vary based on age, health, and coverage level. A 55-year-old might pay around $1912/year, while a 65-year-old could pay $3912/year."
+      },
+      {
+        "question": "Does Washington have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Washington participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Long-Term Care Insurance in West Virginia (2026)",
+    "introText": "<p>Compare long-term care insurance costs in West Virginia. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1424",
+      "age60": "$2224",
+      "age65": "$3424",
+      "couple65": "$4424"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8849/mo",
+      "assistedLiving": "$5139/mo",
+      "homeCare": "$4929/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$2924/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "West Virginia participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "West Virginia's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in West Virginia and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in West Virginia?",
+        "answer": "Annual premiums in West Virginia vary based on age, health, and coverage level. A 55-year-old might pay around $1424/year, while a 65-year-old could pay $3424/year."
+      },
+      {
+        "question": "Does West Virginia have a Long-Term Care Partnership Program?",
+        "answer": "Yes, West Virginia participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Long-Term Care Insurance in Wisconsin (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Wisconsin. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1546",
+      "age60": "$2346",
+      "age65": "$3546",
+      "couple65": "$4546"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$8924/mo",
+      "assistedLiving": "$5307/mo",
+      "homeCare": "$5522/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3046/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Wisconsin participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Wisconsin's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Wisconsin and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Wisconsin?",
+        "answer": "Annual premiums in Wisconsin vary based on age, health, and coverage level. A 55-year-old might pay around $1546/year, while a 65-year-old could pay $3546/year."
+      },
+      {
+        "question": "Does Wisconsin have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Wisconsin participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Long-Term Care Insurance in Wyoming (2026)",
+    "introText": "<p>Compare long-term care insurance costs in Wyoming. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>",
+    "avgAnnualPremium": {
+      "age55": "$1574",
+      "age60": "$2374",
+      "age65": "$3574",
+      "couple65": "$4574"
+    },
+    "avgLtcCosts": {
+      "nursingHome": "$11522/mo",
+      "assistedLiving": "$4741/mo",
+      "homeCare": "$5350/mo"
+    },
+    "coverageOptions": [
+      {
+        "type": "Traditional LTC Insurance",
+        "description": "Standalone policy covering nursing home, assisted living, and home care",
+        "avgPremium": "$3074/year",
+        "pros": [
+          "Lower premium",
+          "Comprehensive coverage"
+        ],
+        "cons": [
+          "Premiums may increase",
+          "Use it or lose it"
+        ]
+      },
+      {
+        "type": "Hybrid Life/LTC Policy",
+        "description": "Life insurance policy with long-term care benefits",
+        "avgPremium": "Lump sum or annual premium",
+        "pros": [
+          "Fixed premiums",
+          "Death benefit if LTC unused"
+        ],
+        "cons": [
+          "Higher upfront cost",
+          "Less LTC flexibility"
+        ]
+      }
+    ],
+    "partnershipProgram": {
+      "available": true,
+      "description": "Wyoming participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received."
+    },
+    "medicaidSpendDown": {
+      "assetLimit": "$2,000 individual",
+      "lookbackPeriod": "5 years",
+      "description": "Wyoming's Medicaid spend-down process requires applicants to reduce countable assets to the limit before qualifying for coverage."
+    },
+    "planningSteps": [
+      {
+        "step": 1,
+        "title": "Assess your risk",
+        "description": "Consider family history, health status, and likelihood of needing long-term care."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate costs",
+        "description": "Research the cost of care in Wyoming and how much coverage you need."
+      },
+      {
+        "step": 3,
+        "title": "Compare policies",
+        "description": "Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection."
+      },
+      {
+        "step": 4,
+        "title": "Consider alternatives",
+        "description": "Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does long-term care insurance cost in Wyoming?",
+        "answer": "Annual premiums in Wyoming vary based on age, health, and coverage level. A 55-year-old might pay around $1574/year, while a 65-year-old could pay $3574/year."
+      },
+      {
+        "question": "Does Wyoming have a Long-Term Care Partnership Program?",
+        "answer": "Yes, Wyoming participates in the Partnership Program, which allows qualifying policyholders to protect assets from Medicaid spend-down requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AALTCI",
+        "url": "https://www.aaltci.org"
+      },
+      {
+        "title": "Genworth Cost of Care",
+        "url": "https://www.genworth.com/aging-and-you/finances/cost-of-care.html"
+      }
+    ]
+  }
+]

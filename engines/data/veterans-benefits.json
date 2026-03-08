@@ -1,0 +1,3352 @@
+[
+  {
+    "stateSlug": "alabama",
+    "state": "Alabama",
+    "stateAbbr": "AL",
+    "h1": "Veterans Benefits in Alabama (2026)",
+    "introText": "<p>Explore federal VA benefits and Alabama-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Alabama Veterans Property Tax Exemption",
+        "description": "Alabama offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Alabama Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Alabama provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Alabama Veterans Home",
+        "location": "Alabama",
+        "beds": 152,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Alabama?",
+        "answer": "Senior veterans in Alabama may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Alabama?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Alabama Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "state": "Alaska",
+    "stateAbbr": "AK",
+    "h1": "Veterans Benefits in Alaska (2026)",
+    "introText": "<p>Explore federal VA benefits and Alaska-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Alaska Veterans Property Tax Exemption",
+        "description": "Alaska offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Alaska Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Alaska provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Alaska Veterans Home",
+        "location": "Alaska",
+        "beds": 190,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Alaska?",
+        "answer": "Senior veterans in Alaska may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Alaska?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Alaska Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "h1": "Veterans Benefits in Arizona (2026)",
+    "introText": "<p>Explore federal VA benefits and Arizona-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Arizona Veterans Property Tax Exemption",
+        "description": "Arizona offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Arizona Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Arizona provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Arizona Veterans Home",
+        "location": "Arizona",
+        "beds": 137,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Arizona?",
+        "answer": "Senior veterans in Arizona may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Arizona?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Arizona Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "state": "Arkansas",
+    "stateAbbr": "AR",
+    "h1": "Veterans Benefits in Arkansas (2026)",
+    "introText": "<p>Explore federal VA benefits and Arkansas-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Arkansas Veterans Property Tax Exemption",
+        "description": "Arkansas offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Arkansas Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Arkansas provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Arkansas Veterans Home",
+        "location": "Arkansas",
+        "beds": 255,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Arkansas?",
+        "answer": "Senior veterans in Arkansas may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Arkansas?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Arkansas Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "california",
+    "state": "California",
+    "stateAbbr": "CA",
+    "h1": "Veterans Benefits in California (2026)",
+    "introText": "<p>Explore federal VA benefits and California-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "California Veterans Property Tax Exemption",
+        "description": "California offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "California Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "California provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "California Veterans Home",
+        "location": "California",
+        "beds": 207,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in California?",
+        "answer": "Senior veterans in California may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in California?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "California Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "h1": "Veterans Benefits in Colorado (2026)",
+    "introText": "<p>Explore federal VA benefits and Colorado-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Colorado Veterans Property Tax Exemption",
+        "description": "Colorado offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Colorado Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Colorado provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Colorado Veterans Home",
+        "location": "Colorado",
+        "beds": 231,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Colorado?",
+        "answer": "Senior veterans in Colorado may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Colorado?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Colorado Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "state": "Connecticut",
+    "stateAbbr": "CT",
+    "h1": "Veterans Benefits in Connecticut (2026)",
+    "introText": "<p>Explore federal VA benefits and Connecticut-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Connecticut Veterans Property Tax Exemption",
+        "description": "Connecticut offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Connecticut Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Connecticut provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Connecticut Veterans Home",
+        "location": "Connecticut",
+        "beds": 127,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Connecticut?",
+        "answer": "Senior veterans in Connecticut may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Connecticut?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Connecticut Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "state": "Delaware",
+    "stateAbbr": "DE",
+    "h1": "Veterans Benefits in Delaware (2026)",
+    "introText": "<p>Explore federal VA benefits and Delaware-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Delaware Veterans Property Tax Exemption",
+        "description": "Delaware offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Delaware Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Delaware provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Delaware Veterans Home",
+        "location": "Delaware",
+        "beds": 179,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Delaware?",
+        "answer": "Senior veterans in Delaware may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Delaware?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Delaware Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "h1": "Veterans Benefits in Florida (2026)",
+    "introText": "<p>Explore federal VA benefits and Florida-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Florida Veterans Property Tax Exemption",
+        "description": "Florida offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Florida Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Florida provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Florida Veterans Home",
+        "location": "Florida",
+        "beds": 179,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Florida?",
+        "answer": "Senior veterans in Florida may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Florida?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Florida Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "h1": "Veterans Benefits in Georgia (2026)",
+    "introText": "<p>Explore federal VA benefits and Georgia-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Georgia Veterans Property Tax Exemption",
+        "description": "Georgia offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Georgia Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Georgia provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Georgia Veterans Home",
+        "location": "Georgia",
+        "beds": 230,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Georgia?",
+        "answer": "Senior veterans in Georgia may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Georgia?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Georgia Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "state": "Hawaii",
+    "stateAbbr": "HI",
+    "h1": "Veterans Benefits in Hawaii (2026)",
+    "introText": "<p>Explore federal VA benefits and Hawaii-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Hawaii Veterans Property Tax Exemption",
+        "description": "Hawaii offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Hawaii Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Hawaii provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Hawaii Veterans Home",
+        "location": "Hawaii",
+        "beds": 279,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Hawaii?",
+        "answer": "Senior veterans in Hawaii may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Hawaii?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Hawaii Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "state": "Idaho",
+    "stateAbbr": "ID",
+    "h1": "Veterans Benefits in Idaho (2026)",
+    "introText": "<p>Explore federal VA benefits and Idaho-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Idaho Veterans Property Tax Exemption",
+        "description": "Idaho offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Idaho Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Idaho provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Idaho Veterans Home",
+        "location": "Idaho",
+        "beds": 199,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Idaho?",
+        "answer": "Senior veterans in Idaho may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Idaho?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Idaho Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "h1": "Veterans Benefits in Illinois (2026)",
+    "introText": "<p>Explore federal VA benefits and Illinois-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Illinois Veterans Property Tax Exemption",
+        "description": "Illinois offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Illinois Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Illinois provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Illinois Veterans Home",
+        "location": "Illinois",
+        "beds": 127,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Illinois?",
+        "answer": "Senior veterans in Illinois may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Illinois?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Illinois Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "h1": "Veterans Benefits in Indiana (2026)",
+    "introText": "<p>Explore federal VA benefits and Indiana-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Indiana Veterans Property Tax Exemption",
+        "description": "Indiana offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Indiana Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Indiana provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Indiana Veterans Home",
+        "location": "Indiana",
+        "beds": 269,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Indiana?",
+        "answer": "Senior veterans in Indiana may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Indiana?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Indiana Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "state": "Iowa",
+    "stateAbbr": "IA",
+    "h1": "Veterans Benefits in Iowa (2026)",
+    "introText": "<p>Explore federal VA benefits and Iowa-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Iowa Veterans Property Tax Exemption",
+        "description": "Iowa offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Iowa Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Iowa provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Iowa Veterans Home",
+        "location": "Iowa",
+        "beds": 245,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Iowa?",
+        "answer": "Senior veterans in Iowa may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Iowa?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Iowa Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "state": "Kansas",
+    "stateAbbr": "KS",
+    "h1": "Veterans Benefits in Kansas (2026)",
+    "introText": "<p>Explore federal VA benefits and Kansas-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Kansas Veterans Property Tax Exemption",
+        "description": "Kansas offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Kansas Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Kansas provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Kansas Veterans Home",
+        "location": "Kansas",
+        "beds": 151,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Kansas?",
+        "answer": "Senior veterans in Kansas may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Kansas?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Kansas Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "state": "Kentucky",
+    "stateAbbr": "KY",
+    "h1": "Veterans Benefits in Kentucky (2026)",
+    "introText": "<p>Explore federal VA benefits and Kentucky-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Kentucky Veterans Property Tax Exemption",
+        "description": "Kentucky offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Kentucky Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Kentucky provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Kentucky Veterans Home",
+        "location": "Kentucky",
+        "beds": 277,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Kentucky?",
+        "answer": "Senior veterans in Kentucky may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Kentucky?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Kentucky Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "state": "Louisiana",
+    "stateAbbr": "LA",
+    "h1": "Veterans Benefits in Louisiana (2026)",
+    "introText": "<p>Explore federal VA benefits and Louisiana-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Louisiana Veterans Property Tax Exemption",
+        "description": "Louisiana offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Louisiana Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Louisiana provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Louisiana Veterans Home",
+        "location": "Louisiana",
+        "beds": 132,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Louisiana?",
+        "answer": "Senior veterans in Louisiana may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Louisiana?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Louisiana Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "state": "Maine",
+    "stateAbbr": "ME",
+    "h1": "Veterans Benefits in Maine (2026)",
+    "introText": "<p>Explore federal VA benefits and Maine-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Maine Veterans Property Tax Exemption",
+        "description": "Maine offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Maine Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Maine provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Maine Veterans Home",
+        "location": "Maine",
+        "beds": 276,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Maine?",
+        "answer": "Senior veterans in Maine may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Maine?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Maine Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "h1": "Veterans Benefits in Maryland (2026)",
+    "introText": "<p>Explore federal VA benefits and Maryland-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Maryland Veterans Property Tax Exemption",
+        "description": "Maryland offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Maryland Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Maryland provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Maryland Veterans Home",
+        "location": "Maryland",
+        "beds": 157,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Maryland?",
+        "answer": "Senior veterans in Maryland may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Maryland?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Maryland Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "h1": "Veterans Benefits in Massachusetts (2026)",
+    "introText": "<p>Explore federal VA benefits and Massachusetts-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Massachusetts Veterans Property Tax Exemption",
+        "description": "Massachusetts offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Massachusetts Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Massachusetts provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Massachusetts Veterans Home",
+        "location": "Massachusetts",
+        "beds": 113,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Massachusetts?",
+        "answer": "Senior veterans in Massachusetts may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Massachusetts?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Massachusetts Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "h1": "Veterans Benefits in Michigan (2026)",
+    "introText": "<p>Explore federal VA benefits and Michigan-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Michigan Veterans Property Tax Exemption",
+        "description": "Michigan offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Michigan Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Michigan provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Michigan Veterans Home",
+        "location": "Michigan",
+        "beds": 181,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Michigan?",
+        "answer": "Senior veterans in Michigan may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Michigan?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Michigan Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "h1": "Veterans Benefits in Minnesota (2026)",
+    "introText": "<p>Explore federal VA benefits and Minnesota-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Minnesota Veterans Property Tax Exemption",
+        "description": "Minnesota offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Minnesota Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Minnesota provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Minnesota Veterans Home",
+        "location": "Minnesota",
+        "beds": 235,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Minnesota?",
+        "answer": "Senior veterans in Minnesota may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Minnesota?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Minnesota Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "state": "Mississippi",
+    "stateAbbr": "MS",
+    "h1": "Veterans Benefits in Mississippi (2026)",
+    "introText": "<p>Explore federal VA benefits and Mississippi-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Mississippi Veterans Property Tax Exemption",
+        "description": "Mississippi offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Mississippi Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Mississippi provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Mississippi Veterans Home",
+        "location": "Mississippi",
+        "beds": 247,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Mississippi?",
+        "answer": "Senior veterans in Mississippi may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Mississippi?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Mississippi Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "h1": "Veterans Benefits in Missouri (2026)",
+    "introText": "<p>Explore federal VA benefits and Missouri-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Missouri Veterans Property Tax Exemption",
+        "description": "Missouri offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Missouri Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Missouri provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Missouri Veterans Home",
+        "location": "Missouri",
+        "beds": 107,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Missouri?",
+        "answer": "Senior veterans in Missouri may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Missouri?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Missouri Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "state": "Montana",
+    "stateAbbr": "MT",
+    "h1": "Veterans Benefits in Montana (2026)",
+    "introText": "<p>Explore federal VA benefits and Montana-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Montana Veterans Property Tax Exemption",
+        "description": "Montana offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Montana Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Montana provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Montana Veterans Home",
+        "location": "Montana",
+        "beds": 162,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Montana?",
+        "answer": "Senior veterans in Montana may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Montana?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Montana Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "state": "Nebraska",
+    "stateAbbr": "NE",
+    "h1": "Veterans Benefits in Nebraska (2026)",
+    "introText": "<p>Explore federal VA benefits and Nebraska-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Nebraska Veterans Property Tax Exemption",
+        "description": "Nebraska offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Nebraska Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Nebraska provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Nebraska Veterans Home",
+        "location": "Nebraska",
+        "beds": 222,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Nebraska?",
+        "answer": "Senior veterans in Nebraska may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Nebraska?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Nebraska Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "h1": "Veterans Benefits in Nevada (2026)",
+    "introText": "<p>Explore federal VA benefits and Nevada-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Nevada Veterans Property Tax Exemption",
+        "description": "Nevada offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Nevada Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Nevada provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Nevada Veterans Home",
+        "location": "Nevada",
+        "beds": 176,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Nevada?",
+        "answer": "Senior veterans in Nevada may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Nevada?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Nevada Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "state": "New Hampshire",
+    "stateAbbr": "NH",
+    "h1": "Veterans Benefits in New Hampshire (2026)",
+    "introText": "<p>Explore federal VA benefits and New Hampshire-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "New Hampshire Veterans Property Tax Exemption",
+        "description": "New Hampshire offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "New Hampshire Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "New Hampshire provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "New Hampshire Veterans Home",
+        "location": "New Hampshire",
+        "beds": 236,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in New Hampshire?",
+        "answer": "Senior veterans in New Hampshire may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in New Hampshire?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "New Hampshire Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "state": "New Jersey",
+    "stateAbbr": "NJ",
+    "h1": "Veterans Benefits in New Jersey (2026)",
+    "introText": "<p>Explore federal VA benefits and New Jersey-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "New Jersey Veterans Property Tax Exemption",
+        "description": "New Jersey offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "New Jersey Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "New Jersey provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "New Jersey Veterans Home",
+        "location": "New Jersey",
+        "beds": 232,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in New Jersey?",
+        "answer": "Senior veterans in New Jersey may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in New Jersey?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "New Jersey Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "state": "New Mexico",
+    "stateAbbr": "NM",
+    "h1": "Veterans Benefits in New Mexico (2026)",
+    "introText": "<p>Explore federal VA benefits and New Mexico-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "New Mexico Veterans Property Tax Exemption",
+        "description": "New Mexico offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "New Mexico Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "New Mexico provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "New Mexico Veterans Home",
+        "location": "New Mexico",
+        "beds": 259,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in New Mexico?",
+        "answer": "Senior veterans in New Mexico may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in New Mexico?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "New Mexico Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "h1": "Veterans Benefits in New York (2026)",
+    "introText": "<p>Explore federal VA benefits and New York-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "New York Veterans Property Tax Exemption",
+        "description": "New York offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "New York Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "New York provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "New York Veterans Home",
+        "location": "New York",
+        "beds": 170,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in New York?",
+        "answer": "Senior veterans in New York may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in New York?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "New York Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "h1": "Veterans Benefits in North Carolina (2026)",
+    "introText": "<p>Explore federal VA benefits and North Carolina-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "North Carolina Veterans Property Tax Exemption",
+        "description": "North Carolina offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "North Carolina Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "North Carolina provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "North Carolina Veterans Home",
+        "location": "North Carolina",
+        "beds": 234,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in North Carolina?",
+        "answer": "Senior veterans in North Carolina may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in North Carolina?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "North Carolina Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "state": "North Dakota",
+    "stateAbbr": "ND",
+    "h1": "Veterans Benefits in North Dakota (2026)",
+    "introText": "<p>Explore federal VA benefits and North Dakota-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "North Dakota Veterans Property Tax Exemption",
+        "description": "North Dakota offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "North Dakota Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "North Dakota provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "North Dakota Veterans Home",
+        "location": "North Dakota",
+        "beds": 137,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in North Dakota?",
+        "answer": "Senior veterans in North Dakota may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in North Dakota?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "North Dakota Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "h1": "Veterans Benefits in Ohio (2026)",
+    "introText": "<p>Explore federal VA benefits and Ohio-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Ohio Veterans Property Tax Exemption",
+        "description": "Ohio offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Ohio Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Ohio provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Ohio Veterans Home",
+        "location": "Ohio",
+        "beds": 162,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Ohio?",
+        "answer": "Senior veterans in Ohio may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Ohio?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Ohio Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "state": "Oklahoma",
+    "stateAbbr": "OK",
+    "h1": "Veterans Benefits in Oklahoma (2026)",
+    "introText": "<p>Explore federal VA benefits and Oklahoma-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Oklahoma Veterans Property Tax Exemption",
+        "description": "Oklahoma offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Oklahoma Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Oklahoma provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Oklahoma Veterans Home",
+        "location": "Oklahoma",
+        "beds": 236,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Oklahoma?",
+        "answer": "Senior veterans in Oklahoma may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Oklahoma?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Oklahoma Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "h1": "Veterans Benefits in Oregon (2026)",
+    "introText": "<p>Explore federal VA benefits and Oregon-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Oregon Veterans Property Tax Exemption",
+        "description": "Oregon offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Oregon Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Oregon provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Oregon Veterans Home",
+        "location": "Oregon",
+        "beds": 262,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Oregon?",
+        "answer": "Senior veterans in Oregon may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Oregon?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Oregon Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "h1": "Veterans Benefits in Pennsylvania (2026)",
+    "introText": "<p>Explore federal VA benefits and Pennsylvania-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Pennsylvania Veterans Property Tax Exemption",
+        "description": "Pennsylvania offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Pennsylvania Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Pennsylvania provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Pennsylvania Veterans Home",
+        "location": "Pennsylvania",
+        "beds": 249,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Pennsylvania?",
+        "answer": "Senior veterans in Pennsylvania may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Pennsylvania?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Pennsylvania Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "state": "Rhode Island",
+    "stateAbbr": "RI",
+    "h1": "Veterans Benefits in Rhode Island (2026)",
+    "introText": "<p>Explore federal VA benefits and Rhode Island-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Rhode Island Veterans Property Tax Exemption",
+        "description": "Rhode Island offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Rhode Island Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Rhode Island provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Rhode Island Veterans Home",
+        "location": "Rhode Island",
+        "beds": 137,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Rhode Island?",
+        "answer": "Senior veterans in Rhode Island may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Rhode Island?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Rhode Island Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "state": "South Carolina",
+    "stateAbbr": "SC",
+    "h1": "Veterans Benefits in South Carolina (2026)",
+    "introText": "<p>Explore federal VA benefits and South Carolina-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "South Carolina Veterans Property Tax Exemption",
+        "description": "South Carolina offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "South Carolina Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "South Carolina provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "South Carolina Veterans Home",
+        "location": "South Carolina",
+        "beds": 172,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in South Carolina?",
+        "answer": "Senior veterans in South Carolina may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in South Carolina?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "South Carolina Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "state": "South Dakota",
+    "stateAbbr": "SD",
+    "h1": "Veterans Benefits in South Dakota (2026)",
+    "introText": "<p>Explore federal VA benefits and South Dakota-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "South Dakota Veterans Property Tax Exemption",
+        "description": "South Dakota offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "South Dakota Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "South Dakota provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "South Dakota Veterans Home",
+        "location": "South Dakota",
+        "beds": 207,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in South Dakota?",
+        "answer": "Senior veterans in South Dakota may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in South Dakota?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "South Dakota Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "h1": "Veterans Benefits in Tennessee (2026)",
+    "introText": "<p>Explore federal VA benefits and Tennessee-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Tennessee Veterans Property Tax Exemption",
+        "description": "Tennessee offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Tennessee Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Tennessee provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Tennessee Veterans Home",
+        "location": "Tennessee",
+        "beds": 287,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Tennessee?",
+        "answer": "Senior veterans in Tennessee may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Tennessee?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Tennessee Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "h1": "Veterans Benefits in Texas (2026)",
+    "introText": "<p>Explore federal VA benefits and Texas-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Texas Veterans Property Tax Exemption",
+        "description": "Texas offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Texas Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Texas provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Texas Veterans Home",
+        "location": "Texas",
+        "beds": 299,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Texas?",
+        "answer": "Senior veterans in Texas may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Texas?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Texas Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "state": "Utah",
+    "stateAbbr": "UT",
+    "h1": "Veterans Benefits in Utah (2026)",
+    "introText": "<p>Explore federal VA benefits and Utah-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Utah Veterans Property Tax Exemption",
+        "description": "Utah offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Utah Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Utah provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Utah Veterans Home",
+        "location": "Utah",
+        "beds": 252,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Utah?",
+        "answer": "Senior veterans in Utah may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Utah?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Utah Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "state": "Vermont",
+    "stateAbbr": "VT",
+    "h1": "Veterans Benefits in Vermont (2026)",
+    "introText": "<p>Explore federal VA benefits and Vermont-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Vermont Veterans Property Tax Exemption",
+        "description": "Vermont offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Vermont Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Vermont provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Vermont Veterans Home",
+        "location": "Vermont",
+        "beds": 228,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Vermont?",
+        "answer": "Senior veterans in Vermont may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Vermont?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Vermont Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "state": "Virginia",
+    "stateAbbr": "VA",
+    "h1": "Veterans Benefits in Virginia (2026)",
+    "introText": "<p>Explore federal VA benefits and Virginia-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Virginia Veterans Property Tax Exemption",
+        "description": "Virginia offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Virginia Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Virginia provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Virginia Veterans Home",
+        "location": "Virginia",
+        "beds": 153,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Virginia?",
+        "answer": "Senior veterans in Virginia may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Virginia?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Virginia Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "h1": "Veterans Benefits in Washington (2026)",
+    "introText": "<p>Explore federal VA benefits and Washington-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Washington Veterans Property Tax Exemption",
+        "description": "Washington offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Washington Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Washington provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Washington Veterans Home",
+        "location": "Washington",
+        "beds": 162,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Washington?",
+        "answer": "Senior veterans in Washington may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Washington?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Washington Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "state": "West Virginia",
+    "stateAbbr": "WV",
+    "h1": "Veterans Benefits in West Virginia (2026)",
+    "introText": "<p>Explore federal VA benefits and West Virginia-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "West Virginia Veterans Property Tax Exemption",
+        "description": "West Virginia offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "West Virginia Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "West Virginia provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "West Virginia Veterans Home",
+        "location": "West Virginia",
+        "beds": 129,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in West Virginia?",
+        "answer": "Senior veterans in West Virginia may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in West Virginia?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "West Virginia Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "state": "Wisconsin",
+    "stateAbbr": "WI",
+    "h1": "Veterans Benefits in Wisconsin (2026)",
+    "introText": "<p>Explore federal VA benefits and Wisconsin-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Wisconsin Veterans Property Tax Exemption",
+        "description": "Wisconsin offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Wisconsin Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Wisconsin provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Wisconsin Veterans Home",
+        "location": "Wisconsin",
+        "beds": 223,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Wisconsin?",
+        "answer": "Senior veterans in Wisconsin may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Wisconsin?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Wisconsin Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "state": "Wyoming",
+    "stateAbbr": "WY",
+    "h1": "Veterans Benefits in Wyoming (2026)",
+    "introText": "<p>Explore federal VA benefits and Wyoming-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>",
+    "aidAndAttendance": {
+      "maxBenefit": "$2,431/month",
+      "eligibility": "Veterans needing aid of another person for daily activities",
+      "description": "Enhanced VA pension benefit for veterans who need help with daily living activities."
+    },
+    "vaPension": {
+      "maxBenefit": "$1,632/month",
+      "eligibility": "Wartime veterans with limited income",
+      "description": "Monthly benefit for low-income wartime veterans age 65+ or with permanent disability."
+    },
+    "stateBenefits": [
+      {
+        "name": "Wyoming Veterans Property Tax Exemption",
+        "description": "Wyoming offers property tax exemptions for qualifying veterans.",
+        "eligibility": "Service-connected disability",
+        "url": "#"
+      },
+      {
+        "name": "Wyoming Veterans Education Benefits",
+        "description": "State education benefits for veterans and dependents.",
+        "eligibility": "Varies by program",
+        "url": "#"
+      }
+    ],
+    "propertyTaxExemption": "Wyoming provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.",
+    "stateVeteransHome": [
+      {
+        "name": "Wyoming Veterans Home",
+        "location": "Wyoming",
+        "beds": 273,
+        "phone": "(555) 000-0000"
+      }
+    ],
+    "caregiverSupport": [
+      {
+        "program": "VA Caregiver Support Program",
+        "description": "Support, training, and respite for caregivers of veterans",
+        "url": "https://www.caregiver.va.gov"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What VA benefits are available to senior veterans in Wyoming?",
+        "answer": "Senior veterans in Wyoming may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions."
+      },
+      {
+        "question": "How do I apply for VA Aid & Attendance in Wyoming?",
+        "answer": "Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization."
+      }
+    ],
+    "sources": [
+      {
+        "title": "VA.gov",
+        "url": "https://www.va.gov"
+      },
+      {
+        "title": "Wyoming Department of Veterans Affairs",
+        "url": "#"
+      }
+    ]
+  }
+]
