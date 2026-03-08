@@ -10,11 +10,40 @@
 <body class="chat-body">
   <header class="chat-header">
     <div class="chat-header-main">
-      <span class="chat-title">AI Senior Benefits &amp; Care Finder – AI Guide</span>
+      <span class="chat-title">Senior Benefits Care Finder – AI Guide</span>
       <span class="chat-subtitle">Calm, senior-friendly explanations about Medicare, coverage &amp; support options.</span>
     </div>
-    <a href="index.html" class="chat-back-link">← Back to homepage</a>
+    <div class="header-right">
+      <a href="chat.html" class="btn-ai-pill">Try our AI</a>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-menu-link">← Back to homepage</a>
+      <a href="chat.html" class="mobile-menu-link">💬 Talk to the AI guide</a>
+    </nav>
   </header>
+  <script>
+    (function() {
+      var btn = document.getElementById('hamburgerBtn');
+      var menu = document.getElementById('mobileMenu');
+      btn.addEventListener('click', function() {
+        var open = menu.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
 
   <main class="chat-main">
     <div id="chatWindow" class="chat-window">
