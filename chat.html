@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Talk to the AI Senior Benefits Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chat with a calm AI guide about senior benefits, Medicare, and care options. Information only – not financial, legal, tax, medical, or insurance advice." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="chat-body">
+  <header class="chat-header">
+    <div class="chat-header-main">
+      <span class="chat-title">AI Senior Benefits &amp; Care Finder – AI Guide</span>
+      <span class="chat-subtitle">Calm, senior-friendly explanations about Medicare, coverage &amp; support options.</span>
+    </div>
+    <a href="index.html" class="chat-back-link">← Back to homepage</a>
+  </header>
+
+  <main class="chat-main">
+    <div id="chatWindow" class="chat-window">
+      <div class="message-row assistant">
+        <div class="message-bubble">
+          <p>
+            Hi, I’m your AI senior benefits guide. I can help you think through Medicare options, coverage questions,
+            and day-to-day support ideas in clear, simple language.
+          </p>
+          <p class="message-small">
+            I cannot give financial, legal, tax, medical, or insurance advice, and I cannot enroll you in any plan.
+            My job is to help you understand the landscape so you feel more confident talking with licensed
+            professionals and official plan representatives.
+          </p>
+          <p>
+            As we talk, if it would help, I can also point you toward comparison tools and senior resources like
+            eHealth Medicare, the official Medicare.gov Plan Finder, GoHealth, SelectQuote, A Place for Mom, and
+            Caring.com so you can explore them on your own.
+          </p>
+          <p>
+            When you’re ready, tell me what you’re wondering about — for example, Medicare Advantage vs. Medigap,
+            prescription coverage, out-of-pocket costs, or support for caregivers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <form id="chatForm" class="chat-form">
+      <textarea
+        id="userInput"
+        class="chat-input"
+        rows="1"
+        placeholder="Type a message… (Shift+Enter for a new line)"
+      ></textarea>
+      <button type="submit" class="btn-primary chat-send">Send</button>
+    </form>
+  </main>
+
+  <footer class="chat-footer">
+    <p class="footer-text small">
+      Information only. Not financial, legal, tax, medical, or insurance advice. For decisions about coverage and care,
+      speak with licensed professionals and official plan representatives.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
