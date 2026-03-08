@@ -1,0 +1,80 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{{pageTitle}}",
+      "description": "{{metaDescription}}",
+      "url": "{{canonicalUrl}}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Senior Benefits Care Finder",
+        "url": "https://seniorbenefitscarefinder.com"
+      }
+    }
+    </script>
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    {{> disclaimer}}
+
+    <!-- Main content sections -->
+    {{#if sections}}
+    {{#each sections}}
+    <section class="content-section">
+      <h2>{{heading}}</h2>
+      {{{content}}}
+    </section>
+    {{/each}}
+    {{/if}}
+
+    <!-- Team members (for About/Who We Are pages) -->
+    {{#if teamMembers}}
+    <section class="content-section">
+      <h2>Our Team</h2>
+      {{#each teamMembers}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p><strong>{{role}}</strong></p>
+        {{#if credentials}}<p style="color:var(--accent);font-size:0.85rem;">{{credentials}}</p>{{/if}}
+        {{#if bio}}<p>{{bio}}</p>{{/if}}
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    <!-- Policy content (for legal/privacy/terms pages) -->
+    {{#if policyContent}}
+    <section class="content-section">
+      {{{policyContent}}}
+    </section>
+    {{/if}}
+
+    <!-- Contact information -->
+    {{#if contactInfo}}
+    <section class="content-section">
+      <h2>Contact Us</h2>
+      <div class="info-box">
+        {{#if contactInfo.email}}<p>Email: <a href="mailto:{{contactInfo.email}}" style="color:#38bdf8;">{{contactInfo.email}}</a></p>{{/if}}
+        {{#if contactInfo.phone}}<p>Phone: <strong>{{contactInfo.phone}}</strong></p>{{/if}}
+        {{#if contactInfo.address}}<p>Address: {{contactInfo.address}}</p>{{/if}}
+      </div>
+    </section>
+    {{/if}}
+
+    {{> cta-section}}
+  </main>
+
+{{> footer}}

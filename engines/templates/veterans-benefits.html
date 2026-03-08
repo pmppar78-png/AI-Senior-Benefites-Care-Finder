@@ -1,0 +1,236 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>{{state}} ({{stateAbbr}})</span>
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} VA &amp; State Benefits</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Veterans Benefits Overview</a></li>
+        <li><a href="#aid-attendance">Aid &amp; Attendance</a></li>
+        <li><a href="#va-pension">VA Pension</a></li>
+        <li><a href="#state-benefits">{{state}} State Benefits</a></li>
+        <li><a href="#property-tax">Property Tax Exemptions</a></li>
+        <li><a href="#veterans-homes">State Veterans Homes</a></li>
+        <li><a href="#caregiver-support">Caregiver Support</a></li>
+        <li><a href="#how-to-apply">How to Apply</a></li>
+        <li><a href="#va-facilities">VA Facilities in {{state}}</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>Veterans Benefits for Seniors in {{state}}</h2>
+      <p>Senior veterans in {{state}} have access to both federal VA benefits and state-specific programs designed to support their health care, housing, and financial needs. Many veterans and their surviving spouses don't claim all the benefits they've earned.</p>
+      <p>This guide covers federal VA programs — health care, pension, Aid &amp; Attendance — as well as {{state}}-specific benefits like property tax exemptions, state veterans homes, and caregiver support programs.</p>
+    </section>
+
+    <!-- Section: Aid & Attendance -->
+    <section class="content-section" id="aid-attendance">
+      <h2>VA Aid &amp; Attendance Benefit</h2>
+      {{#if aidAndAttendance}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{aidAndAttendance.maxBenefit}}</span>
+          <span class="stat-label">Maximum Monthly Benefit</span>
+        </div>
+      </div>
+      <p>{{{aidAndAttendance.description}}}</p>
+      <p><strong>Eligibility:</strong> {{aidAndAttendance.eligibility}}</p>
+      {{else}}
+      <p>Aid &amp; Attendance (A&amp;A) is an enhanced pension benefit for wartime veterans and surviving spouses who need help with daily activities or are housebound. This benefit can help pay for assisted living, home care, or nursing home care.</p>
+      <div class="info-box highlight">
+        <h3>Who Qualifies</h3>
+        <p>You may qualify if you are a wartime veteran (or surviving spouse) who needs help with daily activities like bathing, dressing, eating, or adjusting prosthetics, or who is blind or in a nursing home.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: VA Pension -->
+    <section class="content-section" id="va-pension">
+      <h2>VA Pension Program</h2>
+      {{#if vaPension}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{vaPension.maxBenefit}}</span>
+          <span class="stat-label">Maximum Annual Pension</span>
+        </div>
+      </div>
+      <p>{{{vaPension.description}}}</p>
+      <p><strong>Eligibility:</strong> {{vaPension.eligibility}}</p>
+      {{else}}
+      <p>The VA Pension is a needs-based benefit for wartime veterans aged 65+ (or permanently disabled) with limited income. Unlike VA disability compensation, the pension doesn't require a service-connected disability.</p>
+      <div class="info-box">
+        <h3>Basic Requirements</h3>
+        <ul>
+          <li>Served at least 90 days of active duty with at least 1 day during a wartime period</li>
+          <li>Age 65 or older, or permanently and totally disabled</li>
+          <li>Income below VA pension limits</li>
+          <li>Net worth below limits (adjusted annually)</li>
+        </ul>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: State Benefits -->
+    <section class="content-section" id="state-benefits">
+      <h2>{{state}} State Veterans Benefits</h2>
+      {{#if stateBenefits}}
+      {{#each stateBenefits}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if eligibility}}<p><strong>Eligibility:</strong> {{eligibility}}</p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <p>In addition to federal VA benefits, {{state}} offers state-level programs for veterans. Contact {{state}}'s Department of Veterans Affairs for a complete list of state-specific benefits available to you.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Property Tax -->
+    <section class="content-section" id="property-tax">
+      <h2>Property Tax Exemptions for Veterans</h2>
+      {{#if propertyTaxExemption}}
+      <div class="info-box highlight">
+        <h3>{{state}} Veteran Property Tax Exemption</h3>
+        <p>{{{propertyTaxExemption}}}</p>
+      </div>
+      {{else}}
+      <p>Many states offer property tax exemptions or reductions for veterans, especially those with service-connected disabilities. Contact {{state}}'s tax assessor's office or veterans affairs department to learn about property tax benefits in your area.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Veterans Homes -->
+    {{#if stateVeteransHome}}
+    <section class="content-section" id="veterans-homes">
+      <h2>{{state}} State Veterans Homes</h2>
+      {{#each stateVeteransHome}}
+      <div class="provider-card">
+        <h3>{{name}}</h3>
+        <div class="provider-meta">
+          <p>{{location}}</p>
+          {{#if beds}}<p>Beds: {{beds}}</p>{{/if}}
+          {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    <!-- Section: Caregiver Support -->
+    <section class="content-section" id="caregiver-support">
+      <h2>VA Caregiver Support Programs</h2>
+      {{#if caregiverSupport}}
+      {{#each caregiverSupport}}
+      <div class="info-box">
+        <h3>{{program}}</h3>
+        <p>{{{description}}}</p>
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>Program of Comprehensive Assistance for Family Caregivers (PCAFC)</h3>
+        <p>Provides a monthly stipend, training, respite care, and health insurance (if eligible) to family members caring for veterans with serious injuries or illnesses.</p>
+      </div>
+      <div class="info-box">
+        <h3>Program of General Caregiver Support Services (PGCSS)</h3>
+        <p>Available to caregivers of veterans enrolled in VA health care. Offers peer support, skills training, telephone support, and referrals to resources.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: How to Apply -->
+    <section class="content-section" id="how-to-apply">
+      <h2>How to Apply for Veterans Benefits</h2>
+      {{#if applicationSteps}}
+      <ol class="steps-list">
+        {{#each applicationSteps}}
+        <li>
+          <div class="step-content">
+            <h4>{{title}}</h4>
+            <p>{{{description}}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{else}}
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Gather your documents</h4>
+            <p>You'll need your DD-214 (discharge papers), medical records, income information, and proof of wartime service.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Apply online at VA.gov</h4>
+            <p>The fastest way to apply for most VA benefits. Create an account and submit applications online.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Contact a Veterans Service Organization (VSO)</h4>
+            <p>Free, accredited representatives from organizations like the VFW, American Legion, or DAV can help you navigate the application process.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Visit your local VA Regional Office</h4>
+            <p>Meet with a VA counselor for in-person assistance with your benefits application.</p>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+    </section>
+
+    <!-- Section: VA Facilities -->
+    {{#if vaFacilities}}
+    <section class="content-section" id="va-facilities">
+      <h2>VA Facilities in {{state}}</h2>
+      {{#each vaFacilities}}
+      <div class="provider-card">
+        <h3>{{name}}</h3>
+        <div class="provider-meta">
+          {{#if type}}<p>Type: {{type}}</p>{{/if}}
+          <p>{{address}}</p>
+          {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+          {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

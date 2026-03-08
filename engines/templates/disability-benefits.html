@@ -1,0 +1,194 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Programs &amp; Support</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Condition Overview</a></li>
+        <li><a href="#federal-programs">Federal Benefits Programs</a></li>
+        <li><a href="#medicare-coverage">Medicare Coverage</a></li>
+        <li><a href="#medicaid-coverage">Medicaid Coverage</a></li>
+        <li><a href="#va-benefits">VA Benefits</a></li>
+        <li><a href="#financial-assistance">Financial Assistance</a></li>
+        <li><a href="#caregiver-resources">Caregiver Resources</a></li>
+        <li><a href="#support-organizations">Support Organizations</a></li>
+        <li><a href="#daily-living">Daily Living Aids</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>{{condition}} — Overview for Seniors</h2>
+      {{#if overview}}
+      <p>{{{overview}}}</p>
+      {{/if}}
+      {{#if prevalence}}
+      <div class="info-box highlight">
+        <h3>How Many Seniors Are Affected</h3>
+        <p>{{prevalence}}</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Federal Programs -->
+    <section class="content-section" id="federal-programs">
+      <h2>Federal Benefits Programs for {{condition}}</h2>
+      {{#if federalPrograms}}
+      {{#each federalPrograms}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if eligibility}}<p><strong>Eligibility:</strong> {{eligibility}}</p>{{/if}}
+        {{#if benefits}}<p><strong>Benefits:</strong> {{benefits}}</p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <p>Seniors with {{condition}} may be eligible for Social Security Disability Insurance (SSDI), Supplemental Security Income (SSI), and other federal programs. The SSA maintains a listing of impairments (Blue Book) that defines which conditions qualify for disability benefits.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Medicare -->
+    <section class="content-section" id="medicare-coverage">
+      <h2>Medicare Coverage for {{condition}}</h2>
+      {{#if medicareCoverage}}
+      <p>{{{medicareCoverage}}}</p>
+      {{else}}
+      <p>Medicare provides coverage for diagnosis, treatment, and ongoing management of {{condition}}. This may include doctor visits, hospital stays, lab tests, medications (through Part D), durable medical equipment, home health care, and skilled nursing facility care. Coverage specifics depend on your Medicare plan type.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Medicaid -->
+    <section class="content-section" id="medicaid-coverage">
+      <h2>Medicaid Coverage for {{condition}}</h2>
+      {{#if medicaidCoverage}}
+      <p>{{{medicaidCoverage}}}</p>
+      {{else}}
+      <p>Medicaid may provide additional coverage beyond Medicare, including long-term care, personal care assistance, home modifications, and waiver programs that help seniors with {{condition}} remain in their homes and communities.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: VA Benefits -->
+    <section class="content-section" id="va-benefits">
+      <h2>VA Benefits for Veterans with {{condition}}</h2>
+      {{#if vaBenefits}}
+      <p>{{{vaBenefits}}}</p>
+      {{else}}
+      <p>Veterans with {{condition}} may be eligible for VA disability compensation, Aid &amp; Attendance benefits, and specialized health care services through the VA. If the condition is service-connected, additional compensation may be available.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Financial Assistance -->
+    {{#if financialAssistance}}
+    <section class="content-section" id="financial-assistance">
+      <h2>Financial Assistance Programs</h2>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Amount</th>
+              <th>Eligibility</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each financialAssistance}}
+            <tr>
+              <td><strong>{{program}}</strong></td>
+              <td class="highlight-cell">{{amount}}</td>
+              <td>{{eligibility}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {{/if}}
+
+    <!-- Section: Caregiver Resources -->
+    <section class="content-section" id="caregiver-resources">
+      <h2>Caregiver Resources for {{condition}}</h2>
+      {{#if caregiverResources}}
+      {{#each caregiverResources}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <p>Caregivers of seniors with {{condition}} can access respite care, support groups, training programs, and counseling services. Contact your local Area Agency on Aging (AAA) for caregiver support programs in your area.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Support Organizations -->
+    {{#if supportOrganizations}}
+    <section class="content-section" id="support-organizations">
+      <h2>Support Organizations</h2>
+      {{#each supportOrganizations}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    <!-- Section: Daily Living Aids -->
+    {{#if dailyLivingAids}}
+    <section class="content-section" id="daily-living">
+      <h2>Daily Living Aids &amp; Equipment</h2>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Aid / Equipment</th>
+              <th>Description</th>
+              <th>Typical Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each dailyLivingAids}}
+            <tr>
+              <td><strong>{{name}}</strong></td>
+              <td>{{description}}</td>
+              <td>{{cost}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {{/if}}
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+  </main>
+
+{{> footer}}

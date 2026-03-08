@@ -1,0 +1,209 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>{{state}} ({{stateAbbr}})</span>
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Programs &amp; Eligibility</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#extra-help">Medicare Extra Help / LIS</a></li>
+        <li><a href="#state-programs">State Pharmaceutical Programs</a></li>
+        <li><a href="#patient-assistance">Patient Assistance Programs</a></li>
+        <li><a href="#discount-programs">Discount Programs</a></li>
+        <li><a href="#how-to-apply">How to Apply</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>Prescription Assistance in {{state}}</h2>
+      <p>Prescription drug costs are a major concern for seniors. In {{state}}, multiple programs exist to help reduce medication costs, including federal programs like Medicare Extra Help, state-specific pharmaceutical assistance programs, manufacturer patient assistance programs, and discount card programs.</p>
+      <p>Many seniors qualify for help but don't know it. This guide covers every available option to lower your prescription costs in {{state}}.</p>
+    </section>
+
+    <!-- Section: Extra Help -->
+    <section class="content-section" id="extra-help">
+      <h2>Medicare Extra Help (Low Income Subsidy)</h2>
+      <p>Medicare Extra Help (also called the Low Income Subsidy or LIS) helps pay Part D prescription drug costs. If you qualify, you may pay little to nothing for prescriptions.</p>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Eligibility Criteria</th>
+              <th>Individual</th>
+              <th>Couple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Annual Income Limit</strong></td>
+              <td class="highlight-cell">{{extraHelpIncomeLimits.individual}}</td>
+              <td class="highlight-cell">{{extraHelpIncomeLimits.couple}}</td>
+            </tr>
+            <tr>
+              <td><strong>Asset Limit</strong></td>
+              <td>{{extraHelpAssetLimits.individual}}</td>
+              <td>{{extraHelpAssetLimits.couple}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box highlight">
+        <h3>What Extra Help Covers</h3>
+        <p>If you qualify for full Extra Help, you pay no Part D premium, no deductible, and reduced copays (typically $0–$11 per prescription). Partial Extra Help reduces premiums and provides a sliding scale for copayments.</p>
+      </div>
+    </section>
+
+    <!-- Section: State Programs -->
+    <section class="content-section" id="state-programs">
+      <h2>{{state}} Pharmaceutical Assistance Programs</h2>
+      {{#if hasStateSPAP}}
+      <div class="info-box highlight">
+        <h3>{{spapName}}</h3>
+        <p>{{{spapDescription}}}</p>
+        {{#if spapEligibility}}<p><strong>Eligibility:</strong> {{spapEligibility}}</p>{{/if}}
+        {{#if spapUrl}}<p><a href="{{spapUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more &amp; apply →</a></p>{{/if}}
+      </div>
+      {{else}}
+      <p>Check with {{state}}'s Department of Health or Department of Aging to learn about any state-funded pharmaceutical assistance programs available. While not all states operate their own programs, many offer alternatives or can connect you with available resources.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Patient Assistance -->
+    <section class="content-section" id="patient-assistance">
+      <h2>Patient Assistance Programs (PAPs)</h2>
+      <p>Most major pharmaceutical manufacturers offer patient assistance programs that provide free or deeply discounted medications to people who qualify. These programs are available regardless of which state you live in.</p>
+
+      {{#if programs}}
+      {{#each programs}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if eligibility}}<p><strong>Eligibility:</strong> {{eligibility}}</p>{{/if}}
+        {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>How Patient Assistance Programs Work</h3>
+        <p>Drug manufacturers provide free medications directly to qualifying patients. You typically need a doctor's prescription and proof that you meet income requirements. Your doctor's office can often help with the application.</p>
+      </div>
+      <div class="info-box">
+        <h3>Finding PAPs for Your Medications</h3>
+        <p>Visit the manufacturer's website for each of your medications, or use resources like NeedyMeds.org, RxAssist.org, or Medicare.gov's drug assistance page to find programs for your specific drugs.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Discount Programs -->
+    <section class="content-section" id="discount-programs">
+      <h2>Prescription Discount Programs</h2>
+      {{#if discountPrograms}}
+      {{#each discountPrograms}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if savings}}<p><strong>Typical savings:</strong> {{savings}}</p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>GoodRx</h3>
+        <p>Free discount card that can save up to 80% on prescriptions at participating pharmacies. Compare prices across pharmacies in {{state}}.</p>
+      </div>
+      <div class="info-box">
+        <h3>RxSaver</h3>
+        <p>Compare prescription prices and get free coupons for medications at pharmacies near you.</p>
+      </div>
+      <div class="info-box">
+        <h3>Generic Medications</h3>
+        <p>Ask your doctor about generic alternatives to brand-name drugs. Generics contain the same active ingredients and can cost 80–85% less than brand-name versions.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: How to Apply -->
+    <section class="content-section" id="how-to-apply">
+      <h2>How to Get Help with Prescription Costs</h2>
+      {{#if applicationSteps}}
+      <ol class="steps-list">
+        {{#each applicationSteps}}
+        <li>
+          <div class="step-content">
+            <h4>{{title}}</h4>
+            <p>{{{description}}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{else}}
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Check Medicare Extra Help eligibility</h4>
+            <p>Apply online at ssa.gov or call 1-800-772-1213. Many people qualify without realizing it.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Contact {{state}}'s SHIP program</h4>
+            <p>Free counselors can help you find all available drug assistance programs in {{state}}.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Ask your doctor about PAPs</h4>
+            <p>Your doctor's office can help you apply for manufacturer patient assistance programs for your specific medications.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Compare Part D plans annually</h4>
+            <p>During Medicare Open Enrollment (Oct 15–Dec 7), compare Part D plans at Medicare.gov to find the lowest-cost plan for your specific medications.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Use discount cards for non-covered drugs</h4>
+            <p>For medications not covered by your plan, use free discount cards like GoodRx to find the best pharmacy price.</p>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+    </section>
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

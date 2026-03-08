@@ -1,0 +1,10 @@
+{
+  "name": "seniorbenefitscarefinder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "node engines/generator.js",
+    "generate:dry-run": "node engines/generator.js --dry-run",
+    "generate:engine": "node engines/generator.js --engine"
+  }
+}

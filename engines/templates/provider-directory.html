@@ -1,0 +1,238 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Ratings &amp; Reviews</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#top-providers">Top-Rated {{providerTypeLabel}}</a></li>
+        <li><a href="#quality-metrics">Quality Metrics</a></li>
+        <li><a href="#how-to-choose">How to Choose</a></li>
+        <li><a href="#questions-to-ask">Questions to Ask</a></li>
+        <li><a href="#payment">Payment Options</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>{{providerTypeLabel}} {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+
+      {{#if totalProviders}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{totalProviders}}</span>
+          <span class="stat-label">Total {{providerTypeLabel}}</span>
+        </div>
+        {{#if avgRating}}
+        <div class="stat-card">
+          <span class="stat-value">{{avgRating}}</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+        {{/if}}
+      </div>
+      {{/if}}
+
+      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} requires careful research. This guide helps you compare options based on quality ratings, services offered, costs, and reviews from families and residents.</p>
+    </section>
+
+    <!-- Section: Top Providers -->
+    {{#if providers}}
+    <section class="content-section" id="top-providers">
+      <h2>Top-Rated {{providerTypeLabel}} {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}</h2>
+      {{#each providers}}
+      <div class="provider-card">
+        <h3>{{name}}</h3>
+        <div class="provider-meta">
+          <p>{{address}}{{#if city}}, {{city}}{{/if}}</p>
+          {{#if rating}}<p class="provider-rating">Rating: {{rating}} {{#if ratingSource}}({{ratingSource}}){{/if}}</p>{{/if}}
+          {{#if specialties}}<p>Specialties: {{specialties}}</p>{{/if}}
+          {{#if costRange}}<p>Cost range: {{costRange}}</p>{{/if}}
+          {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+          {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    <!-- Section: Quality Metrics -->
+    <section class="content-section" id="quality-metrics">
+      <h2>How Quality is Measured</h2>
+      {{#if qualityMetrics}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>What It Measures</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each qualityMetrics}}
+            <tr>
+              <td><strong>{{metric}}</strong></td>
+              <td>{{description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{else}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>What It Measures</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CMS Star Rating</strong></td>
+              <td>Overall quality rating (1–5 stars) based on health inspections, staffing, and quality measures</td>
+            </tr>
+            <tr>
+              <td><strong>Health Inspection Score</strong></td>
+              <td>Results of state health inspections, including any deficiencies or violations</td>
+            </tr>
+            <tr>
+              <td><strong>Staffing Ratio</strong></td>
+              <td>Number of nursing hours per resident per day — higher is generally better</td>
+            </tr>
+            <tr>
+              <td><strong>Quality Measures</strong></td>
+              <td>Clinical outcomes including fall rates, pressure ulcers, medication errors, and infections</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: How to Choose -->
+    <section class="content-section" id="how-to-choose">
+      <h2>How to Choose the Right Provider</h2>
+      {{#if howToChoose}}
+      <ol class="steps-list">
+        {{#each howToChoose}}
+        <li>
+          <div class="step-content">
+            <h4>{{title}}</h4>
+            <p>{{{description}}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{else}}
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Research quality ratings</h4>
+            <p>Check CMS Medicare.gov Compare tools for official quality ratings, inspection reports, and staffing information.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Visit in person</h4>
+            <p>Tour facilities during different times of day. Observe cleanliness, staff interactions with residents, and overall atmosphere.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Ask about staff turnover</h4>
+            <p>High staff turnover can indicate management problems. Consistent caregivers provide better care and build relationships.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Review the contract carefully</h4>
+            <p>Understand what's included in the base rate, what costs extra, discharge policies, and dispute resolution procedures.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Talk to current residents and families</h4>
+            <p>Ask about their experience, responsiveness to concerns, and whether they'd recommend the facility.</p>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+    </section>
+
+    <!-- Section: Questions to Ask -->
+    <section class="content-section" id="questions-to-ask">
+      <h2>Questions to Ask When Visiting</h2>
+      {{#if questionsToAsk}}
+      <ul>
+        {{#each questionsToAsk}}
+        <li>{{_item}}</li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <ul>
+        <li>What is the staff-to-resident ratio during day, evening, and night shifts?</li>
+        <li>Is there a registered nurse on-site 24/7?</li>
+        <li>What happens if a resident's care needs increase?</li>
+        <li>How are medications managed and administered?</li>
+        <li>What activities and social programs are available?</li>
+        <li>How do you handle emergencies?</li>
+        <li>What are all the costs? What's extra beyond the base rate?</li>
+        <li>What is your discharge/transfer policy?</li>
+        <li>Do you accept Medicaid, VA benefits, or long-term care insurance?</li>
+        <li>Can I review recent state inspection reports?</li>
+      </ul>
+      {{/if}}
+    </section>
+
+    <!-- Section: Payment -->
+    <section class="content-section" id="payment">
+      <h2>Payment Options</h2>
+      {{#if paymentAccepted}}
+      <ul>
+        {{#each paymentAccepted}}
+        <li>{{_item}}</li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <ul>
+        <li><strong>Medicare:</strong> Covers skilled nursing facility stays (up to 100 days) after a qualifying hospital stay</li>
+        <li><strong>Medicaid:</strong> Covers nursing home care for eligible low-income seniors</li>
+        <li><strong>Long-term care insurance:</strong> Policies may cover facility care after meeting benefit triggers</li>
+        <li><strong>VA benefits:</strong> Aid &amp; Attendance and VA nursing home care for eligible veterans</li>
+        <li><strong>Private pay:</strong> Out-of-pocket using savings, retirement accounts, or family resources</li>
+      </ul>
+      {{/if}}
+    </section>
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

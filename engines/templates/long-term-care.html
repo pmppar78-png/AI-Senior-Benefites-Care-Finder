@@ -1,0 +1,279 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>{{state}} ({{stateAbbr}})</span>
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Costs &amp; Planning</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#ltc-costs">Long-Term Care Costs in {{state}}</a></li>
+        <li><a href="#insurance-premiums">Insurance Premiums by Age</a></li>
+        <li><a href="#coverage-options">Coverage Options</a></li>
+        <li><a href="#hybrid-options">Hybrid &amp; Alternative Options</a></li>
+        <li><a href="#partnership-program">Partnership Program</a></li>
+        <li><a href="#medicaid-planning">Medicaid Planning</a></li>
+        <li><a href="#planning-steps">Planning Steps</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>Long-Term Care Insurance &amp; Planning in {{state}}</h2>
+      <p>Long-term care (LTC) is one of the biggest financial risks facing seniors. In {{state}}, the cost of nursing home care, assisted living, and home health services can quickly deplete retirement savings. Understanding your insurance options and planning strategies is essential.</p>
+      <p>This guide covers LTC insurance costs in {{state}}, alternative coverage options, Medicaid planning strategies, and step-by-step planning guidance.</p>
+    </section>
+
+    <!-- Section: LTC Costs -->
+    <section class="content-section" id="ltc-costs">
+      <h2>Long-Term Care Costs in {{state}}</h2>
+      {{#if avgLtcCosts}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{avgLtcCosts.nursingHome}}</span>
+          <span class="stat-label">Nursing Home (Monthly)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{avgLtcCosts.assistedLiving}}</span>
+          <span class="stat-label">Assisted Living (Monthly)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{avgLtcCosts.homeCare}}</span>
+          <span class="stat-label">Home Care (Monthly)</span>
+        </div>
+      </div>
+      {{/if}}
+      <p>Without insurance or Medicaid, families must pay these costs out of pocket. The average person who needs long-term care will need it for approximately 3 years, though many need care for much longer.</p>
+    </section>
+
+    <!-- Section: Insurance Premiums -->
+    <section class="content-section" id="insurance-premiums">
+      <h2>LTC Insurance Premiums in {{state}}</h2>
+      {{#if avgAnnualPremium}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Purchase Age</th>
+              <th>Avg. Annual Premium</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Age 55</strong></td>
+              <td class="highlight-cell">{{avgAnnualPremium.age55}}</td>
+              <td>Best rates; healthy applicants most likely to qualify</td>
+            </tr>
+            <tr>
+              <td><strong>Age 60</strong></td>
+              <td class="highlight-cell">{{avgAnnualPremium.age60}}</td>
+              <td>Good rates; slight increase from age 55</td>
+            </tr>
+            <tr>
+              <td><strong>Age 65</strong></td>
+              <td class="highlight-cell">{{avgAnnualPremium.age65}}</td>
+              <td>Significantly higher; health screening more selective</td>
+            </tr>
+            <tr>
+              <td><strong>Couple (both 65)</strong></td>
+              <td class="highlight-cell">{{avgAnnualPremium.couple65}}</td>
+              <td>Couple discounts typically 25–40%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{else}}
+      <p>LTC insurance premiums vary significantly based on your age at purchase, health status, benefit amount, benefit period, elimination period, and inflation protection. Premiums are lowest when purchased in your 50s and increase substantially with age.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Coverage Options -->
+    <section class="content-section" id="coverage-options">
+      <h2>LTC Insurance Coverage Options</h2>
+      {{#if coverageOptions}}
+      {{#each coverageOptions}}
+      <div class="info-box">
+        <h3>{{type}}</h3>
+        <p>{{{description}}}</p>
+        {{#if avgPremium}}<p><strong>Average premium:</strong> {{avgPremium}}</p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>Traditional LTC Insurance</h3>
+        <p>Standalone policies that pay a daily/monthly benefit when you need long-term care. You choose the benefit amount, benefit period (2–5+ years or lifetime), elimination period (waiting period before benefits begin), and inflation protection.</p>
+      </div>
+      <div class="info-box">
+        <h3>Key Policy Features to Compare</h3>
+        <ul>
+          <li><strong>Daily/Monthly Benefit:</strong> How much the policy pays per day/month of care</li>
+          <li><strong>Benefit Period:</strong> How long benefits last (2, 3, 5 years, or lifetime)</li>
+          <li><strong>Elimination Period:</strong> Days you must pay out of pocket before benefits begin (30, 60, 90 days)</li>
+          <li><strong>Inflation Protection:</strong> Keeps benefits growing with rising care costs (3% or 5% compound)</li>
+          <li><strong>Home Care Coverage:</strong> Whether and how much the policy covers in-home care</li>
+        </ul>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Hybrid Options -->
+    <section class="content-section" id="hybrid-options">
+      <h2>Hybrid &amp; Alternative Options</h2>
+      {{#if hybridOptions}}
+      {{#each hybridOptions}}
+      <div class="info-box">
+        <h3>{{type}}</h3>
+        <p>{{{description}}}</p>
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box highlight">
+        <h3>Hybrid Life/LTC Policies</h3>
+        <p>Combine life insurance with long-term care benefits. If you need LTC, the policy pays for care. If you never need LTC, your beneficiaries receive a death benefit. Some policies also offer return-of-premium riders. These are increasingly popular because they guarantee a benefit either way.</p>
+      </div>
+      <div class="info-box">
+        <h3>Annuity-Based LTC</h3>
+        <p>Single-premium deferred annuities with LTC riders. Fund the annuity with a lump sum and access enhanced benefits if you need long-term care. Offers tax advantages for LTC benefits.</p>
+      </div>
+      <div class="info-box">
+        <h3>Short-Term Care Insurance</h3>
+        <p>Covers care for up to one year with simplified underwriting. Lower premiums and easier qualification than traditional LTC insurance. Good for those who can't qualify for or afford traditional policies.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Partnership Program -->
+    <section class="content-section" id="partnership-program">
+      <h2>{{state}} Long-Term Care Partnership Program</h2>
+      {{#if partnershipProgram}}
+      {{#if partnershipProgram.available}}
+      <div class="info-box highlight">
+        <h3>Partnership Program Available</h3>
+        <p>{{{partnershipProgram.description}}}</p>
+      </div>
+      {{else}}
+      <p>{{state}} does not currently participate in the Long-Term Care Partnership Program.</p>
+      {{/if}}
+      {{else}}
+      <p>Most states participate in the Long-Term Care Partnership Program, which allows people with qualifying LTC insurance policies to protect assets from Medicaid spend-down requirements. Dollar-for-dollar asset protection is the most common model — for every dollar your LTC policy pays, you can keep an extra dollar of assets and still qualify for Medicaid.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Medicaid Planning -->
+    <section class="content-section" id="medicaid-planning">
+      <h2>Medicaid Planning for Long-Term Care</h2>
+      {{#if medicaidSpendDown}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Asset Limit</strong></td>
+              <td>{{medicaidSpendDown.assetLimit}}</td>
+            </tr>
+            <tr>
+              <td><strong>Look-Back Period</strong></td>
+              <td>{{medicaidSpendDown.lookbackPeriod}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>{{{medicaidSpendDown.description}}}</p>
+      {{else}}
+      <p>If you don't have LTC insurance and exhaust your savings, Medicaid may cover nursing home care. However, qualifying for Medicaid requires "spending down" your assets to very low levels. Important planning considerations:</p>
+      <ul>
+        <li><strong>Look-back period:</strong> Medicaid reviews 5 years of financial transactions (2.5 years in California) for asset transfers</li>
+        <li><strong>Spousal protections:</strong> The at-home spouse can keep certain assets and income</li>
+        <li><strong>Exempt assets:</strong> Primary home (with equity limits), one vehicle, personal belongings</li>
+        <li><strong>Irrevocable trusts:</strong> Assets placed in irrevocable trusts before the look-back period may be protected</li>
+        <li><strong>Elder law attorney:</strong> Consult a Medicaid planning attorney for strategies specific to {{state}}'s rules</li>
+      </ul>
+      {{/if}}
+    </section>
+
+    <!-- Section: Planning Steps -->
+    <section class="content-section" id="planning-steps">
+      <h2>Long-Term Care Planning Steps</h2>
+      {{#if planningSteps}}
+      <ol class="steps-list">
+        {{#each planningSteps}}
+        <li>
+          <div class="step-content">
+            <h4>{{title}}</h4>
+            <p>{{{description}}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{else}}
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Assess your risk</h4>
+            <p>About 70% of people turning 65 today will need some form of long-term care. Consider your family health history, current health, and savings when evaluating your risk.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Understand the costs in {{state}}</h4>
+            <p>Research current nursing home, assisted living, and home care costs in your area. These costs typically increase 3–5% annually.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Evaluate insurance options</h4>
+            <p>Compare traditional LTC, hybrid life/LTC, and short-term care policies. Work with an independent insurance agent who can quote multiple carriers.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Consult an elder law attorney</h4>
+            <p>Get professional guidance on Medicaid planning, asset protection strategies, and estate planning specific to {{state}}'s laws.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Create advance directives</h4>
+            <p>Document your care preferences, designate a health care proxy, and establish power of attorney while you're able to make these decisions.</p>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+    </section>
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}
