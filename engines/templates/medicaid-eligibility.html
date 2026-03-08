@@ -1,0 +1,278 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>{{state}} ({{stateAbbr}})</span>
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Eligibility &amp; Income Limits</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Medicaid in {{state}}</a></li>
+        <li><a href="#income-limits">Income &amp; Asset Limits</a></li>
+        <li><a href="#how-to-apply">How to Apply</a></li>
+        <li><a href="#documents">Required Documents</a></li>
+        <li><a href="#programs">Available Programs</a></li>
+        <li><a href="#waivers">Waiver Programs</a></li>
+        <li><a href="#managed-care">Managed Care</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>Medicaid in {{state}}</h2>
+      {{#if programName}}
+      <div class="info-box highlight">
+        <h3>{{state}}'s Medicaid Program: {{programName}}</h3>
+        <p>In {{state}}, the Medicaid program is known as {{programName}}. This state-federal partnership provides health coverage to eligible low-income residents, including seniors aged 65 and older.</p>
+      </div>
+      {{/if}}
+      <p>Medicaid is a joint federal-state program that provides health coverage to millions of Americans, including eligible low-income adults, children, pregnant women, elderly adults, and people with disabilities. In {{state}}, Medicaid helps seniors cover costs for nursing home care, home health services, prescription drugs, hospital stays, and doctor visits that Medicare doesn't fully cover.</p>
+      <p>For seniors, Medicaid often works alongside Medicare as "dual eligibility," covering costs like Medicare premiums, deductibles, and copayments, as well as long-term care services that Medicare doesn't cover.</p>
+
+      {{#if expansionStatus}}
+      <div class="info-box">
+        <h3>Medicaid Expansion Status</h3>
+        <p>{{state}} has <strong>{{expansionStatus}}</strong> Medicaid under the Affordable Care Act. This affects income eligibility thresholds for adults under 65.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Income Limits -->
+    <section class="content-section" id="income-limits">
+      <h2>{{currentYear}} Medicaid Income &amp; Asset Limits in {{state}}</h2>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Individual</th>
+              <th>Couple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Monthly Income Limit</strong></td>
+              <td class="highlight-cell">{{incomeLimit.individual}}</td>
+              <td class="highlight-cell">{{incomeLimit.couple}}</td>
+            </tr>
+            <tr>
+              <td><strong>Asset Limit</strong></td>
+              <td>{{assetLimit.individual}}</td>
+              <td>{{assetLimit.couple}}</td>
+            </tr>
+            <tr>
+              <td><strong>Federal Poverty Level</strong></td>
+              <td colspan="2">{{incomeLimit.fpl}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {{#if assetLimit.exemptions}}
+      <h3>Exempt Assets (Not Counted)</h3>
+      <ul>
+        {{#each assetLimit.exemptions}}
+        <li>{{_item}}</li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <h3>Common Exempt Assets</h3>
+      <ul>
+        <li>Primary residence (with equity limit)</li>
+        <li>One vehicle</li>
+        <li>Personal belongings and household goods</li>
+        <li>Burial plot and prepaid funeral expenses (up to limits)</li>
+        <li>Life insurance with face value under $1,500</li>
+      </ul>
+      {{/if}}
+
+      <div class="info-box">
+        <h3>Spousal Protections</h3>
+        <p>When one spouse needs nursing home care, federal law protects the at-home spouse from impoverishment. The Community Spouse Resource Allowance (CSRA) lets the at-home spouse keep a portion of the couple's assets and a monthly income allowance.</p>
+      </div>
+    </section>
+
+    <!-- Section: How to Apply -->
+    <section class="content-section" id="how-to-apply">
+      <h2>How to Apply for Medicaid in {{state}}</h2>
+      {{#if applicationMethods}}
+      <ol class="steps-list">
+        {{#each applicationMethods}}
+        <li>
+          <div class="step-content">
+            <h4>{{method}}</h4>
+            <p>{{{description}}}</p>
+            {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply here →</a></p>{{/if}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{else}}
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Apply Online</h4>
+            <p>Visit your state's Medicaid website or healthcare.gov to submit an online application.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Apply by Phone</h4>
+            <p>Call {{state}}'s Medicaid office to apply over the phone with a representative's assistance.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Apply In Person</h4>
+            <p>Visit your local Department of Social Services or Medicaid office to apply with staff help.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Apply by Mail</h4>
+            <p>Download and complete a paper application, then mail it to your state's Medicaid agency.</p>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+
+      {{#if processingTime}}
+      <div class="info-box">
+        <h3>Processing Time</h3>
+        <p>{{processingTime}}</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Required Documents -->
+    <section class="content-section" id="documents">
+      <h2>Documents Needed to Apply</h2>
+      {{#if requiredDocuments}}
+      <ul>
+        {{#each requiredDocuments}}
+        <li>{{_item}}</li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <ul>
+        <li>Proof of identity (driver's license, state ID, or passport)</li>
+        <li>Proof of U.S. citizenship or immigration status</li>
+        <li>Social Security number</li>
+        <li>Proof of {{state}} residency</li>
+        <li>Proof of income (pay stubs, Social Security award letter, pension statements)</li>
+        <li>Bank statements and financial records (checking, savings, investments)</li>
+        <li>Property deeds or mortgage statements</li>
+        <li>Health insurance information (Medicare card, other coverage)</li>
+        <li>Medical bills or proof of disability (if applying based on disability)</li>
+      </ul>
+      {{/if}}
+    </section>
+
+    <!-- Section: Available Programs -->
+    <section class="content-section" id="programs">
+      <h2>Medicaid Programs for Seniors in {{state}}</h2>
+      {{#if programs}}
+      {{#each programs}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if eligibility}}<p><strong>Eligibility:</strong> {{eligibility}}</p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>Aged, Blind, and Disabled (ABD) Medicaid</h3>
+        <p>Covers seniors 65+ who meet income and asset limits. Provides comprehensive health coverage including hospital, doctor, prescription, and long-term care services.</p>
+      </div>
+      <div class="info-box">
+        <h3>Medicare Savings Programs (MSPs)</h3>
+        <p>Helps pay Medicare costs for those with limited income. Includes QMB (pays premiums, deductibles, copays), SLMB (pays Part B premiums), and QI (pays Part B premiums for slightly higher incomes).</p>
+      </div>
+      <div class="info-box">
+        <h3>Medicaid for Long-Term Care</h3>
+        <p>Covers nursing home care, assisted living (in some states), and home and community-based services for seniors who need long-term care assistance.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Waiver Programs -->
+    <section class="content-section" id="waivers">
+      <h2>Medicaid Waiver Programs in {{state}}</h2>
+      {{#if waiverPrograms}}
+      {{#each waiverPrograms}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <p>Medicaid waiver programs in {{state}} allow the state to provide home and community-based services (HCBS) to people who would otherwise need institutional care. These programs help seniors remain in their homes and communities while receiving necessary care.</p>
+      <div class="info-box">
+        <h3>Home and Community-Based Services (HCBS) Waivers</h3>
+        <p>Cover services like personal care, homemaker services, adult day care, respite care, and home modifications to help seniors live independently at home.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Managed Care -->
+    <section class="content-section" id="managed-care">
+      <h2>Medicaid Managed Care in {{state}}</h2>
+      {{#if managedCare}}
+      <p>{{state}} uses a managed care delivery system for its Medicaid program. Beneficiaries choose or are assigned a managed care plan that coordinates their health care services.</p>
+      {{#if managedCarePlans}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Plan Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each managedCarePlans}}
+            <tr>
+              <td><strong>{{name}}</strong></td>
+              <td>{{description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+      {{else}}
+      <p>Many states deliver Medicaid services through managed care organizations (MCOs). Contact {{state}}'s Medicaid agency to learn about managed care options in your area and how to choose or change plans.</p>
+      {{/if}}
+    </section>
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

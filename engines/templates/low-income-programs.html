@@ -1,0 +1,208 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>{{state}} ({{stateAbbr}})</span>
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Programs &amp; Assistance</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#snap">SNAP / Food Assistance</a></li>
+        <li><a href="#liheap">LIHEAP / Energy Assistance</a></li>
+        <li><a href="#housing">Housing Assistance</a></li>
+        <li><a href="#lifeline">Lifeline Phone/Internet</a></li>
+        <li><a href="#property-tax">Property Tax Relief</a></li>
+        <li><a href="#transportation">Transportation Programs</a></li>
+        <li><a href="#all-programs">All Available Programs</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>Low-Income Assistance Programs for Seniors in {{state}}</h2>
+      <p>Seniors on fixed incomes in {{state}} may qualify for multiple assistance programs that can significantly reduce monthly expenses. Programs cover food, utilities, housing, phone/internet service, property taxes, and transportation. Many seniors qualify for help but aren't aware of all available programs.</p>
+      <p>This guide covers every major low-income assistance program available to seniors in {{state}}, with eligibility requirements and how to apply.</p>
+    </section>
+
+    <!-- Section: SNAP -->
+    <section class="content-section" id="snap">
+      <h2>SNAP / Food Assistance for Seniors</h2>
+      {{#if snapInfo}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{snapInfo.maxBenefit}}</span>
+          <span class="stat-label">Maximum Monthly Benefit</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{snapInfo.incomeLimitIndividual}}</span>
+          <span class="stat-label">Income Limit (Individual)</span>
+        </div>
+      </div>
+      {{#if snapInfo.applicationUrl}}
+      <p><a href="{{snapInfo.applicationUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply for SNAP in {{state}} →</a></p>
+      {{/if}}
+      {{else}}
+      <p>The Supplemental Nutrition Assistance Program (SNAP, formerly food stamps) helps low-income seniors buy groceries. Seniors 60+ may qualify for simplified application processes and may have some expenses deducted from their income calculation, making it easier to qualify.</p>
+      {{/if}}
+      <div class="info-box">
+        <h3>Senior-Specific SNAP Benefits</h3>
+        <ul>
+          <li>Seniors 60+ can apply through simplified processes in many states</li>
+          <li>Medical expenses over $35/month can be deducted from income calculations</li>
+          <li>Many food banks and pantries specifically serve seniors</li>
+          <li>Restaurant Meals Program available in some areas for homeless, disabled, or elderly SNAP recipients</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section: LIHEAP -->
+    <section class="content-section" id="liheap">
+      <h2>LIHEAP / Energy Assistance</h2>
+      {{#if liheapInfo}}
+      <div class="info-box highlight">
+        <h3>{{state}} Energy Assistance</h3>
+        {{#if liheapInfo.maxBenefit}}<p><strong>Maximum benefit:</strong> {{liheapInfo.maxBenefit}}</p>{{/if}}
+        {{#if liheapInfo.applicationPeriod}}<p><strong>Application period:</strong> {{liheapInfo.applicationPeriod}}</p>{{/if}}
+        {{#if liheapInfo.url}}<p><a href="{{liheapInfo.url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply here →</a></p>{{/if}}
+      </div>
+      {{else}}
+      <p>The Low Income Home Energy Assistance Program (LIHEAP) helps seniors pay heating and cooling bills. Benefits are typically one-time payments made directly to your utility company. Seniors often receive priority processing.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Housing -->
+    <section class="content-section" id="housing">
+      <h2>Senior Housing Assistance</h2>
+      {{#if housingInfo}}
+      <div class="info-box">
+        <h3>Programs Available</h3>
+        {{#if housingInfo.programs}}
+        <ul>
+          {{#each housingInfo.programs}}
+          <li>{{_item}}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+        {{#if housingInfo.waitlistInfo}}<p><strong>Waitlist info:</strong> {{housingInfo.waitlistInfo}}</p>{{/if}}
+        {{#if housingInfo.url}}<p><a href="{{housingInfo.url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply here →</a></p>{{/if}}
+      </div>
+      {{else}}
+      <div class="info-box">
+        <h3>Section 8 Housing Choice Vouchers</h3>
+        <p>Helps eligible seniors pay for private housing by subsidizing rent. Seniors pay about 30% of income toward rent; the voucher covers the rest. Waitlists can be long — apply as early as possible.</p>
+      </div>
+      <div class="info-box">
+        <h3>Section 202 Supportive Housing for the Elderly</h3>
+        <p>HUD-funded housing specifically for very low-income seniors (62+). Includes rent subsidies and may offer supportive services like meals, transportation, and housekeeping.</p>
+      </div>
+      <div class="info-box">
+        <h3>Public Housing</h3>
+        <p>Government-owned housing with below-market rents for eligible low-income residents. Many public housing authorities have buildings designated for seniors.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Lifeline -->
+    <section class="content-section" id="lifeline">
+      <h2>Lifeline Phone &amp; Internet Discount</h2>
+      {{#if lifelineInfo}}
+      <div class="info-box highlight">
+        <h3>Monthly Discount</h3>
+        <p><strong>Discount:</strong> {{lifelineInfo.discount}}</p>
+        <p><strong>Eligibility:</strong> {{lifelineInfo.eligibility}}</p>
+        {{#if lifelineInfo.url}}<p><a href="{{lifelineInfo.url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply here →</a></p>{{/if}}
+      </div>
+      {{else}}
+      <p>The Lifeline program provides a monthly discount on phone or internet service for eligible low-income subscribers. Seniors who participate in Medicaid, SNAP, SSI, or other assistance programs typically qualify automatically.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Property Tax -->
+    <section class="content-section" id="property-tax">
+      <h2>Property Tax Relief for Seniors</h2>
+      {{#if propertyTaxRelief}}
+      {{#if propertyTaxRelief.available}}
+      <div class="info-box highlight">
+        <h3>{{state}} Senior Property Tax Relief</h3>
+        <p>{{{propertyTaxRelief.description}}}</p>
+        {{#if propertyTaxRelief.url}}<p><a href="{{propertyTaxRelief.url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/if}}
+      {{else}}
+      <p>Many states offer property tax exemptions, freezes, or deferrals for seniors. Contact {{state}}'s tax assessor's office to learn about available relief programs and how to apply.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Transportation -->
+    <section class="content-section" id="transportation">
+      <h2>Senior Transportation Programs</h2>
+      {{#if transportationPrograms}}
+      {{#each transportationPrograms}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <p>Transportation assistance helps seniors get to medical appointments, grocery stores, and social activities. Programs in {{state}} may include reduced-fare transit passes, paratransit services, volunteer driver programs, and Medicaid transportation for medical appointments.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: All Programs -->
+    {{#if programs}}
+    <section class="content-section" id="all-programs">
+      <h2>All Available Programs in {{state}}</h2>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Category</th>
+              <th>Benefits</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each programs}}
+            <tr>
+              <td><strong>{{name}}</strong></td>
+              <td>{{category}}</td>
+              <td>{{{benefits}}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {{/if}}
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

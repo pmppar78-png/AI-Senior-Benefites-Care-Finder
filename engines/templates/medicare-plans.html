@@ -1,0 +1,292 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>{{state}} ({{stateAbbr}})</span>
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Plans &amp; Costs</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Medicare Overview in {{state}}</a></li>
+        <li><a href="#plan-types">Plan Types &amp; Availability</a></li>
+        <li><a href="#costs">{{currentYear}} Costs &amp; Premiums</a></li>
+        <li><a href="#eligibility">Eligibility Requirements</a></li>
+        <li><a href="#enrollment">Enrollment Periods</a></li>
+        <li><a href="#special-programs">Special Programs</a></li>
+        <li><a href="#how-to-choose">How to Choose a Plan</a></li>
+        <li><a href="#local-resources">Local Resources</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>Medicare Overview in {{state}}</h2>
+      <p>Medicare is the federal health insurance program for people aged 65 and older, as well as certain younger individuals with disabilities or specific conditions. In {{state}}, seniors have access to Original Medicare (Parts A &amp; B) as well as private Medicare Advantage plans, Medigap supplemental policies, and Part D prescription drug coverage.</p>
+      <p>Understanding your Medicare options in {{state}} is critical because plan availability, costs, and provider networks vary significantly by location. This guide covers everything you need to know about Medicare plans available in {{state}} for {{currentYear}}.</p>
+    </section>
+
+    <!-- Section: Plan Types -->
+    <section class="content-section" id="plan-types">
+      <h2>Medicare Plan Types Available in {{state}}</h2>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{advantagePlans}}</span>
+          <span class="stat-label">Medicare Advantage Plans</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{medigapPlans}}</span>
+          <span class="stat-label">Medigap Policies</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{partDPlans}}</span>
+          <span class="stat-label">Part D Drug Plans</span>
+        </div>
+      </div>
+
+      <h3>Medicare Advantage (Part C)</h3>
+      <p>Medicare Advantage plans in {{state}} are offered by private insurance companies approved by Medicare. These plans cover everything Original Medicare covers and often include additional benefits like vision, dental, hearing, and prescription drugs. Plans may use HMO, PPO, or other network structures.</p>
+
+      <h3>Medigap (Medicare Supplement)</h3>
+      <p>Medigap plans in {{state}} help pay for costs that Original Medicare doesn't cover, such as copayments, coinsurance, and deductibles. These plans are sold by private insurance companies and are standardized by the federal government (Plans A through N).</p>
+
+      <h3>Part D (Prescription Drug Coverage)</h3>
+      <p>Medicare Part D plans provide prescription drug coverage. In {{state}}, multiple Part D plans are available with varying formularies, premiums, and pharmacy networks. If you take regular medications, comparing Part D plans for your specific prescriptions is essential.</p>
+    </section>
+
+    <!-- Section: Costs -->
+    <section class="content-section" id="costs">
+      <h2>{{currentYear}} Medicare Costs in {{state}}</h2>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Plan Type</th>
+              <th>Avg. Monthly Premium</th>
+              <th>National Avg.</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Medicare Advantage</td>
+              <td class="highlight-cell">{{avgPremiumMA}}</td>
+              <td>$18.50/mo</td>
+              <td>Many $0 premium plans available</td>
+            </tr>
+            <tr>
+              <td>Medigap Plan G</td>
+              <td class="highlight-cell">{{avgPremiumMedigap}}</td>
+              <td>$150–$200/mo</td>
+              <td>Most popular Medigap plan</td>
+            </tr>
+            <tr>
+              <td>Part D Drug Plan</td>
+              <td class="highlight-cell">{{avgPremiumPartD}}</td>
+              <td>$33/mo</td>
+              <td>Varies by formulary</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box highlight">
+        <h3>Part B Premium ({{currentYear}})</h3>
+        <p>The standard Medicare Part B premium is the same nationwide. Higher-income beneficiaries may pay Income-Related Monthly Adjustment Amounts (IRMAA). Part A is premium-free for most people who paid Medicare taxes for 10+ years.</p>
+      </div>
+    </section>
+
+    <!-- Section: Eligibility -->
+    <section class="content-section" id="eligibility">
+      <h2>Medicare Eligibility Requirements</h2>
+      <p>To qualify for Medicare in {{state}}, you generally must meet one of the following criteria:</p>
+      <ul>
+        <li><strong>Age 65 or older</strong> — U.S. citizen or permanent resident for at least 5 consecutive years</li>
+        <li><strong>Under 65 with a disability</strong> — Receiving Social Security disability benefits for 24 months</li>
+        <li><strong>End-Stage Renal Disease (ESRD)</strong> — Regardless of age</li>
+        <li><strong>ALS (Lou Gehrig's Disease)</strong> — Regardless of age, eligible from the first month of disability benefits</li>
+      </ul>
+    </section>
+
+    <!-- Section: Enrollment Periods -->
+    <section class="content-section" id="enrollment">
+      <h2>Medicare Enrollment Periods</h2>
+      {{#if enrollmentPeriods}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>Dates</th>
+              <th>What You Can Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each enrollmentPeriods}}
+            <tr>
+              <td><strong>{{name}}</strong></td>
+              <td>{{startDate}} – {{endDate}}</td>
+              <td>{{description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{else}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>Dates</th>
+              <th>What You Can Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Initial Enrollment</strong></td>
+              <td>7-month window around 65th birthday</td>
+              <td>Sign up for Medicare Parts A and B</td>
+            </tr>
+            <tr>
+              <td><strong>Annual Enrollment (AEP)</strong></td>
+              <td>October 15 – December 7</td>
+              <td>Switch Medicare Advantage or Part D plans</td>
+            </tr>
+            <tr>
+              <td><strong>Medicare Advantage OEP</strong></td>
+              <td>January 1 – March 31</td>
+              <td>Switch MA plans or return to Original Medicare</td>
+            </tr>
+            <tr>
+              <td><strong>Medigap Open Enrollment</strong></td>
+              <td>6 months after Part B starts</td>
+              <td>Buy any Medigap policy without health screening</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Special Programs -->
+    <section class="content-section" id="special-programs">
+      <h2>Special Medicare Programs in {{state}}</h2>
+      {{#if specialPrograms}}
+      {{#each specialPrograms}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>Medicare Savings Programs (MSPs)</h3>
+        <p>If you have limited income and resources, {{state}} may pay your Medicare premiums and may also pay Medicare deductibles, coinsurance, and copayments through Medicare Savings Programs.</p>
+      </div>
+      <div class="info-box">
+        <h3>State Health Insurance Assistance Program (SHIP)</h3>
+        <p>{{state}}'s SHIP program offers free, unbiased counseling to help Medicare beneficiaries understand their options, compare plans, and resolve issues with their coverage.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: How to Choose -->
+    <section class="content-section" id="how-to-choose">
+      <h2>How to Choose the Right Medicare Plan in {{state}}</h2>
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Assess your health care needs</h4>
+            <p>Consider your current doctors, medications, preferred hospitals, and expected medical procedures for the coming year.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Compare plan costs beyond premiums</h4>
+            <p>Look at deductibles, copays, coinsurance, and out-of-pocket maximums. A $0 premium plan may cost more overall if you need frequent care.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Check provider networks</h4>
+            <p>Verify that your preferred doctors, specialists, and hospitals are in-network for Medicare Advantage or Medigap plans you're considering.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Review prescription drug coverage</h4>
+            <p>Check that your medications are on the plan's formulary and compare costs at your preferred pharmacy.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Consider extra benefits</h4>
+            <p>Many Medicare Advantage plans include dental, vision, hearing, fitness, and transportation benefits. Evaluate which extras matter to you.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Talk to a licensed professional</h4>
+            <p>Contact {{state}}'s SHIP program or a licensed insurance agent for free, personalized guidance on your best options.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Section: Local Resources -->
+    <section class="content-section" id="local-resources">
+      <h2>Medicare Resources in {{state}}</h2>
+      {{#if localResources}}
+      {{#each localResources}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{{description}}}</p>
+        {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+        {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>1-800-MEDICARE (1-800-633-4227)</h3>
+        <p>The official Medicare hotline, available 24/7. TTY users can call 1-877-486-2048.</p>
+      </div>
+      <div class="info-box">
+        <h3>Medicare.gov Plan Finder</h3>
+        <p>Compare Medicare plans available in your area, check drug costs, and find providers.</p>
+        <p><a href="https://www.medicare.gov/plan-compare/" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit Medicare.gov Plan Finder →</a></p>
+      </div>
+      {{/if}}
+    </section>
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

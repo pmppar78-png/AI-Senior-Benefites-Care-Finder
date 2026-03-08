@@ -1,0 +1,276 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Rates &amp; Options</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#cost-overview">Cost Overview</a></li>
+        <li><a href="#care-types">Types of Home Care</a></li>
+        <li><a href="#cost-comparison">Cost Comparison by Type</a></li>
+        <li><a href="#payment-options">Payment Options</a></li>
+        <li><a href="#medicaid-coverage">Medicaid Coverage</a></li>
+        <li><a href="#how-to-choose">How to Choose a Caregiver</a></li>
+        <li><a href="#local-agencies">Local Agencies</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Cost Overview -->
+    <section class="content-section" id="cost-overview">
+      <h2>Home Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{avgHourlyCost}}</span>
+          <span class="stat-label">Average Hourly Rate</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{avgMonthlyCost}}</span>
+          <span class="stat-label">Avg. Monthly (44 hrs/wk)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{nationalAvgHourly}}</span>
+          <span class="stat-label">National Avg. Hourly</span>
+        </div>
+      </div>
+
+      <p>In-home care {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} allows seniors to receive assistance in the comfort of their own homes. Whether you need a few hours of help per week or round-the-clock care, understanding the costs and options helps you plan effectively.</p>
+    </section>
+
+    <!-- Section: Care Types -->
+    <section class="content-section" id="care-types">
+      <h2>Types of In-Home Care</h2>
+      {{#if careTypes}}
+      {{#each careTypes}}
+      <div class="info-box">
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        {{#if typicalTasks}}<p><strong>Typical services:</strong> {{typicalTasks}}</p>{{/if}}
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box">
+        <h3>Personal Care / Home Care Aides</h3>
+        <p>Non-medical caregivers who assist with activities of daily living (ADLs) such as bathing, dressing, grooming, meal preparation, light housekeeping, and companionship.</p>
+      </div>
+      <div class="info-box">
+        <h3>Home Health Aides (HHAs)</h3>
+        <p>Trained aides who provide basic health-related services under supervision, including vital sign monitoring, medication reminders, and personal care for those with medical needs.</p>
+      </div>
+      <div class="info-box">
+        <h3>Skilled Home Health Care</h3>
+        <p>Licensed nurses and therapists who provide medical care at home, including wound care, IV therapy, physical therapy, occupational therapy, and speech therapy. Often covered by Medicare for eligible conditions.</p>
+      </div>
+      <div class="info-box">
+        <h3>Companion Care</h3>
+        <p>Focused on socialization and light assistance — conversation, errands, transportation to appointments, and supervision for safety. Typically the most affordable option.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Cost Comparison -->
+    <section class="content-section" id="cost-comparison">
+      <h2>Cost Comparison by Care Type</h2>
+      {{#if costByType}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Care Type</th>
+              <th>Hourly Cost</th>
+              <th>Monthly Cost (44hrs/wk)</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each costByType}}
+            <tr>
+              <td><strong>{{type}}</strong></td>
+              <td class="highlight-cell">{{hourlyCost}}</td>
+              <td>{{monthlyCost}}</td>
+              <td>{{description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{else}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Care Type</th>
+              <th>Typical Hourly Range</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Companion Care</strong></td>
+              <td>Varies by location</td>
+              <td>Socialization, errands, light housekeeping</td>
+            </tr>
+            <tr>
+              <td><strong>Personal Care Aide</strong></td>
+              <td>Varies by location</td>
+              <td>ADLs, meal prep, medication reminders</td>
+            </tr>
+            <tr>
+              <td><strong>Home Health Aide</strong></td>
+              <td>Varies by location</td>
+              <td>Basic medical tasks, personal care</td>
+            </tr>
+            <tr>
+              <td><strong>Skilled Nursing (RN/LPN)</strong></td>
+              <td>Varies by location</td>
+              <td>Medical care, wound care, therapy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Payment Options -->
+    <section class="content-section" id="payment-options">
+      <h2>How to Pay for Home Care</h2>
+      {{#if paymentOptions}}
+      {{#each paymentOptions}}
+      <div class="info-box">
+        <h3>{{method}}</h3>
+        <p>{{{description}}}</p>
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box highlight">
+        <h3>Medicare (Limited Coverage)</h3>
+        <p>Medicare covers skilled home health care (nursing, therapy) for homebound patients with a doctor's order. It does NOT cover long-term personal care or custodial care (help with bathing, dressing, etc.).</p>
+      </div>
+      <div class="info-box">
+        <h3>Medicaid Home Care Programs</h3>
+        <p>{{state}}'s Medicaid program may cover home care services through waiver programs and state plan benefits. Eligibility depends on income, assets, and level of care needed.</p>
+      </div>
+      <div class="info-box">
+        <h3>Long-Term Care Insurance</h3>
+        <p>Policies typically cover in-home care after meeting benefit triggers (usually needing help with 2+ ADLs). Check your policy's home care benefit provisions.</p>
+      </div>
+      <div class="info-box">
+        <h3>Veterans Aid &amp; Attendance</h3>
+        <p>Wartime veterans and surviving spouses may qualify for monthly benefits to help pay for in-home care assistance.</p>
+      </div>
+      <div class="info-box">
+        <h3>Private Pay</h3>
+        <p>Paying out of pocket using savings, retirement funds, or family resources. Some agencies offer sliding scale fees or payment plans.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Medicaid Coverage -->
+    <section class="content-section" id="medicaid-coverage">
+      <h2>Medicaid Home Care Coverage in {{state}}</h2>
+      {{#if medicaidCoverage}}
+      <p>{{{medicaidCoverage}}}</p>
+      {{else}}
+      <p>Medicaid in {{state}} may cover home and community-based services (HCBS) that help seniors remain in their homes instead of moving to nursing facilities. Coverage may include personal care aides, homemaker services, adult day care, meal delivery, and home modifications.</p>
+      <p>Contact {{state}}'s Medicaid office or Area Agency on Aging to learn about specific home care programs, eligibility requirements, and how to apply.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: How to Choose -->
+    <section class="content-section" id="how-to-choose">
+      <h2>How to Choose a Home Care Provider</h2>
+      {{#if howToChoose}}
+      <ol class="steps-list">
+        {{#each howToChoose}}
+        <li>
+          <div class="step-content">
+            <h4>{{title}}</h4>
+            <p>{{description}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{else}}
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Assess your care needs</h4>
+            <p>Determine what level of care is needed — companion, personal care, or skilled nursing. This helps narrow your search to the right type of provider.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Choose agency vs. independent caregiver</h4>
+            <p>Agencies handle background checks, training, insurance, and backup caregivers. Independent caregivers may cost less but require you to manage hiring and taxes.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Verify credentials and references</h4>
+            <p>Check licenses, certifications, insurance, and bonding. Ask for and contact references from current or recent clients.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Conduct interviews</h4>
+            <p>Meet potential caregivers in person. Assess communication, reliability, personality fit, and experience with your specific care needs.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Start with a trial period</h4>
+            <p>Begin with a short trial to evaluate the caregiver's performance and compatibility before committing to a long-term arrangement.</p>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+    </section>
+
+    <!-- Section: Local Agencies -->
+    {{#if localAgencies}}
+    <section class="content-section" id="local-agencies">
+      <h2>Home Care Agencies {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      {{#each localAgencies}}
+      <div class="provider-card">
+        <h3>{{name}}</h3>
+        <div class="provider-meta">
+          {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
+          {{#if rating}}<p class="provider-rating">Rating: {{rating}}</p>{{/if}}
+          {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

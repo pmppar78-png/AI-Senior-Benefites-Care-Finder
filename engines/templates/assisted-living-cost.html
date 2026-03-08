@@ -1,0 +1,312 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Costs &amp; Pricing</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#cost-overview">Cost Overview</a></li>
+        <li><a href="#cost-by-level">Costs by Care Level</a></li>
+        <li><a href="#whats-included">What's Included</a></li>
+        <li><a href="#payment-options">Payment Options</a></li>
+        <li><a href="#memory-care">Memory Care</a></li>
+        <li><a href="#how-to-reduce">How to Reduce Costs</a></li>
+        <li><a href="#nearby-facilities">Nearby Facilities</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Cost Overview -->
+    <section class="content-section" id="cost-overview">
+      <h2>Assisted Living Cost Overview {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{avgMonthlyCost}}</span>
+          <span class="stat-label">Average Monthly Cost</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{costRange.min}}</span>
+          <span class="stat-label">Low End</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{costRange.max}}</span>
+          <span class="stat-label">High End</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{nationalAvg}}</span>
+          <span class="stat-label">National Average</span>
+        </div>
+      </div>
+
+      <p>The cost of assisted living {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. {{currentYear}} data shows an average monthly cost of {{avgMonthlyCost}}, compared to the national average of {{nationalAvg}}.</p>
+
+      {{#if costTrend}}
+      <div class="info-box">
+        <h3>Cost Trend</h3>
+        <p>{{costTrend}}</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Cost by Level -->
+    <section class="content-section" id="cost-by-level">
+      <h2>Monthly Costs by Care Level</h2>
+      {{#if costByLevel}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Care Level</th>
+              <th>Monthly Cost</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each costByLevel}}
+            <tr>
+              <td><strong>{{level}}</strong></td>
+              <td class="highlight-cell">{{monthlyCost}}</td>
+              <td>{{description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{else}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Care Level</th>
+              <th>Typical Monthly Cost</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Basic / Independent</strong></td>
+              <td class="highlight-cell">Varies by location</td>
+              <td>Minimal assistance with daily activities; meals, housekeeping, and social activities included</td>
+            </tr>
+            <tr>
+              <td><strong>Standard Assisted Living</strong></td>
+              <td class="highlight-cell">Varies by location</td>
+              <td>Help with bathing, dressing, medication management; most common level</td>
+            </tr>
+            <tr>
+              <td><strong>Enhanced / High Care</strong></td>
+              <td class="highlight-cell">Varies by location</td>
+              <td>Significant daily assistance; may include mobility help, incontinence care</td>
+            </tr>
+            <tr>
+              <td><strong>Memory Care</strong></td>
+              <td class="highlight-cell">Varies by location</td>
+              <td>Specialized dementia/Alzheimer's care in secured environment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: What's Included -->
+    <section class="content-section" id="whats-included">
+      <h2>What's Typically Included</h2>
+      {{#if includedServices}}
+      <ul>
+        {{#each includedServices}}
+        <li>{{_item}}</li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <div class="comparison-grid">
+        <div class="comparison-col">
+          <h3>Usually Included</h3>
+          <ul>
+            <li>Private or semi-private room</li>
+            <li>Three meals daily plus snacks</li>
+            <li>Housekeeping and laundry</li>
+            <li>Help with bathing, dressing, grooming</li>
+            <li>Medication management</li>
+            <li>Social activities and programming</li>
+            <li>24-hour staff availability</li>
+            <li>Transportation to appointments</li>
+            <li>Basic utilities (electric, water, cable)</li>
+          </ul>
+        </div>
+        <div class="comparison-col">
+          <h3>Often Extra Cost</h3>
+          <ul>
+            <li>Higher levels of personal care</li>
+            <li>Memory care services</li>
+            <li>Specialized medical care</li>
+            <li>Physical or occupational therapy</li>
+            <li>Beauty salon / barber services</li>
+            <li>Guest meals</li>
+            <li>Pet fees</li>
+            <li>Private telephone / internet</li>
+          </ul>
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if additionalCosts}}
+      <h3>Common Additional Costs</h3>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Typical Additional Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each additionalCosts}}
+            <tr>
+              <td>{{service}}</td>
+              <td>{{cost}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Payment Options -->
+    <section class="content-section" id="payment-options">
+      <h2>How to Pay for Assisted Living {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}</h2>
+      {{#if paymentOptions}}
+      {{#each paymentOptions}}
+      <div class="info-box">
+        <h3>{{method}}</h3>
+        <p>{{{description}}}</p>
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="info-box highlight">
+        <h3>Private Pay / Personal Savings</h3>
+        <p>The most common payment method. Families use savings, retirement accounts, Social Security income, pension benefits, and investments. Some facilities offer financial assistance or sliding scale fees.</p>
+      </div>
+      <div class="info-box">
+        <h3>Medicaid Waiver Programs</h3>
+        <p>{{state}} may offer Medicaid waiver programs that help cover assisted living costs for eligible low-income seniors. Availability and waitlists vary. Contact {{state}}'s Medicaid office for current information.</p>
+      </div>
+      <div class="info-box">
+        <h3>Long-Term Care Insurance</h3>
+        <p>If you purchased a long-term care insurance policy, it may cover part or all of assisted living costs. Check your policy for benefit triggers, daily/monthly limits, and elimination periods.</p>
+      </div>
+      <div class="info-box">
+        <h3>Veterans Benefits (Aid &amp; Attendance)</h3>
+        <p>Veterans and surviving spouses may qualify for VA Aid &amp; Attendance benefits that can help pay for assisted living. This benefit can add significant monthly income.</p>
+      </div>
+      <div class="info-box">
+        <h3>Life Insurance Conversion</h3>
+        <p>Some life insurance policies can be converted to long-term care benefit plans or sold through life settlements to fund assisted living costs.</p>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Memory Care -->
+    <section class="content-section" id="memory-care">
+      <h2>Memory Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      {{#if memoryCare}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{memoryCare.avgCost}}</span>
+          <span class="stat-label">Average Monthly Memory Care Cost</span>
+        </div>
+      </div>
+      <p>{{{memoryCare.description}}}</p>
+      {{else}}
+      <p>Memory care is a specialized form of assisted living designed for individuals with Alzheimer's disease, dementia, or other cognitive impairments. Memory care typically costs 20–40% more than standard assisted living due to enhanced staffing, security features, and specialized programming.</p>
+      <p>Memory care communities {{#if city}}in {{city}}{{else}}in {{state}}{{/if}} provide secure environments with trained staff, structured activities designed for cognitive engagement, and personalized care plans.</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: How to Reduce Costs -->
+    <section class="content-section" id="how-to-reduce">
+      <h2>How to Reduce Assisted Living Costs</h2>
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Explore Medicaid waiver programs</h4>
+            <p>Check if {{state}} offers Medicaid waivers that cover assisted living. Apply early, as waitlists can be long.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Apply for VA Aid &amp; Attendance</h4>
+            <p>Veterans and surviving spouses should check eligibility for this benefit, which can provide substantial monthly financial support.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Consider shared rooms</h4>
+            <p>Semi-private rooms cost significantly less than private rooms and may work well for some residents.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Negotiate rates</h4>
+            <p>Many facilities are willing to negotiate rates, especially for long-term commitments or during lower-occupancy periods.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Look at all-inclusive pricing</h4>
+            <p>Facilities with all-inclusive pricing may be more cost-effective than those that charge separately for each service.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Section: Nearby Facilities -->
+    {{#if nearbyFacilities}}
+    <section class="content-section" id="nearby-facilities">
+      <h2>Assisted Living Facilities {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      {{#each nearbyFacilities}}
+      <div class="provider-card">
+        <h3>{{name}}</h3>
+        <div class="provider-meta">
+          <p>{{address}}</p>
+          {{#if rating}}<p class="provider-rating">Rating: {{rating}}</p>{{/if}}
+          {{#if costRange}}<p>Cost range: {{costRange}}</p>{{/if}}
+          {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </section>
+    {{/if}}
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+
+    {{> state-index}}
+  </main>
+
+{{> footer}}

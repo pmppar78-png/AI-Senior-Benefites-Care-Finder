@@ -1,0 +1,187 @@
+{{> head}}
+{{> header}}
+
+  <main class="engine-page">
+    {{> breadcrumbs}}
+    {{> schema-article}}
+    {{> schema-faq}}
+
+    <section class="engine-hero">
+      <h1>{{h1}}</h1>
+      <div class="hero-meta">
+        <span>Updated {{lastUpdated}}</span>
+        <span>{{currentYear}} Comparison</span>
+      </div>
+      <div class="intro-text">
+        {{{introText}}}
+      </div>
+    </section>
+
+    {{> meta-badges}}
+
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ol>
+        <li><a href="#overview">Quick Overview</a></li>
+        <li><a href="#side-by-side">Side-by-Side Comparison</a></li>
+        <li><a href="#key-differences">Key Differences Explained</a></li>
+        <li><a href="#cost-comparison">Cost Comparison</a></li>
+        <li><a href="#pros-cons">Pros &amp; Cons</a></li>
+        <li><a href="#who-should-choose">Who Should Choose What</a></li>
+        <li><a href="#bottom-line">The Bottom Line</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    {{> disclaimer}}
+
+    <!-- Section: Overview -->
+    <section class="content-section" id="overview">
+      <h2>{{optionA.name}} vs. {{optionB.name}} — Quick Overview</h2>
+      <div class="comparison-grid">
+        <div class="comparison-col">
+          <h3>{{optionA.name}}</h3>
+          <p>{{{optionA.description}}}</p>
+        </div>
+        <div class="comparison-col">
+          <h3>{{optionB.name}}</h3>
+          <p>{{{optionB.description}}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Side-by-Side -->
+    <section class="content-section" id="side-by-side">
+      <h2>Side-by-Side Comparison</h2>
+      {{#if comparisonRows}}
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>{{optionA.name}}</th>
+              <th>{{optionB.name}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each comparisonRows}}
+            <tr>
+              <td><strong>{{category}}</strong></td>
+              <td>{{{optionAValue}}}</td>
+              <td>{{{optionBValue}}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{/if}}
+    </section>
+
+    <!-- Section: Key Differences -->
+    <section class="content-section" id="key-differences">
+      <h2>Key Differences Explained</h2>
+      <p>While {{optionA.name}} and {{optionB.name}} may seem similar at first glance, there are important differences that affect which option is better for your situation. Understanding these differences helps you make an informed decision.</p>
+    </section>
+
+    <!-- Section: Cost Comparison -->
+    <section class="content-section" id="cost-comparison">
+      <h2>Cost Comparison</h2>
+      {{#if costComparison}}
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{costComparison.optionACost}}</span>
+          <span class="stat-label">{{optionA.name}}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{costComparison.optionBCost}}</span>
+          <span class="stat-label">{{optionB.name}}</span>
+        </div>
+      </div>
+      <p>{{{costComparison.description}}}</p>
+      {{/if}}
+    </section>
+
+    <!-- Section: Pros & Cons -->
+    <section class="content-section" id="pros-cons">
+      <h2>Pros &amp; Cons</h2>
+      <div class="comparison-grid">
+        <div class="comparison-col">
+          <h3>{{optionA.name}}</h3>
+          {{#if prosConsA.pros}}
+          <h4 style="color:#22c55e;font-size:0.85rem;margin:0.8rem 0 0.3rem;">Advantages</h4>
+          <ul class="pros">
+            {{#each prosConsA.pros}}
+            <li>{{_item}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+          {{#if prosConsA.cons}}
+          <h4 style="color:#ef4444;font-size:0.85rem;margin:0.8rem 0 0.3rem;">Disadvantages</h4>
+          <ul class="cons">
+            {{#each prosConsA.cons}}
+            <li>{{_item}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
+        <div class="comparison-col">
+          <h3>{{optionB.name}}</h3>
+          {{#if prosConsB.pros}}
+          <h4 style="color:#22c55e;font-size:0.85rem;margin:0.8rem 0 0.3rem;">Advantages</h4>
+          <ul class="pros">
+            {{#each prosConsB.pros}}
+            <li>{{_item}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+          {{#if prosConsB.cons}}
+          <h4 style="color:#ef4444;font-size:0.85rem;margin:0.8rem 0 0.3rem;">Disadvantages</h4>
+          <ul class="cons">
+            {{#each prosConsB.cons}}
+            <li>{{_item}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Who Should Choose -->
+    <section class="content-section" id="who-should-choose">
+      <h2>Who Should Choose What?</h2>
+      <div class="comparison-grid">
+        <div class="comparison-col">
+          <h3>Choose {{optionA.name}} if:</h3>
+          {{#if whoShouldChooseA}}
+          <p>{{{whoShouldChooseA}}}</p>
+          {{/if}}
+        </div>
+        <div class="comparison-col">
+          <h3>Choose {{optionB.name}} if:</h3>
+          {{#if whoShouldChooseB}}
+          <p>{{{whoShouldChooseB}}}</p>
+          {{/if}}
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Bottom Line -->
+    <section class="content-section" id="bottom-line">
+      <h2>The Bottom Line</h2>
+      {{#if bottomLine}}
+      <div class="info-box highlight">
+        <p>{{{bottomLine}}}</p>
+      </div>
+      {{else}}
+      <p>The right choice between {{optionA.name}} and {{optionB.name}} depends on your individual situation, health needs, budget, and preferences. Consider consulting with a licensed professional who can evaluate your specific circumstances and recommend the best option for you.</p>
+      {{/if}}
+    </section>
+
+    {{> faq-section}}
+
+    {{> cta-section}}
+
+    {{> sources-section}}
+  </main>
+
+{{> footer}}

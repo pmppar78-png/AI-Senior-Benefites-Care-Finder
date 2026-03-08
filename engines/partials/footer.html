@@ -1,0 +1,36 @@
+  <footer class="site-footer">
+    <div style="max-width:960px;margin:0 auto;">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.2rem;margin-bottom:0.8rem;font-size:0.82rem;">
+        <a href="/medicare/" style="color:var(--text-muted);text-decoration:none;">Medicare</a>
+        <a href="/medicaid/" style="color:var(--text-muted);text-decoration:none;">Medicaid</a>
+        <a href="/assisted-living/" style="color:var(--text-muted);text-decoration:none;">Assisted Living</a>
+        <a href="/social-security/" style="color:var(--text-muted);text-decoration:none;">Social Security</a>
+        <a href="/home-care/" style="color:var(--text-muted);text-decoration:none;">Home Care</a>
+        <a href="/veterans-benefits/" style="color:var(--text-muted);text-decoration:none;">Veterans Benefits</a>
+        <a href="/prescription-assistance/" style="color:var(--text-muted);text-decoration:none;">Rx Assistance</a>
+        <a href="/compare/" style="color:var(--text-muted);text-decoration:none;">Compare Options</a>
+      </div>
+      <p class="footer-text">
+        Information only &middot; Not financial, legal, tax, medical, or insurance advice &middot; Always speak with licensed professionals before making decisions.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1rem;margin-top:0.5rem;font-size:0.78rem;">
+        <a href="/editorial-standards" style="color:var(--text-muted);text-decoration:none;">Editorial Standards</a>
+        <a href="/how-we-research" style="color:var(--text-muted);text-decoration:none;">How We Research</a>
+        <a href="/privacy" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+        <a href="/terms" style="color:var(--text-muted);text-decoration:none;">Terms of Service</a>
+      </div>
+      <p class="footer-text small" style="margin-top:0.6rem;">
+        &copy; {{currentYear}} Senior Benefits Care Finder. For advertising and partnership inquiries only, email <a href="mailto:advertise@seniorbenefitsfinder.com" style="color:var(--text-muted);">advertise@seniorbenefitsfinder.com</a>.
+      </p>
+    </div>
+  </footer>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        this.closest('.faq-item').classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
