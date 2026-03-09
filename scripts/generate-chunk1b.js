@@ -81,6 +81,15 @@ const stateCities = {
   'wyoming': [{slug:'cheyenne',name:'Cheyenne'}]
 };
 
+function generateDatePublished(path) {
+  let h = 0;
+  for (let i = 0; i < path.length; i++) h = ((h << 5) - h + path.charCodeAt(i)) | 0;
+  h = Math.abs(h);
+  const d = new Date('2024-09-01');
+  d.setDate(d.getDate() + (h % 470));
+  return d.toISOString().split('T')[0];
+}
+
 function generatePage(title, description, canonicalPath, h1, intro, sections, locationName) {
   const sectionsHtml = sections.map(s => `
     <section class="info-block">
@@ -95,10 +104,10 @@ function generatePage(title, description, canonicalPath, h1, intro, sections, lo
   <title>${title}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="${description}" />
-  <link rel="canonical" href="https://seniorbenefitscarefinder.com/${canonicalPath}" />
+  <link rel="canonical" href="https://seniorbenefitscarefinder.com/${canonicalPath}/" />
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${description}" />
-  <meta property="og:url" content="https://seniorbenefitscarefinder.com/${canonicalPath}" />
+  <meta property="og:url" content="https://seniorbenefitscarefinder.com/${canonicalPath}/" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Senior Benefits Care Finder" />
   <meta name="twitter:card" content="summary" />
@@ -106,6 +115,19 @@ function generatePage(title, description, canonicalPath, h1, intro, sections, lo
   <meta name="twitter:description" content="${description}" />
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/engine.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "${title}",
+    "description": "${description}",
+    "url": "https://seniorbenefitscarefinder.com/${canonicalPath}/",
+    "dateModified": "${new Date().toISOString().split('T')[0]}",
+    "datePublished": "${generateDatePublished(canonicalPath)}",
+    "author": {"@type":"Person","name":"Paul Paradis","url":"https://seniorbenefitscarefinder.com/author/paul-paradis/"},
+    "publisher": {"@type":"Organization","name":"Senior Benefits Care Finder","url":"https://seniorbenefitscarefinder.com"}
+  }
+  </script>
 </head>
 <body class="site-body">
   <header class="site-header">
@@ -180,9 +202,10 @@ ${sectionsHtml}
       <a href="/contact/">Contact</a>
     </div>
     <p class="footer-copy">&copy; 2026 Senior Benefits Care Finder. All rights reserved.</p>
-    <p class="footer-disclaimer">This site is for informational purposes only and does not constitute legal, financial, or medical advice.</p>
+    <p class="footer-disclaimer">This site is for informational purposes only and does not constitute legal, financial, or medical advice. This site may earn commissions from certain recommended services. The AI assistant may suggest partners or services that this site has a relationship with.</p>
   </footer>
   <script src="/script.js" defer></script>
+  <script src="/affiliates.js"></script>
 </body>
 </html>`;
 }

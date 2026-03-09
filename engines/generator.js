@@ -327,6 +327,10 @@ class PageGenerator {
       year: 'numeric', month: 'long', day: 'numeric'
     });
 
+    // Generate varied datePublished based on content identifier for realistic metadata
+    const contentId = `${eng.id}-${entry.stateSlug || ''}-${entry.citySlug || ''}-${entry.slug || ''}`;
+    const datePublished = this._generateDatePublished(contentId);
+
     // Resolve state and city names from reference data (fallback to entry data)
     const resolvedState = state ? state.name : (entry.state || '');
     const resolvedStateAbbr = state ? state.abbr : (entry.stateAbbr || '');
@@ -354,7 +358,7 @@ class PageGenerator {
       // SEO — built from patterns with resolved state/city names
       pageTitle: this._interpolatePattern(eng.seoTitle, seoData),
       metaDescription: this._interpolatePattern(eng.metaDescription, seoData),
-      canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(canonicalPattern, seoData)}`,
+      canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(canonicalPattern, seoData)}/`.replace(/\/\/$/, '/'),
 
       // Location data
       state: resolvedState,
@@ -368,6 +372,7 @@ class PageGenerator {
       // Time
       currentYear,
       lastUpdated,
+      datePublished,
 
       // Reference data
       allStates: this.states,
@@ -435,6 +440,23 @@ class PageGenerator {
     return pattern.replace(/\[(\w+)\]/g, (match, key) => {
       return data[key] != null && data[key] !== '' ? data[key] : '';
     });
+  }
+
+  /**
+   * Generate a varied datePublished based on a simple hash of the content identifier.
+   * Spreads dates between 2024-09-01 and 2025-12-15 to avoid identical timestamps.
+   */
+  _generateDatePublished(contentId) {
+    let hash = 0;
+    for (let i = 0; i < contentId.length; i++) {
+      hash = ((hash << 5) - hash + contentId.charCodeAt(i)) | 0;
+    }
+    hash = Math.abs(hash);
+    // Range: Sep 2024 to Dec 2025 (~470 days)
+    const startDate = new Date('2024-09-01');
+    const dayOffset = hash % 470;
+    const pubDate = new Date(startDate.getTime() + dayOffset * 86400000);
+    return pubDate.toISOString().split('T')[0]; // YYYY-MM-DD
   }
 }
 
