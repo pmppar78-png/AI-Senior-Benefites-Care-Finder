@@ -513,7 +513,7 @@ providerTypes.forEach(pt => {
 });
 // City-level provider pages for top 50 cities
 providerTypes.forEach(pt => {
-  cities.slice(0, 50).forEach(c => {
+  cities.forEach(c => {
     pdEntries.push({
       stateSlug: c.stateSlug, stateAbbr: c.stateAbbr,
       citySlug: c.slug, city: c.name,
