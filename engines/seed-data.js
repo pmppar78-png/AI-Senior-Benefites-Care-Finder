@@ -120,7 +120,7 @@ states.forEach(s => {
 cities.forEach(c => {
   const cityCost = 3200 + Math.floor(Math.random() * 3500);
   alEntries.push({
-    stateSlug: c.stateSlug, state: '', stateAbbr: c.stateAbbr,
+    stateSlug: c.stateSlug, state: states.find(s => s.slug === c.stateSlug)?.name || '', stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
     h1: `Assisted Living Cost in ${c.name}, ${c.stateAbbr} (2026)`,
     introText: `<p>See 2026 assisted living costs in ${c.name}, ${c.stateAbbr}. Compare monthly prices and find communities near you.</p>`,

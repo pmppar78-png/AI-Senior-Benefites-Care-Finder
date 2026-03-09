@@ -133,6 +133,10 @@ function generatePage(title, description, canonicalPath, h1, intro, sections, lo
       <a href="/social-security/" class="mobile-menu-link">Social Security</a>
       <a href="/home-care/" class="mobile-menu-link">Home Care</a>
       <a href="/veterans-benefits/" class="mobile-menu-link">Veterans Benefits</a>
+      <a href="/editorial-policy/" class="mobile-menu-link">Editorial Policy</a>
+      <a href="/how-we-research/" class="mobile-menu-link">How We Research</a>
+      <a href="/privacy-policy/" class="mobile-menu-link">Privacy Policy</a>
+      <a href="/terms-of-use/" class="mobile-menu-link">Terms of Use</a>
     </nav>
   </header>
   <script>
@@ -168,12 +172,12 @@ ${sectionsHtml}
 
   <footer class="site-footer">
     <div class="footer-links">
-      <a href="/about">About</a>
-      <a href="/editorial-policy">Editorial Policy</a>
-      <a href="/how-we-research">How We Research</a>
-      <a href="/privacy-policy">Privacy Policy</a>
-      <a href="/terms-of-use">Terms of Use</a>
-      <a href="/contact">Contact</a>
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial Policy</a>
+      <a href="/how-we-research/">How We Research</a>
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-of-use/">Terms of Use</a>
+      <a href="/contact/">Contact</a>
     </div>
     <p class="footer-copy">&copy; 2026 Senior Benefits Care Finder. All rights reserved.</p>
     <p class="footer-disclaimer">This site is for informational purposes only and does not constitute legal, financial, or medical advice.</p>
