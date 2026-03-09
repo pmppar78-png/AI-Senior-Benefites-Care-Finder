@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seniorbenefitscarefinder.com/sitemap.xml
+
+# Senior Benefits Care Finder
+# https://seniorbenefitscarefinder.com

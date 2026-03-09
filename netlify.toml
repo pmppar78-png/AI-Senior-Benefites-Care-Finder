@@ -1,2 +1,73 @@
 [functions]
 directory = "netlify/functions"
+
+# Redirects for legacy/alternate URLs to canonical trust pages
+[[redirects]]
+  from = "/editorial-standards"
+  to = "/editorial-policy/"
+  status = 301
+
+[[redirects]]
+  from = "/editorial-standards/"
+  to = "/editorial-policy/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy-policy/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy/"
+  to = "/privacy-policy/"
+  status = 301
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms-of-use/"
+  status = 301
+
+[[redirects]]
+  from = "/terms/"
+  to = "/terms-of-use/"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-service"
+  to = "/terms-of-use/"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-service/"
+  to = "/terms-of-use/"
+  status = 301
+
+[[redirects]]
+  from = "/who-we-are"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/who-we-are/"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/mission"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/mission/"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/why-trust-us"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/why-trust-us/"
+  to = "/about/"
+  status = 301
