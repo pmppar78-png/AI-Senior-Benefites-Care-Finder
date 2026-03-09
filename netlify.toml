@@ -1,6 +1,17 @@
 [functions]
 directory = "netlify/functions"
 
+# Redirect /costs/ to /cost/ (canonicalize duplicate URL structure)
+[[redirects]]
+  from = "/assisted-living/costs/*"
+  to = "/assisted-living/cost/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/home-care/costs/*"
+  to = "/home-care/cost/:splat"
+  status = 301
+
 # Redirects for legacy/alternate URLs to canonical trust pages
 [[redirects]]
   from = "/editorial-standards"

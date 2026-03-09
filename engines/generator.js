@@ -74,7 +74,7 @@ class TemplateEngine {
     while (limit-- > 0) {
       const before = output;
       output = output.replace(
-        /\{\{#if\s+([\w.]+)\}\}([\s\S]*?)(?:\{\{else\}\}([\s\S]*?))?\{\{\/if\}\}/,
+        /\{\{#if\s+([@\w.]+)\}\}([\s\S]*?)(?:\{\{else\}\}([\s\S]*?))?\{\{\/if\}\}/,
         (match, key, ifBlock, elseBlock) => {
           const value = this._resolve(data, key);
           if (value && (!Array.isArray(value) || value.length > 0)) {
@@ -327,23 +327,41 @@ class PageGenerator {
       year: 'numeric', month: 'long', day: 'numeric'
     });
 
+    // Resolve state and city names from reference data (fallback to entry data)
+    const resolvedState = state ? state.name : (entry.state || '');
+    const resolvedStateAbbr = state ? state.abbr : (entry.stateAbbr || '');
+    const resolvedStateSlug = state ? state.slug : (entry.stateSlug || '');
+    const resolvedCity = city ? city.name : (entry.city || '');
+    const resolvedCitySlug = city ? city.slug : (entry.citySlug || '');
+
+    // Build SEO data with resolved state/city names for proper interpolation
+    const seoData = { ...entry, state: resolvedState, stateAbbr: resolvedStateAbbr, stateSlug: resolvedStateSlug, city: resolvedCity, citySlug: resolvedCitySlug, currentYear };
+
+    // Determine canonical URL — city pages get self-referencing canonicals
+    let canonicalPattern = eng.urlPattern;
+    if (resolvedCitySlug && eng.cityUrlPattern) {
+      canonicalPattern = eng.cityUrlPattern;
+    } else if (resolvedStateSlug && eng.stateUrlPattern) {
+      canonicalPattern = eng.stateUrlPattern;
+    }
+
     return {
       // Engine meta
       engineId: eng.id,
       engineName: eng.name,
       schemaType: eng.schemaType || 'Article',
 
-      // SEO — built from patterns (merge currentYear + entry for full interpolation)
-      pageTitle: this._interpolatePattern(eng.seoTitle, { ...entry, currentYear }),
-      metaDescription: this._interpolatePattern(eng.metaDescription, { ...entry, currentYear }),
-      canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(eng.urlPattern, entry)}`,
+      // SEO — built from patterns with resolved state/city names
+      pageTitle: this._interpolatePattern(eng.seoTitle, seoData),
+      metaDescription: this._interpolatePattern(eng.metaDescription, seoData),
+      canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(canonicalPattern, seoData)}`,
 
       // Location data
-      state: state ? state.name : (entry.state || ''),
-      stateAbbr: state ? state.abbr : (entry.stateAbbr || ''),
-      stateSlug: state ? state.slug : (entry.stateSlug || ''),
-      city: city ? city.name : (entry.city || ''),
-      citySlug: city ? city.slug : (entry.citySlug || ''),
+      state: resolvedState,
+      stateAbbr: resolvedStateAbbr,
+      stateSlug: resolvedStateSlug,
+      city: resolvedCity,
+      citySlug: resolvedCitySlug,
       county: entry.county || '',
       countySlug: entry.countySlug || '',
 
@@ -357,6 +375,13 @@ class PageGenerator {
 
       // Entry data (overrides anything above)
       ...entry,
+
+      // Ensure resolved names are not overridden by empty entry values
+      state: resolvedState,
+      stateAbbr: resolvedStateAbbr,
+      stateSlug: resolvedStateSlug,
+      city: resolvedCity,
+      citySlug: resolvedCitySlug,
 
       // Related pages
       relatedEngines: eng.relatedEngines || [],
@@ -401,14 +426,14 @@ class PageGenerator {
 
   _buildUrl(pattern, data) {
     return pattern.replace(/\[(\w+)\]/g, (match, key) => {
-      return data[key] || key;
+      return data[key] != null && data[key] !== '' ? data[key] : '';
     });
   }
 
   _interpolatePattern(pattern, data) {
     if (!pattern) return '';
     return pattern.replace(/\[(\w+)\]/g, (match, key) => {
-      return data[key] || key;
+      return data[key] != null && data[key] !== '' ? data[key] : '';
     });
   }
 }
