@@ -290,8 +290,14 @@ class PageGenerator {
     // Render
     const html = this.engine.render(template, data);
 
-    // Determine output path
-    const urlPath = this._buildUrl(eng.urlPattern, data);
+    // Determine output path — use city/state URL pattern when entry has city/state data
+    let urlPattern = eng.urlPattern;
+    if (data.citySlug && eng.cityUrlPattern) {
+      urlPattern = eng.cityUrlPattern;
+    } else if (data.stateSlug && eng.stateUrlPattern) {
+      urlPattern = eng.stateUrlPattern;
+    }
+    const urlPath = this._buildUrl(urlPattern, data);
     const outputPath = path.join(OUTPUT_DIR, urlPath, 'index.html');
 
     if (this.dryRun) {

@@ -34,7 +34,7 @@
       {
         "name": "Alabama Veterans Home",
         "location": "Alabama",
-        "beds": 152,
+        "beds": 121,
         "phone": "(555) 000-0000"
       }
     ],
@@ -101,7 +101,7 @@
       {
         "name": "Alaska Veterans Home",
         "location": "Alaska",
-        "beds": 190,
+        "beds": 229,
         "phone": "(555) 000-0000"
       }
     ],
@@ -168,7 +168,7 @@
       {
         "name": "Arizona Veterans Home",
         "location": "Arizona",
-        "beds": 137,
+        "beds": 163,
         "phone": "(555) 000-0000"
       }
     ],
@@ -235,7 +235,7 @@
       {
         "name": "Arkansas Veterans Home",
         "location": "Arkansas",
-        "beds": 255,
+        "beds": 111,
         "phone": "(555) 000-0000"
       }
     ],
@@ -302,7 +302,7 @@
       {
         "name": "California Veterans Home",
         "location": "California",
-        "beds": 207,
+        "beds": 140,
         "phone": "(555) 000-0000"
       }
     ],
@@ -369,7 +369,7 @@
       {
         "name": "Colorado Veterans Home",
         "location": "Colorado",
-        "beds": 231,
+        "beds": 173,
         "phone": "(555) 000-0000"
       }
     ],
@@ -436,7 +436,7 @@
       {
         "name": "Connecticut Veterans Home",
         "location": "Connecticut",
-        "beds": 127,
+        "beds": 138,
         "phone": "(555) 000-0000"
       }
     ],
@@ -503,7 +503,7 @@
       {
         "name": "Delaware Veterans Home",
         "location": "Delaware",
-        "beds": 179,
+        "beds": 193,
         "phone": "(555) 000-0000"
       }
     ],
@@ -570,7 +570,7 @@
       {
         "name": "Florida Veterans Home",
         "location": "Florida",
-        "beds": 179,
+        "beds": 147,
         "phone": "(555) 000-0000"
       }
     ],
@@ -637,7 +637,7 @@
       {
         "name": "Georgia Veterans Home",
         "location": "Georgia",
-        "beds": 230,
+        "beds": 137,
         "phone": "(555) 000-0000"
       }
     ],
@@ -704,7 +704,7 @@
       {
         "name": "Hawaii Veterans Home",
         "location": "Hawaii",
-        "beds": 279,
+        "beds": 162,
         "phone": "(555) 000-0000"
       }
     ],
@@ -771,7 +771,7 @@
       {
         "name": "Idaho Veterans Home",
         "location": "Idaho",
-        "beds": 199,
+        "beds": 103,
         "phone": "(555) 000-0000"
       }
     ],
@@ -838,7 +838,7 @@
       {
         "name": "Illinois Veterans Home",
         "location": "Illinois",
-        "beds": 127,
+        "beds": 226,
         "phone": "(555) 000-0000"
       }
     ],
@@ -905,7 +905,7 @@
       {
         "name": "Indiana Veterans Home",
         "location": "Indiana",
-        "beds": 269,
+        "beds": 185,
         "phone": "(555) 000-0000"
       }
     ],
@@ -972,7 +972,7 @@
       {
         "name": "Iowa Veterans Home",
         "location": "Iowa",
-        "beds": 245,
+        "beds": 217,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1039,7 +1039,7 @@
       {
         "name": "Kansas Veterans Home",
         "location": "Kansas",
-        "beds": 151,
+        "beds": 293,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1106,7 +1106,7 @@
       {
         "name": "Kentucky Veterans Home",
         "location": "Kentucky",
-        "beds": 277,
+        "beds": 260,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1173,7 +1173,7 @@
       {
         "name": "Louisiana Veterans Home",
         "location": "Louisiana",
-        "beds": 132,
+        "beds": 291,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1240,7 +1240,7 @@
       {
         "name": "Maine Veterans Home",
         "location": "Maine",
-        "beds": 276,
+        "beds": 224,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1307,7 +1307,7 @@
       {
         "name": "Maryland Veterans Home",
         "location": "Maryland",
-        "beds": 157,
+        "beds": 117,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1374,7 +1374,7 @@
       {
         "name": "Massachusetts Veterans Home",
         "location": "Massachusetts",
-        "beds": 113,
+        "beds": 109,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1441,7 +1441,7 @@
       {
         "name": "Michigan Veterans Home",
         "location": "Michigan",
-        "beds": 181,
+        "beds": 214,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1508,7 +1508,7 @@
       {
         "name": "Minnesota Veterans Home",
         "location": "Minnesota",
-        "beds": 235,
+        "beds": 143,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1575,7 +1575,7 @@
       {
         "name": "Mississippi Veterans Home",
         "location": "Mississippi",
-        "beds": 247,
+        "beds": 173,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1642,7 +1642,7 @@
       {
         "name": "Missouri Veterans Home",
         "location": "Missouri",
-        "beds": 107,
+        "beds": 252,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1709,7 +1709,7 @@
       {
         "name": "Montana Veterans Home",
         "location": "Montana",
-        "beds": 162,
+        "beds": 210,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1776,7 +1776,7 @@
       {
         "name": "Nebraska Veterans Home",
         "location": "Nebraska",
-        "beds": 222,
+        "beds": 233,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1843,7 +1843,7 @@
       {
         "name": "Nevada Veterans Home",
         "location": "Nevada",
-        "beds": 176,
+        "beds": 166,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1910,7 +1910,7 @@
       {
         "name": "New Hampshire Veterans Home",
         "location": "New Hampshire",
-        "beds": 236,
+        "beds": 243,
         "phone": "(555) 000-0000"
       }
     ],
@@ -1977,7 +1977,7 @@
       {
         "name": "New Jersey Veterans Home",
         "location": "New Jersey",
-        "beds": 232,
+        "beds": 297,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2044,7 +2044,7 @@
       {
         "name": "New Mexico Veterans Home",
         "location": "New Mexico",
-        "beds": 259,
+        "beds": 173,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2111,7 +2111,7 @@
       {
         "name": "New York Veterans Home",
         "location": "New York",
-        "beds": 170,
+        "beds": 231,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2178,7 +2178,7 @@
       {
         "name": "North Carolina Veterans Home",
         "location": "North Carolina",
-        "beds": 234,
+        "beds": 216,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2245,7 +2245,7 @@
       {
         "name": "North Dakota Veterans Home",
         "location": "North Dakota",
-        "beds": 137,
+        "beds": 190,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2312,7 +2312,7 @@
       {
         "name": "Ohio Veterans Home",
         "location": "Ohio",
-        "beds": 162,
+        "beds": 213,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2379,7 +2379,7 @@
       {
         "name": "Oklahoma Veterans Home",
         "location": "Oklahoma",
-        "beds": 236,
+        "beds": 120,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2446,7 +2446,7 @@
       {
         "name": "Oregon Veterans Home",
         "location": "Oregon",
-        "beds": 262,
+        "beds": 260,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2513,7 +2513,7 @@
       {
         "name": "Pennsylvania Veterans Home",
         "location": "Pennsylvania",
-        "beds": 249,
+        "beds": 195,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2580,7 +2580,7 @@
       {
         "name": "Rhode Island Veterans Home",
         "location": "Rhode Island",
-        "beds": 137,
+        "beds": 112,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2647,7 +2647,7 @@
       {
         "name": "South Carolina Veterans Home",
         "location": "South Carolina",
-        "beds": 172,
+        "beds": 290,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2781,7 +2781,7 @@
       {
         "name": "Tennessee Veterans Home",
         "location": "Tennessee",
-        "beds": 287,
+        "beds": 117,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2848,7 +2848,7 @@
       {
         "name": "Texas Veterans Home",
         "location": "Texas",
-        "beds": 299,
+        "beds": 284,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2915,7 +2915,7 @@
       {
         "name": "Utah Veterans Home",
         "location": "Utah",
-        "beds": 252,
+        "beds": 131,
         "phone": "(555) 000-0000"
       }
     ],
@@ -2982,7 +2982,7 @@
       {
         "name": "Vermont Veterans Home",
         "location": "Vermont",
-        "beds": 228,
+        "beds": 265,
         "phone": "(555) 000-0000"
       }
     ],
@@ -3049,7 +3049,7 @@
       {
         "name": "Virginia Veterans Home",
         "location": "Virginia",
-        "beds": 153,
+        "beds": 286,
         "phone": "(555) 000-0000"
       }
     ],
@@ -3116,7 +3116,7 @@
       {
         "name": "Washington Veterans Home",
         "location": "Washington",
-        "beds": 162,
+        "beds": 118,
         "phone": "(555) 000-0000"
       }
     ],
@@ -3183,7 +3183,7 @@
       {
         "name": "West Virginia Veterans Home",
         "location": "West Virginia",
-        "beds": 129,
+        "beds": 272,
         "phone": "(555) 000-0000"
       }
     ],
@@ -3250,7 +3250,7 @@
       {
         "name": "Wisconsin Veterans Home",
         "location": "Wisconsin",
-        "beds": 223,
+        "beds": 186,
         "phone": "(555) 000-0000"
       }
     ],
@@ -3317,7 +3317,7 @@
       {
         "name": "Wyoming Veterans Home",
         "location": "Wyoming",
-        "beds": 273,
+        "beds": 177,
         "phone": "(555) 000-0000"
       }
     ],
