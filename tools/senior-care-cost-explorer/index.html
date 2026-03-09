@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Senior Care Cost Explorer Tool | Senior Benefits Care Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore typical senior care cost ranges and learn about commonly available programs in your state. An informational planning tool for seniors and caregivers." />
+  <meta name="author" content="Paul Paradis" />
+  <link rel="canonical" href="https://seniorbenefitscarefinder.com/tools/senior-care-cost-explorer/" />
+  <meta property="og:title" content="Senior Care Cost Explorer Tool | Senior Benefits Care Finder" />
+  <meta property="og:description" content="Explore typical senior care cost ranges and learn about commonly available programs in your state." />
+  <meta property="og:url" content="https://seniorbenefitscarefinder.com/tools/senior-care-cost-explorer/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Senior Benefits Care Finder" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Senior Care Cost Explorer Tool" />
+  <meta name="twitter:description" content="Explore typical senior care cost ranges and learn about commonly available programs in your state." />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/engine.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Senior Care Cost Explorer",
+    "description": "An informational tool to explore typical senior care cost ranges and commonly available programs by state.",
+    "url": "https://seniorbenefitscarefinder.com/tools/senior-care-cost-explorer/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Senior Benefits Care Finder",
+      "url": "https://seniorbenefitscarefinder.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Senior Benefits Care Finder",
+    "url": "https://seniorbenefitscarefinder.com",
+    "description": "A comprehensive resource helping seniors and their families navigate government benefits, healthcare programs, and care options across all 50 states.",
+    "founder": {
+      "@type": "Person",
+      "name": "Paul Paradis",
+      "url": "https://seniorbenefitscarefinder.com/author/paul-paradis/"
+    },
+    "publishingPrinciples": "https://seniorbenefitscarefinder.com/editorial-policy/",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "contact@seniorbenefitsfinder.com"
+    }
+  }
+  </script>
+  <style>
+    .tool-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.6rem 1.25rem 3rem;
+    }
+    .tool-hero {
+      border-radius: 1.5rem;
+      padding: 1.75rem 1.5rem 1.5rem;
+      border: 1px solid var(--border-subtle);
+      background: radial-gradient(circle at top left, #0b1120, #020617 65%);
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.8);
+      border-left: 6px solid var(--accent-border);
+      margin-bottom: 2rem;
+    }
+    .tool-hero h1 {
+      font-size: 2rem;
+      line-height: 1.25;
+      margin: 0 0 0.6rem;
+    }
+    .tool-hero p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0.5rem 0 0;
+    }
+    .tool-disclaimer {
+      background: rgba(250, 204, 21, 0.08);
+      border: 1px solid rgba(250, 204, 21, 0.25);
+      border-radius: 0.75rem;
+      padding: 0.85rem 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .tool-form {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .tool-form h2 {
+      margin: 0 0 1.2rem;
+      font-size: 1.3rem;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+    @media (min-width: 640px) {
+      .form-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.4rem;
+    }
+    .form-group select {
+      width: 100%;
+      padding: 0.55rem 0.75rem;
+      border-radius: 0.6rem;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-muted);
+      color: var(--text-main);
+      font-family: var(--font-main);
+      font-size: 0.9rem;
+      appearance: auto;
+    }
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent-border);
+      box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.7);
+    }
+    .tool-submit-wrap {
+      margin-top: 1.4rem;
+      text-align: center;
+    }
+    .tool-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 2rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #facc15, #f97316);
+      color: #451a03;
+      box-shadow: 0 12px 30px rgba(250, 204, 21, 0.55);
+      transition: transform 0.08s ease, box-shadow 0.15s ease;
+    }
+    .tool-submit:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 36px rgba(251, 191, 36, 0.7);
+    }
+    .tool-results {
+      display: none;
+    }
+    .tool-results.active {
+      display: block;
+    }
+    .results-section {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1.25rem;
+      padding: 1.3rem 1.3rem 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+    .results-section h2 {
+      margin: 0 0 1rem;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    .results-section h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+      color: #fef3c7;
+    }
+    .cost-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+    @media (min-width: 640px) {
+      .cost-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .cost-card {
+      background: var(--bg-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: 0.95rem;
+      padding: 1rem;
+      text-align: center;
+    }
+    .cost-card .cost-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+    .cost-card .cost-range {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .cost-card .cost-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+    .program-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .program-list li {
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .program-list li:last-child {
+      border-bottom: none;
+    }
+    .program-list .program-name {
+      font-weight: 600;
+      color: #fef3c7;
+      font-size: 0.95rem;
+    }
+    .program-list .program-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-top: 0.25rem;
+    }
+    .breadcrumb-nav {
+      font-size: 0.82rem;
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+    .breadcrumb-nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .breadcrumb-nav a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    @media (min-width: 768px) {
+      .tool-hero h1 {
+        font-size: 2.2rem;
+      }
+      .tool-hero {
+        padding: 2rem 2rem 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body class="site-body">
+  <header class="site-header">
+    <div class="logo-block">
+      <div class="logo-icon">&#10022;</div>
+      <a href="/" class="logo-text" style="text-decoration:none;color:inherit;">
+        <span class="logo-title">Senior Benefits Care Finder</span>
+        <span class="logo-subtitle">Trust-first guide for seniors &amp; caregivers</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <a href="/chat.html" class="btn-ai-pill">Try our AI</a>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="/" class="mobile-menu-link">Home</a>
+      <a href="/chat.html" class="mobile-menu-link">Talk to the AI guide</a>
+      <a href="/about/" class="mobile-menu-link">About Us</a>
+      <a href="/author/paul-paradis/" class="mobile-menu-link">Our Author</a>
+      <a href="/editorial-policy/" class="mobile-menu-link">Editorial Standards</a>
+      <a href="/how-we-research/" class="mobile-menu-link">How We Research</a>
+      <a href="/fact-checking/" class="mobile-menu-link">Fact-Checking Policy</a>
+      <a href="/privacy-policy/" class="mobile-menu-link">Privacy Policy</a>
+      <a href="/terms-of-use/" class="mobile-menu-link">Terms of Use</a>
+      <a href="/contact/" class="mobile-menu-link">Contact</a>
+    </nav>
+  </header>
+  <script>
+    (function() {
+      var btn = document.getElementById('hamburgerBtn');
+      var menu = document.getElementById('mobileMenu');
+      btn.addEventListener('click', function() {
+        var open = menu.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
+
+  <main class="tool-container">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/senior-care-cost-explorer/">Tools</a> &rsaquo; Senior Care Cost Explorer
+    </nav>
+
+    <section class="tool-hero">
+      <h1>Senior Care Cost &amp; Benefits Explorer</h1>
+      <p>
+        Explore typical senior care cost ranges and learn about programs that are commonly available in many states. This informational planning tool helps you understand your options and prepare for conversations with professionals.
+      </p>
+    </section>
+
+    <div class="tool-disclaimer">
+      <strong>Important:</strong> This tool provides general informational estimates about senior care costs and commonly available programs. It does not determine eligibility for any government program. Cost ranges shown are approximate national and state-level averages. Always verify details with official program offices and licensed professionals.
+    </div>
+
+    <form class="tool-form" id="costExplorerForm" onsubmit="return false;">
+      <h2>Explore Your Options</h2>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="ageRange">Age Range</label>
+          <select id="ageRange" required>
+            <option value="">Select age range</option>
+            <option value="55-61">55 &ndash; 61</option>
+            <option value="62-64">62 &ndash; 64</option>
+            <option value="65-74">65 &ndash; 74</option>
+            <option value="75-84">75 &ndash; 84</option>
+            <option value="85+">85+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="stateSelect">State</label>
+          <select id="stateSelect" required>
+            <option value="">Select your state</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="livingSituation">Living Situation</label>
+          <select id="livingSituation" required>
+            <option value="">Select living situation</option>
+            <option value="independent">Living independently</option>
+            <option value="assisted">Assisted living</option>
+            <option value="nursing">Nursing home</option>
+            <option value="home-caregiver">Home caregiver support</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="incomeRange">Monthly Income Range</label>
+          <select id="incomeRange" required>
+            <option value="">Select income range</option>
+            <option value="under-1k">Under $1,000</option>
+            <option value="1k-2k">$1,000 &ndash; $2,000</option>
+            <option value="2k-4k">$2,000 &ndash; $4,000</option>
+            <option value="4k+">$4,000+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="veteranStatus">Veteran Status</label>
+          <select id="veteranStatus" required>
+            <option value="">Select veteran status</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tool-submit-wrap">
+        <button type="button" class="tool-submit" id="exploreBtn">Explore Cost Ranges &amp; Programs</button>
+      </div>
+    </form>
+
+    <div class="tool-results" id="toolResults">
+      <div class="results-section">
+        <h2>Typical Senior Care Cost Ranges</h2>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 1rem;">Based on approximate averages for <strong id="resultState" style="color:#fef3c7;"></strong>. Actual costs vary by location, provider, and level of care.</p>
+        <div class="cost-grid">
+          <div class="cost-card">
+            <div class="cost-label">Assisted Living</div>
+            <div class="cost-range" id="costAssisted"></div>
+            <div class="cost-note">per month (typical range)</div>
+          </div>
+          <div class="cost-card">
+            <div class="cost-label">Home Care</div>
+            <div class="cost-range" id="costHomeCare"></div>
+            <div class="cost-note">per month (typical range)</div>
+          </div>
+          <div class="cost-card">
+            <div class="cost-label">Nursing Home</div>
+            <div class="cost-range" id="costNursing"></div>
+            <div class="cost-note">per month (typical range)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-section">
+        <h2>Programs Often Available in Many States</h2>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 0.8rem;">The following are common programs that many states offer. Availability, requirements, and benefits vary by state and individual circumstances.</p>
+        <ul class="program-list" id="programList"></ul>
+      </div>
+
+      <div id="veteranSection" class="results-section" style="display:none;">
+        <h2>Veterans Assistance Programs</h2>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 0.8rem;">These programs are commonly available through the U.S. Department of Veterans Affairs. Contact your local VA office for details.</p>
+        <ul class="program-list" id="veteranProgramList"></ul>
+      </div>
+
+      <div class="results-section">
+        <h2>Suggested Next Steps</h2>
+        <ul class="program-list" id="nextStepsList"></ul>
+      </div>
+
+      <div class="tool-disclaimer" style="margin-top:1.5rem;">
+        <strong>Reminder:</strong> This tool provides general informational estimates about senior care costs and commonly available programs. It does not determine eligibility for any government program. Always consult with official program offices, licensed insurance agents, and qualified professionals for personalized guidance.
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div style="max-width:960px;margin:0 auto;">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.2rem;margin-bottom:0.8rem;font-size:0.82rem;">
+        <a href="/medicare/" style="color:var(--text-muted);text-decoration:none;">Medicare</a>
+        <a href="/medicaid/" style="color:var(--text-muted);text-decoration:none;">Medicaid</a>
+        <a href="/assisted-living/" style="color:var(--text-muted);text-decoration:none;">Assisted Living</a>
+        <a href="/social-security/" style="color:var(--text-muted);text-decoration:none;">Social Security</a>
+        <a href="/home-care/" style="color:var(--text-muted);text-decoration:none;">Home Care</a>
+        <a href="/veterans-benefits/" style="color:var(--text-muted);text-decoration:none;">Veterans Benefits</a>
+        <a href="/prescription-assistance/" style="color:var(--text-muted);text-decoration:none;">Rx Assistance</a>
+        <a href="/compare/" style="color:var(--text-muted);text-decoration:none;">Compare Options</a>
+      </div>
+      <p class="footer-text">
+        Information only &middot; Not financial, legal, tax, medical, or insurance advice &middot; Always speak with licensed professionals before making decisions.
+      </p>
+      <p class="footer-text small" style="margin-top:0.3rem;">
+        Some links on this site may be affiliate or sponsored links. We may receive compensation when you click through or make a purchase. This does not affect our editorial independence or the accuracy of our information.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1rem;margin-top:0.5rem;font-size:0.78rem;">
+        <a href="/about/" style="color:var(--text-muted);text-decoration:none;">About Us</a>
+        <a href="/author/paul-paradis/" style="color:var(--text-muted);text-decoration:none;">Our Author</a>
+        <a href="/editorial-policy/" style="color:var(--text-muted);text-decoration:none;">Editorial Standards</a>
+        <a href="/how-we-research/" style="color:var(--text-muted);text-decoration:none;">How We Research</a>
+        <a href="/fact-checking/" style="color:var(--text-muted);text-decoration:none;">Fact-Checking</a>
+        <a href="/privacy-policy/" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+        <a href="/terms-of-use/" style="color:var(--text-muted);text-decoration:none;">Terms of Use</a>
+        <a href="/contact/" style="color:var(--text-muted);text-decoration:none;">Contact</a>
+      </div>
+      <p class="footer-text small" style="margin-top:0.6rem;">
+        &copy; 2026 Senior Benefits Care Finder. For advertising and partnership inquiries only, email <a href="mailto:advertise@seniorbenefitsfinder.com" style="color:var(--text-muted);">advertise@seniorbenefitsfinder.com</a>.
+      </p>
+    </div>
+  </footer>
+  <script src="/affiliates.js"></script>
+  <script>
+  (function() {
+    // State data with approximate cost ranges
+    var stateData = {
+      'Alabama': { assisted: [3200, 4200], home: [3800, 4800], nursing: [6500, 8500] },
+      'Alaska': { assisted: [6000, 8500], home: [5500, 7500], nursing: [10000, 14000] },
+      'Arizona': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7000, 9500] },
+      'Arkansas': { assisted: [3200, 4500], home: [3800, 4800], nursing: [6000, 8000] },
+      'California': { assisted: [4500, 7000], home: [5000, 7000], nursing: [9000, 13000] },
+      'Colorado': { assisted: [4000, 5500], home: [4500, 6000], nursing: [8000, 11000] },
+      'Connecticut': { assisted: [5000, 7000], home: [4800, 6500], nursing: [11000, 15000] },
+      'Delaware': { assisted: [4500, 6500], home: [4500, 6000], nursing: [9500, 13000] },
+      'Florida': { assisted: [3500, 5000], home: [4000, 5500], nursing: [8000, 10500] },
+      'Georgia': { assisted: [3000, 4500], home: [3800, 5000], nursing: [6500, 9000] },
+      'Hawaii': { assisted: [5000, 7500], home: [5000, 6500], nursing: [10000, 14000] },
+      'Idaho': { assisted: [3500, 4500], home: [4200, 5500], nursing: [7500, 10000] },
+      'Illinois': { assisted: [3800, 5500], home: [4500, 6000], nursing: [6500, 9500] },
+      'Indiana': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7000, 9500] },
+      'Iowa': { assisted: [3500, 5000], home: [4500, 5800], nursing: [6500, 8500] },
+      'Kansas': { assisted: [3800, 5500], home: [4500, 5800], nursing: [6500, 8500] },
+      'Kentucky': { assisted: [3500, 4800], home: [3800, 5000], nursing: [7000, 9500] },
+      'Louisiana': { assisted: [3200, 4500], home: [3500, 4800], nursing: [6000, 8500] },
+      'Maine': { assisted: [5000, 6500], home: [4800, 6200], nursing: [9000, 12500] },
+      'Maryland': { assisted: [4200, 6000], home: [4500, 6000], nursing: [9500, 13000] },
+      'Massachusetts': { assisted: [5500, 7500], home: [5000, 6500], nursing: [11000, 15000] },
+      'Michigan': { assisted: [3800, 5000], home: [4200, 5500], nursing: [8000, 10500] },
+      'Minnesota': { assisted: [4000, 5500], home: [5000, 6500], nursing: [8500, 11500] },
+      'Mississippi': { assisted: [3000, 4200], home: [3500, 4500], nursing: [6500, 8500] },
+      'Missouri': { assisted: [3000, 4200], home: [4000, 5200], nursing: [5500, 7500] },
+      'Montana': { assisted: [3800, 5000], home: [4500, 6000], nursing: [8000, 10500] },
+      'Nebraska': { assisted: [3800, 5200], home: [4800, 6200], nursing: [7500, 10000] },
+      'Nevada': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7500, 10000] },
+      'New Hampshire': { assisted: [5000, 6500], home: [5000, 6500], nursing: [10000, 14000] },
+      'New Jersey': { assisted: [5500, 7500], home: [4800, 6500], nursing: [10000, 14000] },
+      'New Mexico': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7500, 10000] },
+      'New York': { assisted: [4500, 7000], home: [5000, 7000], nursing: [10000, 14500] },
+      'North Carolina': { assisted: [3500, 5000], home: [3800, 5000], nursing: [7000, 9500] },
+      'North Dakota': { assisted: [3500, 5000], home: [5000, 6500], nursing: [8500, 12000] },
+      'Ohio': { assisted: [3800, 5500], home: [4200, 5500], nursing: [7000, 9500] },
+      'Oklahoma': { assisted: [3200, 4500], home: [4000, 5200], nursing: [5500, 8000] },
+      'Oregon': { assisted: [4200, 6000], home: [5000, 6500], nursing: [9000, 12000] },
+      'Pennsylvania': { assisted: [4000, 5500], home: [4200, 5800], nursing: [9000, 12500] },
+      'Rhode Island': { assisted: [5000, 6500], home: [5000, 6500], nursing: [9500, 13000] },
+      'South Carolina': { assisted: [3200, 4500], home: [3800, 5000], nursing: [6500, 9000] },
+      'South Dakota': { assisted: [3500, 4800], home: [4800, 6200], nursing: [7500, 10000] },
+      'Tennessee': { assisted: [3500, 5000], home: [3800, 5000], nursing: [6500, 9000] },
+      'Texas': { assisted: [3500, 5500], home: [4000, 5500], nursing: [5500, 8500] },
+      'Utah': { assisted: [3200, 4500], home: [4200, 5500], nursing: [7000, 9500] },
+      'Vermont': { assisted: [5000, 6500], home: [5000, 6500], nursing: [9500, 13000] },
+      'Virginia': { assisted: [4000, 6000], home: [4200, 5500], nursing: [8000, 11000] },
+      'Washington': { assisted: [4800, 7000], home: [5200, 7000], nursing: [9500, 13000] },
+      'West Virginia': { assisted: [3200, 4500], home: [3500, 4500], nursing: [7500, 10000] },
+      'Wisconsin': { assisted: [4000, 5500], home: [4500, 6000], nursing: [8000, 11000] },
+      'Wyoming': { assisted: [4000, 5500], home: [4800, 6200], nursing: [8500, 11500] }
+    };
+
+    // Populate state dropdown
+    var stateSelect = document.getElementById('stateSelect');
+    var stateNames = Object.keys(stateData).sort();
+    for (var i = 0; i < stateNames.length; i++) {
+      var opt = document.createElement('option');
+      opt.value = stateNames[i];
+      opt.textContent = stateNames[i];
+      stateSelect.appendChild(opt);
+    }
+
+    function formatCost(val) {
+      return '$' + val.toLocaleString('en-US');
+    }
+
+    document.getElementById('exploreBtn').addEventListener('click', function() {
+      var age = document.getElementById('ageRange').value;
+      var state = document.getElementById('stateSelect').value;
+      var living = document.getElementById('livingSituation').value;
+      var income = document.getElementById('incomeRange').value;
+      var veteran = document.getElementById('veteranStatus').value;
+
+      if (!age || !state || !living || !income || !veteran) {
+        alert('Please complete all fields to explore cost ranges and programs.');
+        return;
+      }
+
+      var costs = stateData[state];
+      if (!costs) return;
+
+      // Display cost ranges
+      document.getElementById('resultState').textContent = state;
+      document.getElementById('costAssisted').textContent = formatCost(costs.assisted[0]) + ' \u2013 ' + formatCost(costs.assisted[1]);
+      document.getElementById('costHomeCare').textContent = formatCost(costs.home[0]) + ' \u2013 ' + formatCost(costs.home[1]);
+      document.getElementById('costNursing').textContent = formatCost(costs.nursing[0]) + ' \u2013 ' + formatCost(costs.nursing[1]);
+
+      // Build program information
+      var programs = [];
+
+      programs.push({
+        name: 'Medicaid Long-Term Care Programs',
+        desc: 'Most states offer Medicaid programs that help cover nursing home care, and many also cover assisted living or home-based services through waiver programs. In ' + state + ', Medicaid long-term care programs may help cover care costs for individuals who meet the program\'s financial and functional requirements. Contact your local Medicaid office for current details.'
+      });
+
+      programs.push({
+        name: 'Medicare Coverage Basics',
+        desc: 'Medicare is a federal health insurance program generally available to people age 65 and older. Medicare Part A may cover short-term skilled nursing care following a qualifying hospital stay. Medicare does not typically cover long-term custodial care such as ongoing assisted living or nursing home stays. Medicare Advantage plans in ' + state + ' may offer additional benefits beyond Original Medicare.'
+      });
+
+      programs.push({
+        name: 'SNAP and Senior Nutrition Programs',
+        desc: 'The Supplemental Nutrition Assistance Program (SNAP) helps individuals and families purchase food. Many states also offer senior-specific nutrition programs including congregate meals and home-delivered meals (often called Meals on Wheels). In ' + state + ', seniors may be able to apply for SNAP through their local Department of Social Services.'
+      });
+
+      programs.push({
+        name: 'State and Local Senior Assistance',
+        desc: state + ' may offer additional programs for seniors, such as property tax relief, utility assistance (LIHEAP), transportation services, and home modification programs. Contact your local Area Agency on Aging to learn about programs available in your community.'
+      });
+
+      if (income === 'under-1k' || income === '1k-2k') {
+        programs.push({
+          name: 'Medicare Savings Programs (MSP)',
+          desc: 'Medicare Savings Programs are state-administered programs that help pay for Medicare premiums, deductibles, and co-pays. These programs are generally available in all states for individuals with limited income and resources. Contact ' + state + '\'s Medicaid office to learn about current income guidelines.'
+        });
+      }
+
+      var programListEl = document.getElementById('programList');
+      programListEl.innerHTML = '';
+      for (var j = 0; j < programs.length; j++) {
+        var li = document.createElement('li');
+        li.innerHTML = '<div class="program-name">' + programs[j].name + '</div><div class="program-desc">' + programs[j].desc + '</div>';
+        programListEl.appendChild(li);
+      }
+
+      // Veteran section
+      var vetSection = document.getElementById('veteranSection');
+      var vetList = document.getElementById('veteranProgramList');
+      if (veteran === 'yes') {
+        vetSection.style.display = 'block';
+        vetList.innerHTML = '';
+        var vetPrograms = [
+          {
+            name: 'VA Aid and Attendance Benefit',
+            desc: 'The Aid and Attendance benefit is a pension supplement available through the VA for veterans and surviving spouses who need assistance with daily activities. This benefit can provide additional monthly income to help cover the cost of care at home, in assisted living, or in a nursing home. Contact your local VA regional office for details.'
+          },
+          {
+            name: 'VA Health Care Benefits',
+            desc: 'The VA health care system offers medical services to enrolled veterans, which may include home health aides, adult day care, and other support services. Benefits and availability vary based on service history and other factors. Contact your local VA medical center to learn more.'
+          },
+          {
+            name: 'State Veterans Benefits in ' + state,
+            desc: 'Many states offer additional benefits for veterans, such as state veterans homes, property tax exemptions, and supplemental aid programs. Contact ' + state + '\'s Department of Veterans Affairs to learn about state-specific programs and resources.'
+          }
+        ];
+        for (var v = 0; v < vetPrograms.length; v++) {
+          var vli = document.createElement('li');
+          vli.innerHTML = '<div class="program-name">' + vetPrograms[v].name + '</div><div class="program-desc">' + vetPrograms[v].desc + '</div>';
+          vetList.appendChild(vli);
+        }
+      } else {
+        vetSection.style.display = 'none';
+      }
+
+      // Next steps
+      var steps = [];
+
+      steps.push({
+        name: 'Contact your local Area Agency on Aging',
+        desc: 'Your local Area Agency on Aging (AAA) can provide free information about programs and services available in your community. Find your local AAA at eldercare.acl.gov or call the Eldercare Locator at 1-800-677-1116.'
+      });
+
+      if (living === 'assisted' || living === 'nursing') {
+        steps.push({
+          name: 'Research and compare care facilities',
+          desc: 'Visit multiple facilities in ' + state + ', ask about pricing tiers, included services, and any additional fees. Request a written breakdown of costs before making any commitment.'
+        });
+      }
+
+      if (living === 'home-caregiver') {
+        steps.push({
+          name: 'Explore home and community-based services',
+          desc: 'Many states offer home and community-based programs that can help seniors remain in their homes. Ask about respite care, adult day programs, and home modification assistance in ' + state + '.'
+        });
+      }
+
+      steps.push({
+        name: 'Speak with a licensed professional',
+        desc: 'A licensed insurance agent, elder law attorney, or financial advisor who specializes in senior care can help you understand your specific options. Your State Health Insurance Assistance Program (SHIP) offers free counseling about Medicare and related programs.'
+      });
+
+      if (income === 'under-1k' || income === '1k-2k') {
+        steps.push({
+          name: 'Contact your local Medicaid office',
+          desc: 'Learn about Medicaid programs and other assistance that may be available in ' + state + '. Each state administers its own Medicaid program with different guidelines and covered services.'
+        });
+      }
+
+      var stepsListEl = document.getElementById('nextStepsList');
+      stepsListEl.innerHTML = '';
+      for (var s = 0; s < steps.length; s++) {
+        var sli = document.createElement('li');
+        sli.innerHTML = '<div class="program-name">' + steps[s].name + '</div><div class="program-desc">' + steps[s].desc + '</div>';
+        stepsListEl.appendChild(sli);
+      }
+
+      // Show results
+      document.getElementById('toolResults').classList.add('active');
+      document.getElementById('toolResults').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  })();
+  </script>
+</body>
+</html>
