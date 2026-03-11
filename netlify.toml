@@ -1,6 +1,9 @@
 [functions]
 directory = "netlify/functions"
 
+[build]
+publish = "."
+
 # Redirect /costs/ to /cost/ (canonicalize duplicate URL structure)
 [[redirects]]
   from = "/assisted-living/costs/*"
