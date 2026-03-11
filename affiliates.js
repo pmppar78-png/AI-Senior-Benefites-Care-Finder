@@ -301,6 +301,195 @@
       ]
     },
 
+    'dental-vision-hearing': {
+      heading: 'Dental, Vision & Hearing Resources',
+      subtitle: 'Tools and platforms to compare dental plans, vision insurance, and hearing aid options for seniors. Always verify pricing and coverage details.',
+      partners: [
+        {
+          name: 'eHealth Dental Plans',
+          url: 'https://www.ehealthinsurance.com/dental-insurance',
+          tagline: 'Compare dental insurance plans and get quotes'
+        },
+        {
+          name: 'VSP Vision',
+          url: 'https://www.vsp.com',
+          tagline: 'Find vision insurance plans and eye care providers'
+        },
+        {
+          name: 'Hearing Tracker',
+          url: 'https://www.hearingtracker.com',
+          tagline: 'Compare hearing aids, prices, and find audiologists'
+        },
+        {
+          name: 'DentalPlans.com',
+          url: 'https://www.dentalplans.com',
+          tagline: 'Save 10-60% on dental care with discount plans'
+        }
+      ]
+    },
+
+    'caregiver-resources': {
+      heading: 'Caregiver Support Resources',
+      subtitle: 'Trusted platforms for finding caregiver support, respite care, and professional home care services. Always check credentials and references.',
+      partners: [
+        {
+          name: 'Care.com',
+          url: 'https://www.care.com/senior-care',
+          tagline: 'Find vetted in-home caregivers near you'
+        },
+        {
+          name: 'Home Instead',
+          url: 'https://www.homeinstead.com',
+          tagline: 'Professional in-home senior care services'
+        },
+        {
+          name: 'AARP Caregiving',
+          url: 'https://www.aarp.org/caregiving',
+          tagline: 'Resources, tools, and support for family caregivers'
+        },
+        {
+          name: 'Caregiver Action Network',
+          url: 'https://www.caregiveraction.org',
+          tagline: 'Free support and resources for family caregivers'
+        }
+      ]
+    },
+
+    'senior-discounts': {
+      heading: 'Senior Savings & Discount Resources',
+      subtitle: 'Platforms and memberships that help seniors save on everyday expenses. Always verify current discounts and eligibility directly.',
+      partners: [
+        {
+          name: 'AARP Membership',
+          url: 'https://www.aarp.org/membership',
+          tagline: 'Join AARP for exclusive discounts on travel, dining, and more'
+        },
+        {
+          name: 'GoodRx',
+          url: 'https://www.goodrx.com',
+          tagline: 'Compare prescription drug prices and get discount coupons'
+        },
+        {
+          name: 'BenefitsCheckUp',
+          url: 'https://www.benefitscheckup.org',
+          tagline: 'Find benefits and savings programs you may qualify for'
+        },
+        {
+          name: 'Benefits.gov',
+          url: 'https://www.benefits.gov',
+          tagline: 'Discover government benefit programs in your area'
+        }
+      ]
+    },
+
+    'dual-eligible': {
+      heading: 'Dual Eligible & Medicare-Medicaid Resources',
+      subtitle: 'Tools for understanding and enrolling in programs for those eligible for both Medicare and Medicaid. Always verify eligibility with official agencies.',
+      partners: [
+        {
+          name: 'Medicare.gov Plan Finder',
+          url: 'https://www.medicare.gov/plan-compare',
+          tagline: 'Find D-SNP plans available in your area'
+        },
+        {
+          name: 'eHealth Medicare',
+          url: 'https://www.ehealthmedicare.com',
+          tagline: 'Compare Medicare plans including D-SNP options'
+        },
+        {
+          name: 'BenefitsCheckUp',
+          url: 'https://www.benefitscheckup.org',
+          tagline: 'Check eligibility for Medicare Savings Programs and Extra Help'
+        },
+        {
+          name: 'Benefits.gov',
+          url: 'https://www.benefits.gov',
+          tagline: 'Find government programs for low-income seniors'
+        }
+      ]
+    },
+
+    'medical-alert-systems': {
+      heading: 'Medical Alert System Resources',
+      subtitle: 'Trusted platforms for researching and comparing medical alert systems. Always read terms carefully and check for trial periods before committing.',
+      partners: [
+        {
+          name: 'Medical Guardian',
+          url: 'https://www.medicalguardian.com',
+          tagline: 'Top-rated medical alert systems with GPS and fall detection'
+        },
+        {
+          name: 'Bay Alarm Medical',
+          url: 'https://www.bayalarmmedical.com',
+          tagline: 'Affordable medical alert systems starting at $19.95/month'
+        },
+        {
+          name: 'Medical Alert',
+          url: 'https://www.medicalalert.com',
+          tagline: 'Medical alert systems with 24/7 monitoring since 1956'
+        },
+        {
+          name: 'Consumer Affairs – Medical Alerts',
+          url: 'https://www.consumeraffairs.com/medical-alert-systems',
+          tagline: 'Compare medical alert system reviews and ratings'
+        }
+      ]
+    },
+
+    'senior-financial-assistance': {
+      heading: 'Financial Assistance Resources',
+      subtitle: 'Tools to help seniors find and apply for financial assistance programs. Always verify eligibility with the administering agency.',
+      partners: [
+        {
+          name: 'BenefitsCheckUp',
+          url: 'https://www.benefitscheckup.org',
+          tagline: 'NCOA tool to find benefits you may qualify for'
+        },
+        {
+          name: 'Benefits.gov',
+          url: 'https://www.benefits.gov',
+          tagline: 'Check eligibility for 1,000+ government benefit programs'
+        },
+        {
+          name: '211.org',
+          url: 'https://www.211.org',
+          tagline: 'Connect with local assistance for food, housing, and bills'
+        },
+        {
+          name: 'GoodRx',
+          url: 'https://www.goodrx.com',
+          tagline: 'Save on prescriptions with free discount coupons'
+        }
+      ]
+    },
+
+    'senior-life-insurance': {
+      heading: 'Senior Life Insurance Resources',
+      subtitle: 'Platforms for comparing life insurance options for seniors. Always speak with a licensed agent and review policy terms carefully.',
+      partners: [
+        {
+          name: 'SelectQuote Life',
+          url: 'https://www.selectquote.com/life-insurance',
+          tagline: 'Compare life insurance quotes from multiple carriers'
+        },
+        {
+          name: 'Mutual of Omaha',
+          url: 'https://www.mutualofomaha.com/life-insurance',
+          tagline: 'Trusted whole life and term life insurance for seniors'
+        },
+        {
+          name: 'AARP Life Insurance',
+          url: 'https://www.aarp.org/membership/benefits/insurance',
+          tagline: 'Life insurance options available through AARP membership'
+        },
+        {
+          name: 'Policygenius',
+          url: 'https://www.policygenius.com/life-insurance',
+          tagline: 'Compare life insurance policies and get free quotes'
+        }
+      ]
+    },
+
     compare: {
       heading: 'Helpful Resources & Tools',
       subtitle: 'Popular platforms for comparing senior benefits and care options. Review each resource carefully and speak with licensed professionals.',
