@@ -329,13 +329,17 @@
 .comparison-col .pros li::before {
   content: "✔";
   color: #22c55e;
-  margin-right: 0.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .comparison-col .cons li::before {
   content: "✘";
   color: #ef4444;
-  margin-right: 0.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .comparison-col .pros,
@@ -346,10 +350,11 @@
 
 .comparison-col .pros li,
 .comparison-col .cons li {
-  display: flex;
-  align-items: flex-start;
+  position: relative;
+  padding-left: 1.4rem;
   margin-top: 0.35rem;
   font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 /* Steps / process */
