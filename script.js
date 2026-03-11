@@ -65,10 +65,25 @@ function appendMessage(role, text) {
 
 function linkify(text) {
   if (!text) return "";
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
-  return text.replace(urlRegex, (url) => {
-    const safeUrl = url.replace(/"/g, "&quot;");
-    return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer sponsored">${safeUrl}</a>`;
+  // First escape HTML entities in the text
+  const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const urlRegex = /(https?:\/\/[^\s<>&]+)/g;
+  return escaped.replace(urlRegex, (url) => {
+    const safeUrl = url.replace(/&amp;/g, "&").replace(/"/g, "&quot;");
+    // Extract a clean display name from the URL
+    let displayName;
+    try {
+      const parsed = new URL(safeUrl);
+      displayName = parsed.hostname.replace(/^www\./, '');
+      // Add path context if meaningful
+      const pathParts = parsed.pathname.split('/').filter(Boolean);
+      if (pathParts.length > 0 && pathParts[0] !== 'index.html') {
+        displayName += '/' + pathParts.join('/');
+      }
+    } catch (e) {
+      displayName = safeUrl;
+    }
+    return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer sponsored">${displayName}</a>`;
   });
 }
 

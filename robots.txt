@@ -1,6 +1,11 @@
 User-agent: *
 Allow: /
 
+# Block access to internal engine/build files
+Disallow: /engines/
+Disallow: /scripts/
+Disallow: /.netlify/
+
 Sitemap: https://seniorbenefitscarefinder.com/sitemap.xml
 
 # Senior Benefits Care Finder
