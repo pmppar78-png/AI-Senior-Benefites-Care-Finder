@@ -9,11 +9,13 @@ publish = "."
   from = "/assisted-living/costs/*"
   to = "/assisted-living/cost/:splat"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/home-care/costs/*"
   to = "/home-care/cost/:splat"
   status = 301
+  force = true
 
 # Redirects for legacy/alternate URLs to canonical trust pages
 [[redirects]]
