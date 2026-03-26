@@ -29,8 +29,10 @@
         <li><a href="#payment-options">Payment Options</a></li>
         <li><a href="#memory-care">Memory Care</a></li>
         <li><a href="#how-to-reduce">How to Reduce Costs</a></li>
+        <li><a href="#cost-vs-national">Cost vs. National Average</a></li>
         <li><a href="#nearby-facilities">Nearby Facilities</a></li>
         <li><a href="#faq">Frequently Asked Questions</a></li>
+        <li><a href="#related-guides">Related Cost Guides</a></li>
       </ol>
     </nav>
 
@@ -247,36 +249,49 @@
 
     <!-- Section: How to Reduce Costs -->
     <section class="content-section" id="how-to-reduce">
-      <h2>How to Reduce Assisted Living Costs</h2>
+      <h2>How to Reduce Assisted Living Costs in {{currentYear}}</h2>
+      <p>With assisted living averaging {{avgMonthlyCost}}/month in {{state}}, finding ways to reduce costs can save families tens of thousands of dollars over time.</p>
       <ol class="steps-list">
         <li>
           <div class="step-content">
             <h4>Explore Medicaid waiver programs</h4>
-            <p>Check if {{state}} offers Medicaid waivers that cover assisted living. Apply early, as waitlists can be long.</p>
+            <p>Check if {{state}} offers Medicaid waivers that cover assisted living. Apply early, as waitlists can be long. <a href="/medicaid/eligibility/{{stateSlug}}/" style="color:#38bdf8;">Check {{state}} Medicaid eligibility &rarr;</a></p>
           </div>
         </li>
         <li>
           <div class="step-content">
             <h4>Apply for VA Aid &amp; Attendance</h4>
-            <p>Veterans and surviving spouses should check eligibility for this benefit, which can provide substantial monthly financial support.</p>
+            <p>Veterans and surviving spouses may receive up to $2,431/month (2026 rates) through this benefit. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{state}} veterans benefits &rarr;</a></p>
           </div>
         </li>
         <li>
           <div class="step-content">
             <h4>Consider shared rooms</h4>
-            <p>Semi-private rooms cost significantly less than private rooms and may work well for some residents.</p>
+            <p>Semi-private rooms cost $300–$800 less per month than private rooms — saving $3,600–$9,600 annually.</p>
           </div>
         </li>
         <li>
           <div class="step-content">
-            <h4>Negotiate rates</h4>
-            <p>Many facilities are willing to negotiate rates, especially for long-term commitments or during lower-occupancy periods.</p>
+            <h4>Negotiate rates directly</h4>
+            <p>Many facilities negotiate, especially for long-term commitments, off-peak move-ins, or when occupancy is below capacity. Ask about move-in specials and rate locks.</p>
           </div>
         </li>
         <li>
           <div class="step-content">
-            <h4>Look at all-inclusive pricing</h4>
-            <p>Facilities with all-inclusive pricing may be more cost-effective than those that charge separately for each service.</p>
+            <h4>Choose all-inclusive pricing</h4>
+            <p>Facilities with all-inclusive pricing may be more cost-effective than those charging separately for each service. Compare total costs, not just base rates.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Use long-term care insurance</h4>
+            <p>If you have a policy, it may cover a significant portion of assisted living costs. <a href="/long-term-care/{{stateSlug}}/" style="color:#38bdf8;">Learn about LTC insurance in {{state}} &rarr;</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Compare home care as an alternative</h4>
+            <p>For seniors needing limited assistance, in-home care may cost less than assisted living. <a href="/home-care/cost/{{stateSlug}}/" style="color:#38bdf8;">Compare home care costs in {{state}} &rarr;</a></p>
           </div>
         </li>
       </ol>
@@ -300,6 +315,32 @@
     </section>
     {{/if}}
 
+    <!-- Section: Cost vs. National Average -->
+    <section class="content-section" id="cost-vs-national">
+      <h2>{{currentYear}} Assisted Living Cost: {{state}} vs. National Average</h2>
+      <p>Understanding how {{state}}'s assisted living costs compare to the national average helps families budget accurately and evaluate whether relocating could save money.</p>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{avgMonthlyCost}}</span>
+          <span class="stat-label">{{state}} Average</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{nationalAvg}}</span>
+          <span class="stat-label">National Average</span>
+        </div>
+      </div>
+      <h3>Key Cost Factors in {{state}}</h3>
+      <ul>
+        <li><strong>Location within the state:</strong> Urban areas typically cost 15–30% more than rural communities</li>
+        <li><strong>Level of care needed:</strong> Basic care starts lower, but enhanced care for mobility or medical needs adds $500–$2,000/month</li>
+        <li><strong>Room type:</strong> Private rooms cost $300–$800 more per month than shared rooms</li>
+        <li><strong>Community amenities:</strong> Resort-style facilities with pools, salons, and restaurants charge premium rates</li>
+        <li><strong>Memory care add-on:</strong> Dementia or Alzheimer's care adds 20–40% to the base cost</li>
+      </ul>
+      <h3>Annual Cost Projection</h3>
+      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{state}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living. Many residents stay for 2–3 years on average, making long-term financial planning essential. Costs typically increase 3–5% annually, so factor in inflation when planning ahead.</p>
+    </section>
+
     <!-- Section: Eligibility & Qualification -->
     <section class="content-section" id="eligibility-tips">
       <h2>Who Qualifies for Assisted Living?</h2>
@@ -319,6 +360,38 @@
     </section>
 
     {{> faq-section}}
+
+    <!-- Section: Related Cost Guides -->
+    <section class="content-section" id="related-guides">
+      <h2>Compare Senior Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <p>Understanding all your care options helps you find the best value. Compare costs across different types of senior care {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}:</p>
+      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+        <a href="/home-care/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Home Care Costs in {{state}}</h3>
+          <p>See {{currentYear}} hourly rates for in-home caregivers and home health aides. Often a more affordable alternative to assisted living.</p>
+        </a>
+        <a href="/long-term-care/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Long-Term Care Insurance in {{state}}</h3>
+          <p>Compare LTC insurance premiums by age. Learn how insurance can help cover assisted living costs.</p>
+        </a>
+        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Medicaid Eligibility in {{state}}</h3>
+          <p>Check {{currentYear}} income limits and find out if Medicaid can help pay for your care.</p>
+        </a>
+        <a href="/veterans-benefits/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Veterans Benefits in {{state}}</h3>
+          <p>VA Aid &amp; Attendance can provide significant monthly benefits to help cover assisted living costs.</p>
+        </a>
+        <a href="/compare/assisted-living-vs-nursing-home/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Assisted Living vs. Nursing Home</h3>
+          <p>Side-by-side cost and care comparison to help you choose the right level of care.</p>
+        </a>
+        <a href="/compare/home-care-vs-assisted-living/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Home Care vs. Assisted Living</h3>
+          <p>Compare the cost and benefits of staying home with a caregiver versus moving to a facility.</p>
+        </a>
+      </div>
+    </section>
 
     {{> cta-section}}
 

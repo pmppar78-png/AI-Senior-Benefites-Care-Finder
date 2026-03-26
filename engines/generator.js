@@ -388,6 +388,9 @@ class PageGenerator {
       city: resolvedCity,
       citySlug: resolvedCitySlug,
 
+      // State URL base for correct state-index linking
+      stateUrlBase: eng.urlPattern ? eng.urlPattern.replace(/\/\[\w+\]$/g, '').replace(/\/\[\w+\]/g, '') : `/${eng.id}`,
+
       // Related pages
       relatedEngines: eng.relatedEngines || [],
 

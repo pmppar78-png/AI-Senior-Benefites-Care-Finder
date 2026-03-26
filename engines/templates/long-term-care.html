@@ -32,6 +32,7 @@
         <li><a href="#medicaid-planning">Medicaid Planning</a></li>
         <li><a href="#planning-steps">Planning Steps</a></li>
         <li><a href="#faq">Frequently Asked Questions</a></li>
+        <li><a href="#related-guides">Related Cost Guides</a></li>
       </ol>
     </nav>
 
@@ -282,6 +283,38 @@
     </section>
 
     {{> faq-section}}
+
+    <!-- Section: Related Cost Guides -->
+    <section class="content-section" id="related-guides">
+      <h2>Compare Senior Care Costs in {{state}}</h2>
+      <p>Understanding the actual costs of care in {{state}} helps you plan the right level of insurance coverage:</p>
+      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+        <a href="/assisted-living/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Assisted Living Costs in {{state}}</h3>
+          <p>See {{currentYear}} monthly prices for assisted living. Know exactly what your insurance needs to cover.</p>
+        </a>
+        <a href="/home-care/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Home Care Costs in {{state}}</h3>
+          <p>Compare {{currentYear}} hourly rates for in-home care. Plan your coverage based on real local costs.</p>
+        </a>
+        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Medicaid Eligibility in {{state}}</h3>
+          <p>Check income limits and learn about Medicaid as a safety net if insurance falls short.</p>
+        </a>
+        <a href="/senior-legal/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Senior Legal Resources in {{state}}</h3>
+          <p>Find elder law attorneys who can help with Medicaid planning and asset protection strategies.</p>
+        </a>
+        <a href="/compare/traditional-ltc-vs-hybrid/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Traditional LTC vs. Hybrid Insurance</h3>
+          <p>Compare traditional long-term care insurance with hybrid life/LTC policies.</p>
+        </a>
+        <a href="/compare/assisted-living-vs-nursing-home/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Assisted Living vs. Nursing Home Costs</h3>
+          <p>Understand the cost difference between care levels to right-size your coverage.</p>
+        </a>
+      </div>
+    </section>
 
     {{> cta-section}}
 
