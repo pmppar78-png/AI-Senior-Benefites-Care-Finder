@@ -28,9 +28,11 @@
         <li><a href="#cost-comparison">Cost Comparison by Type</a></li>
         <li><a href="#payment-options">Payment Options</a></li>
         <li><a href="#medicaid-coverage">Medicaid Coverage</a></li>
+        <li><a href="#how-to-reduce">How to Reduce Home Care Costs</a></li>
         <li><a href="#how-to-choose">How to Choose a Caregiver</a></li>
         <li><a href="#local-agencies">Local Agencies</a></li>
         <li><a href="#faq">Frequently Asked Questions</a></li>
+        <li><a href="#related-guides">Related Cost Guides</a></li>
       </ol>
     </nav>
 
@@ -56,6 +58,13 @@
       </div>
 
       <p>In-home care {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} allows seniors to receive assistance in the comfort of their own homes. Whether you need a few hours of help per week or round-the-clock care, understanding the costs and options helps you plan effectively.</p>
+      <h3>{{currentYear}} Cost at a Glance</h3>
+      <ul>
+        <li><strong>Part-time care (20 hrs/week):</strong> approximately half the full-time monthly cost</li>
+        <li><strong>Full-time care (44 hrs/week):</strong> {{avgMonthlyCost}}/month average in {{state}}</li>
+        <li><strong>24-hour live-in care:</strong> typically 1.5&ndash;2&times; the standard full-time rate</li>
+        <li><strong>National average hourly rate:</strong> {{nationalAvgHourly}}</li>
+      </ul>
     </section>
 
     <!-- Section: Care Types -->
@@ -197,6 +206,54 @@
       {{/if}}
     </section>
 
+    <!-- Section: How to Reduce Costs -->
+    <section class="content-section" id="how-to-reduce">
+      <h2>How to Reduce Home Care Costs in {{currentYear}}</h2>
+      <p>At an average rate of {{avgHourlyCost}}/hour in {{state}}, home care costs add up quickly — especially for full-time care. Here are proven ways to lower your costs:</p>
+      <ol class="steps-list">
+        <li>
+          <div class="step-content">
+            <h4>Apply for Medicaid home care waivers</h4>
+            <p>{{state}} may cover home care through Medicaid waiver programs for eligible seniors, potentially eliminating out-of-pocket costs entirely. <a href="/medicaid/eligibility/{{stateSlug}}/" style="color:#38bdf8;">Check {{state}} Medicaid eligibility &rarr;</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Use VA Aid &amp; Attendance benefits</h4>
+            <p>Veterans and surviving spouses can receive monthly benefits to help cover in-home care costs. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{state}} veterans benefits &rarr;</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Combine care sources</h4>
+            <p>Use professional care for medical needs while relying on family caregivers or volunteers for companionship and basic tasks. This hybrid approach can cut costs by 30–50%.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Hire an independent caregiver</h4>
+            <p>Independent caregivers typically charge 20–30% less than agency rates ($3–$8/hour savings). You manage hiring, taxes, and backup coverage, but the savings are significant.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Start with fewer hours</h4>
+            <p>Begin with part-time care (10–20 hours/week) and increase only as needed. This keeps initial costs manageable while you evaluate care requirements.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h4>Check Medicare skilled home health coverage</h4>
+            <p>Medicare covers skilled nursing and therapy at home for eligible conditions — at no cost to you. Ask your doctor if you qualify. <a href="/medicare/{{stateSlug}}/" style="color:#38bdf8;">See Medicare plans in {{state}} &rarr;</a></p>
+          </div>
+        </li>
+      </ol>
+      <div class="info-box highlight">
+        <h3>Home Care vs. Assisted Living: Which Costs Less?</h3>
+        <p>For seniors needing full-time care (44+ hours/week), assisted living may actually cost less than in-home care when you factor in housing, meals, and utilities. For part-time care needs, home care is usually more affordable. <a href="/compare/home-care-vs-assisted-living/" style="color:#38bdf8;">See full cost comparison &rarr;</a></p>
+      </div>
+    </section>
+
     <!-- Section: How to Choose -->
     <section class="content-section" id="how-to-choose">
       <h2>How to Choose a Home Care Provider</h2>
@@ -283,6 +340,38 @@
     </section>
 
     {{> faq-section}}
+
+    <!-- Section: Related Cost Guides -->
+    <section class="content-section" id="related-guides">
+      <h2>Compare Senior Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <p>Explore all your care options and find the most affordable path for quality senior care {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}:</p>
+      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+        <a href="/assisted-living/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Assisted Living Costs in {{state}}</h3>
+          <p>See {{currentYear}} monthly prices for assisted living communities. Compare costs by care level and location.</p>
+        </a>
+        <a href="/long-term-care/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Long-Term Care Insurance in {{state}}</h3>
+          <p>Compare LTC insurance premiums. Learn how insurance can help cover home care costs long-term.</p>
+        </a>
+        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Medicaid Eligibility in {{state}}</h3>
+          <p>Check if you qualify for Medicaid home care waivers that can cover in-home care costs.</p>
+        </a>
+        <a href="/veterans-benefits/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Veterans Benefits in {{state}}</h3>
+          <p>VA Aid &amp; Attendance benefits can help veterans pay for in-home care services.</p>
+        </a>
+        <a href="/compare/home-care-vs-assisted-living/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Home Care vs. Assisted Living</h3>
+          <p>Compare costs and benefits of in-home care versus moving to an assisted living facility.</p>
+        </a>
+        <a href="/compare/in-home-care-vs-adult-day-care/" class="info-box" style="text-decoration:none;color:inherit;">
+          <h3>Home Care vs. Adult Day Care</h3>
+          <p>See which option provides better value depending on your care schedule and needs.</p>
+        </a>
+      </div>
+    </section>
 
     {{> cta-section}}
 
