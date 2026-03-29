@@ -87,3 +87,25 @@ publish = "."
   from = "/why-trust-us/"
   to = "/about/"
   status = 301
+
+# Redirect broken breadcrumb state/city paths to section landing pages
+# These only fire when no file exists at the path (no force flag)
+[[redirects]]
+  from = "/assisted-living/:state/:city/"
+  to = "/assisted-living/"
+  status = 301
+
+[[redirects]]
+  from = "/home-care/:state/:city/"
+  to = "/home-care/"
+  status = 301
+
+[[redirects]]
+  from = "/medicaid/:state/:city/"
+  to = "/medicaid/"
+  status = 301
+
+[[redirects]]
+  from = "/providers/:state/:city/"
+  to = "/providers/"
+  status = 301
