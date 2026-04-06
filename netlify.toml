@@ -88,6 +88,13 @@ publish = "."
   to = "/about/"
   status = 301
 
+# Redirect duplicate /veterans-benefits/healthcare/ to canonical /health-care/
+[[redirects]]
+  from = "/veterans-benefits/healthcare/*"
+  to = "/veterans-benefits/health-care/:splat"
+  status = 301
+  force = true
+
 # Redirect broken breadcrumb state/city paths to section landing pages
 # These only fire when no file exists at the path (no force flag)
 [[redirects]]

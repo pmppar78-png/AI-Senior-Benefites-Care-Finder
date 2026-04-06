@@ -356,8 +356,8 @@ class PageGenerator {
       schemaType: eng.schemaType || 'Article',
 
       // SEO — built from patterns with resolved state/city names
-      pageTitle: this._interpolatePattern(eng.seoTitle, seoData),
-      metaDescription: this._interpolatePattern(eng.metaDescription, seoData),
+      pageTitle: this._interpolatePattern(resolvedCitySlug && eng.citySeoTitle ? eng.citySeoTitle : eng.seoTitle, seoData),
+      metaDescription: this._interpolatePattern(resolvedCitySlug && eng.cityMetaDescription ? eng.cityMetaDescription : eng.metaDescription, seoData),
       canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(canonicalPattern, seoData)}/`.replace(/\/\/$/, '/'),
 
       // Location data
@@ -412,16 +412,23 @@ class PageGenerator {
     }
 
     if (state) {
+      // For provider-directory, include providerType in the breadcrumb URL
+      const stateUrl = entry.providerType
+        ? `/${eng.category || eng.id}/${entry.providerType}/${state.slug}/`
+        : `/${eng.category || eng.id}/${state.slug}/`;
       crumbs.push({
         label: state.name,
-        url: `/${eng.category || eng.id}/${state.slug}/`
+        url: stateUrl
       });
     }
 
     if (city) {
+      const cityUrl = entry.providerType
+        ? `/${eng.category || eng.id}/${entry.providerType}/${state.slug}/${city.slug}/`
+        : `/${eng.category || eng.id}/${state.slug}/${city.slug}/`;
       crumbs.push({
         label: city.name,
-        url: `/${eng.category || eng.id}/${state.slug}/${city.slug}/`
+        url: cityUrl
       });
     }
 
