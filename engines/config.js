@@ -21,7 +21,9 @@ const engines = [
     urlPattern: '/medicare/[stateSlug]',
     cityUrlPattern: '/medicare/[stateSlug]/[citySlug]',
     seoTitle: 'Medicare Plans in [state] ([currentYear]) — Compare Costs, Coverage & Savings',
+    citySeoTitle: 'Medicare Plans in [city], [stateAbbr] ([currentYear]) — Compare Costs, Coverage & Savings',
     metaDescription: 'Compare [currentYear] Medicare Advantage, Medigap, and Part D plan costs in [state]. See real premiums, coverage options, and ways to save on Medicare.',
+    cityMetaDescription: 'Compare [currentYear] Medicare Advantage, Medigap, and Part D plan costs in [city], [stateAbbr]. See real premiums, coverage options, and ways to save on Medicare.',
     schemaType: 'Article',
     relatedEngines: ['medicaid', 'prescription-assistance', 'comparison'],
     dataSchema: {
@@ -58,7 +60,9 @@ const engines = [
     urlPattern: '/medicaid/eligibility/[stateSlug]',
     cityUrlPattern: '/medicaid/eligibility/[stateSlug]/[citySlug]',
     seoTitle: 'Medicaid Eligibility in [state] ([currentYear]) — Income Limits, Benefits & How to Apply',
+    citySeoTitle: 'Medicaid Eligibility in [city], [stateAbbr] ([currentYear]) — Income Limits, Benefits & How to Apply',
     metaDescription: 'Check [currentYear] Medicaid eligibility in [state]. See exact income limits, asset requirements, covered benefits, and step-by-step application instructions.',
+    cityMetaDescription: 'Check [currentYear] Medicaid eligibility in [city], [stateAbbr]. See exact income limits, asset requirements, covered benefits, and step-by-step application instructions.',
     schemaType: 'Article',
     relatedEngines: ['medicare', 'low-income-programs', 'prescription-assistance'],
     dataSchema: {
@@ -104,7 +108,9 @@ const engines = [
     urlPattern: '/assisted-living/cost/[stateSlug]',
     cityUrlPattern: '/assisted-living/cost/[stateSlug]/[citySlug]',
     seoTitle: 'Assisted Living Cost in [state] ([currentYear]) — Prices, Savings & Payment Options',
+    citySeoTitle: 'Assisted Living Cost in [city], [stateAbbr] ([currentYear]) — Prices, Savings & Payment Options',
     metaDescription: 'See real [currentYear] assisted living prices in [state]. Full cost breakdown by care level, 5 ways to reduce costs, and payment options including Medicaid and VA benefits.',
+    cityMetaDescription: 'See real [currentYear] assisted living prices in [city], [stateAbbr]. Full cost breakdown by care level, 5 ways to reduce costs, and payment options including Medicaid and VA benefits.',
     schemaType: 'Article',
     relatedEngines: ['home-care', 'long-term-care', 'provider-directory', 'medicaid'],
     dataSchema: {
@@ -143,7 +149,9 @@ const engines = [
     urlPattern: '/social-security/[stateSlug]',
     cityUrlPattern: '/social-security/[stateSlug]/[citySlug]',
     seoTitle: 'Social Security & SSI in [state] ([currentYear]) — Benefit Amounts & How to Maximize',
+    citySeoTitle: 'Social Security & SSI in [city], [stateAbbr] ([currentYear]) — Benefit Amounts & How to Maximize',
     metaDescription: 'See [currentYear] Social Security and SSI benefit amounts in [state]. Learn how to maximize your monthly payment, when to claim, and eligibility requirements.',
+    cityMetaDescription: 'See [currentYear] Social Security and SSI benefit amounts in [city], [stateAbbr]. Learn how to maximize your monthly payment, when to claim, and eligibility requirements.',
     schemaType: 'Article',
     relatedEngines: ['medicaid', 'low-income-programs', 'disability-benefits'],
     dataSchema: {
@@ -182,7 +190,9 @@ const engines = [
     urlPattern: '/home-care/cost/[stateSlug]',
     cityUrlPattern: '/home-care/cost/[stateSlug]/[citySlug]',
     seoTitle: 'Home Care Cost in [state] ([currentYear]) — Hourly Rates, Savings & How to Pay',
+    citySeoTitle: 'Home Care Cost in [city], [stateAbbr] ([currentYear]) — Hourly Rates, Savings & How to Pay',
     metaDescription: 'See [currentYear] home care costs in [state]. Compare hourly rates by care type, find ways to reduce costs, and explore Medicaid, VA, and insurance payment options.',
+    cityMetaDescription: 'See [currentYear] home care costs in [city], [stateAbbr]. Compare hourly rates by care type, find ways to reduce costs, and explore Medicaid, VA, and insurance payment options.',
     schemaType: 'Article',
     relatedEngines: ['assisted-living', 'medicaid', 'veterans-benefits', 'long-term-care'],
     dataSchema: {
@@ -220,7 +230,9 @@ const engines = [
     urlPattern: '/prescription-assistance/[stateSlug]',
     cityUrlPattern: '/prescription-assistance/[stateSlug]/[citySlug]',
     seoTitle: 'Prescription Assistance in [state] ([currentYear]) — Save on Drug Costs',
+    citySeoTitle: 'Prescription Assistance in [city], [stateAbbr] ([currentYear]) — Save on Drug Costs',
     metaDescription: 'Find [currentYear] prescription assistance programs in [state]. See how to save on drug costs with Medicare Extra Help, state programs, and patient assistance.',
+    cityMetaDescription: 'Find [currentYear] prescription assistance programs in [city], [stateAbbr]. See how to save on drug costs with Medicare Extra Help, state programs, and patient assistance.',
     schemaType: 'Article',
     relatedEngines: ['medicare', 'medicaid', 'low-income-programs'],
     dataSchema: {
@@ -257,7 +269,9 @@ const engines = [
     urlPattern: '/veterans-benefits/[stateSlug]',
     cityUrlPattern: '/veterans-benefits/[stateSlug]/[citySlug]',
     seoTitle: 'Veterans Benefits in [state] ([currentYear]) — VA Aid, Pension & State Programs',
+    citySeoTitle: 'Veterans Benefits in [city], [stateAbbr] ([currentYear]) — VA Aid, Pension & State Programs',
     metaDescription: 'See all [currentYear] veterans benefits in [state]. Get Aid & Attendance amounts, VA pension rates, state-specific programs, and how to apply for benefits.',
+    cityMetaDescription: 'See all [currentYear] veterans benefits in [city], [stateAbbr]. Get Aid & Attendance amounts, VA pension rates, state-specific programs, and how to apply for benefits.',
     schemaType: 'Article',
     relatedEngines: ['medicare', 'home-care', 'assisted-living', 'disability-benefits'],
     dataSchema: {
@@ -326,7 +340,9 @@ const engines = [
     urlPattern: '/low-income-programs/[stateSlug]',
     cityUrlPattern: '/low-income-programs/[stateSlug]/[citySlug]',
     seoTitle: 'Low-Income Senior Programs in [state] ([currentYear]) — Free Benefits & Assistance',
+    citySeoTitle: 'Low-Income Senior Programs in [city], [stateAbbr] ([currentYear]) — Free Benefits & Assistance',
     metaDescription: 'Find [currentYear] low-income assistance for seniors in [state]. See SNAP, LIHEAP, housing, phone discounts, and transportation programs you may qualify for.',
+    cityMetaDescription: 'Find [currentYear] low-income assistance for seniors in [city], [stateAbbr]. See SNAP, LIHEAP, housing, phone discounts, and transportation programs you may qualify for.',
     schemaType: 'Article',
     relatedEngines: ['medicaid', 'social-security', 'prescription-assistance'],
     dataSchema: {
@@ -396,7 +412,9 @@ const engines = [
     urlPattern: '/long-term-care/[stateSlug]',
     cityUrlPattern: '/long-term-care/[stateSlug]/[citySlug]',
     seoTitle: 'Long-Term Care Insurance in [state] ([currentYear]) — Costs, Savings & Planning Guide',
+    citySeoTitle: 'Long-Term Care Insurance in [city], [stateAbbr] ([currentYear]) — Costs, Savings & Planning Guide',
     metaDescription: 'Compare [currentYear] long-term care insurance costs in [state]. See premiums by age, coverage options, hybrid alternatives, and Medicaid planning strategies to save.',
+    cityMetaDescription: 'Compare [currentYear] long-term care insurance costs in [city], [stateAbbr]. See premiums by age, coverage options, hybrid alternatives, and Medicaid planning strategies to save.',
     schemaType: 'Article',
     relatedEngines: ['assisted-living', 'home-care', 'medicaid', 'senior-legal'],
     dataSchema: {
@@ -430,7 +448,9 @@ const engines = [
     urlPattern: '/senior-legal/[stateSlug]',
     cityUrlPattern: '/senior-legal/[stateSlug]/[citySlug]',
     seoTitle: 'Senior Legal Resources in [state] ([currentYear]) — Elder Law, Estate Planning & Protections',
+    citySeoTitle: 'Senior Legal Resources in [city], [stateAbbr] ([currentYear]) — Elder Law, Estate Planning & Protections',
     metaDescription: 'Find [currentYear] elder law resources in [state]. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.',
+    cityMetaDescription: 'Find [currentYear] elder law resources in [city], [stateAbbr]. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.',
     schemaType: 'Article',
     relatedEngines: ['long-term-care', 'medicaid', 'social-security'],
     dataSchema: {
@@ -464,7 +484,9 @@ const engines = [
     urlPattern: '/providers/[providerType]/[stateSlug]',
     cityUrlPattern: '/providers/[providerType]/[stateSlug]/[citySlug]',
     seoTitle: 'Best [providerTypeLabel] in [state] ([currentYear]) — Compare Quality, Costs & Reviews',
+    citySeoTitle: 'Best [providerTypeLabel] in [city], [stateAbbr] ([currentYear]) — Compare Quality, Costs & Reviews',
     metaDescription: 'Find top-rated [providerTypeLabel] in [state] for [currentYear]. Compare quality ratings, costs, services, and reviews to choose the best senior care option.',
+    cityMetaDescription: 'Find top-rated [providerTypeLabel] in [city], [stateAbbr] for [currentYear]. Compare quality ratings, costs, services, and reviews to choose the best senior care option.',
     schemaType: 'Article',
     relatedEngines: ['assisted-living', 'home-care', 'long-term-care'],
     dataSchema: {
