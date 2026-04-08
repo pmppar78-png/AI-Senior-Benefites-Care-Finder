@@ -2,6 +2,7 @@
 directory = "netlify/functions"
 
 [build]
+command = "node engines/seed-data.js && node engines/generator.js"
 publish = "."
 
 # Redirect /costs/ to /cost/ (canonicalize duplicate URL structure)

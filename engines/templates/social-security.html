@@ -9,7 +9,7 @@
     <section class="engine-hero">
       <h1>{{h1}}</h1>
       <div class="hero-meta">
-        <span>{{state}} ({{stateAbbr}})</span>
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
         <span>Updated {{lastUpdated}}</span>
         <span>{{currentYear}} Benefits &amp; Eligibility</span>
       </div>
@@ -23,10 +23,10 @@
     <nav class="toc">
       <h2>In This Guide</h2>
       <ol>
-        <li><a href="#overview">Social Security in {{state}}</a></li>
+        <li><a href="#overview">Social Security in {{locationName}}</a></li>
         <li><a href="#benefit-amounts">{{currentYear}} Benefit Amounts</a></li>
         <li><a href="#eligibility">Eligibility Requirements</a></li>
-        <li><a href="#ssi">SSI in {{state}}</a></li>
+        <li><a href="#ssi">SSI in {{locationName}}</a></li>
         <li><a href="#ssdi">SSDI Benefits</a></li>
         <li><a href="#how-to-apply">How to Apply</a></li>
         <li><a href="#tax-info">Tax Information</a></li>
@@ -39,8 +39,8 @@
 
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
-      <h2>Social Security Benefits in {{state}}</h2>
-      <p>Social Security provides financial benefits to millions of Americans, including retired workers, disabled individuals, and surviving family members. In {{state}}, understanding your specific benefit amounts, state tax rules, and local resources can help you maximize your retirement income.</p>
+      <h2>Social Security Benefits in {{locationName}}</h2>
+      <p>Social Security provides financial benefits to millions of Americans, including retired workers, disabled individuals, and surviving family members. In {{locationName}}, understanding your specific benefit amounts, state tax rules, and local resources can help you maximize your retirement income.</p>
       <p>The Social Security Administration (SSA) offers three main programs for seniors: retirement benefits, Social Security Disability Insurance (SSDI), and Supplemental Security Income (SSI). Each has different eligibility rules and benefit amounts.</p>
     </section>
 
@@ -120,18 +120,18 @@
 
     <!-- Section: SSI -->
     <section class="content-section" id="ssi">
-      <h2>Supplemental Security Income (SSI) in {{state}}</h2>
+      <h2>Supplemental Security Income (SSI) in {{locationName}}</h2>
       <p>SSI is a needs-based program for aged (65+), blind, or disabled individuals with limited income and resources. Unlike Social Security retirement, SSI doesn't require work history.</p>
 
       {{#if hasSsiSupplement}}
       <div class="info-box highlight">
-        <h3>{{state}} SSI State Supplement</h3>
-        <p>{{state}} provides a state supplement of {{ssiSupplement}} on top of the federal SSI payment. This means eligible residents receive more than the federal SSI maximum.</p>
+        <h3>{{locationName}} SSI State Supplement</h3>
+        <p>{{locationName}} provides a state supplement of {{ssiSupplement}} on top of the federal SSI payment. This means eligible residents receive more than the federal SSI maximum.</p>
       </div>
       {{else}}
       <div class="info-box">
         <h3>State Supplement</h3>
-        <p>Check with {{state}}'s social services agency to learn about any state SSI supplements that may be available in addition to the federal payment.</p>
+        <p>Check with {{locationName}}'s social services agency to learn about any state SSI supplements that may be available in addition to the federal payment.</p>
       </div>
       {{/if}}
     </section>
@@ -151,7 +151,7 @@
 
     <!-- Section: How to Apply -->
     <section class="content-section" id="how-to-apply">
-      <h2>How to Apply for Social Security in {{state}}</h2>
+      <h2>How to Apply for Social Security in {{locationName}}</h2>
       {{#if applicationMethods}}
       <ol class="steps-list">
         {{#each applicationMethods}}
@@ -181,7 +181,7 @@
         <li>
           <div class="step-content">
             <h4>Visit a Local SSA Office</h4>
-            <p>Schedule an appointment at your nearest Social Security office in {{state}} for in-person assistance.</p>
+            <p>Schedule an appointment at your nearest Social Security office in {{locationName}} for in-person assistance.</p>
           </div>
         </li>
       </ol>
@@ -190,14 +190,14 @@
 
     <!-- Section: Tax Info -->
     <section class="content-section" id="tax-info">
-      <h2>Social Security Taxes in {{state}}</h2>
+      <h2>Social Security Taxes in {{locationName}}</h2>
       {{#if taxInfo}}
       <div class="info-box highlight">
         <h3>State Tax on Social Security Benefits</h3>
         <p>{{{taxInfo}}}</p>
       </div>
       {{else}}
-      <p>Whether {{state}} taxes Social Security benefits can significantly affect your retirement income. Check with {{state}}'s tax agency or a tax professional for the most current rules on state taxation of Social Security income.</p>
+      <p>Whether {{locationName}} taxes Social Security benefits can significantly affect your retirement income. Check with {{locationName}}'s tax agency or a tax professional for the most current rules on state taxation of Social Security income.</p>
       {{/if}}
       <div class="info-box">
         <h3>Federal Taxation</h3>
@@ -208,7 +208,7 @@
     <!-- Section: Local Offices -->
     {{#if localOffices}}
     <section class="content-section" id="local-offices">
-      <h2>Social Security Offices in {{state}}</h2>
+      <h2>Social Security Offices in {{locationName}}</h2>
       {{#each localOffices}}
       <div class="info-box">
         <h3>{{name}}</h3>
@@ -236,34 +236,13 @@
 
     {{> faq-section}}
 
-    <!-- Section: Related Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Related Benefits &amp; Programs in {{state}}</h2>
-      <p>Maximize your retirement income by exploring all available benefits in {{state}}:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/medicare/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicare Plans in {{state}}</h3>
-          <p>Compare {{currentYear}} Medicare plans and find coverage that fits your budget.</p>
-        </a>
-        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in {{state}}</h3>
-          <p>Low-income seniors may qualify for Medicaid to supplement Social Security.</p>
-        </a>
-        <a href="/low-income-programs/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Low-Income Programs in {{state}}</h3>
-          <p>SNAP, LIHEAP, and housing assistance can stretch your Social Security further.</p>
-        </a>
-        <a href="/assisted-living/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Assisted Living Costs in {{state}}</h3>
-          <p>See how assisted living costs compare to your Social Security income.</p>
-        </a>
-      </div>
-    </section>
+    {{> cross-engine-links}}
 
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 

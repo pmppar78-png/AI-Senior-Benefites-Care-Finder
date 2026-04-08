@@ -131,7 +131,7 @@
     "headline": "Senior Legal Resources in Kansas (2026) — Elder Law, Estate Planning &amp; Protections",
     "description": "Find 2026 elder law resources in Kansas. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.",
     "url": "https://seniorbenefitscarefinder.com/senior-legal/kansas/",
-    "dateModified": "March 26, 2026",
+    "dateModified": "April 8, 2026",
     "datePublished": "2024-10-17",
     "author": {
       "@type": "Person",
@@ -192,7 +192,7 @@
       <h1>Senior Legal Resources in Kansas (2026)</h1>
       <div class="hero-meta">
         <span>Kansas (KS)</span>
-        <span>Updated March 26, 2026</span>
+        <span>Updated April 8, 2026</span>
         <span>2026 Laws &amp; Resources</span>
       </div>
       <div class="intro-text">
@@ -201,11 +201,12 @@
     </section>
 
       <div class="meta-badges">
-    <span class="meta-badge">Updated: March 26, 2026</span>
+    <span class="meta-badge">Updated: April 8, 2026</span>
     
     
     <span class="meta-badge">Kansas</span>
     
+    {{/if}}
   </div>
 
 
@@ -391,7 +392,7 @@
       <p>Seniors are disproportionately targeted by financial scammers. Common schemes include Medicare and Social Security impersonation calls, grandparent scams, romance scams, investment fraud, and identity theft. Never give personal or financial information to unsolicited callers, verify identities independently, and consult trusted family members or advisors before making large financial decisions.</p>
     </section>
 
-      
+      {{#if faqs}}
   <section class="content-section" id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -412,7 +413,68 @@
       
     </div>
   </section>
-  
+  {{/if}}
+
+
+      {{#if crossEngineLinks}}
+  <section class="content-section" id="related-guides">
+    <h2>Related Benefits &amp; Cost Guides for Kansas</h2>
+    <p>Explore related programs and care costs in Kansas:</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      
+      <a href="/medicare/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicare in Kansas</h3>
+        <p>See 2026 Medicare information for Kansas.</p>
+      </a>
+      
+      <a href="/medicaid/eligibility/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicaid in Kansas</h3>
+        <p>See 2026 Medicaid information for Kansas.</p>
+      </a>
+      
+      <a href="/assisted-living/cost/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Assisted Living in Kansas</h3>
+        <p>See 2026 Assisted Living information for Kansas.</p>
+      </a>
+      
+      <a href="/social-security/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Social Security in Kansas</h3>
+        <p>See 2026 Social Security information for Kansas.</p>
+      </a>
+      
+      <a href="/home-care/cost/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Home Care in Kansas</h3>
+        <p>See 2026 Home Care information for Kansas.</p>
+      </a>
+      
+      <a href="/prescription-assistance/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Prescription Assistance in Kansas</h3>
+        <p>See 2026 Prescription Assistance information for Kansas.</p>
+      </a>
+      
+      <a href="/veterans-benefits/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Veterans Benefits in Kansas</h3>
+        <p>See 2026 Veterans Benefits information for Kansas.</p>
+      </a>
+      
+      <a href="/low-income-programs/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Low-Income Programs in Kansas</h3>
+        <p>See 2026 Low-Income Programs information for Kansas.</p>
+      </a>
+      
+      <a href="/long-term-care/kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Long-Term Care in Kansas</h3>
+        <p>See 2026 Long-Term Care information for Kansas.</p>
+      </a>
+      
+      <a href="/providers//kansas/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Find Providers in Kansas</h3>
+        <p>See 2026 Find Providers information for Kansas.</p>
+      </a>
+      
+    </div>
+  </section>
+  {{/if}}
 
 
       <section class="affiliate-reco" id="page-affiliate-reco">
@@ -431,6 +493,7 @@
   </section>
 
 
+      {{#if sources}}
   <section class="sources-section">
     <h2>Sources &amp; References</h2>
     <ol class="sources-list">
@@ -441,8 +504,29 @@
       
     </ol>
   </section>
+  {{/if}}
 
 
+      {{#if stateCities}}
+  <section class="related-section" id="city-guides">
+    {{#if citySlug}}
+    <h2>Other Cities in Kansas</h2>
+    
+    <h2>City Guides in Kansas</h2>
+    {{/if}}
+    <div class="state-grid">
+      
+      <a class="state-link" href="/senior-legal/kansas/wichita/">Wichita, KS</a>
+      
+      <a class="state-link" href="/senior-legal/kansas/topeka/">Topeka, KS</a>
+      
+      <a class="state-link" href="/senior-legal/kansas/olathe/">Olathe, KS</a>
+      
+    </div>
+  </section>
+  {{/if}}
+
+      {{#if siblingStates}}
   <section class="related-section" id="other-states">
     <h2>Explore Other States</h2>
     <div class="state-grid">
@@ -469,6 +553,7 @@
       
     </div>
   </section>
+  {{/if}}
 
   </main>
 

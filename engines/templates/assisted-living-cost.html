@@ -40,7 +40,7 @@
 
     <!-- Section: Cost Overview -->
     <section class="content-section" id="cost-overview">
-      <h2>Assisted Living Cost Overview {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>Assisted Living Cost Overview {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
 
       <div class="stat-grid">
         <div class="stat-card">
@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <p>The cost of assisted living {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. {{currentYear}} data shows an average monthly cost of {{avgMonthlyCost}}, compared to the national average of {{nationalAvg}}.</p>
+      <p>The cost of assisted living {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. {{currentYear}} data shows an average monthly cost of {{avgMonthlyCost}}, compared to the national average of {{nationalAvg}}.</p>
 
       {{#if costTrend}}
       <div class="info-box">
@@ -198,7 +198,7 @@
 
     <!-- Section: Payment Options -->
     <section class="content-section" id="payment-options">
-      <h2>How to Pay for Assisted Living {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>How to Pay for Assisted Living {{#if city}}in {{city}}{{else}}in {{locationName}}{{/if}}</h2>
       {{#if paymentOptions}}
       {{#each paymentOptions}}
       <div class="info-box">
@@ -213,7 +213,7 @@
       </div>
       <div class="info-box">
         <h3>Medicaid Waiver Programs</h3>
-        <p>{{state}} may offer Medicaid waiver programs that help cover assisted living costs for eligible low-income seniors. Availability and waitlists vary. Contact {{state}}'s Medicaid office for current information.</p>
+        <p>{{locationName}} may offer Medicaid waiver programs that help cover assisted living costs for eligible low-income seniors. Availability and waitlists vary. Contact {{locationName}}'s Medicaid office for current information.</p>
       </div>
       <div class="info-box">
         <h3>Long-Term Care Insurance</h3>
@@ -232,7 +232,7 @@
 
     <!-- Section: Memory Care -->
     <section class="content-section" id="memory-care">
-      <h2>Memory Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>Memory Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
       {{#if memoryCare}}
       <div class="stat-grid">
         <div class="stat-card">
@@ -243,25 +243,25 @@
       <p>{{{memoryCare.description}}}</p>
       {{else}}
       <p>Memory care is a specialized form of assisted living designed for individuals with Alzheimer's disease, dementia, or other cognitive impairments. Memory care typically costs 20–40% more than standard assisted living due to enhanced staffing, security features, and specialized programming.</p>
-      <p>Memory care communities {{#if city}}in {{city}}{{else}}in {{state}}{{/if}} provide secure environments with trained staff, structured activities designed for cognitive engagement, and personalized care plans.</p>
+      <p>Memory care communities {{#if city}}in {{city}}{{else}}in {{locationName}}{{/if}} provide secure environments with trained staff, structured activities designed for cognitive engagement, and personalized care plans.</p>
       {{/if}}
     </section>
 
     <!-- Section: How to Reduce Costs -->
     <section class="content-section" id="how-to-reduce">
       <h2>How to Reduce Assisted Living Costs in {{currentYear}}</h2>
-      <p>With assisted living averaging {{avgMonthlyCost}}/month in {{state}}, finding ways to reduce costs can save families tens of thousands of dollars over time.</p>
+      <p>With assisted living averaging {{avgMonthlyCost}}/month in {{locationName}}, finding ways to reduce costs can save families tens of thousands of dollars over time.</p>
       <ol class="steps-list">
         <li>
           <div class="step-content">
             <h4>Explore Medicaid waiver programs</h4>
-            <p>Check if {{state}} offers Medicaid waivers that cover assisted living. Apply early, as waitlists can be long. <a href="/medicaid/eligibility/{{stateSlug}}/" style="color:#38bdf8;">Check {{state}} Medicaid eligibility &rarr;</a></p>
+            <p>Check if {{locationName}} offers Medicaid waivers that cover assisted living. Apply early, as waitlists can be long. <a href="/medicaid/eligibility/{{stateSlug}}/" style="color:#38bdf8;">Check {{locationName}} Medicaid eligibility &rarr;</a></p>
           </div>
         </li>
         <li>
           <div class="step-content">
             <h4>Apply for VA Aid &amp; Attendance</h4>
-            <p>Veterans and surviving spouses may receive up to $2,431/month (2026 rates) through this benefit. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{state}} veterans benefits &rarr;</a></p>
+            <p>Veterans and surviving spouses may receive up to $2,431/month (2026 rates) through this benefit. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{locationName}} veterans benefits &rarr;</a></p>
           </div>
         </li>
         <li>
@@ -285,13 +285,13 @@
         <li>
           <div class="step-content">
             <h4>Use long-term care insurance</h4>
-            <p>If you have a policy, it may cover a significant portion of assisted living costs. <a href="/long-term-care/{{stateSlug}}/" style="color:#38bdf8;">Learn about LTC insurance in {{state}} &rarr;</a></p>
+            <p>If you have a policy, it may cover a significant portion of assisted living costs. <a href="/long-term-care/{{stateSlug}}/" style="color:#38bdf8;">Learn about LTC insurance in {{locationName}} &rarr;</a></p>
           </div>
         </li>
         <li>
           <div class="step-content">
             <h4>Compare home care as an alternative</h4>
-            <p>For seniors needing limited assistance, in-home care may cost less than assisted living. <a href="/home-care/cost/{{stateSlug}}/" style="color:#38bdf8;">Compare home care costs in {{state}} &rarr;</a></p>
+            <p>For seniors needing limited assistance, in-home care may cost less than assisted living. <a href="/home-care/cost/{{stateSlug}}/" style="color:#38bdf8;">Compare home care costs in {{locationName}} &rarr;</a></p>
           </div>
         </li>
       </ol>
@@ -300,7 +300,7 @@
     <!-- Section: Nearby Facilities -->
     {{#if nearbyFacilities}}
     <section class="content-section" id="nearby-facilities">
-      <h2>Assisted Living Facilities {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>Assisted Living Facilities {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
       {{#each nearbyFacilities}}
       <div class="provider-card">
         <h3>{{name}}</h3>
@@ -317,19 +317,19 @@
 
     <!-- Section: Cost vs. National Average -->
     <section class="content-section" id="cost-vs-national">
-      <h2>{{currentYear}} Assisted Living Cost: {{state}} vs. National Average</h2>
-      <p>Understanding how {{state}}'s assisted living costs compare to the national average helps families budget accurately and evaluate whether relocating could save money.</p>
+      <h2>{{currentYear}} Assisted Living Cost: {{locationName}} vs. National Average</h2>
+      <p>Understanding how {{locationName}}'s assisted living costs compare to the national average helps families budget accurately and evaluate whether relocating could save money.</p>
       <div class="stat-grid">
         <div class="stat-card">
           <span class="stat-value">{{avgMonthlyCost}}</span>
-          <span class="stat-label">{{state}} Average</span>
+          <span class="stat-label">{{locationName}} Average</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">{{nationalAvg}}</span>
           <span class="stat-label">National Average</span>
         </div>
       </div>
-      <h3>Key Cost Factors in {{state}}</h3>
+      <h3>Key Cost Factors in {{locationName}}</h3>
       <ul>
         <li><strong>Location within the state:</strong> Urban areas typically cost 15–30% more than rural communities</li>
         <li><strong>Level of care needed:</strong> Basic care starts lower, but enhanced care for mobility or medical needs adds $500–$2,000/month</li>
@@ -338,7 +338,7 @@
         <li><strong>Memory care add-on:</strong> Dementia or Alzheimer's care adds 20–40% to the base cost</li>
       </ul>
       <h3>Annual Cost Projection</h3>
-      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{state}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living. Many residents stay for 2–3 years on average, making long-term financial planning essential. Costs typically increase 3–5% annually, so factor in inflation when planning ahead.</p>
+      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living. Many residents stay for 2–3 years on average, making long-term financial planning essential. Costs typically increase 3–5% annually, so factor in inflation when planning ahead.</p>
     </section>
 
     <!-- Section: Eligibility & Qualification -->
@@ -361,42 +361,13 @@
 
     {{> faq-section}}
 
-    <!-- Section: Related Cost Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Compare Senior Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
-      <p>Understanding all your care options helps you find the best value. Compare costs across different types of senior care {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/home-care/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care Costs in {{state}}</h3>
-          <p>See {{currentYear}} hourly rates for in-home caregivers and home health aides. Often a more affordable alternative to assisted living.</p>
-        </a>
-        <a href="/long-term-care/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Long-Term Care Insurance in {{state}}</h3>
-          <p>Compare LTC insurance premiums by age. Learn how insurance can help cover assisted living costs.</p>
-        </a>
-        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in {{state}}</h3>
-          <p>Check {{currentYear}} income limits and find out if Medicaid can help pay for your care.</p>
-        </a>
-        <a href="/veterans-benefits/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Veterans Benefits in {{state}}</h3>
-          <p>VA Aid &amp; Attendance can provide significant monthly benefits to help cover assisted living costs.</p>
-        </a>
-        <a href="/compare/assisted-living-vs-nursing-home/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Assisted Living vs. Nursing Home</h3>
-          <p>Side-by-side cost and care comparison to help you choose the right level of care.</p>
-        </a>
-        <a href="/compare/home-care-vs-assisted-living/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care vs. Assisted Living</h3>
-          <p>Compare the cost and benefits of staying home with a caregiver versus moving to a facility.</p>
-        </a>
-      </div>
-    </section>
+    {{> cross-engine-links}}
 
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 

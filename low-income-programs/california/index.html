@@ -131,7 +131,7 @@
     "headline": "Low-Income Senior Programs in California (2026) — Free Benefits &amp; Assistance",
     "description": "Find 2026 low-income assistance for seniors in California. See SNAP, LIHEAP, housing, phone discounts, and transportation programs you may qualify for.",
     "url": "https://seniorbenefitscarefinder.com/low-income-programs/california/",
-    "dateModified": "March 26, 2026",
+    "dateModified": "April 8, 2026",
     "datePublished": "2025-05-20",
     "author": {
       "@type": "Person",
@@ -192,7 +192,7 @@
       <h1>Low-Income Senior Programs in California (2026)</h1>
       <div class="hero-meta">
         <span>California (CA)</span>
-        <span>Updated March 26, 2026</span>
+        <span>Updated April 8, 2026</span>
         <span>2026 Programs &amp; Assistance</span>
       </div>
       <div class="intro-text">
@@ -201,11 +201,12 @@
     </section>
 
       <div class="meta-badges">
-    <span class="meta-badge">Updated: March 26, 2026</span>
+    <span class="meta-badge">Updated: April 8, 2026</span>
     
     
     <span class="meta-badge">California</span>
     
+    {{/if}}
   </div>
 
 
@@ -350,7 +351,7 @@
     </section>
 
     <!-- Section: All Programs -->
-    
+    {{#if programs}}
     <section class="content-section" id="all-programs">
       <h2>All Available Programs in California</h2>
       <div class="data-table-wrap">
@@ -398,7 +399,7 @@
         </table>
       </div>
     </section>
-    
+    {{/if}}
 
     <!-- Section: Applying for Multiple Programs -->
     <section class="content-section" id="application-tips">
@@ -414,6 +415,7 @@
       <p>Maintain copies of every application, supporting document, and correspondence related to your benefit applications. Note confirmation numbers, submission dates, and contact names. If a claim is denied, having thorough records makes the appeals process much smoother.</p>
     </section>
 
+      {{#if faqs}}
   <section class="content-section" id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -434,31 +436,69 @@
       
     </div>
   </section>
+  {{/if}}
 
 
-    <!-- Section: Related Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Related Benefits &amp; Cost Guides for California</h2>
-      <p>Low-income seniors often qualify for multiple programs. Explore more options:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/medicaid/eligibility/california/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in California</h3>
-          <p>Check 2026 income limits. Medicaid covers healthcare, prescriptions, and long-term care.</p>
-        </a>
-        <a href="/prescription-assistance/california/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Prescription Assistance in California</h3>
-          <p>Save on drug costs with Medicare Extra Help and state pharmaceutical programs.</p>
-        </a>
-        <a href="/social-security/california/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Social Security Benefits in California</h3>
-          <p>Learn about SSI benefits and how to maximize your monthly payment.</p>
-        </a>
-        <a href="/home-care/cost/california/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care Costs in California</h3>
-          <p>See home care rates and learn how Medicaid can help cover in-home care.</p>
-        </a>
-      </div>
-    </section>
+      {{#if crossEngineLinks}}
+  <section class="content-section" id="related-guides">
+    <h2>Related Benefits &amp; Cost Guides for California</h2>
+    <p>Explore related programs and care costs in California:</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      
+      <a href="/medicare/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicare in California</h3>
+        <p>See 2026 Medicare information for California.</p>
+      </a>
+      
+      <a href="/medicaid/eligibility/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicaid in California</h3>
+        <p>See 2026 Medicaid information for California.</p>
+      </a>
+      
+      <a href="/assisted-living/cost/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Assisted Living in California</h3>
+        <p>See 2026 Assisted Living information for California.</p>
+      </a>
+      
+      <a href="/social-security/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Social Security in California</h3>
+        <p>See 2026 Social Security information for California.</p>
+      </a>
+      
+      <a href="/home-care/cost/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Home Care in California</h3>
+        <p>See 2026 Home Care information for California.</p>
+      </a>
+      
+      <a href="/prescription-assistance/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Prescription Assistance in California</h3>
+        <p>See 2026 Prescription Assistance information for California.</p>
+      </a>
+      
+      <a href="/veterans-benefits/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Veterans Benefits in California</h3>
+        <p>See 2026 Veterans Benefits information for California.</p>
+      </a>
+      
+      <a href="/long-term-care/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Long-Term Care in California</h3>
+        <p>See 2026 Long-Term Care information for California.</p>
+      </a>
+      
+      <a href="/senior-legal/california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Senior Legal in California</h3>
+        <p>See 2026 Senior Legal information for California.</p>
+      </a>
+      
+      <a href="/providers//california/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Find Providers in California</h3>
+        <p>See 2026 Find Providers information for California.</p>
+      </a>
+      
+    </div>
+  </section>
+  {{/if}}
+
 
       <section class="affiliate-reco" id="page-affiliate-reco">
     <!-- Populated dynamically by affiliates.js based on page category -->
@@ -476,6 +516,7 @@
   </section>
 
 
+      {{#if sources}}
   <section class="sources-section">
     <h2>Sources &amp; References</h2>
     <ol class="sources-list">
@@ -486,8 +527,97 @@
       
     </ol>
   </section>
+  {{/if}}
 
 
+      {{#if stateCities}}
+  <section class="related-section" id="city-guides">
+    {{#if citySlug}}
+    <h2>Other Cities in California</h2>
+    
+    <h2>City Guides in California</h2>
+    {{/if}}
+    <div class="state-grid">
+      
+      <a class="state-link" href="/low-income-programs/california/los-angeles/">Los Angeles, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/san-diego/">San Diego, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/san-jose/">San Jose, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/san-francisco/">San Francisco, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/fresno/">Fresno, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/sacramento/">Sacramento, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/long-beach/">Long Beach, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/oakland/">Oakland, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/bakersfield/">Bakersfield, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/anaheim/">Anaheim, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/santa-ana/">Santa Ana, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/riverside/">Riverside, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/stockton/">Stockton, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/irvine/">Irvine, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/chula-vista/">Chula Vista, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/fremont/">Fremont, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/san-bernardino/">San Bernardino, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/modesto/">Modesto, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/fontana/">Fontana, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/moreno-valley/">Moreno Valley, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/santa-clarita/">Santa Clarita, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/garden-grove/">Garden Grove, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/oceanside/">Oceanside, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/santa-rosa/">Santa Rosa, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/rancho-cucamonga/">Rancho Cucamonga, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/ontario/">Ontario, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/lancaster/">Lancaster, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/elk-grove/">Elk Grove, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/palmdale/">Palmdale, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/salinas/">Salinas, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/escondido/">Escondido, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/torrance/">Torrance, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/hayward/">Hayward, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/sunnyvale/">Sunnyvale, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/pomona/">Pomona, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/roseville/">Roseville, CA</a>
+      
+      <a class="state-link" href="/low-income-programs/california/concord/">Concord, CA</a>
+      
+    </div>
+  </section>
+  {{/if}}
+
+      {{#if siblingStates}}
   <section class="related-section" id="other-states">
     <h2>Explore Other States</h2>
     <div class="state-grid">
@@ -514,6 +644,7 @@
       
     </div>
   </section>
+  {{/if}}
 
   </main>
 

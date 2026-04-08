@@ -9,7 +9,7 @@
     <section class="engine-hero">
       <h1>{{h1}}</h1>
       <div class="hero-meta">
-        <span>{{state}} ({{stateAbbr}})</span>
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
         <span>Updated {{lastUpdated}}</span>
         <span>{{currentYear}} Programs &amp; Assistance</span>
       </div>
@@ -39,9 +39,9 @@
 
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
-      <h2>Low-Income Assistance Programs for Seniors in {{state}}</h2>
-      <p>Seniors on fixed incomes in {{state}} may qualify for multiple assistance programs that can significantly reduce monthly expenses. Programs cover food, utilities, housing, phone/internet service, property taxes, and transportation. Many seniors qualify for help but aren't aware of all available programs.</p>
-      <p>This guide covers every major low-income assistance program available to seniors in {{state}}, with eligibility requirements and how to apply.</p>
+      <h2>Low-Income Assistance Programs for Seniors in {{locationName}}</h2>
+      <p>Seniors on fixed incomes in {{locationName}} may qualify for multiple assistance programs that can significantly reduce monthly expenses. Programs cover food, utilities, housing, phone/internet service, property taxes, and transportation. Many seniors qualify for help but aren't aware of all available programs.</p>
+      <p>This guide covers every major low-income assistance program available to seniors in {{locationName}}, with eligibility requirements and how to apply.</p>
     </section>
 
     <!-- Section: SNAP -->
@@ -59,7 +59,7 @@
         </div>
       </div>
       {{#if snapInfo.applicationUrl}}
-      <p><a href="{{snapInfo.applicationUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply for SNAP in {{state}} →</a></p>
+      <p><a href="{{snapInfo.applicationUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply for SNAP in {{locationName}} →</a></p>
       {{/if}}
       {{else}}
       <p>The Supplemental Nutrition Assistance Program (SNAP, formerly food stamps) helps low-income seniors buy groceries. Seniors 60+ may qualify for simplified application processes and may have some expenses deducted from their income calculation, making it easier to qualify.</p>
@@ -80,7 +80,7 @@
       <h2>LIHEAP / Energy Assistance</h2>
       {{#if liheapInfo}}
       <div class="info-box highlight">
-        <h3>{{state}} Energy Assistance</h3>
+        <h3>{{locationName}} Energy Assistance</h3>
         {{#if liheapInfo.maxBenefit}}<p><strong>Maximum benefit:</strong> {{liheapInfo.maxBenefit}}</p>{{/if}}
         {{#if liheapInfo.applicationPeriod}}<p><strong>Application period:</strong> {{liheapInfo.applicationPeriod}}</p>{{/if}}
         {{#if liheapInfo.url}}<p><a href="{{liheapInfo.url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply here →</a></p>{{/if}}
@@ -143,13 +143,13 @@
       {{#if propertyTaxRelief}}
       {{#if propertyTaxRelief.available}}
       <div class="info-box highlight">
-        <h3>{{state}} Senior Property Tax Relief</h3>
+        <h3>{{locationName}} Senior Property Tax Relief</h3>
         <p>{{{propertyTaxRelief.description}}}</p>
         {{#if propertyTaxRelief.url}}<p><a href="{{propertyTaxRelief.url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Learn more →</a></p>{{/if}}
       </div>
       {{/if}}
       {{else}}
-      <p>Many states offer property tax exemptions, freezes, or deferrals for seniors. Contact {{state}}'s tax assessor's office to learn about available relief programs and how to apply.</p>
+      <p>Many states offer property tax exemptions, freezes, or deferrals for seniors. Contact {{locationName}}'s tax assessor's office to learn about available relief programs and how to apply.</p>
       {{/if}}
     </section>
 
@@ -165,14 +165,14 @@
       </div>
       {{/each}}
       {{else}}
-      <p>Transportation assistance helps seniors get to medical appointments, grocery stores, and social activities. Programs in {{state}} may include reduced-fare transit passes, paratransit services, volunteer driver programs, and Medicaid transportation for medical appointments.</p>
+      <p>Transportation assistance helps seniors get to medical appointments, grocery stores, and social activities. Programs in {{locationName}} may include reduced-fare transit passes, paratransit services, volunteer driver programs, and Medicaid transportation for medical appointments.</p>
       {{/if}}
     </section>
 
     <!-- Section: All Programs -->
     {{#if programs}}
     <section class="content-section" id="all-programs">
-      <h2>All Available Programs in {{state}}</h2>
+      <h2>All Available Programs in {{locationName}}</h2>
       <div class="data-table-wrap">
         <table class="data-table">
           <thead>
@@ -212,34 +212,13 @@
 
     {{> faq-section}}
 
-    <!-- Section: Related Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Related Benefits &amp; Cost Guides for {{state}}</h2>
-      <p>Low-income seniors often qualify for multiple programs. Explore more options:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in {{state}}</h3>
-          <p>Check {{currentYear}} income limits. Medicaid covers healthcare, prescriptions, and long-term care.</p>
-        </a>
-        <a href="/prescription-assistance/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Prescription Assistance in {{state}}</h3>
-          <p>Save on drug costs with Medicare Extra Help and state pharmaceutical programs.</p>
-        </a>
-        <a href="/social-security/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Social Security Benefits in {{state}}</h3>
-          <p>Learn about SSI benefits and how to maximize your monthly payment.</p>
-        </a>
-        <a href="/home-care/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care Costs in {{state}}</h3>
-          <p>See home care rates and learn how Medicaid can help cover in-home care.</p>
-        </a>
-      </div>
-    </section>
+    {{> cross-engine-links}}
 
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 

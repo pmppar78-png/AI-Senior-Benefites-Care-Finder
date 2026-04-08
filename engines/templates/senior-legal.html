@@ -9,7 +9,7 @@
     <section class="engine-hero">
       <h1>{{h1}}</h1>
       <div class="hero-meta">
-        <span>{{state}} ({{stateAbbr}})</span>
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
         <span>Updated {{lastUpdated}}</span>
         <span>{{currentYear}} Laws &amp; Resources</span>
       </div>
@@ -39,14 +39,14 @@
 
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
-      <h2>Senior Legal Resources in {{state}}</h2>
-      <p>Navigating legal matters is critical for protecting seniors' rights, finances, and well-being. In {{state}}, seniors and their families need to understand state-specific laws around power of attorney, guardianship, estate planning, elder abuse, and financial protections.</p>
-      <p>This guide covers {{state}}'s specific legal requirements and resources, plus how to find affordable legal help.</p>
+      <h2>Senior Legal Resources in {{locationName}}</h2>
+      <p>Navigating legal matters is critical for protecting seniors' rights, finances, and well-being. In {{locationName}}, seniors and their families need to understand state-specific laws around power of attorney, guardianship, estate planning, elder abuse, and financial protections.</p>
+      <p>This guide covers {{locationName}}'s specific legal requirements and resources, plus how to find affordable legal help.</p>
     </section>
 
     <!-- Section: Power of Attorney -->
     <section class="content-section" id="power-of-attorney">
-      <h2>Power of Attorney in {{state}}</h2>
+      <h2>Power of Attorney in {{locationName}}</h2>
       {{#if poaLaws}}
       <p>{{{poaLaws.description}}}</p>
       {{#if poaLaws.types}}
@@ -57,7 +57,7 @@
         {{/each}}
       </ul>
       {{/if}}
-      {{#if poaLaws.formUrl}}<p><a href="{{poaLaws.formUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Get {{state}} POA forms →</a></p>{{/if}}
+      {{#if poaLaws.formUrl}}<p><a href="{{poaLaws.formUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Get {{locationName}} POA forms →</a></p>{{/if}}
       {{else}}
       <p>A power of attorney (POA) allows you to designate someone to make decisions on your behalf. This is one of the most important legal documents for seniors.</p>
       <div class="info-box">
@@ -78,11 +78,11 @@
 
     <!-- Section: Guardianship -->
     <section class="content-section" id="guardianship">
-      <h2>Guardianship &amp; Conservatorship in {{state}}</h2>
+      <h2>Guardianship &amp; Conservatorship in {{locationName}}</h2>
       {{#if guardianship}}
       <p>{{{guardianship.description}}}</p>
       {{#if guardianship.process}}<p><strong>Process:</strong> {{{guardianship.process}}}</p>{{/if}}
-      {{#if guardianship.courtUrl}}<p><a href="{{guardianship.courtUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">{{state}} court information →</a></p>{{/if}}
+      {{#if guardianship.courtUrl}}<p><a href="{{guardianship.courtUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">{{locationName}} court information →</a></p>{{/if}}
       {{else}}
       <p>Guardianship is a court process where a judge appoints someone to make decisions for a person who can no longer make them independently. It's a last resort — more restrictive and expensive than power of attorney.</p>
       <div class="info-box">
@@ -98,7 +98,7 @@
 
     <!-- Section: Estate Planning -->
     <section class="content-section" id="estate-planning">
-      <h2>Estate Planning for Seniors in {{state}}</h2>
+      <h2>Estate Planning for Seniors in {{locationName}}</h2>
       {{#if estatePlanning}}
       <p>{{{estatePlanning.description}}}</p>
       {{#if estatePlanning.requirements}}
@@ -125,7 +125,7 @@
 
     <!-- Section: Elder Abuse -->
     <section class="content-section" id="elder-abuse">
-      <h2>Elder Abuse Reporting in {{state}}</h2>
+      <h2>Elder Abuse Reporting in {{locationName}}</h2>
       {{#if elderAbuse}}
       <div class="info-box highlight">
         <h3>Report Elder Abuse</h3>
@@ -136,7 +136,7 @@
       {{else}}
       <div class="info-box highlight">
         <h3>If You Suspect Elder Abuse</h3>
-        <p>Contact {{state}}'s Adult Protective Services (APS) or call the Eldercare Locator at <strong>1-800-677-1116</strong>. In emergencies, call 911.</p>
+        <p>Contact {{locationName}}'s Adult Protective Services (APS) or call the Eldercare Locator at <strong>1-800-677-1116</strong>. In emergencies, call 911.</p>
         <p>Elder abuse includes physical abuse, emotional abuse, financial exploitation, neglect, and abandonment. Anyone can report suspected abuse — you don't need proof.</p>
       </div>
       {{/if}}
@@ -144,7 +144,7 @@
 
     <!-- Section: Reverse Mortgage -->
     <section class="content-section" id="reverse-mortgage">
-      <h2>Reverse Mortgages in {{state}}</h2>
+      <h2>Reverse Mortgages in {{locationName}}</h2>
       {{#if reverseMortgage}}
       <p>{{{reverseMortgage.description}}}</p>
       {{#if reverseMortgage.warnings}}
@@ -202,7 +202,7 @@
 
     <!-- Section: Legal Aid -->
     <section class="content-section" id="legal-aid">
-      <h2>Legal Aid Organizations in {{state}}</h2>
+      <h2>Legal Aid Organizations in {{locationName}}</h2>
       {{#if legalAidOrgs}}
       {{#each legalAidOrgs}}
       <div class="provider-card">
@@ -217,7 +217,7 @@
       {{else}}
       <div class="info-box">
         <h3>Finding Free Legal Help</h3>
-        <p>Seniors with limited income may qualify for free legal assistance through Legal Aid organizations, law school clinics, and pro bono attorney programs. Contact {{state}}'s bar association or the Eldercare Locator (1-800-677-1116) for referrals.</p>
+        <p>Seniors with limited income may qualify for free legal assistance through Legal Aid organizations, law school clinics, and pro bono attorney programs. Contact {{locationName}}'s bar association or the Eldercare Locator (1-800-677-1116) for referrals.</p>
       </div>
       {{/if}}
     </section>
@@ -242,10 +242,13 @@
 
     {{> faq-section}}
 
+    {{> cross-engine-links}}
+
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 

@@ -37,7 +37,7 @@
 
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
-      <h2>{{providerTypeLabel}} {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>{{providerTypeLabel}} {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
 
       {{#if totalProviders}}
       <div class="stat-grid">
@@ -54,13 +54,13 @@
       </div>
       {{/if}}
 
-      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} requires careful research. This guide helps you compare options based on quality ratings, services offered, costs, and reviews from families and residents.</p>
+      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} requires careful research. This guide helps you compare options based on quality ratings, services offered, costs, and reviews from families and residents.</p>
     </section>
 
     <!-- Section: Top Providers -->
     {{#if providers}}
     <section class="content-section" id="top-providers">
-      <h2>Top-Rated {{providerTypeLabel}} {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>Top-Rated {{providerTypeLabel}} {{#if city}}in {{city}}{{else}}in {{locationName}}{{/if}}</h2>
       {{#each providers}}
       <div class="provider-card">
         <h3>{{name}}</h3>
@@ -246,10 +246,13 @@
 
     {{> faq-section}}
 
+    {{> cross-engine-links}}
+
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 

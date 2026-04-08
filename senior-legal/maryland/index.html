@@ -131,7 +131,7 @@
     "headline": "Senior Legal Resources in Maryland (2026) — Elder Law, Estate Planning &amp; Protections",
     "description": "Find 2026 elder law resources in Maryland. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.",
     "url": "https://seniorbenefitscarefinder.com/senior-legal/maryland/",
-    "dateModified": "March 26, 2026",
+    "dateModified": "April 8, 2026",
     "datePublished": "2025-11-18",
     "author": {
       "@type": "Person",
@@ -192,7 +192,7 @@
       <h1>Senior Legal Resources in Maryland (2026)</h1>
       <div class="hero-meta">
         <span>Maryland (MD)</span>
-        <span>Updated March 26, 2026</span>
+        <span>Updated April 8, 2026</span>
         <span>2026 Laws &amp; Resources</span>
       </div>
       <div class="intro-text">
@@ -201,11 +201,12 @@
     </section>
 
       <div class="meta-badges">
-    <span class="meta-badge">Updated: March 26, 2026</span>
+    <span class="meta-badge">Updated: April 8, 2026</span>
     
     
     <span class="meta-badge">Maryland</span>
     
+    {{/if}}
   </div>
 
 
@@ -391,7 +392,7 @@
       <p>Seniors are disproportionately targeted by financial scammers. Common schemes include Medicare and Social Security impersonation calls, grandparent scams, romance scams, investment fraud, and identity theft. Never give personal or financial information to unsolicited callers, verify identities independently, and consult trusted family members or advisors before making large financial decisions.</p>
     </section>
 
-      
+      {{#if faqs}}
   <section class="content-section" id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -412,7 +413,68 @@
       
     </div>
   </section>
-  
+  {{/if}}
+
+
+      {{#if crossEngineLinks}}
+  <section class="content-section" id="related-guides">
+    <h2>Related Benefits &amp; Cost Guides for Maryland</h2>
+    <p>Explore related programs and care costs in Maryland:</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      
+      <a href="/medicare/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicare in Maryland</h3>
+        <p>See 2026 Medicare information for Maryland.</p>
+      </a>
+      
+      <a href="/medicaid/eligibility/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicaid in Maryland</h3>
+        <p>See 2026 Medicaid information for Maryland.</p>
+      </a>
+      
+      <a href="/assisted-living/cost/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Assisted Living in Maryland</h3>
+        <p>See 2026 Assisted Living information for Maryland.</p>
+      </a>
+      
+      <a href="/social-security/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Social Security in Maryland</h3>
+        <p>See 2026 Social Security information for Maryland.</p>
+      </a>
+      
+      <a href="/home-care/cost/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Home Care in Maryland</h3>
+        <p>See 2026 Home Care information for Maryland.</p>
+      </a>
+      
+      <a href="/prescription-assistance/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Prescription Assistance in Maryland</h3>
+        <p>See 2026 Prescription Assistance information for Maryland.</p>
+      </a>
+      
+      <a href="/veterans-benefits/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Veterans Benefits in Maryland</h3>
+        <p>See 2026 Veterans Benefits information for Maryland.</p>
+      </a>
+      
+      <a href="/low-income-programs/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Low-Income Programs in Maryland</h3>
+        <p>See 2026 Low-Income Programs information for Maryland.</p>
+      </a>
+      
+      <a href="/long-term-care/maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Long-Term Care in Maryland</h3>
+        <p>See 2026 Long-Term Care information for Maryland.</p>
+      </a>
+      
+      <a href="/providers//maryland/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Find Providers in Maryland</h3>
+        <p>See 2026 Find Providers information for Maryland.</p>
+      </a>
+      
+    </div>
+  </section>
+  {{/if}}
 
 
       <section class="affiliate-reco" id="page-affiliate-reco">
@@ -431,6 +493,7 @@
   </section>
 
 
+      {{#if sources}}
   <section class="sources-section">
     <h2>Sources &amp; References</h2>
     <ol class="sources-list">
@@ -441,8 +504,25 @@
       
     </ol>
   </section>
+  {{/if}}
 
 
+      {{#if stateCities}}
+  <section class="related-section" id="city-guides">
+    {{#if citySlug}}
+    <h2>Other Cities in Maryland</h2>
+    
+    <h2>City Guides in Maryland</h2>
+    {{/if}}
+    <div class="state-grid">
+      
+      <a class="state-link" href="/senior-legal/maryland/baltimore/">Baltimore, MD</a>
+      
+    </div>
+  </section>
+  {{/if}}
+
+      {{#if siblingStates}}
   <section class="related-section" id="other-states">
     <h2>Explore Other States</h2>
     <div class="state-grid">
@@ -469,6 +549,7 @@
       
     </div>
   </section>
+  {{/if}}
 
   </main>
 

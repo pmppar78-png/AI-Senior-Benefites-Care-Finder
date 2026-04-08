@@ -1,0 +1,14 @@
+  {{#if crossEngineLinks}}
+  <section class="content-section" id="related-guides">
+    <h2>Related Benefits &amp; Cost Guides for {{locationName}}</h2>
+    <p>Explore related programs and care costs in {{locationName}}:</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      {{#each crossEngineLinks}}
+      <a href="{{url}}" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>{{name}} in {{_parent.locationName}}</h3>
+        <p>See {{_parent.currentYear}} {{name}} information for {{_parent.locationName}}.</p>
+      </a>
+      {{/each}}
+    </div>
+  </section>
+  {{/if}}

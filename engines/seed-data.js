@@ -16,72 +16,160 @@ function write(filename, data) {
   console.log(`  Created ${filename} (${data.length} entries)`);
 }
 
-// ---- ENGINE 1: Medicare (state-level) ----
-write('medicare.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Medicare Plans in ${s.name} (2026)`,
-  introText: `<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in ${s.name} for 2026. Find the coverage that fits your health care needs and budget.</p>`,
-  advantagePlans: 20 + Math.floor(Math.random() * 40),
-  medigapPlans: 8 + Math.floor(Math.random() * 6),
-  partDPlans: 15 + Math.floor(Math.random() * 15),
-  avgPremiumMA: `$${Math.floor(Math.random() * 25)}/mo`,
-  avgPremiumMedigap: `$${130 + Math.floor(Math.random() * 90)}/mo`,
-  avgPremiumPartD: `$${25 + Math.floor(Math.random() * 25)}/mo`,
-  enrollmentPeriods: [
-    { name: 'Initial Enrollment Period', startDate: '3 months before turning 65', endDate: '3 months after turning 65', description: 'Sign up for Medicare Parts A and B' },
-    { name: 'Annual Enrollment Period', startDate: 'October 15', endDate: 'December 7', description: 'Switch Medicare Advantage or Part D plans' },
-    { name: 'Medicare Advantage Open Enrollment', startDate: 'January 1', endDate: 'March 31', description: 'Switch MA plans or return to Original Medicare' },
-  ],
-  specialPrograms: [
-    { name: `${s.name} SHIP Program`, description: `Free Medicare counseling and assistance for ${s.name} residents. Get help comparing plans, understanding benefits, and resolving billing issues.` },
-    { name: 'Medicare Savings Programs', description: `Low-income ${s.name} residents may qualify for help paying Medicare premiums, deductibles, and copayments.` },
-  ],
-  localResources: [
-    { name: '1-800-MEDICARE', phone: '1-800-633-4227', description: 'Official Medicare hotline, available 24/7.' },
-    { name: `${s.name} Department of Insurance`, description: `Contact ${s.name}'s insurance department for help with Medicare plan complaints and questions.` },
-  ],
-  faqs: [
-    { question: `How many Medicare Advantage plans are available in ${s.name}?`, answer: `${s.name} residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area.` },
-    { question: `When can I enroll in Medicare in ${s.name}?`, answer: `Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7).` },
-    { question: `Does ${s.name} have a Medicare Savings Program?`, answer: `Yes. If you have limited income, ${s.name} may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details.` },
-  ],
-  sources: [
-    { title: 'Medicare.gov', url: 'https://www.medicare.gov' },
-    { title: 'CMS.gov Medicare Data', url: 'https://www.cms.gov/medicare' },
-  ],
-})));
+// ---- ENGINE 1: Medicare (state + city) ----
+const medicareEntries = [];
+states.forEach(s => {
+  const maPlans = 20 + Math.floor(Math.random() * 40);
+  const mgPlans = 8 + Math.floor(Math.random() * 6);
+  const pdPlans = 15 + Math.floor(Math.random() * 15);
+  const premMA = Math.floor(Math.random() * 25);
+  const premMG = 130 + Math.floor(Math.random() * 90);
+  const premPD = 25 + Math.floor(Math.random() * 25);
+  medicareEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Medicare Plans in ${s.name} (2026)`,
+    introText: `<p>Compare Medicare Advantage, Medigap, and Part D prescription drug plans available in ${s.name} for 2026. Find the coverage that fits your health care needs and budget.</p>`,
+    advantagePlans: maPlans, medigapPlans: mgPlans, partDPlans: pdPlans,
+    avgPremiumMA: `$${premMA}/mo`, avgPremiumMedigap: `$${premMG}/mo`, avgPremiumPartD: `$${premPD}/mo`,
+    enrollmentPeriods: [
+      { name: 'Initial Enrollment Period', startDate: '3 months before turning 65', endDate: '3 months after turning 65', description: 'Sign up for Medicare Parts A and B' },
+      { name: 'Annual Enrollment Period', startDate: 'October 15', endDate: 'December 7', description: 'Switch Medicare Advantage or Part D plans' },
+      { name: 'Medicare Advantage Open Enrollment', startDate: 'January 1', endDate: 'March 31', description: 'Switch MA plans or return to Original Medicare' },
+    ],
+    specialPrograms: [
+      { name: `${s.name} SHIP Program`, description: `Free Medicare counseling and assistance for ${s.name} residents. Get help comparing plans, understanding benefits, and resolving billing issues.` },
+      { name: 'Medicare Savings Programs', description: `Low-income ${s.name} residents may qualify for help paying Medicare premiums, deductibles, and copayments.` },
+    ],
+    localResources: [
+      { name: '1-800-MEDICARE', phone: '1-800-633-4227', description: 'Official Medicare hotline, available 24/7.' },
+      { name: `${s.name} Department of Insurance`, description: `Contact ${s.name}'s insurance department for help with Medicare plan complaints and questions.` },
+    ],
+    faqs: [
+      { question: `How many Medicare Advantage plans are available in ${s.name}?`, answer: `${s.name} residents can choose from dozens of Medicare Advantage plans. Plan availability varies by county, so use Medicare.gov's Plan Finder to see options in your specific area.` },
+      { question: `When can I enroll in Medicare in ${s.name}?`, answer: `Most people first become eligible at age 65. Your Initial Enrollment Period is a 7-month window around your 65th birthday. You can also make changes during the Annual Enrollment Period (October 15 – December 7).` },
+      { question: `Does ${s.name} have a Medicare Savings Program?`, answer: `Yes. If you have limited income, ${s.name} may help pay your Medicare premiums and cost-sharing through Medicare Savings Programs. Contact your local Medicaid office for details.` },
+    ],
+    sources: [
+      { title: 'Medicare.gov', url: 'https://www.medicare.gov' },
+      { title: 'CMS.gov Medicare Data', url: 'https://www.cms.gov/medicare' },
+    ],
+  });
+});
+// City-level Medicare pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  const maPlans = 15 + Math.floor(Math.random() * 50);
+  const mgPlans = 8 + Math.floor(Math.random() * 6);
+  const pdPlans = 12 + Math.floor(Math.random() * 18);
+  const premMA = Math.floor(Math.random() * 30);
+  const premMG = 120 + Math.floor(Math.random() * 100);
+  const premPD = 20 + Math.floor(Math.random() * 30);
+  medicareEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Medicare Plans in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Compare Medicare Advantage, Medigap, and Part D plans available in ${c.name}, ${c.stateAbbr} for 2026. Plan availability and costs vary by county — see what's offered in your area and how to save.</p>`,
+    advantagePlans: maPlans, medigapPlans: mgPlans, partDPlans: pdPlans,
+    avgPremiumMA: `$${premMA}/mo`, avgPremiumMedigap: `$${premMG}/mo`, avgPremiumPartD: `$${premPD}/mo`,
+    enrollmentPeriods: [
+      { name: 'Initial Enrollment Period', startDate: '3 months before turning 65', endDate: '3 months after turning 65', description: 'Sign up for Medicare Parts A and B' },
+      { name: 'Annual Enrollment Period', startDate: 'October 15', endDate: 'December 7', description: 'Switch Medicare Advantage or Part D plans' },
+      { name: 'Medicare Advantage Open Enrollment', startDate: 'January 1', endDate: 'March 31', description: 'Switch MA plans or return to Original Medicare' },
+    ],
+    specialPrograms: [
+      { name: `${stName} SHIP Program`, description: `Free Medicare counseling for ${c.name} residents. Get help comparing plans, understanding benefits, and resolving billing issues from trained ${stName} SHIP counselors.` },
+      { name: 'Medicare Savings Programs', description: `Low-income residents in ${c.name} may qualify for help paying Medicare premiums, deductibles, and copayments through ${stName}'s Medicare Savings Programs.` },
+    ],
+    localResources: [
+      { name: '1-800-MEDICARE', phone: '1-800-633-4227', description: 'Official Medicare hotline, available 24/7.' },
+      { name: `${c.name} Area Agency on Aging`, description: `Contact the ${c.name} Area Agency on Aging for local Medicare counseling and senior services.` },
+    ],
+    faqs: [
+      { question: `How many Medicare Advantage plans are available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} residents can choose from ${maPlans} Medicare Advantage plans. Plan availability varies by county within the ${c.metro || c.name} metro area, so use Medicare.gov's Plan Finder to see exact options at your zip code.` },
+      { question: `What is the average Medicare Advantage premium in ${c.name}?`, answer: `The average Medicare Advantage premium in the ${c.name} area is approximately $${premMA}/month. Many $0 premium plans are available, though they may have higher copays and narrower networks.` },
+      { question: `Where can I get free Medicare help in ${c.name}?`, answer: `Contact the ${stName} SHIP program for free, unbiased Medicare counseling. You can also call 1-800-MEDICARE or visit your local ${c.name} Area Agency on Aging.` },
+    ],
+    sources: [
+      { title: 'Medicare.gov', url: 'https://www.medicare.gov' },
+      { title: 'CMS.gov Medicare Data', url: 'https://www.cms.gov/medicare' },
+    ],
+  });
+});
+write('medicare.json', medicareEntries);
 
-// ---- ENGINE 2: Medicaid (state-level) ----
+// ---- ENGINE 2: Medicaid (state + city) ----
 const medicaidNames = { 'california': 'Medi-Cal', 'tennessee': 'TennCare', 'massachusetts': 'MassHealth', 'oregon': 'Oregon Health Plan', 'hawaii': 'Med-QUEST', 'minnesota': 'Medical Assistance', 'wisconsin': 'BadgerCare Plus' };
-write('medicaid.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Medicaid Eligibility in ${s.name} (2026)`,
-  introText: `<p>Learn about Medicaid eligibility requirements in ${s.name}, including income limits, asset requirements, and how to apply for coverage in 2026.</p>`,
-  programName: medicaidNames[s.slug] || `${s.name} Medicaid`,
-  expansionStatus: 'expanded',
-  incomeLimit: { individual: '$1,732/month', couple: '$2,351/month', fpl: '138%' },
-  assetLimit: { individual: '$2,000', couple: '$3,000', exemptions: ['Primary home', 'One vehicle', 'Personal belongings', 'Burial plot'] },
-  applicationMethods: [
-    { method: 'Online', description: `Apply online through ${s.name}'s Medicaid portal`, url: '#' },
-    { method: 'Phone', description: 'Call your local Department of Social Services', url: '#' },
-    { method: 'In Person', description: 'Visit your local county office', url: '#' },
-  ],
-  requiredDocuments: ['Photo ID', 'Proof of income', 'Proof of residency', 'Social Security card', 'Bank statements'],
-  programs: [
-    { name: 'Aged, Blind, and Disabled', description: 'Coverage for seniors 65+ and people with disabilities', eligibility: 'Income below SSI limits', url: '#' },
-    { name: 'Home and Community-Based Services', description: 'Waiver program for in-home care as an alternative to nursing facilities', eligibility: 'Nursing home level of care needed', url: '#' },
-  ],
-  managedCare: true,
-  processingTime: '30-45 days',
-  faqs: [
-    { question: `What are the income limits for Medicaid in ${s.name}?`, answer: `In ${s.name}, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures.` },
-    { question: `How do I apply for Medicaid in ${s.name}?`, answer: `You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days.` },
-  ],
-  sources: [
-    { title: 'Medicaid.gov', url: 'https://www.medicaid.gov' },
-    { title: `${s.name} Medicaid Agency`, url: '#' },
-  ],
-})));
+const medicaidEntries = [];
+states.forEach(s => {
+  medicaidEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Medicaid Eligibility in ${s.name} (2026)`,
+    introText: `<p>Learn about Medicaid eligibility requirements in ${s.name}, including income limits, asset requirements, and how to apply for coverage in 2026.</p>`,
+    programName: medicaidNames[s.slug] || `${s.name} Medicaid`,
+    expansionStatus: 'expanded',
+    incomeLimit: { individual: '$1,732/month', couple: '$2,351/month', fpl: '138%' },
+    assetLimit: { individual: '$2,000', couple: '$3,000', exemptions: ['Primary home', 'One vehicle', 'Personal belongings', 'Burial plot'] },
+    applicationMethods: [
+      { method: 'Online', description: `Apply online through ${s.name}'s Medicaid portal`, url: '#' },
+      { method: 'Phone', description: 'Call your local Department of Social Services', url: '#' },
+      { method: 'In Person', description: 'Visit your local county office', url: '#' },
+    ],
+    requiredDocuments: ['Photo ID', 'Proof of income', 'Proof of residency', 'Social Security card', 'Bank statements'],
+    programs: [
+      { name: 'Aged, Blind, and Disabled', description: 'Coverage for seniors 65+ and people with disabilities', eligibility: 'Income below SSI limits', url: '#' },
+      { name: 'Home and Community-Based Services', description: 'Waiver program for in-home care as an alternative to nursing facilities', eligibility: 'Nursing home level of care needed', url: '#' },
+    ],
+    managedCare: true,
+    processingTime: '30-45 days',
+    faqs: [
+      { question: `What are the income limits for Medicaid in ${s.name}?`, answer: `In ${s.name}, the income limit for Medicaid eligibility is generally 138% of the Federal Poverty Level for most adults. Seniors and individuals with disabilities may have different limits. Contact your local office for exact figures.` },
+      { question: `How do I apply for Medicaid in ${s.name}?`, answer: `You can apply online, by phone, by mail, or in person at your local county office. Processing typically takes 30-45 days.` },
+    ],
+    sources: [
+      { title: 'Medicaid.gov', url: 'https://www.medicaid.gov' },
+      { title: `${s.name} Medicaid Agency`, url: '#' },
+    ],
+  });
+});
+// City-level Medicaid pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  const progName = medicaidNames[c.stateSlug] || `${stName} Medicaid`;
+  medicaidEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Medicaid Eligibility in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Check 2026 Medicaid eligibility in ${c.name}, ${c.stateAbbr}. See income limits, covered benefits, and how to apply for ${progName} in the ${c.name} area.</p>`,
+    programName: progName,
+    expansionStatus: 'expanded',
+    incomeLimit: { individual: '$1,732/month', couple: '$2,351/month', fpl: '138%' },
+    assetLimit: { individual: '$2,000', couple: '$3,000', exemptions: ['Primary home', 'One vehicle', 'Personal belongings', 'Burial plot'] },
+    applicationMethods: [
+      { method: 'Online', description: `Apply online through ${stName}'s Medicaid portal`, url: '#' },
+      { method: 'Phone', description: `Call the ${c.name} Department of Social Services`, url: '#' },
+      { method: 'In Person', description: `Visit your local ${c.name} county office`, url: '#' },
+    ],
+    requiredDocuments: ['Photo ID', 'Proof of income', 'Proof of residency', 'Social Security card', 'Bank statements'],
+    programs: [
+      { name: 'Aged, Blind, and Disabled', description: `Coverage for seniors 65+ in ${c.name} with disabilities`, eligibility: 'Income below SSI limits', url: '#' },
+      { name: 'Home and Community-Based Services', description: `Waiver program for in-home care in ${c.name} as an alternative to nursing facilities`, eligibility: 'Nursing home level of care needed', url: '#' },
+    ],
+    managedCare: true,
+    processingTime: '30-45 days',
+    faqs: [
+      { question: `What are the Medicaid income limits in ${c.name}, ${c.stateAbbr}?`, answer: `In ${c.name}, Medicaid income limits follow ${stName}'s statewide guidelines — generally 138% of the Federal Poverty Level for most adults. Seniors 65+ may have different limits. Contact the ${c.name} county office for exact figures.` },
+      { question: `Where can I apply for Medicaid in ${c.name}?`, answer: `You can apply online through the ${stName} Medicaid portal, by phone, or in person at the ${c.name} county Department of Social Services. Processing typically takes 30-45 days.` },
+      { question: `Does ${progName} cover home care in ${c.name}?`, answer: `Yes, ${progName} may cover home and community-based services in ${c.name} through waiver programs. These allow eligible seniors to receive care at home rather than in a nursing facility.` },
+    ],
+    sources: [
+      { title: 'Medicaid.gov', url: 'https://www.medicaid.gov' },
+      { title: `${stName} Medicaid Agency`, url: '#' },
+    ],
+  });
+});
+write('medicaid.json', medicaidEntries);
 
 // ---- ENGINE 3: Assisted Living (state + city) ----
 const alEntries = [];
@@ -146,37 +234,77 @@ cities.forEach(c => {
 });
 write('assisted-living.json', alEntries);
 
-// ---- ENGINE 4: Social Security (state-level) ----
-write('social-security.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Social Security & SSI Benefits in ${s.name} (2026)`,
-  introText: `<p>Learn about Social Security retirement, SSDI, and SSI benefits available in ${s.name}. See 2026 benefit amounts, eligibility, and how to apply.</p>`,
-  avgRetirementBenefit: `$${1700 + Math.floor(Math.random() * 400)}/mo`,
-  maxRetirementBenefit: '$4,018/mo',
-  hasSsiSupplement: Math.random() > 0.5,
-  ssiSupplement: `$${Math.floor(Math.random() * 200)}/mo`,
-  fullRetirementAge: '67',
-  earlyRetirementAge: '62',
-  cola: '2.5%',
-  ssdiAvgBenefit: `$${1400 + Math.floor(Math.random() * 300)}/mo`,
-  ssiMaxBenefit: { individual: '$943/mo', couple: '$1,415/mo' },
-  taxInfo: Math.random() > 0.6 ? `${s.name} does not tax Social Security benefits.` : `${s.name} may tax Social Security benefits for higher-income residents.`,
-  localOffices: [
-    { name: `${s.name} Social Security Office`, address: `Main Street, ${s.name}`, phone: '1-800-772-1213', hours: 'Mon-Fri 9am-4pm' },
-  ],
-  applicationMethods: [
-    { method: 'Online', description: 'Apply at ssa.gov', url: 'https://www.ssa.gov/apply' },
-    { method: 'Phone', description: 'Call 1-800-772-1213', url: '#' },
-    { method: 'In Person', description: 'Visit your local Social Security office', url: '#' },
-  ],
-  faqs: [
-    { question: `What is the average Social Security benefit in ${s.name}?`, answer: `The average monthly Social Security retirement benefit in ${s.name} varies but is generally in line with the national average of approximately $1,900 per month.` },
-    { question: `Does ${s.name} tax Social Security benefits?`, answer: `Tax treatment of Social Security benefits varies by state. Check with ${s.name}'s tax authority for current rules.` },
-  ],
-  sources: [
-    { title: 'Social Security Administration', url: 'https://www.ssa.gov' },
-  ],
-})));
+// ---- ENGINE 4: Social Security (state + city) ----
+const ssEntries = [];
+states.forEach(s => {
+  const avgBen = 1700 + Math.floor(Math.random() * 400);
+  const hasSup = Math.random() > 0.5;
+  const supAmt = Math.floor(Math.random() * 200);
+  const ssdiBen = 1400 + Math.floor(Math.random() * 300);
+  const taxLine = Math.random() > 0.6 ? `${s.name} does not tax Social Security benefits.` : `${s.name} may tax Social Security benefits for higher-income residents.`;
+  ssEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Social Security & SSI Benefits in ${s.name} (2026)`,
+    introText: `<p>Learn about Social Security retirement, SSDI, and SSI benefits available in ${s.name}. See 2026 benefit amounts, eligibility, and how to apply.</p>`,
+    avgRetirementBenefit: `$${avgBen}/mo`, maxRetirementBenefit: '$4,018/mo',
+    hasSsiSupplement: hasSup, ssiSupplement: `$${supAmt}/mo`,
+    fullRetirementAge: '67', earlyRetirementAge: '62', cola: '2.5%',
+    ssdiAvgBenefit: `$${ssdiBen}/mo`,
+    ssiMaxBenefit: { individual: '$943/mo', couple: '$1,415/mo' },
+    taxInfo: taxLine,
+    localOffices: [
+      { name: `${s.name} Social Security Office`, address: `Main Street, ${s.name}`, phone: '1-800-772-1213', hours: 'Mon-Fri 9am-4pm' },
+    ],
+    applicationMethods: [
+      { method: 'Online', description: 'Apply at ssa.gov', url: 'https://www.ssa.gov/apply' },
+      { method: 'Phone', description: 'Call 1-800-772-1213', url: '#' },
+      { method: 'In Person', description: 'Visit your local Social Security office', url: '#' },
+    ],
+    faqs: [
+      { question: `What is the average Social Security benefit in ${s.name}?`, answer: `The average monthly Social Security retirement benefit in ${s.name} varies but is generally in line with the national average of approximately $1,900 per month.` },
+      { question: `Does ${s.name} tax Social Security benefits?`, answer: `Tax treatment of Social Security benefits varies by state. Check with ${s.name}'s tax authority for current rules.` },
+    ],
+    sources: [
+      { title: 'Social Security Administration', url: 'https://www.ssa.gov' },
+    ],
+  });
+});
+// City-level Social Security pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  const avgBen = 1700 + Math.floor(Math.random() * 400);
+  const ssdiBen = 1400 + Math.floor(Math.random() * 300);
+  ssEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Social Security & SSI Benefits in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>See 2026 Social Security and SSI benefit amounts for ${c.name}, ${c.stateAbbr} residents. Find local Social Security offices, learn how to maximize your benefits, and apply.</p>`,
+    avgRetirementBenefit: `$${avgBen}/mo`, maxRetirementBenefit: '$4,018/mo',
+    hasSsiSupplement: Math.random() > 0.5, ssiSupplement: `$${Math.floor(Math.random() * 200)}/mo`,
+    fullRetirementAge: '67', earlyRetirementAge: '62', cola: '2.5%',
+    ssdiAvgBenefit: `$${ssdiBen}/mo`,
+    ssiMaxBenefit: { individual: '$943/mo', couple: '$1,415/mo' },
+    taxInfo: `Check with ${stName}'s tax authority for current rules on Social Security benefit taxation.`,
+    localOffices: [
+      { name: `${c.name} Social Security Office`, address: `${c.name}, ${c.stateAbbr}`, phone: '1-800-772-1213', hours: 'Mon-Fri 9am-4pm' },
+    ],
+    applicationMethods: [
+      { method: 'Online', description: 'Apply at ssa.gov', url: 'https://www.ssa.gov/apply' },
+      { method: 'Phone', description: 'Call 1-800-772-1213', url: '#' },
+      { method: 'In Person', description: `Visit the ${c.name} Social Security office`, url: '#' },
+    ],
+    faqs: [
+      { question: `Where is the Social Security office in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} has Social Security offices serving the ${c.metro || c.name} area. Call 1-800-772-1213 or visit ssa.gov to find the nearest office and schedule an appointment.` },
+      { question: `What is the average Social Security benefit for retirees in ${c.name}?`, answer: `The average monthly Social Security retirement benefit for ${c.name} area retirees is approximately $${avgBen}. Your actual benefit depends on your lifetime earnings, claiming age, and work history.` },
+      { question: `Can I apply for Social Security online in ${c.name}?`, answer: `Yes, ${c.name} residents can apply for Social Security retirement or disability benefits online at ssa.gov, by phone at 1-800-772-1213, or in person at the local ${c.name} Social Security office.` },
+    ],
+    sources: [
+      { title: 'Social Security Administration', url: 'https://www.ssa.gov' },
+    ],
+  });
+});
+write('social-security.json', ssEntries);
 
 // ---- ENGINE 5: Home Care (state + city) ----
 const hcEntries = [];
@@ -229,63 +357,136 @@ cities.forEach(c => {
 });
 write('home-care.json', hcEntries);
 
-// ---- ENGINE 6: Prescription Assistance (state-level) ----
-write('prescription-assistance.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Prescription Assistance Programs in ${s.name} (2026)`,
-  introText: `<p>Find programs to help lower prescription drug costs in ${s.name}. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>`,
-  hasStateSPAP: Math.random() > 0.4,
-  spapName: `${s.name} Pharmaceutical Assistance Program`,
-  spapDescription: `${s.name}'s state pharmaceutical assistance program helps eligible residents afford prescription medications.`,
-  spapEligibility: 'Income-based eligibility; contact program for details',
-  extraHelpIncomeLimits: { individual: '$22,590/year', couple: '$30,660/year' },
-  extraHelpAssetLimits: { individual: '$17,220', couple: '$34,360' },
-  programs: [
-    { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: 'Limited income and resources', description: 'Helps pay Part D premiums, deductibles, and copays', phone: '1-800-772-1213' },
-    { name: `${s.name} SPAP`, type: 'State', eligibility: 'State income guidelines', description: `${s.name}'s state pharmaceutical assistance program` },
-    { name: 'NeedyMeds', type: 'Nonprofit', eligibility: 'Varies by program', description: 'Database of patient assistance programs from drug manufacturers', url: 'https://www.needymeds.org' },
-    { name: 'RxAssist', type: 'Nonprofit', eligibility: 'Varies', description: 'Comprehensive database of prescription assistance programs', url: 'https://www.rxassist.org' },
-  ],
-  discountPrograms: [
-    { name: 'GoodRx', savings: 'Up to 80% off', description: 'Free prescription discount card accepted at most pharmacies', url: 'https://www.goodrx.com' },
-    { name: 'Medicare Part D', savings: 'Varies by plan', description: 'Compare Part D plans for your specific medications' },
-  ],
-  faqs: [
-    { question: `What prescription assistance programs are available in ${s.name}?`, answer: `${s.name} residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards.` },
-    { question: `How do I apply for Extra Help in ${s.name}?`, answer: `Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office.` },
-  ],
-  sources: [
-    { title: 'Medicare.gov Extra Help', url: 'https://www.medicare.gov/basics/costs/help/drug-costs' },
-  ],
-})));
+// ---- ENGINE 6: Prescription Assistance (state + city) ----
+const rxEntries = [];
+states.forEach(s => {
+  rxEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Prescription Assistance Programs in ${s.name} (2026)`,
+    introText: `<p>Find programs to help lower prescription drug costs in ${s.name}. Learn about Medicare Extra Help, state pharmaceutical assistance, and patient assistance programs.</p>`,
+    hasStateSPAP: Math.random() > 0.4,
+    spapName: `${s.name} Pharmaceutical Assistance Program`,
+    spapDescription: `${s.name}'s state pharmaceutical assistance program helps eligible residents afford prescription medications.`,
+    spapEligibility: 'Income-based eligibility; contact program for details',
+    extraHelpIncomeLimits: { individual: '$22,590/year', couple: '$30,660/year' },
+    extraHelpAssetLimits: { individual: '$17,220', couple: '$34,360' },
+    programs: [
+      { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: 'Limited income and resources', description: 'Helps pay Part D premiums, deductibles, and copays', phone: '1-800-772-1213' },
+      { name: `${s.name} SPAP`, type: 'State', eligibility: 'State income guidelines', description: `${s.name}'s state pharmaceutical assistance program` },
+      { name: 'NeedyMeds', type: 'Nonprofit', eligibility: 'Varies by program', description: 'Database of patient assistance programs from drug manufacturers', url: 'https://www.needymeds.org' },
+      { name: 'RxAssist', type: 'Nonprofit', eligibility: 'Varies', description: 'Comprehensive database of prescription assistance programs', url: 'https://www.rxassist.org' },
+    ],
+    discountPrograms: [
+      { name: 'GoodRx', savings: 'Up to 80% off', description: 'Free prescription discount card accepted at most pharmacies', url: 'https://www.goodrx.com' },
+      { name: 'Medicare Part D', savings: 'Varies by plan', description: 'Compare Part D plans for your specific medications' },
+    ],
+    faqs: [
+      { question: `What prescription assistance programs are available in ${s.name}?`, answer: `${s.name} residents can access Medicare Extra Help, state pharmaceutical assistance programs, manufacturer patient assistance programs, and discount cards.` },
+      { question: `How do I apply for Extra Help in ${s.name}?`, answer: `Apply online at ssa.gov, by phone at 1-800-772-1213, or at your local Social Security office.` },
+    ],
+    sources: [
+      { title: 'Medicare.gov Extra Help', url: 'https://www.medicare.gov/basics/costs/help/drug-costs' },
+    ],
+  });
+});
+// City-level Prescription Assistance pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  rxEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Prescription Assistance in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Find programs to help ${c.name}, ${c.stateAbbr} residents save on prescription drug costs in 2026. See Medicare Extra Help, ${stName} pharmaceutical programs, and local pharmacy resources.</p>`,
+    hasStateSPAP: Math.random() > 0.4,
+    spapName: `${stName} Pharmaceutical Assistance Program`,
+    spapDescription: `${stName}'s state pharmaceutical assistance program is available to ${c.name} residents who meet income eligibility requirements.`,
+    spapEligibility: 'Income-based eligibility; contact program for details',
+    extraHelpIncomeLimits: { individual: '$22,590/year', couple: '$30,660/year' },
+    extraHelpAssetLimits: { individual: '$17,220', couple: '$34,360' },
+    programs: [
+      { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: 'Limited income and resources', description: `Helps ${c.name} residents pay Part D premiums, deductibles, and copays`, phone: '1-800-772-1213' },
+      { name: `${stName} SPAP`, type: 'State', eligibility: 'State income guidelines', description: `${stName}'s pharmaceutical assistance program for ${c.name} area residents` },
+      { name: 'NeedyMeds', type: 'Nonprofit', eligibility: 'Varies by program', description: 'Database of patient assistance programs from drug manufacturers', url: 'https://www.needymeds.org' },
+    ],
+    discountPrograms: [
+      { name: 'GoodRx', savings: 'Up to 80% off', description: `Compare drug prices at pharmacies near ${c.name}`, url: 'https://www.goodrx.com' },
+      { name: 'Medicare Part D', savings: 'Varies by plan', description: `Compare Part D plans available in the ${c.name} area` },
+    ],
+    faqs: [
+      { question: `What prescription assistance is available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} residents can access Medicare Extra Help, the ${stName} pharmaceutical assistance program, manufacturer patient assistance programs, and discount cards like GoodRx.` },
+      { question: `How can I save on prescriptions in ${c.name}?`, answer: `Compare prices at local ${c.name} pharmacies using GoodRx, apply for Medicare Extra Help if you qualify, and check if drug manufacturers offer patient assistance programs for your medications.` },
+    ],
+    sources: [
+      { title: 'Medicare.gov Extra Help', url: 'https://www.medicare.gov/basics/costs/help/drug-costs' },
+    ],
+  });
+});
+write('prescription-assistance.json', rxEntries);
 
-// ---- ENGINE 7: Veterans Benefits (state-level) ----
-write('veterans-benefits.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Veterans Benefits in ${s.name} (2026)`,
-  introText: `<p>Explore federal VA benefits and ${s.name}-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>`,
-  aidAndAttendance: { maxBenefit: '$2,431/month', eligibility: 'Veterans needing aid of another person for daily activities', description: 'Enhanced VA pension benefit for veterans who need help with daily living activities.' },
-  vaPension: { maxBenefit: '$1,632/month', eligibility: 'Wartime veterans with limited income', description: 'Monthly benefit for low-income wartime veterans age 65+ or with permanent disability.' },
-  stateBenefits: [
-    { name: `${s.name} Veterans Property Tax Exemption`, description: `${s.name} offers property tax exemptions for qualifying veterans.`, eligibility: 'Service-connected disability', url: '#' },
-    { name: `${s.name} Veterans Education Benefits`, description: 'State education benefits for veterans and dependents.', eligibility: 'Varies by program', url: '#' },
-  ],
-  propertyTaxExemption: `${s.name} provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.`,
-  stateVeteransHome: [
-    { name: `${s.name} Veterans Home`, location: s.name, beds: 100 + Math.floor(Math.random() * 200), phone: '(555) 000-0000' },
-  ],
-  caregiverSupport: [
-    { program: 'VA Caregiver Support Program', description: 'Support, training, and respite for caregivers of veterans', url: 'https://www.caregiver.va.gov' },
-  ],
-  faqs: [
-    { question: `What VA benefits are available to senior veterans in ${s.name}?`, answer: `Senior veterans in ${s.name} may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions.` },
-    { question: `How do I apply for VA Aid & Attendance in ${s.name}?`, answer: `Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization.` },
-  ],
-  sources: [
-    { title: 'VA.gov', url: 'https://www.va.gov' },
-    { title: `${s.name} Department of Veterans Affairs`, url: '#' },
-  ],
-})));
+// ---- ENGINE 7: Veterans Benefits (state + city) ----
+const vetEntries = [];
+states.forEach(s => {
+  vetEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Veterans Benefits in ${s.name} (2026)`,
+    introText: `<p>Explore federal VA benefits and ${s.name}-specific programs for senior veterans. Learn about Aid & Attendance, VA pension, health care, and state veterans benefits.</p>`,
+    aidAndAttendance: { maxBenefit: '$2,431/month', eligibility: 'Veterans needing aid of another person for daily activities', description: 'Enhanced VA pension benefit for veterans who need help with daily living activities.' },
+    vaPension: { maxBenefit: '$1,632/month', eligibility: 'Wartime veterans with limited income', description: 'Monthly benefit for low-income wartime veterans age 65+ or with permanent disability.' },
+    stateBenefits: [
+      { name: `${s.name} Veterans Property Tax Exemption`, description: `${s.name} offers property tax exemptions for qualifying veterans.`, eligibility: 'Service-connected disability', url: '#' },
+      { name: `${s.name} Veterans Education Benefits`, description: 'State education benefits for veterans and dependents.', eligibility: 'Varies by program', url: '#' },
+    ],
+    propertyTaxExemption: `${s.name} provides property tax exemptions for disabled veterans. Exemption amounts vary based on disability rating.`,
+    stateVeteransHome: [
+      { name: `${s.name} Veterans Home`, location: s.name, beds: 100 + Math.floor(Math.random() * 200), phone: '(555) 000-0000' },
+    ],
+    caregiverSupport: [
+      { program: 'VA Caregiver Support Program', description: 'Support, training, and respite for caregivers of veterans', url: 'https://www.caregiver.va.gov' },
+    ],
+    faqs: [
+      { question: `What VA benefits are available to senior veterans in ${s.name}?`, answer: `Senior veterans in ${s.name} may qualify for VA health care, pension, Aid & Attendance, home care, and state-specific benefits including property tax exemptions.` },
+      { question: `How do I apply for VA Aid & Attendance in ${s.name}?`, answer: `Apply through the VA by submitting VA Form 21-2680. You can apply online at va.gov, by mail, or with help from a Veterans Service Organization.` },
+    ],
+    sources: [
+      { title: 'VA.gov', url: 'https://www.va.gov' },
+      { title: `${s.name} Department of Veterans Affairs`, url: '#' },
+    ],
+  });
+});
+// City-level Veterans Benefits pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  vetEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Veterans Benefits in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Find VA benefits and ${stName}-specific programs for veterans in ${c.name}, ${c.stateAbbr}. See Aid & Attendance, VA pension, local VA facilities, and veteran service organizations near you.</p>`,
+    aidAndAttendance: { maxBenefit: '$2,431/month', eligibility: 'Veterans needing aid of another person for daily activities', description: `Enhanced VA pension benefit for ${c.name} veterans who need help with daily living activities.` },
+    vaPension: { maxBenefit: '$1,632/month', eligibility: 'Wartime veterans with limited income', description: `Monthly benefit for low-income wartime veterans in ${c.name} age 65+ or with permanent disability.` },
+    stateBenefits: [
+      { name: `${stName} Veterans Property Tax Exemption`, description: `${stName} offers property tax exemptions available to qualifying ${c.name} area veterans.`, eligibility: 'Service-connected disability', url: '#' },
+    ],
+    propertyTaxExemption: `${stName} provides property tax exemptions for disabled veterans in ${c.name} and throughout the state.`,
+    stateVeteransHome: [
+      { name: `${c.name} Area Veterans Facilities`, location: `${c.name}, ${c.stateAbbr}`, beds: 50 + Math.floor(Math.random() * 150), phone: '(555) 000-0000' },
+    ],
+    caregiverSupport: [
+      { program: 'VA Caregiver Support Program', description: `Support, training, and respite for caregivers of ${c.name} area veterans`, url: 'https://www.caregiver.va.gov' },
+    ],
+    faqs: [
+      { question: `What VA facilities are near ${c.name}, ${c.stateAbbr}?`, answer: `The ${c.name} area is served by VA medical centers and outpatient clinics. Visit va.gov/find-locations to find the nearest VA facility to your ${c.name} address.` },
+      { question: `How do I find a Veterans Service Organization in ${c.name}?`, answer: `Contact the ${stName} Department of Veterans Affairs or visit va.gov to find accredited Veterans Service Organizations (VSOs) serving the ${c.name} area. VSOs can help you file claims at no cost.` },
+      { question: `Can ${c.name} veterans get help paying for home care?`, answer: `Yes, ${c.name} veterans may qualify for VA Aid & Attendance (up to $2,431/month), VA home care programs, and ${stName} veteran assistance programs that help cover in-home care costs.` },
+    ],
+    sources: [
+      { title: 'VA.gov', url: 'https://www.va.gov' },
+      { title: `${stName} Department of Veterans Affairs`, url: '#' },
+    ],
+  });
+});
+write('veterans-benefits.json', vetEntries);
 
 // ---- ENGINE 8: Comparison (topic-based) ----
 const comparisons = [
@@ -335,35 +536,73 @@ write('comparison.json', comparisons.map(c => ({
   ],
 })));
 
-// ---- ENGINE 9: Low-Income Programs (state-level) ----
-write('low-income-programs.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Low-Income Senior Programs in ${s.name} (2026)`,
-  introText: `<p>Find assistance programs for low-income seniors in ${s.name}. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>`,
-  programs: [
-    { name: 'SNAP (Food Stamps)', category: 'Food', description: 'Monthly food assistance for eligible seniors', eligibility: 'Income below 130% FPL', applicationUrl: '#', phone: '1-800-221-5689' },
-    { name: 'LIHEAP', category: 'Energy', description: 'Help with heating and cooling bills', eligibility: 'Income below 150% FPL', applicationUrl: '#' },
-    { name: 'Section 8 Housing', category: 'Housing', description: 'Rental assistance vouchers for affordable housing', eligibility: 'Income below 50% AMI', applicationUrl: '#' },
-    { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income below 135% FPL or Medicaid enrollment', applicationUrl: '#' },
-    { name: 'Weatherization Assistance', category: 'Home', description: 'Free home energy efficiency improvements', eligibility: 'Income below 200% FPL', applicationUrl: '#' },
-  ],
-  snapInfo: { incomeLimitIndividual: '$1,580/month', maxBenefit: '$291/month', applicationUrl: '#' },
-  liheapInfo: { maxBenefit: '$500–$1,000/year', applicationPeriod: 'October–March', url: '#' },
-  housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: 'Waitlists are common; apply early', url: '#' },
-  lifelineInfo: { discount: '$9.25/month off phone or internet', eligibility: 'Medicaid, SNAP, SSI, or income-based', url: 'https://www.lifelinesupport.org' },
-  propertyTaxRelief: { available: true, description: `${s.name} offers property tax relief programs for qualifying seniors.`, url: '#' },
-  transportationPrograms: [
-    { name: `${s.name} Senior Transportation`, description: 'Subsidized transportation for medical appointments and errands', url: '#' },
-  ],
-  faqs: [
-    { question: `What assistance programs are available for low-income seniors in ${s.name}?`, answer: `${s.name} offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors.` },
-    { question: `How do I apply for SNAP in ${s.name}?`, answer: `Apply online through ${s.name}'s SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency.` },
-  ],
-  sources: [
-    { title: 'Benefits.gov', url: 'https://www.benefits.gov' },
-    { title: `${s.name} Department of Social Services`, url: '#' },
-  ],
-})));
+// ---- ENGINE 9: Low-Income Programs (state + city) ----
+const lipEntries = [];
+states.forEach(s => {
+  lipEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Low-Income Senior Programs in ${s.name} (2026)`,
+    introText: `<p>Find assistance programs for low-income seniors in ${s.name}. See SNAP, LIHEAP, housing assistance, and other benefits available in 2026.</p>`,
+    programs: [
+      { name: 'SNAP (Food Stamps)', category: 'Food', description: 'Monthly food assistance for eligible seniors', eligibility: 'Income below 130% FPL', applicationUrl: '#', phone: '1-800-221-5689' },
+      { name: 'LIHEAP', category: 'Energy', description: 'Help with heating and cooling bills', eligibility: 'Income below 150% FPL', applicationUrl: '#' },
+      { name: 'Section 8 Housing', category: 'Housing', description: 'Rental assistance vouchers for affordable housing', eligibility: 'Income below 50% AMI', applicationUrl: '#' },
+      { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income below 135% FPL or Medicaid enrollment', applicationUrl: '#' },
+      { name: 'Weatherization Assistance', category: 'Home', description: 'Free home energy efficiency improvements', eligibility: 'Income below 200% FPL', applicationUrl: '#' },
+    ],
+    snapInfo: { incomeLimitIndividual: '$1,580/month', maxBenefit: '$291/month', applicationUrl: '#' },
+    liheapInfo: { maxBenefit: '$500–$1,000/year', applicationPeriod: 'October–March', url: '#' },
+    housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: 'Waitlists are common; apply early', url: '#' },
+    lifelineInfo: { discount: '$9.25/month off phone or internet', eligibility: 'Medicaid, SNAP, SSI, or income-based', url: 'https://www.lifelinesupport.org' },
+    propertyTaxRelief: { available: true, description: `${s.name} offers property tax relief programs for qualifying seniors.`, url: '#' },
+    transportationPrograms: [
+      { name: `${s.name} Senior Transportation`, description: 'Subsidized transportation for medical appointments and errands', url: '#' },
+    ],
+    faqs: [
+      { question: `What assistance programs are available for low-income seniors in ${s.name}?`, answer: `${s.name} offers SNAP food assistance, LIHEAP energy assistance, housing vouchers, Lifeline phone/internet discounts, and other programs for qualifying seniors.` },
+      { question: `How do I apply for SNAP in ${s.name}?`, answer: `Apply online through ${s.name}'s SNAP portal, by phone, or in person at your local office. You'll need proof of income, identity, and residency.` },
+    ],
+    sources: [
+      { title: 'Benefits.gov', url: 'https://www.benefits.gov' },
+      { title: `${s.name} Department of Social Services`, url: '#' },
+    ],
+  });
+});
+// City-level Low-Income Programs pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  lipEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Low-Income Senior Programs in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Find 2026 assistance programs for low-income seniors in ${c.name}, ${c.stateAbbr}. Access local SNAP offices, energy assistance, housing programs, and community resources in the ${c.name} area.</p>`,
+    programs: [
+      { name: 'SNAP (Food Stamps)', category: 'Food', description: `Monthly food assistance for eligible ${c.name} seniors`, eligibility: 'Income below 130% FPL', applicationUrl: '#', phone: '1-800-221-5689' },
+      { name: 'LIHEAP', category: 'Energy', description: `Help with heating and cooling bills for ${c.name} residents`, eligibility: 'Income below 150% FPL', applicationUrl: '#' },
+      { name: 'Section 8 Housing', category: 'Housing', description: `Rental assistance vouchers for affordable housing in ${c.name}`, eligibility: 'Income below 50% AMI', applicationUrl: '#' },
+      { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income below 135% FPL or Medicaid enrollment', applicationUrl: '#' },
+    ],
+    snapInfo: { incomeLimitIndividual: '$1,580/month', maxBenefit: '$291/month', applicationUrl: '#' },
+    liheapInfo: { maxBenefit: '$500–$1,000/year', applicationPeriod: 'October–March', url: '#' },
+    housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: `Waitlists in the ${c.name} area are common; apply early`, url: '#' },
+    lifelineInfo: { discount: '$9.25/month off phone or internet', eligibility: 'Medicaid, SNAP, SSI, or income-based', url: 'https://www.lifelinesupport.org' },
+    propertyTaxRelief: { available: true, description: `${stName} offers property tax relief that ${c.name} homeowners may qualify for.`, url: '#' },
+    transportationPrograms: [
+      { name: `${c.name} Senior Transportation`, description: `Subsidized transportation for ${c.name} area seniors for medical appointments and errands`, url: '#' },
+    ],
+    faqs: [
+      { question: `What low-income programs are available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} seniors can access SNAP food assistance, LIHEAP energy assistance, Section 8 housing vouchers, Lifeline phone discounts, senior transportation, and ${stName} property tax relief programs.` },
+      { question: `Where can I apply for SNAP in ${c.name}?`, answer: `Apply online through ${stName}'s SNAP portal, by phone, or in person at the ${c.name} Department of Social Services office.` },
+      { question: `Is there senior housing assistance in ${c.name}?`, answer: `Yes, ${c.name} has Section 8 vouchers, public housing, and Section 202 senior housing. Waitlists are common in the ${c.name} area, so apply as early as possible.` },
+    ],
+    sources: [
+      { title: 'Benefits.gov', url: 'https://www.benefits.gov' },
+      { title: `${stName} Department of Social Services`, url: '#' },
+    ],
+  });
+});
+write('low-income-programs.json', lipEntries);
 
 // ---- ENGINE 10: Disability Benefits (condition-based) ----
 const conditions = [
@@ -412,10 +651,11 @@ write('disability-benefits.json', conditions.map(c => ({
   ],
 })));
 
-// ---- ENGINE 11: Long-Term Care (state-level) ----
-write('long-term-care.json', states.map(s => {
+// ---- ENGINE 11: Long-Term Care (state + city) ----
+const ltcEntries = [];
+states.forEach(s => {
   const prem55 = 1200 + Math.floor(Math.random() * 1000);
-  return {
+  ltcEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Long-Term Care Insurance in ${s.name} (2026)`,
     introText: `<p>Compare long-term care insurance costs in ${s.name}. See 2026 premiums by age, coverage options, and Medicaid planning strategies.</p>`,
@@ -441,32 +681,103 @@ write('long-term-care.json', states.map(s => {
       { title: 'AALTCI', url: 'https://www.aaltci.org' },
       { title: 'Genworth Cost of Care', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' },
     ],
-  };
-}));
+  });
+});
+// City-level Long-Term Care pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  const prem55 = 1200 + Math.floor(Math.random() * 1200);
+  const nhCost = 8000 + Math.floor(Math.random() * 5000);
+  const alCost = 4000 + Math.floor(Math.random() * 3000);
+  const hcCost = 4500 + Math.floor(Math.random() * 2500);
+  ltcEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Long-Term Care Insurance in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Compare 2026 long-term care insurance costs in ${c.name}, ${c.stateAbbr}. See local care costs, premium estimates, and planning strategies for the ${c.name} area.</p>`,
+    avgAnnualPremium: { age55: `$${prem55}`, age60: `$${prem55 + 800}`, age65: `$${prem55 + 2000}`, couple65: `$${prem55 + 3000}` },
+    avgLtcCosts: { nursingHome: `$${nhCost}/mo`, assistedLiving: `$${alCost}/mo`, homeCare: `$${hcCost}/mo` },
+    coverageOptions: [
+      { type: 'Traditional LTC Insurance', description: 'Standalone policy covering nursing home, assisted living, and home care', avgPremium: `$${prem55 + 1500}/year`, pros: ['Lower premium', 'Comprehensive coverage'], cons: ['Premiums may increase', 'Use it or lose it'] },
+      { type: 'Hybrid Life/LTC Policy', description: 'Life insurance policy with long-term care benefits', avgPremium: 'Lump sum or annual premium', pros: ['Fixed premiums', 'Death benefit if LTC unused'], cons: ['Higher upfront cost', 'Less LTC flexibility'] },
+    ],
+    partnershipProgram: { available: true, description: `${stName} participates in the Long-Term Care Partnership Program, available to ${c.name} residents.` },
+    medicaidSpendDown: { assetLimit: '$2,000 individual', lookbackPeriod: '5 years', description: `${stName}'s Medicaid spend-down process applies to ${c.name} residents seeking long-term care coverage through Medicaid.` },
+    planningSteps: [
+      { step: 1, title: 'Assess your risk', description: 'Consider family history, health status, and likelihood of needing long-term care.' },
+      { step: 2, title: 'Evaluate local costs', description: `Research care costs in the ${c.name} area — nursing homes average $${nhCost}/mo and assisted living averages $${alCost}/mo.` },
+      { step: 3, title: 'Compare policies', description: 'Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection.' },
+      { step: 4, title: 'Consider alternatives', description: 'Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives.' },
+    ],
+    faqs: [
+      { question: `How much does long-term care cost in ${c.name}, ${c.stateAbbr}?`, answer: `In the ${c.name} area, nursing home care averages $${nhCost}/month, assisted living averages $${alCost}/month, and home care averages $${hcCost}/month.` },
+      { question: `What is the best age to buy long-term care insurance in ${c.name}?`, answer: `The ideal age to buy LTC insurance is typically 55-65. A 55-year-old in ${c.name} might pay around $${prem55}/year, while waiting until 65 could cost $${prem55 + 2000}/year.` },
+    ],
+    sources: [
+      { title: 'AALTCI', url: 'https://www.aaltci.org' },
+      { title: 'Genworth Cost of Care', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' },
+    ],
+  });
+});
+write('long-term-care.json', ltcEntries);
 
-// ---- ENGINE 12: Senior Legal (state-level) ----
-write('senior-legal.json', states.map(s => ({
-  stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
-  h1: `Senior Legal Resources in ${s.name} (2026)`,
-  introText: `<p>Find elder law resources in ${s.name}. Learn about power of attorney, guardianship, estate planning, and senior financial protections.</p>`,
-  poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${s.name} recognizes several types of power of attorney. A durable POA remains effective if the principal becomes incapacitated.`, formUrl: '#' },
-  guardianship: { process: 'Court petition required', description: `In ${s.name}, guardianship is established through a court proceeding when an individual can no longer make decisions for themselves.`, courtUrl: '#' },
-  estatePlanning: { description: `Estate planning in ${s.name} involves creating wills, trusts, and advance directives to protect your assets and wishes.`, requirements: ['Valid will must be signed and witnessed', 'Trusts require proper funding', 'Advance directives should name healthcare agents'] },
-  elderAbuse: { reportingHotline: '1-800-677-1116', reportingUrl: 'https://eldercare.acl.gov', laws: `${s.name} has laws protecting seniors from physical, emotional, and financial abuse.` },
-  reverseMortgage: { description: 'A Home Equity Conversion Mortgage (HECM) allows homeowners 62+ to borrow against home equity.', requirements: ['Age 62+', 'Primary residence', 'Sufficient equity', 'HUD counseling required'], warnings: ['Reduces inheritance', 'Fees can be high', 'Must maintain home and pay taxes/insurance'] },
-  legalAidOrgs: [
-    { name: `${s.name} Legal Aid`, phone: '(555) 000-0000', services: 'Free legal help for low-income seniors' },
-    { name: 'Eldercare Locator', phone: '1-800-677-1116', url: 'https://eldercare.acl.gov', services: 'Connects seniors with local resources' },
-  ],
-  faqs: [
-    { question: `How do I set up power of attorney in ${s.name}?`, answer: `In ${s.name}, you can create a power of attorney by signing a legal document before a notary. It's recommended to work with an elder law attorney to ensure proper execution.` },
-    { question: `How do I report elder abuse in ${s.name}?`, answer: `Call the Eldercare Locator at 1-800-677-1116 or contact ${s.name}'s Adult Protective Services to report suspected elder abuse.` },
-  ],
-  sources: [
-    { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
-    { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org' },
-  ],
-})));
+// ---- ENGINE 12: Senior Legal (state + city) ----
+const slEntries = [];
+states.forEach(s => {
+  slEntries.push({
+    stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
+    h1: `Senior Legal Resources in ${s.name} (2026)`,
+    introText: `<p>Find elder law resources in ${s.name}. Learn about power of attorney, guardianship, estate planning, and senior financial protections.</p>`,
+    poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${s.name} recognizes several types of power of attorney. A durable POA remains effective if the principal becomes incapacitated.`, formUrl: '#' },
+    guardianship: { process: 'Court petition required', description: `In ${s.name}, guardianship is established through a court proceeding when an individual can no longer make decisions for themselves.`, courtUrl: '#' },
+    estatePlanning: { description: `Estate planning in ${s.name} involves creating wills, trusts, and advance directives to protect your assets and wishes.`, requirements: ['Valid will must be signed and witnessed', 'Trusts require proper funding', 'Advance directives should name healthcare agents'] },
+    elderAbuse: { reportingHotline: '1-800-677-1116', reportingUrl: 'https://eldercare.acl.gov', laws: `${s.name} has laws protecting seniors from physical, emotional, and financial abuse.` },
+    reverseMortgage: { description: 'A Home Equity Conversion Mortgage (HECM) allows homeowners 62+ to borrow against home equity.', requirements: ['Age 62+', 'Primary residence', 'Sufficient equity', 'HUD counseling required'], warnings: ['Reduces inheritance', 'Fees can be high', 'Must maintain home and pay taxes/insurance'] },
+    legalAidOrgs: [
+      { name: `${s.name} Legal Aid`, phone: '(555) 000-0000', services: 'Free legal help for low-income seniors' },
+      { name: 'Eldercare Locator', phone: '1-800-677-1116', url: 'https://eldercare.acl.gov', services: 'Connects seniors with local resources' },
+    ],
+    faqs: [
+      { question: `How do I set up power of attorney in ${s.name}?`, answer: `In ${s.name}, you can create a power of attorney by signing a legal document before a notary. It's recommended to work with an elder law attorney to ensure proper execution.` },
+      { question: `How do I report elder abuse in ${s.name}?`, answer: `Call the Eldercare Locator at 1-800-677-1116 or contact ${s.name}'s Adult Protective Services to report suspected elder abuse.` },
+    ],
+    sources: [
+      { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
+      { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org' },
+    ],
+  });
+});
+// City-level Senior Legal pages
+cities.forEach(c => {
+  const st = states.find(s => s.slug === c.stateSlug);
+  const stName = st ? st.name : '';
+  slEntries.push({
+    stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
+    citySlug: c.slug, city: c.name,
+    h1: `Senior Legal Resources in ${c.name}, ${c.stateAbbr} (2026)`,
+    introText: `<p>Find elder law attorneys, legal aid, and senior protections in ${c.name}, ${c.stateAbbr}. Get guidance on power of attorney, estate planning, and elder abuse reporting in the ${c.name} area.</p>`,
+    poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${stName} recognizes several types of power of attorney. ${c.name} residents can establish a durable POA that remains effective if the principal becomes incapacitated.`, formUrl: '#' },
+    guardianship: { process: 'Court petition required', description: `Guardianship in ${c.name} is established through ${stName}'s court system when an individual can no longer make decisions for themselves.`, courtUrl: '#' },
+    estatePlanning: { description: `Estate planning for ${c.name} residents follows ${stName} law and involves creating wills, trusts, and advance directives.`, requirements: ['Valid will must be signed and witnessed per ' + stName + ' law', 'Trusts require proper funding', 'Advance directives should name healthcare agents'] },
+    elderAbuse: { reportingHotline: '1-800-677-1116', reportingUrl: 'https://eldercare.acl.gov', laws: `${stName} has laws protecting ${c.name} seniors from physical, emotional, and financial abuse.` },
+    reverseMortgage: { description: `A Home Equity Conversion Mortgage (HECM) allows ${c.name} homeowners 62+ to borrow against home equity.`, requirements: ['Age 62+', 'Primary residence', 'Sufficient equity', 'HUD counseling required'], warnings: ['Reduces inheritance', 'Fees can be high', 'Must maintain home and pay taxes/insurance'] },
+    legalAidOrgs: [
+      { name: `${c.name} Legal Aid Society`, phone: '(555) 000-0000', services: `Free legal help for low-income seniors in the ${c.name} area` },
+      { name: 'Eldercare Locator', phone: '1-800-677-1116', url: 'https://eldercare.acl.gov', services: `Connects ${c.name} seniors with local legal resources` },
+    ],
+    faqs: [
+      { question: `How do I find an elder law attorney in ${c.name}?`, answer: `Search the National Academy of Elder Law Attorneys directory for attorneys in the ${c.name}, ${c.stateAbbr} area. You can also contact ${c.name} Legal Aid for free consultations if you qualify.` },
+      { question: `Where do I report elder abuse in ${c.name}?`, answer: `Call the Eldercare Locator at 1-800-677-1116 or contact ${stName}'s Adult Protective Services. For emergencies in ${c.name}, call 911.` },
+      { question: `How much does an elder law attorney cost in ${c.name}?`, answer: `Elder law attorneys in the ${c.name} area typically charge $200-$500/hour. Many offer free initial consultations. Low-income seniors may qualify for free legal aid through the ${c.name} Legal Aid Society.` },
+    ],
+    sources: [
+      { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
+      { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org' },
+    ],
+  });
+});
+write('senior-legal.json', slEntries);
 
 // ---- ENGINE 13: Provider Directory (state + city, multiple types) ----
 const providerTypes = [

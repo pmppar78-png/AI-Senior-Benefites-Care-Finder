@@ -9,7 +9,7 @@
     <section class="engine-hero">
       <h1>{{h1}}</h1>
       <div class="hero-meta">
-        <span>{{state}} ({{stateAbbr}})</span>
+        {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
         <span>Updated {{lastUpdated}}</span>
         <span>{{currentYear}} Costs &amp; Planning</span>
       </div>
@@ -24,7 +24,7 @@
       <h2>In This Guide</h2>
       <ol>
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#ltc-costs">Long-Term Care Costs in {{state}}</a></li>
+        <li><a href="#ltc-costs">Long-Term Care Costs in {{locationName}}</a></li>
         <li><a href="#insurance-premiums">Insurance Premiums by Age</a></li>
         <li><a href="#coverage-options">Coverage Options</a></li>
         <li><a href="#hybrid-options">Hybrid &amp; Alternative Options</a></li>
@@ -40,14 +40,14 @@
 
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
-      <h2>Long-Term Care Insurance &amp; Planning in {{state}}</h2>
-      <p>Long-term care (LTC) is one of the biggest financial risks facing seniors. In {{state}}, the cost of nursing home care, assisted living, and home health services can quickly deplete retirement savings. Understanding your insurance options and planning strategies is essential.</p>
-      <p>This guide covers LTC insurance costs in {{state}}, alternative coverage options, Medicaid planning strategies, and step-by-step planning guidance.</p>
+      <h2>Long-Term Care Insurance &amp; Planning in {{locationName}}</h2>
+      <p>Long-term care (LTC) is one of the biggest financial risks facing seniors. In {{locationName}}, the cost of nursing home care, assisted living, and home health services can quickly deplete retirement savings. Understanding your insurance options and planning strategies is essential.</p>
+      <p>This guide covers LTC insurance costs in {{locationName}}, alternative coverage options, Medicaid planning strategies, and step-by-step planning guidance.</p>
     </section>
 
     <!-- Section: LTC Costs -->
     <section class="content-section" id="ltc-costs">
-      <h2>Long-Term Care Costs in {{state}}</h2>
+      <h2>Long-Term Care Costs in {{locationName}}</h2>
       {{#if avgLtcCosts}}
       <div class="stat-grid">
         <div class="stat-card">
@@ -69,7 +69,7 @@
 
     <!-- Section: Insurance Premiums -->
     <section class="content-section" id="insurance-premiums">
-      <h2>LTC Insurance Premiums in {{state}}</h2>
+      <h2>LTC Insurance Premiums in {{locationName}}</h2>
       {{#if avgAnnualPremium}}
       <div class="data-table-wrap">
         <table class="data-table">
@@ -166,7 +166,7 @@
 
     <!-- Section: Partnership Program -->
     <section class="content-section" id="partnership-program">
-      <h2>{{state}} Long-Term Care Partnership Program</h2>
+      <h2>{{locationName}} Long-Term Care Partnership Program</h2>
       {{#if partnershipProgram}}
       {{#if partnershipProgram.available}}
       <div class="info-box highlight">
@@ -174,7 +174,7 @@
         <p>{{{partnershipProgram.description}}}</p>
       </div>
       {{else}}
-      <p>{{state}} does not currently participate in the Long-Term Care Partnership Program.</p>
+      <p>{{locationName}} does not currently participate in the Long-Term Care Partnership Program.</p>
       {{/if}}
       {{else}}
       <p>Most states participate in the Long-Term Care Partnership Program, which allows people with qualifying LTC insurance policies to protect assets from Medicaid spend-down requirements. Dollar-for-dollar asset protection is the most common model — for every dollar your LTC policy pays, you can keep an extra dollar of assets and still qualify for Medicaid.</p>
@@ -213,7 +213,7 @@
         <li><strong>Spousal protections:</strong> The at-home spouse can keep certain assets and income</li>
         <li><strong>Exempt assets:</strong> Primary home (with equity limits), one vehicle, personal belongings</li>
         <li><strong>Irrevocable trusts:</strong> Assets placed in irrevocable trusts before the look-back period may be protected</li>
-        <li><strong>Elder law attorney:</strong> Consult a Medicaid planning attorney for strategies specific to {{state}}'s rules</li>
+        <li><strong>Elder law attorney:</strong> Consult a Medicaid planning attorney for strategies specific to {{locationName}}'s rules</li>
       </ul>
       {{/if}}
     </section>
@@ -242,7 +242,7 @@
         </li>
         <li>
           <div class="step-content">
-            <h4>Understand the costs in {{state}}</h4>
+            <h4>Understand the costs in {{locationName}}</h4>
             <p>Research current nursing home, assisted living, and home care costs in your area. These costs typically increase 3–5% annually.</p>
           </div>
         </li>
@@ -255,7 +255,7 @@
         <li>
           <div class="step-content">
             <h4>Consult an elder law attorney</h4>
-            <p>Get professional guidance on Medicaid planning, asset protection strategies, and estate planning specific to {{state}}'s laws.</p>
+            <p>Get professional guidance on Medicaid planning, asset protection strategies, and estate planning specific to {{locationName}}'s laws.</p>
           </div>
         </li>
         <li>
@@ -284,42 +284,13 @@
 
     {{> faq-section}}
 
-    <!-- Section: Related Cost Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Compare Senior Care Costs in {{state}}</h2>
-      <p>Understanding the actual costs of care in {{state}} helps you plan the right level of insurance coverage:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/assisted-living/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Assisted Living Costs in {{state}}</h3>
-          <p>See {{currentYear}} monthly prices for assisted living. Know exactly what your insurance needs to cover.</p>
-        </a>
-        <a href="/home-care/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care Costs in {{state}}</h3>
-          <p>Compare {{currentYear}} hourly rates for in-home care. Plan your coverage based on real local costs.</p>
-        </a>
-        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in {{state}}</h3>
-          <p>Check income limits and learn about Medicaid as a safety net if insurance falls short.</p>
-        </a>
-        <a href="/senior-legal/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Senior Legal Resources in {{state}}</h3>
-          <p>Find elder law attorneys who can help with Medicaid planning and asset protection strategies.</p>
-        </a>
-        <a href="/compare/traditional-ltc-vs-hybrid/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Traditional LTC vs. Hybrid Insurance</h3>
-          <p>Compare traditional long-term care insurance with hybrid life/LTC policies.</p>
-        </a>
-        <a href="/compare/assisted-living-vs-nursing-home/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Assisted Living vs. Nursing Home Costs</h3>
-          <p>Understand the cost difference between care levels to right-size your coverage.</p>
-        </a>
-      </div>
-    </section>
+    {{> cross-engine-links}}
 
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 
