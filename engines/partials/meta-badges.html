@@ -3,7 +3,11 @@
     {{#if expertReviewed}}
     <span class="meta-badge verified">Expert Reviewed</span>
     {{/if}}
+    {{#if locationName}}
+    <span class="meta-badge">{{locationName}}</span>
+    {{else}}
     {{#if state}}
     <span class="meta-badge">{{state}}</span>
+    {{/if}}
     {{/if}}
   </div>

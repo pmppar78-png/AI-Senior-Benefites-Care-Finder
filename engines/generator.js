@@ -168,6 +168,7 @@ class PageGenerator {
     this.templates = {};
     this.states = [];
     this.cities = [];
+    this.generatedUrls = [];
     this.stats = { engines: 0, pages: 0, errors: 0 };
   }
 
@@ -208,6 +209,59 @@ class PageGenerator {
     console.log(`  Engines:  ${this.stats.engines}`);
     console.log(`  Pages:    ${this.stats.pages}`);
     console.log(`  Errors:   ${this.stats.errors}\n`);
+
+    // Generate sitemap
+    if (!this.dryRun) {
+      this._generateSitemap();
+    }
+  }
+
+  _generateSitemap() {
+    const today = new Date().toISOString().split('T')[0];
+    const baseUrl = 'https://seniorbenefitscarefinder.com';
+
+    // Static pages
+    const staticPages = [
+      { url: '/', priority: '1.0', changefreq: 'weekly' },
+      { url: '/about/', priority: '0.6', changefreq: 'monthly' },
+      { url: '/contact/', priority: '0.5', changefreq: 'monthly' },
+      { url: '/editorial-policy/', priority: '0.5', changefreq: 'monthly' },
+      { url: '/how-we-research/', priority: '0.5', changefreq: 'monthly' },
+      { url: '/fact-checking/', priority: '0.5', changefreq: 'monthly' },
+      { url: '/author/paul-paradis/', priority: '0.5', changefreq: 'monthly' },
+      { url: '/privacy-policy/', priority: '0.3', changefreq: 'monthly' },
+      { url: '/terms-of-use/', priority: '0.3', changefreq: 'monthly' },
+      { url: '/transparency/', priority: '0.4', changefreq: 'monthly' },
+    ];
+
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+    for (const page of staticPages) {
+      xml += `  <url>\n`;
+      xml += `    <loc>${baseUrl}${page.url}</loc>\n`;
+      xml += `    <lastmod>${today}</lastmod>\n`;
+      xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
+      xml += `    <priority>${page.priority}</priority>\n`;
+      xml += `  </url>\n`;
+    }
+
+    for (const urlPath of this.generatedUrls) {
+      const isHub = urlPath.split('/').filter(Boolean).length <= 2;
+      const priority = isHub ? '0.9' : '0.7';
+      xml += `  <url>\n`;
+      xml += `    <loc>${baseUrl}${urlPath}/</loc>\n`;
+      xml += `    <lastmod>${today}</lastmod>\n`;
+      xml += `    <changefreq>weekly</changefreq>\n`;
+      xml += `    <priority>${priority}</priority>\n`;
+      xml += `  </url>\n`;
+    }
+
+    xml += '</urlset>\n';
+
+    const sitemapPath = path.join(OUTPUT_DIR, 'sitemap.xml');
+    fs.writeFileSync(sitemapPath, xml, 'utf8');
+    console.log(`  Sitemap: ${this.generatedUrls.length + staticPages.length} URLs written to sitemap.xml`);
   }
 
   _loadTemplates() {
@@ -310,6 +364,7 @@ class PageGenerator {
     }
 
     this.stats.pages++;
+    this.generatedUrls.push(urlPath);
   }
 
   _buildContext(eng, entry) {
@@ -349,6 +404,30 @@ class PageGenerator {
       canonicalPattern = eng.stateUrlPattern;
     }
 
+    // Build location-aware display name
+    const locationName = resolvedCitySlug
+      ? `${resolvedCity}, ${resolvedStateAbbr}`
+      : resolvedState;
+
+    // Cities in the same state for internal linking
+    const stateCities = resolvedStateSlug
+      ? this.cities.filter(c => c.stateSlug === resolvedStateSlug)
+      : [];
+
+    // Build cross-engine links for this location
+    const config = require('./config');
+    const crossEngineLinks = config.engines
+      .filter(e => e.id !== eng.id && e.scope === 'state+city' && e.cityUrlPattern)
+      .map(e => {
+        const linkUrl = resolvedCitySlug && e.cityUrlPattern
+          ? this._buildUrl(e.cityUrlPattern, seoData)
+          : resolvedStateSlug && e.urlPattern
+            ? this._buildUrl(e.urlPattern, seoData)
+            : null;
+        return linkUrl ? { name: e.categoryLabel || e.name, url: `${linkUrl}/` } : null;
+      })
+      .filter(Boolean);
+
     return {
       // Engine meta
       engineId: eng.id,
@@ -369,6 +448,9 @@ class PageGenerator {
       county: entry.county || '',
       countySlug: entry.countySlug || '',
 
+      // Location-aware display name (city pages: "City, ST", state pages: "State")
+      locationName,
+
       // Time
       currentYear,
       lastUpdated,
@@ -387,6 +469,7 @@ class PageGenerator {
       stateSlug: resolvedStateSlug,
       city: resolvedCity,
       citySlug: resolvedCitySlug,
+      locationName,
 
       // State URL base for correct state-index linking
       stateUrlBase: eng.urlPattern ? eng.urlPattern.replace(/\/\[\w+\]$/g, '').replace(/\/\[\w+\]/g, '') : `/${eng.id}`,
@@ -401,6 +484,12 @@ class PageGenerator {
       siblingStates: eng.scope === 'state' || eng.scope === 'state+city'
         ? this.states.filter(s => s.slug !== (entry.stateSlug || '')).slice(0, 10)
         : [],
+
+      // City links for internal navigation
+      stateCities,
+
+      // Cross-engine links for this location
+      crossEngineLinks,
     };
   }
 

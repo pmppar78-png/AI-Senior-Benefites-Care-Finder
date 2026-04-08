@@ -131,7 +131,7 @@
     "headline": "Senior Legal Resources in Washington (2026) — Elder Law, Estate Planning &amp; Protections",
     "description": "Find 2026 elder law resources in Washington. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.",
     "url": "https://seniorbenefitscarefinder.com/senior-legal/washington/",
-    "dateModified": "March 26, 2026",
+    "dateModified": "April 8, 2026",
     "datePublished": "2024-12-23",
     "author": {
       "@type": "Person",
@@ -192,7 +192,7 @@
       <h1>Senior Legal Resources in Washington (2026)</h1>
       <div class="hero-meta">
         <span>Washington (WA)</span>
-        <span>Updated March 26, 2026</span>
+        <span>Updated April 8, 2026</span>
         <span>2026 Laws &amp; Resources</span>
       </div>
       <div class="intro-text">
@@ -201,11 +201,12 @@
     </section>
 
       <div class="meta-badges">
-    <span class="meta-badge">Updated: March 26, 2026</span>
+    <span class="meta-badge">Updated: April 8, 2026</span>
     
     
     <span class="meta-badge">Washington</span>
     
+    {{/if}}
   </div>
 
 
@@ -391,7 +392,7 @@
       <p>Seniors are disproportionately targeted by financial scammers. Common schemes include Medicare and Social Security impersonation calls, grandparent scams, romance scams, investment fraud, and identity theft. Never give personal or financial information to unsolicited callers, verify identities independently, and consult trusted family members or advisors before making large financial decisions.</p>
     </section>
 
-      
+      {{#if faqs}}
   <section class="content-section" id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -412,7 +413,68 @@
       
     </div>
   </section>
-  
+  {{/if}}
+
+
+      {{#if crossEngineLinks}}
+  <section class="content-section" id="related-guides">
+    <h2>Related Benefits &amp; Cost Guides for Washington</h2>
+    <p>Explore related programs and care costs in Washington:</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      
+      <a href="/medicare/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicare in Washington</h3>
+        <p>See 2026 Medicare information for Washington.</p>
+      </a>
+      
+      <a href="/medicaid/eligibility/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicaid in Washington</h3>
+        <p>See 2026 Medicaid information for Washington.</p>
+      </a>
+      
+      <a href="/assisted-living/cost/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Assisted Living in Washington</h3>
+        <p>See 2026 Assisted Living information for Washington.</p>
+      </a>
+      
+      <a href="/social-security/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Social Security in Washington</h3>
+        <p>See 2026 Social Security information for Washington.</p>
+      </a>
+      
+      <a href="/home-care/cost/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Home Care in Washington</h3>
+        <p>See 2026 Home Care information for Washington.</p>
+      </a>
+      
+      <a href="/prescription-assistance/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Prescription Assistance in Washington</h3>
+        <p>See 2026 Prescription Assistance information for Washington.</p>
+      </a>
+      
+      <a href="/veterans-benefits/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Veterans Benefits in Washington</h3>
+        <p>See 2026 Veterans Benefits information for Washington.</p>
+      </a>
+      
+      <a href="/low-income-programs/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Low-Income Programs in Washington</h3>
+        <p>See 2026 Low-Income Programs information for Washington.</p>
+      </a>
+      
+      <a href="/long-term-care/washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Long-Term Care in Washington</h3>
+        <p>See 2026 Long-Term Care information for Washington.</p>
+      </a>
+      
+      <a href="/providers//washington/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Find Providers in Washington</h3>
+        <p>See 2026 Find Providers information for Washington.</p>
+      </a>
+      
+    </div>
+  </section>
+  {{/if}}
 
 
       <section class="affiliate-reco" id="page-affiliate-reco">
@@ -431,6 +493,7 @@
   </section>
 
 
+      {{#if sources}}
   <section class="sources-section">
     <h2>Sources &amp; References</h2>
     <ol class="sources-list">
@@ -441,8 +504,33 @@
       
     </ol>
   </section>
+  {{/if}}
 
 
+      {{#if stateCities}}
+  <section class="related-section" id="city-guides">
+    {{#if citySlug}}
+    <h2>Other Cities in Washington</h2>
+    
+    <h2>City Guides in Washington</h2>
+    {{/if}}
+    <div class="state-grid">
+      
+      <a class="state-link" href="/senior-legal/washington/seattle/">Seattle, WA</a>
+      
+      <a class="state-link" href="/senior-legal/washington/spokane/">Spokane, WA</a>
+      
+      <a class="state-link" href="/senior-legal/washington/tacoma/">Tacoma, WA</a>
+      
+      <a class="state-link" href="/senior-legal/washington/vancouver/">Vancouver, WA</a>
+      
+      <a class="state-link" href="/senior-legal/washington/bellevue/">Bellevue, WA</a>
+      
+    </div>
+  </section>
+  {{/if}}
+
+      {{#if siblingStates}}
   <section class="related-section" id="other-states">
     <h2>Explore Other States</h2>
     <div class="state-grid">
@@ -469,6 +557,7 @@
       
     </div>
   </section>
+  {{/if}}
 
   </main>
 

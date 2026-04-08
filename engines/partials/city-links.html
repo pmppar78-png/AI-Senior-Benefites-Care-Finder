@@ -1,0 +1,14 @@
+  {{#if stateCities}}
+  <section class="related-section" id="city-guides">
+    {{#if citySlug}}
+    <h2>Other Cities in {{state}}</h2>
+    {{else}}
+    <h2>City Guides in {{state}}</h2>
+    {{/if}}
+    <div class="state-grid">
+      {{#each stateCities}}
+      <a class="state-link" href="{{_parent.stateUrlBase}}/{{_parent.stateSlug}}/{{slug}}/">{{name}}, {{stateAbbr}}</a>
+      {{/each}}
+    </div>
+  </section>
+  {{/if}}

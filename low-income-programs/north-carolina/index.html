@@ -131,7 +131,7 @@
     "headline": "Low-Income Senior Programs in North Carolina (2026) — Free Benefits &amp; Assistance",
     "description": "Find 2026 low-income assistance for seniors in North Carolina. See SNAP, LIHEAP, housing, phone discounts, and transportation programs you may qualify for.",
     "url": "https://seniorbenefitscarefinder.com/low-income-programs/north-carolina/",
-    "dateModified": "March 26, 2026",
+    "dateModified": "April 8, 2026",
     "datePublished": "2025-10-26",
     "author": {
       "@type": "Person",
@@ -192,7 +192,7 @@
       <h1>Low-Income Senior Programs in North Carolina (2026)</h1>
       <div class="hero-meta">
         <span>North Carolina (NC)</span>
-        <span>Updated March 26, 2026</span>
+        <span>Updated April 8, 2026</span>
         <span>2026 Programs &amp; Assistance</span>
       </div>
       <div class="intro-text">
@@ -201,11 +201,12 @@
     </section>
 
       <div class="meta-badges">
-    <span class="meta-badge">Updated: March 26, 2026</span>
+    <span class="meta-badge">Updated: April 8, 2026</span>
     
     
     <span class="meta-badge">North Carolina</span>
     
+    {{/if}}
   </div>
 
 
@@ -350,7 +351,7 @@
     </section>
 
     <!-- Section: All Programs -->
-    
+    {{#if programs}}
     <section class="content-section" id="all-programs">
       <h2>All Available Programs in North Carolina</h2>
       <div class="data-table-wrap">
@@ -398,7 +399,7 @@
         </table>
       </div>
     </section>
-    
+    {{/if}}
 
     <!-- Section: Applying for Multiple Programs -->
     <section class="content-section" id="application-tips">
@@ -414,6 +415,7 @@
       <p>Maintain copies of every application, supporting document, and correspondence related to your benefit applications. Note confirmation numbers, submission dates, and contact names. If a claim is denied, having thorough records makes the appeals process much smoother.</p>
     </section>
 
+      {{#if faqs}}
   <section class="content-section" id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -434,31 +436,69 @@
       
     </div>
   </section>
+  {{/if}}
 
 
-    <!-- Section: Related Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Related Benefits &amp; Cost Guides for North Carolina</h2>
-      <p>Low-income seniors often qualify for multiple programs. Explore more options:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/medicaid/eligibility/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in North Carolina</h3>
-          <p>Check 2026 income limits. Medicaid covers healthcare, prescriptions, and long-term care.</p>
-        </a>
-        <a href="/prescription-assistance/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Prescription Assistance in North Carolina</h3>
-          <p>Save on drug costs with Medicare Extra Help and state pharmaceutical programs.</p>
-        </a>
-        <a href="/social-security/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Social Security Benefits in North Carolina</h3>
-          <p>Learn about SSI benefits and how to maximize your monthly payment.</p>
-        </a>
-        <a href="/home-care/cost/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care Costs in North Carolina</h3>
-          <p>See home care rates and learn how Medicaid can help cover in-home care.</p>
-        </a>
-      </div>
-    </section>
+      {{#if crossEngineLinks}}
+  <section class="content-section" id="related-guides">
+    <h2>Related Benefits &amp; Cost Guides for North Carolina</h2>
+    <p>Explore related programs and care costs in North Carolina:</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      
+      <a href="/medicare/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicare in North Carolina</h3>
+        <p>See 2026 Medicare information for North Carolina.</p>
+      </a>
+      
+      <a href="/medicaid/eligibility/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Medicaid in North Carolina</h3>
+        <p>See 2026 Medicaid information for North Carolina.</p>
+      </a>
+      
+      <a href="/assisted-living/cost/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Assisted Living in North Carolina</h3>
+        <p>See 2026 Assisted Living information for North Carolina.</p>
+      </a>
+      
+      <a href="/social-security/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Social Security in North Carolina</h3>
+        <p>See 2026 Social Security information for North Carolina.</p>
+      </a>
+      
+      <a href="/home-care/cost/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Home Care in North Carolina</h3>
+        <p>See 2026 Home Care information for North Carolina.</p>
+      </a>
+      
+      <a href="/prescription-assistance/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Prescription Assistance in North Carolina</h3>
+        <p>See 2026 Prescription Assistance information for North Carolina.</p>
+      </a>
+      
+      <a href="/veterans-benefits/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Veterans Benefits in North Carolina</h3>
+        <p>See 2026 Veterans Benefits information for North Carolina.</p>
+      </a>
+      
+      <a href="/long-term-care/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Long-Term Care in North Carolina</h3>
+        <p>See 2026 Long-Term Care information for North Carolina.</p>
+      </a>
+      
+      <a href="/senior-legal/north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Senior Legal in North Carolina</h3>
+        <p>See 2026 Senior Legal information for North Carolina.</p>
+      </a>
+      
+      <a href="/providers//north-carolina/" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>Find Providers in North Carolina</h3>
+        <p>See 2026 Find Providers information for North Carolina.</p>
+      </a>
+      
+    </div>
+  </section>
+  {{/if}}
+
 
       <section class="affiliate-reco" id="page-affiliate-reco">
     <!-- Populated dynamically by affiliates.js based on page category -->
@@ -476,6 +516,7 @@
   </section>
 
 
+      {{#if sources}}
   <section class="sources-section">
     <h2>Sources &amp; References</h2>
     <ol class="sources-list">
@@ -486,8 +527,39 @@
       
     </ol>
   </section>
+  {{/if}}
 
 
+      {{#if stateCities}}
+  <section class="related-section" id="city-guides">
+    {{#if citySlug}}
+    <h2>Other Cities in North Carolina</h2>
+    
+    <h2>City Guides in North Carolina</h2>
+    {{/if}}
+    <div class="state-grid">
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/charlotte/">Charlotte, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/raleigh/">Raleigh, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/greensboro/">Greensboro, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/durham/">Durham, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/winston-salem/">Winston-Salem, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/fayetteville/">Fayetteville, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/cary/">Cary, NC</a>
+      
+      <a class="state-link" href="/low-income-programs/north-carolina/wilmington/">Wilmington, NC</a>
+      
+    </div>
+  </section>
+  {{/if}}
+
+      {{#if siblingStates}}
   <section class="related-section" id="other-states">
     <h2>Explore Other States</h2>
     <div class="state-grid">
@@ -514,6 +586,7 @@
       
     </div>
   </section>
+  {{/if}}
 
   </main>
 

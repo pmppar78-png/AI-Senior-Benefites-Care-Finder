@@ -40,7 +40,7 @@
 
     <!-- Section: Cost Overview -->
     <section class="content-section" id="cost-overview">
-      <h2>Home Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>Home Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
 
       <div class="stat-grid">
         <div class="stat-card">
@@ -57,11 +57,11 @@
         </div>
       </div>
 
-      <p>In-home care {{#if city}}in {{city}}, {{state}}{{else}}in {{state}}{{/if}} allows seniors to receive assistance in the comfort of their own homes. Whether you need a few hours of help per week or round-the-clock care, understanding the costs and options helps you plan effectively.</p>
+      <p>In-home care {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} allows seniors to receive assistance in the comfort of their own homes. Whether you need a few hours of help per week or round-the-clock care, understanding the costs and options helps you plan effectively.</p>
       <h3>{{currentYear}} Cost at a Glance</h3>
       <ul>
         <li><strong>Part-time care (20 hrs/week):</strong> approximately half the full-time monthly cost</li>
-        <li><strong>Full-time care (44 hrs/week):</strong> {{avgMonthlyCost}}/month average in {{state}}</li>
+        <li><strong>Full-time care (44 hrs/week):</strong> {{avgMonthlyCost}}/month average in {{locationName}}</li>
         <li><strong>24-hour live-in care:</strong> typically 1.5&ndash;2&times; the standard full-time rate</li>
         <li><strong>National average hourly rate:</strong> {{nationalAvgHourly}}</li>
       </ul>
@@ -178,7 +178,7 @@
       </div>
       <div class="info-box">
         <h3>Medicaid Home Care Programs</h3>
-        <p>{{state}}'s Medicaid program may cover home care services through waiver programs and state plan benefits. Eligibility depends on income, assets, and level of care needed.</p>
+        <p>{{locationName}}'s Medicaid program may cover home care services through waiver programs and state plan benefits. Eligibility depends on income, assets, and level of care needed.</p>
       </div>
       <div class="info-box">
         <h3>Long-Term Care Insurance</h3>
@@ -197,30 +197,30 @@
 
     <!-- Section: Medicaid Coverage -->
     <section class="content-section" id="medicaid-coverage">
-      <h2>Medicaid Home Care Coverage in {{state}}</h2>
+      <h2>Medicaid Home Care Coverage in {{locationName}}</h2>
       {{#if medicaidCoverage}}
       <p>{{{medicaidCoverage}}}</p>
       {{else}}
-      <p>Medicaid in {{state}} may cover home and community-based services (HCBS) that help seniors remain in their homes instead of moving to nursing facilities. Coverage may include personal care aides, homemaker services, adult day care, meal delivery, and home modifications.</p>
-      <p>Contact {{state}}'s Medicaid office or Area Agency on Aging to learn about specific home care programs, eligibility requirements, and how to apply.</p>
+      <p>Medicaid in {{locationName}} may cover home and community-based services (HCBS) that help seniors remain in their homes instead of moving to nursing facilities. Coverage may include personal care aides, homemaker services, adult day care, meal delivery, and home modifications.</p>
+      <p>Contact {{locationName}}'s Medicaid office or Area Agency on Aging to learn about specific home care programs, eligibility requirements, and how to apply.</p>
       {{/if}}
     </section>
 
     <!-- Section: How to Reduce Costs -->
     <section class="content-section" id="how-to-reduce">
       <h2>How to Reduce Home Care Costs in {{currentYear}}</h2>
-      <p>At an average rate of {{avgHourlyCost}}/hour in {{state}}, home care costs add up quickly — especially for full-time care. Here are proven ways to lower your costs:</p>
+      <p>At an average rate of {{avgHourlyCost}}/hour in {{locationName}}, home care costs add up quickly — especially for full-time care. Here are proven ways to lower your costs:</p>
       <ol class="steps-list">
         <li>
           <div class="step-content">
             <h4>Apply for Medicaid home care waivers</h4>
-            <p>{{state}} may cover home care through Medicaid waiver programs for eligible seniors, potentially eliminating out-of-pocket costs entirely. <a href="/medicaid/eligibility/{{stateSlug}}/" style="color:#38bdf8;">Check {{state}} Medicaid eligibility &rarr;</a></p>
+            <p>{{locationName}} may cover home care through Medicaid waiver programs for eligible seniors, potentially eliminating out-of-pocket costs entirely. <a href="/medicaid/eligibility/{{stateSlug}}/" style="color:#38bdf8;">Check {{locationName}} Medicaid eligibility &rarr;</a></p>
           </div>
         </li>
         <li>
           <div class="step-content">
             <h4>Use VA Aid &amp; Attendance benefits</h4>
-            <p>Veterans and surviving spouses can receive monthly benefits to help cover in-home care costs. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{state}} veterans benefits &rarr;</a></p>
+            <p>Veterans and surviving spouses can receive monthly benefits to help cover in-home care costs. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{locationName}} veterans benefits &rarr;</a></p>
           </div>
         </li>
         <li>
@@ -244,7 +244,7 @@
         <li>
           <div class="step-content">
             <h4>Check Medicare skilled home health coverage</h4>
-            <p>Medicare covers skilled nursing and therapy at home for eligible conditions — at no cost to you. Ask your doctor if you qualify. <a href="/medicare/{{stateSlug}}/" style="color:#38bdf8;">See Medicare plans in {{state}} &rarr;</a></p>
+            <p>Medicare covers skilled nursing and therapy at home for eligible conditions — at no cost to you. Ask your doctor if you qualify. <a href="/medicare/{{stateSlug}}/" style="color:#38bdf8;">See Medicare plans in {{locationName}} &rarr;</a></p>
           </div>
         </li>
       </ol>
@@ -307,7 +307,7 @@
     <!-- Section: Local Agencies -->
     {{#if localAgencies}}
     <section class="content-section" id="local-agencies">
-      <h2>Home Care Agencies {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
+      <h2>Home Care Agencies {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
       {{#each localAgencies}}
       <div class="provider-card">
         <h3>{{name}}</h3>
@@ -341,42 +341,13 @@
 
     {{> faq-section}}
 
-    <!-- Section: Related Cost Guides -->
-    <section class="content-section" id="related-guides">
-      <h2>Compare Senior Care Costs {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{state}}{{/if}}</h2>
-      <p>Explore all your care options and find the most affordable path for quality senior care {{#if city}}in {{city}}{{else}}in {{state}}{{/if}}:</p>
-      <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
-        <a href="/assisted-living/cost/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Assisted Living Costs in {{state}}</h3>
-          <p>See {{currentYear}} monthly prices for assisted living communities. Compare costs by care level and location.</p>
-        </a>
-        <a href="/long-term-care/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Long-Term Care Insurance in {{state}}</h3>
-          <p>Compare LTC insurance premiums. Learn how insurance can help cover home care costs long-term.</p>
-        </a>
-        <a href="/medicaid/eligibility/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Medicaid Eligibility in {{state}}</h3>
-          <p>Check if you qualify for Medicaid home care waivers that can cover in-home care costs.</p>
-        </a>
-        <a href="/veterans-benefits/{{stateSlug}}/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Veterans Benefits in {{state}}</h3>
-          <p>VA Aid &amp; Attendance benefits can help veterans pay for in-home care services.</p>
-        </a>
-        <a href="/compare/home-care-vs-assisted-living/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care vs. Assisted Living</h3>
-          <p>Compare costs and benefits of in-home care versus moving to an assisted living facility.</p>
-        </a>
-        <a href="/compare/in-home-care-vs-adult-day-care/" class="info-box" style="text-decoration:none;color:inherit;">
-          <h3>Home Care vs. Adult Day Care</h3>
-          <p>See which option provides better value depending on your care schedule and needs.</p>
-        </a>
-      </div>
-    </section>
+    {{> cross-engine-links}}
 
     {{> cta-section}}
 
     {{> sources-section}}
 
+    {{> city-links}}
     {{> state-index}}
   </main>
 
