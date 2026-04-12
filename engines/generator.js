@@ -501,10 +501,10 @@ class PageGenerator {
     }
 
     if (state) {
-      // For provider-directory, include providerType in the breadcrumb URL
-      const stateUrl = entry.providerType
-        ? `/${eng.category || eng.id}/${entry.providerType}/${state.slug}/`
-        : `/${eng.category || eng.id}/${state.slug}/`;
+      // Use the engine's actual URL pattern to build correct state breadcrumb URL
+      const statePattern = eng.stateUrlPattern || eng.urlPattern;
+      const stateData = { ...entry, stateSlug: state.slug };
+      const stateUrl = (this._buildUrl(statePattern, stateData) + '/').replace(/\/\/$/, '/');
       crumbs.push({
         label: state.name,
         url: stateUrl
@@ -512,9 +512,10 @@ class PageGenerator {
     }
 
     if (city) {
-      const cityUrl = entry.providerType
-        ? `/${eng.category || eng.id}/${entry.providerType}/${state.slug}/${city.slug}/`
-        : `/${eng.category || eng.id}/${state.slug}/${city.slug}/`;
+      // Use the engine's actual city URL pattern to build correct city breadcrumb URL
+      const cityPattern = eng.cityUrlPattern || eng.stateUrlPattern || eng.urlPattern;
+      const cityData = { ...entry, stateSlug: state.slug, citySlug: city.slug };
+      const cityUrl = (this._buildUrl(cityPattern, cityData) + '/').replace(/\/\/$/, '/');
       crumbs.push({
         label: city.name,
         url: cityUrl
