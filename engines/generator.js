@@ -68,22 +68,57 @@ class TemplateEngine {
   }
 
   _processConditionals(template, data) {
-    // Nested conditionals: process from innermost to outermost
     let output = template;
-    let limit = 20;
+    let limit = 40;
     while (limit-- > 0) {
-      const before = output;
-      output = output.replace(
-        /\{\{#if\s+([@\w.]+)\}\}([\s\S]*?)(?:\{\{else\}\}([\s\S]*?))?\{\{\/if\}\}/,
-        (match, key, ifBlock, elseBlock) => {
-          const value = this._resolve(data, key);
-          if (value && (!Array.isArray(value) || value.length > 0)) {
-            return ifBlock;
+      // Find the first {{#if ...}} tag
+      const openMatch = output.match(/\{\{#if\s+([@\w.]+)\}\}/);
+      if (!openMatch) break;
+
+      const key = openMatch[1];
+      const startIdx = openMatch.index;
+      const afterOpen = startIdx + openMatch[0].length;
+
+      // Walk forward to find the balanced {{/if}}, tracking nesting depth
+      let depth = 1;
+      let pos = afterOpen;
+      let elseIdx = -1; // position of the top-level {{else}}
+      const tagRe = /\{\{#if\s+[@\w.]+\}\}|\{\{\/if\}\}|\{\{else\}\}/g;
+      tagRe.lastIndex = pos;
+      let m;
+      while ((m = tagRe.exec(output)) !== null) {
+        if (m[0].startsWith('{{#if')) {
+          depth++;
+        } else if (m[0] === '{{/if}}') {
+          depth--;
+          if (depth === 0) {
+            // Found the balanced closing tag
+            const endIdx = m.index + m[0].length;
+            const innerContent = output.substring(afterOpen, m.index);
+
+            let ifBlock, elseBlock;
+            if (elseIdx !== -1) {
+              ifBlock = output.substring(afterOpen, elseIdx);
+              elseBlock = output.substring(elseIdx + '{{else}}'.length, m.index);
+            } else {
+              ifBlock = innerContent;
+              elseBlock = '';
+            }
+
+            const value = this._resolve(data, key);
+            const replacement = (value && (!Array.isArray(value) || value.length > 0))
+              ? ifBlock
+              : elseBlock;
+
+            output = output.substring(0, startIdx) + replacement + output.substring(endIdx);
+            break;
           }
-          return elseBlock || '';
+        } else if (m[0] === '{{else}}' && depth === 1) {
+          elseIdx = m.index;
         }
-      );
-      if (output === before) break;
+      }
+      // If we didn't find a balanced close, break to avoid infinite loop
+      if (depth !== 0) break;
     }
     return output;
   }
@@ -246,11 +281,17 @@ class PageGenerator {
       xml += `  </url>\n`;
     }
 
+    // Deduplicate generated URLs and exclude any already in staticPages
+    const staticPaths = new Set(staticPages.map(p => p.url));
+    const seen = new Set();
     for (const urlPath of this.generatedUrls) {
+      const normalized = urlPath.endsWith('/') ? urlPath : urlPath + '/';
+      if (staticPaths.has(normalized) || seen.has(normalized)) continue;
+      seen.add(normalized);
       const isHub = urlPath.split('/').filter(Boolean).length <= 2;
       const priority = isHub ? '0.9' : '0.7';
       xml += `  <url>\n`;
-      xml += `    <loc>${baseUrl}${urlPath}/</loc>\n`;
+      xml += `    <loc>${baseUrl}${normalized}</loc>\n`;
       xml += `    <lastmod>${today}</lastmod>\n`;
       xml += `    <changefreq>weekly</changefreq>\n`;
       xml += `    <priority>${priority}</priority>\n`;
@@ -261,7 +302,7 @@ class PageGenerator {
 
     const sitemapPath = path.join(OUTPUT_DIR, 'sitemap.xml');
     fs.writeFileSync(sitemapPath, xml, 'utf8');
-    console.log(`  Sitemap: ${this.generatedUrls.length + staticPages.length} URLs written to sitemap.xml`);
+    console.log(`  Sitemap: ${staticPages.length + seen.size} URLs written to sitemap.xml`);
   }
 
   _loadTemplates() {
