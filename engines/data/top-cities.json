@@ -155,7 +155,6 @@
   { "name": "Killeen", "slug": "killeen", "stateSlug": "texas", "stateAbbr": "TX", "metro": "Killeen-Temple" },
   { "name": "Syracuse", "slug": "syracuse", "stateSlug": "new-york", "stateAbbr": "NY", "metro": "Syracuse" },
   { "name": "Torrance", "slug": "torrance", "stateSlug": "california", "stateAbbr": "CA", "metro": "Los Angeles-Long Beach-Anaheim" },
-  { "name": "Savannah", "slug": "savannah", "stateSlug": "georgia", "stateAbbr": "GA", "metro": "Savannah" },
   { "name": "Hayward", "slug": "hayward", "stateSlug": "california", "stateAbbr": "CA", "metro": "San Francisco-Oakland-Berkeley" },
   { "name": "Sunnyvale", "slug": "sunnyvale", "stateSlug": "california", "stateAbbr": "CA", "metro": "San Jose-Sunnyvale-Santa Clara" },
   { "name": "Pomona", "slug": "pomona", "stateSlug": "california", "stateAbbr": "CA", "metro": "Los Angeles-Long Beach-Anaheim" },
