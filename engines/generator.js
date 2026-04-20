@@ -465,7 +465,11 @@ class PageGenerator {
           : resolvedStateSlug && e.urlPattern
             ? this._buildUrl(e.urlPattern, seoData)
             : null;
-        return linkUrl ? { name: e.categoryLabel || e.name, url: `${linkUrl}/` } : null;
+        if (!linkUrl) return null;
+        // Skip links with unresolved placeholders (e.g. empty providerType)
+        // which would produce paths like "/providers//alabama/" -> 404.
+        if (linkUrl.includes('//') || /\[\w+\]/.test(linkUrl)) return null;
+        return { name: e.categoryLabel || e.name, url: `${linkUrl}/` };
       })
       .filter(Boolean);
 
@@ -512,8 +516,15 @@ class PageGenerator {
       citySlug: resolvedCitySlug,
       locationName,
 
-      // State URL base for correct state-index linking
-      stateUrlBase: eng.urlPattern ? eng.urlPattern.replace(/\/\[\w+\]$/g, '').replace(/\/\[\w+\]/g, '') : `/${eng.id}`,
+      // State URL base for correct state-index / city-links rendering.
+      // Substitutes current entry values (e.g. providerType) and strips
+      // stateSlug/citySlug so templates can append sibling state/city slugs.
+      stateUrlBase: eng.urlPattern
+        ? eng.urlPattern
+            .replace(/\[(\w+)\]/g, (m, key) => (key === 'stateSlug' || key === 'citySlug') ? '' : (entry[key] != null ? entry[key] : ''))
+            .replace(/\/+$/g, '')
+            .replace(/\/+/g, '/')
+        : `/${eng.id}`,
 
       // Related pages
       relatedEngines: eng.relatedEngines || [],

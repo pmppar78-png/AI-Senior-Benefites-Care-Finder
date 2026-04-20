@@ -102,6 +102,644 @@ publish = "."
   to = "/chat.html"
   status = 200
 
+# Redirect legacy /providers/<state>/ (missing providerType) to default nursing-homes state page
+[[redirects]]
+  from = "/providers/alabama/*"
+  to = "/providers/nursing-homes/alabama/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/alaska/*"
+  to = "/providers/nursing-homes/alaska/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/arizona/*"
+  to = "/providers/nursing-homes/arizona/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/arkansas/*"
+  to = "/providers/nursing-homes/arkansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/california/*"
+  to = "/providers/nursing-homes/california/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/colorado/*"
+  to = "/providers/nursing-homes/colorado/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/connecticut/*"
+  to = "/providers/nursing-homes/connecticut/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/delaware/*"
+  to = "/providers/nursing-homes/delaware/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/florida/*"
+  to = "/providers/nursing-homes/florida/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/georgia/*"
+  to = "/providers/nursing-homes/georgia/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/hawaii/*"
+  to = "/providers/nursing-homes/hawaii/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/idaho/*"
+  to = "/providers/nursing-homes/idaho/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/illinois/*"
+  to = "/providers/nursing-homes/illinois/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/indiana/*"
+  to = "/providers/nursing-homes/indiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/iowa/*"
+  to = "/providers/nursing-homes/iowa/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/kansas/*"
+  to = "/providers/nursing-homes/kansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/kentucky/*"
+  to = "/providers/nursing-homes/kentucky/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/louisiana/*"
+  to = "/providers/nursing-homes/louisiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/maine/*"
+  to = "/providers/nursing-homes/maine/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/maryland/*"
+  to = "/providers/nursing-homes/maryland/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/massachusetts/*"
+  to = "/providers/nursing-homes/massachusetts/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/michigan/*"
+  to = "/providers/nursing-homes/michigan/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/minnesota/*"
+  to = "/providers/nursing-homes/minnesota/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/mississippi/*"
+  to = "/providers/nursing-homes/mississippi/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/missouri/*"
+  to = "/providers/nursing-homes/missouri/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/montana/*"
+  to = "/providers/nursing-homes/montana/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/nebraska/*"
+  to = "/providers/nursing-homes/nebraska/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/nevada/*"
+  to = "/providers/nursing-homes/nevada/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/new-hampshire/*"
+  to = "/providers/nursing-homes/new-hampshire/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/new-jersey/*"
+  to = "/providers/nursing-homes/new-jersey/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/new-mexico/*"
+  to = "/providers/nursing-homes/new-mexico/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/new-york/*"
+  to = "/providers/nursing-homes/new-york/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/north-carolina/*"
+  to = "/providers/nursing-homes/north-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/north-dakota/*"
+  to = "/providers/nursing-homes/north-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/ohio/*"
+  to = "/providers/nursing-homes/ohio/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/oklahoma/*"
+  to = "/providers/nursing-homes/oklahoma/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/oregon/*"
+  to = "/providers/nursing-homes/oregon/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/pennsylvania/*"
+  to = "/providers/nursing-homes/pennsylvania/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/rhode-island/*"
+  to = "/providers/nursing-homes/rhode-island/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/south-carolina/*"
+  to = "/providers/nursing-homes/south-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/south-dakota/*"
+  to = "/providers/nursing-homes/south-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/tennessee/*"
+  to = "/providers/nursing-homes/tennessee/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/texas/*"
+  to = "/providers/nursing-homes/texas/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/utah/*"
+  to = "/providers/nursing-homes/utah/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/vermont/*"
+  to = "/providers/nursing-homes/vermont/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/virginia/*"
+  to = "/providers/nursing-homes/virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/washington/*"
+  to = "/providers/nursing-homes/washington/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/west-virginia/*"
+  to = "/providers/nursing-homes/west-virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/wisconsin/*"
+  to = "/providers/nursing-homes/wisconsin/:splat"
+  status = 301
+[[redirects]]
+  from = "/providers/wyoming/*"
+  to = "/providers/nursing-homes/wyoming/:splat"
+  status = 301
+
+# Redirect double-slash legacy provider URLs caused by missing providerType
+[[redirects]]
+  from = "/providers//*"
+  to = "/providers/nursing-homes/:splat"
+  status = 301
+
+# Redirect legacy /home-care/<state>/ to canonical /home-care/cost/<state>/
+[[redirects]]
+  from = "/home-care/alabama/*"
+  to = "/home-care/cost/alabama/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/alaska/*"
+  to = "/home-care/cost/alaska/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/arizona/*"
+  to = "/home-care/cost/arizona/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/arkansas/*"
+  to = "/home-care/cost/arkansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/california/*"
+  to = "/home-care/cost/california/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/colorado/*"
+  to = "/home-care/cost/colorado/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/connecticut/*"
+  to = "/home-care/cost/connecticut/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/delaware/*"
+  to = "/home-care/cost/delaware/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/florida/*"
+  to = "/home-care/cost/florida/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/georgia/*"
+  to = "/home-care/cost/georgia/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/hawaii/*"
+  to = "/home-care/cost/hawaii/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/idaho/*"
+  to = "/home-care/cost/idaho/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/illinois/*"
+  to = "/home-care/cost/illinois/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/indiana/*"
+  to = "/home-care/cost/indiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/iowa/*"
+  to = "/home-care/cost/iowa/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/kansas/*"
+  to = "/home-care/cost/kansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/kentucky/*"
+  to = "/home-care/cost/kentucky/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/louisiana/*"
+  to = "/home-care/cost/louisiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/maine/*"
+  to = "/home-care/cost/maine/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/maryland/*"
+  to = "/home-care/cost/maryland/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/massachusetts/*"
+  to = "/home-care/cost/massachusetts/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/michigan/*"
+  to = "/home-care/cost/michigan/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/minnesota/*"
+  to = "/home-care/cost/minnesota/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/mississippi/*"
+  to = "/home-care/cost/mississippi/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/missouri/*"
+  to = "/home-care/cost/missouri/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/montana/*"
+  to = "/home-care/cost/montana/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/nebraska/*"
+  to = "/home-care/cost/nebraska/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/nevada/*"
+  to = "/home-care/cost/nevada/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/new-hampshire/*"
+  to = "/home-care/cost/new-hampshire/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/new-jersey/*"
+  to = "/home-care/cost/new-jersey/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/new-mexico/*"
+  to = "/home-care/cost/new-mexico/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/new-york/*"
+  to = "/home-care/cost/new-york/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/north-carolina/*"
+  to = "/home-care/cost/north-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/north-dakota/*"
+  to = "/home-care/cost/north-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/ohio/*"
+  to = "/home-care/cost/ohio/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/oklahoma/*"
+  to = "/home-care/cost/oklahoma/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/oregon/*"
+  to = "/home-care/cost/oregon/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/pennsylvania/*"
+  to = "/home-care/cost/pennsylvania/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/rhode-island/*"
+  to = "/home-care/cost/rhode-island/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/south-carolina/*"
+  to = "/home-care/cost/south-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/south-dakota/*"
+  to = "/home-care/cost/south-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/tennessee/*"
+  to = "/home-care/cost/tennessee/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/texas/*"
+  to = "/home-care/cost/texas/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/utah/*"
+  to = "/home-care/cost/utah/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/vermont/*"
+  to = "/home-care/cost/vermont/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/virginia/*"
+  to = "/home-care/cost/virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/washington/*"
+  to = "/home-care/cost/washington/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/west-virginia/*"
+  to = "/home-care/cost/west-virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/wisconsin/*"
+  to = "/home-care/cost/wisconsin/:splat"
+  status = 301
+[[redirects]]
+  from = "/home-care/wyoming/*"
+  to = "/home-care/cost/wyoming/:splat"
+  status = 301
+
+# Redirect legacy /medicaid/<state>/ to canonical /medicaid/eligibility/<state>/
+[[redirects]]
+  from = "/medicaid/alabama/*"
+  to = "/medicaid/eligibility/alabama/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/alaska/*"
+  to = "/medicaid/eligibility/alaska/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/arizona/*"
+  to = "/medicaid/eligibility/arizona/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/arkansas/*"
+  to = "/medicaid/eligibility/arkansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/california/*"
+  to = "/medicaid/eligibility/california/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/colorado/*"
+  to = "/medicaid/eligibility/colorado/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/connecticut/*"
+  to = "/medicaid/eligibility/connecticut/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/delaware/*"
+  to = "/medicaid/eligibility/delaware/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/florida/*"
+  to = "/medicaid/eligibility/florida/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/georgia/*"
+  to = "/medicaid/eligibility/georgia/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/hawaii/*"
+  to = "/medicaid/eligibility/hawaii/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/idaho/*"
+  to = "/medicaid/eligibility/idaho/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/illinois/*"
+  to = "/medicaid/eligibility/illinois/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/indiana/*"
+  to = "/medicaid/eligibility/indiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/iowa/*"
+  to = "/medicaid/eligibility/iowa/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/kansas/*"
+  to = "/medicaid/eligibility/kansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/kentucky/*"
+  to = "/medicaid/eligibility/kentucky/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/louisiana/*"
+  to = "/medicaid/eligibility/louisiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/maine/*"
+  to = "/medicaid/eligibility/maine/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/maryland/*"
+  to = "/medicaid/eligibility/maryland/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/massachusetts/*"
+  to = "/medicaid/eligibility/massachusetts/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/michigan/*"
+  to = "/medicaid/eligibility/michigan/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/minnesota/*"
+  to = "/medicaid/eligibility/minnesota/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/mississippi/*"
+  to = "/medicaid/eligibility/mississippi/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/missouri/*"
+  to = "/medicaid/eligibility/missouri/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/montana/*"
+  to = "/medicaid/eligibility/montana/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/nebraska/*"
+  to = "/medicaid/eligibility/nebraska/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/nevada/*"
+  to = "/medicaid/eligibility/nevada/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/new-hampshire/*"
+  to = "/medicaid/eligibility/new-hampshire/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/new-jersey/*"
+  to = "/medicaid/eligibility/new-jersey/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/new-mexico/*"
+  to = "/medicaid/eligibility/new-mexico/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/new-york/*"
+  to = "/medicaid/eligibility/new-york/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/north-carolina/*"
+  to = "/medicaid/eligibility/north-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/north-dakota/*"
+  to = "/medicaid/eligibility/north-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/ohio/*"
+  to = "/medicaid/eligibility/ohio/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/oklahoma/*"
+  to = "/medicaid/eligibility/oklahoma/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/oregon/*"
+  to = "/medicaid/eligibility/oregon/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/pennsylvania/*"
+  to = "/medicaid/eligibility/pennsylvania/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/rhode-island/*"
+  to = "/medicaid/eligibility/rhode-island/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/south-carolina/*"
+  to = "/medicaid/eligibility/south-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/south-dakota/*"
+  to = "/medicaid/eligibility/south-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/tennessee/*"
+  to = "/medicaid/eligibility/tennessee/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/texas/*"
+  to = "/medicaid/eligibility/texas/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/utah/*"
+  to = "/medicaid/eligibility/utah/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/vermont/*"
+  to = "/medicaid/eligibility/vermont/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/virginia/*"
+  to = "/medicaid/eligibility/virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/washington/*"
+  to = "/medicaid/eligibility/washington/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/west-virginia/*"
+  to = "/medicaid/eligibility/west-virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/wisconsin/*"
+  to = "/medicaid/eligibility/wisconsin/:splat"
+  status = 301
+[[redirects]]
+  from = "/medicaid/wyoming/*"
+  to = "/medicaid/eligibility/wyoming/:splat"
+  status = 301
+
+# Redirect legacy "/guide/" URLs to the correct hub pages
+[[redirects]]
+  from = "/medicare/guide"
+  to = "/medicare/"
+  status = 301
+[[redirects]]
+  from = "/medicare/guide/"
+  to = "/medicare/"
+  status = 301
+[[redirects]]
+  from = "/medicaid/guide"
+  to = "/medicaid/"
+  status = 301
+[[redirects]]
+  from = "/medicaid/guide/"
+  to = "/medicaid/"
+  status = 301
+[[redirects]]
+  from = "/social-security/guide"
+  to = "/social-security/"
+  status = 301
+[[redirects]]
+  from = "/social-security/guide/"
+  to = "/social-security/"
+  status = 301
+
 # Custom 404 page (must be last redirect rule)
 [[redirects]]
   from = "/*"
