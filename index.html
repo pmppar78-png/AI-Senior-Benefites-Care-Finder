@@ -24,6 +24,7 @@
     "@type": "Organization",
     "name": "Senior Benefits Care Finder",
     "url": "https://seniorbenefitscarefinder.com",
+    "email": "contact@seniorbenefitscarefinder.com",
     "description": "A comprehensive resource helping seniors and their families navigate government benefits, healthcare programs, and care options across all 50 states.",
     "founder": {
         "@type": "Person",
@@ -116,9 +117,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -131,7 +133,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
   <main class="main" id="main-content">

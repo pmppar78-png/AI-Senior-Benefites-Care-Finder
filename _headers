@@ -6,3 +6,24 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://api.openai.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.openai.com https://*.netlify.app; font-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
+  Link: </style.css>; rel=preload; as=style
+  Link: </engine.css>; rel=preload; as=style
+
+# Long-lived cache for unfingerprinted static assets.
+# Using stale-while-revalidate (not `immutable`) because these URLs are
+# NOT content-hashed: a deploy that edits style.css still ships it at
+# `/style.css`. SWR lets browsers use the cached copy instantly while
+# revalidating in the background, so users still pick up new CSS/JS
+# within a day of a deploy without forcing every request to 200-OK the
+# asset.
+/style.css
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/engine.css
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/script.js
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/affiliates.js
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800

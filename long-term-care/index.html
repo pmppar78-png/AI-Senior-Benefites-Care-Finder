@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Long-Term Care by State (2026) – Insurance, Planning &amp; Costs</title>
+  <title>Long-Term Care Planning Guide for Seniors (2026)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Plan for long-term care with state-by-state guides on insurance, Medicaid planning, nursing home costs, and care options. 2026 cost data and strategies." />
+  <meta name="description" content="How seniors pay for long-term care in 2026: nursing home and assisted living costs by state, Medicaid rules, LTC insurance trade-offs, and hybrid strategies." />
   <meta name="author" content="Paul Paradis" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/long-term-care/" />
   <meta property="og:title" content="Long-Term Care by State (2026) – Insurance, Planning &amp; Costs" />
@@ -96,9 +96,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -111,7 +112,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
   <main class="engine-page">
@@ -314,6 +315,6 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>

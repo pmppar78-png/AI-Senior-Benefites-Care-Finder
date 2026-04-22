@@ -293,9 +293,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -308,7 +309,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
   <main class="tool-container">
@@ -478,7 +479,7 @@
       </p>
     </div>
   </footer>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
   <script>
   (function() {
     // State data with approximate cost ranges

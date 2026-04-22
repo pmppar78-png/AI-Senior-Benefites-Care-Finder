@@ -29,6 +29,44 @@
     "publisher": {"@type":"Organization","name":"Senior Benefits Care Finder","url":"https://seniorbenefitscarefinder.com"}
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://seniorbenefitscarefinder.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Providers",
+        "item": "https://seniorbenefitscarefinder.com/providers/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Memory Care Facilities",
+        "item": "https://seniorbenefitscarefinder.com/providers/memory-care-facilities/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Maryland",
+        "item": "https://seniorbenefitscarefinder.com/providers/memory-care-facilities/maryland/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Baltimore",
+        "item": "https://seniorbenefitscarefinder.com/providers/memory-care-facilities/maryland/baltimore/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="site-body">
   <header class="site-header">
@@ -63,9 +101,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -78,7 +117,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
   <main class="engine-page">
@@ -125,6 +164,6 @@
     <p class="footer-disclaimer">This site is for informational purposes only and does not constitute legal, financial, or medical advice. This site may earn commissions from certain recommended services. The AI assistant may suggest partners or services that this site has a relationship with.</p>
   </footer>
   <script src="/script.js" defer></script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
