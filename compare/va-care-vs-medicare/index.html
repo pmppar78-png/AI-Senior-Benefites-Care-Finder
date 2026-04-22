@@ -8,8 +8,6 @@
   <meta name="author" content="Paul Paradis" />
   <meta name="theme-color" content="#0b4f6c" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/compare/va-care-vs-medicare/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <meta property="og:title" content="VA Health Care vs. Medicare — Cost Comparison &amp; Which Is Better (2026)" />
   <meta property="og:description" content="Compare VA Health Care vs. Medicare. See side-by-side costs, benefits, eligibility, and which option is best for your situation in 2026." />
   <meta property="og:url" content="https://seniorbenefitscarefinder.com/compare/va-care-vs-medicare/" />
@@ -73,9 +71,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -88,7 +87,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
 
@@ -536,7 +535,7 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
 

@@ -8,8 +8,6 @@
   <meta name="author" content="Paul Paradis" />
   <meta name="theme-color" content="#0b4f6c" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/medicare/north-carolina/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <meta property="og:title" content="2026 Medicare in North Carolina: 36 Plans, $12/mo" />
   <meta property="og:description" content="36 Medicare Advantage plans, 9 Medigap and 17 Part D options in North Carolina for 2026. Avg MA premium $12/mo; enrollment runs Oct 15–Dec 7." />
   <meta property="og:url" content="https://seniorbenefitscarefinder.com/medicare/north-carolina/" />
@@ -73,9 +71,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -88,7 +87,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
 
@@ -810,7 +809,7 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
 

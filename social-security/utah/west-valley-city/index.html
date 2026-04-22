@@ -8,8 +8,6 @@
   <meta name="author" content="Paul Paradis" />
   <meta name="theme-color" content="#0b4f6c" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/social-security/utah/west-valley-city/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <meta property="og:title" content="Social Security in West Valley City, UT: $1956/mo/mo Avg" />
   <meta property="og:description" content="Avg Social Security retiree check in West Valley City, UT is $1956/mo for 2026. Local SSA office, claiming age trade-offs, and SSI supplement." />
   <meta property="og:url" content="https://seniorbenefitscarefinder.com/social-security/utah/west-valley-city/" />
@@ -73,9 +71,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -88,7 +87,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
 
@@ -742,7 +741,7 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
 

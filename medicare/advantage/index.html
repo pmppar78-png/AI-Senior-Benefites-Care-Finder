@@ -26,6 +26,29 @@
     "publisher": { "@type": "Organization", "name": "Senior Benefits Care Finder" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Medicare Advantage Plans by State (2026)",
+    "description": "Medicare Advantage Plans by state – compare options, costs, and resources across all 50 states.",
+    "author": {
+      "@type": "Person",
+      "name": "Paul Paradis",
+      "url": "https://seniorbenefitscarefinder.com/author/paul-paradis/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Senior Benefits Care Finder"
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-04-22",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://seniorbenefitscarefinder.com/medicare/advantage/"
+    }
+  }
+  </script>
 </head>
 <body class="site-body">
   <header class="site-header">
@@ -55,9 +78,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -70,7 +94,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
   <main class="main" id="main-content">

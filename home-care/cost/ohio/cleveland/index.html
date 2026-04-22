@@ -8,8 +8,6 @@
   <meta name="author" content="Paul Paradis" />
   <meta name="theme-color" content="#0b4f6c" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/home-care/cost/ohio/cleveland/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <meta property="og:title" content="Home Care in Cleveland, OH: $31/hr Hourly Rate" />
   <meta property="og:description" content="Home care in Cleveland, OH: $31/hr per hour, $5,456/mo/mo in 2026. Aide vs. CNA rates, Medicaid HCBS coverage, local agencies." />
   <meta property="og:url" content="https://seniorbenefitscarefinder.com/home-care/cost/ohio/cleveland/" />
@@ -73,9 +71,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -88,7 +87,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
 
@@ -731,7 +730,7 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
 

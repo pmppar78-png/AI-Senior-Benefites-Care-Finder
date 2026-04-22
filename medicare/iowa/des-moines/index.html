@@ -8,8 +8,6 @@
   <meta name="author" content="Paul Paradis" />
   <meta name="theme-color" content="#0b4f6c" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/medicare/iowa/des-moines/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <meta property="og:title" content="Medicare in Des Moines, IA (2026): 19 Plans" />
   <meta property="og:description" content="19 Medicare Advantage plans in Des Moines, IA — avg $0/mo for 2026. Compare Medigap, Part D, and AEP deadlines for your ZIP." />
   <meta property="og:url" content="https://seniorbenefitscarefinder.com/medicare/iowa/des-moines/" />
@@ -73,9 +71,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -88,7 +87,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
 
@@ -801,7 +800,7 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
 

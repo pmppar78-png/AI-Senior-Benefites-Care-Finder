@@ -104,9 +104,10 @@
     </nav>
   </header>
   <script>
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('hamburgerBtn');
       var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
       btn.addEventListener('click', function() {
         var open = menu.classList.toggle('open');
         btn.classList.toggle('open', open);
@@ -119,7 +120,7 @@
           btn.setAttribute('aria-expanded', 'false');
         }
       });
-    })();
+    });
   </script>
 
   <main class="engine-page">
@@ -139,7 +140,7 @@
     <section class="engine-hero">
       <h1>Medicaid Eligibility by State (2026)</h1>
       <div class="intro-text">
-        <p>Medicaid provides essential healthcare coverage for low-income seniors, people with disabilities, and families. Eligibility rules, income limits, and available programs vary significantly by state. Our guides cover each state's Medicaid program including home and community-based services (HCBS) waivers, spend-down rules, application processes, and dual eligibility with Medicare.</p>
+        <p>Medicaid provides essential healthcare coverage for low-income seniors, people with disabilities, and families. Eligibility rules, income limits, and available programs vary significantly by state. Our guides cover each state's Medicaid program including home and community-based services (HCBS) waivers, <a href="/medicaid/spend-down/">spend-down rules</a>, <a href="/long-term-care/nursing-homes/">nursing home coverage</a>, application processes, and dual eligibility with Medicare.</p>
       </div>
       <div class="hero-meta">
         <span>Updated: March 2026</span>
@@ -159,6 +160,10 @@
         <a href="/author/paul-paradis/" style="color:var(--accent);text-decoration:none;font-weight:500;font-size:0.92rem;display:block;margin-top:0.15rem;">Paul Paradis</a>
         <span style="font-size:0.78rem;color:var(--text-muted);">Founder &amp; Independent Researcher</span>
       </div>
+    </div>
+
+    <div class="sbcf-trust-block" role="note" aria-label="Article trust information">
+      <p style="font-size:0.82rem;color:var(--text-muted);margin:0.5rem 0 1rem;">Reviewed against our <a href="/editorial-policy/">editorial policy</a>, <a href="/sources-methodology/">sources &amp; methodology</a>, and <a href="/fact-checking/">fact-checking</a> standards.</p>
     </div>
 
     <div class="page-disclaimer">
@@ -341,6 +346,6 @@
       });
     });
   </script>
-  <script src="/affiliates.js"></script>
+  <script src="/affiliates.js" defer></script>
 </body>
 </html>
