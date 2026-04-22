@@ -11,7 +11,7 @@
       <div class="hero-meta">
         {{#if city}}<span>{{city}}, {{stateAbbr}}</span>{{else}}<span>{{state}} ({{stateAbbr}})</span>{{/if}}
         <span>Updated {{lastUpdated}}</span>
-        <span>{{currentYear}} Ratings &amp; Reviews</span>
+        <span>{{currentYear}} Guide</span>
       </div>
       <div class="intro-text">
         {{{introText}}}
@@ -24,7 +24,7 @@
       <h2>In This Guide</h2>
       <ol>
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#top-providers">Top-Rated {{providerTypeLabel}}</a></li>
+        <li><a href="#find-real">Find Real {{providerTypeLabel}}</a></li>
         <li><a href="#quality-metrics">Quality Metrics</a></li>
         <li><a href="#how-to-choose">How to Choose</a></li>
         <li><a href="#questions-to-ask">Questions to Ask</a></li>
@@ -39,43 +39,37 @@
     <section class="content-section" id="overview">
       <h2>{{providerTypeLabel}} {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
 
-      {{#if totalProviders}}
-      <div class="stat-grid">
-        <div class="stat-card">
-          <span class="stat-value">{{totalProviders}}</span>
-          <span class="stat-label">Total {{providerTypeLabel}}</span>
-        </div>
-        {{#if avgRating}}
-        <div class="stat-card">
-          <span class="stat-value">{{avgRating}}</span>
-          <span class="stat-label">Average Rating</span>
-        </div>
-        {{/if}}
-      </div>
-      {{/if}}
-
-      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} requires careful research. This guide helps you compare options based on quality ratings, services offered, costs, and reviews from families and residents.</p>
+      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} requires careful research. This guide explains the quality ratings, costs, and services you should evaluate — and points you to the authoritative first-party tools that list every licensed facility currently operating in your area. For accurate, current facility information (including names, addresses, star ratings, and inspection history), we recommend using Medicare.gov Care Compare directly <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov, verified April 2026]</a></sup>.</p>
     </section>
 
-    <!-- Section: Top Providers -->
-    {{#if providers}}
-    <section class="content-section" id="top-providers">
-      <h2>Top-Rated {{providerTypeLabel}} {{#if city}}in {{city}}{{else}}in {{locationName}}{{/if}}</h2>
-      {{#each providers}}
-      <div class="provider-card">
-        <h3>{{name}}</h3>
-        <div class="provider-meta">
-          <p>{{address}}{{#if city}}, {{city}}{{/if}}</p>
-          {{#if rating}}<p class="provider-rating">Rating: {{rating}} {{#if ratingSource}}({{ratingSource}}){{/if}}</p>{{/if}}
-          {{#if specialties}}<p>Specialties: {{specialties}}</p>{{/if}}
-          {{#if costRange}}<p>Cost range: {{costRange}}</p>{{/if}}
-          {{#if phone}}<p>Phone: <strong>{{phone}}</strong></p>{{/if}}
-          {{#if url}}<p><a href="{{url}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Visit website →</a></p>{{/if}}
-        </div>
-      </div>
-      {{/each}}
+    <!-- Section: Find Real Providers (replaces fake provider cards) -->
+    <section class="content-section" id="find-real">
+      <h2>Find Real {{providerTypeLabel}} in {{#if city}}{{city}}, {{stateAbbr}}{{else}}{{locationName}}{{/if}}</h2>
+      <p>Rather than listing facilities that may be inaccurate or outdated, we direct you to the official, continuously updated sources used by government regulators, case managers, and long-term care ombudsmen. These tools return the actual licensed providers currently serving {{#if city}}{{city}}{{else}}{{locationName}}{{/if}}:</p>
+      <ul class="resource-list">
+        <li>
+          <strong><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">Medicare.gov Care Compare</a></strong> &mdash;
+          The official CMS tool. Search by ZIP code or city for nursing homes, home health agencies, hospice providers, inpatient rehabilitation, and long-term care hospitals. Shows CMS star ratings, inspection reports, staffing data, and quality measures.
+        </li>
+        <li>
+          <strong><a href="https://www.medicare.gov/care-compare/?providerType=NursingHome" target="_blank" rel="noopener noreferrer">CMS Nursing Home Compare</a></strong> &mdash;
+          Deep facility-level data for every Medicare- and Medicaid-certified nursing home, including the latest health inspection results, staffing hours per resident per day, and quality measure scores.
+        </li>
+        <li>
+          <strong><a href="https://ltcombudsman.org/" target="_blank" rel="noopener noreferrer">{{state}} Long-Term Care Ombudsman Program</a></strong> &mdash;
+          Every state has a federally mandated ombudsman program that investigates complaints, advocates for residents, and can tell you about a facility&rsquo;s complaint history. Free and confidential.
+        </li>
+        <li>
+          <strong><a href="https://eldercare.acl.gov/" target="_blank" rel="noopener noreferrer">Eldercare Locator (ACL.gov)</a></strong> &mdash;
+          A public service of the U.S. Administration on Aging. Call 1-800-677-1116 or search by ZIP to find Area Agencies on Aging, which maintain current lists of local providers and can make referrals.
+        </li>
+        <li>
+          <strong>{{state}} State Licensing Board / Department of Health</strong> &mdash;
+          Your state&rsquo;s licensing agency publishes the official list of currently licensed facilities and any enforcement actions. Search &ldquo;{{state}} [facility type] license lookup&rdquo; to locate your state&rsquo;s tool.
+        </li>
+      </ul>
+      <p><em>We do not maintain a directory of individual facilities because facility information (ownership, ratings, staffing, even whether a facility is still operating) changes frequently. Using the first-party CMS tools above ensures you see the most current information.</em></p>
     </section>
-    {{/if}}
 
     <!-- Section: Quality Metrics -->
     <section class="content-section" id="quality-metrics">
@@ -111,7 +105,7 @@
           <tbody>
             <tr>
               <td><strong>CMS Star Rating</strong></td>
-              <td>Overall quality rating (1–5 stars) based on health inspections, staffing, and quality measures</td>
+              <td>Overall quality rating (1&ndash;5 stars) based on health inspections, staffing, and quality measures <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CMS.gov]</a></sup></td>
             </tr>
             <tr>
               <td><strong>Health Inspection Score</strong></td>
@@ -119,7 +113,7 @@
             </tr>
             <tr>
               <td><strong>Staffing Ratio</strong></td>
-              <td>Number of nursing hours per resident per day — higher is generally better</td>
+              <td>Number of nursing hours per resident per day &mdash; higher is generally better</td>
             </tr>
             <tr>
               <td><strong>Quality Measures</strong></td>
@@ -217,10 +211,10 @@
       </ul>
       {{else}}
       <ul>
-        <li><strong>Medicare:</strong> Covers skilled nursing facility stays (up to 100 days) after a qualifying hospital stay</li>
-        <li><strong>Medicaid:</strong> Covers nursing home care for eligible low-income seniors</li>
+        <li><strong>Medicare:</strong> Covers skilled nursing facility stays (up to 100 days) after a qualifying hospital stay <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/coverage/skilled-nursing-facility-snf-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov, verified April 2026]</a></sup></li>
+        <li><strong>Medicaid:</strong> Covers nursing home care for eligible low-income seniors <sup style="font-size:0.7em;"><a href="https://www.medicaid.gov/medicaid/long-term-services-supports/institutional-long-term-care/nursing-facilities/index.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicaid.gov]</a></sup></li>
         <li><strong>Long-term care insurance:</strong> Policies may cover facility care after meeting benefit triggers</li>
-        <li><strong>VA benefits:</strong> Aid &amp; Attendance and VA nursing home care for eligible veterans</li>
+        <li><strong>VA benefits:</strong> Aid &amp; Attendance and VA nursing home care for eligible veterans <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/aid-attendance-housebound/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov]</a></sup></li>
         <li><strong>Private pay:</strong> Out-of-pocket using savings, retirement accounts, or family resources</li>
       </ul>
       {{/if}}
@@ -239,9 +233,9 @@
         <li><strong>Accreditation:</strong> Voluntary accreditation from organizations like CARF or The Joint Commission indicates a facility meets additional quality standards beyond state requirements</li>
       </ul>
       <h3>Questions to Ask During a Visit</h3>
-      <p>When touring a facility, ask about the admission assessment process, how care plans are developed and updated, emergency procedures, how medications are managed, activities and social programming, family involvement policies, discharge procedures, and how complaints are handled. Pay attention to the demeanor of current residents and staff — do residents appear engaged and well-cared-for? Are staff friendly and attentive?</p>
+      <p>When touring a facility, ask about the admission assessment process, how care plans are developed and updated, emergency procedures, how medications are managed, activities and social programming, family involvement policies, discharge procedures, and how complaints are handled. Pay attention to the demeanor of current residents and staff &mdash; do residents appear engaged and well-cared-for? Are staff friendly and attentive?</p>
       <h3>Using Medicare Care Compare</h3>
-      <p>Medicare's Care Compare tool at Medicare.gov allows you to compare nursing homes, home health agencies, hospice providers, and other care facilities side by side. The tool shows quality ratings, inspection results, staffing data, and health deficiencies. While no rating system is perfect, this free tool provides a valuable starting point for evaluating facilities in your area.</p>
+      <p>Medicare's Care Compare tool at <a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">Medicare.gov</a> allows you to compare nursing homes, home health agencies, hospice providers, and other care facilities side by side. The tool shows quality ratings, inspection results, staffing data, and health deficiencies. While no rating system is perfect, this free tool provides a valuable starting point for evaluating facilities in your area.</p>
     </section>
 
     {{> faq-section}}

@@ -20,10 +20,13 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/medicare/[stateSlug]',
     cityUrlPattern: '/medicare/[stateSlug]/[citySlug]',
-    seoTitle: 'Medicare Plans in [state] ([currentYear]) — Compare Costs, Coverage & Savings',
-    citySeoTitle: 'Medicare Plans in [city], [stateAbbr] ([currentYear]) — Compare Costs, Coverage & Savings',
-    metaDescription: 'Compare [currentYear] Medicare Advantage, Medigap, and Part D plan costs in [state]. See real premiums, coverage options, and ways to save on Medicare.',
-    cityMetaDescription: 'Compare [currentYear] Medicare Advantage, Medigap, and Part D plan costs in [city], [stateAbbr]. See real premiums, coverage options, and ways to save on Medicare.',
+    // Title hooks rotated per-state via seed-data titleHook/metaHook fields.
+    // Format leads with a concrete number (plan count, premium) and drops
+    // passive verbs; brand omitted to stay ≤58 chars.
+    seoTitle: '[currentYear] Medicare in [state]: [advantagePlans] Plans, [avgPremiumMA]',
+    citySeoTitle: 'Medicare in [city], [stateAbbr] ([currentYear]): [advantagePlans] Plans',
+    metaDescription: '[advantagePlans] Medicare Advantage plans, [medigapPlans] Medigap and [partDPlans] Part D options in [state] for [currentYear]. Avg MA premium [avgPremiumMA]; enrollment runs Oct 15–Dec 7.',
+    cityMetaDescription: '[advantagePlans] Medicare Advantage plans in [city], [stateAbbr] — avg [avgPremiumMA] for [currentYear]. Compare Medigap, Part D, and AEP deadlines for your ZIP.',
     schemaType: 'Article',
     relatedEngines: ['medicaid', 'prescription-assistance', 'comparison'],
     dataSchema: {
@@ -59,10 +62,13 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/medicaid/eligibility/[stateSlug]',
     cityUrlPattern: '/medicaid/eligibility/[stateSlug]/[citySlug]',
-    seoTitle: 'Medicaid Eligibility in [state] ([currentYear]) — Income Limits, Benefits & How to Apply',
-    citySeoTitle: 'Medicaid Eligibility in [city], [stateAbbr] ([currentYear]) — Income Limits, Benefits & How to Apply',
-    metaDescription: 'Check [currentYear] Medicaid eligibility in [state]. See exact income limits, asset requirements, covered benefits, and step-by-step application instructions.',
-    cityMetaDescription: 'Check [currentYear] Medicaid eligibility in [city], [stateAbbr]. See exact income limits, asset requirements, covered benefits, and step-by-step application instructions.',
+    // Titles lead with a short brand form of the state program (Medi-Cal,
+    // TennCare, AHCCCS, etc.) pulled from seed-data programShortName. The
+    // full programName is shown in the H1 and body copy.
+    seoTitle: '[programShortName] [currentYear]: Income & Asset Limits',
+    citySeoTitle: '[programShortName] in [city], [stateAbbr] ([currentYear])',
+    metaDescription: '[programShortName] [currentYear] eligibility: $1,732/mo individual income limit, $2,000 asset cap, [processingTime] processing. How seniors 65+ apply in [state].',
+    cityMetaDescription: '[programName] eligibility in [city], [stateAbbr] for [currentYear]. Income and asset limits, required documents, and where to apply locally.',
     schemaType: 'Article',
     relatedEngines: ['medicare', 'low-income-programs', 'prescription-assistance'],
     dataSchema: {
@@ -107,10 +113,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/assisted-living/cost/[stateSlug]',
     cityUrlPattern: '/assisted-living/cost/[stateSlug]/[citySlug]',
-    seoTitle: 'Assisted Living Cost in [state] ([currentYear]) — Prices, Savings & Payment Options',
-    citySeoTitle: 'Assisted Living Cost in [city], [stateAbbr] ([currentYear]) — Prices, Savings & Payment Options',
-    metaDescription: 'See real [currentYear] assisted living prices in [state]. Full cost breakdown by care level, 5 ways to reduce costs, and payment options including Medicaid and VA benefits.',
-    cityMetaDescription: 'See real [currentYear] assisted living prices in [city], [stateAbbr]. Full cost breakdown by care level, 5 ways to reduce costs, and payment options including Medicaid and VA benefits.',
+    // Lead with actual dollar figure from seed data avgMonthlyCost.
+    seoTitle: '[state] Assisted Living: [avgMonthlyCost] ([currentYear])',
+    citySeoTitle: 'Assisted Living in [city], [stateAbbr]: [avgMonthlyCost]/mo',
+    metaDescription: 'Assisted living in [state] averages [avgMonthlyCost]/mo in [currentYear] vs. $4,500 national. Memory care, Medicaid waivers, VA Aid & Attendance payment options.',
+    cityMetaDescription: '[city], [stateAbbr] assisted living averages [avgMonthlyCost]/mo for [currentYear]. Cost by care level, included services, and ways to pay.',
     schemaType: 'Article',
     relatedEngines: ['home-care', 'long-term-care', 'provider-directory', 'medicaid'],
     dataSchema: {
@@ -148,10 +155,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/social-security/[stateSlug]',
     cityUrlPattern: '/social-security/[stateSlug]/[citySlug]',
-    seoTitle: 'Social Security & SSI in [state] ([currentYear]) — Benefit Amounts & How to Maximize',
-    citySeoTitle: 'Social Security & SSI in [city], [stateAbbr] ([currentYear]) — Benefit Amounts & How to Maximize',
-    metaDescription: 'See [currentYear] Social Security and SSI benefit amounts in [state]. Learn how to maximize your monthly payment, when to claim, and eligibility requirements.',
-    cityMetaDescription: 'See [currentYear] Social Security and SSI benefit amounts in [city], [stateAbbr]. Learn how to maximize your monthly payment, when to claim, and eligibility requirements.',
+    // Lead with avg monthly benefit and state tax hook.
+    seoTitle: 'Social Security in [state] [currentYear]: [avgRetirementBenefit] Avg',
+    citySeoTitle: 'Social Security in [city], [stateAbbr]: [avgRetirementBenefit]/mo Avg',
+    metaDescription: 'Avg [state] Social Security check [avgRetirementBenefit] in [currentYear]. SSDI [ssdiAvgBenefit], SSI max $943, 2.5% COLA. State tax rules and SSI supplement details.',
+    cityMetaDescription: 'Avg Social Security retiree check in [city], [stateAbbr] is [avgRetirementBenefit] for [currentYear]. Local SSA office, claiming age trade-offs, and SSI supplement.',
     schemaType: 'Article',
     relatedEngines: ['medicaid', 'low-income-programs', 'disability-benefits'],
     dataSchema: {
@@ -189,10 +197,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/home-care/cost/[stateSlug]',
     cityUrlPattern: '/home-care/cost/[stateSlug]/[citySlug]',
-    seoTitle: 'Home Care Cost in [state] ([currentYear]) — Hourly Rates, Savings & How to Pay',
-    citySeoTitle: 'Home Care Cost in [city], [stateAbbr] ([currentYear]) — Hourly Rates, Savings & How to Pay',
-    metaDescription: 'See [currentYear] home care costs in [state]. Compare hourly rates by care type, find ways to reduce costs, and explore Medicaid, VA, and insurance payment options.',
-    cityMetaDescription: 'See [currentYear] home care costs in [city], [stateAbbr]. Compare hourly rates by care type, find ways to reduce costs, and explore Medicaid, VA, and insurance payment options.',
+    // Lead with the actual hourly rate; drop "Cost in" passive phrasing.
+    seoTitle: '[state] Home Care [currentYear]: [avgHourlyCost] Aide Rate',
+    citySeoTitle: 'Home Care in [city], [stateAbbr]: [avgHourlyCost] Hourly Rate',
+    metaDescription: 'Home health aides in [state] run [avgHourlyCost] in [currentYear] — roughly [avgMonthlyCost] for 44 hrs/week. Medicaid waiver coverage, VA benefits, agency vetting.',
+    cityMetaDescription: 'Home care in [city], [stateAbbr]: [avgHourlyCost] per hour, [avgMonthlyCost]/mo in [currentYear]. Aide vs. CNA rates, Medicaid HCBS coverage, local agencies.',
     schemaType: 'Article',
     relatedEngines: ['assisted-living', 'medicaid', 'veterans-benefits', 'long-term-care'],
     dataSchema: {
@@ -229,10 +238,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/prescription-assistance/[stateSlug]',
     cityUrlPattern: '/prescription-assistance/[stateSlug]/[citySlug]',
-    seoTitle: 'Prescription Assistance in [state] ([currentYear]) — Save on Drug Costs',
-    citySeoTitle: 'Prescription Assistance in [city], [stateAbbr] ([currentYear]) — Save on Drug Costs',
-    metaDescription: 'Find [currentYear] prescription assistance programs in [state]. See how to save on drug costs with Medicare Extra Help, state programs, and patient assistance.',
-    cityMetaDescription: 'Find [currentYear] prescription assistance programs in [city], [stateAbbr]. See how to save on drug costs with Medicare Extra Help, state programs, and patient assistance.',
+    // Lead with SPAP name or Extra Help income cap from data; drop "Save on…"
+    seoTitle: '[state] Rx Help [currentYear]: [titleHook]',
+    citySeoTitle: 'Prescription Help in [city], [stateAbbr] ([currentYear])',
+    metaDescription: '[metaHook] for [state] seniors in [currentYear]. Medicare Extra Help, manufacturer patient-assistance programs, and GoodRx-style cards to cut drug spend.',
+    cityMetaDescription: 'Rx assistance for [city], [stateAbbr] seniors in [currentYear]: Medicare Extra Help, state programs, manufacturer PAPs, and pharmacy discount cards.',
     schemaType: 'Article',
     relatedEngines: ['medicare', 'medicaid', 'low-income-programs'],
     dataSchema: {
@@ -268,10 +278,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/veterans-benefits/[stateSlug]',
     cityUrlPattern: '/veterans-benefits/[stateSlug]/[citySlug]',
-    seoTitle: 'Veterans Benefits in [state] ([currentYear]) — VA Aid, Pension & State Programs',
-    citySeoTitle: 'Veterans Benefits in [city], [stateAbbr] ([currentYear]) — VA Aid, Pension & State Programs',
-    metaDescription: 'See all [currentYear] veterans benefits in [state]. Get Aid & Attendance amounts, VA pension rates, state-specific programs, and how to apply for benefits.',
-    cityMetaDescription: 'See all [currentYear] veterans benefits in [city], [stateAbbr]. Get Aid & Attendance amounts, VA pension rates, state-specific programs, and how to apply for benefits.',
+    // Lead with the Aid & Attendance max payment, a concrete hook.
+    seoTitle: '[state] Veterans Benefits [currentYear]: $2,431 A&A',
+    citySeoTitle: '[city], [stateAbbr] Veterans Benefits ([currentYear])',
+    metaDescription: 'VA Aid & Attendance pays up to $2,431/mo for senior veterans in [state]. [currentYear] pension rates, state property tax cuts, and how to apply through a VSO.',
+    cityMetaDescription: 'Senior veterans in [city], [stateAbbr] can qualify for $2,431/mo VA Aid & Attendance in [currentYear]. Local VA clinics, state tax exemptions, and caregiver support.',
     schemaType: 'Article',
     relatedEngines: ['medicare', 'home-care', 'assisted-living', 'disability-benefits'],
     dataSchema: {
@@ -339,10 +350,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/low-income-programs/[stateSlug]',
     cityUrlPattern: '/low-income-programs/[stateSlug]/[citySlug]',
-    seoTitle: 'Low-Income Senior Programs in [state] ([currentYear]) — Free Benefits & Assistance',
-    citySeoTitle: 'Low-Income Senior Programs in [city], [stateAbbr] ([currentYear]) — Free Benefits & Assistance',
-    metaDescription: 'Find [currentYear] low-income assistance for seniors in [state]. See SNAP, LIHEAP, housing, phone discounts, and transportation programs you may qualify for.',
-    cityMetaDescription: 'Find [currentYear] low-income assistance for seniors in [city], [stateAbbr]. See SNAP, LIHEAP, housing, phone discounts, and transportation programs you may qualify for.',
+    // Lead with SNAP cap + LIHEAP window.
+    seoTitle: '[state] Senior Aid [currentYear]: SNAP, LIHEAP, Housing',
+    citySeoTitle: 'Senior Benefits in [city], [stateAbbr] ([currentYear])',
+    metaDescription: 'SNAP up to $291/mo, LIHEAP $500–$1,000/year, Section 202 senior housing, Lifeline phone discount. [state] [currentYear] income-based programs and how to apply.',
+    cityMetaDescription: 'Low-income senior programs for [city], [stateAbbr] in [currentYear]: SNAP, LIHEAP, Section 8 waitlists, Lifeline, transportation vouchers. Local application contacts.',
     schemaType: 'Article',
     relatedEngines: ['medicaid', 'social-security', 'prescription-assistance'],
     dataSchema: {
@@ -411,10 +423,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/long-term-care/[stateSlug]',
     cityUrlPattern: '/long-term-care/[stateSlug]/[citySlug]',
-    seoTitle: 'Long-Term Care Insurance in [state] ([currentYear]) — Costs, Savings & Planning Guide',
-    citySeoTitle: 'Long-Term Care Insurance in [city], [stateAbbr] ([currentYear]) — Costs, Savings & Planning Guide',
-    metaDescription: 'Compare [currentYear] long-term care insurance costs in [state]. See premiums by age, coverage options, hybrid alternatives, and Medicaid planning strategies to save.',
-    cityMetaDescription: 'Compare [currentYear] long-term care insurance costs in [city], [stateAbbr]. See premiums by age, coverage options, hybrid alternatives, and Medicaid planning strategies to save.',
+    // Lead with 5-year lookback & partnership hook plus a premium figure.
+    seoTitle: 'LTC Insurance [state] [currentYear]: From [titleHook]',
+    citySeoTitle: 'LTC Planning in [city], [stateAbbr] ([currentYear])',
+    metaDescription: 'LTC insurance in [state] averages [titleHook] at age 55 for [currentYear]. Partnership Program, 5-year Medicaid lookback, hybrid life/LTC alternatives.',
+    cityMetaDescription: '[city], [stateAbbr] long-term care planning [currentYear]: premium benchmarks by age, hybrid policies, Medicaid spend-down, and nursing home cost comparison.',
     schemaType: 'Article',
     relatedEngines: ['assisted-living', 'home-care', 'medicaid', 'senior-legal'],
     dataSchema: {
@@ -447,10 +460,11 @@ const engines = [
     scope: 'state+city',
     urlPattern: '/senior-legal/[stateSlug]',
     cityUrlPattern: '/senior-legal/[stateSlug]/[citySlug]',
-    seoTitle: 'Senior Legal Resources in [state] ([currentYear]) — Elder Law, Estate Planning & Protections',
-    citySeoTitle: 'Senior Legal Resources in [city], [stateAbbr] ([currentYear]) — Elder Law, Estate Planning & Protections',
-    metaDescription: 'Find [currentYear] elder law resources in [state]. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.',
-    cityMetaDescription: 'Find [currentYear] elder law resources in [city], [stateAbbr]. Get guidance on power of attorney, guardianship, estate planning, elder abuse reporting, and financial protections.',
+    // Lead with elder abuse hotline or POA hook; drop "Resources" passive word.
+    seoTitle: '[state] Elder Law [currentYear]: POA & APS Reporting',
+    citySeoTitle: 'Elder Law in [city], [stateAbbr] ([currentYear])',
+    metaDescription: '[state] elder law in [currentYear]: durable POA rules, guardianship process, reverse mortgage requirements, APS abuse hotline 1-800-677-1116, local legal aid.',
+    cityMetaDescription: 'Elder law help for [city], [stateAbbr] seniors in [currentYear]: attorney fee ranges, legal aid eligibility, estate planning steps, elder abuse reporting.',
     schemaType: 'Article',
     relatedEngines: ['long-term-care', 'medicaid', 'social-security'],
     dataSchema: {

@@ -1,0 +1,4 @@
+# ads.txt for seniorbenefitscarefinder.com
+# No authorized digital sellers configured at this time.
+# Contact: advertise@seniorbenefitscarefinder.com
+# When AdSense is activated, this file will list google.com, pub-XXXX, DIRECT, f08c47fec0942fa0

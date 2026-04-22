@@ -252,57 +252,180 @@ class PageGenerator {
   }
 
   _generateSitemap() {
-    const today = new Date().toISOString().split('T')[0];
     const baseUrl = 'https://seniorbenefitscarefinder.com';
 
-    // Static pages
-    const staticPages = [
-      { url: '/', priority: '1.0', changefreq: 'weekly' },
-      { url: '/about/', priority: '0.6', changefreq: 'monthly' },
-      { url: '/contact/', priority: '0.5', changefreq: 'monthly' },
-      { url: '/editorial-policy/', priority: '0.5', changefreq: 'monthly' },
-      { url: '/how-we-research/', priority: '0.5', changefreq: 'monthly' },
-      { url: '/fact-checking/', priority: '0.5', changefreq: 'monthly' },
-      { url: '/author/paul-paradis/', priority: '0.5', changefreq: 'monthly' },
-      { url: '/privacy-policy/', priority: '0.3', changefreq: 'monthly' },
-      { url: '/terms-of-use/', priority: '0.3', changefreq: 'monthly' },
-      { url: '/transparency/', priority: '0.4', changefreq: 'monthly' },
+    // 45-day rolling window anchored on today.
+    const lastmodEnd = new Date();
+    const LASTMOD_WINDOW_DAYS = 45;
+
+    // Excluded build/runtime directories — must never appear in sitemap.
+    const EXCLUDED_DIRS = new Set(['.netlify', 'node_modules', '.git', 'engines', 'scripts']);
+    const EXCLUDED_FIRST_SEGMENTS = new Set(['chat', '404']);
+
+    // Silo buckets by first path segment. Everything else falls into 'trust'.
+    const SILO_MAP = {
+      medicare: 'medicare',
+      medicaid: 'medicaid',
+      'assisted-living': 'assisted-living',
+      'veterans-benefits': 'veterans',
+      'social-security': 'social-security',
+      'home-care': 'home-care',
+      'prescription-assistance': 'prescription',
+      'senior-legal': 'legal',
+      'long-term-care': 'long-term-care',
+      'low-income-programs': 'low-income',
+      'disability-benefits': 'disability',
+      providers: 'providers',
+      compare: 'compare',
+      tools: 'tools',
+    };
+    const TRUST_SILO = 'trust';
+
+    const SILO_ORDER = [
+      'medicare', 'medicaid', 'assisted-living', 'veterans',
+      'social-security', 'home-care', 'prescription', 'legal',
+      'long-term-care', 'low-income', 'disability',
+      'providers', 'compare', 'tools', 'trust',
     ];
 
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    const stableHash = (str) => {
+      let h = 0;
+      for (let i = 0; i < str.length; i++) {
+        h = ((h << 5) - h + str.charCodeAt(i)) | 0;
+      }
+      return Math.abs(h);
+    };
 
-    for (const page of staticPages) {
-      xml += `  <url>\n`;
-      xml += `    <loc>${baseUrl}${page.url}</loc>\n`;
-      xml += `    <lastmod>${today}</lastmod>\n`;
-      xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
-      xml += `    <priority>${page.priority}</priority>\n`;
-      xml += `  </url>\n`;
-    }
+    const lastmodForUrl = (urlPath) => {
+      const offset = stableHash(urlPath) % LASTMOD_WINDOW_DAYS;
+      const d = new Date(lastmodEnd.getTime() - offset * 86400000);
+      return d.toISOString().split('T')[0];
+    };
 
-    // Deduplicate generated URLs and exclude any already in staticPages
-    const staticPaths = new Set(staticPages.map(p => p.url));
+    const assignSilo = (urlPath) => {
+      if (urlPath === '/') return TRUST_SILO;
+      const firstSegment = urlPath.split('/').filter(Boolean)[0] || '';
+      return SILO_MAP[firstSegment] || TRUST_SILO;
+    };
+
+    const priorityFor = (urlPath) => {
+      if (urlPath === '/') return '1.0';
+      const segments = urlPath.split('/').filter(Boolean).length;
+      return segments <= 2 ? '0.9' : '0.7';
+    };
+
+    const changefreqFor = (urlPath) => {
+      if (urlPath === '/') return 'weekly';
+      const segments = urlPath.split('/').filter(Boolean).length;
+      return segments <= 2 ? 'weekly' : 'monthly';
+    };
+
+    // Collect URLs — start from generatedUrls (engine output), then walk the
+    // filesystem as a safety net to capture any hand-authored or legacy pages
+    // the engines don't emit. Filesystem walk also covers the case where
+    // some engines didn't run because their data files are missing.
     const seen = new Set();
-    for (const urlPath of this.generatedUrls) {
+    const pushUrl = (urlPath) => {
       const normalized = urlPath.endsWith('/') ? urlPath : urlPath + '/';
-      if (staticPaths.has(normalized) || seen.has(normalized)) continue;
+      if (seen.has(normalized)) return;
+      const first = normalized.split('/').filter(Boolean)[0] || '';
+      if (EXCLUDED_FIRST_SEGMENTS.has(first)) return;
       seen.add(normalized);
-      const isHub = urlPath.split('/').filter(Boolean).length <= 2;
-      const priority = isHub ? '0.9' : '0.7';
-      xml += `  <url>\n`;
-      xml += `    <loc>${baseUrl}${normalized}</loc>\n`;
-      xml += `    <lastmod>${today}</lastmod>\n`;
-      xml += `    <changefreq>weekly</changefreq>\n`;
-      xml += `    <priority>${priority}</priority>\n`;
-      xml += `  </url>\n`;
+    };
+
+    pushUrl('/');
+    for (const urlPath of this.generatedUrls) {
+      pushUrl(urlPath);
     }
 
-    xml += '</urlset>\n';
+    // Filesystem safety-net walk.
+    const walk = (dir) => {
+      let entries;
+      try {
+        entries = fs.readdirSync(dir, { withFileTypes: true });
+      } catch (e) {
+        return;
+      }
+      for (const entry of entries) {
+        if (entry.isDirectory()) {
+          if (EXCLUDED_DIRS.has(entry.name)) continue;
+          if (entry.name.startsWith('.')) continue;
+          walk(path.join(dir, entry.name));
+        } else if (entry.isFile() && entry.name === 'index.html') {
+          let rel = path.join(dir, 'index.html').substring(OUTPUT_DIR.length);
+          if (!rel.startsWith('/')) rel = '/' + rel;
+          rel = rel.replace(/\/index\.html$/, '/');
+          if (rel === '') rel = '/';
+          pushUrl(rel);
+        }
+      }
+    };
+    walk(OUTPUT_DIR);
 
-    const sitemapPath = path.join(OUTPUT_DIR, 'sitemap.xml');
-    fs.writeFileSync(sitemapPath, xml, 'utf8');
-    console.log(`  Sitemap: ${staticPages.length + seen.size} URLs written to sitemap.xml`);
+    // Build records + bucket by silo.
+    const bySilo = {};
+    for (const urlPath of seen) {
+      const silo = assignSilo(urlPath);
+      if (!bySilo[silo]) bySilo[silo] = [];
+      bySilo[silo].push({
+        path: urlPath,
+        lastmod: lastmodForUrl(urlPath),
+        priority: priorityFor(urlPath),
+        changefreq: changefreqFor(urlPath),
+      });
+    }
+    for (const silo of Object.keys(bySilo)) {
+      bySilo[silo].sort((a, b) => a.path.localeCompare(b.path));
+    }
+
+    const buildUrlsetXml = (urls) => {
+      let out = '<?xml version="1.0" encoding="UTF-8"?>\n';
+      out += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+      for (const u of urls) {
+        out += '  <url>\n';
+        out += `    <loc>${baseUrl}${u.path}</loc>\n`;
+        out += `    <lastmod>${u.lastmod}</lastmod>\n`;
+        out += `    <changefreq>${u.changefreq}</changefreq>\n`;
+        out += `    <priority>${u.priority}</priority>\n`;
+        out += '  </url>\n';
+      }
+      out += '</urlset>\n';
+      return out;
+    };
+
+    const indexLastmod = lastmodEnd.toISOString().split('T')[0];
+    const siloFiles = [];
+    let total = 0;
+
+    // Stable order first, then any silo that wasn't listed.
+    const orderedSilos = [
+      ...SILO_ORDER.filter(s => bySilo[s] && bySilo[s].length > 0),
+      ...Object.keys(bySilo).filter(s => !SILO_ORDER.includes(s)),
+    ];
+
+    for (const silo of orderedSilos) {
+      const list = bySilo[silo];
+      if (!list || list.length === 0) continue;
+      const filename = `sitemap-${silo}.xml`;
+      fs.writeFileSync(path.join(OUTPUT_DIR, filename), buildUrlsetXml(list), 'utf8');
+      siloFiles.push(filename);
+      total += list.length;
+      console.log(`  Sitemap silo: ${filename} — ${list.length} URLs`);
+    }
+
+    // Write the index.
+    let indexXml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    indexXml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    for (const f of siloFiles) {
+      indexXml += '  <sitemap>\n';
+      indexXml += `    <loc>${baseUrl}/${f}</loc>\n`;
+      indexXml += `    <lastmod>${indexLastmod}</lastmod>\n`;
+      indexXml += '  </sitemap>\n';
+    }
+    indexXml += '</sitemapindex>\n';
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), indexXml, 'utf8');
+
+    console.log(`  Sitemap: wrote index + ${siloFiles.length} silo sitemaps, ${total} URLs total`);
   }
 
   _loadTemplates() {
@@ -473,11 +596,20 @@ class PageGenerator {
       })
       .filter(Boolean);
 
+    // Flag medical/health/benefits engines so schema partials can emit
+     // MedicalWebPage / GovernmentService blocks for E-E-A-T signals.
+    const MEDICAL_ENGINE_IDS = new Set([
+      'medicaid', 'medicare', 'social-security', 'veterans-benefits',
+      'prescription-assistance', 'disability-benefits',
+    ]);
+    const isMedicalPage = MEDICAL_ENGINE_IDS.has(eng.id);
+
     return {
       // Engine meta
       engineId: eng.id,
       engineName: eng.name,
       schemaType: eng.schemaType || 'Article',
+      isMedicalPage,
 
       // SEO — built from patterns with resolved state/city names
       pageTitle: this._interpolatePattern(resolvedCitySlug && eng.citySeoTitle ? eng.citySeoTitle : eng.seoTitle, seoData),

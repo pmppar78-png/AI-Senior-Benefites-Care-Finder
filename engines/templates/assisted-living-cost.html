@@ -16,6 +16,14 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if stateSpecificOpening}}<div class="state-opening">{{{stateSpecificOpening}}}</div>{{/if}}
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}
@@ -61,7 +69,7 @@
         </div>
       </div>
 
-      <p>The cost of assisted living {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. {{currentYear}} data shows an average monthly cost of {{avgMonthlyCost}}, compared to the national average of {{nationalAvg}}.</p>
+      <p>The cost of assisted living {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. {{currentYear}} data shows an average monthly cost of {{avgMonthlyCost}}, compared to the national average of {{nationalAvg}}. <sup style="font-size:0.7em;"><a href="https://www.genworth.com/aging-and-you/finances/cost-of-care.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Genworth Cost of Care Survey, verified April 2026]</a></sup></p>
 
       {{#if costTrend}}
       <div class="info-box">
@@ -338,7 +346,7 @@
         <li><strong>Memory care add-on:</strong> Dementia or Alzheimer's care adds 20–40% to the base cost</li>
       </ul>
       <h3>Annual Cost Projection</h3>
-      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living. Many residents stay for 2–3 years on average, making long-term financial planning essential. Costs typically increase 3–5% annually, so factor in inflation when planning ahead.</p>
+      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living. Many residents stay for 2&ndash;3 years on average, making long-term financial planning essential. Costs typically increase 3&ndash;5% annually, so factor in inflation when planning ahead. <sup style="font-size:0.7em;"><a href="https://www.genworth.com/aging-and-you/finances/cost-of-care.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Genworth, verified April 2026]</a></sup></p>
     </section>
 
     <!-- Section: Eligibility & Qualification -->
