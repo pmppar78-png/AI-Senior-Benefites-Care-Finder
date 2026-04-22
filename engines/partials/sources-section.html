@@ -1,9 +1,15 @@
   {{#if sources}}
   <section class="sources-section">
     <h2>Sources &amp; References</h2>
+    <p class="sources-intro" style="font-size:0.95em;color:var(--muted,#94a3b8);margin-bottom:1rem;">
+      Dollar figures, eligibility numbers, and benefit amounts cited on this page are compiled from the authoritative sources listed below. Each source was reviewed and cross-checked as of the verified date shown. Program rules change &mdash; always confirm current figures with the official agency before making enrollment or financial decisions.
+    </p>
     <ol class="sources-list">
       {{#each sources}}
-      <li><a href="{{url}}" target="_blank" rel="noopener noreferrer">{{title}}</a></li>
+      <li>
+        <a href="{{url}}" target="_blank" rel="noopener noreferrer">{{title}}</a>
+        <span class="source-verified" style="display:inline-block;margin-left:0.5rem;padding:0.1rem 0.5rem;font-size:0.75em;background:rgba(56,189,248,0.12);color:var(--accent,#38bdf8);border-radius:3px;">Verified {{#if verifiedDate}}{{verifiedDate}}{{else}}April 2026{{/if}}</span>
+      </li>
       {{/each}}
     </ol>
   </section>

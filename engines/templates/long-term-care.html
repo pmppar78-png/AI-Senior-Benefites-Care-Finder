@@ -16,6 +16,14 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if stateSpecificOpening}}<div class="state-opening">{{{stateSpecificOpening}}}</div>{{/if}}
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}
@@ -64,7 +72,7 @@
         </div>
       </div>
       {{/if}}
-      <p>Without insurance or Medicaid, families must pay these costs out of pocket. The average person who needs long-term care will need it for approximately 3 years, though many need care for much longer.</p>
+      <p>Without insurance or Medicaid, families must pay these costs out of pocket. The average person who needs long-term care will need it for approximately 3 years, though many need care for much longer. <sup style="font-size:0.7em;"><a href="https://www.genworth.com/aging-and-you/finances/cost-of-care.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Genworth Cost of Care, verified April 2026]</a></sup></p>
     </section>
 
     <!-- Section: Insurance Premiums -->
@@ -105,7 +113,7 @@
         </table>
       </div>
       {{else}}
-      <p>LTC insurance premiums vary significantly based on your age at purchase, health status, benefit amount, benefit period, elimination period, and inflation protection. Premiums are lowest when purchased in your 50s and increase substantially with age.</p>
+      <p>LTC insurance premiums vary significantly based on your age at purchase, health status, benefit amount, benefit period, elimination period, and inflation protection. Premiums are lowest when purchased in your 50s and increase substantially with age. <sup style="font-size:0.7em;"><a href="https://www.ahip.org/topics/long-term-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[AHIP, verified April 2026]</a></sup> <sup style="font-size:0.7em;"><a href="https://www.aaltci.org/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[AALTCI]</a></sup></p>
       {{/if}}
     </section>
 

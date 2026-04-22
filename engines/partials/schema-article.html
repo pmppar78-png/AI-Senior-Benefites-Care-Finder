@@ -27,6 +27,58 @@
       "@type": "WebSite",
       "name": "Senior Benefits Care Finder",
       "url": "https://seniorbenefitscarefinder.com"
-    }
+    }{{#if state}},
+    "about": {
+      "@type": "Thing",
+      "name": "Senior benefits in {{state}}"
+    }{{/if}}
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{{#each breadcrumbs}}
+      {
+        "@type": "ListItem",
+        "position": {{@number}},
+        "name": "{{label}}"{{#if url}},
+        "item": "https://seniorbenefitscarefinder.com{{url}}"{{/if}}
+      }{{#if @last}}{{else}},{{/if}}{{/each}}
+    ]
+  }
+  </script>
+  {{#if isMedicalPage}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "{{pageTitle}}",
+    "description": "{{metaDescription}}",
+    "url": "{{canonicalUrl}}",
+    "dateModified": "{{lastUpdated}}",
+    "datePublished": "{{datePublished}}",
+    "lastReviewed": "{{lastUpdated}}",
+    "mainContentOfPage": {
+      "@type": "WebPageElement",
+      "cssSelector": "main"
+    },
+    "reviewedBy": {
+      "@type": "Person",
+      "name": "Paul Paradis",
+      "url": "https://seniorbenefitscarefinder.com/author/paul-paradis/",
+      "jobTitle": "Founder & Independent Researcher"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Senior Benefits Care Finder",
+      "url": "https://seniorbenefitscarefinder.com"
+    }{{#if state}},
+    "about": {
+      "@type": "MedicalCondition",
+      "name": "Senior health benefits and coverage in {{state}}"
+    }{{/if}}
+  }
+  </script>
+  {{/if}}

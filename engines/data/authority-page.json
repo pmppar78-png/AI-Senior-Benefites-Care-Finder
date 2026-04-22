@@ -3,20 +3,28 @@
     "slug": "about",
     "h1": "About Senior Benefits Care Finder",
     "title": "About Us",
-    "metaDescription": "Learn about Senior Benefits Care Finder, our mission to help seniors navigate benefits, and our team of experts.",
-    "introText": "<p>Senior Benefits Care Finder is a comprehensive resource helping seniors and their families navigate the complex world of benefits, care options, and financial assistance programs.</p>",
+    "metaDescription": "Senior Benefits Care Finder is an independent publication founded by Paul Paradis to help seniors, veterans, and families understand Medicare, Medicaid, Social Security, and senior care in plain English.",
+    "introText": "<p>Senior Benefits Care Finder is an independent publication founded and operated by Paul Paradis. We write plain-English guides to Medicare, Medicaid, Social Security, VA benefits, and senior care &mdash; not a call center, not a government agency, not a sales team.</p>",
     "sections": [
       {
-        "heading": "Our Mission",
-        "content": "<p>We believe every senior deserves access to clear, accurate information about the benefits and programs available to them. Our mission is to simplify the process of finding and enrolling in programs that can improve quality of life.</p>"
+        "heading": "Why This Site Exists",
+        "content": "<p>Senior Benefits Care Finder exists because the programs that matter most to older Americans &mdash; Medicare, Medicaid, Social Security, VA benefits, long-term care &mdash; are some of the hardest things to read about online. Official pages are accurate but dense. Agent-run sites push you toward a phone call before they answer your question. Forums give you outdated advice from strangers.</p><p>We sit in a different spot: read the primary sources, write the plain-English version, link back to the official page, and keep it current. No call center, no lead forms, no sales script.</p>"
       },
       {
-        "heading": "What We Cover",
-        "content": "<p>From Medicare and Medicaid to assisted living costs, home care options, veterans benefits, and financial assistance programs — we provide state-by-state guides covering the most important topics for seniors and their caregivers.</p>"
+        "heading": "What We Are and What We Aren't",
+        "content": "<p>We are a small, independent publisher of educational guides about senior benefits and care. We are not a government agency, a licensed insurance agency, a law firm, a financial planning firm, a medical practice, or an enrollment service. We don't enroll anyone in anything and we don't file paperwork on anyone's behalf.</p><p>When a question goes past general education, we say so and point readers to the right place: 1-800-MEDICARE, SSA, the VA, the State Health Insurance Assistance Program (SHIP), or the Eldercare Locator at 1-800-677-1116.</p>"
       },
       {
-        "heading": "Our Approach",
-        "content": "<p>Every guide is researched and updated regularly to reflect current eligibility requirements, costs, and program details. We compile information from official government sources, industry data, and expert analysis.</p>"
+        "heading": "How Our Content Gets Made",
+        "content": "<p>One person publishes here. Paul researches, writes, and maintains the guides. The workflow is simple: start with primary sources (CMS, SSA, VA, state Medicaid agencies, the Genworth Cost of Care Survey, BLS), write the plain-English version with dated dollar figures, use AI tools to help draft and cross-check across states, and review every page before it goes live. Every claim that matters links back to the official source so readers can verify.</p>"
+      },
+      {
+        "heading": "Independence and Disclosure",
+        "content": "<p>The site is supported by display ads and, in some places, affiliate links. Affiliate or sponsored links are disclosed. No advertiser pays to change what's written in a guide, and no company on the site gets editorial favors in exchange for a commercial relationship.</p>"
+      },
+      {
+        "heading": "From the Founder",
+        "content": "<p>I started this site because my own family needed it. When relatives were trying to sort out Medicare, Medicaid for a parent, and a VA pension for a surviving spouse, the internet was full of glossy pages that wanted a phone number before they'd answer a question. I wrote up what I learned in plain language, and other people kept asking for the notes.</p><p>I'm not a licensed agent or attorney. What I can do is read the source material carefully, write it up honestly, link back to the original, and keep it current. If something is wrong, tell me and I'll fix it.</p><p>&mdash; Paul Paradis, Founder</p>"
       }
     ]
   },
@@ -40,16 +48,28 @@
     "slug": "contact",
     "h1": "Contact Us",
     "title": "Contact Us",
-    "metaDescription": "Get in touch with Senior Benefits Care Finder for questions, feedback, or partnership inquiries.",
-    "introText": "<p>We would love to hear from you. Whether you have a question about benefits, feedback about our guides, or a partnership inquiry, we are here to help.</p>",
+    "metaDescription": "Email Senior Benefits Care Finder with questions, corrections, or partnership inquiries. Small independent publication — not a government agency, not a crisis line, not an enrollment service.",
+    "introText": "<p>We're a small independent publication. Email is the best way to reach us &mdash; and we want to be upfront about what we can and can't help with before you hit send.</p>",
     "sections": [
       {
-        "heading": "Get in Touch",
-        "content": "<p>Email us with your questions or feedback. Our team reviews every message and strives to respond within 48 hours.</p>"
+        "heading": "How to Reach Us",
+        "content": "<p>Senior Benefits Care Finder is run by a small team led by founder Paul Paradis. Email is the only way we take inquiries. We don't have a call center and we don't publish a phone number, because we're not licensed to give benefits, legal, or medical advice and we don't want anyone to think they're calling one.</p><p>For general questions, corrections, or feedback: <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a>. For advertising and partnership inquiries: <a href='mailto:advertise@seniorbenefitscarefinder.com'>advertise@seniorbenefitscarefinder.com</a>.</p><p>Because this is a small independent team, please give us 2&ndash;3 business days to reply. We are not available 24/7, and this is not a crisis or emergency line. If this is an emergency, call 911. The 988 Suicide &amp; Crisis Lifeline is available 24/7 (call or text 988), and the Veterans Crisis Line is reachable by dialing 988 then pressing 1.</p>"
       },
       {
-        "heading": "For Seniors & Families",
-        "content": "<p>If you need help finding a specific program or understanding your benefits options, explore our state-by-state guides or reach out and we will point you in the right direction.</p>"
+        "heading": "Who We Are and Aren't",
+        "content": "<p>Senior Benefits Care Finder is an independent publication. We are <strong>not</strong> a government agency and have no affiliation with Medicare, Medicaid, the Social Security Administration, or the Department of Veterans Affairs. We are <strong>not</strong> a licensed insurance agency, law firm, financial planning firm, or medical practice. We <strong>cannot</strong> enroll you in a program, file a claim, appeal a denial, or give advice specific to your situation. We don't sell your contact information or pass your questions to third-party agents.</p>"
+      },
+      {
+        "heading": "What We Can Help With",
+        "content": "<p>Corrections or updates to our guides (dates, dollar figures, broken links, eligibility rules). General questions about how a program works or where to find the official source. Feedback on what's confusing or missing. Suggestions for topics or states we should cover. Press, partnership, or advertising inquiries.</p>"
+      },
+      {
+        "heading": "What We Can't Help With",
+        "content": "<p>These aren't the right place to email us. You'll get a faster, better answer from the authoritative resources below: medical diagnosis or treatment (please talk to a clinician or call 911 in an emergency); individual legal advice (a licensed elder law attorney is the right call); enrolling in Medicare, Medicaid, Social Security, or VA benefits (we can't submit paperwork); appealing a coverage decision (your plan, the issuing agency, or a licensed professional can help — your State Health Insurance Assistance Program offers free Medicare counseling); finding a local provider on your behalf (try the Eldercare Locator).</p>"
+      },
+      {
+        "heading": "Authoritative Resources",
+        "content": "<p><strong>Medicare:</strong> 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048, or <a href='https://www.medicare.gov' rel='noopener'>medicare.gov</a>. Free local counseling through your <a href='https://www.shiphelp.org' rel='noopener'>State Health Insurance Assistance Program (SHIP)</a>.</p><p><strong>Social Security:</strong> 1-800-772-1213, TTY 1-800-325-0778, or <a href='https://www.ssa.gov' rel='noopener'>ssa.gov</a>.</p><p><strong>Veterans Affairs:</strong> 1-800-827-1000 or <a href='https://www.va.gov' rel='noopener'>va.gov</a>. <strong>Veterans Crisis Line:</strong> dial 988 then press 1, or text 838255.</p><p><strong>Eldercare Locator</strong> (finding local services for an older adult): 1-800-677-1116 or <a href='https://eldercare.acl.gov' rel='noopener'>eldercare.acl.gov</a>.</p><p><strong>Medicaid:</strong> Each state runs its own program. Start at <a href='https://www.medicaid.gov' rel='noopener'>medicaid.gov</a> and follow the link to your state agency.</p>"
       }
     ]
   },
@@ -78,20 +98,28 @@
     "slug": "editorial-policy",
     "h1": "Editorial Policy",
     "title": "Editorial Policy",
-    "metaDescription": "Read the editorial standards and policies of Senior Benefits Care Finder.",
-    "introText": "<p>Our editorial policy ensures the information we provide is accurate, balanced, and helpful for seniors and their families.</p>",
+    "metaDescription": "Editorial standards for Senior Benefits Care Finder: independence, plain-English accuracy, human review of AI-assisted drafts, affiliate disclosure, and a fast-correction policy.",
+    "introText": "<p>How Senior Benefits Care Finder decides what to publish, how we handle AI tools, how we disclose relationships, and how we fix things when we get them wrong.</p>",
     "sections": [
       {
-        "heading": "Independence",
-        "content": "<p>Our editorial content is created independently. Advertising and partnerships do not influence our research, ratings, or recommendations.</p>"
+        "heading": "Who Writes This",
+        "content": "<p>Senior Benefits Care Finder is an independent publication founded and operated by <a href='/author/paul-paradis/'>Paul Paradis</a>. One person's name is on the work. Paul is not a licensed insurance agent, attorney, financial planner, or medical professional — he's a publisher focused on plain-English guidance. Every guide is published under his byline, and when something is wrong, the responsibility for fixing it sits with him.</p>"
       },
       {
-        "heading": "Expertise",
-        "content": "<p>Our content is developed by researchers with expertise in senior benefits, healthcare policy, and elder care. All guides undergo a review process for accuracy.</p>"
+        "heading": "Independence",
+        "content": "<p>Our editorial content is written independently of our advertisers and affiliate partners. No advertiser or partner gets to change what a guide says about their product, their category, or a competitor. We do not accept paid placements inside guides; ads are labeled as ads, and affiliate or sponsored links are disclosed. Government programs are never pitched as if they were commercial products — they're explained using the relevant official source. If a commercial relationship ever conflicts with what's most accurate or most helpful for the reader, the reader wins.</p>"
+      },
+      {
+        "heading": "Expertise and How Content Gets Made",
+        "content": "<p>We want to be plain about how the guides are written. Primary sources come first: Medicare.gov, SSA.gov, VA.gov, state Medicaid agencies, the Genworth Cost of Care Survey, BLS data, and peer-reviewed research when it applies. We use AI tools to help organize data, draft passages, and cross-check consistency across states and topics; a human reviews every page before it's published, and the byline on every page is a human. Rules that qualify in government language get rewritten into the way real people talk about them, with links back to the primary source so readers can verify. When a question requires a licensed professional, we say so and point readers to the right resource.</p>"
+      },
+      {
+        "heading": "Disclosure",
+        "content": "<p>This site is supported by display advertising and, in some places, affiliate links to third-party services. Where a link is affiliate or sponsored, we label it. We may earn a commission when readers use those links, at no extra cost to the reader. Commissions do not change the editorial content of a guide. We are not affiliated with Medicare, Medicaid, the Social Security Administration, the VA, or any state or federal agency.</p>"
       },
       {
         "heading": "Corrections",
-        "content": "<p>If you find an error in any of our guides, please contact us. We take accuracy seriously and will correct verified errors promptly.</p>"
+        "content": "<p>We get things wrong sometimes, and when that happens we fix them. Found an error? Email <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a> with the page and what's off. Include a source if you have one. Verified corrections are usually made within a few business days, and material updates get a dated 'Updated' badge on the page. Program rules, income limits, and dollar figures change often — if a number looks stale, check the linked government source and please tell us so we can update it here.</p>"
       }
     ]
   },

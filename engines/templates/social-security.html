@@ -16,6 +16,13 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}
@@ -40,13 +47,15 @@
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
       <h2>Social Security Benefits in {{locationName}}</h2>
-      <p>Social Security provides financial benefits to millions of Americans, including retired workers, disabled individuals, and surviving family members. In {{locationName}}, understanding your specific benefit amounts, state tax rules, and local resources can help you maximize your retirement income.</p>
+      {{#if stateSpecificOpening}}{{{stateSpecificOpening}}}{{else}}<p>Social Security provides financial benefits to millions of Americans, including retired workers, disabled individuals, and surviving family members. In {{locationName}}, understanding your specific benefit amounts, state tax rules, and local resources can help you maximize your retirement income.</p>{{/if}}
       <p>The Social Security Administration (SSA) offers three main programs for seniors: retirement benefits, Social Security Disability Insurance (SSDI), and Supplemental Security Income (SSI). Each has different eligibility rules and benefit amounts.</p>
     </section>
 
     <!-- Section: Benefit Amounts -->
     <section class="content-section" id="benefit-amounts">
       <h2>{{currentYear}} Social Security Benefit Amounts</h2>
+
+      <p style="font-size:0.9em;">Benefit amounts shown below reflect current SSA figures <sup style="font-size:0.7em;"><a href="https://www.ssa.gov/benefits/retirement/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[SSA.gov, verified April 2026]</a></sup>. Your individual benefit is calculated from your earnings record — use the SSA&rsquo;s personalized estimator at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener noreferrer">my Social Security</a> for an exact figure.</p>
 
       <div class="stat-grid">
         <div class="stat-card">
@@ -201,7 +210,7 @@
       {{/if}}
       <div class="info-box">
         <h3>Federal Taxation</h3>
-        <p>At the federal level, up to 85% of your Social Security benefits may be taxable depending on your combined income. Individuals with combined income above $25,000 and couples above $32,000 may owe taxes on benefits.</p>
+        <p>At the federal level, up to 85% of your Social Security benefits may be taxable depending on your combined income. Individuals with combined income above $25,000 and couples above $32,000 may owe taxes on benefits. <sup style="font-size:0.7em;"><a href="https://www.ssa.gov/benefits/retirement/planner/taxes.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[SSA.gov, verified April 2026]</a></sup></p>
       </div>
     </section>
 

@@ -16,6 +16,14 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if stateSpecificOpening}}<div class="state-opening">{{{stateSpecificOpening}}}</div>{{/if}}
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}

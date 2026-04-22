@@ -16,6 +16,13 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}
@@ -45,7 +52,7 @@
         <p>In {{locationName}}, the Medicaid program is known as {{programName}}. This state-federal partnership provides health coverage to eligible low-income residents, including seniors aged 65 and older.</p>
       </div>
       {{/if}}
-      <p>Medicaid is a joint federal-state program that provides health coverage to millions of Americans, including eligible low-income adults, children, pregnant women, elderly adults, and people with disabilities. In {{locationName}}, Medicaid helps seniors cover costs for nursing home care, home health services, prescription drugs, hospital stays, and doctor visits that Medicare doesn't fully cover.</p>
+      {{#if stateSpecificOpening}}{{{stateSpecificOpening}}}{{else}}<p>Medicaid is a joint federal-state program that provides health coverage to millions of Americans, including eligible low-income adults, children, pregnant women, elderly adults, and people with disabilities. In {{locationName}}, Medicaid helps seniors cover costs for nursing home care, home health services, prescription drugs, hospital stays, and doctor visits that Medicare doesn't fully cover.</p>{{/if}}
       <p>For seniors, Medicaid often works alongside Medicare as "dual eligibility," covering costs like Medicare premiums, deductibles, and copayments, as well as long-term care services that Medicare doesn't cover.</p>
 
       {{#if expansionStatus}}
@@ -59,6 +66,8 @@
     <!-- Section: Income Limits -->
     <section class="content-section" id="income-limits">
       <h2>{{currentYear}} Medicaid Income &amp; Asset Limits in {{locationName}}</h2>
+
+      <p style="font-size:0.9em;">Income and asset thresholds shown below are compiled from federal and state Medicaid rules <sup style="font-size:0.7em;"><a href="https://www.medicaid.gov/medicaid/eligibility/index.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicaid.gov, verified April 2026]</a></sup>. Because thresholds are updated annually and some programs use different limits, confirm current figures with your state Medicaid agency before applying.</p>
 
       <div class="data-table-wrap">
         <table class="data-table">
@@ -108,7 +117,7 @@
 
       <div class="info-box">
         <h3>Spousal Protections</h3>
-        <p>When one spouse needs nursing home care, federal law protects the at-home spouse from impoverishment. The Community Spouse Resource Allowance (CSRA) lets the at-home spouse keep a portion of the couple's assets and a monthly income allowance.</p>
+        <p>When one spouse needs nursing home care, federal law protects the at-home spouse from impoverishment. The Community Spouse Resource Allowance (CSRA) lets the at-home spouse keep a portion of the couple's assets and a monthly income allowance. <sup style="font-size:0.7em;"><a href="https://www.medicaid.gov/medicaid/eligibility/index.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicaid.gov, verified April 2026]</a></sup></p>
       </div>
     </section>
 

@@ -16,6 +16,13 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}
@@ -40,7 +47,7 @@
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
       <h2>Medicare Overview in {{locationName}}</h2>
-      <p>Medicare is the federal health insurance program for people aged 65 and older, as well as certain younger individuals with disabilities or specific conditions. In {{locationName}}, seniors have access to Original Medicare (Parts A &amp; B) as well as private Medicare Advantage plans, Medigap supplemental policies, and Part D prescription drug coverage.</p>
+      {{#if stateSpecificOpening}}{{{stateSpecificOpening}}}{{else}}<p>Medicare is the federal health insurance program for people aged 65 and older, as well as certain younger individuals with disabilities or specific conditions. In {{locationName}}, seniors have access to Original Medicare (Parts A &amp; B) as well as private Medicare Advantage plans, Medigap supplemental policies, and Part D prescription drug coverage.</p>{{/if}}
       <p>Understanding your Medicare options in {{locationName}} is critical because plan availability, costs, and provider networks vary significantly by location. This guide covers everything you need to know about Medicare plans available in {{locationName}} for {{currentYear}}.</p>
     </section>
 
@@ -62,6 +69,7 @@
           <span class="stat-label">Part D Drug Plans</span>
         </div>
       </div>
+      <p style="font-size:0.85em;color:var(--muted,#94a3b8);margin-top:-0.5rem;">Plan counts sourced from the CMS Medicare Plan Finder <sup style="font-size:0.8em;"><a href="https://www.medicare.gov/plan-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov, verified April 2026]</a></sup>.</p>
 
       <h3>Medicare Advantage (Part C)</h3>
       <p>Medicare Advantage plans in {{locationName}} are offered by private insurance companies approved by Medicare. These plans cover everything Original Medicare covers and often include additional benefits like vision, dental, hearing, and prescription drugs. Plans may use HMO, PPO, or other network structures.</p>
@@ -109,10 +117,11 @@
           </tbody>
         </table>
       </div>
+      <p style="font-size:0.85em;color:var(--muted,#94a3b8);">National averages sourced from CMS published premium benchmarks <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/plan-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov Plan Compare, verified April 2026]</a></sup>.</p>
 
       <div class="info-box highlight">
         <h3>Part B Premium ({{currentYear}})</h3>
-        <p>The standard Medicare Part B premium is the same nationwide. Higher-income beneficiaries may pay Income-Related Monthly Adjustment Amounts (IRMAA). Part A is premium-free for most people who paid Medicare taxes for 10+ years.</p>
+        <p>The standard Medicare Part B premium is the same nationwide. Higher-income beneficiaries may pay Income-Related Monthly Adjustment Amounts (IRMAA). Part A is premium-free for most people who paid Medicare taxes for 10+ years. <sup style="font-size:0.7em;"><a href="https://www.cms.gov/medicare" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CMS.gov, verified April 2026]</a></sup></p>
       </div>
     </section>
 

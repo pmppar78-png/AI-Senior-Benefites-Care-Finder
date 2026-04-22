@@ -16,6 +16,13 @@
       <div class="intro-text">
         {{{introText}}}
       </div>
+      {{#if localContext}}
+      <ul class="local-context">
+        {{#each localContext}}
+        <li><strong>{{label}}:</strong> {{value}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
 
     {{> meta-badges}}
@@ -41,13 +48,14 @@
     <!-- Section: Overview -->
     <section class="content-section" id="overview">
       <h2>Veterans Benefits for Seniors in {{locationName}}</h2>
-      <p>Senior veterans in {{locationName}} have access to both federal VA benefits and state-specific programs designed to support their health care, housing, and financial needs. Many veterans and their surviving spouses don't claim all the benefits they've earned.</p>
+      {{#if stateSpecificOpening}}{{{stateSpecificOpening}}}{{else}}<p>Senior veterans in {{locationName}} have access to both federal VA benefits and state-specific programs designed to support their health care, housing, and financial needs. Many veterans and their surviving spouses don't claim all the benefits they've earned.</p>{{/if}}
       <p>This guide covers federal VA programs — health care, pension, Aid &amp; Attendance — as well as {{locationName}}-specific benefits like property tax exemptions, state veterans homes, and caregiver support programs.</p>
     </section>
 
     <!-- Section: Aid & Attendance -->
     <section class="content-section" id="aid-attendance">
       <h2>VA Aid &amp; Attendance Benefit</h2>
+      <p style="font-size:0.9em;">A&amp;A and Housebound benefit amounts are set by the VA and adjusted annually <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/aid-attendance-housebound/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov, verified April 2026]</a></sup>.</p>
       {{#if aidAndAttendance}}
       <div class="stat-grid">
         <div class="stat-card">
@@ -69,6 +77,7 @@
     <!-- Section: VA Pension -->
     <section class="content-section" id="va-pension">
       <h2>VA Pension Program</h2>
+      <p style="font-size:0.9em;">Maximum Annual Pension Rates (MAPR) are published by the VA and updated annually with COLA adjustments <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/veterans-pension-rates/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov, verified April 2026]</a></sup>.</p>
       {{#if vaPension}}
       <div class="stat-grid">
         <div class="stat-card">
