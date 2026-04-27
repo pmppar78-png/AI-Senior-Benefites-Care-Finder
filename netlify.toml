@@ -96,11 +96,32 @@ publish = "."
   status = 301
   force = true
 
-# Chat page clean URL
+# Chat page clean URL — serve /chat.html content at /chat (canonical URL)
 [[redirects]]
   from = "/chat"
   to = "/chat.html"
   status = 200
+
+# Eliminate duplicate-content URLs by redirecting the .html and trailing-slash
+# variants to the canonical /chat path.
+[[redirects]]
+  from = "/chat.html"
+  to = "/chat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/chat/"
+  to = "/chat"
+  status = 301
+  force = true
+
+# Redirect /index.html to / so the homepage has a single indexable URL.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
 
 # Redirect legacy /providers/<state>/ (missing providerType) to default nursing-homes state page
 [[redirects]]
