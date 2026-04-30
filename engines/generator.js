@@ -262,6 +262,45 @@ class PageGenerator {
     const EXCLUDED_DIRS = new Set(['.netlify', 'node_modules', '.git', 'engines', 'scripts']);
     const EXCLUDED_FIRST_SEGMENTS = new Set(['chat', '404']);
 
+    // U.S. state slugs used as legacy URL segments that redirect to canonical
+    // hubs (see netlify.toml). Any URL whose second path segment is one of
+    // these under /providers, /home-care, or /medicaid is a redirect source
+    // and must never appear in the sitemap, even if an index.html exists.
+    const STATE_SLUGS = new Set([
+      'alabama','alaska','arizona','arkansas','california','colorado','connecticut',
+      'delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa',
+      'kansas','kentucky','louisiana','maine','maryland','massachusetts','michigan',
+      'minnesota','mississippi','missouri','montana','nebraska','nevada',
+      'new-hampshire','new-jersey','new-mexico','new-york','north-carolina',
+      'north-dakota','ohio','oklahoma','oregon','pennsylvania','rhode-island',
+      'south-carolina','south-dakota','tennessee','texas','utah','vermont',
+      'virginia','washington','west-virginia','wisconsin','wyoming',
+    ]);
+
+    // Paths whose response is a 301/302 per netlify.toml. Sitemap submissions
+    // must be final 200 canonical URLs only — Google flags redirect sources
+    // as "Page with redirect" and excludes them from indexing.
+    const isRedirectingPath = (urlPath) => {
+      const segs = urlPath.split('/').filter(Boolean);
+      if (segs.length === 0) return false;
+      const [a, b] = segs;
+      // /assisted-living/costs/* and /home-care/costs/* (legacy plural)
+      if ((a === 'assisted-living' || a === 'home-care') && b === 'costs') return true;
+      // /veterans-benefits/healthcare/* (legacy one-word)
+      if (a === 'veterans-benefits' && b === 'healthcare') return true;
+      // /<hub>/guide(/) → /<hub>/
+      if ((a === 'medicare' || a === 'medicaid' || a === 'social-security') && b === 'guide' && segs.length <= 2) return true;
+      // Legacy state-only URLs that redirect to canonical sub-hub
+      if (a === 'providers' && b && STATE_SLUGS.has(b)) return true;
+      if (a === 'home-care' && b && STATE_SLUGS.has(b)) return true;
+      if (a === 'medicaid' && b && STATE_SLUGS.has(b)) return true;
+      // Legacy trust-page slugs
+      if (segs.length === 1) {
+        if (['editorial-standards','privacy','terms','terms-of-service','who-we-are','mission','why-trust-us'].includes(a)) return true;
+      }
+      return false;
+    };
+
     // Silo buckets by first path segment. Everything else falls into 'trust'.
     const SILO_MAP = {
       medicare: 'medicare',
@@ -330,6 +369,7 @@ class PageGenerator {
       if (seen.has(normalized)) return;
       const first = normalized.split('/').filter(Boolean)[0] || '';
       if (EXCLUDED_FIRST_SEGMENTS.has(first)) return;
+      if (isRedirectingPath(normalized)) return;
       seen.add(normalized);
     };
 
