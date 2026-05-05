@@ -1,0 +1,14 @@
+  {{#if priorityActionLinks}}
+  <section class="content-section priority-action-path" id="priority-action-path">
+    <h2>{{priorityActionHeading}}</h2>
+    <p>{{priorityActionIntro}}</p>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem;">
+      {{#each priorityActionLinks}}
+      <a href="{{url}}" class="info-box" style="text-decoration:none;color:inherit;">
+        <h3>{{title}}</h3>
+        <p>{{description}}</p>
+      </a>
+      {{/each}}
+    </div>
+  </section>
+  {{/if}}
