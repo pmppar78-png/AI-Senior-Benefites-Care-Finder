@@ -19,6 +19,7 @@ const TEMPLATES_DIR = path.join(ENGINES_DIR, 'templates');
 const PARTIALS_DIR = path.join(ENGINES_DIR, 'partials');
 const DATA_DIR = path.join(ENGINES_DIR, 'data');
 const OUTPUT_DIR = ROOT; // Write pages into the project root
+const { getPriorityPage } = require('./priority-pages');
 
 // ---------------------------------------------------------------------------
 // Template Engine
@@ -644,16 +645,20 @@ class PageGenerator {
     ]);
     const isMedicalPage = MEDICAL_ENGINE_IDS.has(eng.id);
 
+    const canonicalPath = this._buildUrl(canonicalPattern, seoData).replace(/\/+$/g, '') || '/';
+    const priorityPage = getPriorityPage(canonicalPath);
+
     return {
       // Engine meta
       engineId: eng.id,
       engineName: eng.name,
       schemaType: eng.schemaType || 'Article',
       isMedicalPage,
+      robotsDirective: 'index, follow',
 
       // SEO — built from patterns with resolved state/city names
-      pageTitle: this._interpolatePattern(resolvedCitySlug && eng.citySeoTitle ? eng.citySeoTitle : eng.seoTitle, seoData),
-      metaDescription: this._interpolatePattern(resolvedCitySlug && eng.cityMetaDescription ? eng.cityMetaDescription : eng.metaDescription, seoData),
+      pageTitle: priorityPage?.title || this._interpolatePattern(resolvedCitySlug && eng.citySeoTitle ? eng.citySeoTitle : eng.seoTitle, seoData),
+      metaDescription: priorityPage?.description || this._interpolatePattern(resolvedCitySlug && eng.cityMetaDescription ? eng.cityMetaDescription : eng.metaDescription, seoData),
       canonicalUrl: `https://seniorbenefitscarefinder.com${this._buildUrl(canonicalPattern, seoData)}/`.replace(/\/\/$/, '/'),
 
       // Location data
@@ -714,6 +719,13 @@ class PageGenerator {
 
       // Cross-engine links for this location
       crossEngineLinks,
+
+      // Priority indexing overlay
+      h1: priorityPage?.h1 || entry.h1,
+      introText: priorityPage?.intro || entry.introText,
+      priorityActionHeading: priorityPage?.priorityActionHeading || '',
+      priorityActionIntro: priorityPage?.priorityActionIntro || '',
+      priorityActionLinks: priorityPage?.priorityActionLinks || [],
     };
   }
 
