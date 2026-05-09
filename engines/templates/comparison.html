@@ -80,7 +80,11 @@
     <!-- Section: Key Differences -->
     <section class="content-section" id="key-differences">
       <h2>Key Differences Explained</h2>
+      {{#if keyDifferences}}
+      {{{keyDifferences}}}
+      {{else}}
       <p>While {{optionA.name}} and {{optionB.name}} may seem similar at first glance, there are important differences that affect which option is better for your situation. Understanding these differences helps you make an informed decision.</p>
+      {{/if}}
     </section>
 
     <!-- Section: Cost Comparison -->
