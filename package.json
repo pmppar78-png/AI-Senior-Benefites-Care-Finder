@@ -12,5 +12,8 @@
     "generate:batch:1:dry": "node engines/generator.js --batch 1 --dry-run",
     "generate:batch:2:dry": "node engines/generator.js --batch 2 --dry-run",
     "generate:batch:3:dry": "node engines/generator.js --batch 3 --dry-run"
+  },
+  "devDependencies": {
+    "@netlify/edge-functions": "^3.0.6"
   }
 }
