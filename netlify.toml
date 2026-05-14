@@ -331,6 +331,208 @@ publish = "."
   to = "/providers/nursing-homes/:splat"
   status = 301
 
+# Redirect legacy /assisted-living/<state>/ to canonical /assisted-living/cost/<state>/
+[[redirects]]
+  from = "/assisted-living/alabama/*"
+  to = "/assisted-living/cost/alabama/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/alaska/*"
+  to = "/assisted-living/cost/alaska/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/arizona/*"
+  to = "/assisted-living/cost/arizona/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/arkansas/*"
+  to = "/assisted-living/cost/arkansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/california/*"
+  to = "/assisted-living/cost/california/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/colorado/*"
+  to = "/assisted-living/cost/colorado/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/connecticut/*"
+  to = "/assisted-living/cost/connecticut/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/delaware/*"
+  to = "/assisted-living/cost/delaware/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/florida/*"
+  to = "/assisted-living/cost/florida/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/georgia/*"
+  to = "/assisted-living/cost/georgia/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/hawaii/*"
+  to = "/assisted-living/cost/hawaii/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/idaho/*"
+  to = "/assisted-living/cost/idaho/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/illinois/*"
+  to = "/assisted-living/cost/illinois/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/indiana/*"
+  to = "/assisted-living/cost/indiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/iowa/*"
+  to = "/assisted-living/cost/iowa/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/kansas/*"
+  to = "/assisted-living/cost/kansas/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/kentucky/*"
+  to = "/assisted-living/cost/kentucky/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/louisiana/*"
+  to = "/assisted-living/cost/louisiana/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/maine/*"
+  to = "/assisted-living/cost/maine/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/maryland/*"
+  to = "/assisted-living/cost/maryland/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/massachusetts/*"
+  to = "/assisted-living/cost/massachusetts/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/michigan/*"
+  to = "/assisted-living/cost/michigan/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/minnesota/*"
+  to = "/assisted-living/cost/minnesota/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/mississippi/*"
+  to = "/assisted-living/cost/mississippi/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/missouri/*"
+  to = "/assisted-living/cost/missouri/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/montana/*"
+  to = "/assisted-living/cost/montana/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/nebraska/*"
+  to = "/assisted-living/cost/nebraska/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/nevada/*"
+  to = "/assisted-living/cost/nevada/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/new-hampshire/*"
+  to = "/assisted-living/cost/new-hampshire/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/new-jersey/*"
+  to = "/assisted-living/cost/new-jersey/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/new-mexico/*"
+  to = "/assisted-living/cost/new-mexico/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/new-york/*"
+  to = "/assisted-living/cost/new-york/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/north-carolina/*"
+  to = "/assisted-living/cost/north-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/north-dakota/*"
+  to = "/assisted-living/cost/north-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/ohio/*"
+  to = "/assisted-living/cost/ohio/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/oklahoma/*"
+  to = "/assisted-living/cost/oklahoma/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/oregon/*"
+  to = "/assisted-living/cost/oregon/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/pennsylvania/*"
+  to = "/assisted-living/cost/pennsylvania/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/rhode-island/*"
+  to = "/assisted-living/cost/rhode-island/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/south-carolina/*"
+  to = "/assisted-living/cost/south-carolina/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/south-dakota/*"
+  to = "/assisted-living/cost/south-dakota/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/tennessee/*"
+  to = "/assisted-living/cost/tennessee/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/texas/*"
+  to = "/assisted-living/cost/texas/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/utah/*"
+  to = "/assisted-living/cost/utah/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/vermont/*"
+  to = "/assisted-living/cost/vermont/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/virginia/*"
+  to = "/assisted-living/cost/virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/washington/*"
+  to = "/assisted-living/cost/washington/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/west-virginia/*"
+  to = "/assisted-living/cost/west-virginia/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/wisconsin/*"
+  to = "/assisted-living/cost/wisconsin/:splat"
+  status = 301
+[[redirects]]
+  from = "/assisted-living/wyoming/*"
+  to = "/assisted-living/cost/wyoming/:splat"
+  status = 301
+
 # Redirect legacy /home-care/<state>/ to canonical /home-care/cost/<state>/
 [[redirects]]
   from = "/home-care/alabama/*"

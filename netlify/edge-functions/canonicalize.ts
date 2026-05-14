@@ -2,7 +2,7 @@ import type { Config, Context } from "@netlify/edge-functions";
 
 const CANONICAL_HOST = "seniorbenefitscarefinder.com";
 
-export default async (req: Request, _context: Context) => {
+export default async (req: Request, context: Context) => {
   const url = new URL(req.url);
 
   if (url.hostname !== CANONICAL_HOST) {
@@ -14,6 +14,8 @@ export default async (req: Request, _context: Context) => {
       headers: { Location: url.toString() },
     });
   }
+
+  return context.next();
 };
 
 export const config: Config = {
