@@ -157,7 +157,7 @@ const engines = [
     cityUrlPattern: '/social-security/[stateSlug]/[citySlug]',
     // Lead with avg monthly benefit and state tax hook.
     seoTitle: 'Social Security in [state] [currentYear]: [avgRetirementBenefit] Avg',
-    citySeoTitle: 'Social Security in [city], [stateAbbr]: [avgRetirementBenefit]/mo Avg',
+    citySeoTitle: 'Social Security in [city], [stateAbbr]: [avgRetirementBenefit] Avg',
     metaDescription: 'Avg [state] Social Security check [avgRetirementBenefit] in [currentYear]. SSDI [ssdiAvgBenefit], SSI max $943, 2.5% COLA. State tax rules and SSI supplement details.',
     cityMetaDescription: 'Avg Social Security retiree check in [city], [stateAbbr] is [avgRetirementBenefit] for [currentYear]. Local SSA office, claiming age trade-offs, and SSI supplement.',
     schemaType: 'Article',
@@ -201,7 +201,7 @@ const engines = [
     seoTitle: '[state] Home Care [currentYear]: [avgHourlyCost] Aide Rate',
     citySeoTitle: 'Home Care in [city], [stateAbbr]: [avgHourlyCost] Hourly Rate',
     metaDescription: 'Home health aides in [state] run [avgHourlyCost] in [currentYear] — roughly [avgMonthlyCost] for 44 hrs/week. Medicaid waiver coverage, VA benefits, agency vetting.',
-    cityMetaDescription: 'Home care in [city], [stateAbbr]: [avgHourlyCost] per hour, [avgMonthlyCost]/mo in [currentYear]. Aide vs. CNA rates, Medicaid HCBS coverage, local agencies.',
+    cityMetaDescription: 'Home care in [city], [stateAbbr]: [avgHourlyCost], [avgMonthlyCost] in [currentYear]. Aide vs. CNA rates, Medicaid HCBS coverage, local agencies.',
     schemaType: 'Article',
     relatedEngines: ['assisted-living', 'medicaid', 'veterans-benefits', 'long-term-care'],
     dataSchema: {
