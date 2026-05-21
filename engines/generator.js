@@ -293,6 +293,7 @@ class PageGenerator {
       if ((a === 'medicare' || a === 'medicaid' || a === 'social-security') && b === 'guide' && segs.length <= 2) return true;
       // Legacy state-only URLs that redirect to canonical sub-hub
       if (a === 'providers' && b && STATE_SLUGS.has(b)) return true;
+      if (a === 'assisted-living' && b && STATE_SLUGS.has(b)) return true;
       if (a === 'home-care' && b && STATE_SLUGS.has(b)) return true;
       if (a === 'medicaid' && b && STATE_SLUGS.has(b)) return true;
       // Legacy trust-page slugs

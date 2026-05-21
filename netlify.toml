@@ -5,6 +5,9 @@ directory = "netlify/functions"
 command = "node engines/seed-data.js && node engines/generator.js"
 publish = "."
 
+[build.processing.html]
+pretty_urls = true
+
 # Redirect /costs/ to /cost/ (canonicalize duplicate URL structure)
 [[redirects]]
   from = "/assisted-living/costs/*"
