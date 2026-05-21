@@ -11,7 +11,11 @@ export default async (req: Request, context: Context) => {
     url.port = "";
     return new Response(null, {
       status: 301,
-      headers: { Location: url.toString() },
+      headers: {
+        Location: url.toString(),
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "X-Robots-Tag": "noindex",
+      },
     });
   }
 
