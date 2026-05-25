@@ -189,7 +189,7 @@ const medicaidEntries = [];
 function progShortFor(progName, stateName) {
   if (!progName) return `${stateName} Medicaid`;
   const paren = progName.match(/\(([A-Z][A-Za-z-]{1,10}[A-Z]?|[A-Z]{2,}|[A-Z][a-z]+)\)/);
-  if (paren && paren[1].length <= 12) return paren[1];
+  if (paren && paren[1].length <= 12 && paren[1] !== 'Medicaid') return paren[1];
   // Known short brand names
   const brand = { 'Medi-Cal':'Medi-Cal','TennCare':'TennCare','MassHealth':'MassHealth','KanCare':'KanCare','MaineCare':'MaineCare','Med-QUEST':'Med-QUEST','MO HealthNet':'MO HealthNet' };
   if (brand[progName]) return brand[progName];
