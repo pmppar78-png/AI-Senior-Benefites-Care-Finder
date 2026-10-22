@@ -1,4 +1,5 @@
 const https = require("https");
+const { buildModelMessages, enforceApprovedLinks } = require("./lib/chat-config");
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -46,13 +47,22 @@ exports.handler = async (event) => {
     };
   }
 
-  const messages = Array.isArray(body.messages) ? body.messages : [];
+  // The browser may only supply user turns. The system prompt is attached here
+  // and any system, developer, tool, or assistant role from the client is dropped.
+  const built = buildModelMessages(body.messages);
+  if (built.error) {
+    return {
+      statusCode: 400,
+      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+      body: JSON.stringify({ error: built.error }),
+    };
+  }
 
   let apiResponse;
   try {
     const postData = JSON.stringify({
       model: "gpt-4.1-mini",
-      messages,
+      messages: built.messages,
       temperature: 0.9,
       max_tokens: 1000,
     });
@@ -120,7 +130,7 @@ exports.handler = async (event) => {
     };
   }
 
-  const reply =
+  const modelReply =
     parsed &&
     parsed.choices &&
     parsed.choices[0] &&
@@ -128,6 +138,8 @@ exports.handler = async (event) => {
     parsed.choices[0].message.content
       ? parsed.choices[0].message.content
       : "I'm not sure how to respond to that right now, but you can try asking again or browse our senior benefits guides for help.";
+
+  const reply = enforceApprovedLinks(modelReply);
 
   return {
     statusCode: 200,

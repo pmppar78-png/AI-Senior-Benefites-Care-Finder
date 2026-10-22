@@ -906,7 +906,7 @@ states.forEach(s => {
       { question: `How do I apply for SNAP in ${s.name}?`, answer: `Apply online through the ${s.name} benefits portal, by phone, or in person at your ${f.countyTerm || 'county'} Department of Social Services. You'll need proof of income, identity, and residency.` },
     ],
     sources: [
-      { title: 'Benefits.gov', url: 'https://www.benefits.gov' },
+      { title: 'USA.gov Benefit Finder', url: 'https://www.usa.gov/benefit-finder' },
       { title: `${s.name} Department of Social Services`, url: '#' },
     ],
   });
@@ -949,7 +949,7 @@ cities.forEach(c => {
       { question: `Is there senior housing assistance in ${c.name}?`, answer: `Yes, ${c.name} has Section 8 vouchers, public housing, and Section 202 senior housing. Waitlists are common in the ${c.name} area, so apply as early as possible.` },
     ],
     sources: [
-      { title: 'Benefits.gov', url: 'https://www.benefits.gov' },
+      { title: 'USA.gov Benefit Finder', url: 'https://www.usa.gov/benefit-finder' },
       { title: `${stName} Department of Social Services`, url: '#' },
     ],
   });
@@ -1172,7 +1172,7 @@ states.forEach(s => {
     ],
     sources: [
       { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
-      { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org' },
+      { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org/findlawyer' },
       { title: `${s.name} Adult Protective Services`, url: '#' },
     ],
   });
@@ -1211,7 +1211,7 @@ cities.forEach(c => {
     ],
     sources: [
       { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
-      { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org' },
+      { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org/findlawyer' },
     ],
   });
 });
