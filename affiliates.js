@@ -16,32 +16,27 @@
   var affiliateDB = {
     medicare: {
       heading: 'Medicare Plan Comparison Tools',
-      subtitle: 'Well-known platforms people use to compare Medicare plans. Always review details carefully and speak with licensed agents before making decisions.',
+      subtitle: 'Official Medicare resources for comparing coverage. Review the details on Medicare.gov, and for free local help contact a State Health Insurance Assistance Program (SHIP) counselor before making decisions.',
       partners: [
         {
-          name: 'eHealth Medicare',
-          url: 'https://www.ehealthmedicare.com',
-          tagline: 'Compare Medicare Advantage, Medigap & Part D plans side by side'
+          name: 'Medicare.gov',
+          url: 'https://www.medicare.gov/',
+          tagline: 'Official Medicare coverage, enrollment, and cost information'
         },
         {
           name: 'Medicare.gov Plan Finder',
-          url: 'https://www.medicare.gov/plan-compare',
+          url: 'https://www.medicare.gov/plan-compare/',
           tagline: 'Official government Medicare plan comparison tool'
         },
         {
-          name: 'GoHealth Medicare',
-          url: 'https://www.gohealth.com/medicare',
-          tagline: 'Talk to licensed agents about Medicare options'
+          name: 'Get Started with Medicare',
+          url: 'https://www.medicare.gov/basics/get-started-with-medicare',
+          tagline: 'Official walkthrough of Medicare parts and when to enroll'
         },
         {
-          name: 'SelectQuote Medicare',
-          url: 'https://www.selectquote.com/medicare',
-          tagline: 'Get personalized Medicare plan recommendations'
-        },
-        {
-          name: 'Mutual of Omaha',
-          url: 'https://www.mutualofomaha.com/medicare-supplement',
-          tagline: 'Trusted Medigap supplement insurance plans'
+          name: 'SHIP Medicare Help',
+          url: 'https://www.shiphelp.org/',
+          tagline: 'Free local Medicare counseling from the State Health Insurance Assistance Program'
         }
       ]
     },
@@ -51,9 +46,9 @@
       subtitle: 'Helpful tools for checking Medicaid eligibility and understanding your options. Verify all details with your state Medicaid office.',
       partners: [
         {
-          name: 'Benefits.gov',
-          url: 'https://www.benefits.gov/benefit/606',
-          tagline: 'Check Medicaid eligibility and apply online'
+          name: 'USA.gov Medicaid & CHIP',
+          url: 'https://www.usa.gov/medicaid-chip-insurance',
+          tagline: 'Official guide to Medicaid and CHIP coverage and how to apply'
         },
         {
           name: 'Medicaid.gov',
@@ -133,7 +128,7 @@
         },
         {
           name: 'AARP Social Security Calculator',
-          url: 'https://www.aarp.org/retirement/social-security/benefits-calculator',
+          url: 'https://www.aarp.org/social-security/benefits-calculator/',
           tagline: 'Estimate your Social Security retirement benefits'
         },
         {
@@ -154,9 +149,9 @@
           tagline: 'Check your VA claim status and apply for benefits'
         },
         {
-          name: 'Veterans Aid',
-          url: 'https://www.veteranaid.org',
-          tagline: 'Free help applying for VA Aid & Attendance benefits'
+          name: 'VA Aid and Attendance',
+          url: 'https://www.va.gov/pension/aid-attendance-housebound/',
+          tagline: 'Official VA page for Aid and Attendance and Housebound benefits'
         },
         {
           name: 'DAV',
@@ -241,7 +236,7 @@
         },
         {
           name: 'National Academy of Elder Law Attorneys',
-          url: 'https://www.naela.org',
+          url: 'https://www.naela.org/findlawyer',
           tagline: 'Find a qualified elder law attorney near you'
         },
         {
@@ -257,8 +252,8 @@
       subtitle: 'Tools to help discover government benefit programs you may qualify for. Eligibility varies, so verify details with the issuing agency.',
       partners: [
         {
-          name: 'Benefits.gov',
-          url: 'https://www.benefits.gov',
+          name: 'USA.gov Benefit Finder',
+          url: 'https://www.usa.gov/benefit-finder',
           tagline: 'Check eligibility for 1,000+ government benefit programs'
         },
         {
@@ -375,8 +370,8 @@
           tagline: 'Find benefits and savings programs you may qualify for'
         },
         {
-          name: 'Benefits.gov',
-          url: 'https://www.benefits.gov',
+          name: 'USA.gov Benefit Finder',
+          url: 'https://www.usa.gov/benefit-finder',
           tagline: 'Discover government benefit programs in your area'
         }
       ]
@@ -392,9 +387,9 @@
           tagline: 'Find D-SNP plans available in your area'
         },
         {
-          name: 'eHealth Medicare',
-          url: 'https://www.ehealthmedicare.com',
-          tagline: 'Compare Medicare plans including D-SNP options'
+          name: 'Medicare.gov',
+          url: 'https://www.medicare.gov/',
+          tagline: 'Official Medicare information, including coverage for people with both Medicare and Medicaid'
         },
         {
           name: 'BenefitsCheckUp',
@@ -402,8 +397,8 @@
           tagline: 'Check eligibility for Medicare Savings Programs and Extra Help'
         },
         {
-          name: 'Benefits.gov',
-          url: 'https://www.benefits.gov',
+          name: 'USA.gov Benefit Finder',
+          url: 'https://www.usa.gov/benefit-finder',
           tagline: 'Find government programs for low-income seniors'
         }
       ]
@@ -421,7 +416,7 @@
         {
           name: 'Bay Alarm Medical',
           url: 'https://www.bayalarmmedical.com',
-          tagline: 'Affordable medical alert systems starting at $19.95/month'
+          tagline: 'In-home and mobile medical alert systems with 24/7 monitoring'
         },
         {
           name: 'Medical Alert',
@@ -446,8 +441,8 @@
           tagline: 'NCOA tool to find benefits you may qualify for'
         },
         {
-          name: 'Benefits.gov',
-          url: 'https://www.benefits.gov',
+          name: 'USA.gov Benefit Finder',
+          url: 'https://www.usa.gov/benefit-finder',
           tagline: 'Check eligibility for 1,000+ government benefit programs'
         },
         {
@@ -495,9 +490,9 @@
       subtitle: 'Popular platforms for comparing senior benefits and care options. Review each resource carefully and speak with licensed professionals.',
       partners: [
         {
-          name: 'eHealth Medicare',
-          url: 'https://www.ehealthmedicare.com',
-          tagline: 'Compare Medicare plans side by side'
+          name: 'Medicare.gov',
+          url: 'https://www.medicare.gov/',
+          tagline: 'Official Medicare coverage, enrollment, and plan information'
         },
         {
           name: 'A Place for Mom',
@@ -510,8 +505,8 @@
           tagline: 'Lower your prescription drug costs'
         },
         {
-          name: 'Benefits.gov',
-          url: 'https://www.benefits.gov',
+          name: 'USA.gov Benefit Finder',
+          url: 'https://www.usa.gov/benefit-finder',
           tagline: 'Discover government benefits you qualify for'
         }
       ]

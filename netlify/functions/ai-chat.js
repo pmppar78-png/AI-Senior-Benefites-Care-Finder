@@ -1,4 +1,5 @@
 const https = require("https");
+const { ensureDisclosure, prepareMessages, sanitizeReply } = require("./lib/chat-config");
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -6,8 +7,15 @@ const CORS_HEADERS = {
   "Access-Control-Allow-Headers": "Content-Type",
 };
 
+function json(statusCode, payload) {
+  return {
+    statusCode: statusCode,
+    headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  };
+}
+
 exports.handler = async (event) => {
-  // Handle CORS preflight
   if (event.httpMethod === "OPTIONS") {
     return {
       statusCode: 204,
@@ -17,42 +25,35 @@ exports.handler = async (event) => {
   }
 
   if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-      body: JSON.stringify({ error: "Method not allowed" }),
-    };
-  }
-
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    return {
-      statusCode: 200,
-      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        reply: "Our AI assistant is temporarily unavailable. Please try again later or browse our guides for help with senior benefits.",
-      }),
-    };
+    return json(405, { error: "Method not allowed" });
   }
 
   let body;
   try {
     body = JSON.parse(event.body || "{}");
   } catch (err) {
-    return {
-      statusCode: 400,
-      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-      body: JSON.stringify({ error: "Invalid JSON body." }),
-    };
+    return json(400, { error: "Invalid JSON body." });
   }
 
-  const messages = Array.isArray(body.messages) ? body.messages : [];
+  // The browser may only supply user and assistant turns. The system prompt
+  // is attached here, and any client system message is discarded.
+  const prepared = prepareMessages(body && body.messages);
+  if (prepared.error) {
+    return json(400, { error: prepared.error });
+  }
+
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    return json(200, {
+      reply: "Our AI assistant is temporarily unavailable. Please try again later or browse our guides for help with senior benefits.",
+    });
+  }
 
   let apiResponse;
   try {
     const postData = JSON.stringify({
       model: "gpt-4.1-mini",
-      messages,
+      messages: prepared.messages,
       temperature: 0.9,
       max_tokens: 1000,
     });
@@ -86,41 +87,27 @@ exports.handler = async (event) => {
       req.end();
     });
   } catch (error) {
-    // Network error or timeout — return safe 200 fallback, never 5xx
-    return {
-      statusCode: 200,
-      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        reply: "Our AI assistant is temporarily unavailable. Please try again in a moment, or explore our state-by-state guides for information on senior benefits.",
-      }),
-    };
+    return json(200, {
+      reply: "Our AI assistant is temporarily unavailable. Please try again in a moment, or explore our state-by-state guides for information on senior benefits.",
+    });
   }
 
-  // If OpenAI returned an error, return a safe 200 with fallback message
   if (apiResponse.status < 200 || apiResponse.status >= 300) {
-    return {
-      statusCode: 200,
-      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        reply: "Our AI assistant is temporarily unavailable. Please try again in a moment, or explore our state-by-state guides for information on senior benefits.",
-      }),
-    };
+    return json(200, {
+      reply: "Our AI assistant is temporarily unavailable. Please try again in a moment, or explore our state-by-state guides for information on senior benefits.",
+    });
   }
 
   let parsed;
   try {
     parsed = JSON.parse(apiResponse.data);
   } catch (err) {
-    return {
-      statusCode: 200,
-      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        reply: "Our AI assistant encountered an issue processing your request. Please try again or browse our guides for help.",
-      }),
-    };
+    return json(200, {
+      reply: "Our AI assistant encountered an issue processing your request. Please try again or browse our guides for help.",
+    });
   }
 
-  const reply =
+  const rawReply =
     parsed &&
     parsed.choices &&
     parsed.choices[0] &&
@@ -129,9 +116,7 @@ exports.handler = async (event) => {
       ? parsed.choices[0].message.content
       : "I'm not sure how to respond to that right now, but you can try asking again or browse our senior benefits guides for help.";
 
-  return {
-    statusCode: 200,
-    headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-    body: JSON.stringify({ reply }),
-  };
+  const reply = ensureDisclosure(sanitizeReply(rawReply));
+
+  return json(200, { reply });
 };
