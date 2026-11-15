@@ -38,9 +38,9 @@
         <li><a href="#medicaid-coverage">Medicaid Coverage</a></li>
         <li><a href="#how-to-reduce">How to Reduce Home Care Costs</a></li>
         <li><a href="#how-to-choose">How to Choose a Caregiver</a></li>
-        <li><a href="#local-agencies">Local Agencies</a></li>
-        <li><a href="#faq">Frequently Asked Questions</a></li>
+        {{#if localAgencies}}<li><a href="#local-agencies">Local Agencies</a></li>{{/if}}
         <li><a href="#related-guides">Related Cost Guides</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
       </ol>
     </nav>
 
@@ -53,25 +53,25 @@
       <div class="stat-grid">
         <div class="stat-card">
           <span class="stat-value">{{avgHourlyCost}}</span>
-          <span class="stat-label">Average Hourly Rate</span>
+          <span class="stat-label">Median Hourly Rate</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">{{avgMonthlyCost}}</span>
-          <span class="stat-label">Avg. Monthly (44 hrs/wk)</span>
+          <span class="stat-label">Median Monthly (44 hrs/wk)</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">{{nationalAvgHourly}}</span>
-          <span class="stat-label">National Avg. Hourly</span>
+          <span class="stat-label">National Median Hourly</span>
         </div>
       </div>
 
-      <p>In-home care {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} allows seniors to receive assistance in the comfort of their own homes. Whether you need a few hours of help per week or round-the-clock care, understanding the costs and options helps you plan effectively. Cost figures on this page are medians from the CareScout (formerly Genworth) Cost of Care Survey 2025. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout 2025]</a></sup></p>
+      <p>In-home care in {{locationName}} allows seniors to receive assistance in the comfort of their own homes. Whether you need a few hours of help per week or round-the-clock care, understanding the costs and options helps you plan effectively. Cost figures on this page are medians from the CareScout (formerly Genworth) Cost of Care Survey 2025. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout 2025]</a></sup></p>
       <h3>{{currentYear}} Cost at a Glance</h3>
       <ul>
         <li><strong>Part-time care (20 hrs/week):</strong> approximately half the full-time monthly cost</li>
-        <li><strong>Full-time care (44 hrs/week):</strong> {{avgMonthlyCost}}/month average in {{locationName}}</li>
+        <li><strong>Full-time care (44 hrs/week):</strong> {{avgMonthlyCost}} median in {{locationName}}</li>
         <li><strong>24-hour live-in care:</strong> typically 1.5&ndash;2&times; the standard full-time rate</li>
-        <li><strong>National average hourly rate:</strong> {{nationalAvgHourly}}</li>
+        <li><strong>National median hourly rate:</strong> {{nationalAvgHourly}}</li>
       </ul>
     </section>
 
