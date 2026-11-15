@@ -89,6 +89,22 @@ const SENIOR_WAIVERS = {
       fact: "Florida Medicaid covers long-term care services, including in assisted living, through the Agency for Health Care Administration's Statewide Medicaid Managed Care Long-Term Care (SMMC LTC) program, which has a waitlist; AHCA's Long-term Care Program page explains enrollment." },
   },
 };
+// Remaining states: senior HCBS waiver or LTSS program from senior-waivers-2026.json (Medicaid.gov
+// waiver factsheets and state Medicaid pages, read 2026-11-15). Hand-written entries above win.
+{
+  const file = path.join(__dirname, 'data/sources/senior-waivers-2026.json');
+  if (fs.existsSync(file)) {
+    for (const [slug, w] of Object.entries(JSON.parse(fs.readFileSync(file, 'utf8')).states)) {
+      if (SENIOR_WAIVERS[slug]) continue;
+      SENIOR_WAIVERS[slug] = {};
+      for (const kind of ['hc', 'al']) {
+        if (!w[kind]) continue;
+        const onMedicaidGov = /medicaid\.gov\//.test(w[kind].url);
+        SENIOR_WAIVERS[slug][kind] = { ...w[kind], linkText: onMedicaidGov ? `Medicaid.gov waiver factsheet (${w[kind].name})` : w[kind].name };
+      }
+    }
+  }
+}
 // Phrase for the waiver sentence: the verified senior program, or generic wording.
 function waiverPhrase(slug, stateName, kind) {
   const w = (SENIOR_WAIVERS[slug] || {})[kind];
@@ -96,7 +112,7 @@ function waiverPhrase(slug, stateName, kind) {
 }
 function waiverParagraph(slug, kind) {
   const w = (SENIOR_WAIVERS[slug] || {})[kind];
-  return w ? `<p>${w.fact} Official page: <a href="${w.url}" target="_blank" rel="noopener noreferrer">${w.name}</a>.</p>` : '';
+  return w ? `<p>${w.fact} Official page: <a href="${w.url}" target="_blank" rel="noopener noreferrer">${w.linkText || w.name}</a>.</p>` : '';
 }
 
 // Sourced figures. Every cost, benefit amount, plan count and yes/no program

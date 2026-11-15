@@ -1,0 +1,1015 @@
+{
+ "_readme": "Per-state counts from the CMS CY2026 Medicare Advantage and Part D Landscape file (CY2026_Landscape_202609.csv), counted by plan segment (ContractPlanSegmentID) offered anywhere in the state. maPlans = MA and MA-PD (non-SNP) segments, matching medicare2026.maPlans. planTypes groups HMO with HMO-POS. snp = SNP segments by SNP Type. fourStarPlus = non-SNP plans with an Overall Star Rating of 4 or higher; rated = plans with a numeric rating. cost = Medicare Cost plan segments.",
+ "landingPage": "https://www.cms.gov/medicare/coverage/prescription-drug-coverage",
+ "file": "https://www.cms.gov/files/zip/cy2026-landscape-202609.zip",
+ "states": {
+  "AK": {
+   "name": "Alaska",
+   "maPlans": 0,
+   "maPd": 0,
+   "planTypes": {},
+   "medianMoop": null,
+   "rated": 0,
+   "fourStarPlus": 0,
+   "orgs": 0,
+   "snp": {
+    "D-SNP": 0,
+    "C-SNP": 0,
+    "I-SNP": 0
+   },
+   "cost": 0
+  },
+  "AL": {
+   "name": "Alabama",
+   "maPlans": 63,
+   "maPd": 55,
+   "planTypes": {
+    "PPO": 29,
+    "HMO": 32,
+    "Regional PPO": 2
+   },
+   "medianMoop": 5900.0,
+   "rated": 63,
+   "fourStarPlus": 44,
+   "orgs": 7,
+   "snp": {
+    "D-SNP": 24,
+    "C-SNP": 8,
+    "I-SNP": 3
+   },
+   "cost": 0
+  },
+  "AR": {
+   "name": "Arkansas",
+   "maPlans": 56,
+   "maPd": 46,
+   "planTypes": {
+    "HMO": 25,
+    "PPO": 23,
+    "PFFS": 5,
+    "Regional PPO": 3
+   },
+   "medianMoop": 6700.0,
+   "rated": 53,
+   "fourStarPlus": 23,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 25,
+    "C-SNP": 9,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "AZ": {
+   "name": "Arizona",
+   "maPlans": 84,
+   "maPd": 77,
+   "planTypes": {
+    "PPO": 24,
+    "Regional PPO": 2,
+    "HMO": 58
+   },
+   "medianMoop": 4900.0,
+   "rated": 79,
+   "fourStarPlus": 30,
+   "orgs": 13,
+   "snp": {
+    "D-SNP": 11,
+    "C-SNP": 32,
+    "I-SNP": 6
+   },
+   "cost": 0
+  },
+  "CA": {
+   "name": "California",
+   "maPlans": 272,
+   "maPd": 264,
+   "planTypes": {
+    "HMO": 245,
+    "PPO": 27
+   },
+   "medianMoop": 2899.5,
+   "rated": 263,
+   "fourStarPlus": 152,
+   "orgs": 21,
+   "snp": {
+    "D-SNP": 54,
+    "C-SNP": 68,
+    "I-SNP": 8
+   },
+   "cost": 0
+  },
+  "CO": {
+   "name": "Colorado",
+   "maPlans": 71,
+   "maPd": 62,
+   "planTypes": {
+    "HMO": 45,
+    "PPO": 26
+   },
+   "medianMoop": 5400.0,
+   "rated": 66,
+   "fourStarPlus": 45,
+   "orgs": 11,
+   "snp": {
+    "D-SNP": 22,
+    "C-SNP": 9,
+    "I-SNP": 5
+   },
+   "cost": 0
+  },
+  "CT": {
+   "name": "Connecticut",
+   "maPlans": 31,
+   "maPd": 26,
+   "planTypes": {
+    "HMO": 19,
+    "PPO": 12
+   },
+   "medianMoop": 6750.0,
+   "rated": 31,
+   "fourStarPlus": 5,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 13,
+    "C-SNP": 1,
+    "I-SNP": 2
+   },
+   "cost": 0
+  },
+  "DC": {
+   "name": "District of Columbia",
+   "maPlans": 16,
+   "maPd": 11,
+   "planTypes": {
+    "HMO": 7,
+    "PPO": 9
+   },
+   "medianMoop": 6750.0,
+   "rated": 16,
+   "fourStarPlus": 9,
+   "orgs": 6,
+   "snp": {
+    "D-SNP": 3,
+    "C-SNP": 0,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "DE": {
+   "name": "Delaware",
+   "maPlans": 24,
+   "maPd": 19,
+   "planTypes": {
+    "PPO": 16,
+    "HMO": 8
+   },
+   "medianMoop": 6725.0,
+   "rated": 21,
+   "fourStarPlus": 13,
+   "orgs": 7,
+   "snp": {
+    "D-SNP": 6,
+    "C-SNP": 6,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "FL": {
+   "name": "Florida",
+   "maPlans": 325,
+   "maPd": 301,
+   "planTypes": {
+    "HMO": 246,
+    "PPO": 74,
+    "Regional PPO": 5
+   },
+   "medianMoop": 3900.0,
+   "rated": 322,
+   "fourStarPlus": 279,
+   "orgs": 15,
+   "snp": {
+    "D-SNP": 160,
+    "C-SNP": 114,
+    "I-SNP": 12
+   },
+   "cost": 0
+  },
+  "GA": {
+   "name": "Georgia",
+   "maPlans": 107,
+   "maPd": 88,
+   "planTypes": {
+    "PPO": 58,
+    "HMO": 45,
+    "Regional PPO": 3,
+    "PFFS": 1
+   },
+   "medianMoop": 9250.0,
+   "rated": 99,
+   "fourStarPlus": 49,
+   "orgs": 11,
+   "snp": {
+    "D-SNP": 40,
+    "C-SNP": 13,
+    "I-SNP": 6
+   },
+   "cost": 0
+  },
+  "HI": {
+   "name": "Hawaii",
+   "maPlans": 35,
+   "maPd": 31,
+   "planTypes": {
+    "HMO": 9,
+    "PPO": 26
+   },
+   "medianMoop": 6700.0,
+   "rated": 31,
+   "fourStarPlus": 11,
+   "orgs": 5,
+   "snp": {
+    "D-SNP": 8,
+    "C-SNP": 1,
+    "I-SNP": 0
+   },
+   "cost": 0
+  },
+  "IA": {
+   "name": "Iowa",
+   "maPlans": 45,
+   "maPd": 36,
+   "planTypes": {
+    "PPO": 21,
+    "HMO": 23,
+    "PFFS": 1
+   },
+   "medianMoop": 5000.0,
+   "rated": 44,
+   "fourStarPlus": 27,
+   "orgs": 10,
+   "snp": {
+    "D-SNP": 10,
+    "C-SNP": 2,
+    "I-SNP": 6
+   },
+   "cost": 10
+  },
+  "ID": {
+   "name": "Idaho",
+   "maPlans": 36,
+   "maPd": 28,
+   "planTypes": {
+    "PPO": 15,
+    "HMO": 21
+   },
+   "medianMoop": 6250.0,
+   "rated": 34,
+   "fourStarPlus": 15,
+   "orgs": 5,
+   "snp": {
+    "D-SNP": 6,
+    "C-SNP": 5,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "IL": {
+   "name": "Illinois",
+   "maPlans": 124,
+   "maPd": 110,
+   "planTypes": {
+    "PPO": 69,
+    "HMO": 51,
+    "Regional PPO": 2,
+    "PFFS": 2
+   },
+   "medianMoop": 4800.0,
+   "rated": 113,
+   "fourStarPlus": 38,
+   "orgs": 10,
+   "snp": {
+    "D-SNP": 8,
+    "C-SNP": 22,
+    "I-SNP": 3
+   },
+   "cost": 3
+  },
+  "IN": {
+   "name": "Indiana",
+   "maPlans": 94,
+   "maPd": 85,
+   "planTypes": {
+    "PPO": 61,
+    "HMO": 29,
+    "Regional PPO": 3,
+    "PFFS": 1
+   },
+   "medianMoop": 5900.0,
+   "rated": 84,
+   "fourStarPlus": 36,
+   "orgs": 9,
+   "snp": {
+    "D-SNP": 11,
+    "C-SNP": 15,
+    "I-SNP": 7
+   },
+   "cost": 0
+  },
+  "KS": {
+   "name": "Kansas",
+   "maPlans": 68,
+   "maPd": 58,
+   "planTypes": {
+    "HMO": 31,
+    "PPO": 33,
+    "PFFS": 4
+   },
+   "medianMoop": 5000.0,
+   "rated": 64,
+   "fourStarPlus": 35,
+   "orgs": 7,
+   "snp": {
+    "D-SNP": 7,
+    "C-SNP": 9,
+    "I-SNP": 3
+   },
+   "cost": 0
+  },
+  "KY": {
+   "name": "Kentucky",
+   "maPlans": 79,
+   "maPd": 70,
+   "planTypes": {
+    "PPO": 40,
+    "HMO": 35,
+    "Regional PPO": 3,
+    "PFFS": 1
+   },
+   "medianMoop": 6500.0,
+   "rated": 75,
+   "fourStarPlus": 30,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 20,
+    "C-SNP": 10,
+    "I-SNP": 5
+   },
+   "cost": 0
+  },
+  "LA": {
+   "name": "Louisiana",
+   "maPlans": 71,
+   "maPd": 64,
+   "planTypes": {
+    "PPO": 25,
+    "HMO": 44,
+    "Regional PPO": 2
+   },
+   "medianMoop": 4900.0,
+   "rated": 67,
+   "fourStarPlus": 50,
+   "orgs": 6,
+   "snp": {
+    "D-SNP": 30,
+    "C-SNP": 8,
+    "I-SNP": 2
+   },
+   "cost": 0
+  },
+  "MA": {
+   "name": "Massachusetts",
+   "maPlans": 84,
+   "maPd": 69,
+   "planTypes": {
+    "PPO": 28,
+    "HMO": 56
+   },
+   "medianMoop": 5000.0,
+   "rated": 81,
+   "fourStarPlus": 66,
+   "orgs": 10,
+   "snp": {
+    "D-SNP": 16,
+    "C-SNP": 2,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "MD": {
+   "name": "Maryland",
+   "maPlans": 38,
+   "maPd": 28,
+   "planTypes": {
+    "PPO": 13,
+    "HMO": 25
+   },
+   "medianMoop": 7500.0,
+   "rated": 38,
+   "fourStarPlus": 17,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 14,
+    "C-SNP": 4,
+    "I-SNP": 7
+   },
+   "cost": 0
+  },
+  "ME": {
+   "name": "Maine",
+   "maPlans": 36,
+   "maPd": 29,
+   "planTypes": {
+    "PPO": 16,
+    "PFFS": 1,
+    "HMO": 19
+   },
+   "medianMoop": 6775.0,
+   "rated": 35,
+   "fourStarPlus": 19,
+   "orgs": 6,
+   "snp": {
+    "D-SNP": 13,
+    "C-SNP": 2,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "MI": {
+   "name": "Michigan",
+   "maPlans": 148,
+   "maPd": 134,
+   "planTypes": {
+    "HMO": 68,
+    "PPO": 77,
+    "Regional PPO": 2,
+    "PFFS": 1
+   },
+   "medianMoop": 5100.0,
+   "rated": 147,
+   "fourStarPlus": 115,
+   "orgs": 11,
+   "snp": {
+    "D-SNP": 29,
+    "C-SNP": 11,
+    "I-SNP": 4
+   },
+   "cost": 0
+  },
+  "MN": {
+   "name": "Minnesota",
+   "maPlans": 55,
+   "maPd": 49,
+   "planTypes": {
+    "PPO": 48,
+    "HMO": 6,
+    "PFFS": 1
+   },
+   "medianMoop": 5000.0,
+   "rated": 55,
+   "fourStarPlus": 39,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 8,
+    "C-SNP": 5,
+    "I-SNP": 0
+   },
+   "cost": 14
+  },
+  "MO": {
+   "name": "Missouri",
+   "maPlans": 109,
+   "maPd": 97,
+   "planTypes": {
+    "PPO": 37,
+    "HMO": 67,
+    "Regional PPO": 3,
+    "PFFS": 2
+   },
+   "medianMoop": 4500.0,
+   "rated": 101,
+   "fourStarPlus": 60,
+   "orgs": 9,
+   "snp": {
+    "D-SNP": 27,
+    "C-SNP": 13,
+    "I-SNP": 8
+   },
+   "cost": 0
+  },
+  "MS": {
+   "name": "Mississippi",
+   "maPlans": 49,
+   "maPd": 42,
+   "planTypes": {
+    "HMO": 21,
+    "PPO": 26,
+    "Regional PPO": 2
+   },
+   "medianMoop": 6000.0,
+   "rated": 46,
+   "fourStarPlus": 17,
+   "orgs": 9,
+   "snp": {
+    "D-SNP": 32,
+    "C-SNP": 10,
+    "I-SNP": 2
+   },
+   "cost": 0
+  },
+  "MT": {
+   "name": "Montana",
+   "maPlans": 28,
+   "maPd": 21,
+   "planTypes": {
+    "PPO": 21,
+    "HMO": 4,
+    "PFFS": 3
+   },
+   "medianMoop": 6600.0,
+   "rated": 28,
+   "fourStarPlus": 3,
+   "orgs": 4,
+   "snp": {
+    "D-SNP": 4,
+    "C-SNP": 0,
+    "I-SNP": 0
+   },
+   "cost": 0
+  },
+  "NC": {
+   "name": "North Carolina",
+   "maPlans": 122,
+   "maPd": 108,
+   "planTypes": {
+    "HMO": 67,
+    "PPO": 51,
+    "Regional PPO": 3,
+    "PFFS": 1
+   },
+   "medianMoop": 6250.0,
+   "rated": 112,
+   "fourStarPlus": 82,
+   "orgs": 10,
+   "snp": {
+    "D-SNP": 27,
+    "C-SNP": 16,
+    "I-SNP": 10
+   },
+   "cost": 0
+  },
+  "ND": {
+   "name": "North Dakota",
+   "maPlans": 15,
+   "maPd": 12,
+   "planTypes": {
+    "PPO": 15
+   },
+   "medianMoop": 6500.0,
+   "rated": 15,
+   "fourStarPlus": 7,
+   "orgs": 5,
+   "snp": {
+    "D-SNP": 3,
+    "C-SNP": 1,
+    "I-SNP": 2
+   },
+   "cost": 8
+  },
+  "NE": {
+   "name": "Nebraska",
+   "maPlans": 33,
+   "maPd": 27,
+   "planTypes": {
+    "HMO": 11,
+    "PPO": 22
+   },
+   "medianMoop": 5000.0,
+   "rated": 27,
+   "fourStarPlus": 6,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 13,
+    "C-SNP": 2,
+    "I-SNP": 2
+   },
+   "cost": 4
+  },
+  "NH": {
+   "name": "New Hampshire",
+   "maPlans": 17,
+   "maPd": 14,
+   "planTypes": {
+    "PPO": 9,
+    "HMO": 8
+   },
+   "medianMoop": 6550.0,
+   "rated": 16,
+   "fourStarPlus": 5,
+   "orgs": 4,
+   "snp": {
+    "D-SNP": 0,
+    "C-SNP": 1,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "NJ": {
+   "name": "New Jersey",
+   "maPlans": 72,
+   "maPd": 60,
+   "planTypes": {
+    "HMO": 29,
+    "PPO": 42,
+    "Regional PPO": 1
+   },
+   "medianMoop": 8875.0,
+   "rated": 70,
+   "fourStarPlus": 40,
+   "orgs": 9,
+   "snp": {
+    "D-SNP": 6,
+    "C-SNP": 3,
+    "I-SNP": 4
+   },
+   "cost": 0
+  },
+  "NM": {
+   "name": "New Mexico",
+   "maPlans": 50,
+   "maPd": 44,
+   "planTypes": {
+    "HMO": 19,
+    "PPO": 31
+   },
+   "medianMoop": 4900.0,
+   "rated": 44,
+   "fourStarPlus": 19,
+   "orgs": 7,
+   "snp": {
+    "D-SNP": 10,
+    "C-SNP": 12,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "NV": {
+   "name": "Nevada",
+   "maPlans": 64,
+   "maPd": 59,
+   "planTypes": {
+    "HMO": 47,
+    "PPO": 17
+   },
+   "medianMoop": 2975.0,
+   "rated": 63,
+   "fourStarPlus": 41,
+   "orgs": 12,
+   "snp": {
+    "D-SNP": 21,
+    "C-SNP": 19,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "NY": {
+   "name": "New York",
+   "maPlans": 147,
+   "maPd": 126,
+   "planTypes": {
+    "PPO": 57,
+    "PFFS": 4,
+    "HMO": 86
+   },
+   "medianMoop": 8900.0,
+   "rated": 144,
+   "fourStarPlus": 73,
+   "orgs": 17,
+   "snp": {
+    "D-SNP": 57,
+    "C-SNP": 5,
+    "I-SNP": 9
+   },
+   "cost": 0
+  },
+  "OH": {
+   "name": "Ohio",
+   "maPlans": 155,
+   "maPd": 139,
+   "planTypes": {
+    "HMO": 102,
+    "PPO": 48,
+    "Regional PPO": 4,
+    "PFFS": 1
+   },
+   "medianMoop": 5300.0,
+   "rated": 153,
+   "fourStarPlus": 104,
+   "orgs": 15,
+   "snp": {
+    "D-SNP": 29,
+    "C-SNP": 19,
+    "I-SNP": 9
+   },
+   "cost": 0
+  },
+  "OK": {
+   "name": "Oklahoma",
+   "maPlans": 56,
+   "maPd": 45,
+   "planTypes": {
+    "PPO": 34,
+    "HMO": 20,
+    "PFFS": 2
+   },
+   "medianMoop": 5700.0,
+   "rated": 50,
+   "fourStarPlus": 21,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 14,
+    "C-SNP": 10,
+    "I-SNP": 2
+   },
+   "cost": 0
+  },
+  "OR": {
+   "name": "Oregon",
+   "maPlans": 80,
+   "maPd": 65,
+   "planTypes": {
+    "PPO": 44,
+    "HMO": 36
+   },
+   "medianMoop": 6250.0,
+   "rated": 80,
+   "fourStarPlus": 19,
+   "orgs": 11,
+   "snp": {
+    "D-SNP": 10,
+    "C-SNP": 7,
+    "I-SNP": 4
+   },
+   "cost": 0
+  },
+  "PA": {
+   "name": "Pennsylvania",
+   "maPlans": 273,
+   "maPd": 248,
+   "planTypes": {
+    "PPO": 137,
+    "HMO": 131,
+    "PFFS": 3,
+    "Regional PPO": 2
+   },
+   "medianMoop": 6600.0,
+   "rated": 260,
+   "fourStarPlus": 213,
+   "orgs": 15,
+   "snp": {
+    "D-SNP": 36,
+    "C-SNP": 14,
+    "I-SNP": 9
+   },
+   "cost": 0
+  },
+  "RI": {
+   "name": "Rhode Island",
+   "maPlans": 14,
+   "maPd": 11,
+   "planTypes": {
+    "HMO": 10,
+    "PPO": 4
+   },
+   "medianMoop": 5825.0,
+   "rated": 14,
+   "fourStarPlus": 12,
+   "orgs": 3,
+   "snp": {
+    "D-SNP": 7,
+    "C-SNP": 1,
+    "I-SNP": 1
+   },
+   "cost": 0
+  },
+  "SC": {
+   "name": "South Carolina",
+   "maPlans": 69,
+   "maPd": 56,
+   "planTypes": {
+    "PPO": 40,
+    "HMO": 25,
+    "PFFS": 1,
+    "Regional PPO": 3
+   },
+   "medianMoop": 8200.0,
+   "rated": 66,
+   "fourStarPlus": 45,
+   "orgs": 9,
+   "snp": {
+    "D-SNP": 11,
+    "C-SNP": 10,
+    "I-SNP": 5
+   },
+   "cost": 0
+  },
+  "SD": {
+   "name": "South Dakota",
+   "maPlans": 13,
+   "maPd": 9,
+   "planTypes": {
+    "PPO": 13
+   },
+   "medianMoop": 5500.0,
+   "rated": 13,
+   "fourStarPlus": 6,
+   "orgs": 5,
+   "snp": {
+    "D-SNP": 4,
+    "C-SNP": 0,
+    "I-SNP": 2
+   },
+   "cost": 8
+  },
+  "TN": {
+   "name": "Tennessee",
+   "maPlans": 93,
+   "maPd": 85,
+   "planTypes": {
+    "HMO": 53,
+    "PPO": 38,
+    "Regional PPO": 2
+   },
+   "medianMoop": 5100.0,
+   "rated": 93,
+   "fourStarPlus": 62,
+   "orgs": 9,
+   "snp": {
+    "D-SNP": 13,
+    "C-SNP": 19,
+    "I-SNP": 7
+   },
+   "cost": 0
+  },
+  "TX": {
+   "name": "Texas",
+   "maPlans": 272,
+   "maPd": 245,
+   "planTypes": {
+    "HMO": 175,
+    "PPO": 91,
+    "Regional PPO": 4,
+    "PFFS": 2
+   },
+   "medianMoop": 5925.0,
+   "rated": 265,
+   "fourStarPlus": 157,
+   "orgs": 17,
+   "snp": {
+    "D-SNP": 99,
+    "C-SNP": 44,
+    "I-SNP": 8
+   },
+   "cost": 0
+  },
+  "UT": {
+   "name": "Utah",
+   "maPlans": 38,
+   "maPd": 31,
+   "planTypes": {
+    "HMO": 12,
+    "PPO": 26
+   },
+   "medianMoop": 5800.0,
+   "rated": 36,
+   "fourStarPlus": 22,
+   "orgs": 7,
+   "snp": {
+    "D-SNP": 12,
+    "C-SNP": 3,
+    "I-SNP": 2
+   },
+   "cost": 0
+  },
+  "VA": {
+   "name": "Virginia",
+   "maPlans": 103,
+   "maPd": 89,
+   "planTypes": {
+    "HMO": 63,
+    "PPO": 34,
+    "Regional PPO": 3,
+    "PFFS": 3
+   },
+   "medianMoop": 6750.0,
+   "rated": 96,
+   "fourStarPlus": 47,
+   "orgs": 8,
+   "snp": {
+    "D-SNP": 20,
+    "C-SNP": 15,
+    "I-SNP": 5
+   },
+   "cost": 0
+  },
+  "VT": {
+   "name": "Vermont",
+   "maPlans": 3,
+   "maPd": 2,
+   "planTypes": {
+    "PPO": 3
+   },
+   "medianMoop": 6500.0,
+   "rated": 3,
+   "fourStarPlus": 1,
+   "orgs": 1,
+   "snp": {
+    "D-SNP": 0,
+    "C-SNP": 0,
+    "I-SNP": 0
+   },
+   "cost": 0
+  },
+  "WA": {
+   "name": "Washington",
+   "maPlans": 89,
+   "maPd": 78,
+   "planTypes": {
+    "HMO": 54,
+    "PPO": 35
+   },
+   "medianMoop": 6600.0,
+   "rated": 83,
+   "fourStarPlus": 42,
+   "orgs": 10,
+   "snp": {
+    "D-SNP": 28,
+    "C-SNP": 4,
+    "I-SNP": 5
+   },
+   "cost": 0
+  },
+  "WI": {
+   "name": "Wisconsin",
+   "maPlans": 82,
+   "maPd": 63,
+   "planTypes": {
+    "PPO": 40,
+    "MSA": 1,
+    "HMO": 38,
+    "PFFS": 1,
+    "Regional PPO": 2
+   },
+   "medianMoop": 5000.0,
+   "rated": 77,
+   "fourStarPlus": 49,
+   "orgs": 12,
+   "snp": {
+    "D-SNP": 21,
+    "C-SNP": 2,
+    "I-SNP": 2
+   },
+   "cost": 14
+  },
+  "WV": {
+   "name": "West Virginia",
+   "maPlans": 55,
+   "maPd": 46,
+   "planTypes": {
+    "PPO": 42,
+    "HMO": 10,
+    "Regional PPO": 2,
+    "PFFS": 1
+   },
+   "medianMoop": 6900.0,
+   "rated": 54,
+   "fourStarPlus": 12,
+   "orgs": 7,
+   "snp": {
+    "D-SNP": 12,
+    "C-SNP": 0,
+    "I-SNP": 2
+   },
+   "cost": 0
+  },
+  "WY": {
+   "name": "Wyoming",
+   "maPlans": 13,
+   "maPd": 7,
+   "planTypes": {
+    "PPO": 11,
+    "PFFS": 2
+   },
+   "medianMoop": 6750.0,
+   "rated": 10,
+   "fourStarPlus": 3,
+   "orgs": 3,
+   "snp": {
+    "D-SNP": 1,
+    "C-SNP": 0,
+    "I-SNP": 0
+   },
+   "cost": 0
+  }
+ }
+}

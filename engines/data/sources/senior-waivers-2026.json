@@ -1,0 +1,526 @@
+{
+ "_readme": "Senior HCBS waiver or LTSS program per state, used by engines/seed-data.js for states not hand-written in SENIOR_WAIVERS. 1915(c) entries come from each state's Medicaid.gov waiver factsheet (the aged/disabled waiver serving people 65+); 1115 managed-LTSS states link the state Medicaid page. An \"al\" entry exists only when the program's listed services include assisted living or a similar residential setting. All URLs loaded in Chromium on 2026-11-15.",
+ "checkedAt": "2026-11-15",
+ "states": {
+  "alabama": {
+   "hc": {
+    "name": "Elderly and Disabled (E&D) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/AL",
+    "waiverId": "0068.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Alabama's Elderly and Disabled (E&D) Waiver (waiver 0068.R08.00) providing adult day health with transportation, homemaker, personal care, skilled respite and adult companion service, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "alaska": {
+   "hc": {
+    "name": "Alaskans Living Independently (ALI) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/AK",
+    "waiverId": "0261.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Alaska's Alaskans Living Independently (ALI) Waiver (waiver 0261.R07.00) providing adult day, respite, host home care, environmental modification and meals, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Alaskans Living Independently (ALI) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/AK",
+    "waiverId": "0261.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Alaska's Alaskans Living Independently (ALI) Waiver (waiver 0261.R07.00) providing adult day, respite, host home care, environmental modification and meals, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include residential supported living; Medicaid waivers do not pay room and board."
+   }
+  },
+  "arizona": {
+   "hc": {
+    "name": "Arizona Long Term Care System (ALTCS)",
+    "url": "https://www.azahcccs.gov/Members/GetCovered/Categories/ALTCS.html",
+    "fact": "Arizona runs senior long-term care through the Arizona Long Term Care System (ALTCS), part of AHCCCS (Arizona Medicaid), rather than a separate 1915(c) waiver. ALTCS covers people with an age-related or physical disability who require a nursing facility level of care, and services may be provided in an institution or in a home or community-based setting.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "california": {
+   "hc": {
+    "name": "Multipurpose Senior Services Program (MSSP) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/CA",
+    "waiverId": "0141.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows California's Multipurpose Senior Services Program (MSSP) Waiver (waiver 0141.R07.00) providing care management, respite care, supplemental homemaker services, supplemental personal care and adult day care, among other services, to people 60 or older who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Assisted Living Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/CA",
+    "waiverId": "0431.R04.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows California's Assisted Living Waiver (waiver 0431.R04.00) providing assisted living services (homemaker, home health aide and personal care), care coordination and nursing-facility transition help to people 65 or older and adults with disabilities who meet a nursing facility level of care. Medicaid waivers do not pay room and board."
+   }
+  },
+  "colorado": {
+   "hc": {
+    "name": "Elderly, Blind, and Disabled (EBD) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/CO",
+    "waiverId": "0006.R09.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Colorado's Elderly, Blind, and Disabled (EBD) Waiver (waiver 0006.R09.00) providing adult day health, respite, alternative care facility, home modification and non-medical transportation, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Elderly, Blind, and Disabled (EBD) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/CO",
+    "waiverId": "0006.R09.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Colorado's Elderly, Blind, and Disabled (EBD) Waiver (waiver 0006.R09.00) providing adult day health, respite, alternative care facility, home modification and non-medical transportation, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include alternative care facility; Medicaid waivers do not pay room and board."
+   }
+  },
+  "delaware": {
+   "hc": {
+    "name": "Diamond State Health Plan Plus (DSHP-Plus)",
+    "url": "https://dhss.delaware.gov/dmma/home/medicaid/dshp-plus/",
+    "fact": "Delaware delivers Medicaid long-term care for residents who are elderly or physically disabled through Diamond State Health Plan Plus (DSHP-Plus), a mandatory managed care program run by the Division of Medicaid and Medical Assistance. Besides nursing home care, it covers home and community-based services such as adult day care, home-delivered meals, personal care, personal emergency response systems and respite care.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "district-of-columbia": {
+   "hc": {
+    "name": "Elderly and Persons with Physical Disabilities (EPD) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/DC",
+    "waiverId": "0334.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows the District of Columbia's Elderly and Persons with Physical Disabilities (EPD) Waiver (waiver 0334.R05.00) providing adult day health, homemaker, personal care aide, respite and assisted living, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Elderly and Persons with Physical Disabilities (EPD) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/DC",
+    "waiverId": "0334.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows the District of Columbia's Elderly and Persons with Physical Disabilities (EPD) Waiver (waiver 0334.R05.00) providing adult day health, homemaker, personal care aide, respite and assisted living, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include assisted living; Medicaid waivers do not pay room and board."
+   }
+  },
+  "georgia": {
+   "hc": {
+    "name": "Elderly and Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/GA",
+    "waiverId": "0112.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Georgia's Elderly and Disabled Waiver (waiver 0112.R08.00) providing adult day health, out-of-home respite, occupational therapy in adult day health care, physical therapy in adult day health care and speech therapy in adult day health care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Elderly and Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/GA",
+    "waiverId": "0112.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Georgia's Elderly and Disabled Waiver (waiver 0112.R08.00) providing adult day health, out-of-home respite, occupational therapy in adult day health care, physical therapy in adult day health care and speech therapy in adult day health care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include alternative living services; Medicaid waivers do not pay room and board."
+   }
+  },
+  "hawaii": {
+   "hc": {
+    "name": "QUEST Integration long-term services and supports",
+    "url": "https://medquest.hawaii.gov/en/members-applicants/quest-integration-coverage/medical-benefits",
+    "fact": "Hawaii covers Medicaid long-term services and supports, including home and community-based services, through QUEST Integration, the Med-QUEST managed care program, rather than a separate waiver for older adults.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "idaho": {
+   "hc": {
+    "name": "Aged and Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/ID",
+    "waiverId": "1076.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Idaho's Aged and Disabled Waiver (waiver 1076.R07.00) providing adult day health, homemaker, respite, attendant care and adult residential care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Aged and Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/ID",
+    "waiverId": "1076.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Idaho's Aged and Disabled Waiver (waiver 1076.R07.00) providing adult day health, homemaker, respite, attendant care and adult residential care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include adult residential care; Medicaid waivers do not pay room and board."
+   }
+  },
+  "illinois": {
+   "hc": {
+    "name": "Persons who are Elderly Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/IL",
+    "waiverId": "0143.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Illinois's Persons who are Elderly Waiver (waiver 0143.R08.00) providing adult day service, in-home service, automated medication dispenser and emergency home response, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Supportive Living Program Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/IL",
+    "waiverId": "0326.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Illinois's Supportive Living Program Waiver (waiver 0326.R05.00) providing assisted living services to people 65 or older and adults with physical disabilities who meet a nursing facility level of care. Medicaid waivers do not pay room and board."
+   }
+  },
+  "indiana": {
+   "hc": {
+    "name": "PathWays for Aging Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/IN",
+    "waiverId": "2407.R00.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Indiana's PathWays for Aging Waiver (waiver 2407.R00.00) providing adult day service, adult family care, assisted living, attendant care and home, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "PathWays for Aging Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/IN",
+    "waiverId": "2407.R00.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Indiana's PathWays for Aging Waiver (waiver 2407.R00.00) providing adult day service, adult family care, assisted living, attendant care and home, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include adult family care; Medicaid waivers do not pay room and board."
+   }
+  },
+  "iowa": {
+   "hc": {
+    "name": "HCBS Elderly Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/IA",
+    "waiverId": "4155.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Iowa's HCBS Elderly Waiver (waiver 4155.R07.00) providing adult day care, homemaker, respite, home health aide and nursing care, among other services, to people 65 or older who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "HCBS Elderly Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/IA",
+    "waiverId": "4155.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Iowa's HCBS Elderly Waiver (waiver 4155.R07.00) providing adult day care, homemaker, respite, home health aide and nursing care, among other services, to people 65 or older who meet a nursing facility level of care. Its listed services include assisted living; Medicaid waivers do not pay room and board."
+   }
+  },
+  "kentucky": {
+   "hc": {
+    "name": "Home and Community Based (HCB) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/KY",
+    "waiverId": "0144.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Kentucky's Home and Community Based (HCB) Waiver (waiver 0144.R08.00) providing adult day health, specialized respite, attendant care, environmental and minor home adaptation, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "louisiana": {
+   "hc": {
+    "name": "Community Choices Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/LA",
+    "waiverId": "0866.R02.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Louisiana's Community Choices Waiver (waiver 0866.R02.00) providing adult day health care, caregiver temporary support service, assistive devices, assistive technology and environmental accessibility adaptation, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "maine": {
+   "hc": {
+    "name": "Elderly and Adults with Disabilities Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/ME",
+    "waiverId": "0276.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Maine's Elderly and Adults with Disabilities Waiver (waiver 0276.R06.00) providing personal care, respite, assistive technology, attendant care services and environmental modifications, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "maryland": {
+   "hc": {
+    "name": "Home and Community-Based Options Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MD",
+    "waiverId": "0265.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Maryland's Home and Community-Based Options Waiver (waiver 0265.R06.00) providing assisted living, medical day care, respite care, senior center plus and nutritionist/dietitian, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Home and Community-Based Options Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MD",
+    "waiverId": "0265.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Maryland's Home and Community-Based Options Waiver (waiver 0265.R06.00) providing assisted living, medical day care, respite care, senior center plus and nutritionist/dietitian, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include assisted living; Medicaid waivers do not pay room and board."
+   }
+  },
+  "massachusetts": {
+   "hc": {
+    "name": "Frail Elder Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MA",
+    "waiverId": "0059.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Massachusetts's Frail Elder Waiver (waiver 0059.R08.00) providing home health aide, homemaker, personal care, respite and assisted transportation, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "michigan": {
+   "hc": {
+    "name": "MI Choice Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MI",
+    "waiverId": "0233.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Michigan's MI Choice Waiver (waiver 0233.R06.00) providing adult day health, coordinated caregiving service, respite, specialized medical equipment and goods, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "minnesota": {
+   "hc": {
+    "name": "Elderly Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MN",
+    "waiverId": "0025.R09.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Minnesota's Elderly Waiver (waiver 0025.R09.00) providing adult companion services, adult day service bath, adult day service, adult foster care and extended community first services, among other services, to people 65 or older who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Elderly Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MN",
+    "waiverId": "0025.R09.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Minnesota's Elderly Waiver (waiver 0025.R09.00) providing adult companion services, adult day service bath, adult day service, adult foster care and extended community first services, among other services, to people 65 or older who meet a nursing facility level of care. Its listed services include adult foster care; Medicaid waivers do not pay room and board."
+   }
+  },
+  "mississippi": {
+   "hc": {
+    "name": "Elderly and Disabled (E&D) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MS",
+    "waiverId": "0272.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Mississippi's Elderly and Disabled (E&D) Waiver (waiver 0272.R07.00) providing adult day care, in-home respite, personal care service, extended home health services and environmental safety service, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Assisted Living Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MS",
+    "waiverId": "0355.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Mississippi's Assisted Living Waiver (waiver 0355.R05.00) providing assisted living services to people 65 or older and adults with disabilities who meet a nursing facility level of care. Medicaid waivers do not pay room and board."
+   }
+  },
+  "missouri": {
+   "hc": {
+    "name": "Aged and Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MO",
+    "waiverId": "0026.R09.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Missouri's Aged and Disabled Waiver (waiver 0026.R09.00) providing adult day care, basic respite, homemaker, advanced respite and chore, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "montana": {
+   "hc": {
+    "name": "Big Sky Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MT",
+    "waiverId": "0148.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Montana's Big Sky Waiver (waiver 0148.R07.00) providing adult day health, big sky waiver personal assistance, community adult group homes, homemaker and respite, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Big Sky Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/MT",
+    "waiverId": "0148.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Montana's Big Sky Waiver (waiver 0148.R07.00) providing adult day health, big sky waiver personal assistance, community adult group homes, homemaker and respite, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include adult foster care; Medicaid waivers do not pay room and board."
+   }
+  },
+  "nebraska": {
+   "hc": {
+    "name": "HCBS Waiver for Aged, Adults, and Children with Disabilities",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/NE",
+    "waiverId": "0187.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Nebraska's HCBS Waiver for Aged, Adults, and Children with Disabilities (waiver 0187.R08.00) providing adult day health services, personal care, respite care, assistive technology and chore, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "new-hampshire": {
+   "hc": {
+    "name": "Choices for Independence (CFI) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/NH",
+    "waiverId": "0060.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows New Hampshire's Choices for Independence (CFI) Waiver (waiver 0060.R08.00) providing adult day services, home health aide, homemaker, personal care and respite, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Choices for Independence (CFI) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/NH",
+    "waiverId": "0060.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows New Hampshire's Choices for Independence (CFI) Waiver (waiver 0060.R08.00) providing adult day services, home health aide, homemaker, personal care and respite, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include adult family care; Medicaid waivers do not pay room and board."
+   }
+  },
+  "new-jersey": {
+   "hc": {
+    "name": "Managed Long Term Services and Supports (MLTSS)",
+    "url": "https://www.nj.gov/humanservices/dmahs/individuals-families/familycare/mltss/",
+    "fact": "New Jersey covers long-term care through Managed Long Term Services and Supports (MLTSS), part of NJ FamilyCare. MLTSS provides services and supports at home, in an assisted living facility, in community residential services or in a nursing home; clinical eligibility is decided through the Division of Aging Services.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   },
+   "al": {
+    "name": "Managed Long Term Services and Supports (MLTSS)",
+    "url": "https://www.nj.gov/humanservices/dmahs/individuals-families/familycare/mltss/",
+    "fact": "New Jersey covers long-term care through Managed Long Term Services and Supports (MLTSS), part of NJ FamilyCare. MLTSS provides services and supports at home, in an assisted living facility, in community residential services or in a nursing home; clinical eligibility is decided through the Division of Aging Services.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "new-mexico": {
+   "hc": {
+    "name": "Turquoise Care Community Benefit",
+    "url": "https://www.hca.nm.gov/community-benefit-program/",
+    "fact": "New Mexico's Health Care Authority provides in-home and community-based supports for Medicaid members through the Community Benefit Program in Turquoise Care, the state's Medicaid managed care program.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "new-york": {
+   "hc": {
+    "name": "Nursing Home Transition and Diversion (NHTD) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/NY",
+    "waiverId": "0444.R03.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows New York's Nursing Home Transition and Diversion (NHTD) Waiver (waiver 0444.R03.00) providing respite, assistive technology, environmental modifications services, moving assistance services and transportation services, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "north-carolina": {
+   "hc": {
+    "name": "Community Alternatives Program for Disabled Adults (CAP/DA)",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/NC",
+    "waiverId": "0132.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows North Carolina's Community Alternatives Program for Disabled Adults (CAP/DA) (waiver 0132.R08.00) providing adult day health, CAP in-home aide, community integration services, coordinated caregiving and equipment/modification, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "north-dakota": {
+   "hc": {
+    "name": "Medicaid Waiver for Home and Community Based Services",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/ND",
+    "waiverId": "0273.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows North Dakota's Medicaid Waiver for Home and Community Based Services (waiver 0273.R06.00) providing adult day care, adult residential care, homemaker, respite care and waiver personal care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Medicaid Waiver for Home and Community Based Services",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/ND",
+    "waiverId": "0273.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows North Dakota's Medicaid Waiver for Home and Community Based Services (waiver 0273.R06.00) providing adult day care, adult residential care, homemaker, respite care and waiver personal care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include adult residential care; Medicaid waivers do not pay room and board."
+   }
+  },
+  "oklahoma": {
+   "hc": {
+    "name": "ADvantage Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/OK",
+    "waiverId": "0256.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Oklahoma's ADvantage Waiver (waiver 0256.R06.00) providing adult day health, personal care, respite, extended state plan skilled nursing and prescribed drugs, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "ADvantage Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/OK",
+    "waiverId": "0256.R06.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Oklahoma's ADvantage Waiver (waiver 0256.R06.00) providing adult day health, personal care, respite, extended state plan skilled nursing and prescribed drugs, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include assisted living; Medicaid waivers do not pay room and board."
+   }
+  },
+  "oregon": {
+   "hc": {
+    "name": "Aged and Physically Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/OR",
+    "waiverId": "0185.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Oregon's Aged and Physically Disabled Waiver (waiver 0185.R07.00) providing housing support services, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "pennsylvania": {
+   "hc": {
+    "name": "Community HealthChoices (CHC) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/PA",
+    "waiverId": "0386.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Pennsylvania's Community HealthChoices (CHC) Waiver (waiver 0386.R05.00) providing adult daily living, personal assistance services, respite, counseling services and home health aide, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "rhode-island": {
+   "hc": {
+    "name": "Medicaid Long-Term Services and Supports (LTSS)",
+    "url": "https://eohhs.ri.gov/consumer/health-care/long-term-services-and-supports?language=en",
+    "fact": "Rhode Island's Executive Office of Health and Human Services runs Medicaid Long-Term Services and Supports (LTSS). People whose needs meet the 'Highest' level of care can choose nursing facility care or home and community-based care.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "south-carolina": {
+   "hc": {
+    "name": "Community Choices Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/SC",
+    "waiverId": "0405.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows South Carolina's Community Choices Waiver (waiver 0405.R05.00) providing adult day health care, personal care, respite- institutional, adult day health care-nursing and attendant care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "south-dakota": {
+   "hc": {
+    "name": "HOPE Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/SD",
+    "waiverId": "0189.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows South Dakota's HOPE Waiver (waiver 0189.R08.00) providing adult day services, in-home respite care, homemaker, in-home nursing services and personal care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "HOPE Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/SD",
+    "waiverId": "0189.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows South Dakota's HOPE Waiver (waiver 0189.R08.00) providing adult day services, in-home respite care, homemaker, in-home nursing services and personal care, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include assisted living; Medicaid waivers do not pay room and board."
+   }
+  },
+  "tennessee": {
+   "hc": {
+    "name": "TennCare CHOICES",
+    "url": "https://www.tn.gov/tenncare/long-term-services-supports/choices.html",
+    "fact": "TennCare CHOICES provides long-term services and supports at home, in the community or in a nursing facility for adults 65 and older and adults 21 and older with physical disabilities. Applicants must need help with daily living activities and qualify financially; the local Area Agency on Aging and Disability (1-866-836-6678) helps people who are not yet on TennCare apply.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "utah": {
+   "hc": {
+    "name": "Waiver for Individuals Age 65 or Older",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/UT",
+    "waiverId": "0247.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Utah's Waiver for Individuals Age 65 or Older (waiver 0247.R07.00) providing adult day health, homemaker, respite, adult companion services and chore services, among other services, to people 65 or older who meet a nursing facility level of care."
+   }
+  },
+  "vermont": {
+   "hc": {
+    "name": "Choices for Care",
+    "url": "https://asd.vermont.gov/services/choices-for-care-program",
+    "fact": "Vermont's Choices for Care, run by the Adult Services Division, provides a package of long-term services and supports to Vermonters age 18 and over who need a nursing home level of care, so they can choose care at home or in other settings instead of a nursing home.",
+    "source": "State Medicaid page (read 2026-11-15)"
+   }
+  },
+  "virginia": {
+   "hc": {
+    "name": "Commonwealth Coordinated Care Plus (CCC Plus) Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/VA",
+    "waiverId": "0321.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Virginia's Commonwealth Coordinated Care Plus (CCC Plus) Waiver (waiver 0321.R05.00) providing adult day health care, personal assistance services, respite care, assistive technology and environmental modifications, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "washington": {
+   "hc": {
+    "name": "COPES Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/WA",
+    "waiverId": "0049.R09.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Washington's COPES Waiver (waiver 0049.R09.00) providing adult day health, adult day care, community choice guiding, environmental modifications and home delivered meals, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "west-virginia": {
+   "hc": {
+    "name": "Aged and Disabled Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/WV",
+    "waiverId": "0134.R08.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows West Virginia's Aged and Disabled Waiver (waiver 0134.R08.00) providing personal attendant services, adult medical day care, environmental accessibility adaptations home, environmental accessibility adaptations vehicle and non-medical transportation, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   }
+  },
+  "wisconsin": {
+   "hc": {
+    "name": "Family Care Waiver",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/WI",
+    "waiverId": "0367.R05.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Wisconsin's Family Care Waiver (waiver 0367.R05.00) providing adult day care, respite, assistive technology, CIE exploration and communication assistance, among other services, to people 65 or older and adults with disabilities."
+   }
+  },
+  "wyoming": {
+   "hc": {
+    "name": "Community Choices Waiver (CCW)",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/WY",
+    "waiverId": "0236.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Wyoming's Community Choices Waiver (CCW) (waiver 0236.R07.00) providing adult day services, homemaker, home health aide, personal support services and respite, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care."
+   },
+   "al": {
+    "name": "Community Choices Waiver (CCW)",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/Waiver-Descript-Factsheet/WY",
+    "waiverId": "0236.R07.00",
+    "source": "Medicaid.gov waiver factsheet (read 2026-11-15)",
+    "fact": "Medicaid.gov's waiver list shows Wyoming's Community Choices Waiver (CCW) (waiver 0236.R07.00) providing adult day services, homemaker, home health aide, personal support services and respite, among other services, to people 65 or older and adults with disabilities who meet a nursing facility level of care. Its listed services include assisted living; Medicaid waivers do not pay room and board."
+   }
+  }
+ }
+}

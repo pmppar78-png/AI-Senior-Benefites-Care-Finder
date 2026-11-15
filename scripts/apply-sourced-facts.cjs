@@ -132,6 +132,48 @@ function stateLandscapeFact(kind, loc) {
   }
   return '';
 }
+// ---- MA state and city pages: a sourced "market at a glance" section from the CMS CY2026
+// landscape file (engines/data/sources/cms-ma-landscape-2026-states.json) plus the state SHIP.
+const MA_LAND = JSON.parse(fs.readFileSync(path.join(ROOT, 'engines/data/sources/cms-ma-landscape-2026-states.json'), 'utf8'));
+const STATE_FACTS = JSON.parse(fs.readFileSync(path.join(ROOT, 'engines/data/state-facts.json'), 'utf8'));
+const L_LAND = A(MA_LAND.landingPage, "CMS's CY2026 Medicare Advantage and Part D landscape file");
+const nWord = (n, one, many) => `${n.toLocaleString('en-US')} ${n === 1 ? one : many}`;
+const listAnd = a => a.length <= 1 ? (a[0] || '') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1];
+function maLandscapeSection(slug, cityName) {
+  const st = BY[slug]; const d = st && MA_LAND.states[st.abbr]; if (!d) return '';
+  const f = STATE_FACTS[slug] || {};
+  const name = st.name === 'District of Columbia' ? 'the District of Columbia' : st.name;
+  const where = cityName ? `across ${name} (not every plan is sold in ${cityName})` : `in ${name}`;
+  const ship = f.shipName ? `<li><strong>Free counseling:</strong> the ${esc(f.shipName)}${f.shipPhone ? `, ${esc(f.shipPhone)}` : ''}, gives unbiased help comparing these plans at no cost (any state's program is listed at ${L_SHIP}).</li>` : '';
+  const head = `<section class="info-block" id="ma-landscape"><h2>${cityName ? `Medicare Advantage across ${esc(st.name)}` : `${esc(st.name)}'s Medicare Advantage market`} in 2026</h2>`;
+  if (!d.maPlans) {
+    const pdp = (SRC.states[st.abbr] || {}).medicare2026 || {};
+    return `${head}<ul><li><strong>Plans offered:</strong> ${L_LAND} lists no Medicare Advantage plans for sale ${where} in 2026, so people here compare Original Medicare with a Medigap policy${pdp.pdpPlans ? ` and one of the state's ${pdp.pdpPlans} stand-alone Part D plans` : ''}.</li>${ship}</ul></section>`;
+  }
+  const T = d.planTypes, labels = { 'HMO': ['HMO (including HMO-POS)', 'HMOs (including HMO-POS)'], 'PPO': ['local PPO', 'local PPOs'], 'Regional PPO': ['regional PPO', 'regional PPOs'], 'PFFS': ['private fee-for-service (PFFS) plan', 'private fee-for-service (PFFS) plans'], 'MSA': ['Medical Savings Account (MSA) plan', 'Medical Savings Account (MSA) plans'] };
+  const order = Object.keys(T).sort((a, b) => T[b] - T[a]);
+  const types = order.map(k => nWord(T[k], ...(labels[k] || [k + ' plan', k + ' plans'])));
+  const top = order[0], share = Math.round(100 * T[top] / d.maPlans);
+  const short = { 'HMO': 'HMOs', 'PPO': 'local PPOs', 'Regional PPO': 'regional PPOs', 'PFFS': 'PFFS plans', 'MSA': 'MSA plans' };
+  const lead = order.length === 1 ? '' : share >= 60 ? ` ${(short[top] || top).replace(/^./, c => c.toUpperCase())} make up ${share}% of the choices.` : ` No single type dominates; the largest group, ${short[top] || top}, is ${share}% of the choices.`;
+  const typeText = order.length === 1 ? `${d.maPlans === 1 ? 'is a' : 'are all'} ${(labels[top] || [top, top + 's'])[d.maPlans === 1 ? 0 : 1]}` : `are ${listAnd(types)}`;
+  const noD = d.maPlans - d.maPd;
+  const snp = d.snp, snpTotal = snp['D-SNP'] + snp['C-SNP'] + snp['I-SNP'];
+  const snpParts = [];
+  if (snp['D-SNP']) snpParts.push(`${snp['D-SNP']} for people with both Medicare and Medicaid (D-SNPs)`);
+  if (snp['C-SNP']) snpParts.push(`${snp['C-SNP']} for certain chronic conditions (C-SNPs)`);
+  if (snp['I-SNP']) snpParts.push(`${snp['I-SNP']} for people living in a nursing home or needing that level of care (I-SNPs)`);
+  const items = [
+    `<li><strong>Plan types:</strong> the ${nWord(d.maPlans, 'general-enrollment plan', 'general-enrollment plans')} ${where} ${typeText}.${lead}</li>`,
+    `<li><strong>Drug coverage:</strong> ${d.maPd === d.maPlans ? 'every one of them includes Part D drug coverage' : `${d.maPd} include Part D drug coverage and ${nWord(noD, 'is a medical-only plan', 'are medical-only plans')} without it`}.</li>`,
+    d.medianMoop != null ? `<li><strong>Out-of-pocket limit:</strong> the median in-network maximum out-of-pocket amount is ${usd(d.medianMoop)} a year.</li>` : '',
+    d.rated ? `<li><strong>Star ratings:</strong> ${d.fourStarPlus} of the ${d.rated} rated plans ${d.fourStarPlus === 1 ? 'carries' : 'carry'} an overall CMS rating of 4 stars or higher, and ${d.orgs === 1 ? 'all plans come from one parent company' : `the plans come from ${d.orgs} parent companies`}.</li>` : '',
+    `<li><strong>Special Needs Plans:</strong> ${snpTotal ? `${snpTotal} more ${snpTotal === 1 ? 'plan is' : 'plans are'} open only to specific groups: ${listAnd(snpParts)}.` : `the file lists no Special Needs Plans ${where}.`}</li>`,
+    ship,
+  ].join('');
+  return `${head}<ul>${items}</ul><p class="source-note">Counts are plan segments offered anywhere in the state, from ${L_LAND} (September 2026 release).</p></section>`;
+}
+
 const INTROS = {
   'Medicare Advantage': loc => [
     `Medicare Advantage (Part C) plans are sold by private insurers that contract with Medicare, and the plans offered change by county each year. This page covers the plan types, extra benefits, costs and star ratings to compare in ${loc}. To see the plans sold at your ZIP code, use ${L_PF}; free one-on-one counseling is available from your state's ${L_SHIP} program.`,
@@ -235,6 +277,12 @@ function transform(relPath, h) {
       const intro = `<p class="engine-intro">${pick(relPath, INTROS[bm[1]](loc))}${fact ? ' ' + fact : ''}</p>`;
       h = h.replace(BOILER, () => intro);
       bump('intro');
+    }
+    if (rel[0] === 'medicare' && rel[1] === 'advantage' && BY[rel[2]] && (rel.length === 4 || rel.length === 5) && !h.includes('id="ma-landscape"')) {
+      const cityName = rel.length === 5 ? (h.match(/<h1[^>]*>[^<]*? in ([^,<]+),/) || [])[1] : null;
+      const sec = maLandscapeSection(rel[2], cityName);
+      const at = h.indexOf('</p>', h.indexOf('class="engine-intro"'));
+      if (sec && h.includes('class="engine-intro"') && at > 0) { h = h.slice(0, at + 4) + sec + h.slice(at + 4); bump('maLandscape'); }
     }
     // These city pages explain how to compare plans; they do not rank plans, so no "Best" claim.
     if (rel[0] === 'medicare' && rel[1] === 'advantage' && /Best Medicare Advantage Plans in /.test(h)) {
