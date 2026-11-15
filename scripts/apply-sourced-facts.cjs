@@ -111,6 +111,27 @@ const L_PD = A(SRC.sources.medicare_partd_costs.url, 'Medicare.gov');
 const L_AA = A('https://www.va.gov/pension/aid-attendance-housebound/', 'VA Aid and Attendance');
 const L_EN = A('https://www.usa.gov/help-with-energy-bills', 'USA.gov energy help');
 const pick = (key, arr) => arr[[...key].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7) % arr.length];
+// State-specific 2026 plan counts from CMS's landscape file, so each state's intro carries its
+// own sourced numbers rather than only the place name.
+const L_CMS = A(SRC.sources.cms_landscape_2026.url, "CMS's landscape data");
+const money2 = n => '$' + Number(n).toFixed(2);
+function stateLandscapeFact(kind, loc) {
+  const parts = loc.split(', ');
+  const stName = parts[parts.length - 1];
+  const city = parts.length > 1 ? parts[0] : null;
+  const st = Object.values(SRC.states).find(x => x.name === stName);
+  const m = st && st.medicare2026;
+  if (!m) return '';
+  const where = city ? `somewhere in ${stName} (not every plan is sold in ${city})` : `in ${stName}`;
+  if (kind === 'Medicare Advantage' && m.maPlans) {
+    const prem = m.maMedianPremium === 0 ? 'the median plan premium is $0' : `the median plan premium is ${money2(m.maMedianPremium)} a month`;
+    return `For 2026, ${L_CMS} show ${m.maPlans} Medicare Advantage plans offered ${where}; ${m.maZeroPremium} of them charge no premium of their own, and ${prem}.`;
+  }
+  if (kind === 'Medicare Part D' && m.pdpPlans) {
+    return `For 2026, ${L_CMS} list ${m.pdpPlans} stand-alone Part D plans in ${stName}, with a median premium of ${money2(m.pdpMedianPremium)} a month${m.pdpLowestPremium != null ? ` and the lowest at ${money2(m.pdpLowestPremium)}` : ''}.`;
+  }
+  return '';
+}
 const INTROS = {
   'Medicare Advantage': loc => [
     `Medicare Advantage (Part C) plans are sold by private insurers that contract with Medicare, and the plans offered change by county each year. This page covers the plan types, extra benefits, costs and star ratings to compare in ${loc}. To see the plans sold at your ZIP code, use ${L_PF}; free one-on-one counseling is available from your state's ${L_SHIP} program.`,
@@ -194,6 +215,13 @@ const SOURCED_FACTS_DATE = '2026-11-15';
 /** Returns the corrected HTML for one page (relPath like 'medicare/part-d/index.html'). */
 function transform(relPath, h) {
     const rel = relPath.split(/[\\/]/);
+    // Spelling: the city is McKinney, TX (URL slugs stay lowercase).
+    if (h.includes('Mckinney')) { h = h.split('Mckinney').join('McKinney'); bump('mckinney'); }
+    // Medicare Advantage state titles read "... Plans 2026 — Compare Options & Enroll"; match the city-page wording.
+    if (/ Medicare Advantage Plans 2026 — Compare Options &amp; Enroll/.test(h)) {
+      h = h.replace(/([A-Z][A-Za-z. ]+?) Medicare Advantage Plans 2026 — Compare Options &amp; Enroll/g, 'Medicare Advantage Plans in $1 (2026): How to Compare');
+      bump('maStateTitle');
+    }
     for (let i = 0; i < FIXED.length; i++) {
       if (h.includes(FIXED[i][0])) { h = h.split(FIXED[i][0]).join(FIXED[i][1]); bump('fixed' + i); }
     }
@@ -203,7 +231,8 @@ function transform(relPath, h) {
     const bm = h.match(BOILER);
     if (bm && INTROS[bm[1]]) {
       const loc = bm[2];
-      const intro = `<p class="engine-intro">${pick(relPath, INTROS[bm[1]](loc))}</p>`;
+      const fact = stateLandscapeFact(bm[1], loc);
+      const intro = `<p class="engine-intro">${pick(relPath, INTROS[bm[1]](loc))}${fact ? ' ' + fact : ''}</p>`;
       h = h.replace(BOILER, () => intro);
       bump('intro');
     }
@@ -221,6 +250,12 @@ function transform(relPath, h) {
       const add = alCityAdd(rel[2], rel[3]);
       if (add && !h.includes(add)) { h = h.replace(NAT_AL, NAT_AL + add); bump('alCity'); }
     }
+    // Two old national-cost sentences on one page both map to NAT_AL; keep the first only.
+    if (h.split(NAT_AL).length > 2) {
+      const i = h.indexOf(NAT_AL) + NAT_AL.length;
+      h = h.slice(0, i) + h.slice(i).split(' ' + NAT_AL).join('').split(NAT_AL).join('');
+      bump('natAlDedupe');
+    }
     return h;
 }
 
@@ -235,8 +270,37 @@ const longDate = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US',
 const toIso = v => { if (/^\d{4}-\d{2}-\d{2}/.test(v)) return v.slice(0, 10); const d = new Date(v + ' 12:00 UTC'); return isNaN(d) ? null : d.toISOString().slice(0, 10); };
 let GENERATED = null;
 try { GENERATED = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'engines/data/.generated-urls.json'), 'utf8'))); } catch (e) { /* generator not run */ }
+let SITEMAP_DATES = null;
+function sitemapDate(url) {
+  if (!SITEMAP_DATES) {
+    SITEMAP_DATES = {};
+    for (const f of fs.readdirSync(ROOT).filter(n => /^sitemap.*\.xml$/.test(n))) {
+      const x = fs.readFileSync(path.join(ROOT, f), 'utf8');
+      for (const m of x.matchAll(/<loc>https:\/\/seniorbenefitscarefinder\.com([^<]*)<\/loc>\s*<lastmod>([\d-]{10})/g)) SITEMAP_DATES[m[1]] = m[2];
+    }
+  }
+  return SITEMAP_DATES[url];
+}
+// Page-level schema (WebPage, CollectionPage, ProfilePage) with no dateModified gets one: the
+// visible "Updated" date when the page shows one, otherwise the sitemap date. Hub pages with
+// no visible date also get a byline line under the H1 with that same date.
+function addMissingDates(url, h) {
+  const vis = (h.match(/Updated:?\s*(?:<time datetime="([\d-]{10})">)?([A-Z][a-z]+ \d{1,2}, \d{4})/) || []);
+  const date = vis[1] || (vis[2] && toIso(vis[2])) || sitemapDate(url) || LASTMOD[url] || CONTENT_DATE;
+  h = h.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (m, a, body, c) => {
+    if (/"dateModified"/.test(body) || !/"@type"\s*:\s*"(WebPage|CollectionPage|ProfilePage)"/.test(body)) return m;
+    bump('schemaDateAdded');
+    return a + body.replace(/("@type"\s*:\s*"(?:WebPage|CollectionPage|ProfilePage)",)/, `$1 "dateModified": "${date}",`) + c;
+  });
+  if (!vis.length && /<h1>[^<]*<\/h1>\s*<p>Select your state/.test(h)) {
+    h = h.replace(/(<h1>[^<]*<\/h1>)(\s*<p>Select your state)/, `$1\n    <p class="page-byline" style="font-size:0.85rem;color:var(--text-muted);margin:0.25rem 0 1rem;">By <a href="/author/paul-paradis/">Paul Paradis</a> &middot; Updated <time datetime="${date}">${longDate(date)}</time></p>$2`);
+    bump('hubByline');
+  }
+  return h;
+}
 function syncDates(relPath, h) {
   const url = '/' + relPath.split(path.sep).join('/').replace(/index\.html$/, '');
+  h = addMissingDates(url, h);
   const date = LASTMOD[url] || CONTENT_DATE;
   // Engine-generated pages already carry CONTENT_DATE in schema and sitemap;
   // only hand-built pages (no engine hero) are synced here.

@@ -38,7 +38,7 @@ function appendMessage(role, text) {
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
 
-function linkify(text) {
+function linkify(text, labels) {
   if (!text) return "";
   // First escape HTML entities in the text
   const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -64,23 +64,23 @@ function linkify(text) {
     }
     const safeUrl = url.replace(/&amp;/g, "&").replace(/"/g, "&quot;");
     // Extract a clean display name from the URL
+    // Readable link text: the organization or page name the server sends for approved links,
+    // otherwise the site's name (host). The full address stays in href and in the tooltip.
     let displayName;
     let host = "";
+    const rawUrl = url.replace(/&amp;/g, "&");
+    const label = labels && (labels[rawUrl] || labels[rawUrl.replace(/\/$/, "")] || labels[rawUrl + "/"]);
     try {
       const parsed = new URL(safeUrl);
       host = parsed.hostname.replace(/^www\./, "");
-      displayName = host;
-      // Add path context if meaningful
-      const pathParts = parsed.pathname.split('/').filter(Boolean);
-      if (pathParts.length > 0 && pathParts[0] !== 'index.html') {
-        displayName += '/' + pathParts.join('/');
-      }
+      displayName = label || host;
     } catch (e) {
-      displayName = safeUrl;
+      displayName = label || safeUrl;
     }
+    displayName = String(displayName).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     const official = host && (host.endsWith(".gov") || NON_SPONSORED_HOSTS.some((suffix) => host === suffix || host.endsWith("." + suffix)));
     const rel = official ? "noopener noreferrer" : "noopener noreferrer sponsored";
-    return `<a href="${safeUrl}" target="_blank" rel="${rel}">${displayName}</a>` + trail;
+    return `<a href="${safeUrl}" target="_blank" rel="${rel}" title="${safeUrl}">${displayName}</a>` + trail;
   });
 }
 
@@ -109,7 +109,7 @@ async function sendMessage(message) {
     const data = await response.json();
     const reply = data.reply || "Sorry, I didn’t receive a response. Please try again in a moment.";
 
-    pendingBubble.innerHTML = linkify(reply);
+    pendingBubble.innerHTML = linkify(reply, data.links);
     if (data.reply) chatHistory.push({ role: "assistant", content: data.reply });
   } catch (err) {
     pendingBubble.textContent =
