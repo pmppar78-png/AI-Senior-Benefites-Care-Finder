@@ -28,7 +28,7 @@ const MULTI = [
   { q: "I'm 70, single, and my only income is $1,400 a month from Social Security. Do I qualify for a Medicare Savings Program?", must: [/SLMB|Specified Low-Income/i] },
   { q: 'Based on what you just told me, which of those programs would I fall into, and would I also get Extra Help automatically?',
     must: [/automatic/i, /SLMB|Specified Low-Income/i],
-    mustNot: [/does not automatically (enroll|qualify)|need to apply separately|must apply separately|not automatically/i] },
+    mustNot: [/(does not|doesn't|do not|won't|will not) automatically (get|enroll|qualify|receive)|(?<!(not|n't) )need to apply separately|must apply separately/i] },
   { q: 'And roughly how much would that save me per month on my Part B premium?', must: [/\$202\.90/] },
 ];
 
