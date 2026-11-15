@@ -131,7 +131,7 @@ for (const u of [
   "https://aging.ohio.gov/find-services/local-office",
 ]) assert.ok(SYSTEM_PROMPT.includes(u), u);
 assert.ok(/For Ohio, name PASSPORT/.test(SYSTEM_PROMPT));
-assert.ok(/may add one or two relevant commercial links from the approved list AFTER the official and nonprofit answer, labeled as options to compare/.test(SYSTEM_PROMPT));
+assert.ok(/may add one or two relevant commercial links from the approved list \(never more than two different commercial links in one answer\) AFTER the official and nonprofit answer, labeled as options to compare/.test(SYSTEM_PROMPT));
 assert.ok(!/unless the user explicitly asks for companies/.test(SYSTEM_PROMPT));
 // Ohio answer with commercial options after the official links keeps PASSPORT, links stay clickable, disclosure added once.
 {
@@ -151,3 +151,19 @@ assert.ok(/cover both tests: income/.test(SYSTEM_PROMPT));
 }
 
 console.log("chat-config tests passed (" + APPROVED_LINKS.length + " approved links)");
+
+// At most two distinct commercial links per answer; a third is cut, list item included.
+{
+  const { enforceApprovedLinks: e, MAX_COMMERCIAL_LINKS } = require("./chat-config");
+  assert.strictEqual(MAX_COMMERCIAL_LINKS, 2);
+  const out = e(
+    "Start with PASSPORT: https://aging.ohio.gov/\n\nOptions to compare:\n- Home Instead: https://www.homeinstead.com/\n- Visiting Angels: https://www.visitingangels.com/\n- Care.com: https://www.care.com/senior-care\n\nAlso see [A Place for Mom](https://www.aplaceformom.com/). Home Instead again: https://www.homeinstead.com/"
+  );
+  const commercialUrls = new Set((out.match(/https?:\/\/[^\s)]+/g) || []).filter((u) => /homeinstead|visitingangels|care\.com|aplaceformom/.test(u)));
+  assert.strictEqual(commercialUrls.size, 2, out);
+  assert.ok(!/care\.com|aplaceformom|Care\.com:/.test(out), out);
+  assert.ok(out.includes("https://aging.ohio.gov/"), out);
+  assert.ok(out.includes(DISC), out);
+  assert.ok(!/\u0000|\u0001/.test(out));
+}
+console.log("cap test ok");

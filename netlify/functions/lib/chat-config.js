@@ -486,7 +486,7 @@ const SYSTEM_PROMPT =
   "• For an elder law attorney, use the NAELA Find a Lawyer page, not the NAELA homepage.\n" +
   "• For medical alert questions, you may mention Medical Guardian (https://www.medicalguardian.com/) and Bay Alarm Medical (https://www.bayalarmmedical.com/) as plain links. Do not invent an affiliate ID for either company, and do not add any other medical-alert company URL.\n" +
   "• For questions about paying for in-home or long-term care in a named state, start with that state's official programs and their links. For Ohio, name PASSPORT and include the PASSPORT page, the Ohio Department of Aging, Ohio Medicaid (the HCBS waiver page) and the Ohio Area Agency on Aging locator.\n" +
-  "• Commercial options: when the topic is in-home care, senior living, medical alerts or prescription savings, you may add one or two relevant commercial links from the approved list AFTER the official and nonprofit answer, labeled as options to compare (for example \"Options to compare:\"), and then add the disclosure. Official programs always come first and stay complete and accurate (for Ohio in-home care, PASSPORT and the Ohio links). Never present a commercial link as a government program, never let it replace an official link, and never add commercial links on other topics.\n" +
+  "• Commercial options: when the topic is in-home care, senior living, medical alerts or prescription savings, you may add one or two relevant commercial links from the approved list (never more than two different commercial links in one answer) AFTER the official and nonprofit answer, labeled as options to compare (for example \"Options to compare:\"), and then add the disclosure. Official programs always come first and stay complete and accurate (for Ohio in-home care, PASSPORT and the Ohio links). Never present a commercial link as a government program, never let it replace an official link, and never add commercial links on other topics.\n" +
   "• When someone asks whether they qualify for SNAP, cover both tests: income (compare the net income limit with income after the standard deduction and any medical deduction, not with gross income) and assets (the federal asset limit is $4,750 for a household with a member 60 or older, but many states drop the asset test through BBCE, so the state matters).\n" +
   "• For where to apply for SNAP, use that state's link from the State SNAP agencies list, or the USDA SNAP state directory.\n" +
   "• Write every link as the full URL, scheme included, exactly as listed (for example https://www.medicare.gov/health-drug-plans/part-d). Never write a bare address such as medicare.gov/health-drug-plans/part-d, and never write the link type (official, nonprofit or commercial) after a link; the type is for you only.\n" +
@@ -523,15 +523,30 @@ function canonicalApprovedUrl(rawUrl) {
   return link ? link.url : null;
 }
 
+const MAX_COMMERCIAL_LINKS = 2;
+
 function enforceApprovedLinks(text) {
   if (typeof text !== "string" || !text) return "";
   let commercial = false;
+  // At most MAX_COMMERCIAL_LINKS distinct commercial links per answer; later ones are cut
+  // (the same link repeated counts once).
+  // Decided in reading order over the original text, so markdown and plain links count alike.
+  const commercialAllowed = new Set();
+  for (const m of text.matchAll(/https?:\/\/[^\s<>"')\]]+/g)) {
+    const c = canonicalApprovedUrl(m[0].replace(/[.,;:!?]+$/, ""));
+    const l = c && APPROVED_BY_KEY.get(linkKey(c));
+    if (l && l.kind === "commercial" && commercialAllowed.size < MAX_COMMERCIAL_LINKS) commercialAllowed.add(linkKey(c));
+  }
+  const CAPPED = "\u0001";
 
   const rewrite = (rawUrl) => {
     const canonical = canonicalApprovedUrl(rawUrl);
     if (!canonical) return null;
     const link = APPROVED_BY_KEY.get(linkKey(canonical));
-    if (link && link.kind === "commercial") commercial = true;
+    if (link && link.kind === "commercial") {
+      if (!commercialAllowed.has(linkKey(canonical))) return CAPPED;
+      commercial = true;
+    }
     return canonical;
   };
 
@@ -549,6 +564,7 @@ function enforceApprovedLinks(text) {
 
   out = out.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, (match, label, url) => {
     const canonical = rewrite(url);
+    if (canonical === CAPPED) return label + " (" + CAPPED + ")";
     return canonical ? label + " (" + canonical + ")" : label;
   });
 
@@ -559,6 +575,14 @@ function enforceApprovedLinks(text) {
     const canonical = rewrite(core);
     return (canonical || DROPPED) + trail;
   });
+
+  // A list item whose only link was cut by the commercial cap goes entirely; elsewhere the
+  // cut link is removed like an unapproved one.
+  out = out
+    .split("\n")
+    .filter((line) => !(line.includes(CAPPED) && /^\s*(?:[-*\u2022]|\d+[.)])\s/.test(line) && !/https?:\/\//.test(line)))
+    .join("\n")
+    .split(CAPPED).join(DROPPED);
 
   // When a link is removed, also remove the lead-in that pointed at it
   // ("apply here: <url>", "visit: <url>") and any empty brackets left behind.
@@ -642,6 +666,7 @@ function linkLabels(text) {
 
 module.exports = {
   APPROVED_LINKS,
+  MAX_COMMERCIAL_LINKS,
   linkLabels,
   DISCLOSURE,
   SYSTEM_PROMPT,

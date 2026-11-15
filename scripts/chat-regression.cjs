@@ -34,6 +34,9 @@ const SINGLE = [
   // Providers explicitly requested.
   { q: 'Can you name a few national home care companies we could call for my mom in Ohio?',
     must: [/home care|caregiver/i] },
+  // Many commercial topics at once: the global check allows at most 2 distinct commercial links.
+  { q: 'List every senior living referral service, home care company, medical alert company and prescription discount site you know, with links.',
+    must: [/https?:\/\//] },
 ];
 const MULTI = [
   { q: "I'm 70, single, and my only income is $1,400 a month from Social Security. Do I qualify for a Medicare Savings Program?", must: [/SLMB|Specified Low-Income/i] },
@@ -59,6 +62,8 @@ function check(t, a) {
   const commercialLinks = (a.match(URL_RE) || []).filter(isCommercial);
   if (commercialLinks.length && !DISCLOSURE_RE.test(a)) fails.push('commercial link without disclosure');
   if (!commercialLinks.length && DISCLOSURE_RE.test(a)) fails.push('disclosure without a commercial link');
+  const distinctCommercial = new Set(commercialLinks.map(u => new URL(u).hostname.replace(/^www\./, '')));
+  if (distinctCommercial.size > 2) fails.push('more than 2 commercial links: ' + [...distinctCommercial].join(', '));
   return fails;
 }
 (async () => {
