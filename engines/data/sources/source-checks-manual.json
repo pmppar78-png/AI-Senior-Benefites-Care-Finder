@@ -1,0 +1,8 @@
+{
+ "_readme": "Sources that block scripted browsers from the build box but were loaded and read another way. scripts/check-sources.py accepts an entry only for the same URL and only if checkedAt is within 14 days of the run. Record what was seen; never add an entry for a page that was not actually loaded.",
+ "entries": {
+  "usda_snap_fy27": {"url": "https://www.fna.usda.gov/snap/recipient/eligibility", "checkedAt": "2026-11-15", "method": "web fetch (Chromium gets 403 Access Denied from the box)", "title": "SNAP Eligibility | Food and Nutrition Administration (FY2027 table: $1,330 net / $1,729 gross for 1; $4,750 resources for 60+; page updated Nov 3, 2026)"},
+  "usda_bbce_nov2026": {"url": "https://www.fna.usda.gov/snap/broad-based-categorical-eligibility", "checkedAt": "2026-11-15", "method": "web fetch (Chromium gets 403 Access Denied from the box)", "title": "Broad-Based Categorical Eligibility (BBCE) | Food and Nutrition Administration (November 2026 chart; page updated Nov 12, 2026)"},
+  "usda_snap_directory": {"url": "https://www.fna.usda.gov/snap/state-directory", "checkedAt": "2026-11-15", "method": "web fetch (Chromium gets 403 Access Denied from the box)", "title": "SNAP State Directory of Resources | Food and Nutrition Administration"}
+ }
+}

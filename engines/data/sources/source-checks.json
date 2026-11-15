@@ -1,0 +1,281 @@
+{
+ "_readme": "Written by scripts/check-sources.py. seed-data.js stamps \"Checked <date>\" only on sources with ok=true for the same URL.",
+ "results": {
+  "carescout2025": {
+   "status": 200,
+   "ok": true,
+   "title": "Cost of Long Term Care by State: Cost of Care Report | CareScout",
+   "finalUrl": "https://www.carescout.com/cost-of-care",
+   "url": "https://www.carescout.com/cost-of-care",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "ssa_oasdi_sc_2024_t2": {
+   "status": 200,
+   "ok": true,
+   "title": "OASDI Beneficiaries by State and County, 2024 - Table 2",
+   "finalUrl": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/2024/table02.html",
+   "url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/2024/table02.html",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "ssa_oasdi_sc_2024_t3": {
+   "status": 200,
+   "ok": true,
+   "title": "OASDI Beneficiaries by State and County, 2024 - Table 3",
+   "finalUrl": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/2024/table03.html",
+   "url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/2024/table03.html",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "ssa_colafacts2026": {
+   "status": 200,
+   "ok": true,
+   "title": "2026 Cost-of-Living Adjustment (COLA) Fact Sheet | News | SSA",
+   "finalUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+   "url": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "ssa_ssi_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "SSI Benefits | Supplemental Security Income (SSI) | SSA",
+   "finalUrl": "https://www.ssa.gov/ssi/text-benefits-ussi.htm",
+   "url": "https://www.ssa.gov/ssi/text-benefits-ussi.htm",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "medicare_extrahelp": {
+   "status": 200,
+   "ok": true,
+   "title": "Help with drug costs | Medicare",
+   "finalUrl": "https://www.medicare.gov/basics/costs/help/drug-costs",
+   "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "cms_lis_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "application/pdf",
+   "url": "https://www.cms.gov/files/document/cy2026-lis-resource-limits-memo-g.pdf",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "cms_landscape_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "Benefits Data | CMS",
+   "finalUrl": "https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/benefits-data",
+   "url": "https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/benefits-data",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "cms_ma_partd_2026_press": {
+   "status": 200,
+   "ok": true,
+   "title": "Medicare Advantage and Medicare Prescription Drug Programs Expected to Remain Stable in 2026 | CMS",
+   "finalUrl": "https://www.cms.gov/newsroom/press-releases/medicare-advantage-medicare-prescription-drug-programs-expected-remain-stable-2026",
+   "url": "https://www.cms.gov/newsroom/press-releases/medicare-advantage-medicare-prescription-drug-programs-expected-remain-stable-2026",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "medicare_partd_costs": {
+   "status": 200,
+   "ok": true,
+   "title": "How much does Medicare drug coverage cost? | Medicare",
+   "finalUrl": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+   "url": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "medicare_mppp": {
+   "status": 200,
+   "ok": true,
+   "title": "What\u2019s the Medicare Prescription Payment Plan? | Medicare",
+   "finalUrl": "https://www.medicare.gov/prescription-payment-plan",
+   "url": "https://www.medicare.gov/prescription-payment-plan",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "va_pension_rates": {
+   "status": 200,
+   "ok": true,
+   "title": "Current Pension Rates For Veterans | Veterans Affairs",
+   "finalUrl": "https://www.va.gov/pension/veterans-pension-rates/",
+   "url": "https://www.va.gov/pension/veterans-pension-rates/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "hhs_fpl_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "Poverty Guidelines | ASPE",
+   "finalUrl": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+   "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "kff_expansion": {
+   "status": 200,
+   "ok": true,
+   "title": "Status of State Medicaid Expansion Decisions | KFF",
+   "finalUrl": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+   "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "medicaid_spousal_2026": {
+   "status": 403,
+   "ok": false,
+   "title": "text/html",
+   "url": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12092025.pdf",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "usda_snap_fy27": {
+   "status": 403,
+   "ok": true,
+   "title": "SNAP Eligibility | Food and Nutrition Administration (FY2027 table: $1,330 net / $1,729 gross for 1; $4,750 resources for 60+; page updated Nov 3, 2026)",
+   "finalUrl": "https://www.fna.usda.gov/snap/recipient/eligibility",
+   "url": "https://www.fna.usda.gov/snap/recipient/eligibility",
+   "checkedAt": "2026-11-15",
+   "method": "manual: web fetch (Chromium gets 403 Access Denied from the box)",
+   "browserResult": "403 Access Denied"
+  },
+  "aaltci_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "2026 Long-Term Care Insurance Price Index | LTC Insurance Costs by Age | AALTCI",
+   "finalUrl": "https://www.aaltci.org/2026-AALTCI-Long-Term-Care-Insurance-Price-Index/",
+   "url": "https://www.aaltci.org/2026-AALTCI-Long-Term-Care-Insurance-Price-Index/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "ltc_partnership": {
+   "status": 200,
+   "ok": true,
+   "title": "Non-Partnership States \u2013 Long Term Care Insurance Options Without Partnership",
+   "finalUrl": "https://partnershipforlongtermcare.com/nonpartnership.html",
+   "url": "https://partnershipforlongtermcare.com/nonpartnership.html",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "brevy_spap_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "State Pharmaceutical Assistance Programs (SPAPs) in 2026 | Brevy Care",
+   "finalUrl": "https://brevy.com/medicare/state-pharmaceutical-assistance-programs",
+   "url": "https://brevy.com/medicare/state-pharmaceutical-assistance-programs",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "nv_spap_end": {
+   "status": 200,
+   "ok": true,
+   "title": "State Pharmacy Assistance Program (SPAP) - Senior Rx",
+   "finalUrl": "https://www.adsd.nv.gov/programs/programs-for-seniors/state-pharmacy-assistance-program-spap-senior-rx/",
+   "url": "https://www.adsd.nv.gov/programs/programs-for-seniors/state-pharmacy-assistance-program-spap-senior-rx/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "aarp_ks_wv": {
+   "status": 200,
+   "ok": true,
+   "title": "Kansas, West Virginia Will Stop Taxing Benefits",
+   "finalUrl": "https://www.aarp.org/social-security/kansas-west-virginia-not-taxing-benefits/",
+   "url": "https://www.aarp.org/social-security/kansas-west-virginia-not-taxing-benefits/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "usda_bbce_nov2026": {
+   "status": 403,
+   "ok": true,
+   "title": "Broad-Based Categorical Eligibility (BBCE) | Food and Nutrition Administration (November 2026 chart; page updated Nov 12, 2026)",
+   "finalUrl": "https://www.fna.usda.gov/snap/broad-based-categorical-eligibility",
+   "url": "https://www.fna.usda.gov/snap/broad-based-categorical-eligibility",
+   "checkedAt": "2026-11-15",
+   "method": "manual: web fetch (Chromium gets 403 Access Denied from the box)",
+   "browserResult": "403 Access Denied"
+  },
+  "usda_snap_fy27_ies": {
+   "status": 200,
+   "ok": true,
+   "title": "application/pdf",
+   "url": "https://fns-prod.azureedge.us/sites/default/files/resource-files/snap-fy27-incomeEligibilityStandards.pdf",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "usda_snap_fy27_allot": {
+   "status": 200,
+   "ok": true,
+   "title": "application/pdf",
+   "url": "https://fns-prod.azureedge.us/sites/default/files/resource-files/snap-fy27maximumAllotments-deductions.pdf",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "usda_snap_directory": {
+   "status": 403,
+   "ok": true,
+   "title": "SNAP State Directory of Resources | Food and Nutrition Administration",
+   "finalUrl": "https://www.fna.usda.gov/snap/state-directory",
+   "url": "https://www.fna.usda.gov/snap/state-directory",
+   "checkedAt": "2026-11-15",
+   "method": "manual: web fetch (Chromium gets 403 Access Denied from the box)",
+   "browserResult": "403 Access Denied"
+  },
+  "in_fssa_bbce_end": {
+   "status": 200,
+   "ok": true,
+   "title": "DFR: SNAP (Food Assistance)",
+   "finalUrl": "https://www.in.gov/fssa/dfr/snap-food-assistance/",
+   "url": "https://www.in.gov/fssa/dfr/snap-food-assistance/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "cms_ab_2026": {
+   "status": 200,
+   "ok": true,
+   "title": "2026 Medicare Parts A & B Premiums and Deductibles | CMS",
+   "finalUrl": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+   "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "medicare_msp": {
+   "status": 200,
+   "ok": true,
+   "title": "Medicare Savings Programs | Medicare",
+   "finalUrl": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+   "url": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "cms_cib_mmmna_2026": {
+   "status": 403,
+   "ok": false,
+   "title": "text/html",
+   "url": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib04272026.pdf",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "carescout_state_releases": {
+   "status": 0,
+   "ok": false,
+   "title": "error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.businesswire.com/news/home/20260302283881/en/CareScout-Releases-2025-Cost-of-Care-Su",
+   "url": "https://www.businesswire.com/news/home/20260302283881/en/CareScout-Releases-2025-Cost-of-Care-Survey-Results",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  },
+  "va_survivors_pension_rates": {
+   "status": 200,
+   "ok": true,
+   "title": "Current Survivors Pension Benefit Rates | Veterans Affairs",
+   "finalUrl": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/",
+   "url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/",
+   "checkedAt": "2026-11-15",
+   "method": "chromium"
+  }
+ }
+}
