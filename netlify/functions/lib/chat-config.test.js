@@ -133,5 +133,6 @@ for (const u of [
 assert.ok(/For Ohio, name PASSPORT/.test(SYSTEM_PROMPT));
 assert.ok(/unless the user explicitly asks for companies, agencies or providers/.test(SYSTEM_PROMPT));
 assert.ok(/Never add that disclosure/.test(SYSTEM_PROMPT));
+assert.ok(/cover both tests: income/.test(SYSTEM_PROMPT));
 
 console.log("chat-config tests passed (" + APPROVED_LINKS.length + " approved links)");
