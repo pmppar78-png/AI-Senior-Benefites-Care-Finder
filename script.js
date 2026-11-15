@@ -38,8 +38,25 @@ function appendMessage(role, text) {
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
 
+const reEsc = (x) => String(x).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+// When the reply already names the link right before it ("Home Instead (https://...)" or
+// "Home Instead: https://..."), keep one copy of the name: the link itself.
+function collapseNamedLinks(text, labels) {
+  if (!labels) return text;
+  let out = text;
+  for (const [url, label] of Object.entries(labels)) {
+    const u = reEsc(url.replace(/\/$/, "")) + "\\/?";
+    out = out.replace(new RegExp(reEsc(label) + "\\s*\\(\\s*(" + u + ")\\s*\\)", "g"), "$1");
+    out = out.replace(new RegExp(reEsc(label) + "\\s*[:\\u2013\\u2014-]\\s*(" + u + ")", "g"), "$1");
+    out = out.replace(new RegExp(reEsc(label) + "\\s+(" + u + ")", "g"), "$1");
+  }
+  return out;
+}
+
 function linkify(text, labels) {
   if (!text) return "";
+  text = collapseNamedLinks(text, labels);
   // First escape HTML entities in the text
   const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const urlRegex = /(https?:\/\/[^\s<>&]+)/g;
