@@ -142,4 +142,12 @@ assert.ok(!/unless the user explicitly asks for companies/.test(SYSTEM_PROMPT));
 assert.ok(/Never add that disclosure/.test(SYSTEM_PROMPT));
 assert.ok(/cover both tests: income/.test(SYSTEM_PROMPT));
 
+// Readable link text for the chat UI.
+{
+  const { linkLabels } = require("./chat-config");
+  const L = linkLabels("PASSPORT: https://aging.ohio.gov/care-and-living/get-help/home-and-community-care/passport-1. Also https://example.com/x");
+  assert.strictEqual(L["https://aging.ohio.gov/care-and-living/get-help/home-and-community-care/passport-1"], "PASSPORT (Ohio Department of Aging)");
+  assert.strictEqual(Object.keys(L).length, 1);
+}
+
 console.log("chat-config tests passed (" + APPROVED_LINKS.length + " approved links)");

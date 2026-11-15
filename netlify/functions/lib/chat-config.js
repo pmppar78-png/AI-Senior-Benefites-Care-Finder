@@ -626,8 +626,23 @@ function buildModelMessages(rawMessages) {
   };
 }
 
+// Readable link text for the chat UI: approved URL -> the link's name (e.g. "PASSPORT (Ohio
+// Department of Aging)"), for every approved URL in the reply. The page still shows the
+// full URL on hover and keeps the href unchanged.
+function linkLabels(text) {
+  const out = {};
+  for (const m of String(text || "").matchAll(/https?:\/\/[^\s<>"')\]]+/g)) {
+    const canonical = canonicalApprovedUrl(m[0]);
+    if (!canonical) continue;
+    const link = APPROVED_BY_KEY.get(linkKey(canonical));
+    if (link) out[canonical] = link.name;
+  }
+  return out;
+}
+
 module.exports = {
   APPROVED_LINKS,
+  linkLabels,
   DISCLOSURE,
   SYSTEM_PROMPT,
   buildModelMessages,

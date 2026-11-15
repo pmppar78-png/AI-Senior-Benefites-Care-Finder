@@ -1,5 +1,5 @@
 const https = require("https");
-const { buildModelMessages, enforceApprovedLinks } = require("./lib/chat-config");
+const { buildModelMessages, enforceApprovedLinks, linkLabels } = require("./lib/chat-config");
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -144,6 +144,6 @@ exports.handler = async (event) => {
   return {
     statusCode: 200,
     headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
-    body: JSON.stringify({ reply }),
+    body: JSON.stringify({ reply, links: linkLabels(reply) }),
   };
 };
