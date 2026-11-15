@@ -131,7 +131,14 @@ for (const u of [
   "https://aging.ohio.gov/find-services/local-office",
 ]) assert.ok(SYSTEM_PROMPT.includes(u), u);
 assert.ok(/For Ohio, name PASSPORT/.test(SYSTEM_PROMPT));
-assert.ok(/unless the user explicitly asks for companies, agencies or providers/.test(SYSTEM_PROMPT));
+assert.ok(/may add one or two relevant commercial links from the approved list AFTER the official and nonprofit answer, labeled as options to compare/.test(SYSTEM_PROMPT));
+assert.ok(!/unless the user explicitly asks for companies/.test(SYSTEM_PROMPT));
+// Ohio answer with commercial options after the official links keeps PASSPORT, links stay clickable, disclosure added once.
+{
+  const ohio = enforceApprovedLinks("PASSPORT: https://aging.ohio.gov/care-and-living/get-help/home-and-community-care/passport-1\nLocal office: https://aging.ohio.gov/find-services/local-office\n\nOptions to compare: Home Instead https://www.homeinstead.com/");
+  assert.ok(/PASSPORT/.test(ohio) && ohio.includes("https://aging.ohio.gov/find-services/local-office") && ohio.includes("https://www.homeinstead.com/"));
+  assert.strictEqual(ohio.split(DISC).length, 2);
+}
 assert.ok(/Never add that disclosure/.test(SYSTEM_PROMPT));
 assert.ok(/cover both tests: income/.test(SYSTEM_PROMPT));
 

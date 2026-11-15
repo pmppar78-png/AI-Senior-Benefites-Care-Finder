@@ -10,7 +10,7 @@ const { APPROVED_LINKS } = require('../netlify/functions/lib/chat-config');
 const COMMERCIAL_HOSTS = APPROVED_LINKS.filter(l => l.kind === 'commercial').map(l => new URL(l.url).hostname.replace(/^www\./, ''));
 const DISCLOSURE_RE = /may earn a commission|affiliate link|paid placement/i;
 const isCommercial = u => { try { return COMMERCIAL_HOSTS.includes(new URL(u).hostname.replace(/^www\./, '')); } catch (e) { return false; } };
-const NO_AGENCIES = /Home Instead|Visiting Angels|homeinstead|visitingangels|Care\.com|A Place for Mom|aplaceformom|Caring\.com/i;
+const COMMERCIAL_ANY = new RegExp(COMMERCIAL_HOSTS.map(h => h.replace(/\./g, '\\.')).join('|'), 'i');
 const URL_RE = /https?:\/\/[^\s<>"')\]]+/g;
 const TAG_RE = /\[(official|nonprofit|commercial)\]|\(type: (official|nonprofit|commercial)\)/i;
 const BARE_RE = /(^|[\s(])(?:www\.)?[a-z0-9-]+\.(?:gov|org|com)\/[^\s]*/i;
@@ -28,8 +28,10 @@ const SINGLE = [
     must: [/\$4,750/, /in\.gov\/fssa/] },
   { q: 'My mom in Ohio needs help paying for in-home care. What programs should we look at?',
     must: [/PASSPORT/, /aging\.ohio\.gov\/care-and-living\/get-help\/home-and-community-care\/passport-1/, /https:\/\/aging\.ohio\.gov\//, /medicaid\.ohio\.gov/, /aging\.ohio\.gov\/find-services\/local-office/],
-    mustNot: [/Medicaid Savings Program/i, NO_AGENCIES] },
-  // Providers explicitly requested: commercial names allowed; the disclosure rule is checked below.
+    mustNot: [/Medicaid Savings Program/i],
+    // Commercial options are allowed after the official answer; the global check requires the disclosure with them.
+    order: [/PASSPORT/, COMMERCIAL_ANY] },
+  // Providers explicitly requested.
   { q: 'Can you name a few national home care companies we could call for my mom in Ohio?',
     must: [/home care|caregiver/i] },
 ];
@@ -51,6 +53,7 @@ function check(t, a) {
   const fails = [];
   for (const re of t.must || []) if (!re.test(a)) fails.push('missing ' + re);
   for (const re of t.mustNot || []) if (re.test(a)) fails.push('contains ' + re);
+  if (t.order) { const [first, then] = t.order; const i = a.search(first), j = a.search(then); if (j >= 0 && (i < 0 || j < i)) fails.push('commercial link before ' + first); }
   if (TAG_RE.test(a)) fails.push('link-type tag');
   if (BARE_RE.test(a.replace(URL_RE, ''))) fails.push('bare (non-clickable) address');
   const commercialLinks = (a.match(URL_RE) || []).filter(isCommercial);
