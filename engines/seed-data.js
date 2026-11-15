@@ -7,6 +7,21 @@ const fs = require('fs');
 const path = require('path');
 
 const DATA_DIR = path.join(__dirname, 'data');
+
+// Deterministic PRNG. This script runs on every Netlify build; with the
+// native Math.random() every deploy silently changed figures on thousands of
+// pages (costs, plan counts, yes/no program flags), which Google sees as
+// unstable content. Seeding keeps output identical across rebuilds.
+// TODO (see edu-sites/senior_benefits_indexing_plan_20261115.md): replace the
+// remaining generated estimates with sourced figures.
+Math.random = (function mulberry32(a) {
+  return function () {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+})(20261115);
 const states = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'states.json'), 'utf8'));
 const cities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'top-cities.json'), 'utf8'));
 
@@ -747,7 +762,7 @@ states.forEach(s => {
     ],
     propertyTaxExemption: `${s.name} provides property tax exemptions for disabled veterans. Amounts vary based on disability rating; applications are filed with your ${f.countyTerm || 'county'} assessor or through ${f.vaDept || s.name + ' VA'}.`,
     stateVeteransHome: [
-      { name: `${s.name} Veterans Home`, location: s.name, beds: 100 + Math.floor(Math.random() * 200), phone: '(555) 000-0000' },
+      { name: `${s.name} State Veterans Homes`, location: `Locations, eligibility, and admission steps are published by ${f.vaDept || s.name + ' Department of Veterans Affairs'}. VA's facility locator (va.gov/find-locations) also lists state veterans homes.` },
     ],
     caregiverSupport: [
       { program: 'VA Caregiver Support Program', description: 'Support, training, and respite for caregivers of veterans', url: 'https://www.caregiver.va.gov' },
@@ -778,7 +793,7 @@ cities.forEach(c => {
     ],
     propertyTaxExemption: `${stName} provides property tax exemptions for disabled veterans in ${c.name} and throughout the state.`,
     stateVeteransHome: [
-      { name: `${c.name} Area Veterans Facilities`, location: `${c.name}, ${c.stateAbbr}`, beds: 50 + Math.floor(Math.random() * 150), phone: '(555) 000-0000' },
+      { name: `Veterans Homes Serving ${c.name}, ${c.stateAbbr}`, location: `${stName} state veterans homes accept residents statewide, not only from the home's own city. Search va.gov/find-locations for the homes and VA clinics nearest ${c.name}.` },
     ],
     caregiverSupport: [
       { program: 'VA Caregiver Support Program', description: `Support, training, and respite for caregivers of ${c.name} area veterans`, url: 'https://www.caregiver.va.gov' },

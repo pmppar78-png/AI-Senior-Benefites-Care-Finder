@@ -21,6 +21,19 @@ const DATA_DIR = path.join(ENGINES_DIR, 'data');
 const OUTPUT_DIR = ROOT; // Write pages into the project root
 const { getPriorityPage } = require('./priority-pages');
 
+// Date the generated content (data + templates) last really changed.
+// Bump this ONLY when page content changes. It drives the on-page "Updated"
+// date, schema dateModified, and sitemap <lastmod> for generated pages, so
+// rebuilding without content changes no longer fakes freshness.
+const CONTENT_DATE = '2026-11-15';
+
+// Per-URL last-modified dates for hand-authored/static pages (from git
+// history). Regenerate with: node scripts/build-lastmod.js
+let STATIC_LASTMOD = {};
+try {
+  STATIC_LASTMOD = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'lastmod.json'), 'utf8'));
+} catch (e) { STATIC_LASTMOD = {}; }
+
 // ---------------------------------------------------------------------------
 // Template Engine
 // ---------------------------------------------------------------------------
@@ -255,9 +268,9 @@ class PageGenerator {
   _generateSitemap() {
     const baseUrl = 'https://seniorbenefitscarefinder.com';
 
-    // 45-day rolling window anchored on today.
-    const lastmodEnd = new Date();
-    const LASTMOD_WINDOW_DAYS = 45;
+    // Truthful lastmod: generated pages use CONTENT_DATE; static pages use
+    // their last git commit date (engines/data/lastmod.json).
+    const generatedSet = new Set(this.generatedUrls.map(u => (u.endsWith('/') ? u : u + '/')));
 
     // Excluded build/runtime directories — must never appear in sitemap.
     const EXCLUDED_DIRS = new Set(['.netlify', 'node_modules', '.git', 'engines', 'scripts']);
@@ -329,18 +342,9 @@ class PageGenerator {
       'providers', 'compare', 'tools', 'trust',
     ];
 
-    const stableHash = (str) => {
-      let h = 0;
-      for (let i = 0; i < str.length; i++) {
-        h = ((h << 5) - h + str.charCodeAt(i)) | 0;
-      }
-      return Math.abs(h);
-    };
-
     const lastmodForUrl = (urlPath) => {
-      const offset = stableHash(urlPath) % LASTMOD_WINDOW_DAYS;
-      const d = new Date(lastmodEnd.getTime() - offset * 86400000);
-      return d.toISOString().split('T')[0];
+      if (generatedSet.has(urlPath)) return CONTENT_DATE;
+      return STATIC_LASTMOD[urlPath] || CONTENT_DATE;
     };
 
     const assignSilo = (urlPath) => {
@@ -435,7 +439,6 @@ class PageGenerator {
       return out;
     };
 
-    const indexLastmod = lastmodEnd.toISOString().split('T')[0];
     const siloFiles = [];
     let total = 0;
 
@@ -450,7 +453,7 @@ class PageGenerator {
       if (!list || list.length === 0) continue;
       const filename = `sitemap-${silo}.xml`;
       fs.writeFileSync(path.join(OUTPUT_DIR, filename), buildUrlsetXml(list), 'utf8');
-      siloFiles.push(filename);
+      siloFiles.push({ filename, lastmod: list.reduce((m, u) => (u.lastmod > m ? u.lastmod : m), '') });
       total += list.length;
       console.log(`  Sitemap silo: ${filename} — ${list.length} URLs`);
     }
@@ -460,8 +463,8 @@ class PageGenerator {
     indexXml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
     for (const f of siloFiles) {
       indexXml += '  <sitemap>\n';
-      indexXml += `    <loc>${baseUrl}/${f}</loc>\n`;
-      indexXml += `    <lastmod>${indexLastmod}</lastmod>\n`;
+      indexXml += `    <loc>${baseUrl}/${f.filename}</loc>\n`;
+      indexXml += `    <lastmod>${f.lastmod}</lastmod>\n`;
       indexXml += '  </sitemap>\n';
     }
     indexXml += '</sitemapindex>\n';
@@ -582,11 +585,12 @@ class PageGenerator {
       ? this.cities.find(c => c.slug === entry.citySlug && c.stateSlug === entry.stateSlug)
       : null;
 
-    const now = new Date();
-    const currentYear = now.getFullYear();
+    const now = new Date(`${CONTENT_DATE}T12:00:00Z`);
+    const currentYear = now.getUTCFullYear();
     const lastUpdated = now.toLocaleDateString('en-US', {
-      year: 'numeric', month: 'long', day: 'numeric'
+      year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC'
     });
+    const lastUpdatedIso = CONTENT_DATE;
 
     // Generate varied datePublished based on content identifier for realistic metadata
     const contentId = `${eng.id}-${entry.stateSlug || ''}-${entry.citySlug || ''}-${entry.slug || ''}`;
@@ -616,9 +620,32 @@ class PageGenerator {
       : resolvedState;
 
     // Cities in the same state for internal linking
-    const stateCities = resolvedStateSlug
+    let stateCities = resolvedStateSlug
       ? this.cities.filter(c => c.stateSlug === resolvedStateSlug)
       : [];
+    // Also link city pages that exist on disk for this state but are not in
+    // top-cities.json, so no city page under this engine is orphaned.
+    if (resolvedStateSlug && eng.urlPattern) {
+      const base = eng.urlPattern
+        .replace(/\[(\w+)\]/g, (m, key) => (key === 'stateSlug' || key === 'citySlug') ? '' : (entry[key] != null ? entry[key] : ''))
+        .replace(/\/+$/g, '').replace(/\/+/g, '/');
+      const stateDir = path.join(OUTPUT_DIR, base, resolvedStateSlug);
+      const known = new Set(stateCities.map(c => c.slug));
+      let extra = [];
+      try {
+        extra = fs.readdirSync(stateDir, { withFileTypes: true })
+          .filter(d => d.isDirectory() && !known.has(d.name) && fs.existsSync(path.join(stateDir, d.name, 'index.html')))
+          .map(d => ({
+            slug: d.name,
+            name: d.name.replace(new RegExp(`-${(resolvedStateAbbr || 'zz').toLowerCase()}$`), '')
+              .split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+            stateAbbr: resolvedStateAbbr,
+            stateSlug: resolvedStateSlug,
+          }));
+      } catch (e) { extra = []; }
+      if (extra.length) stateCities = stateCities.concat(extra).sort((a, b) => a.name.localeCompare(b.name));
+    }
+    if (resolvedCitySlug) stateCities = stateCities.filter(c => c.slug !== resolvedCitySlug);
 
     // Build cross-engine links for this location
     const config = require('./config');
@@ -677,6 +704,7 @@ class PageGenerator {
       // Time
       currentYear,
       lastUpdated,
+      lastUpdatedIso,
       datePublished,
 
       // Reference data
