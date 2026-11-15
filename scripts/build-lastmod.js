@@ -29,6 +29,15 @@ for (const url of Object.keys(out)) {
   const seg = url.split('/').filter(Boolean);
   if (seg.length >= 3 && STATES.has(seg[2]) && out[url] < BUILD_LINKS_DATE) out[url] = BUILD_LINKS_DATE;
 }
+// Static pages whose figures are corrected at build time by
+// scripts/apply-sourced-facts.cjs changed live on that script's date.
+const { transform, SOURCED_FACTS_DATE } = require('./apply-sourced-facts.cjs');
+for (const url of Object.keys(out)) {
+  if (out[url] >= SOURCED_FACTS_DATE) continue;
+  const rel = url.slice(1) + 'index.html';
+  const html = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+  if (transform(rel, html) !== html) out[url] = SOURCED_FACTS_DATE;
+}
 // Uncommitted edits count as today.
 const today = new Date().toISOString().slice(0, 10);
 const dirty = execSync('git status --porcelain', { cwd: ROOT, maxBuffer: 1 << 30 }).toString().split('\n');
