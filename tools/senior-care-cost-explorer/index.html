@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <title>Senior Care Cost Explorer Tool | Senior Benefits Care Finder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore typical senior care cost ranges and learn about commonly available programs in your state. An informational planning tool for seniors and caregivers." />
+  <meta name="description" content="Explore statewide senior care costs (CareScout 2025 medians) and learn about commonly available programs in your state. An informational planning tool for seniors and caregivers." />
   <meta name="author" content="Paul Paradis" />
   <link rel="canonical" href="https://seniorbenefitscarefinder.com/tools/senior-care-cost-explorer/" />
   <meta property="og:title" content="Senior Care Cost Explorer Tool | Senior Benefits Care Finder" />
-  <meta property="og:description" content="Explore typical senior care cost ranges and learn about commonly available programs in your state." />
+  <meta property="og:description" content="Explore statewide senior care costs (CareScout 2025 medians) and learn about commonly available programs in your state." />
   <meta property="og:url" content="https://seniorbenefitscarefinder.com/tools/senior-care-cost-explorer/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Senior Benefits Care Finder" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Senior Care Cost Explorer Tool" />
-  <meta name="twitter:description" content="Explore typical senior care cost ranges and learn about commonly available programs in your state." />
+  <meta name="twitter:description" content="Explore statewide senior care costs (CareScout 2025 medians) and learn about commonly available programs in your state." />
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/engine.css" />
   <script type="application/ld+json">
@@ -22,7 +22,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Senior Care Cost Explorer",
-    "description": "An informational tool to explore typical senior care cost ranges and commonly available programs by state.",
+    "description": "An informational tool to explore statewide senior care costs (CareScout 2025 medians) and commonly available programs by state.",
     "url": "https://seniorbenefitscarefinder.com/tools/senior-care-cost-explorer/",
     "applicationCategory": "HealthApplication",
     "operatingSystem": "Web",
@@ -320,12 +320,12 @@
     <section class="tool-hero">
       <h1>Senior Care Cost &amp; Benefits Explorer</h1>
       <p>
-        Explore typical senior care cost ranges and learn about programs that are commonly available in many states. This informational planning tool helps you understand your options and prepare for conversations with professionals.
+        Explore statewide senior care costs (CareScout 2025 medians) and learn about programs that are commonly available in many states. This informational planning tool helps you understand your options and prepare for conversations with professionals.
       </p>
     </section>
 
     <div class="tool-disclaimer">
-      <strong>Important:</strong> This tool provides general informational estimates about senior care costs and commonly available programs. It does not determine eligibility for any government program. Cost ranges shown are approximate national and state-level averages. Always verify details with official program offices and licensed professionals.
+      <strong>Important:</strong> This tool provides general informational estimates about senior care costs and commonly available programs. It does not determine eligibility for any government program. Costs shown are statewide medians from the CareScout 2025 Cost of Care Survey; local prices can be higher or lower. Always verify details with official program offices and licensed professionals.
     </div>
 
     <form class="tool-form" id="costExplorerForm" onsubmit="return false;">
@@ -383,29 +383,29 @@
       </div>
 
       <div class="tool-submit-wrap">
-        <button type="button" class="tool-submit" id="exploreBtn">Explore Cost Ranges &amp; Programs</button>
+        <button type="button" class="tool-submit" id="exploreBtn">Explore Costs &amp; Programs</button>
       </div>
     </form>
 
     <div class="tool-results" id="toolResults">
       <div class="results-section">
-        <h2>Typical Senior Care Cost Ranges</h2>
-        <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 1rem;">Based on approximate averages for <strong id="resultState" style="color:#fef3c7;"></strong>. Actual costs vary by location, provider, and level of care.</p>
+        <h2>Typical Senior Care Costs</h2>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 1rem;">Statewide medians for <strong id="resultState" style="color:#fef3c7;"></strong> from the <a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">CareScout 2025 Cost of Care Survey</a>. Actual costs vary by city, provider, and level of care.</p>
         <div class="cost-grid">
           <div class="cost-card">
             <div class="cost-label">Assisted Living</div>
             <div class="cost-range" id="costAssisted"></div>
-            <div class="cost-note">per month (typical range)</div>
+            <div class="cost-note">per month (statewide median)</div>
           </div>
           <div class="cost-card">
             <div class="cost-label">Home Care</div>
             <div class="cost-range" id="costHomeCare"></div>
-            <div class="cost-note">per month (typical range)</div>
+            <div class="cost-note">per month, 44 hours a week (median)</div>
           </div>
           <div class="cost-card">
             <div class="cost-label">Nursing Home</div>
             <div class="cost-range" id="costNursing"></div>
-            <div class="cost-note">per month (typical range)</div>
+            <div class="cost-note">per month, semi-private room (median)</div>
           </div>
         </div>
       </div>
@@ -482,58 +482,60 @@
   <script src="/affiliates.js" defer></script>
   <script>
   (function() {
-    // State data with approximate cost ranges
+    // Statewide monthly medians, CareScout 2025 Cost of Care Survey (https://www.carescout.com/cost-of-care).
+    // home = homemaker/home health aide at 44 hours a week; nursing = semi-private room.
     var stateData = {
-      'Alabama': { assisted: [3200, 4200], home: [3800, 4800], nursing: [6500, 8500] },
-      'Alaska': { assisted: [6000, 8500], home: [5500, 7500], nursing: [10000, 14000] },
-      'Arizona': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7000, 9500] },
-      'Arkansas': { assisted: [3200, 4500], home: [3800, 4800], nursing: [6000, 8000] },
-      'California': { assisted: [4500, 7000], home: [5000, 7000], nursing: [9000, 13000] },
-      'Colorado': { assisted: [4000, 5500], home: [4500, 6000], nursing: [8000, 11000] },
-      'Connecticut': { assisted: [5000, 7000], home: [4800, 6500], nursing: [11000, 15000] },
-      'Delaware': { assisted: [4500, 6500], home: [4500, 6000], nursing: [9500, 13000] },
-      'Florida': { assisted: [3500, 5000], home: [4000, 5500], nursing: [8000, 10500] },
-      'Georgia': { assisted: [3000, 4500], home: [3800, 5000], nursing: [6500, 9000] },
-      'Hawaii': { assisted: [5000, 7500], home: [5000, 6500], nursing: [10000, 14000] },
-      'Idaho': { assisted: [3500, 4500], home: [4200, 5500], nursing: [7500, 10000] },
-      'Illinois': { assisted: [3800, 5500], home: [4500, 6000], nursing: [6500, 9500] },
-      'Indiana': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7000, 9500] },
-      'Iowa': { assisted: [3500, 5000], home: [4500, 5800], nursing: [6500, 8500] },
-      'Kansas': { assisted: [3800, 5500], home: [4500, 5800], nursing: [6500, 8500] },
-      'Kentucky': { assisted: [3500, 4800], home: [3800, 5000], nursing: [7000, 9500] },
-      'Louisiana': { assisted: [3200, 4500], home: [3500, 4800], nursing: [6000, 8500] },
-      'Maine': { assisted: [5000, 6500], home: [4800, 6200], nursing: [9000, 12500] },
-      'Maryland': { assisted: [4200, 6000], home: [4500, 6000], nursing: [9500, 13000] },
-      'Massachusetts': { assisted: [5500, 7500], home: [5000, 6500], nursing: [11000, 15000] },
-      'Michigan': { assisted: [3800, 5000], home: [4200, 5500], nursing: [8000, 10500] },
-      'Minnesota': { assisted: [4000, 5500], home: [5000, 6500], nursing: [8500, 11500] },
-      'Mississippi': { assisted: [3000, 4200], home: [3500, 4500], nursing: [6500, 8500] },
-      'Missouri': { assisted: [3000, 4200], home: [4000, 5200], nursing: [5500, 7500] },
-      'Montana': { assisted: [3800, 5000], home: [4500, 6000], nursing: [8000, 10500] },
-      'Nebraska': { assisted: [3800, 5200], home: [4800, 6200], nursing: [7500, 10000] },
-      'Nevada': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7500, 10000] },
-      'New Hampshire': { assisted: [5000, 6500], home: [5000, 6500], nursing: [10000, 14000] },
-      'New Jersey': { assisted: [5500, 7500], home: [4800, 6500], nursing: [10000, 14000] },
-      'New Mexico': { assisted: [3500, 5000], home: [4200, 5500], nursing: [7500, 10000] },
-      'New York': { assisted: [4500, 7000], home: [5000, 7000], nursing: [10000, 14500] },
-      'North Carolina': { assisted: [3500, 5000], home: [3800, 5000], nursing: [7000, 9500] },
-      'North Dakota': { assisted: [3500, 5000], home: [5000, 6500], nursing: [8500, 12000] },
-      'Ohio': { assisted: [3800, 5500], home: [4200, 5500], nursing: [7000, 9500] },
-      'Oklahoma': { assisted: [3200, 4500], home: [4000, 5200], nursing: [5500, 8000] },
-      'Oregon': { assisted: [4200, 6000], home: [5000, 6500], nursing: [9000, 12000] },
-      'Pennsylvania': { assisted: [4000, 5500], home: [4200, 5800], nursing: [9000, 12500] },
-      'Rhode Island': { assisted: [5000, 6500], home: [5000, 6500], nursing: [9500, 13000] },
-      'South Carolina': { assisted: [3200, 4500], home: [3800, 5000], nursing: [6500, 9000] },
-      'South Dakota': { assisted: [3500, 4800], home: [4800, 6200], nursing: [7500, 10000] },
-      'Tennessee': { assisted: [3500, 5000], home: [3800, 5000], nursing: [6500, 9000] },
-      'Texas': { assisted: [3500, 5500], home: [4000, 5500], nursing: [5500, 8500] },
-      'Utah': { assisted: [3200, 4500], home: [4200, 5500], nursing: [7000, 9500] },
-      'Vermont': { assisted: [5000, 6500], home: [5000, 6500], nursing: [9500, 13000] },
-      'Virginia': { assisted: [4000, 6000], home: [4200, 5500], nursing: [8000, 11000] },
-      'Washington': { assisted: [4800, 7000], home: [5200, 7000], nursing: [9500, 13000] },
-      'West Virginia': { assisted: [3200, 4500], home: [3500, 4500], nursing: [7500, 10000] },
-      'Wisconsin': { assisted: [4000, 5500], home: [4500, 6000], nursing: [8000, 11000] },
-      'Wyoming': { assisted: [4000, 5500], home: [4800, 6200], nursing: [8500, 11500] }
+      'Alabama': { assisted: 4425, home: 5148, nursing: 8334 },
+      'Alaska': { assisted: 9882, home: 7245, nursing: 27831 },
+      'Arizona': { assisted: 6250, home: 7245, nursing: 8365 },
+      'Arkansas': { assisted: 4637, home: 4767, nursing: 7452 },
+      'California': { assisted: 7000, home: 7627, nursing: 12167 },
+      'Colorado': { assisted: 6584, home: 7913, nursing: 10159 },
+      'Connecticut': { assisted: 9118, home: 6864, nursing: 15208 },
+      'Delaware': { assisted: 7600, home: 6673, nursing: 14494 },
+      'District of Columbia': { assisted: 9845, home: 7245, nursing: 12228 },
+      'Florida': { assisted: 5610, home: 6101, nursing: 10342 },
+      'Georgia': { assisted: 5300, home: 6101, nursing: 8821 },
+      'Hawaii': { assisted: 12096, home: 7817, nursing: 15473 },
+      'Idaho': { assisted: 5175, home: 7341, nursing: 10494 },
+      'Illinois': { assisted: 6219, home: 6864, nursing: 8304 },
+      'Indiana': { assisted: 5639, home: 6673, nursing: 8943 },
+      'Iowa': { assisted: 5381, home: 7836, nursing: 9277 },
+      'Kansas': { assisted: 5975, home: 6435, nursing: 8669 },
+      'Kentucky': { assisted: 5528, home: 6197, nursing: 9718 },
+      'Louisiana': { assisted: 5163, home: 4957, nursing: 7604 },
+      'Maine': { assisted: 8205, home: 8485, nursing: 13976 },
+      'Maryland': { assisted: 7173, home: 6673, nursing: 12927 },
+      'Massachusetts': { assisted: 9600, home: 7627, nursing: 14448 },
+      'Michigan': { assisted: 5818, home: 6626, nursing: 11254 },
+      'Minnesota': { assisted: 6573, home: 8389, nursing: 10646 },
+      'Mississippi': { assisted: 4369, home: 4576, nursing: 9581 },
+      'Missouri': { assisted: 5400, home: 6292, nursing: 6741 },
+      'Montana': { assisted: 6075, home: 7245, nursing: 8973 },
+      'Nebraska': { assisted: 6350, home: 6864, nursing: 8377 },
+      'Nevada': { assisted: 6241, home: 7055, nursing: 11786 },
+      'New Hampshire': { assisted: 8025, home: 7627, nursing: 12243 },
+      'New Jersey': { assisted: 8710, home: 7245, nursing: 12775 },
+      'New Mexico': { assisted: 5950, home: 5720, nursing: 9125 },
+      'New York': { assisted: 7110, home: 6673, nursing: 15528 },
+      'North Carolina': { assisted: 6496, home: 5720, nursing: 9733 },
+      'North Dakota': { assisted: 4729, home: 6483, nursing: 11528 },
+      'Ohio': { assisted: 6103, home: 6483, nursing: 9186 },
+      'Oklahoma': { assisted: 6150, home: 6292, nursing: 7026 },
+      'Oregon': { assisted: 6875, home: 7627, nursing: 16760 },
+      'Pennsylvania': { assisted: 6480, home: 6483, nursing: 11954 },
+      'Rhode Island': { assisted: 7781, home: 7627, nursing: 12106 },
+      'South Carolina': { assisted: 5350, home: 5982, nursing: 9034 },
+      'South Dakota': { assisted: 4900, home: 8437, nursing: 9444 },
+      'Tennessee': { assisted: 5845, home: 5911, nursing: 9429 },
+      'Texas': { assisted: 5666, home: 5720, nursing: 5627 },
+      'Utah': { assisted: 5475, home: 7484, nursing: 8669 },
+      'Vermont': { assisted: 8597, home: 8580, nursing: 14113 },
+      'Virginia': { assisted: 6945, home: 6673, nursing: 10250 },
+      'Washington': { assisted: 7600, home: 8580, nursing: 13155 },
+      'West Virginia': { assisted: 6340, home: 5720, nursing: 12836 },
+      'Wisconsin': { assisted: 6540, home: 6912, nursing: 10646 },
+      'Wyoming': { assisted: 5325, home: 8771, nursing: 9916 }
     };
 
     // Populate state dropdown
@@ -547,6 +549,7 @@
     }
 
     function formatCost(val) {
+      if (val === null || val === undefined) return 'Not published';
       return '$' + val.toLocaleString('en-US');
     }
 
@@ -567,9 +570,9 @@
 
       // Display cost ranges
       document.getElementById('resultState').textContent = state;
-      document.getElementById('costAssisted').textContent = formatCost(costs.assisted[0]) + ' \u2013 ' + formatCost(costs.assisted[1]);
-      document.getElementById('costHomeCare').textContent = formatCost(costs.home[0]) + ' \u2013 ' + formatCost(costs.home[1]);
-      document.getElementById('costNursing').textContent = formatCost(costs.nursing[0]) + ' \u2013 ' + formatCost(costs.nursing[1]);
+      document.getElementById('costAssisted').textContent = formatCost(costs.assisted);
+      document.getElementById('costHomeCare').textContent = formatCost(costs.home);
+      document.getElementById('costNursing').textContent = formatCost(costs.nursing);
 
       // Build program information
       var programs = [];
@@ -586,7 +589,7 @@
 
       programs.push({
         name: 'SNAP and Senior Nutrition Programs',
-        desc: 'The Supplemental Nutrition Assistance Program (SNAP) helps individuals and families purchase food. Many states also offer senior-specific nutrition programs including congregate meals and home-delivered meals (often called Meals on Wheels). In ' + state + ', seniors may be able to apply for SNAP through their local Department of Social Services.'
+        desc: 'The Supplemental Nutrition Assistance Program (SNAP) helps individuals and families purchase food. Many states also offer senior-specific nutrition programs including congregate meals and home-delivered meals (often called Meals on Wheels). In ' + state + ', seniors can apply for SNAP through the state SNAP agency (see the USDA state directory at fna.usda.gov).'
       });
 
       programs.push({
