@@ -6,6 +6,11 @@
  * Usage: node scripts/chat-regression.cjs [https://seniorbenefitscarefinder.com]
  */
 const BASE = process.argv[2] || 'https://seniorbenefitscarefinder.com';
+const { APPROVED_LINKS } = require('../netlify/functions/lib/chat-config');
+const COMMERCIAL_HOSTS = APPROVED_LINKS.filter(l => l.kind === 'commercial').map(l => new URL(l.url).hostname.replace(/^www\./, ''));
+const DISCLOSURE_RE = /may earn a commission|affiliate link|paid placement/i;
+const isCommercial = u => { try { return COMMERCIAL_HOSTS.includes(new URL(u).hostname.replace(/^www\./, '')); } catch (e) { return false; } };
+const NO_AGENCIES = /Home Instead|Visiting Angels|homeinstead|visitingangels|Care\.com|A Place for Mom|aplaceformom|Caring\.com/i;
 const URL_RE = /https?:\/\/[^\s<>"')\]]+/g;
 const TAG_RE = /\[(official|nonprofit|commercial)\]|\(type: (official|nonprofit|commercial)\)/i;
 const BARE_RE = /(^|[\s(])(?:www\.)?[a-z0-9-]+\.(?:gov|org|com)\/[^\s]*/i;
@@ -22,7 +27,11 @@ const SINGLE = [
   { q: 'I live in Indiana. Where do I apply for SNAP and does Indiana have an asset limit for seniors?',
     must: [/\$4,750/, /in\.gov\/fssa/] },
   { q: 'My mom in Ohio needs help paying for in-home care. What programs should we look at?',
-    must: [/Medicaid/], mustNot: [/Medicaid Savings Program/i] },
+    must: [/PASSPORT/, /aging\.ohio\.gov\/care-and-living\/get-help\/home-and-community-care\/passport-1/, /https:\/\/aging\.ohio\.gov\//, /medicaid\.ohio\.gov/, /aging\.ohio\.gov\/find-services\/local-office/],
+    mustNot: [/Medicaid Savings Program/i, NO_AGENCIES] },
+  // Providers explicitly requested: commercial names allowed; the disclosure rule is checked below.
+  { q: 'Can you name a few national home care companies we could call for my mom in Ohio?',
+    must: [/home care|caregiver/i] },
 ];
 const MULTI = [
   { q: "I'm 70, single, and my only income is $1,400 a month from Social Security. Do I qualify for a Medicare Savings Program?", must: [/SLMB|Specified Low-Income/i] },
@@ -44,6 +53,9 @@ function check(t, a) {
   for (const re of t.mustNot || []) if (re.test(a)) fails.push('contains ' + re);
   if (TAG_RE.test(a)) fails.push('link-type tag');
   if (BARE_RE.test(a.replace(URL_RE, ''))) fails.push('bare (non-clickable) address');
+  const commercialLinks = (a.match(URL_RE) || []).filter(isCommercial);
+  if (commercialLinks.length && !DISCLOSURE_RE.test(a)) fails.push('commercial link without disclosure');
+  if (!commercialLinks.length && DISCLOSURE_RE.test(a)) fails.push('disclosure without a commercial link');
   return fails;
 }
 (async () => {

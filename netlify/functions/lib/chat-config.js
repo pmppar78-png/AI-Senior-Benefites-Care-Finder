@@ -266,6 +266,48 @@ const APPROVED_LINKS = [
 ];
 
 /**
+ * Ohio aging and Medicaid pages (read 2026-11-15; these state sites answer 404
+ * to scripted requests from some networks but load normally in a browser).
+ */
+APPROVED_LINKS.push(
+  {
+    topic: "Ohio in-home care (official)",
+    name: "Ohio Department of Aging",
+    url: "https://aging.ohio.gov/",
+    kind: "official",
+    note: "State agency for older Ohioans; runs PASSPORT day to day with Ohio Medicaid.",
+  },
+  {
+    topic: "Ohio in-home care (official)",
+    name: "PASSPORT (Ohio Department of Aging)",
+    url: "https://aging.ohio.gov/care-and-living/get-help/home-and-community-care/passport-1",
+    kind: "official",
+    note: "Ohio's Medicaid waiver for in-home care for older adults who need a nursing-home level of care.",
+  },
+  {
+    topic: "Ohio in-home care (official)",
+    name: "Ohio Medicaid HCBS waiver programs",
+    url: "https://medicaid.ohio.gov/families-and-individuals/citizen-programs-and-initiatives/hcbs/waivers/",
+    kind: "official",
+    note: "Ohio Department of Medicaid page on PASSPORT, Assisted Living, MyCare Ohio and Ohio Home Care waivers, and how to request one.",
+  },
+  {
+    topic: "Ohio in-home care (official)",
+    name: "Ohio Department of Medicaid",
+    url: "https://medicaid.ohio.gov/",
+    kind: "official",
+    note: "Ohio Medicaid home page.",
+  },
+  {
+    topic: "Ohio in-home care (official)",
+    name: "Ohio Area Agency on Aging locator",
+    url: "https://aging.ohio.gov/find-services/local-office",
+    kind: "official",
+    note: "Find the area agency on aging (also the regional PASSPORT agency) for a county; phone 1-866-243-5678.",
+  }
+);
+
+/**
  * State SNAP agency pages (curl-checked 2026-11-15). Where a state's own page
  * did not load for a script, the state's USDA SNAP directory entry is used.
  * Source: engines/data/sources/senior-benefits-sourced-2026.json
@@ -408,6 +450,7 @@ const CURRENT_FIGURES =
   "States with no BBCE (regular federal rules, $4,750 asset limit for 60+/disabled households): " + NO_BBCE_LINE + ". Indiana ended BBCE on July 1, 2026.\n" +
   "• VA pension 2026 (rates effective December 1, 2025): with Aid and Attendance, up to $2,424/month for a single veteran ($29,093/year) and $2,874/month with one dependent; net worth limit $163,699.\n" +
   "• Medicaid spousal protections 2026: the community spouse resource allowance is between $32,532 and $162,660 depending on the state.\n" +
+  "• Ohio in-home care: PASSPORT is Ohio's Medicaid home- and community-based waiver for older adults who need a nursing-home level of care but can stay at home safely. The Ohio Department of Aging runs it day to day under an agreement with the Ohio Department of Medicaid; Ohio Medicaid describes it as serving people 65 and older and people 60 to 64 with physical disabilities. A case manager arranges services such as personal care, homemaker and chore help, home-delivered meals, adult day care, emergency response, home modification, respite and structured family caregiving. People must be financially eligible for Medicaid, and if no slot is open they can be placed on a waiting list. To start, call the area agency on aging (the regional PASSPORT agency) at 1-866-243-5678 or use the Ohio Area Agency on Aging locator; the county Department of Job and Family Services can also take a Medicaid and waiver application.\n" +
   "• Terminology: they are Medicare Savings Programs (never \"Medicaid Savings Programs\"). When you mention a program that has an approved link, include that link.\n" +
   "• Care costs (CareScout 2025 Cost of Care Survey, national monthly medians): assisted living $6,200; nursing home semi-private room $9,581, private room $10,798; home care $6,673 (44 hours a week, $35/hour); adult day care $95/day. State and city costs differ.\n\n";
 
@@ -442,6 +485,8 @@ const SYSTEM_PROMPT =
   "• For Aid and Attendance, use the official VA Aid and Attendance page. Do not send people to the old Veterans Aid website, and do not describe A Place for Mom as a veterans-benefits service.\n" +
   "• For an elder law attorney, use the NAELA Find a Lawyer page, not the NAELA homepage.\n" +
   "• For medical alert questions, you may mention Medical Guardian (https://www.medicalguardian.com/) and Bay Alarm Medical (https://www.bayalarmmedical.com/) as plain links. Do not invent an affiliate ID for either company, and do not add any other medical-alert company URL.\n" +
+  "• For questions about paying for in-home or long-term care in a named state, start with that state's official programs and their links. For Ohio, name PASSPORT and include the PASSPORT page, the Ohio Department of Aging, Ohio Medicaid (the HCBS waiver page) and the Ohio Area Agency on Aging locator.\n" +
+  "• Do not name or link commercial home care agencies, referral services or senior-living companies (for example Home Instead, Visiting Angels, Care.com, A Place for Mom, Caring.com) unless the user explicitly asks for companies, agencies or providers to hire or compare.\n" +
   "• For where to apply for SNAP, use that state's link from the State SNAP agencies list, or the USDA SNAP state directory.\n" +
   "• Write every link as the full URL, scheme included, exactly as listed (for example https://www.medicare.gov/health-drug-plans/part-d). Never write a bare address such as medicare.gov/health-drug-plans/part-d, and never write the link type (official, nonprofit or commercial) after a link; the type is for you only.\n" +
   "• Weave a relevant approved link into the answer when it helps. Keep the full URL visible as plain text, on its own or after the page name, never inside parentheses or followed by punctuation. Do not write \"here:\" or \"click here\"; name the page instead.\n" +
@@ -451,6 +496,7 @@ const SYSTEM_PROMPT =
   "• When an answer includes one or more commercial links from the approved list, add this sentence in that same answer: \"" +
   DISCLOSURE +
   "\"\n" +
+  "• Never add that disclosure, or any mention of commissions, to an answer that has no commercial link.\n" +
   "• Do not describe government or nonprofit links as paid placements.\n" +
   "• Do not claim a specific partnership, commission rate, or tracking code. These commercial URLs are plain links with no affiliate ID attached.\n" +
   "• Do not tell the user that the site has no advertising, commission, or affiliate relationship.\n\n" +
@@ -524,8 +570,17 @@ function enforceApprovedLinks(text) {
 
   out = out.replace(/[ \t]{2,}/g, " ").replace(/ +\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
 
-  if (commercial && !/commission|affiliate|sponsored|may earn/i.test(out)) {
-    out = out + "\n\n" + DISCLOSURE;
+  if (commercial) {
+    if (!/commission|affiliate|sponsored|may earn/i.test(out)) out = out + "\n\n" + DISCLOSURE;
+  } else {
+    // No commercial link left in the answer, so no commission disclosure.
+    out = out
+      .split(DISCLOSURE).join("")
+      .split("\n")
+      .filter((line) => !/^\s*(\*\*)?disclosure\b.*(commission|affiliate|paid placement)/i.test(line))
+      .join("\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
   }
   return out;
 }

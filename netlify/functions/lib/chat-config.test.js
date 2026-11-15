@@ -114,4 +114,24 @@ assert.strictEqual(
 );
 assert.strictEqual(enforceApprovedLinks("Not approved: foo.example.com/bar."), "Not approved: foo.example.com/bar.");
 
+// Disclosure only with a commercial link (Nov 15, 2026 follow-up).
+const DISC = require("./chat-config").DISCLOSURE;
+assert.strictEqual(
+  enforceApprovedLinks("Apply at https://www.ssa.gov/medicare/part-d-extra-help.\n\n" + DISC),
+  "Apply at https://www.ssa.gov/medicare/part-d-extra-help."
+);
+assert.ok(!/commission/i.test(enforceApprovedLinks("Try https://www.medicare.gov/.\n\nDisclosure: this site may earn a commission from links.")));
+assert.ok(enforceApprovedLinks("Home Instead: https://www.homeinstead.com/").includes(DISC));
+assert.ok(enforceApprovedLinks("Home Instead: https://www.homeinstead.com/\n\n" + DISC).split(DISC).length === 2);
+// Ohio in-home care: PASSPORT and Ohio official links; no unrequested commercial agencies.
+for (const u of [
+  "https://aging.ohio.gov/",
+  "https://aging.ohio.gov/care-and-living/get-help/home-and-community-care/passport-1",
+  "https://medicaid.ohio.gov/families-and-individuals/citizen-programs-and-initiatives/hcbs/waivers/",
+  "https://aging.ohio.gov/find-services/local-office",
+]) assert.ok(SYSTEM_PROMPT.includes(u), u);
+assert.ok(/For Ohio, name PASSPORT/.test(SYSTEM_PROMPT));
+assert.ok(/unless the user explicitly asks for companies, agencies or providers/.test(SYSTEM_PROMPT));
+assert.ok(/Never add that disclosure/.test(SYSTEM_PROMPT));
+
 console.log("chat-config tests passed (" + APPROVED_LINKS.length + " approved links)");
