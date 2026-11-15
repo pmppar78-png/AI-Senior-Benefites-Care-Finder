@@ -186,7 +186,7 @@
       </div>
       <div class="info-box">
         <h3>Medicaid Home Care Programs</h3>
-        <p>{{locationName}}'s Medicaid program may cover home care services through waiver programs and state plan benefits. Eligibility depends on income, assets, and level of care needed.</p>
+        <p>{{#if city}}{{state}}{{else}}{{locationName}}{{/if}}'s Medicaid program may cover home care services through waiver programs and state plan benefits. Eligibility depends on income, assets, and level of care needed.</p>
       </div>
       <div class="info-box">
         <h3>Long-Term Care Insurance</h3>
@@ -210,7 +210,7 @@
       <p>{{{medicaidCoverage}}}</p>
       {{else}}
       <p>Medicaid in {{locationName}} may cover home and community-based services (HCBS) that help seniors remain in their homes instead of moving to nursing facilities. Coverage may include personal care aides, homemaker services, adult day care, meal delivery, and home modifications.</p>
-      <p>Contact {{locationName}}'s Medicaid office or Area Agency on Aging to learn about specific home care programs, eligibility requirements, and how to apply.</p>
+      <p>Contact {{#if city}}{{state}}{{else}}{{locationName}}{{/if}}'s Medicaid office or Area Agency on Aging to learn about specific home care programs, eligibility requirements, and how to apply.</p>
       {{/if}}
     </section>
 

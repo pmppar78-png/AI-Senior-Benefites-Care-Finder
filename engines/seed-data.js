@@ -108,7 +108,8 @@ const SENIOR_WAIVERS = {
 // Phrase for the waiver sentence: the verified senior program, or generic wording.
 function waiverPhrase(slug, stateName, kind) {
   const w = (SENIOR_WAIVERS[slug] || {})[kind];
-  return w ? `${stateName}'s ${w.name}` : `${stateName}'s Medicaid HCBS waivers for older adults`;
+  if (!w) return `${stateName}'s Medicaid HCBS waivers for older adults`;
+  return w.name.startsWith(stateName) ? w.name : `${stateName}'s ${w.name}`;
 }
 function waiverParagraph(slug, kind) {
   const w = (SENIOR_WAIVERS[slug] || {})[kind];
@@ -674,7 +675,7 @@ const SS_COMMON = {
 const ssFaqTemplates = [
   (s, f, avgBen) => ({
     question: `Does ${s.name} tax Social Security benefits?`,
-    answer: f.taxesSsNote || `Check with the ${s.name} Department of Revenue for current state tax rules on Social Security benefits.`,
+    answer: f.taxesSsNote ? `${f.taxesSs ? `Yes, ${s.name} taxes some Social Security benefits` : `No, ${s.name} does not tax Social Security benefits`}; the state tax section on this page has the details, and the ${s.name} Department of Revenue can confirm the current rules.` : `Check with the ${s.name} Department of Revenue for current state tax rules on Social Security benefits.`,
   }),
   (s, f, avgBen) => ({
     question: `Does ${s.name} pay a state SSI supplement?`,
@@ -704,7 +705,8 @@ states.forEach(s => {
   const supText = ssiSupText(s.name, s.slug);
   const firstFaq = ssFaqTemplates[rot(s.slug, ssFaqTemplates.length)](s, f, avgBen);
 
-  const opening = `${f.taxesSsNote || `${s.name} retirees should check state tax rules on Social Security with the ${s.name} Department of Revenue.`} ${hasSup ? `${s.name} also pays a state SSI supplement.` : `${s.name} pays no state SSI supplement.`}`;
+  // The state tax note appears once, in the tax section (taxInfo); the intro, summary and FAQ point to it.
+  const opening = `${hasSup ? `${s.name} pays a state SSI supplement on top of federal SSI` : `${s.name} pays no state SSI supplement, so SSI recipients get the federal amount only`}, and the state tax section below explains how ${s.name} treats Social Security income.`;
 
   ssEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
@@ -714,7 +716,7 @@ states.forEach(s => {
     stateSpecificOpening: `<p>${opening}</p>`,
     introText: `<p>${opening} Retired workers in ${s.name} averaged $${avgBen.toLocaleString('en-US')}/month in December 2024 (latest SSA state data, before the 2025 and 2026 COLAs). Below you'll find claiming-age trade-offs, SSDI and SSI amounts, and ways to maximize your benefit.</p>`,
     localContext: [
-      { label: `${s.name} tax treatment`, value: f.taxesSsNote || 'Check with state Department of Revenue' },
+      { label: `${s.name} tax treatment`, value: f.taxesSsNote ? (f.taxesSs ? 'Some benefits taxed (see the tax section)' : 'Benefits not taxed by the state (see the tax section)') : 'Check with state Department of Revenue' },
       { label: 'State SSI supplement', value: hasSup ? `Yes (administered by ${stData(s.slug).ssiStateSupplement.administeredBy})` : 'No state supplement (SSA)' },
       { label: 'SHIP counseling', value: `${f.shipName || s.name + ' SHIP'}${f.shipPhone ? ' — ' + f.shipPhone : ''}` },
     ],
