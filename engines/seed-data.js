@@ -29,7 +29,75 @@ const cities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'top-cities.json')
 // county terminology, APS hotlines) used to break the scaled-content
 // footprint of identical state intros. See data/state-facts.json.
 const stateFacts = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'state-facts.json'), 'utf8'));
-function sf(slug) { return stateFacts[slug] || {}; }
+// Medicaid names in state-facts.json sometimes list non-senior programs (CHIP, expansion
+// or family plans such as Nevada Check Up, ARHOME, STAR Kids, Healthy Indiana Plan). Senior
+// pages use the plain state Medicaid name for those states instead.
+const SENIOR_MEDICAID_NAME = {
+  'arkansas': 'Arkansas Medicaid', 'delaware': 'Delaware Medicaid', 'florida': 'Florida Medicaid',
+  'indiana': 'Indiana Medicaid', 'louisiana': 'Louisiana Medicaid', 'maryland': 'Maryland Medicaid',
+  'michigan': 'Michigan Medicaid', 'minnesota': 'Medical Assistance (Minnesota Medicaid)', 'nevada': 'Nevada Medicaid',
+  'new-mexico': 'New Mexico Medicaid', 'north-carolina': 'NC Medicaid', 'rhode-island': 'Rhode Island Medicaid',
+  'texas': 'Texas Medicaid', 'west-virginia': 'West Virginia Medicaid', 'wisconsin': 'Wisconsin Medicaid',
+};
+function sf(slug) {
+  const f = stateFacts[slug] || {};
+  return SENIOR_MEDICAID_NAME[slug] ? { ...f, medicaidProgram: SENIOR_MEDICAID_NAME[slug] } : f;
+}
+// Senior HCBS programs, each read on its official page on 2026-11-15. States not listed get
+// generic wording ("<State>'s Medicaid HCBS waivers for older adults"), never a guessed name.
+const SENIOR_WAIVERS = {
+  'ohio': {
+    hc: { name: 'PASSPORT', url: 'https://aging.ohio.gov/care-and-living/get-help/home-and-community-care/passport-1',
+      fact: "PASSPORT, Ohio's Medicaid waiver run by the Ohio Department of Aging, pays for in-home help such as personal care, homemaker services and home-delivered meals for older Ohioans who need a nursing-home level of care and qualify financially for Medicaid. Call 1-866-243-5678 to reach the area agency on aging that screens applicants." },
+    al: { name: "Ohio Medicaid's Assisted Living Waiver", url: 'https://medicaid.ohio.gov/families-and-individuals/citizen-programs-and-initiatives/hcbs/waivers/',
+      fact: "Ohio Medicaid lists an Assisted Living Waiver alongside PASSPORT among its home and community-based waivers; it can pay for services (not room and board) in a participating assisted living community for residents who need a nursing-home level of care. Call 1-866-243-5678 to reach the local area agency on aging." },
+  },
+  'texas': {
+    hc: { name: 'STAR+PLUS Home and Community Based Services (HCBS)', url: 'https://www.hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-members/starplus',
+      fact: "Texas pays for in-home long-term care through STAR+PLUS Home and Community Based Services (HCBS), a Texas Health and Human Services program for adults 21 and older with full Medicaid eligibility who need a nursing-facility level of care. Services include personal assistance, home-delivered meals, respite and minor home modifications. People are placed on the STAR+PLUS HCBS interest list through HHSC or their STAR+PLUS health plan." },
+    al: { name: 'STAR+PLUS Home and Community Based Services (HCBS)', url: 'https://www.hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-members/starplus',
+      fact: "Texas Health and Human Services lists assisted living among the services covered by STAR+PLUS Home and Community Based Services (HCBS), for adults 21 and older with full Medicaid eligibility who need a nursing-facility level of care. People are placed on the STAR+PLUS HCBS interest list through HHSC or their STAR+PLUS health plan." },
+  },
+  'arkansas': {
+    hc: { name: 'ARChoices in Homecare', url: 'https://humanservices.arkansas.gov/divisions-shared-services/aging-adult-behavioral-health-services/find-home-community-based-services-for-adults-seniors/archoices-in-homecare/',
+      fact: "Arkansas's in-home Medicaid waiver is ARChoices in Homecare, run by the Department of Human Services for people 65 or older (or 21 to 64 with a physical disability) who meet the intermediate nursing-home level of care and financial criteria. It covers attendant care, home-delivered meals, adult day services, respite and home modifications. DHS's options line is 1-866-801-3435." },
+    al: { name: 'Living Choices Assisted Living', url: 'https://humanservices.arkansas.gov/wp-content/uploads/Living-Choices-Simple-Fact-Sheet.pdf',
+      fact: "Arkansas's assisted living Medicaid waiver is Living Choices Assisted Living, for adults who need an intermediate nursing-facility level of care and meet financial criteria; it covers attendant care, medication oversight and other services in participating assisted living facilities. DHS's options line is 1-866-801-3435." },
+  },
+  'nevada': {
+    hc: { name: 'Waiver for the Frail Elderly (FE)', url: 'https://www.nevadamedicaid.nv.gov/programs/long-term-services-support/waiver-for-the-frail-elderly-fe/',
+      fact: "Nevada's senior home care waiver is the Medicaid Waiver for the Frail Elderly (FE), operated with the Aging and Disability Services Division (ADSD) for people 65 or older who meet a nursing-facility level of care and would otherwise need placement soon. It covers homemaker and chore services, respite, adult day care, companion services, emergency response systems and home-delivered meals. Requests go through the local ADSD office." },
+    al: { name: 'Waiver for the Frail Elderly (FE)', url: 'https://www.nevadamedicaid.nv.gov/programs/long-term-services-support/waiver-for-the-frail-elderly-fe/',
+      fact: "Nevada Medicaid's Waiver for the Frail Elderly (FE), operated with the Aging and Disability Services Division (ADSD), includes augmented personal care in assisted living and residential facilities for groups, for people 65 or older who meet a nursing-facility level of care. Requests go through the local ADSD office." },
+  },
+  'kansas': {
+    hc: { name: 'Frail Elderly (FE) waiver', url: 'https://www.kdads.ks.gov/services-programs/long-term-services-supports/home-and-community-based-services-hcbs-programs/hcbs-programs/frail-elderly-fe',
+      fact: "Kansas's senior home care waiver is the KanCare Frail Elderly (FE) waiver, run by the Kansas Department for Aging and Disability Services for people 65 and older who meet the Medicaid nursing-facility threshold and are financially eligible. It covers personal care, adult day care, medication reminders and emergency response. Apply through the Aging and Disability Resource Center at 1-855-200-2372." },
+    al: { name: 'Frail Elderly (FE) waiver', url: 'https://www.kdads.ks.gov/services-programs/long-term-services-supports/home-and-community-based-services-hcbs-programs/hcbs-programs/frail-elderly-fe',
+      fact: "The KanCare Frail Elderly (FE) waiver can pay for some, but not all, services delivered in an assisted living facility, residential health care facility or home plus, for people 65 and older who meet the Medicaid nursing-facility threshold. Apply through the Aging and Disability Resource Center at 1-855-200-2372." },
+  },
+  'connecticut': {
+    hc: { name: 'Connecticut Home Care Program for Elders (CHCPE)', url: 'https://portal.ct.gov/dss/health-and-home-care/connecticut-home-care-program-for-elders/connecticut-home-care-program-for-elders-chcpe',
+      fact: "Connecticut's main senior home care program is the Department of Social Services' Connecticut Home Care Program for Elders (CHCPE), for residents 65 and older who are at risk of nursing home placement and meet its financial criteria. Services include care management, homemaker and companion services, home-delivered meals and adult day health. Referrals: 1-800-445-5394, option 4." },
+    al: { name: 'Connecticut Home Care Program for Elders (CHCPE)', url: 'https://portal.ct.gov/dss/health-and-home-care/connecticut-home-care-program-for-elders/connecticut-home-care-program-for-elders-chcpe',
+      fact: "In Connecticut, assisted living services are among the services of the Department of Social Services' Connecticut Home Care Program for Elders (CHCPE), for residents 65 and older who are at risk of nursing home placement and meet its financial criteria. Referrals: 1-800-445-5394, option 4." },
+  },
+  'florida': {
+    hc: { name: 'Statewide Medicaid Managed Care Long-Term Care (SMMC LTC) program', url: 'https://ahca.myflorida.com/medicaid/statewide-medicaid-managed-care/long-term-care-program.html',
+      fact: "Florida delivers Medicaid home and community-based long-term care through the Agency for Health Care Administration's Statewide Medicaid Managed Care Long-Term Care (SMMC LTC) program, which has a waitlist; AHCA's Long-term Care Program page explains enrollment." },
+    al: { name: 'Statewide Medicaid Managed Care Long-Term Care (SMMC LTC) program', url: 'https://ahca.myflorida.com/medicaid/statewide-medicaid-managed-care/long-term-care-program.html',
+      fact: "Florida Medicaid covers long-term care services, including in assisted living, through the Agency for Health Care Administration's Statewide Medicaid Managed Care Long-Term Care (SMMC LTC) program, which has a waitlist; AHCA's Long-term Care Program page explains enrollment." },
+  },
+};
+// Phrase for the waiver sentence: the verified senior program, or generic wording.
+function waiverPhrase(slug, stateName, kind) {
+  const w = (SENIOR_WAIVERS[slug] || {})[kind];
+  return w ? `${stateName}'s ${w.name}` : `${stateName}'s Medicaid HCBS waivers for older adults`;
+}
+function waiverParagraph(slug, kind) {
+  const w = (SENIOR_WAIVERS[slug] || {})[kind];
+  return w ? `<p>${w.fact} Official page: <a href="${w.url}" target="_blank" rel="noopener noreferrer">${w.name}</a>.</p>` : '';
+}
 
 // Sourced figures. Every cost, benefit amount, plan count and yes/no program
 // flag below comes from data/sources/senior-benefits-sourced-2026.json, where
@@ -42,7 +110,27 @@ const usd = n => (n == null ? 'Not published' : '$' + Math.round(n).toLocaleStri
 const usd2 = n => '$' + Number(n).toFixed(2);
 // Every figure in the sourced file was retrieved on SRC.retrieved (2026-11-15).
 const RETRIEVED_LABEL = new Date(SRC.retrieved + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
-const srcRef = id => ({ title: SRC.sources[id].title, url: SRC.sources[id].url, verifiedDate: RETRIEVED_LABEL });
+// "Checked <date>" is printed only for a source whose URL actually loaded in the last run of
+// scripts/check-sources.py (engines/data/sources/source-checks.json), for the same URL.
+// A source that failed, or was never checked, gets no stamp and is flagged in the build log.
+const SRC_CHECKS = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'sources', 'source-checks.json'), 'utf8')).results || {}; }
+  catch (e) { return {}; }
+})();
+const UNCHECKED_SOURCES = new Set();
+const checkLabel = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const srcRef = id => {
+  const s = SRC.sources[id];
+  const c = SRC_CHECKS[id];
+  const ok = !!(c && c.ok && c.url === s.url && c.checkedAt);
+  if (!ok) UNCHECKED_SOURCES.add(id);
+  return ok ? { title: s.title, url: s.url, verifiedDate: checkLabel(c.checkedAt) } : { title: s.title, url: s.url, sourceCheckFailed: true };
+};
+process.on('exit', () => {
+  const failed = Object.keys(SRC.sources).filter(id => !(SRC_CHECKS[id] && SRC_CHECKS[id].ok && SRC_CHECKS[id].url === SRC.sources[id].url));
+  if (failed.length) console.warn(`SOURCE CHECK FLAG: ${failed.length} source URL(s) did not load in the last browser check (never stamped "Checked"): ${failed.join(', ')}`);
+  if (UNCHECKED_SOURCES.size) console.warn(`SOURCE CHECK FLAG: ${UNCHECKED_SOURCES.size} source(s) did not load in the last check and get no "Checked" stamp: ${[...UNCHECKED_SOURCES].join(', ')}. Run python3 scripts/check-sources.py.`);
+});
 function abbrOf(slug) { const st = states.find(x => x.slug === slug); return st ? st.abbr : null; }
 function stData(slug) { return SRC.states[abbrOf(slug)]; }
 // Care costs (CareScout 2025) for a state, or for a city when CareScout
@@ -63,9 +151,9 @@ function careCosts(stateSlug, city) {
   const label = k => (scope[k] === 'metro'
     ? `CareScout 2025 median for the ${area} area`
     : scope[k] === 'same'
-      ? `${st.name} statewide median, CareScout 2025 (its ${area} figure is the same)`
+      ? `${st.name} statewide median, CareScout 2025; its ${area} figure is the same`
       : (city ? `${st.name} statewide median; CareScout publishes no separate ${city.name} figure` : `${st.name} statewide median, CareScout 2025`));
-  const tag = k => (scope[k] === 'metro' || !city ? 'median' : `${abbrOf(stateSlug)} median`);
+  const tag = k => (scope[k] === 'metro' || !city ? 'median' : `${st.name} median`);
   return { v, scope, area, label, tag, stateName: st.name, releaseUrl: st.careScoutReleaseUrl };
 }
 const NAT = FED.careCostsNational2025;
@@ -479,18 +567,19 @@ states.forEach(s => {
   const baseCost = cc.v.assistedLiving;
   const progName = f.medicaidProgram || `${s.name} Medicaid`;
   const firstFaq = alFaqTemplates[rot(s.slug, alFaqTemplates.length)](s, f, baseCost, progName);
-  const opening = `Assisted living in ${s.name} is licensed by the state. CareScout's 2025 Cost of Care Survey puts the statewide median at ${usd(baseCost)}/month, compared with a national median of ${usd(NAT.monthly.assisted_living)}. ${progName} HCBS waivers may cover personal-care services for qualifying residents.`;
+  const opening = `Assisted living in ${s.name} is licensed by the state. CareScout's 2025 Cost of Care Survey puts the statewide median at ${usd(baseCost)}/month, compared with a national median of ${usd(NAT.monthly.assisted_living)}. ${waiverPhrase(s.slug, s.name, 'al')} may cover personal-care services for qualifying residents.`;
 
   alEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Assisted Living Cost in ${s.name} (2026)`,
     titleHook: `${usd(baseCost)}/mo median`,
     metaHook: `${usd(baseCost)}/mo median`,
-    stateSpecificOpening: `<p>${opening}</p>`,
+    // Distinct from introText (which already carries the opening): the state's senior waiver, sourced.
+    stateSpecificOpening: waiverParagraph(s.slug, 'al'),
     introText: `<p>${opening} The breakdown below compares assisted living with nursing home, home care and adult day costs in ${s.name}, and shows how residents use Medicaid waivers, VA Aid & Attendance, and long-term care insurance to cover them.</p>`,
     localContext: [
       { label: `${s.name} median (CareScout 2025)`, value: `${usd(baseCost)}/month (vs. ${usd(NAT.monthly.assisted_living)} national)` },
-      { label: 'Medicaid pathway', value: `${progName} HCBS waiver may cover personal-care services` },
+      { label: 'Medicaid pathway', value: `${(SENIOR_WAIVERS[s.slug] || {}).al ? SENIOR_WAIVERS[s.slug].al.name : 'Medicaid HCBS waivers'} may cover personal-care services` },
       { label: 'Report neglect', value: `Adult Protective Services: ${f.apsHotline || '1-800-677-1116'}` },
     ],
     ...alCostFields(cc),
@@ -498,7 +587,7 @@ states.forEach(s => {
     paymentOptions: [
       { method: 'Private Pay', description: 'Out-of-pocket payment is the most common method', eligible: 'All residents' },
       { method: 'Long-Term Care Insurance', description: 'Policies may cover part or all of assisted living costs', eligible: 'Policyholders' },
-      { method: 'Medicaid Waiver', description: `${progName} may offer HCBS waivers that cover personal-care services in assisted living`, eligible: 'Income-qualified residents' },
+      { method: 'Medicaid Waiver', description: `${waiverPhrase(s.slug, s.name, 'al')} may cover personal-care services in assisted living`, eligible: 'Income-qualified residents' },
       { method: 'Veterans Benefits', description: `VA Aid & Attendance (up to ${aaMonthly}/mo for a single veteran at December 2025 rates) applied through ${f.vaDept || s.name + ' VA'}`, eligible: 'Qualifying veterans and spouses' },
     ],
     faqs: [
@@ -543,6 +632,13 @@ function ssiSupText(stName, slug) {
     ? `${stName} pays a state supplement on top of federal SSI (administered by ${sup.administeredBy}, per SSA). The amount depends on your living arrangement, so ask ${sup.administeredBy === 'the state' ? 'the state agency' : 'Social Security'} what applies to you. The 2026 federal SSI rate is ${usd(SS.ssiFederalRate2026.individual)} (individual) or ${usd(SS.ssiFederalRate2026.couple)} (couple) per month.`
     : `${stName} does not pay a state supplement on top of federal SSI (SSA). SSI recipients receive up to the 2026 federal rate of ${usd(SS.ssiFederalRate2026.individual)} (individual) or ${usd(SS.ssiFederalRate2026.couple)} (couple) per month.`;
 }
+// Short FAQ answer, worded differently from the body paragraph so nothing prints twice.
+function ssiSupFaq(stName, slug) {
+  const sup = stData(slug).ssiStateSupplement;
+  return sup.pays
+    ? `Yes. ${stName} adds its own payment to federal SSI, and ${sup.administeredBy === 'the state' ? 'the state' : 'Social Security'} handles it. Supplement amounts vary with where and how you live, so confirm yours with ${sup.administeredBy === 'the state' ? 'the state agency' : 'Social Security'}.`
+    : `No. In ${stName}, SSI is the federal payment alone: at most ${usd(SS.ssiFederalRate2026.individual)} a month for one person or ${usd(SS.ssiFederalRate2026.couple)} for a couple in 2026.`;
+}
 const SS_COMMON = {
   maxRetirementBenefit: `${usd(SS.maxBenefitAtFRA2026)}/mo`,
   fullRetirementAge: '67', earlyRetirementAge: '62', cola: SS.cola2026,
@@ -566,7 +662,7 @@ const ssFaqTemplates = [
   }),
   (s, f, avgBen) => ({
     question: `Does ${s.name} pay a state SSI supplement?`,
-    answer: ssiSupText(s.name, s.slug),
+    answer: ssiSupFaq(s.name, s.slug),
   }),
   (s, f, avgBen) => ({
     question: `Where is the closest Social Security office in ${s.name}?`,
@@ -698,28 +794,29 @@ states.forEach(s => {
   const hourly = cc.v.homeCareHourly;
   const progName = f.medicaidProgram || `${s.name} Medicaid`;
   const firstFaq = hcFaqTemplates[rot(s.slug, hcFaqTemplates.length)](s, f, hourly, progName);
-  const opening = `CareScout's 2025 Cost of Care Survey puts the ${s.name} median for home care at ${usd(hourly)}/hour, or ${usd(cc.v.homeCareMonthly)}/month for 44 hours a week (national median: ${usd(NAT.hourly.home_care_services)}/hour). ${progName}'s HCBS waivers may pay personal-care attendants for seniors who qualify at a nursing-home level of care.`;
+  const opening = `CareScout's 2025 Cost of Care Survey puts the ${s.name} median for home care at ${usd(hourly)}/hour, or ${usd(cc.v.homeCareMonthly)}/month for 44 hours a week (national median: ${usd(NAT.hourly.home_care_services)}/hour). ${waiverPhrase(s.slug, s.name, 'hc')} may pay personal-care attendants for seniors who qualify at a nursing-home level of care.`;
 
   hcEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Home Care Cost in ${s.name} (2026)`,
     titleHook: `${usd(hourly)}/hr median`,
     metaHook: `${usd(hourly)}/hr median`,
-    stateSpecificOpening: `<p>${opening}</p>`,
+    // Distinct from introText (which already carries the opening): the state's senior waiver, sourced.
+    stateSpecificOpening: waiverParagraph(s.slug, 'hc'),
     introText: `<p>${opening} Below you'll find home care, skilled nursing and adult day costs and how ${s.name} residents use Medicaid waivers, VA benefits, and long-term care insurance to pay.</p>`,
     localContext: [
       { label: `${s.name} home care median`, value: `${usd(hourly)}/hour (national ${usd(NAT.hourly.home_care_services)})` },
-      { label: 'Medicaid home care', value: `${progName} HCBS waiver may cover in-home services` },
+      { label: 'Medicaid home care', value: `${(SENIOR_WAIVERS[s.slug] || {}).hc ? SENIOR_WAIVERS[s.slug].hc.name : 'Medicaid HCBS waivers'} may cover in-home services` },
       { label: 'Agency licensing', value: `Verify through ${s.name}'s Department of Health` },
     ],
     ...hcCostFields(cc),
     paymentOptions: [
       { method: 'Private Pay', description: 'Most common payment method for home care', eligible: 'Everyone' },
-      { method: 'Medicaid Home Care Waiver', description: `${progName} HCBS waiver programs cover personal-care attendants`, eligible: 'Income-qualified' },
+      { method: 'Medicaid Home Care Waiver', description: `${waiverPhrase(s.slug, s.name, 'hc')} can cover personal-care attendants`, eligible: 'Income-qualified' },
       { method: 'Veterans Benefits', description: 'VA Aid & Attendance or HCBS for eligible veterans', eligible: 'Qualifying veterans' },
       { method: 'Long-Term Care Insurance', description: 'Policies often cover in-home care', eligible: 'Policyholders' },
     ],
-    medicaidCoverage: `${progName} covers home care services through HCBS waiver programs for ${s.name} seniors who need help to remain safely at home.`,
+    medicaidCoverage: `${progName} covers home care services through ${waiverPhrase(s.slug, s.name, 'hc')} for ${s.name} seniors who need help to remain safely at home.`,
     faqs: [
       firstFaq,
       { question: `How many hours of home care can a senior get through ${progName}?`, answer: `Hours depend on the waiver, the individualized care plan, and the senior's level of care. Some ${s.name} seniors receive a few hours a week; others with complex needs receive substantially more or qualify for the PACE program.` },
@@ -783,7 +880,7 @@ states.forEach(s => {
   const spapName = sp.has ? sp.name : null;
   const firstFaq = rxFaqTemplates[rot(s.slug, rxFaqTemplates.length)](s, f, spapName);
   const opening = spapName
-    ? `${s.name} operates ${spapName} alongside Medicare Part D, which can reduce drug costs for eligible residents. ${sp.note ? sp.note + ' ' : ''}Federal Medicare Extra Help is open to single people with 2026 income under ${usd(EH.incomeLimit.individual)}.`
+    ? `${s.name} operates ${spapName} alongside Medicare Part D, which can reduce drug costs for eligible residents. Federal Medicare Extra Help is open to single people with 2026 income under ${usd(EH.incomeLimit.individual)}.`
     : `${s.name} does not run a state-funded State Pharmaceutical Assistance Program${sp.endedNote ? ` (${sp.endedNote})` : ''}, so Medicare Extra Help, manufacturer patient-assistance programs, and pharmacy discount cards are the main tools. Extra Help is open to single people with 2026 income under ${usd(EH.incomeLimit.individual)}.`;
 
   rxEntries.push({
@@ -1078,7 +1175,7 @@ states.forEach(s => {
     faqs: [
       firstFaq,
       { question: `How do I apply for SNAP in ${s.name}?`, answer: `SNAP in ${s.name} is run by the ${snp.agency}. Apply online, by phone${snp.phone ? ` (${snp.phone})` : ''}, or at a local office. You'll need proof of income, identity, and residency.` },
-      { question: `What are the 2026–27 SNAP limits for ${s.name} seniors?`, answer: `${snp.rule} The maximum benefit for October 2026 through September 2027 is ${snp.maxText}.` },
+      { question: `What are the 2026–27 SNAP limits for ${s.name} seniors?`, answer: `${snp.b.uses && s.name !== 'New York' ? `In short, one person with gross income up to ${usd(snp.b.grossLimit['1'])} a month can qualify through broad-based categorical eligibility; anyone over that, if 60 or older, needs net income at or below ${usd(snp.sn.netIncomeLimit['1'])}.` : `In short, a one-person household with a member 60 or older needs net income at or below ${usd(snp.sn.netIncomeLimit['1'])} a month.`} The most a one-person household can receive from October 2026 through September 2027 is ${usd(snp.sn.maxAllotment['1'])} a month; the SNAP section above has the full rules.` },
     ],
     sources: [
       { title: 'USA.gov Benefit Finder', url: 'https://www.usa.gov/benefit-finder' },
@@ -1122,7 +1219,7 @@ cities.forEach(c => {
     ],
     faqs: [
       { question: `What low-income programs are available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} seniors can access SNAP food assistance, LIHEAP energy assistance, Section 8 housing vouchers, Lifeline phone discounts, senior transportation, and ${stName} property tax relief programs.` },
-      { question: `Where can I apply for SNAP in ${c.name}?`, answer: `SNAP in ${stName} is run by the ${snp.agency}. ${c.name} residents can apply online, by phone${snp.phone ? ` (${snp.phone})` : ''}, or at the local ${f.countyTerm || 'county'} office. ${snp.rule}` },
+      { question: `Where can I apply for SNAP in ${c.name}?`, answer: `SNAP in ${stName} is run by the ${snp.agency}. ${c.name} residents can apply online, by phone${snp.phone ? ` (${snp.phone})` : ''}, or at the local ${f.countyTerm || 'county'} office. The income and asset rules are in the SNAP section above.` },
       { question: `Is there senior housing assistance in ${c.name}?`, answer: `Yes, ${c.name} has Section 8 vouchers, public housing, and Section 202 senior housing. Waitlists are common in the ${c.name} area, so apply as early as possible.` },
     ],
     sources: [

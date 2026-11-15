@@ -754,6 +754,12 @@ class PageGenerator {
       // Priority indexing overlay
       h1: priorityPage?.h1 || entry.h1,
       introText: priorityPage?.intro || entry.introText,
+      // Never print the intro's opening sentences twice: drop a state opening that the intro already contains.
+      stateSpecificOpening: (() => {
+        const txt = h => String(h || '').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
+        const op = txt(entry.stateSpecificOpening);
+        return op && txt(priorityPage?.intro || entry.introText).includes(op) ? '' : entry.stateSpecificOpening;
+      })(),
       priorityActionHeading: priorityPage?.priorityActionHeading || '',
       priorityActionIntro: priorityPage?.priorityActionIntro || '',
       priorityActionLinks: priorityPage?.priorityActionLinks || [],

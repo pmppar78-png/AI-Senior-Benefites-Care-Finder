@@ -26,7 +26,7 @@ const cityName = (stateSlug, slug) => {
   const c = cities.find(x => x.slug === slug && x.stateSlug === stateSlug);
   if (c) return c.name;
   const abbr = (stateBySlug[stateSlug]?.abbr || 'zz').toLowerCase();
-  return slug.replace(new RegExp(`-${abbr}$`), '').split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+  return slug.replace(new RegExp(`-${abbr}$`), '').split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ').replace(/\bMc([a-z])/g, (m, c) => 'Mc' + c.toUpperCase());
 };
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const hasPage = d => fs.existsSync(path.join(d, 'index.html'));
