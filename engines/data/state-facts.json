@@ -8,8 +8,7 @@
     "countyTerm": "county",
     "taxesSs": false,
     "taxesSsNote": "Alabama does not tax Social Security retirement benefits.",
-    "ssiSupplement": "no state supplement",
-    "aduUnit": "Alabama does not have an SSP; SSI recipients receive the federal benefit only.",
+    "ssiSupplement": "Alabama pays an optional state supplement to SSI for some recipients (administered by the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Alabama Department of Insurance",
     "insuranceCommissionerPhone": "334-269-3550",
     "apsHotline": "1-800-458-7214",
@@ -26,7 +25,7 @@
     "ssiSupplement": "Alaska Adult Public Assistance (APA) supplements SSI for aged, blind, and disabled residents.",
     "insuranceCommissioner": "Alaska Division of Insurance",
     "apsHotline": "1-800-478-9996",
-    "spapName": "Alaska SBPP"
+    "spapName": null
   },
   "arizona": {
     "medicaidProgram": "Arizona Health Care Cost Containment System (AHCCCS)",
@@ -39,7 +38,7 @@
     "ssiSupplement": "no state supplement",
     "insuranceCommissioner": "Arizona Department of Insurance and Financial Institutions",
     "apsHotline": "1-877-767-2385",
-    "spapName": "CoppeRx"
+    "spapName": null
   },
   "arkansas": {
     "medicaidProgram": "Arkansas Medicaid (including ARHOME)",
@@ -92,7 +91,7 @@
     "ssiSupplement": "Connecticut provides a State Supplement to federal SSI.",
     "insuranceCommissioner": "Connecticut Insurance Department",
     "apsHotline": "1-888-385-4225",
-    "spapName": "ConnPACE"
+    "spapName": null
   },
   "delaware": {
     "medicaidProgram": "Delaware Medicaid and Delaware Healthy Children Program",
@@ -102,10 +101,10 @@
     "countyTerm": "county",
     "taxesSs": false,
     "taxesSsNote": "Delaware does not tax Social Security benefits.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "Delaware pays an optional state supplement to SSI for some recipients (administered by Social Security and the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Delaware Department of Insurance",
     "apsHotline": "1-800-223-9074",
-    "spapName": "Delaware DPAP"
+    "spapName": "Delaware Prescription Assistance Program (DPAP)"
   },
   "district-of-columbia": {
     "medicaidProgram": "DC Medicaid (Department of Health Care Finance)",
@@ -141,7 +140,7 @@
     "countyTerm": "county",
     "taxesSs": false,
     "taxesSsNote": "Georgia does not tax Social Security benefits and offers generous retirement income exclusions for seniors 62+.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "Georgia pays an optional state supplement to SSI for some recipients (administered by the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Georgia Office of Commissioner of Insurance",
     "apsHotline": "1-866-552-4464",
     "spapName": null
@@ -170,7 +169,7 @@
     "ssiSupplement": "Idaho provides a state supplement (AABD) to certain SSI recipients.",
     "insuranceCommissioner": "Idaho Department of Insurance",
     "apsHotline": "1-208-334-3833",
-    "spapName": "Idaho DCP"
+    "spapName": null
   },
   "illinois": {
     "medicaidProgram": "Illinois Medicaid (HFS)",
@@ -183,7 +182,7 @@
     "ssiSupplement": "no state supplement for most categories",
     "insuranceCommissioner": "Illinois Department of Insurance",
     "apsHotline": "1-866-800-1409",
-    "spapName": "Illinois Rx"
+    "spapName": null
   },
   "indiana": {
     "medicaidProgram": "Indiana Medicaid (Healthy Indiana Plan)",
@@ -209,7 +208,7 @@
     "ssiSupplement": "Iowa provides a state supplement for residents in residential care facilities.",
     "insuranceCommissioner": "Iowa Insurance Division",
     "apsHotline": "1-800-362-2178",
-    "spapName": "Iowa Rx Drug Corp"
+    "spapName": null
   },
   "kansas": {
     "medicaidProgram": "KanCare",
@@ -217,9 +216,9 @@
     "shipPhone": "1-800-860-5260",
     "vaDept": "Kansas Commission on Veterans Affairs",
     "countyTerm": "county",
-    "taxesSs": true,
-    "taxesSsNote": "Kansas taxes Social Security for higher-income filers, but exempts benefits for residents with federal AGI below the state threshold.",
-    "ssiSupplement": "no state supplement",
+    "taxesSs": false,
+    "taxesSsNote": "Kansas no longer taxes Social Security benefits: starting with tax year 2024, all Social Security income is exempt from Kansas income tax.",
+    "ssiSupplement": "Kansas pays an optional state supplement to SSI for some recipients (administered by the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Kansas Insurance Department",
     "apsHotline": "1-800-922-5330",
     "spapName": null
@@ -246,7 +245,7 @@
     "countyTermNote": "Louisiana is divided into 64 parishes rather than counties.",
     "taxesSs": false,
     "taxesSsNote": "Louisiana does not tax Social Security benefits.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "Louisiana pays an optional state supplement to SSI for some recipients (administered by the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Louisiana Department of Insurance",
     "apsHotline": "1-800-898-4910",
     "spapName": null
@@ -262,7 +261,7 @@
     "ssiSupplement": "Maine provides Supplemental Security Income State Program (SSI-SSP).",
     "insuranceCommissioner": "Maine Bureau of Insurance",
     "apsHotline": "1-800-624-8404",
-    "spapName": "Maine DEL"
+    "spapName": "Low Cost Drugs for the Elderly or Disabled (DEL)"
   },
   "maryland": {
     "medicaidProgram": "Maryland Medicaid (HealthChoice)",
@@ -275,7 +274,7 @@
     "ssiSupplement": "Maryland does not provide a general state SSI supplement.",
     "insuranceCommissioner": "Maryland Insurance Administration",
     "apsHotline": "1-800-917-7383",
-    "spapName": "SPDAP"
+    "spapName": "Senior Prescription Drug Assistance Program (SPDAP)"
   },
   "massachusetts": {
     "medicaidProgram": "MassHealth",
@@ -288,7 +287,7 @@
     "ssiSupplement": "Massachusetts pays a state supplement to federal SSI (EAEDC/SSP).",
     "insuranceCommissioner": "Massachusetts Division of Insurance",
     "apsHotline": "1-800-922-2275",
-    "spapName": "Rx Advantage"
+    "spapName": "Prescription Advantage"
   },
   "michigan": {
     "medicaidProgram": "Michigan Medicaid (Healthy Michigan Plan)",
@@ -301,7 +300,7 @@
     "ssiSupplement": "Michigan State Supplementation (SSP) for certain SSI recipients in adult foster care.",
     "insuranceCommissioner": "Michigan Department of Insurance and Financial Services",
     "apsHotline": "1-855-444-3911",
-    "spapName": "MiRx Card"
+    "spapName": null
   },
   "minnesota": {
     "medicaidProgram": "Medical Assistance (MA) / MinnesotaCare",
@@ -314,7 +313,7 @@
     "ssiSupplement": "Minnesota Supplemental Aid (MSA).",
     "insuranceCommissioner": "Minnesota Department of Commerce",
     "apsHotline": "1-844-880-1574",
-    "spapName": "Minnesota Rx"
+    "spapName": null
   },
   "mississippi": {
     "medicaidProgram": "Mississippi Medicaid",
@@ -340,7 +339,7 @@
     "ssiSupplement": "Missouri Supplemental Nursing Care and Blind Pension are available.",
     "insuranceCommissioner": "Missouri Department of Commerce and Insurance",
     "apsHotline": "1-800-392-0210",
-    "spapName": "Missouri Rx Plan"
+    "spapName": "Missouri Rx Plan (MORx)"
   },
   "montana": {
     "medicaidProgram": "Montana Medicaid",
@@ -350,7 +349,7 @@
     "countyTerm": "county",
     "taxesSs": true,
     "taxesSsNote": "Montana partially taxes Social Security benefits, following federal treatment with a state-specific deduction.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "Montana pays an optional state supplement to SSI for some recipients (administered by Social Security); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Montana Commissioner of Securities and Insurance",
     "apsHotline": "1-844-277-9300",
     "spapName": "Big Sky Rx"
@@ -376,10 +375,10 @@
     "countyTerm": "county",
     "taxesSs": false,
     "taxesSsNote": "Nevada has no state income tax, so Social Security benefits are not taxed.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "Nevada pays an optional state supplement to SSI for some recipients (administered by Social Security); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Nevada Division of Insurance",
     "apsHotline": "1-888-729-0571",
-    "spapName": "Senior Rx (Nevada)"
+    "spapName": null
   },
   "new-hampshire": {
     "medicaidProgram": "New Hampshire Medicaid",
@@ -405,7 +404,7 @@
     "ssiSupplement": "New Jersey provides a State Supplement to federal SSI.",
     "insuranceCommissioner": "New Jersey Department of Banking and Insurance",
     "apsHotline": "1-800-792-8820",
-    "spapName": "PAAD / Senior Gold"
+    "spapName": "PAAD and Senior Gold"
   },
   "new-mexico": {
     "medicaidProgram": "Centennial Care (New Mexico Medicaid)",
@@ -431,7 +430,7 @@
     "ssiSupplement": "New York pays the State Supplement Program (SSP) on top of federal SSI.",
     "insuranceCommissioner": "New York State Department of Financial Services",
     "apsHotline": "1-844-697-3505",
-    "spapName": "EPIC"
+    "spapName": "EPIC (Elderly Pharmaceutical Insurance Coverage)"
   },
   "north-carolina": {
     "medicaidProgram": "NC Medicaid Managed Care",
@@ -470,7 +469,7 @@
     "ssiSupplement": "Ohio provides a State Supplement (Residential State Supplement) for certain SSI recipients.",
     "insuranceCommissioner": "Ohio Department of Insurance",
     "apsHotline": "1-855-644-6277",
-    "spapName": "Ohio's Best Rx"
+    "spapName": null
   },
   "oklahoma": {
     "medicaidProgram": "SoonerCare (Oklahoma Medicaid)",
@@ -522,7 +521,7 @@
     "ssiSupplement": "Rhode Island pays a State Supplement Program on SSI.",
     "insuranceCommissioner": "Rhode Island Department of Business Regulation, Insurance Division",
     "apsHotline": "401-462-0555",
-    "spapName": "RIPAE"
+    "spapName": "RIPAE (Rhode Island Pharmaceutical Assistance to the Elderly)"
   },
   "south-carolina": {
     "medicaidProgram": "Healthy Connections (South Carolina Medicaid)",
@@ -535,7 +534,7 @@
     "ssiSupplement": "Optional State Supplement for residents in community residential care facilities.",
     "insuranceCommissioner": "South Carolina Department of Insurance",
     "apsHotline": "1-803-898-7601",
-    "spapName": "SilverxCard"
+    "spapName": null
   },
   "south-dakota": {
     "medicaidProgram": "South Dakota Medicaid",
@@ -545,7 +544,7 @@
     "countyTerm": "county",
     "taxesSs": false,
     "taxesSsNote": "South Dakota has no state income tax, so Social Security benefits are not taxed.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "South Dakota pays an optional state supplement to SSI for some recipients (administered by the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "South Dakota Division of Insurance",
     "apsHotline": "1-833-663-9673",
     "spapName": null
@@ -584,7 +583,7 @@
     "countyTerm": "county",
     "taxesSs": true,
     "taxesSsNote": "Utah taxes Social Security benefits but offers a non-refundable credit that eliminates tax for qualifying lower- and middle-income filers.",
-    "ssiSupplement": "no state supplement",
+    "ssiSupplement": "Utah pays an optional state supplement to SSI for some recipients (administered by the state); eligibility and amounts depend on living arrangement.",
     "insuranceCommissioner": "Utah Insurance Department",
     "apsHotline": "1-800-371-7897",
     "spapName": null
@@ -636,11 +635,11 @@
     "vaDept": "West Virginia Department of Veterans Assistance",
     "countyTerm": "county",
     "taxesSs": false,
-    "taxesSsNote": "West Virginia phased out state tax on Social Security benefits as of tax year 2022.",
-    "ssiSupplement": "no state supplement for most categories",
+    "taxesSsNote": "West Virginia fully exempts Social Security benefits from state income tax starting with tax year 2026, after a 2024–2025 phase-in.",
+    "ssiSupplement": "no state supplement",
     "insuranceCommissioner": "West Virginia Offices of the Insurance Commissioner",
     "apsHotline": "1-800-352-6513",
-    "spapName": "Golden Mountaineer"
+    "spapName": null
   },
   "wisconsin": {
     "medicaidProgram": "BadgerCare Plus and Wisconsin Medicaid",

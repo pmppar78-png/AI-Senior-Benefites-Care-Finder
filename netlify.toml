@@ -2,7 +2,7 @@
 directory = "netlify/functions"
 
 [build]
-command = "node engines/seed-data.js && node engines/generator.js && node scripts/add-static-city-links.cjs"
+command = "node engines/seed-data.js && node engines/generator.js && node scripts/apply-sourced-facts.cjs && node scripts/add-static-city-links.cjs && node scripts/make-favicon.cjs"
 publish = "."
 
 [build.processing.html]

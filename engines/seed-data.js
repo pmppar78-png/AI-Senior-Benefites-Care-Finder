@@ -30,6 +30,86 @@ const cities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'top-cities.json')
 // footprint of identical state intros. See data/state-facts.json.
 const stateFacts = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'state-facts.json'), 'utf8'));
 function sf(slug) { return stateFacts[slug] || {}; }
+
+// Sourced figures. Every cost, benefit amount, plan count and yes/no program
+// flag below comes from data/sources/senior-benefits-sourced-2026.json, where
+// each value carries a source id that resolves to a title + URL (retrieved
+// 2026-11-15). Where no city-level figure exists we use the state figure and
+// the page says so. Do not reintroduce generated (Math.random) figures.
+const SRC = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'sources', 'senior-benefits-sourced-2026.json'), 'utf8'));
+const FED = SRC.federal;
+const usd = n => (n == null ? 'Not published' : '$' + Math.round(n).toLocaleString('en-US'));
+const usd2 = n => '$' + Number(n).toFixed(2);
+const srcRef = id => ({ title: SRC.sources[id].title, url: SRC.sources[id].url });
+function abbrOf(slug) { const st = states.find(x => x.slug === slug); return st ? st.abbr : null; }
+function stData(slug) { return SRC.states[abbrOf(slug)]; }
+// Care costs (CareScout 2025) for a state, or for a city when CareScout
+// reports a matching metro area; otherwise the state median, labelled.
+function careCosts(stateSlug, city) {
+  const st = stData(stateSlug);
+  const ci = city ? SRC.cities[`${stateSlug}/${city.slug}`] : null;
+  const v = {}, scope = {};
+  Object.keys(st.careCosts2025).forEach(k => {
+    const cv = ci && ci.careCosts2025 && !/ChangePct$/.test(k) ? ci.careCosts2025[k] : null;
+    if (cv != null) { v[k] = cv; scope[k] = 'metro'; } else { v[k] = st.careCosts2025[k]; scope[k] = 'state'; }
+  });
+  const area = ci && ci.careScoutArea ? ci.careScoutArea : null;
+  const label = k => (scope[k] === 'metro'
+    ? `CareScout 2025 median for the ${area} area`
+    : (city ? `${st.name} statewide median; CareScout publishes no separate ${city.name} figure` : `${st.name} statewide median, CareScout 2025`));
+  const tag = k => (scope[k] === 'metro' || !city ? 'median' : `${abbrOf(stateSlug)} median`);
+  return { v, scope, area, label, tag, stateName: st.name };
+}
+const NAT = FED.careCostsNational2025;
+const CARE_SRC = srcRef('carescout2025');
+const SS = FED.socialSecurity;
+const EH = FED.extraHelp2026;
+const MAPR = FED.vaPension.mapr;
+const aaMonthly = usd(MAPR.aidAttendance / 12);          // $2,424
+const aaMonthlyDep = usd(MAPR.aidAttendanceOneDependent / 12); // $2,874
+const pensionMonthly = usd(MAPR.basicNoDependents / 12); // $1,453
+const pensionMonthlyDep = usd(MAPR.basicOneDependent / 12);
+const AA_TEXT = `up to ${aaMonthly}/month for a veteran with no dependents, or ${aaMonthlyDep}/month with one dependent (VA maximum annual pension rates effective December 1, 2025, reduced by countable income)`;
+const PARTD = FED.medicare;
+// Directory links used where a page used to have a dead '#' link. Each was
+// checked on 2026-11-15.
+const LINKS = {
+  medicaidState: { title: 'USA.gov: find your state Medicaid agency', url: 'https://www.usa.gov/medicaid' },
+  hcbs: { title: 'Medicaid.gov: Home & Community-Based Services', url: 'https://www.medicaid.gov/medicaid/home-community-based-services' },
+  ssaContact: { title: 'Social Security: contact options', url: 'https://www.ssa.gov/agency/contact/' },
+  ssaLocator: { title: 'Social Security Office Locator', url: 'https://www.ssa.gov/locator/' },
+  stateVa: { title: 'VA: State Veterans Affairs offices', url: 'https://www.va.gov/statedva.htm' },
+  insurance: { title: 'NAIC: state insurance departments', url: 'https://content.naic.org/state-insurance-departments' },
+  aps: { title: 'NAPSA: find Adult Protective Services in your state', url: 'https://www.napsa-now.org/help-in-your-area/' },
+  socialServices: { title: 'USA.gov: state social services agencies', url: 'https://www.usa.gov/state-social-services' },
+  snapStates: { title: 'USDA: SNAP state directory of resources', url: 'https://www.fna.usda.gov/snap/state-directory' },
+  energy: { title: 'USA.gov: help with energy bills (LIHEAP)', url: 'https://www.usa.gov/help-with-energy-bills' },
+  housing: { title: 'HUD: public housing agency contacts', url: 'https://www.hud.gov/contactus/public-housing-contacts' },
+  eldercare: { title: 'Eldercare Locator (ACL)', url: 'https://eldercare.acl.gov/' },
+  stateTaxes: { title: 'USA.gov: state tax agencies', url: 'https://www.usa.gov/state-taxes' },
+};
+// SNAP FY2027 (Oct 1, 2026 - Sept 30, 2027) facts for one state: USDA income
+// standards and allotments, plus broad-based categorical eligibility (BBCE)
+// from USDA's Nov 2026 chart. Households with a member 60+ or disabled skip
+// the gross test under regular rules but must pass the net test.
+function snapFacts(stateSlug) {
+  const st = stData(stateSlug), sn = st.snap, b = sn.bbce;
+  const link = sn.agencyUrl || sn.usdaDirectoryUrl;
+  const applyUrl = sn.applyUrl || link;
+  let rule;
+  if (b.uses && st.name === 'New York') {
+    rule = `New York's broad-based categorical eligibility covers households with dependent-care costs (up to 200% of poverty) or earnings (up to 150%); most retired seniors use the regular rules: net income at or below ${usd(sn.netIncomeLimit['1'])}/month for one person (${usd(sn.netIncomeLimit['2'])} for two) and countable resources under $4,750 when a member is 60+ or disabled.`;
+  } else if (b.uses) {
+    const assets = b.noAssetLimit ? 'no asset test' : `an asset limit of ${b.assetLimit}`;
+    rule = `${st.name} uses broad-based categorical eligibility: a household with gross income up to ${b.grossLimitPct}% of the poverty guideline (${usd(b.grossLimit['1'])}/month for one person, ${usd(b.grossLimit['2'])} for two) is categorically eligible, with ${assets}. Households above that use the regular rules: a member 60+ or disabled only has to pass the net income test (${usd(sn.netIncomeLimit['1'])}/${usd(sn.netIncomeLimit['2'])}) and have countable resources under $4,750.`;
+  } else {
+    rule = `${st.name} does not use broad-based categorical eligibility${st.name === 'Indiana' ? ' (it ended on July 1, 2026)' : ''}, so the regular federal rules apply: a household with a member 60+ or disabled skips the gross income test but must have net income at or below ${usd(sn.netIncomeLimit['1'])}/month for one person (${usd(sn.netIncomeLimit['2'])} for two) and countable resources under $4,750.`;
+  }
+  const maxText = `${usd(sn.maxAllotment['1'])}/month for one person and ${usd(sn.maxAllotment['2'])} for two${st.name === 'Alaska' ? ' in urban Alaska (higher in rural areas)' : ''}`;
+  const grossShort = b.uses && st.name !== 'New York' ? `Up to ${usd(b.grossLimit['1'])}/mo gross (BBCE, 1 person)` : `Net ${usd(sn.netIncomeLimit['1'])}/mo (1 person, 60+)`;
+  const sources = [srcRef('usda_snap_fy27'), srcRef('usda_bbce_nov2026'), { title: `${sn.agency}: ${sn.programName}`, url: link }];
+  return { sn, b, link, applyUrl, rule, maxText, grossShort, sources, agency: sn.agency, program: sn.programName, phone: sn.phone };
+}
 // Deterministic rotation so a given state always lands on the same template.
 function rot(slug, n) {
   let h = 0;
@@ -44,6 +124,26 @@ function write(filename, data) {
 }
 
 // ---- ENGINE 1: Medicare (state + city) ----
+// Plan counts and premium medians: CMS CY2026 Landscape file (Sept 2026),
+// state level. Medigap plans are federally standardized (letters A-N) except
+// in Massachusetts, Minnesota and Wisconsin, which standardize their own.
+function medicareFigures(stateSlug) {
+  const m = stData(stateSlug).medicare2026;
+  const ownMedigap = ['massachusetts', 'minnesota', 'wisconsin'].includes(stateSlug);
+  const premMA = !m.maPlans ? 'No plans listed'
+    : (m.maMedianPremium === 0 ? `$0 median (${m.maZeroPremium} of ${m.maPlans} plans)` : `${usd2(m.maMedianPremium)} median`);
+  const premPD = m.pdpMedianPremium == null ? 'Not listed' : `${usd2(m.pdpMedianPremium)} median (lowest ${usd2(m.pdpLowestPremium)})`;
+  return {
+    maPlans: m.maPlans, pdPlans: m.pdpPlans,
+    mgPlans: ownMedigap ? 'State-standardized' : 'Plans A–N',
+    premMA, premPD, premMG: 'Varies by age, ZIP and insurer',
+    countSentence: (stName, county) => (m.maPlans
+      ? `CMS lists ${m.maPlans} Medicare Advantage plans (excluding Special Needs Plans) and ${m.pdpPlans} stand-alone Part D plans offered somewhere in ${stName} for 2026; which ones you can buy depends on your ${county}.`
+      : `CMS lists no Medicare Advantage plans open to general enrollment in ${stName} for 2026, so most residents use Original Medicare with one of ${m.pdpPlans} stand-alone Part D plans and, optionally, a Medigap policy.`),
+    premFaq: stName => (!m.maPlans ? `CMS lists no general-enrollment Medicare Advantage plans in ${stName} for 2026.`
+      : `Across the ${m.maPlans} Medicare Advantage plans CMS lists in ${stName} for 2026, ${m.maZeroPremium} charge a $0 monthly plan premium; the median plan premium is ${usd2(m.maMedianPremium)}.`),
+  };
+}
 // Medicare FAQ rotation — first question template pool (5 variants).
 const medicareFaqTemplates = [
   (s, f, maPlans) => ({
@@ -52,7 +152,7 @@ const medicareFaqTemplates = [
   }),
   (s, f, maPlans) => ({
     question: `How many Medicare Advantage plans are sold in ${s.name}?`,
-    answer: `${s.name} residents typically have about ${maPlans} Medicare Advantage plans to choose from, though availability varies by ${f.countyTerm || 'county'}. Medicare.gov's Plan Finder shows exact options at your ZIP code.`,
+    answer: `CMS's 2026 plan data lists ${maPlans} Medicare Advantage plans (not counting Special Needs Plans) offered somewhere in ${s.name}. Availability varies by ${f.countyTerm || 'county'}, so Medicare.gov's Plan Finder is the way to see the plans sold at your ZIP code.`,
   }),
   (s, f) => ({
     question: `Does ${f.medicaidProgram || s.name + ' Medicaid'} help pay Medicare premiums?`,
@@ -71,12 +171,8 @@ const medicareFaqTemplates = [
 const medicareEntries = [];
 states.forEach(s => {
   const f = sf(s.slug);
-  const maPlans = 20 + Math.floor(Math.random() * 40);
-  const mgPlans = 8 + Math.floor(Math.random() * 6);
-  const pdPlans = 15 + Math.floor(Math.random() * 15);
-  const premMA = Math.floor(Math.random() * 25);
-  const premMG = 130 + Math.floor(Math.random() * 90);
-  const premPD = 25 + Math.floor(Math.random() * 25);
+  const mc = medicareFigures(s.slug);
+  const { maPlans, mgPlans, pdPlans } = mc;
 
   // First FAQ varies across 5 templates keyed on state slug.
   const firstFaq = medicareFaqTemplates[rot(s.slug, medicareFaqTemplates.length)](s, f, maPlans);
@@ -88,17 +184,18 @@ states.forEach(s => {
     h1: `Medicare Plans in ${s.name} (2026)`,
     // titleHook/metaHook consumed by config.js SEO pattern fallbacks.
     titleHook: `${maPlans} Plans`,
-    metaHook: `${maPlans} MA plans, avg $${premMA}/mo`,
+    metaHook: `${maPlans} MA and ${pdPlans} Part D plans`,
     // stateSpecificOpening used by the template's first content paragraph.
     stateSpecificOpening: `<p>${opening}</p>`,
-    introText: `<p>${opening} Below is a breakdown of the ${maPlans} Medicare Advantage, ${mgPlans} Medigap, and ${pdPlans} Part D drug plans sold in ${s.name} for 2026, with county-level premium ranges and enrollment deadlines.</p>`,
+    introText: `<p>${opening} ${mc.countSentence(s.name, f.countyTerm || 'county')} Below are 2026 premiums from CMS plan data, the Part D out-of-pocket cap, and enrollment deadlines.</p>`,
     localContext: [
       { label: `${s.name} SHIP`, value: `${f.shipName || 'State Health Insurance Assistance Program'}${f.shipPhone ? ` — ${f.shipPhone}` : ''}` },
       { label: 'Insurance regulator', value: f.insuranceCommissioner || `${s.name} Department of Insurance` },
       { label: 'Medicaid MSP', value: `${f.medicaidProgram || s.name + ' Medicaid'} administers Medicare Savings Programs` },
     ],
     advantagePlans: maPlans, medigapPlans: mgPlans, partDPlans: pdPlans,
-    avgPremiumMA: `$${premMA}/mo`, avgPremiumMedigap: `$${premMG}/mo`, avgPremiumPartD: `$${premPD}/mo`,
+    avgPremiumMA: mc.premMA, avgPremiumMedigap: mc.premMG, avgPremiumPartD: mc.premPD,
+    planCountScope: `Counts cover all of ${s.name}.`,
     enrollmentPeriods: [
       { name: 'Initial Enrollment Period', startDate: '3 months before turning 65', endDate: '3 months after turning 65', description: 'Sign up for Medicare Parts A and B' },
       { name: 'Annual Enrollment Period', startDate: 'October 15', endDate: 'December 7', description: 'Switch Medicare Advantage or Part D plans' },
@@ -119,7 +216,8 @@ states.forEach(s => {
     ],
     sources: [
       { title: 'Medicare.gov', url: 'https://www.medicare.gov' },
-      { title: 'CMS.gov Medicare Data', url: 'https://www.cms.gov/medicare' },
+      srcRef('cms_landscape_2026'),
+      srcRef('cms_ma_partd_2026_press'),
     ],
   });
 });
@@ -128,22 +226,19 @@ cities.forEach(c => {
   const st = states.find(s => s.slug === c.stateSlug);
   const stName = st ? st.name : '';
   const f = sf(c.stateSlug);
-  const maPlans = 15 + Math.floor(Math.random() * 50);
-  const mgPlans = 8 + Math.floor(Math.random() * 6);
-  const pdPlans = 12 + Math.floor(Math.random() * 18);
-  const premMA = Math.floor(Math.random() * 30);
-  const premMG = 120 + Math.floor(Math.random() * 100);
-  const premPD = 20 + Math.floor(Math.random() * 30);
+  const mc = medicareFigures(c.stateSlug);
+  const { maPlans, mgPlans, pdPlans } = mc;
   medicareEntries.push({
     stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
     h1: `Medicare Plans in ${c.name}, ${c.stateAbbr} (2026)`,
     titleHook: `${maPlans} Plans`,
-    metaHook: `${maPlans} MA plans, avg $${premMA}/mo`,
+    metaHook: `${maPlans} MA and ${pdPlans} Part D plans statewide`,
     stateSpecificOpening: `<p>Medicare shoppers in ${c.name}, ${c.stateAbbr} can get free plan counseling from the ${f.shipName || stName + ' SHIP office'}${f.shipPhone ? ` at ${f.shipPhone}` : ''} and review insurer complaint records with the ${f.insuranceCommissioner || stName + ' Department of Insurance'}.</p>`,
-    introText: `<p>${maPlans} Medicare Advantage, ${mgPlans} Medigap, and ${pdPlans} Part D plans are sold in the ${c.name}, ${c.stateAbbr} area for 2026. Plan networks and drug formularies vary by ${f.countyTerm || 'county'}, so compare by ZIP code before enrolling.</p>`,
+    introText: `<p>${mc.countSentence(stName, f.countyTerm || 'county')} Only some of those plans serve ${c.name}, and networks and drug formularies vary by ${f.countyTerm || 'county'}, so compare by ZIP code before enrolling.</p>`,
     advantagePlans: maPlans, medigapPlans: mgPlans, partDPlans: pdPlans,
-    avgPremiumMA: `$${premMA}/mo`, avgPremiumMedigap: `$${premMG}/mo`, avgPremiumPartD: `$${premPD}/mo`,
+    avgPremiumMA: mc.premMA, avgPremiumMedigap: mc.premMG, avgPremiumPartD: mc.premPD,
+    planCountScope: `Counts and medians cover all of ${stName}; fewer plans serve any one ZIP code in ${c.name}.`,
     enrollmentPeriods: [
       { name: 'Initial Enrollment Period', startDate: '3 months before turning 65', endDate: '3 months after turning 65', description: 'Sign up for Medicare Parts A and B' },
       { name: 'Annual Enrollment Period', startDate: 'October 15', endDate: 'December 7', description: 'Switch Medicare Advantage or Part D plans' },
@@ -158,13 +253,14 @@ cities.forEach(c => {
       { name: `${c.name} Area Agency on Aging`, description: `Contact the ${c.name} Area Agency on Aging for local Medicare counseling and senior services.` },
     ],
     faqs: [
-      { question: `How many Medicare Advantage plans are available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} residents can choose from ${maPlans} Medicare Advantage plans. Plan availability varies by ${f.countyTerm || 'county'} within the ${c.metro || c.name} metro area, so use Medicare.gov's Plan Finder to see exact options at your zip code.` },
-      { question: `What is the average Medicare Advantage premium in ${c.name}?`, answer: `The average Medicare Advantage premium in the ${c.name} area is approximately $${premMA}/month. Many $0 premium plans are available, though they may have higher copays and narrower networks.` },
+      { question: `How many Medicare Advantage plans are available in ${c.name}, ${c.stateAbbr}?`, answer: `CMS's 2026 plan data lists ${maPlans} Medicare Advantage plans (excluding Special Needs Plans) offered somewhere in ${stName}; only some of them serve ${c.name}. Availability varies by ${f.countyTerm || 'county'} within the ${c.metro || c.name} metro area, so use Medicare.gov's Plan Finder to see the plans at your ZIP code.` },
+      { question: `What does a Medicare Advantage plan cost in ${c.name}?`, answer: `${mc.premFaq(stName)} CMS projected the national average Medicare Advantage premium at ${usd2(PARTD.avgMAPremium2026Projected)}/month for 2026. $0-premium plans may have higher copays and narrower networks, and you still pay the Part B premium (${usd2(PARTD.partBPremium2026)}/month in 2026).` },
       { question: `Where can I get free Medicare help in ${c.name}?`, answer: `Contact the ${f.shipName || stName + ' SHIP'}${f.shipPhone ? ` at ${f.shipPhone}` : ''} for free, unbiased Medicare counseling. You can also call 1-800-MEDICARE or visit your local ${c.name} Area Agency on Aging.` },
     ],
     sources: [
       { title: 'Medicare.gov', url: 'https://www.medicare.gov' },
-      { title: 'CMS.gov Medicare Data', url: 'https://www.cms.gov/medicare' },
+      srcRef('cms_landscape_2026'),
+      srcRef('cms_ma_partd_2026_press'),
     ],
   });
 });
@@ -186,11 +282,11 @@ const medicaidFaqTemplates = [
   }),
   (s, f, progName) => ({
     question: `Does ${progName} cover nursing home care in ${s.name}?`,
-    answer: `Yes. ${progName} pays for nursing facility care for ${s.name} seniors who meet the income, asset, and level-of-care requirements. Most applicants must complete a 5-year look-back and spend down to the $2,000 asset limit before qualifying.`,
+    answer: `Yes. ${progName} pays for nursing facility care for ${s.name} seniors who meet the income, asset, and level-of-care requirements. Applicants face a 5-year look-back on asset transfers and must spend down to the state's asset limit (often $2,000 for a single person) before qualifying.`,
   }),
   (s, f, progName) => ({
     question: `What counts as income for ${s.name} Medicaid eligibility?`,
-    answer: `${progName} counts Social Security, pensions, SSI, and most earned income toward eligibility. For most adults, income must fall below 138% of the Federal Poverty Level (about $1,732/month for an individual in 2026).`,
+    answer: `${progName} counts Social Security, pensions, SSI, and most earned income toward eligibility. In states that expanded Medicaid, adults under 65 qualify below 138% of the 2026 poverty guideline (about $1,835/month for one person in the 48 contiguous states); people 65+ are usually judged under separate aged, blind and disabled rules with lower limits that vary by state.`,
   }),
   (s, f, progName) => ({
     question: `Who administers ${progName} at the local level in ${s.name}?`,
@@ -199,6 +295,22 @@ const medicaidFaqTemplates = [
 ];
 
 const medicaidEntries = [];
+// 2026 HHS poverty guideline x 138% (ACA expansion adult group, under 65);
+// expansion status per KFF. Seniors 65+ qualify through Aged, Blind and
+// Disabled rules that each state sets.
+function medicaidIncome(stateSlug) {
+  const ab = abbrOf(stateSlug);
+  const g = ab === 'AK' ? FED.fpl2026.alaska : ab === 'HI' ? FED.fpl2026.hawaii : FED.fpl2026.contiguous;
+  const expanded = stData(stateSlug).medicaidExpansion.expanded;
+  const one = usd(g['1'] * 1.38 / 12), two = usd(g['2'] * 1.38 / 12);
+  return {
+    expansionStatus: expanded ? 'expanded' : 'not expanded',
+    incomeLimit: expanded
+      ? { individual: `${one}/month (adults under 65)`, couple: `${two}/month (adults under 65)`, fpl: `138% of the 2026 federal poverty guideline applies to adults under 65. Seniors 65+ qualify through Aged, Blind and Disabled rules set by the state, often tied to the SSI rate (${usd(SS.ssiFederalRate2026.individual)}/month in 2026).` }
+      : { individual: 'No expansion group', couple: 'No expansion group', fpl: `This state has not adopted the ACA expansion. Seniors 65+ qualify through Aged, Blind and Disabled rules set by the state, often tied to the SSI rate (${usd(SS.ssiFederalRate2026.individual)}/month in 2026).` },
+    assetLimit: { individual: 'Set by state (often $2,000)', couple: 'Set by state (often $3,000)', exemptions: ['Primary home', 'One vehicle', 'Personal belongings', 'Burial plot'] },
+  };
+}
 // Shorten long Medicaid program names for use in titles only. Prefer the
 // parenthetical acronym when present; else truncate to first two words + " Medicaid".
 function progShortFor(progName, stateName) {
@@ -236,18 +348,16 @@ states.forEach(s => {
       { label: 'Adult Protective Services', value: f.apsHotline || '1-800-677-1116' },
     ],
     programName: progName,
-    expansionStatus: 'expanded',
-    incomeLimit: { individual: '$1,732/month', couple: '$2,351/month', fpl: '138%' },
-    assetLimit: { individual: '$2,000', couple: '$3,000', exemptions: ['Primary home', 'One vehicle', 'Personal belongings', 'Burial plot'] },
+    ...medicaidIncome(s.slug),
     applicationMethods: [
-      { method: 'Online', description: `Apply online through ${s.name}'s Medicaid portal`, url: '#' },
-      { method: 'Phone', description: `Call your local ${f.countyTerm || 'county'} Department of Social Services`, url: '#' },
-      { method: 'In Person', description: `Visit your local ${f.countyTerm || 'county'} office`, url: '#' },
+      { method: 'Online', description: `Apply online through ${s.name}'s Medicaid portal (find it via USA.gov)`, url: LINKS.medicaidState.url },
+      { method: 'Phone', description: `Call your local ${f.countyTerm || 'county'} Department of Social Services`, url: LINKS.socialServices.url },
+      { method: 'In Person', description: `Visit your local ${f.countyTerm || 'county'} office`, url: LINKS.socialServices.url },
     ],
     requiredDocuments: ['Photo ID', 'Proof of income', 'Proof of residency', 'Social Security card', 'Bank statements'],
     programs: [
-      { name: 'Aged, Blind, and Disabled', description: 'Coverage for seniors 65+ and people with disabilities', eligibility: 'Income below SSI limits', url: '#' },
-      { name: 'Home and Community-Based Services', description: 'Waiver program for in-home care as an alternative to nursing facilities', eligibility: 'Nursing home level of care needed', url: '#' },
+      { name: 'Aged, Blind, and Disabled', description: 'Coverage for seniors 65+ and people with disabilities', eligibility: 'Income and asset limits set by the state', url: LINKS.medicaidState.url },
+      { name: 'Home and Community-Based Services', description: 'Waiver program for in-home care as an alternative to nursing facilities', eligibility: 'Nursing home level of care needed', url: LINKS.hcbs.url },
     ],
     managedCare: true,
     processingTime: '30-45 days',
@@ -257,7 +367,9 @@ states.forEach(s => {
     ],
     sources: [
       { title: 'Medicaid.gov', url: 'https://www.medicaid.gov' },
-      { title: `${progName}`, url: '#' },
+      { title: `${progName}: ${LINKS.medicaidState.title}`, url: LINKS.medicaidState.url },
+      srcRef('hhs_fpl_2026'),
+      srcRef('kff_expansion'),
     ],
   });
 });
@@ -278,29 +390,29 @@ cities.forEach(c => {
     stateSpecificOpening: `<p>${progName} applications for ${c.name}, ${c.stateAbbr} residents are processed at the ${c.name} ${f.countyTerm || 'county'} Department of Social Services. Adult Protective Services for the area can be reached at ${f.apsHotline || '1-800-677-1116'}.</p>`,
     introText: `<p>${progName} is ${stName}'s Medicaid program. ${c.name}, ${c.stateAbbr} residents apply through their local ${f.countyTerm || 'county'} office, with 30–45 day processing. Below are 2026 income and asset limits and the documents you need.</p>`,
     programName: progName,
-    expansionStatus: 'expanded',
-    incomeLimit: { individual: '$1,732/month', couple: '$2,351/month', fpl: '138%' },
-    assetLimit: { individual: '$2,000', couple: '$3,000', exemptions: ['Primary home', 'One vehicle', 'Personal belongings', 'Burial plot'] },
+    ...medicaidIncome(c.stateSlug),
     applicationMethods: [
-      { method: 'Online', description: `Apply online through the ${stName} Medicaid portal`, url: '#' },
-      { method: 'Phone', description: `Call the ${c.name} Department of Social Services`, url: '#' },
-      { method: 'In Person', description: `Visit your local ${c.name} ${f.countyTerm || 'county'} office`, url: '#' },
+      { method: 'Online', description: `Apply online through the ${stName} Medicaid portal (find it via USA.gov)`, url: LINKS.medicaidState.url },
+      { method: 'Phone', description: `Call the ${c.name} Department of Social Services`, url: LINKS.socialServices.url },
+      { method: 'In Person', description: `Visit your local ${c.name} ${f.countyTerm || 'county'} office`, url: LINKS.socialServices.url },
     ],
     requiredDocuments: ['Photo ID', 'Proof of income', 'Proof of residency', 'Social Security card', 'Bank statements'],
     programs: [
-      { name: 'Aged, Blind, and Disabled', description: `Coverage for seniors 65+ in ${c.name} with disabilities`, eligibility: 'Income below SSI limits', url: '#' },
-      { name: 'Home and Community-Based Services', description: `Waiver program for in-home care in ${c.name} as an alternative to nursing facilities`, eligibility: 'Nursing home level of care needed', url: '#' },
+      { name: 'Aged, Blind, and Disabled', description: `Coverage for seniors 65+ in ${c.name} with disabilities`, eligibility: 'Income and asset limits set by the state', url: LINKS.medicaidState.url },
+      { name: 'Home and Community-Based Services', description: `Waiver program for in-home care in ${c.name} as an alternative to nursing facilities`, eligibility: 'Nursing home level of care needed', url: LINKS.hcbs.url },
     ],
     managedCare: true,
     processingTime: '30-45 days',
     faqs: [
-      { question: `What are the ${progName} income limits in ${c.name}, ${c.stateAbbr}?`, answer: `In ${c.name}, ${progName} income limits follow the statewide ${stName} guidelines — generally 138% of the Federal Poverty Level for most adults. Seniors 65+ may have different limits. Contact the ${c.name} ${f.countyTerm || 'county'} office for exact figures.` },
+      { question: `What are the ${progName} income limits in ${c.name}, ${c.stateAbbr}?`, answer: `In ${c.name}, ${progName} income limits follow the statewide ${stName} rules. ${stData(c.stateSlug).medicaidExpansion.expanded ? `${stName} has expanded Medicaid, so adults under 65 qualify up to 138% of the federal poverty guideline (${medicaidIncome(c.stateSlug).incomeLimit.individual.replace(' (adults under 65)', '')} for one person in 2026).` : `${stName} has not adopted the ACA Medicaid expansion.`} Seniors 65+ qualify under Aged, Blind and Disabled limits; contact the ${c.name} ${f.countyTerm || 'county'} office for exact figures.` },
       { question: `Where can I apply for ${progName} in ${c.name}?`, answer: `Apply online through the ${stName} Medicaid portal, by phone, or in person at the ${c.name} ${f.countyTerm || 'county'} Department of Social Services. Processing typically takes 30-45 days.` },
       { question: `Does ${progName} cover home care in ${c.name}?`, answer: `Yes, ${progName} may cover home and community-based services in ${c.name} through waiver programs. These allow eligible seniors to receive care at home rather than in a nursing facility.` },
     ],
     sources: [
       { title: 'Medicaid.gov', url: 'https://www.medicaid.gov' },
-      { title: progName, url: '#' },
+      { title: `${progName}: ${LINKS.medicaidState.title}`, url: LINKS.medicaidState.url },
+      srcRef('hhs_fpl_2026'),
+      srcRef('kff_expansion'),
     ],
   });
 });
@@ -314,7 +426,7 @@ const alFaqTemplates = [
   }),
   (s, f, cost) => ({
     question: `What does assisted living actually cover in ${s.name}?`,
-    answer: `An ${s.name} assisted living community typically bundles meals, housekeeping, 24-hour staffing, medication management, and help with bathing and dressing into the ~$${cost.toLocaleString()}/mo base rate. Memory care and skilled medical needs cost extra.`,
+    answer: `An ${s.name} assisted living community typically bundles meals, housekeeping, 24-hour staffing, medication management, and help with bathing and dressing into the monthly rate (CareScout's 2025 statewide median is $${cost.toLocaleString()}/month). Memory care and skilled medical needs cost extra.`,
   }),
   (s, f, cost) => ({
     question: `How do I check an assisted living facility's inspection record in ${s.name}?`,
@@ -322,7 +434,7 @@ const alFaqTemplates = [
   }),
   (s, f, cost) => ({
     question: `Can VA Aid & Attendance help pay for assisted living in ${s.name}?`,
-    answer: `Yes. Wartime-era veterans and surviving spouses in ${s.name} may qualify for up to $2,431/month through VA Aid & Attendance. The benefit can be applied to assisted living fees. Apply through a ${f.vaDept || s.name + ' Department of Veterans Affairs'} accredited claims officer.`,
+    answer: `Yes. Wartime-era veterans in ${s.name} who need help with daily activities may qualify for VA pension with Aid & Attendance, ${AA_TEXT}. Surviving spouses have separate, lower rates. The benefit can be applied to assisted living fees. Apply through a ${f.vaDept || s.name + ' Department of Veterans Affairs'} accredited claims officer.`,
   }),
   (s, f, cost) => ({
     question: `Who licenses assisted living communities in ${s.name}?`,
@@ -331,81 +443,112 @@ const alFaqTemplates = [
 ];
 
 const alEntries = [];
+// CareScout 2025 cost fields shared by state and city assisted-living pages.
+function alCostFields(cc) {
+  const v = cc.v;
+  const pct = cc.v.assistedLivingChangePct;
+  return {
+    avgMonthlyCost: usd(v.assistedLiving),
+    costScope: cc.label('assistedLiving'),
+    nursingHomeMonthly: usd(v.nursingHomeSemiPrivate),
+    homeCareMonthly: usd(v.homeCareMonthly),
+    nationalAvg: usd(NAT.monthly.assisted_living),
+    costByLevel: [
+      { level: 'Assisted living community', monthlyCost: usd(v.assistedLiving), description: cc.label('assistedLiving') },
+      { level: 'Nursing home, semi-private room', monthlyCost: usd(v.nursingHomeSemiPrivate), description: cc.label('nursingHomeSemiPrivate') },
+      { level: 'Nursing home, private room', monthlyCost: usd(v.nursingHomePrivate), description: cc.label('nursingHomePrivate') },
+      { level: 'Home care, 44 hours/week', monthlyCost: `${usd(v.homeCareMonthly)} (${usd(v.homeCareHourly)}/hr)`, description: cc.label('homeCareMonthly') },
+      { level: 'Adult day care', monthlyCost: usd(v.adultDayMonthly), description: cc.label('adultDayMonthly') },
+    ].filter(r => !/^Not published/.test(r.monthlyCost)),
+    costTrend: pct == null ? '' : `CareScout reports the ${cc.stateName} assisted living median ${pct > 0 ? `rose ${pct}%` : pct < 0 ? `fell ${-pct}%` : 'was unchanged'} from its 2024 survey to 2025 (national: up 5%, to ${usd(NAT.monthly.assisted_living)}).`,
+  };
+}
 states.forEach(s => {
   const f = sf(s.slug);
-  const baseCost = 3000 + Math.floor(Math.random() * 3000);
+  const cc = careCosts(s.slug);
+  const baseCost = cc.v.assistedLiving;
   const progName = f.medicaidProgram || `${s.name} Medicaid`;
   const firstFaq = alFaqTemplates[rot(s.slug, alFaqTemplates.length)](s, f, baseCost, progName);
-  const opening = `Assisted living in ${s.name} is licensed by the state and averages about $${baseCost.toLocaleString()}/month for a private studio in 2026 — compared to a national average of roughly $4,500. ${progName} HCBS waivers may cover personal-care services for qualifying residents.`;
+  const opening = `Assisted living in ${s.name} is licensed by the state. CareScout's 2025 Cost of Care Survey puts the statewide median at ${usd(baseCost)}/month, compared with a national median of ${usd(NAT.monthly.assisted_living)}. ${progName} HCBS waivers may cover personal-care services for qualifying residents.`;
 
   alEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Assisted Living Cost in ${s.name} (2026)`,
-    titleHook: `$${baseCost.toLocaleString()}/mo avg`,
-    metaHook: `$${baseCost.toLocaleString()}/mo avg`,
+    titleHook: `${usd(baseCost)}/mo median`,
+    metaHook: `${usd(baseCost)}/mo median`,
     stateSpecificOpening: `<p>${opening}</p>`,
-    introText: `<p>${opening} The breakdown below shows base rates, memory-care premiums, and how ${s.name} residents use Medicaid waivers, VA Aid & Attendance, and long-term care insurance to cover costs.</p>`,
+    introText: `<p>${opening} The breakdown below compares assisted living with nursing home, home care and adult day costs in ${s.name}, and shows how residents use Medicaid waivers, VA Aid & Attendance, and long-term care insurance to cover them.</p>`,
     localContext: [
-      { label: `${s.name} average`, value: `$${baseCost.toLocaleString()}/month (vs. $4,500 national)` },
+      { label: `${s.name} median (CareScout 2025)`, value: `${usd(baseCost)}/month (vs. ${usd(NAT.monthly.assisted_living)} national)` },
       { label: 'Medicaid pathway', value: `${progName} HCBS waiver may cover personal-care services` },
       { label: 'Report neglect', value: `Adult Protective Services: ${f.apsHotline || '1-800-677-1116'}` },
     ],
-    avgMonthlyCost: `$${baseCost.toLocaleString()}`,
-    costRange: { min: `$${(baseCost - 1000).toLocaleString()}`, max: `$${(baseCost + 2000).toLocaleString()}` },
-    nationalAvg: '$4,500',
-    costByLevel: [
-      { level: 'Basic Care', monthlyCost: `$${(baseCost - 500).toLocaleString()}`, description: 'Minimal assistance with daily activities' },
-      { level: 'Standard Care', monthlyCost: `$${baseCost.toLocaleString()}`, description: 'Regular assistance with ADLs, medication management' },
-      { level: 'Enhanced Care', monthlyCost: `$${(baseCost + 1000).toLocaleString()}`, description: 'Extensive help with mobility, bathing, and medical needs' },
-    ],
+    ...alCostFields(cc),
     includedServices: ['Three meals daily', 'Housekeeping', 'Laundry', 'Transportation', '24-hour staff', 'Social activities', 'Medication management'],
     paymentOptions: [
       { method: 'Private Pay', description: 'Out-of-pocket payment is the most common method', eligible: 'All residents' },
       { method: 'Long-Term Care Insurance', description: 'Policies may cover part or all of assisted living costs', eligible: 'Policyholders' },
       { method: 'Medicaid Waiver', description: `${progName} may offer HCBS waivers that cover personal-care services in assisted living`, eligible: 'Income-qualified residents' },
-      { method: 'Veterans Benefits', description: `VA Aid & Attendance (up to $2,431/mo) applied through ${f.vaDept || s.name + ' VA'}`, eligible: 'Qualifying veterans and spouses' },
+      { method: 'Veterans Benefits', description: `VA Aid & Attendance (up to ${aaMonthly}/mo for a single veteran at December 2025 rates) applied through ${f.vaDept || s.name + ' VA'}`, eligible: 'Qualifying veterans and spouses' },
     ],
-    memoryCare: { avgCost: `$${(baseCost + 1500).toLocaleString()}`, description: 'Specialized memory care units provide secured environments and programming for residents with dementia.' },
     faqs: [
       firstFaq,
-      { question: `How much does assisted living cost in ${s.name}?`, answer: `The average monthly cost of assisted living in ${s.name} is approximately $${baseCost.toLocaleString()}, though costs vary by location, care level, and amenities.` },
+      { question: `How much does assisted living cost in ${s.name}?`, answer: `CareScout's 2025 Cost of Care Survey puts the ${s.name} median at ${usd(baseCost)}/month, against a national median of ${usd(NAT.monthly.assisted_living)}. Individual communities charge more or less depending on location, room type, and care needs.` },
     ],
-    sources: [
-      { title: 'Genworth Cost of Care Survey', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' },
-    ],
+    sources: [CARE_SRC],
   });
 });
 // City-level assisted living pages
 cities.forEach(c => {
-  const cityCost = 3200 + Math.floor(Math.random() * 3500);
+  const cc = careCosts(c.stateSlug, c);
+  const cityCost = cc.v.assistedLiving;
   alEntries.push({
     stateSlug: c.stateSlug, state: states.find(s => s.slug === c.stateSlug)?.name || '', stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
     h1: `Assisted Living Cost in ${c.name}, ${c.stateAbbr} (2026)`,
-    introText: `<p>See 2026 assisted living costs in ${c.name}, ${c.stateAbbr}. Compare monthly prices and find communities near you.</p>`,
-    avgMonthlyCost: `$${cityCost.toLocaleString()}`,
-    costRange: { min: `$${(cityCost - 800).toLocaleString()}`, max: `$${(cityCost + 1500).toLocaleString()}` },
-    nationalAvg: '$4,500',
-    costByLevel: [
-      { level: 'Basic Care', monthlyCost: `$${(cityCost - 500).toLocaleString()}`, description: 'Minimal assistance' },
-      { level: 'Standard Care', monthlyCost: `$${cityCost.toLocaleString()}`, description: 'Regular assistance with ADLs' },
-      { level: 'Enhanced Care', monthlyCost: `$${(cityCost + 1200).toLocaleString()}`, description: 'Extensive help with medical needs' },
-    ],
+    titleHook: `${usd(cityCost)}/mo ${cc.tag('assistedLiving')}`,
+    introText: `<p>Assisted living for ${c.name}, ${c.stateAbbr} costs a median ${usd(cityCost)}/month (${cc.label('assistedLiving')}). Below it is compared with nursing home, home care and adult day costs, with ways to pay.</p>`,
+    ...alCostFields(cc),
     includedServices: ['Three meals daily', 'Housekeeping', 'Laundry', 'Transportation', '24-hour staff'],
     paymentOptions: [
       { method: 'Private Pay', description: 'Out-of-pocket payment', eligible: 'All residents' },
       { method: 'Long-Term Care Insurance', description: 'May cover costs', eligible: 'Policyholders' },
-      { method: 'Veterans Benefits', description: 'VA Aid & Attendance benefit', eligible: 'Qualifying veterans' },
+      { method: 'Veterans Benefits', description: `VA Aid & Attendance (up to ${aaMonthly}/mo for a single veteran at December 2025 rates)`, eligible: 'Qualifying veterans' },
     ],
     faqs: [
-      { question: `How much does assisted living cost in ${c.name}?`, answer: `The average monthly cost in ${c.name} is approximately $${cityCost.toLocaleString()}.` },
+      { question: `How much does assisted living cost in ${c.name}?`, answer: `The median is ${usd(cityCost)}/month (${cc.label('assistedLiving')}), against a national median of ${usd(NAT.monthly.assisted_living)}. Individual communities charge more or less depending on room type and care needs.` },
     ],
-    sources: [{ title: 'Genworth Cost of Care Survey', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' }],
+    sources: [CARE_SRC],
   });
 });
 write('assisted-living.json', alEntries);
 
 // ---- ENGINE 4: Social Security (state + city) ----
+// State averages: SSA OASDI Beneficiaries by State and County, Dec 2024
+// (Table 3 amount / Table 2 count). National 2026 figures: SSA COLA fact
+// sheet. SSI supplement status: SSA "Understanding SSI" 2026 lists.
+function ssiSupText(stName, slug) {
+  const sup = stData(slug).ssiStateSupplement;
+  return sup.pays
+    ? `${stName} pays a state supplement on top of federal SSI (administered by ${sup.administeredBy}, per SSA). The amount depends on your living arrangement, so ask ${sup.administeredBy === 'the state' ? 'the state agency' : 'Social Security'} what applies to you. The 2026 federal SSI rate is ${usd(SS.ssiFederalRate2026.individual)} (individual) or ${usd(SS.ssiFederalRate2026.couple)} (couple) per month.`
+    : `${stName} does not pay a state supplement on top of federal SSI (SSA). SSI recipients receive up to the 2026 federal rate of ${usd(SS.ssiFederalRate2026.individual)} (individual) or ${usd(SS.ssiFederalRate2026.couple)} (couple) per month.`;
+}
+const SS_COMMON = {
+  maxRetirementBenefit: `${usd(SS.maxBenefitAtFRA2026)}/mo`,
+  fullRetirementAge: '67', earlyRetirementAge: '62', cola: SS.cola2026,
+  ssiMaxBenefit: { individual: `${usd(SS.ssiFederalRate2026.individual)}/mo`, couple: `${usd(SS.ssiFederalRate2026.couple)}/mo` },
+  applicationMethods: [
+    { method: 'Online', description: 'Apply at ssa.gov', url: 'https://www.ssa.gov/apply' },
+    { method: 'Phone', description: 'Call 1-800-772-1213 (TTY 1-800-325-0778), Monday–Friday, 8 a.m.–7 p.m.', url: LINKS.ssaContact.url },
+    { method: 'In Person', description: 'Find your nearest office with the SSA Office Locator, and make an appointment first', url: LINKS.ssaLocator.url },
+  ],
+  sources: [
+    { title: 'Social Security Administration', url: 'https://www.ssa.gov' },
+    srcRef('ssa_oasdi_sc_2024_t3'),
+    srcRef('ssa_colafacts2026'),
+    srcRef('ssa_ssi_2026'),
+  ],
+};
 const ssFaqTemplates = [
   (s, f, avgBen) => ({
     question: `Does ${s.name} tax Social Security benefits?`,
@@ -413,7 +556,7 @@ const ssFaqTemplates = [
   }),
   (s, f, avgBen) => ({
     question: `Does ${s.name} pay a state SSI supplement?`,
-    answer: `${f.ssiSupplement && f.ssiSupplement !== 'no state supplement' && !f.ssiSupplement.startsWith('no ') ? f.ssiSupplement : `${s.name} does not pay a general state supplement on top of federal SSI. SSI recipients receive the federal maximum of $943 (individual) or $1,415 (couple) per month.`}`,
+    answer: ssiSupText(s.name, s.slug),
   }),
   (s, f, avgBen) => ({
     question: `Where is the closest Social Security office in ${s.name}?`,
@@ -421,7 +564,7 @@ const ssFaqTemplates = [
   }),
   (s, f, avgBen) => ({
     question: `What's the average Social Security check in ${s.name}?`,
-    answer: `Retired workers in ${s.name} receive about $${avgBen}/month in 2026. The exact amount depends on your 35 highest-earning years and the age you claim — delaying from 62 to 70 can increase your monthly benefit by 76%.`,
+    answer: `Retired workers in ${s.name} averaged $${avgBen.toLocaleString('en-US')}/month in December 2024, the latest state figures from SSA; the ${SS.cola2026} COLA for 2026 (and 2.5% for 2025) has raised payments since. Nationally, the average retired-worker benefit was ${usd(SS.avgRetiredWorkerJan2026)} in January 2026. Your amount depends on your 35 highest-earning years and the age you claim; for someone with a full retirement age of 67, waiting from 62 to 70 raises the monthly benefit by roughly 77%.`,
   }),
   (s, f, avgBen) => ({
     question: `What phone number should ${s.name} residents use for Social Security?`,
@@ -432,82 +575,70 @@ const ssFaqTemplates = [
 const ssEntries = [];
 states.forEach(s => {
   const f = sf(s.slug);
-  const avgBen = 1700 + Math.floor(Math.random() * 400);
-  const hasSup = !!f.ssiSupplement && !f.ssiSupplement.startsWith('no ');
-  const supAmt = Math.floor(Math.random() * 200);
-  const ssdiBen = 1400 + Math.floor(Math.random() * 300);
+  const ssd = stData(s.slug).socialSecurityDec2024;
+  const avgBen = ssd.avgRetiredWorker;
+  const ssdiBen = ssd.avgDisabledWorker;
+  const hasSup = stData(s.slug).ssiStateSupplement.pays;
+  const supText = ssiSupText(s.name, s.slug);
   const firstFaq = ssFaqTemplates[rot(s.slug, ssFaqTemplates.length)](s, f, avgBen);
 
-  const opening = f.taxesSsNote ? `${f.taxesSsNote} ${hasSup ? f.ssiSupplement : ''}`.trim() : `${s.name} retirees should check state tax rules on Social Security with the ${s.name} Department of Revenue.`;
+  const opening = `${f.taxesSsNote || `${s.name} retirees should check state tax rules on Social Security with the ${s.name} Department of Revenue.`} ${hasSup ? `${s.name} also pays a state SSI supplement.` : `${s.name} pays no state SSI supplement.`}`;
 
   ssEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Social Security & SSI Benefits in ${s.name} (2026)`,
-    titleHook: `$${avgBen}/mo avg`,
-    metaHook: `$${avgBen}/mo state avg`,
+    titleHook: `${hasSup ? 'SSI + State Supplement' : 'SSI, No State Supplement'}, ${f.taxesSs ? 'State Tax Rules' : 'No State Tax'}`,
+    metaHook: `$${avgBen.toLocaleString('en-US')}/mo avg (Dec 2024)`,
     stateSpecificOpening: `<p>${opening}</p>`,
-    introText: `<p>${opening} Retired workers in ${s.name} receive an average $${avgBen}/month in 2026. Below you'll find claiming-age trade-offs, SSDI and SSI amounts, and ways to maximize your benefit.</p>`,
+    introText: `<p>${opening} Retired workers in ${s.name} averaged $${avgBen.toLocaleString('en-US')}/month in December 2024 (latest SSA state data, before the 2025 and 2026 COLAs). Below you'll find claiming-age trade-offs, SSDI and SSI amounts, and ways to maximize your benefit.</p>`,
     localContext: [
       { label: `${s.name} tax treatment`, value: f.taxesSsNote || 'Check with state Department of Revenue' },
-      { label: 'State SSI supplement', value: f.ssiSupplement || 'No state supplement' },
+      { label: 'State SSI supplement', value: hasSup ? `Yes (administered by ${stData(s.slug).ssiStateSupplement.administeredBy})` : 'No state supplement (SSA)' },
       { label: 'SHIP counseling', value: `${f.shipName || s.name + ' SHIP'}${f.shipPhone ? ' — ' + f.shipPhone : ''}` },
     ],
-    avgRetirementBenefit: `$${avgBen}/mo`, maxRetirementBenefit: '$4,018/mo',
-    hasSsiSupplement: hasSup, ssiSupplement: hasSup ? f.ssiSupplement : `$${supAmt}/mo`,
-    fullRetirementAge: '67', earlyRetirementAge: '62', cola: '2.5%',
-    ssdiAvgBenefit: `$${ssdiBen}/mo`,
-    ssiMaxBenefit: { individual: '$943/mo', couple: '$1,415/mo' },
+    ...SS_COMMON,
+    avgRetirementBenefit: `$${avgBen.toLocaleString('en-US')}/mo (Dec 2024)`,
+    hasSsiSupplement: hasSup, ssiSupplement: supText,
+    ssdiAvgBenefit: `$${ssdiBen.toLocaleString('en-US')}/mo (Dec 2024)`,
     taxInfo: f.taxesSsNote || `Check with ${s.name}'s Department of Revenue for current tax rules on Social Security benefits.`,
     localOffices: [
-      { name: `${s.name} Social Security Office`, address: `Main Street, ${s.name}`, phone: '1-800-772-1213', hours: 'Mon-Fri 9am-4pm' },
-    ],
-    applicationMethods: [
-      { method: 'Online', description: 'Apply at ssa.gov', url: 'https://www.ssa.gov/apply' },
-      { method: 'Phone', description: 'Call 1-800-772-1213', url: '#' },
-      { method: 'In Person', description: 'Visit your local Social Security office', url: '#' },
+      { name: `Social Security offices in ${s.name}`, address: 'Use the SSA Office Locator (ssa.gov/locator) to find the office that serves your ZIP code; book an appointment before visiting.', phone: '1-800-772-1213', hours: 'National line: Mon–Fri, 8 a.m.–7 p.m.' },
     ],
     faqs: [
       firstFaq,
       { question: `What is the full retirement age for people turning 65 in ${s.name}?`, answer: `Full retirement age for most people claiming benefits in 2026 is 67 (for those born in 1960 or later). You can claim as early as 62 with a reduced benefit, or delay until 70 to earn delayed retirement credits of 8% per year.` },
     ],
-    sources: [
-      { title: 'Social Security Administration', url: 'https://www.ssa.gov' },
-    ],
+    sources: SS_COMMON.sources,
   });
 });
 // City-level Social Security pages
 cities.forEach(c => {
   const st = states.find(s => s.slug === c.stateSlug);
   const stName = st ? st.name : '';
-  const avgBen = 1700 + Math.floor(Math.random() * 400);
-  const ssdiBen = 1400 + Math.floor(Math.random() * 300);
+  const ssd = stData(c.stateSlug).socialSecurityDec2024;
+  const avgBen = ssd.avgRetiredWorker;
+  const ssdiBen = ssd.avgDisabledWorker;
+  const hasSup = stData(c.stateSlug).ssiStateSupplement.pays;
+  const cf = sf(c.stateSlug);
   ssEntries.push({
     stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
     h1: `Social Security & SSI Benefits in ${c.name}, ${c.stateAbbr} (2026)`,
     introText: `<p>See 2026 Social Security and SSI benefit amounts for ${c.name}, ${c.stateAbbr} residents. Find local Social Security offices, learn how to maximize your benefits, and apply.</p>`,
-    avgRetirementBenefit: `$${avgBen}/mo`, maxRetirementBenefit: '$4,018/mo',
-    hasSsiSupplement: Math.random() > 0.5, ssiSupplement: `$${Math.floor(Math.random() * 200)}/mo`,
-    fullRetirementAge: '67', earlyRetirementAge: '62', cola: '2.5%',
-    ssdiAvgBenefit: `$${ssdiBen}/mo`,
-    ssiMaxBenefit: { individual: '$943/mo', couple: '$1,415/mo' },
-    taxInfo: `Check with ${stName}'s tax authority for current rules on Social Security benefit taxation.`,
+    ...SS_COMMON,
+    avgRetirementBenefit: `$${avgBen.toLocaleString('en-US')}/mo (${c.stateAbbr}, Dec 2024)`,
+    hasSsiSupplement: hasSup, ssiSupplement: ssiSupText(stName, c.stateSlug),
+    ssdiAvgBenefit: `$${ssdiBen.toLocaleString('en-US')}/mo (${c.stateAbbr}, Dec 2024)`,
+    taxInfo: cf.taxesSsNote || `Check with ${stName}'s tax authority for current rules on Social Security benefit taxation.`,
     localOffices: [
-      { name: `${c.name} Social Security Office`, address: `${c.name}, ${c.stateAbbr}`, phone: '1-800-772-1213', hours: 'Mon-Fri 9am-4pm' },
-    ],
-    applicationMethods: [
-      { method: 'Online', description: 'Apply at ssa.gov', url: 'https://www.ssa.gov/apply' },
-      { method: 'Phone', description: 'Call 1-800-772-1213', url: '#' },
-      { method: 'In Person', description: `Visit the ${c.name} Social Security office`, url: '#' },
+      { name: `Social Security offices serving ${c.name}`, address: `Use the SSA Office Locator (ssa.gov/locator) with your ${c.name} ZIP code to find your office; book an appointment before visiting.`, phone: '1-800-772-1213', hours: 'National line: Mon–Fri, 8 a.m.–7 p.m.' },
     ],
     faqs: [
       { question: `Where is the Social Security office in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} has Social Security offices serving the ${c.metro || c.name} area. Call 1-800-772-1213 or visit ssa.gov to find the nearest office and schedule an appointment.` },
-      { question: `What is the average Social Security benefit for retirees in ${c.name}?`, answer: `The average monthly Social Security retirement benefit for ${c.name} area retirees is approximately $${avgBen}. Your actual benefit depends on your lifetime earnings, claiming age, and work history.` },
+      { question: `What is the average Social Security benefit for retirees in ${c.name}?`, answer: `SSA does not publish a ${c.name} figure on its own. Statewide, ${stName} retired workers averaged $${avgBen.toLocaleString('en-US')}/month in December 2024 (latest SSA state data); the ${SS.cola2026} COLA for 2026 has raised payments since. Your benefit depends on your lifetime earnings, claiming age, and work history.` },
       { question: `Can I apply for Social Security online in ${c.name}?`, answer: `Yes, ${c.name} residents can apply for Social Security retirement or disability benefits online at ssa.gov, by phone at 1-800-772-1213, or in person at the local ${c.name} Social Security office.` },
     ],
-    sources: [
-      { title: 'Social Security Administration', url: 'https://www.ssa.gov' },
-    ],
+    sources: SS_COMMON.sources,
   });
 });
 write('social-security.json', ssEntries);
@@ -524,7 +655,7 @@ const hcFaqTemplates = [
   }),
   (s, f, hourly) => ({
     question: `How is home care different from home health care in ${s.name}?`,
-    answer: `Home care (often $${hourly}/hr in ${s.name}) covers personal care, homemaker services, and companionship — typically private-pay. Home health care is clinical (nursing, physical therapy, wound care) and is often covered by Medicare Part A or B following a qualifying hospital stay.`,
+    answer: `Home care (a statewide median of $${hourly}/hr in ${s.name}, per CareScout 2025) covers personal care, homemaker services, and companionship — typically private-pay. Home health care is clinical (nursing, physical therapy, wound care) and is often covered by Medicare Part A or B following a qualifying hospital stay.`,
   }),
   (s, f, hourly) => ({
     question: `Can a family member be paid to provide home care in ${s.name}?`,
@@ -532,38 +663,46 @@ const hcFaqTemplates = [
   }),
   (s, f, hourly) => ({
     question: `What's the hourly rate for home health aides in ${s.name}?`,
-    answer: `Home health aides in ${s.name} average about $${hourly}/hour in 2026 — roughly $${(hourly * 44 * 4).toLocaleString()}/month for 44 hours a week of care. Skilled nursing and specialty dementia care cost more; homemaker services typically run slightly less.`,
+    answer: `CareScout's 2025 Cost of Care Survey puts the ${s.name} median for home care at $${hourly}/hour, or ${usd(careCosts(s.slug).v.homeCareMonthly)}/month for 44 hours a week. Skilled nursing at home costs more (${careCosts(s.slug).v.skilledNursingHourly ? usd(careCosts(s.slug).v.skilledNursingHourly) + '/hour statewide median' : 'CareScout reports no statewide hourly figure'}).`,
   }),
 ];
 
 const hcEntries = [];
+function hcCostFields(cc) {
+  const v = cc.v;
+  return {
+    avgHourlyCost: `${usd(v.homeCareHourly)}/hr`,
+    avgMonthlyCost: `${usd(v.homeCareMonthly)}/mo`,
+    nationalAvgHourly: `${usd(NAT.hourly.home_care_services)}/hr`,
+    costScope: cc.label('homeCareHourly'),
+    costByType: [
+      { type: 'Home care (non-medical, 44 hrs/week)', hourlyCost: `${usd(v.homeCareHourly)}/hr`, monthlyCost: `${usd(v.homeCareMonthly)}/mo`, description: cc.label('homeCareHourly') },
+      { type: 'Skilled nursing at home', hourlyCost: v.skilledNursingHourly ? `${usd(v.skilledNursingHourly)}/hr` : 'Not published', monthlyCost: 'Billed per hour', description: cc.label('skilledNursingHourly') },
+      { type: 'Adult day care', hourlyCost: '—', monthlyCost: `${usd(v.adultDayMonthly)}/mo`, description: cc.label('adultDayMonthly') },
+    ],
+  };
+}
 states.forEach(s => {
   const f = sf(s.slug);
-  const hourly = 22 + Math.floor(Math.random() * 15);
+  const cc = careCosts(s.slug);
+  const hourly = cc.v.homeCareHourly;
   const progName = f.medicaidProgram || `${s.name} Medicaid`;
   const firstFaq = hcFaqTemplates[rot(s.slug, hcFaqTemplates.length)](s, f, hourly, progName);
-  const opening = `Home care in ${s.name} averages about $${hourly}/hour in 2026 — roughly $${(hourly * 44 * 4).toLocaleString()}/month for 44 hours a week. ${progName}'s HCBS waivers may pay personal-care attendants for seniors who qualify at a nursing-home level of care.`;
+  const opening = `CareScout's 2025 Cost of Care Survey puts the ${s.name} median for home care at ${usd(hourly)}/hour, or ${usd(cc.v.homeCareMonthly)}/month for 44 hours a week (national median: ${usd(NAT.hourly.home_care_services)}/hour). ${progName}'s HCBS waivers may pay personal-care attendants for seniors who qualify at a nursing-home level of care.`;
 
   hcEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Home Care Cost in ${s.name} (2026)`,
-    titleHook: `$${hourly}/hr`,
-    metaHook: `$${hourly}/hr aide rate`,
+    titleHook: `${usd(hourly)}/hr median`,
+    metaHook: `${usd(hourly)}/hr median`,
     stateSpecificOpening: `<p>${opening}</p>`,
-    introText: `<p>${opening} Below you'll find rates for homemaker, aide, and CNA-level services and how ${s.name} residents use Medicaid waivers, VA benefits, and long-term care insurance to pay.</p>`,
+    introText: `<p>${opening} Below you'll find home care, skilled nursing and adult day costs and how ${s.name} residents use Medicaid waivers, VA benefits, and long-term care insurance to pay.</p>`,
     localContext: [
-      { label: `${s.name} aide rate`, value: `~$${hourly}/hour (national avg $30)` },
+      { label: `${s.name} home care median`, value: `${usd(hourly)}/hour (national ${usd(NAT.hourly.home_care_services)})` },
       { label: 'Medicaid home care', value: `${progName} HCBS waiver may cover in-home services` },
       { label: 'Agency licensing', value: `Verify through ${s.name}'s Department of Health` },
     ],
-    avgHourlyCost: `$${hourly}/hr`,
-    avgMonthlyCost: `$${(hourly * 44 * 4).toLocaleString()}/mo`,
-    nationalAvgHourly: '$30/hr',
-    costByType: [
-      { type: 'Homemaker Services', hourlyCost: `$${hourly - 3}/hr`, monthlyCost: `$${((hourly - 3) * 44 * 4).toLocaleString()}/mo`, description: 'Light housekeeping, meal prep, errands' },
-      { type: 'Home Health Aide', hourlyCost: `$${hourly}/hr`, monthlyCost: `$${(hourly * 44 * 4).toLocaleString()}/mo`, description: 'Personal care, bathing, dressing assistance' },
-      { type: 'Certified Nursing Assistant', hourlyCost: `$${hourly + 5}/hr`, monthlyCost: `$${((hourly + 5) * 44 * 4).toLocaleString()}/mo`, description: 'Medical support under nurse supervision' },
-    ],
+    ...hcCostFields(cc),
     paymentOptions: [
       { method: 'Private Pay', description: 'Most common payment method for home care', eligible: 'Everyone' },
       { method: 'Medicaid Home Care Waiver', description: `${progName} HCBS waiver programs cover personal-care attendants`, eligible: 'Income-qualified' },
@@ -573,28 +712,24 @@ states.forEach(s => {
     medicaidCoverage: `${progName} covers home care services through HCBS waiver programs for ${s.name} seniors who need help to remain safely at home.`,
     faqs: [
       firstFaq,
-      { question: `How many hours of home care can a senior get through ${progName}?`, answer: `Hours depend on the waiver, the individualized care plan, and the senior's level of care. Some ${s.name} seniors receive 10–20 hours a week; others with complex needs receive substantially more or qualify for the PACE program.` },
+      { question: `How many hours of home care can a senior get through ${progName}?`, answer: `Hours depend on the waiver, the individualized care plan, and the senior's level of care. Some ${s.name} seniors receive a few hours a week; others with complex needs receive substantially more or qualify for the PACE program.` },
     ],
-    sources: [{ title: 'Genworth Cost of Care Survey', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' }],
+    sources: [CARE_SRC],
   });
 });
 cities.forEach(c => {
-  const hourly = 24 + Math.floor(Math.random() * 18);
+  const cc = careCosts(c.stateSlug, c);
+  const hourly = cc.v.homeCareHourly;
   hcEntries.push({
     stateSlug: c.stateSlug, stateAbbr: c.stateAbbr, citySlug: c.slug, city: c.name,
     h1: `Home Care Cost in ${c.name}, ${c.stateAbbr} (2026)`,
-    introText: `<p>See 2026 home care costs in ${c.name}, ${c.stateAbbr}. Compare hourly rates and find local agencies.</p>`,
-    avgHourlyCost: `$${hourly}/hr`,
-    avgMonthlyCost: `$${(hourly * 44 * 4).toLocaleString()}/mo`,
-    nationalAvgHourly: '$30/hr',
-    costByType: [
-      { type: 'Home Health Aide', hourlyCost: `$${hourly}/hr`, monthlyCost: `$${(hourly * 44 * 4).toLocaleString()}/mo`, description: 'Personal care assistance' },
-      { type: 'Skilled Nursing', hourlyCost: `$${hourly + 15}/hr`, monthlyCost: `$${((hourly + 15) * 44 * 4).toLocaleString()}/mo`, description: 'Medical care at home' },
-    ],
+    titleHook: `${usd(hourly)}/hr ${cc.tag('homeCareHourly')}`,
+    introText: `<p>Home care for ${c.name}, ${c.stateAbbr} costs a median ${usd(hourly)}/hour, or ${usd(cc.v.homeCareMonthly)}/month for 44 hours a week (${cc.label('homeCareHourly')}). Below are skilled nursing and adult day costs for comparison.</p>`,
+    ...hcCostFields(cc),
     faqs: [
-      { question: `How much does home care cost in ${c.name}?`, answer: `Home care in ${c.name} averages $${hourly}/hr.` },
+      { question: `How much does home care cost in ${c.name}?`, answer: `The median is ${usd(hourly)}/hour, about ${usd(cc.v.homeCareMonthly)}/month for 44 hours a week (${cc.label('homeCareHourly')}). The national median is ${usd(NAT.hourly.home_care_services)}/hour.` },
     ],
-    sources: [{ title: 'Genworth Cost of Care Survey', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' }],
+    sources: [CARE_SRC],
   });
 });
 write('home-care.json', hcEntries);
@@ -609,7 +744,7 @@ const rxFaqTemplates = [
   }),
   (s, f, spap) => ({
     question: `Who qualifies for Medicare Extra Help in ${s.name}?`,
-    answer: `In 2026, Medicare Extra Help (the Part D Low-Income Subsidy) is available to ${s.name} residents with income under $22,590 (individual) or $30,660 (couple) and resources under $17,220 (individual) or $34,360 (couple). Full Extra Help reduces Part D premiums to $0 and caps copays.`,
+    answer: `In 2026, Medicare Extra Help (the Part D Low-Income Subsidy) is available to ${s.name} residents with income under ${usd(EH.incomeLimit.individual)} (individual) or ${usd(EH.incomeLimit.couple)} (couple) a year and resources under ${usd(EH.resourceLimit.individual)} (individual) or ${usd(EH.resourceLimit.couple)} (couple), per Medicare.gov. Extra Help lowers Part D premiums (to $0 in many plans), the deductible, and copays.`,
   }),
   (s, f, spap) => ({
     question: `Where do ${s.name} residents apply for Extra Help?`,
@@ -622,19 +757,24 @@ const rxFaqTemplates = [
       : `${s.name} does not have a state SPAP, but you can combine Medicare Part D with manufacturer patient assistance programs and GoodRx-style discount cards when a particular prescription is not on your plan's formulary.`,
   }),
   (s, f, spap) => ({
-    question: `What should ${s.name} seniors do during the Medicare Part D coverage gap?`,
-    answer: `The Part D coverage gap has largely been reformed; in 2026, out-of-pocket Part D costs are capped at $2,000 annually. ${s.name} seniors who hit the cap pay $0 for covered drugs the rest of the year. Ask your Part D plan or ${f.shipName || 'SHIP counselor'} to verify how the cap applies to your plan.`,
+    question: `Is there still a Medicare Part D coverage gap in ${s.name}?`,
+    answer: `No. The coverage gap ("donut hole") ended in 2025. In 2026, Part D out-of-pocket costs for covered drugs are capped at ${usd(PARTD.partDOutOfPocketCap2026)} (rising to ${usd(PARTD.partDOutOfPocketCap2027)} in 2027), the standard deductible is ${usd(PARTD.partDDeductible2026)}, and the Medicare Prescription Payment Plan can spread your costs into monthly payments. ${s.name} seniors who hit the cap pay $0 for covered drugs the rest of the year. Ask your Part D plan or ${f.shipName || 'SHIP counselor'} how it applies to your plan.`,
   }),
 ];
 
 const rxEntries = [];
+const RX_COMMON = {
+  extraHelpIncomeLimits: { individual: `${usd(EH.incomeLimit.individual)}/year`, couple: `${usd(EH.incomeLimit.couple)}/year` },
+  extraHelpAssetLimits: { individual: usd(EH.resourceLimit.individual), couple: usd(EH.resourceLimit.couple) },
+};
 states.forEach(s => {
   const f = sf(s.slug);
-  const spapName = f.spapName || null;
+  const sp = stData(s.slug).spap;
+  const spapName = sp.has ? sp.name : null;
   const firstFaq = rxFaqTemplates[rot(s.slug, rxFaqTemplates.length)](s, f, spapName);
   const opening = spapName
-    ? `${s.name} operates ${spapName} alongside Medicare Part D, which can reduce drug costs for eligible residents. Medicare Extra Help remains the largest federal lever — it zeros out Part D premiums for seniors under $22,590 in annual income.`
-    : `${s.name} does not run a dedicated State Pharmaceutical Assistance Program, so Medicare Extra Help, manufacturer patient-assistance programs, and pharmacy discount cards are the main tools. Extra Help zeros out Part D premiums for single filers under $22,590.`;
+    ? `${s.name} operates ${spapName} alongside Medicare Part D, which can reduce drug costs for eligible residents. ${sp.note ? sp.note + ' ' : ''}Federal Medicare Extra Help is open to single people with 2026 income under ${usd(EH.incomeLimit.individual)}.`
+    : `${s.name} does not run a state-funded State Pharmaceutical Assistance Program${sp.endedNote ? ` (${sp.endedNote})` : ''}, so Medicare Extra Help, manufacturer patient-assistance programs, and pharmacy discount cards are the main tools. Extra Help is open to single people with 2026 income under ${usd(EH.incomeLimit.individual)}.`;
 
   rxEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
@@ -644,22 +784,22 @@ states.forEach(s => {
     stateSpecificOpening: `<p>${opening}</p>`,
     introText: `<p>${opening} Below are the federal Extra Help income limits, ${spapName ? spapName + ', ' : ''}manufacturer patient-assistance programs, and discount options to lower your Rx spend in ${s.name}.</p>`,
     localContext: [
-      { label: 'Federal Extra Help', value: 'Under $22,590 income zeros out Part D premiums' },
-      { label: `${s.name} SPAP`, value: spapName || 'No state SPAP — use federal Extra Help & PAPs' },
+      { label: 'Federal Extra Help (2026)', value: `Income under ${usd(EH.incomeLimit.individual)} single / ${usd(EH.incomeLimit.couple)} couple` },
+      { label: `${s.name} SPAP`, value: spapName || 'No state-funded SPAP — use federal Extra Help & PAPs' },
       { label: 'SHIP counseling', value: `${f.shipName || s.name + ' SHIP'}${f.shipPhone ? ' — ' + f.shipPhone : ''}` },
     ],
     hasStateSPAP: !!spapName,
     spapName: spapName || `${s.name} has no dedicated SPAP`,
     spapDescription: spapName
-      ? `${spapName} is ${s.name}'s State Pharmaceutical Assistance Program — it helps eligible residents afford prescription medications and works with Medicare Part D.`
-      : `${s.name} does not operate a general State Pharmaceutical Assistance Program. Residents should rely on Medicare Extra Help, manufacturer programs, and discount cards.`,
+      ? `${spapName} is ${s.name}'s State Pharmaceutical Assistance Program. It works alongside Medicare Part D (Part D pays first).${sp.note ? ' ' + sp.note : ''}`
+      : `${s.name} does not operate a state-funded State Pharmaceutical Assistance Program${sp.endedNote ? ` (${sp.endedNote})` : ''}. Residents should rely on Medicare Extra Help, manufacturer programs, and discount cards.`,
+    spapUrl: spapName ? sp.url : '',
     spapEligibility: 'Income-based; contact program for details',
-    extraHelpIncomeLimits: { individual: '$22,590/year', couple: '$30,660/year' },
-    extraHelpAssetLimits: { individual: '$17,220', couple: '$34,360' },
+    ...RX_COMMON,
     programs: [
-      { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: 'Income under $22,590 (individual)', description: 'Helps pay Part D premiums, deductibles, and copays', phone: '1-800-772-1213' },
+      { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: `Income under ${usd(EH.incomeLimit.individual)} (individual, 2026)`, description: 'Helps pay Part D premiums, deductibles, and copays', phone: '1-800-772-1213' },
       spapName
-        ? { name: spapName, type: 'State', eligibility: `${s.name} income guidelines`, description: `${s.name}'s state pharmaceutical assistance program` }
+        ? { name: spapName, type: 'State', eligibility: `${s.name} income guidelines`, description: `${s.name}'s state pharmaceutical assistance program`, url: sp.url }
         : { name: `${s.name} Medicare Savings Program`, type: 'State', eligibility: 'Low-income Medicare beneficiaries', description: `Helps ${s.name} residents pay Medicare premiums and cost-sharing via Medicaid.` },
       { name: 'NeedyMeds', type: 'Nonprofit', eligibility: 'Varies by program', description: 'Database of patient assistance programs from drug manufacturers', url: 'https://www.needymeds.org' },
       { name: 'RxAssist', type: 'Nonprofit', eligibility: 'Varies', description: 'Comprehensive database of prescription assistance programs', url: 'https://www.rxassist.org' },
@@ -674,6 +814,9 @@ states.forEach(s => {
     ],
     sources: [
       { title: 'Medicare.gov Extra Help', url: 'https://www.medicare.gov/basics/costs/help/drug-costs' },
+      srcRef('medicare_partd_costs'),
+      ...(spapName ? [{ title: spapName, url: sp.url }] : []),
+      srcRef('brevy_spap_2026'),
     ],
   });
 });
@@ -681,20 +824,23 @@ states.forEach(s => {
 cities.forEach(c => {
   const st = states.find(s => s.slug === c.stateSlug);
   const stName = st ? st.name : '';
+  const csp = stData(c.stateSlug).spap;
   rxEntries.push({
     stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
     h1: `Prescription Assistance in ${c.name}, ${c.stateAbbr} (2026)`,
-    introText: `<p>Find programs to help ${c.name}, ${c.stateAbbr} residents save on prescription drug costs in 2026. See Medicare Extra Help, ${stName} pharmaceutical programs, and local pharmacy resources.</p>`,
-    hasStateSPAP: Math.random() > 0.4,
-    spapName: `${stName} Pharmaceutical Assistance Program`,
-    spapDescription: `${stName}'s state pharmaceutical assistance program is available to ${c.name} residents who meet income eligibility requirements.`,
+    introText: `<p>Find programs to help ${c.name}, ${c.stateAbbr} residents save on prescription drug costs in 2026: Medicare Extra Help${csp.has ? `, ${csp.name}` : ''}, manufacturer programs, and local pharmacy resources. Part D out-of-pocket costs are capped at ${usd(PARTD.partDOutOfPocketCap2026)} in 2026.</p>`,
+    hasStateSPAP: csp.has,
+    spapName: csp.has ? csp.name : `${stName} has no state-funded SPAP`,
+    spapDescription: csp.has
+      ? `${csp.name} is ${stName}'s State Pharmaceutical Assistance Program, open to ${c.name} residents who meet its rules.${csp.note ? ' ' + csp.note : ''}`
+      : `${stName} does not operate a state-funded State Pharmaceutical Assistance Program${csp.endedNote ? ` (${csp.endedNote})` : ''}.`,
+    spapUrl: csp.has ? csp.url : '',
     spapEligibility: 'Income-based eligibility; contact program for details',
-    extraHelpIncomeLimits: { individual: '$22,590/year', couple: '$30,660/year' },
-    extraHelpAssetLimits: { individual: '$17,220', couple: '$34,360' },
+    ...RX_COMMON,
     programs: [
-      { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: 'Limited income and resources', description: `Helps ${c.name} residents pay Part D premiums, deductibles, and copays`, phone: '1-800-772-1213' },
-      { name: `${stName} SPAP`, type: 'State', eligibility: 'State income guidelines', description: `${stName}'s pharmaceutical assistance program for ${c.name} area residents` },
+      { name: 'Medicare Extra Help (Low-Income Subsidy)', type: 'Federal', eligibility: `Income under ${usd(EH.incomeLimit.individual)} (individual, 2026)`, description: `Helps ${c.name} residents pay Part D premiums, deductibles, and copays`, phone: '1-800-772-1213' },
+      ...(csp.has ? [{ name: csp.name, type: 'State', eligibility: 'State income guidelines', description: `${stName}'s pharmaceutical assistance program for ${c.name} area residents`, url: csp.url }] : []),
       { name: 'NeedyMeds', type: 'Nonprofit', eligibility: 'Varies by program', description: 'Database of patient assistance programs from drug manufacturers', url: 'https://www.needymeds.org' },
     ],
     discountPrograms: [
@@ -702,7 +848,7 @@ cities.forEach(c => {
       { name: 'Medicare Part D', savings: 'Varies by plan', description: `Compare Part D plans available in the ${c.name} area` },
     ],
     faqs: [
-      { question: `What prescription assistance is available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} residents can access Medicare Extra Help, the ${stName} pharmaceutical assistance program, manufacturer patient assistance programs, and discount cards like GoodRx.` },
+      { question: `What prescription assistance is available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} residents can use Medicare Extra Help, ${csp.has ? csp.name + ' (' + stName + "'s state program), " : ''}manufacturer patient assistance programs, and discount cards like GoodRx.${csp.has ? '' : ` ${stName} has no state-funded SPAP.`}` },
       { question: `How can I save on prescriptions in ${c.name}?`, answer: `Compare prices at local ${c.name} pharmacies using GoodRx, apply for Medicare Extra Help if you qualify, and check if drug manufacturers offer patient assistance programs for your medications.` },
     ],
     sources: [
@@ -740,25 +886,25 @@ const vetEntries = [];
 states.forEach(s => {
   const f = sf(s.slug);
   const firstFaq = vetFaqTemplates[rot(s.slug, vetFaqTemplates.length)](s, f);
-  const opening = `Senior veterans in ${s.name} access federal VA benefits plus state-level programs administered by ${f.vaDept || s.name + ' Department of Veterans Affairs'}. VA Aid & Attendance pays up to $2,431/month in 2026 for veterans who need help with daily activities.`;
+  const opening = `Senior veterans in ${s.name} access federal VA benefits plus state-level programs administered by ${f.vaDept || s.name + ' Department of Veterans Affairs'}. VA pension with Aid & Attendance pays ${AA_TEXT}.`;
 
   vetEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Veterans Benefits in ${s.name} (2026)`,
-    titleHook: '$2,431 A&A',
+    titleHook: `${aaMonthly}/mo A&A`,
     metaHook: 'VA Aid & Attendance plus state benefits',
     stateSpecificOpening: `<p>${opening}</p>`,
     introText: `<p>${opening} Below are state property-tax exemptions, veterans-home information, caregiver programs, and how to apply through an accredited ${s.name} VSO.</p>`,
     localContext: [
       { label: 'State VA agency', value: f.vaDept || `${s.name} Department of Veterans Affairs` },
-      { label: 'Federal Aid & Attendance', value: 'Up to $2,431/mo (2026)' },
+      { label: 'Federal Aid & Attendance', value: `Up to ${aaMonthly}/mo single, ${aaMonthlyDep}/mo with a dependent (Dec 2025 rates)` },
       { label: 'Property tax relief', value: `${s.name} offers exemptions tied to disability rating` },
     ],
-    aidAndAttendance: { maxBenefit: '$2,431/month', eligibility: 'Veterans needing aid of another person for daily activities', description: 'Enhanced VA pension benefit for veterans who need help with daily living activities.' },
-    vaPension: { maxBenefit: '$1,632/month', eligibility: 'Wartime veterans with limited income', description: 'Monthly benefit for low-income wartime veterans age 65+ or with permanent disability.' },
+    aidAndAttendance: { maxBenefit: `${aaMonthly}/month (${aaMonthlyDep} with a dependent)`, eligibility: 'Veterans needing aid of another person for daily activities', description: 'Enhanced VA pension benefit for veterans who need help with daily living activities.' },
+    vaPension: { maxBenefit: `${pensionMonthly}/month (${pensionMonthlyDep} with a dependent)`, eligibility: 'Wartime veterans with limited income', description: 'Monthly benefit for low-income wartime veterans age 65+ or with permanent disability.' },
     stateBenefits: [
-      { name: `${s.name} Veterans Property Tax Exemption`, description: `${s.name} offers property tax exemptions for qualifying veterans through your ${f.countyTerm || 'county'} assessor.`, eligibility: 'Service-connected disability', url: '#' },
-      { name: `${s.name} Veterans Education Benefits`, description: 'State education benefits for veterans and dependents.', eligibility: 'Varies by program', url: '#' },
+      { name: `${s.name} Veterans Property Tax Exemption`, description: `${s.name} offers property tax exemptions for qualifying veterans through your ${f.countyTerm || 'county'} assessor.`, eligibility: 'Service-connected disability', url: LINKS.stateVa.url },
+      { name: `${s.name} Veterans Education Benefits`, description: 'State education benefits for veterans and dependents.', eligibility: 'Varies by program', url: LINKS.stateVa.url },
     ],
     propertyTaxExemption: `${s.name} provides property tax exemptions for disabled veterans. Amounts vary based on disability rating; applications are filed with your ${f.countyTerm || 'county'} assessor or through ${f.vaDept || s.name + ' VA'}.`,
     stateVeteransHome: [
@@ -773,7 +919,8 @@ states.forEach(s => {
     ],
     sources: [
       { title: 'VA.gov', url: 'https://www.va.gov' },
-      { title: f.vaDept || `${s.name} Department of Veterans Affairs`, url: '#' },
+      { title: `${f.vaDept || `${s.name} Department of Veterans Affairs`} (via ${LINKS.stateVa.title})`, url: LINKS.stateVa.url },
+      srcRef('va_pension_rates'),
     ],
   });
 });
@@ -786,10 +933,10 @@ cities.forEach(c => {
     citySlug: c.slug, city: c.name,
     h1: `Veterans Benefits in ${c.name}, ${c.stateAbbr} (2026)`,
     introText: `<p>Find VA benefits and ${stName}-specific programs for veterans in ${c.name}, ${c.stateAbbr}. See Aid & Attendance, VA pension, local VA facilities, and veteran service organizations near you.</p>`,
-    aidAndAttendance: { maxBenefit: '$2,431/month', eligibility: 'Veterans needing aid of another person for daily activities', description: `Enhanced VA pension benefit for ${c.name} veterans who need help with daily living activities.` },
-    vaPension: { maxBenefit: '$1,632/month', eligibility: 'Wartime veterans with limited income', description: `Monthly benefit for low-income wartime veterans in ${c.name} age 65+ or with permanent disability.` },
+    aidAndAttendance: { maxBenefit: `${aaMonthly}/month (${aaMonthlyDep} with a dependent)`, eligibility: 'Veterans needing aid of another person for daily activities', description: `Enhanced VA pension benefit for ${c.name} veterans who need help with daily living activities.` },
+    vaPension: { maxBenefit: `${pensionMonthly}/month (${pensionMonthlyDep} with a dependent)`, eligibility: 'Wartime veterans with limited income', description: `Monthly benefit for low-income wartime veterans in ${c.name} age 65+ or with permanent disability.` },
     stateBenefits: [
-      { name: `${stName} Veterans Property Tax Exemption`, description: `${stName} offers property tax exemptions available to qualifying ${c.name} area veterans.`, eligibility: 'Service-connected disability', url: '#' },
+      { name: `${stName} Veterans Property Tax Exemption`, description: `${stName} offers property tax exemptions available to qualifying ${c.name} area veterans.`, eligibility: 'Service-connected disability', url: LINKS.stateVa.url },
     ],
     propertyTaxExemption: `${stName} provides property tax exemptions for disabled veterans in ${c.name} and throughout the state.`,
     stateVeteransHome: [
@@ -801,11 +948,12 @@ cities.forEach(c => {
     faqs: [
       { question: `What VA facilities are near ${c.name}, ${c.stateAbbr}?`, answer: `The ${c.name} area is served by VA medical centers and outpatient clinics. Visit va.gov/find-locations to find the nearest VA facility to your ${c.name} address.` },
       { question: `How do I find a Veterans Service Organization in ${c.name}?`, answer: `Contact the ${stName} Department of Veterans Affairs or visit va.gov to find accredited Veterans Service Organizations (VSOs) serving the ${c.name} area. VSOs can help you file claims at no cost.` },
-      { question: `Can ${c.name} veterans get help paying for home care?`, answer: `Yes, ${c.name} veterans may qualify for VA Aid & Attendance (up to $2,431/month), VA home care programs, and ${stName} veteran assistance programs that help cover in-home care costs.` },
+      { question: `Can ${c.name} veterans get help paying for home care?`, answer: `Yes, ${c.name} veterans may qualify for VA Aid & Attendance (up to ${aaMonthly}/month for a single veteran at December 2025 rates), VA home care programs, and ${stName} veteran assistance programs that help cover in-home care costs.` },
     ],
     sources: [
       { title: 'VA.gov', url: 'https://www.va.gov' },
-      { title: `${stName} Department of Veterans Affairs`, url: '#' },
+      { title: `${sf(c.stateSlug).vaDept || `${stName} Department of Veterans Affairs`} (via ${LINKS.stateVa.title})`, url: LINKS.stateVa.url },
+      srcRef('va_pension_rates'),
     ],
   });
 });
@@ -814,24 +962,24 @@ write('veterans-benefits.json', vetEntries);
 // ---- ENGINE 8: Comparison (topic-based) ----
 const comparisons = [
   { slug: 'medicare-advantage-vs-medigap', title: 'Medicare Advantage vs. Medigap', optionA: { name: 'Medicare Advantage', description: 'All-in-one plan with network restrictions' }, optionB: { name: 'Medigap', description: 'Supplement to Original Medicare with more flexibility' }, rows: [{ category: 'Monthly Premium', optionAValue: '$0–$50 typical', optionBValue: '$100–$300 typical' }, { category: 'Provider Network', optionAValue: 'Network required (HMO/PPO)', optionBValue: 'Any doctor accepting Medicare' }, { category: 'Out-of-Pocket Max', optionAValue: 'Yes, capped annually', optionBValue: 'No annual cap (but lower cost-sharing)' }, { category: 'Drug Coverage', optionAValue: 'Usually included', optionBValue: 'Requires separate Part D plan' }, { category: 'Extra Benefits', optionAValue: 'Often includes dental, vision, hearing', optionBValue: 'No extra benefits' }] },
-  { slug: 'assisted-living-vs-nursing-home', title: 'Assisted Living vs. Nursing Home', optionA: { name: 'Assisted Living', description: 'Residential community with personal care support' }, optionB: { name: 'Nursing Home', description: '24/7 skilled nursing care facility' }, rows: [{ category: 'Average Cost', optionAValue: '$4,500/month', optionBValue: '$8,800/month' }, { category: 'Care Level', optionAValue: 'Help with daily activities', optionBValue: 'Skilled medical care' }, { category: 'Independence', optionAValue: 'More independence, apartment-style', optionBValue: 'Less independence, medical focus' }, { category: 'Medicaid Coverage', optionAValue: 'Limited, through waivers', optionBValue: 'Generally covered' }] },
-  { slug: 'home-care-vs-assisted-living', title: 'Home Care vs. Assisted Living', optionA: { name: 'Home Care', description: 'Care provided in your own home' }, optionB: { name: 'Assisted Living', description: 'Community-based residential care' }, rows: [{ category: 'Average Cost', optionAValue: '$5,000–$6,000/month (full-time)', optionBValue: '$4,500/month' }, { category: 'Setting', optionAValue: 'Your own home', optionBValue: 'Community facility' }, { category: 'Social', optionAValue: 'May feel isolated', optionBValue: 'Built-in social activities' }, { category: 'Flexibility', optionAValue: 'Highly flexible scheduling', optionBValue: 'Structured daily routine' }] },
+  { slug: 'assisted-living-vs-nursing-home', title: 'Assisted Living vs. Nursing Home', optionA: { name: 'Assisted Living', description: 'Residential community with personal care support' }, optionB: { name: 'Nursing Home', description: '24/7 skilled nursing care facility' }, rows: [{ category: 'Median Cost', optionAValue: '$6,200/month (CareScout 2025 national median)', optionBValue: '$9,581/month semi-private; $10,798 private (CareScout 2025 national median)' }, { category: 'Care Level', optionAValue: 'Help with daily activities', optionBValue: 'Skilled medical care' }, { category: 'Independence', optionAValue: 'More independence, apartment-style', optionBValue: 'Less independence, medical focus' }, { category: 'Medicaid Coverage', optionAValue: 'Limited, through waivers', optionBValue: 'Generally covered' }] },
+  { slug: 'home-care-vs-assisted-living', title: 'Home Care vs. Assisted Living', optionA: { name: 'Home Care', description: 'Care provided in your own home' }, optionB: { name: 'Assisted Living', description: 'Community-based residential care' }, rows: [{ category: 'Average Cost', optionAValue: '$6,673/month for 44 hours a week ($35/hour) (CareScout 2025 national median)', optionBValue: '$6,200/month (CareScout 2025 national median)' }, { category: 'Setting', optionAValue: 'Your own home', optionBValue: 'Community facility' }, { category: 'Social', optionAValue: 'May feel isolated', optionBValue: 'Built-in social activities' }, { category: 'Flexibility', optionAValue: 'Highly flexible scheduling', optionBValue: 'Structured daily routine' }] },
   { slug: 'medicare-vs-medicaid', title: 'Medicare vs. Medicaid', optionA: { name: 'Medicare', description: 'Federal program based on age/disability' }, optionB: { name: 'Medicaid', description: 'Federal-state program based on income' }, rows: [{ category: 'Eligibility', optionAValue: 'Age 65+ or disability', optionBValue: 'Low income' }, { category: 'Funding', optionAValue: 'Federal', optionBValue: 'Federal + State' }, { category: 'Cost to Enrollee', optionAValue: 'Premiums + cost-sharing', optionBValue: 'Little to no cost' }, { category: 'Long-Term Care', optionAValue: 'Limited coverage', optionBValue: 'Extensive coverage' }] },
   { slug: 'traditional-ltc-vs-hybrid', title: 'Traditional LTC Insurance vs. Hybrid Policies', optionA: { name: 'Traditional LTC Insurance', description: 'Standalone long-term care insurance' }, optionB: { name: 'Hybrid LTC Policy', description: 'Life insurance or annuity with LTC benefits' }, rows: [{ category: 'Premiums', optionAValue: 'May increase over time', optionBValue: 'Generally fixed' }, { category: 'Death Benefit', optionAValue: 'Use it or lose it', optionBValue: 'Beneficiaries receive unused portion' }, { category: 'Cost', optionAValue: 'Lower initial premium', optionBValue: 'Higher upfront or lump sum' }] },
-  { slug: 'ssdi-vs-ssi', title: 'SSDI vs. SSI Benefits', optionA: { name: 'SSDI', description: 'Based on work history and payroll taxes' }, optionB: { name: 'SSI', description: 'Based on financial need' }, rows: [{ category: 'Eligibility', optionAValue: 'Work credits required', optionBValue: 'Income/asset limits' }, { category: 'Average Benefit', optionAValue: '$1,500/month', optionBValue: '$943/month' }, { category: 'Health Coverage', optionAValue: 'Medicare (after 24 months)', optionBValue: 'Medicaid (immediately)' }] },
+  { slug: 'ssdi-vs-ssi', title: 'SSDI vs. SSI Benefits', optionA: { name: 'SSDI', description: 'Based on work history and payroll taxes' }, optionB: { name: 'SSI', description: 'Based on financial need' }, rows: [{ category: 'Eligibility', optionAValue: 'Work credits required', optionBValue: 'Income/asset limits' }, { category: '2026 Benefit', optionAValue: '$1,630/month average for disabled workers (SSA, Jan 2026)', optionBValue: 'Up to $994/month federal rate for one person (SSA 2026)' }, { category: 'Health Coverage', optionAValue: 'Medicare (after 24 months)', optionBValue: 'Medicaid (immediately)' }] },
   { slug: 'hmo-vs-ppo-medicare', title: 'Medicare HMO vs. PPO Plans', optionA: { name: 'HMO Plan', description: 'Requires network doctors and referrals' }, optionB: { name: 'PPO Plan', description: 'More flexibility, higher cost' }, rows: [{ category: 'Out-of-Network', optionAValue: 'Not covered (except emergencies)', optionBValue: 'Covered at higher cost' }, { category: 'Referrals', optionAValue: 'Required for specialists', optionBValue: 'Not required' }, { category: 'Premium', optionAValue: 'Usually lower', optionBValue: 'Usually higher' }] },
-  { slug: 'part-d-vs-advantage-drug', title: 'Standalone Part D vs. MA Drug Coverage', optionA: { name: 'Standalone Part D', description: 'Separate prescription drug plan' }, optionB: { name: 'MA with Drug Coverage', description: 'Bundled in Medicare Advantage' }, rows: [{ category: 'Works With', optionAValue: 'Original Medicare + Medigap', optionBValue: 'Medicare Advantage only' }, { category: 'Formulary', optionAValue: 'Varies by plan', optionBValue: 'Varies by plan' }, { category: 'Premium', optionAValue: '$15–$80/month', optionBValue: 'Often included in $0 MA premium' }] },
+  { slug: 'part-d-vs-advantage-drug', title: 'Standalone Part D vs. MA Drug Coverage', optionA: { name: 'Standalone Part D', description: 'Separate prescription drug plan' }, optionB: { name: 'MA with Drug Coverage', description: 'Bundled in Medicare Advantage' }, rows: [{ category: 'Works With', optionAValue: 'Original Medicare + Medigap', optionBValue: 'Medicare Advantage only' }, { category: 'Formulary', optionAValue: 'Varies by plan', optionBValue: 'Varies by plan' }, { category: 'Premium', optionAValue: '$34.50/month projected average for 2026 (CMS)', optionBValue: 'Included in the MA plan premium; $14.00/month projected average (CMS)' }] },
   { slug: 'va-care-vs-medicare', title: 'VA Health Care vs. Medicare', optionA: { name: 'VA Health Care', description: 'Comprehensive VA system care' }, optionB: { name: 'Medicare', description: 'Universal senior health insurance' }, rows: [{ category: 'Eligibility', optionAValue: 'Military service required', optionBValue: 'Age 65+ or disability' }, { category: 'Cost', optionAValue: 'Low or no cost for many', optionBValue: 'Premiums + cost-sharing' }, { category: 'Providers', optionAValue: 'VA facilities primarily', optionBValue: 'Any Medicare-accepting provider' }] },
   { slug: 'reverse-mortgage-vs-heloc', title: 'Reverse Mortgage vs. HELOC for Seniors', optionA: { name: 'Reverse Mortgage (HECM)', description: 'Borrow against home equity, no payments required' }, optionB: { name: 'HELOC', description: 'Home equity line of credit with monthly payments' }, rows: [{ category: 'Monthly Payments', optionAValue: 'None required', optionBValue: 'Monthly payments required' }, { category: 'Age Requirement', optionAValue: '62+', optionBValue: 'None' }, { category: 'Interest', optionAValue: 'Accrues over time', optionBValue: 'Paid monthly' }] },
-  { slug: 'in-home-care-vs-adult-day-care', title: 'In-Home Care vs. Adult Day Care', optionA: { name: 'In-Home Care', description: 'One-on-one care at home' }, optionB: { name: 'Adult Day Care', description: 'Group setting during daytime hours' }, rows: [{ category: 'Cost', optionAValue: '$25–$40/hour', optionBValue: '$80–$150/day' }, { category: 'Hours', optionAValue: 'Flexible, up to 24/7', optionBValue: 'Daytime hours only' }, { category: 'Socialization', optionAValue: 'Limited', optionBValue: 'Group activities, peers' }] },
-  { slug: 'medicaid-vs-private-pay-nursing', title: 'Medicaid vs. Private Pay Nursing Home', optionA: { name: 'Medicaid', description: 'Government-funded nursing home care' }, optionB: { name: 'Private Pay', description: 'Self-funded nursing home care' }, rows: [{ category: 'Cost to Resident', optionAValue: 'Little to none', optionBValue: '$8,000–$12,000/month' }, { category: 'Facility Choice', optionAValue: 'Limited to accepting facilities', optionBValue: 'Any facility' }, { category: 'Room Type', optionAValue: 'Often shared room', optionBValue: 'Private room available' }] },
+  { slug: 'in-home-care-vs-adult-day-care', title: 'In-Home Care vs. Adult Day Care', optionA: { name: 'In-Home Care', description: 'One-on-one care at home' }, optionB: { name: 'Adult Day Care', description: 'Group setting during daytime hours' }, rows: [{ category: 'Median Cost', optionAValue: '$35/hour (CareScout 2025 national median)', optionBValue: '$95/day (CareScout 2025 national median)' }, { category: 'Hours', optionAValue: 'Flexible, up to 24/7', optionBValue: 'Daytime hours only' }, { category: 'Socialization', optionAValue: 'Limited', optionBValue: 'Group activities, peers' }] },
+  { slug: 'medicaid-vs-private-pay-nursing', title: 'Medicaid vs. Private Pay Nursing Home', optionA: { name: 'Medicaid', description: 'Government-funded nursing home care' }, optionB: { name: 'Private Pay', description: 'Self-funded nursing home care' }, rows: [{ category: 'Cost to Resident', optionAValue: 'Little to none', optionBValue: '$9,581/month semi-private; $10,798 private (CareScout 2025 national median)' }, { category: 'Facility Choice', optionAValue: 'Limited to accepting facilities', optionBValue: 'Any facility' }, { category: 'Room Type', optionAValue: 'Often shared room', optionBValue: 'Private room available' }] },
   { slug: 'snap-vs-senior-food-programs', title: 'SNAP vs. Senior Food Programs', optionA: { name: 'SNAP Benefits', description: 'Monthly food assistance on EBT card' }, optionB: { name: 'Senior Food Programs', description: 'Meals on Wheels, congregate meals, food banks' }, rows: [{ category: 'Format', optionAValue: 'Monthly EBT card', optionBValue: 'Prepared meals or food boxes' }, { category: 'Choice', optionAValue: 'Choose your own food', optionBValue: 'Set menu or selections' }, { category: 'Application', optionAValue: 'Income verification required', optionBValue: 'Often no income check' }] },
-  { slug: 'power-of-attorney-vs-guardianship', title: 'Power of Attorney vs. Guardianship', optionA: { name: 'Power of Attorney', description: 'Voluntary delegation of authority' }, optionB: { name: 'Guardianship', description: 'Court-appointed decision maker' }, rows: [{ category: 'How Established', optionAValue: 'Signed document while competent', optionBValue: 'Court proceeding' }, { category: 'Cost', optionAValue: '$100–$500', optionBValue: '$2,000–$10,000+' }, { category: 'Revocability', optionAValue: 'Easily revoked if competent', optionBValue: 'Requires court approval' }] },
+  { slug: 'power-of-attorney-vs-guardianship', title: 'Power of Attorney vs. Guardianship', optionA: { name: 'Power of Attorney', description: 'Voluntary delegation of authority' }, optionB: { name: 'Guardianship', description: 'Court-appointed decision maker' }, rows: [{ category: 'How Established', optionAValue: 'Signed document while competent', optionBValue: 'Court proceeding' }, { category: 'Cost', optionAValue: 'Usually low: a form, notary and optional attorney fee', optionBValue: 'Court filing and attorney fees, usually far higher' }, { category: 'Revocability', optionAValue: 'Easily revoked if competent', optionBValue: 'Requires court approval' }] },
   { slug: 'term-life-vs-whole-life-seniors', title: 'Term Life vs. Whole Life Insurance for Seniors', optionA: { name: 'Term Life', description: 'Coverage for a specific period' }, optionB: { name: 'Whole Life', description: 'Permanent coverage with cash value' }, rows: [{ category: 'Duration', optionAValue: '10, 20, or 30 years', optionBValue: 'Lifetime' }, { category: 'Premium', optionAValue: 'Lower', optionBValue: 'Higher' }, { category: 'Cash Value', optionAValue: 'None', optionBValue: 'Builds over time' }] },
-  { slug: 'memory-care-vs-assisted-living', title: 'Memory Care vs. Assisted Living', optionA: { name: 'Memory Care', description: 'Specialized dementia/Alzheimer\'s care' }, optionB: { name: 'Assisted Living', description: 'General residential care' }, rows: [{ category: 'Average Cost', optionAValue: '$6,000–$7,000/month', optionBValue: '$4,500/month' }, { category: 'Security', optionAValue: 'Secured environment', optionBValue: 'Open environment' }, { category: 'Staff Training', optionAValue: 'Dementia-specific training', optionBValue: 'General care training' }] },
+  { slug: 'memory-care-vs-assisted-living', title: 'Memory Care vs. Assisted Living', optionA: { name: 'Memory Care', description: 'Specialized dementia/Alzheimer\'s care' }, optionB: { name: 'Assisted Living', description: 'General residential care' }, rows: [{ category: 'Cost', optionAValue: 'Usually more than standard assisted living; CareScout publishes no separate median', optionBValue: '$6,200/month (CareScout 2025 national median)' }, { category: 'Security', optionAValue: 'Secured environment', optionBValue: 'Open environment' }, { category: 'Staff Training', optionAValue: 'Dementia-specific training', optionBValue: 'General care training' }] },
   { slug: 'hospice-vs-palliative-care', title: 'Hospice vs. Palliative Care', optionA: { name: 'Hospice', description: 'End-of-life comfort care' }, optionB: { name: 'Palliative Care', description: 'Symptom management at any stage' }, rows: [{ category: 'Prognosis', optionAValue: '6 months or less', optionBValue: 'Any stage of illness' }, { category: 'Curative Treatment', optionAValue: 'Discontinued', optionBValue: 'May continue' }, { category: 'Medicare Coverage', optionAValue: 'Full coverage under Part A', optionBValue: 'Covered as regular medical care' }] },
-  { slug: 'medicare-supplement-plan-g-vs-n', title: 'Medigap Plan G vs. Plan N', optionA: { name: 'Plan G', description: 'Most comprehensive Medigap plan' }, optionB: { name: 'Plan N', description: 'Lower premium with small copays' }, rows: [{ category: 'Premium', optionAValue: '$150–$250/month', optionBValue: '$80–$160/month' }, { category: 'Part B Copay', optionAValue: '$0', optionBValue: 'Up to $20/visit' }, { category: 'Part B Excess', optionAValue: 'Covered', optionBValue: 'Not covered' }] },
-  { slug: 'ccrc-vs-assisted-living', title: 'CCRC vs. Standalone Assisted Living', optionA: { name: 'CCRC (Continuing Care)', description: 'Campus with all levels of care' }, optionB: { name: 'Standalone Assisted Living', description: 'Single-level care community' }, rows: [{ category: 'Entrance Fee', optionAValue: '$100,000–$500,000', optionBValue: 'None typically' }, { category: 'Monthly Fee', optionAValue: '$3,000–$5,000', optionBValue: '$3,500–$6,000' }, { category: 'Continuum', optionAValue: 'Independent → Assisted → Nursing', optionBValue: 'Assisted living only' }] },
+  { slug: 'medicare-supplement-plan-g-vs-n', title: 'Medigap Plan G vs. Plan N', optionA: { name: 'Plan G', description: 'Most comprehensive Medigap plan' }, optionB: { name: 'Plan N', description: 'Lower premium with small copays' }, rows: [{ category: 'Premium', optionAValue: 'Varies by age, ZIP and insurer; usually higher', optionBValue: 'Usually lower than Plan G from the same insurer' }, { category: 'Part B Copay', optionAValue: '$0', optionBValue: 'Up to $20/visit' }, { category: 'Part B Excess', optionAValue: 'Covered', optionBValue: 'Not covered' }] },
+  { slug: 'ccrc-vs-assisted-living', title: 'CCRC vs. Standalone Assisted Living', optionA: { name: 'CCRC (Continuing Care)', description: 'Campus with all levels of care' }, optionB: { name: 'Standalone Assisted Living', description: 'Single-level care community' }, rows: [{ category: 'Entrance Fee', optionAValue: 'Usually a large one-time fee; varies widely by community and contract', optionBValue: 'None typically' }, { category: 'Monthly Fee', optionAValue: 'Varies by contract type', optionBValue: '$6,200/month (CareScout 2025 national median)' }, { category: 'Continuum', optionAValue: 'Independent → Assisted → Nursing', optionBValue: 'Assisted living only' }] },
   { slug: 'social-security-62-vs-67-vs-70', title: 'Claiming Social Security at 62 vs. 67 vs. 70', optionA: { name: 'Claim at 62', description: 'Earliest possible, reduced benefits' }, optionB: { name: 'Claim at 67 or 70', description: 'Full or delayed benefits' }, rows: [{ category: 'Benefit at 62', optionAValue: '~70% of full benefit', optionBValue: 'N/A' }, { category: 'Benefit at 67', optionAValue: 'N/A', optionBValue: '100% of full benefit' }, { category: 'Benefit at 70', optionAValue: 'N/A', optionBValue: '124% of full benefit' }] },
 ];
 write('comparison.json', comparisons.map(c => ({
@@ -867,7 +1015,7 @@ const lipFaqTemplates = [
   }),
   (s, f) => ({
     question: `What energy assistance does ${s.name} offer seniors?`,
-    answer: `${s.name} administers the federal LIHEAP program, typically between October and March, for heating and cooling bills. ${s.name} also runs weatherization assistance through the state energy office — free home energy-efficiency improvements for households below 200% of the federal poverty level.`,
+    answer: `${s.name} administers the federal LIHEAP program, for heating and cooling bills; application windows and benefit amounts are set by the state. ${s.name} also runs weatherization assistance through the state energy office — free home energy-efficiency improvements for households below 200% of the federal poverty level.`,
   }),
   (s, f) => ({
     question: `Does ${s.name} have property tax relief for low-income seniors?`,
@@ -889,6 +1037,7 @@ states.forEach(s => {
   const firstFaq = lipFaqTemplates[rot(s.slug, lipFaqTemplates.length)](s, f);
   const opening = `Low-income ${s.name} seniors apply for most federal assistance — SNAP, LIHEAP, Medicaid — at their local ${f.countyTerm || 'county'} Department of Social Services${f.countyTermNote ? ' (' + f.countyTermNote.replace(/\.$/, '').toLowerCase() + ')' : ''}. Adult Protective Services can be reached at ${f.apsHotline || '1-800-677-1116'}.`;
 
+  const snp = snapFacts(s.slug);
   lipEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Low-Income Senior Programs in ${s.name} (2026)`,
@@ -902,27 +1051,29 @@ states.forEach(s => {
       { label: 'Property tax relief', value: `${s.name} offers senior exemptions via ${f.countyTerm || 'county'} assessor` },
     ],
     programs: [
-      { name: 'SNAP (Food Stamps)', category: 'Food', description: 'Monthly food assistance for eligible seniors', eligibility: 'Income below 130% FPL', applicationUrl: '#', phone: '1-800-221-5689' },
-      { name: 'LIHEAP', category: 'Energy', description: 'Help with heating and cooling bills', eligibility: 'Income below 150% FPL', applicationUrl: '#' },
-      { name: 'Section 8 Housing', category: 'Housing', description: 'Rental assistance vouchers for affordable housing', eligibility: 'Income below 50% AMI', applicationUrl: '#' },
-      { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income below 135% FPL or Medicaid enrollment', applicationUrl: '#' },
-      { name: 'Weatherization Assistance', category: 'Home', description: 'Free home energy efficiency improvements', eligibility: 'Income below 200% FPL', applicationUrl: '#' },
+      { name: /SNAP/.test(snp.program) ? snp.program : `${snp.program} (SNAP)`, category: 'Food', description: `Monthly food assistance, run in ${s.name} by the ${snp.agency}`, eligibility: snp.grossShort, applicationUrl: snp.applyUrl, phone: snp.phone || undefined },
+      { name: 'LIHEAP', category: 'Energy', description: 'Help with heating and cooling bills', eligibility: 'Set by the state, up to 150% of poverty or 60% of state median income', applicationUrl: LINKS.energy.url },
+      { name: 'Section 8 Housing', category: 'Housing', description: 'Rental assistance vouchers for affordable housing', eligibility: 'Generally income below 50% of area median income', applicationUrl: LINKS.housing.url },
+      { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income at or below 135% of poverty, or Medicaid, SNAP or SSI', applicationUrl: 'https://www.lifelinesupport.org/' },
+      { name: 'Weatherization Assistance', category: 'Home', description: 'Free home energy efficiency improvements', eligibility: 'Income at or below 200% of poverty (or LIHEAP-eligible)', applicationUrl: 'https://www.energy.gov/scep/wap/how-apply-weatherization-assistance' },
     ],
-    snapInfo: { incomeLimitIndividual: '$1,580/month', maxBenefit: '$291/month', applicationUrl: '#' },
-    liheapInfo: { maxBenefit: '$500–$1,000/year', applicationPeriod: 'October–March', url: '#' },
-    housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: 'Waitlists are common; apply early', url: '#' },
+    snapInfo: { incomeLimitIndividual: snp.grossShort.replace('/mo', '/month'), maxBenefit: `${usd(snp.sn.maxAllotment['1'])}/month (FY2027, 1 person)`, rule: snp.rule, applicationUrl: snp.applyUrl },
+    liheapInfo: { maxBenefit: 'Varies by state and household', applicationPeriod: 'Set by the state; some states open in fall, others year-round', url: LINKS.energy.url },
+    housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: 'Waitlists are common; apply early', url: LINKS.housing.url },
     lifelineInfo: { discount: '$9.25/month off phone or internet', eligibility: 'Medicaid, SNAP, SSI, or income-based', url: 'https://www.lifelinesupport.org' },
-    propertyTaxRelief: { available: true, description: `${s.name} offers property tax relief for qualifying seniors. Contact your ${f.countyTerm || 'county'} assessor for the state-specific exemption or deferral program.`, url: '#' },
+    propertyTaxRelief: { available: true, description: `${s.name} offers property tax relief for qualifying seniors. Contact your ${f.countyTerm || 'county'} assessor for the state-specific exemption or deferral program.`, url: LINKS.stateTaxes.url },
     transportationPrograms: [
-      { name: `${s.name} Senior Transportation`, description: 'Subsidized transportation for medical appointments and errands, typically run by Area Agencies on Aging.', url: '#' },
+      { name: `${s.name} Senior Transportation`, description: 'Subsidized transportation for medical appointments and errands, typically arranged through your Area Agency on Aging (find it with the Eldercare Locator).', url: LINKS.eldercare.url },
     ],
     faqs: [
       firstFaq,
-      { question: `How do I apply for SNAP in ${s.name}?`, answer: `Apply online through the ${s.name} benefits portal, by phone, or in person at your ${f.countyTerm || 'county'} Department of Social Services. You'll need proof of income, identity, and residency.` },
+      { question: `How do I apply for SNAP in ${s.name}?`, answer: `SNAP in ${s.name} is run by the ${snp.agency}. Apply online, by phone${snp.phone ? ` (${snp.phone})` : ''}, or at a local office. You'll need proof of income, identity, and residency.` },
+      { question: `What are the 2026–27 SNAP limits for ${s.name} seniors?`, answer: `${snp.rule} The maximum benefit for October 2026 through September 2027 is ${snp.maxText}.` },
     ],
     sources: [
       { title: 'USA.gov Benefit Finder', url: 'https://www.usa.gov/benefit-finder' },
-      { title: `${s.name} Department of Social Services`, url: '#' },
+      ...snp.sources,
+      LINKS.energy,
     ],
   });
 });
@@ -931,6 +1082,7 @@ cities.forEach(c => {
   const st = states.find(s => s.slug === c.stateSlug);
   const stName = st ? st.name : '';
   const f = sf(c.stateSlug);
+  const snp = snapFacts(c.stateSlug);
   lipEntries.push({
     stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
@@ -940,32 +1092,33 @@ cities.forEach(c => {
     stateSpecificOpening: `<p>In ${c.name}, ${c.stateAbbr}, most low-income senior benefits are applied for through a single ${f.countyTerm || 'county'} office: SNAP food stamps, LIHEAP heating/cooling assistance, ${stName} property tax relief, and referrals to Section 8 housing. The ${c.name} Area Agency on Aging also serves as a one-stop intake for benefits screening and can flag programs a senior might not realize they qualify for.</p>`,
     localContext: [
       { label: 'Apply here', value: `${c.name} ${f.countyTerm || 'county'} Department of Social Services` },
-      { label: 'LIHEAP window', value: 'October–March annually' },
+      { label: 'SNAP limit (60+)', value: snp.grossShort },
       { label: 'APS (if abuse suspected)', value: f.apsHotline || '1-800-677-1116' },
     ],
     introText: `<p>Find 2026 assistance programs for low-income seniors in ${c.name}, ${c.stateAbbr}. Access local SNAP offices, energy assistance, housing programs, and community resources in the ${c.name} area.</p>`,
     programs: [
-      { name: 'SNAP (Food Stamps)', category: 'Food', description: `Monthly food assistance for eligible ${c.name} seniors`, eligibility: 'Income below 130% FPL', applicationUrl: '#', phone: '1-800-221-5689' },
-      { name: 'LIHEAP', category: 'Energy', description: `Help with heating and cooling bills for ${c.name} residents`, eligibility: 'Income below 150% FPL', applicationUrl: '#' },
-      { name: 'Section 8 Housing', category: 'Housing', description: `Rental assistance vouchers for affordable housing in ${c.name}`, eligibility: 'Income below 50% AMI', applicationUrl: '#' },
-      { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income below 135% FPL or Medicaid enrollment', applicationUrl: '#' },
+      { name: 'SNAP (Food Stamps)', category: 'Food', description: `Monthly food assistance for eligible ${c.name} seniors, run by the ${snp.agency}`, eligibility: snp.grossShort, applicationUrl: snp.applyUrl, phone: snp.phone || undefined },
+      { name: 'LIHEAP', category: 'Energy', description: `Help with heating and cooling bills for ${c.name} residents`, eligibility: 'Set by the state, up to 150% of poverty or 60% of state median income', applicationUrl: LINKS.energy.url },
+      { name: 'Section 8 Housing', category: 'Housing', description: `Rental assistance vouchers for affordable housing in ${c.name}`, eligibility: 'Generally income below 50% of area median income', applicationUrl: LINKS.housing.url },
+      { name: 'Lifeline Program', category: 'Phone/Internet', description: 'Discounted phone and internet service', eligibility: 'Income at or below 135% of poverty, or Medicaid, SNAP or SSI', applicationUrl: 'https://www.lifelinesupport.org/' },
     ],
-    snapInfo: { incomeLimitIndividual: '$1,580/month', maxBenefit: '$291/month', applicationUrl: '#' },
-    liheapInfo: { maxBenefit: '$500–$1,000/year', applicationPeriod: 'October–March', url: '#' },
-    housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: `Waitlists in the ${c.name} area are common; apply early`, url: '#' },
+    snapInfo: { incomeLimitIndividual: snp.grossShort.replace('/mo', '/month'), maxBenefit: `${usd(snp.sn.maxAllotment['1'])}/month (FY2027, 1 person)`, rule: snp.rule, applicationUrl: snp.applyUrl },
+    liheapInfo: { maxBenefit: 'Varies by state and household', applicationPeriod: 'Set by the state; some states open in fall, others year-round', url: LINKS.energy.url },
+    housingInfo: { programs: ['Section 8 Vouchers', 'Public Housing', 'Section 202 Senior Housing'], waitlistInfo: `Waitlists in the ${c.name} area are common; apply early`, url: LINKS.housing.url },
     lifelineInfo: { discount: '$9.25/month off phone or internet', eligibility: 'Medicaid, SNAP, SSI, or income-based', url: 'https://www.lifelinesupport.org' },
-    propertyTaxRelief: { available: true, description: `${stName} offers property tax relief that ${c.name} homeowners may qualify for.`, url: '#' },
+    propertyTaxRelief: { available: true, description: `${stName} offers property tax relief that ${c.name} homeowners may qualify for.`, url: LINKS.stateTaxes.url },
     transportationPrograms: [
-      { name: `${c.name} Senior Transportation`, description: `Subsidized transportation for ${c.name} area seniors for medical appointments and errands`, url: '#' },
+      { name: `${c.name} Senior Transportation`, description: `Subsidized rides for ${c.name} area seniors to medical appointments and errands, usually arranged through the local Area Agency on Aging`, url: LINKS.eldercare.url },
     ],
     faqs: [
       { question: `What low-income programs are available in ${c.name}, ${c.stateAbbr}?`, answer: `${c.name} seniors can access SNAP food assistance, LIHEAP energy assistance, Section 8 housing vouchers, Lifeline phone discounts, senior transportation, and ${stName} property tax relief programs.` },
-      { question: `Where can I apply for SNAP in ${c.name}?`, answer: `Apply online through ${stName}'s SNAP portal, by phone, or in person at the ${c.name} ${f.countyTerm || 'county'} Department of Social Services office.` },
+      { question: `Where can I apply for SNAP in ${c.name}?`, answer: `SNAP in ${stName} is run by the ${snp.agency}. ${c.name} residents can apply online, by phone${snp.phone ? ` (${snp.phone})` : ''}, or at the local ${f.countyTerm || 'county'} office. ${snp.rule}` },
       { question: `Is there senior housing assistance in ${c.name}?`, answer: `Yes, ${c.name} has Section 8 vouchers, public housing, and Section 202 senior housing. Waitlists are common in the ${c.name} area, so apply as early as possible.` },
     ],
     sources: [
       { title: 'USA.gov Benefit Finder', url: 'https://www.usa.gov/benefit-finder' },
-      { title: `${stName} Department of Social Services`, url: '#' },
+      ...snp.sources,
+      LINKS.energy,
     ],
   });
 });
@@ -997,7 +1150,7 @@ write('disability-benefits.json', conditions.map(c => ({
   prevalence: c.prevalence,
   federalPrograms: [
     { name: 'SSDI', description: `Social Security Disability Insurance for people with ${c.condition} who can no longer work`, eligibility: 'Work credits + medical evidence', benefits: 'Monthly cash benefit', url: 'https://www.ssa.gov/disability' },
-    { name: 'SSI', description: 'Supplemental Security Income for low-income individuals with disabilities', eligibility: 'Limited income and resources', benefits: 'Up to $943/month', url: 'https://www.ssa.gov/ssi' },
+    { name: 'SSI', description: 'Supplemental Security Income for low-income individuals with disabilities', eligibility: 'Limited income and resources', benefits: 'Up to $994/month (2026 federal rate, one person)', url: 'https://www.ssa.gov/ssi' },
   ],
   medicaidCoverage: `<p>Medicaid may cover treatments, medications, home care, and long-term care services for seniors with ${c.condition}. Coverage varies by state.</p>`,
   medicareCoverage: `<p>Medicare covers medically necessary treatments for ${c.condition}, including doctor visits, hospital stays, prescription drugs (Part D), and some home health services.</p>`,
@@ -1020,53 +1173,81 @@ write('disability-benefits.json', conditions.map(c => ({
 
 // ---- ENGINE 11: Long-Term Care (state + city) ----
 // 5 first-FAQ rotations to break scaled-content fingerprint.
+// LTC insurance prices: AALTCI 2026 Price Index (national sample, $165,000
+// initial benefit pool). Care costs: CareScout 2025. Partnership status:
+// partnershipforlongtermcare.com non-partnership list (secondary source).
+const LTCP = FED.ltcInsurance2026;
+const LTC_PREM_SENT = `the American Association for Long-Term Care Insurance's 2026 price index puts a policy with a $165,000 benefit pool bought at 55 at about ${usd(LTCP.age55LevelBenefit.singleMale)}/year for a man and ${usd(LTCP.age55LevelBenefit.singleFemale)}/year for a woman with level benefits, or ${usd(LTCP.age55With3pctGrowth.singleMale)} and ${usd(LTCP.age55With3pctGrowth.singleFemale)} with 3% yearly benefit growth (sample prices; insurers price by state and health)`;
+const LTC_PREM_ROWS = [
+  { who: 'Man, 55', price: `${usd(LTCP.age55LevelBenefit.singleMale)}/yr level; ${usd(LTCP.age55With3pctGrowth.singleMale)}/yr with 3% growth`, note: '$165,000 initial benefit pool' },
+  { who: 'Woman, 55', price: `${usd(LTCP.age55LevelBenefit.singleFemale)}/yr level; ${usd(LTCP.age55With3pctGrowth.singleFemale)}/yr with 3% growth`, note: 'Women pay more because they claim longer' },
+  { who: 'Couple, both 55', price: `${usd(LTCP.age55LevelBenefit.couple)}/yr level; ${usd(LTCP.age55With3pctGrowth.couple)}/yr with 3% growth`, note: 'Combined premium for two policies' },
+  { who: 'Woman, 60', price: `${usd(LTCP.age60SingleFemale3pct)}/yr with 3% growth`, note: 'Price rises with age at purchase' },
+  { who: 'Couple, both 65', price: `${usd(LTCP.couple65With3pct)}/yr with 3% growth`, note: 'Health screening is stricter at older ages' },
+];
+const LTC_ASSET = 'Set by each state (often $2,000 for one person; some states allow more)';
+function ltcPartner(stateSlug) {
+  const st = stData(stateSlug);
+  const yes = st.ltcPartnership.participates;
+  return {
+    yes,
+    label: yes ? `${st.name} participates; qualifying policies protect assets dollar-for-dollar` : `${st.name} does not run a Partnership program`,
+    description: yes
+      ? `${st.name} participates in the Long-Term Care Partnership Program: each dollar a partnership-qualified policy pays out lets you keep an extra dollar of assets if you later apply for Medicaid. Confirm a policy's partnership status with the ${st.name} insurance department before buying.`
+      : `${st.name} is listed as not participating in the Long-Term Care Partnership Program, so LTC policies sold there do not add Medicaid asset protection. Check with the ${st.name} insurance department for any state-specific program.`,
+  };
+}
 const ltcFaqTemplates = [
   (s, f, prem55) => ({
     question: `What does ${f.medicaidProgram || s.name + ' Medicaid'} require before covering nursing home care?`,
-    answer: `${f.medicaidProgram || s.name + ' Medicaid'} applies a 5-year lookback on asset transfers and typically requires countable assets below $2,000 for an individual before it will pay for nursing home care. A ${f.countyTerm || 'county'} eligibility worker reviews the application.`,
+    answer: `${f.medicaidProgram || s.name + ' Medicaid'} applies a 5-year lookback on asset transfers and requires countable assets below the state limit (often $2,000 for one person) before it will pay for nursing home care. A ${f.countyTerm || 'county'} eligibility worker reviews the application.`,
   }),
   (s, f, prem55) => ({
-    question: `Does ${s.name}'s Partnership Program really protect assets from Medicaid spend-down?`,
-    answer: `Yes. Under the Long-Term Care Partnership Program in ${s.name}, every dollar a qualifying policy pays out shields an equal dollar of assets from the Medicaid spend-down calculation — so a $200,000 policy protects roughly $200,000 in assets.`,
+    question: `Does ${s.name} have a Long-Term Care Partnership Program?`,
+    answer: ltcPartner(s.slug).yes
+      ? `Yes. Under ${s.name}'s Partnership Program, every dollar a partnership-qualified policy pays out shields an equal dollar of assets from the Medicaid spend-down calculation, so a policy that pays $200,000 in benefits protects about $200,000 in assets.`
+      : `${s.name} is listed as not participating in the Long-Term Care Partnership Program, so a policy bought there does not add dollar-for-dollar Medicaid asset protection.`,
   }),
   (s, f, prem55) => ({
     question: `How do hybrid life/LTC policies compare to traditional LTC insurance in ${s.name}?`,
-    answer: `Traditional LTC policies cost less up front — a healthy 55-year-old in ${s.name} pays around $${prem55}/year — but premiums can rise. Hybrid life/LTC policies lock a premium (or single deposit), pay a death benefit if care is never needed, but cost more initially.`,
+    answer: `Traditional LTC policies cost less up front (${LTC_PREM_SENT}), but premiums can rise. Hybrid life/LTC policies lock a premium (or single deposit), pay a death benefit if care is never needed, but cost more initially.`,
   }),
   (s, f, prem55) => ({
     question: `Who regulates long-term care insurance carriers in ${s.name}?`,
     answer: `Long-term care insurance rate increases and policy forms are reviewed by the ${f.insuranceCommissioner || s.name + ' Department of Insurance'}. Complaints and suspected unfair denials can be filed with that office at no cost.`,
   }),
   (s, f, prem55) => ({
-    question: `What counts as a "partnership-qualified" policy in ${s.name}?`,
-    answer: `A partnership-qualified LTC policy sold in ${s.name} must include specific inflation protection (generally compound inflation for buyers under 61) and must be tax-qualified. Ask the agent to confirm the policy is partnership-certified before you buy.`,
+    question: `What counts as a "partnership-qualified" policy?`,
+    answer: `Under federal rules a partnership-qualified LTC policy must be tax-qualified and include inflation protection (compound protection for buyers under 61). ${ltcPartner(s.slug).yes ? `Ask the agent to confirm the policy is partnership-certified in ${s.name} before you buy.` : `${s.name} is listed as a non-partnership state, so check with its insurance department before relying on this.`}`,
   }),
 ];
 const ltcEntries = [];
 states.forEach(s => {
   const f = sf(s.slug);
-  const prem55 = 1200 + Math.floor(Math.random() * 1000);
+  const prem55 = null;
+  const cc = careCosts(s.slug), lp = ltcPartner(s.slug);
   const firstFaq = ltcFaqTemplates[rot(s.slug, ltcFaqTemplates.length)](s, f, prem55);
   ltcEntries.push({
     stateSlug: s.slug, state: s.name, stateAbbr: s.abbr,
     h1: `Long-Term Care Insurance in ${s.name} (2026)`,
-    titleHook: `$${prem55}/yr`,
-    metaHook: `$${prem55}/yr at age 55`,
-    stateSpecificOpening: `<p>In ${s.name}, long-term care insurance premiums for a healthy 55-year-old cluster near $${prem55}/year, while ${f.medicaidProgram || s.name + ' Medicaid'} applies a 5-year asset lookback before it will pay for nursing home care. ${s.name}'s Partnership Program lets qualifying policies shield assets from that spend-down — so the choice between a traditional LTC policy, a hybrid life/LTC product, and Medicaid planning is really a choice about which $200,000+ of family assets you most want to protect.</p>`,
+    titleHook: `Nursing Home ${usd(cc.v.nursingHomeSemiPrivate)}/mo`,
+    metaHook: `nursing home ${usd(cc.v.nursingHomeSemiPrivate)}/mo median, premiums, Partnership status`,
+    stateSpecificOpening: `<p>A semi-private nursing home room in ${s.name} has a median cost of ${usd(cc.v.nursingHomeSemiPrivate)}/month (CareScout 2025), and ${f.medicaidProgram || s.name + ' Medicaid'} applies a 5-year asset lookback before it will pay for that care. ${lp.yes ? `${s.name} also runs a Partnership Program that lets qualifying policies shield assets from spend-down.` : `${s.name} is listed as a non-partnership state, so insurance does not add Medicaid asset protection there.`} For prices, ${LTC_PREM_SENT}.</p>`,
     localContext: [
       { label: 'State Medicaid program', value: f.medicaidProgram || `${s.name} Medicaid` },
-      { label: 'Partnership Program', value: `${s.name} participates — assets protected dollar-for-dollar` },
+      { label: 'Partnership Program', value: lp.label },
       { label: 'Insurance regulator', value: f.insuranceCommissioner || `${s.name} Department of Insurance` },
     ],
-    introText: `<p>Compare long-term care insurance costs in ${s.name} for 2026. Premiums at age 55 average around $${prem55}/year, but the ${f.medicaidProgram || s.name + ' Medicaid'} spend-down rules and the state's Partnership Program often matter more than the headline premium when deciding how to pay for future care.</p>`,
-    avgAnnualPremium: { age55: `$${prem55}`, age60: `$${prem55 + 800}`, age65: `$${prem55 + 2000}`, couple65: `$${prem55 + 3000}` },
-    avgLtcCosts: { nursingHome: `$${8000 + Math.floor(Math.random() * 4000)}/mo`, assistedLiving: `$${4000 + Math.floor(Math.random() * 2000)}/mo`, homeCare: `$${4500 + Math.floor(Math.random() * 2000)}/mo` },
+    introText: `<p>Compare long-term care costs and insurance options in ${s.name} for 2026. The ${f.medicaidProgram || s.name + ' Medicaid'} spend-down rules and the state's Partnership status often matter as much as the premium when deciding how to pay for future care.</p>`,
+    premiumRows: LTC_PREM_ROWS,
+    avgLtcCosts: { nursingHome: `${usd(cc.v.nursingHomeSemiPrivate)}/mo`, assistedLiving: `${usd(cc.v.assistedLiving)}/mo`, homeCare: `${usd(cc.v.homeCareMonthly)}/mo` },
+    ltcCostScope: `${s.name} statewide medians (semi-private nursing home room; home care at 44 hours a week)`,
     coverageOptions: [
-      { type: 'Traditional LTC Insurance', description: 'Standalone policy covering nursing home, assisted living, and home care', avgPremium: `$${prem55 + 1500}/year`, pros: ['Lower premium', 'Comprehensive coverage'], cons: ['Premiums may increase', 'Use it or lose it'] },
+      { type: 'Traditional LTC Insurance', description: 'Standalone policy covering nursing home, assisted living, and home care', avgPremium: 'See the AALTCI sample prices above', pros: ['Lower premium', 'Comprehensive coverage'], cons: ['Premiums may increase', 'Use it or lose it'] },
       { type: 'Hybrid Life/LTC Policy', description: 'Life insurance policy with long-term care benefits', avgPremium: 'Lump sum or annual premium', pros: ['Fixed premiums', 'Death benefit if LTC unused'], cons: ['Higher upfront cost', 'Less LTC flexibility'] },
     ],
-    partnershipProgram: { available: true, description: `${s.name} participates in the Long-Term Care Partnership Program, allowing policyholders to protect assets equal to benefits received.` },
-    medicaidSpendDown: { assetLimit: '$2,000 individual', lookbackPeriod: '5 years', description: `${f.medicaidProgram || s.name + ' Medicaid'}'s spend-down process requires applicants to reduce countable assets to the limit before qualifying for nursing home coverage. A ${f.countyTerm || 'county'} eligibility worker reviews the application.` },
+    partnershipProgram: { available: lp.yes, description: lp.description },
+    medicaidSpendDown: { assetLimit: LTC_ASSET, lookbackPeriod: '5 years', description: `${f.medicaidProgram || s.name + ' Medicaid'}'s spend-down process requires applicants to reduce countable assets to the limit before qualifying for nursing home coverage. A ${f.countyTerm || 'county'} eligibility worker reviews the application.` },
     planningSteps: [
       { step: 1, title: 'Assess your risk', description: 'Consider family history, health status, and likelihood of needing long-term care.' },
       { step: 2, title: 'Evaluate costs', description: `Research the cost of care in ${s.name} and how much coverage you need.` },
@@ -1075,12 +1256,13 @@ states.forEach(s => {
     ],
     faqs: [
       firstFaq,
-      { question: `How much does long-term care insurance cost in ${s.name}?`, answer: `Annual premiums in ${s.name} vary based on age, health, and coverage level. A 55-year-old might pay around $${prem55}/year, while a 65-year-old could pay $${prem55 + 2000}/year.` },
+      { question: `How much does long-term care insurance cost in ${s.name}?`, answer: `Premiums depend on age, health, benefit size and inflation protection. As a reference point, ${LTC_PREM_SENT}. Get quotes from insurers licensed in ${s.name}.` },
     ],
     sources: [
-      { title: 'AALTCI', url: 'https://www.aaltci.org' },
-      { title: 'Genworth Cost of Care', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' },
-      { title: f.insuranceCommissioner || `${s.name} Department of Insurance`, url: '#' },
+      srcRef('aaltci_2026'),
+      CARE_SRC,
+      srcRef('ltc_partnership'),
+      { title: `${f.insuranceCommissioner || `${s.name} Department of Insurance`} (via ${LINKS.insurance.title})`, url: LINKS.insurance.url },
     ],
   });
 });
@@ -1089,44 +1271,45 @@ cities.forEach(c => {
   const st = states.find(s => s.slug === c.stateSlug);
   const stName = st ? st.name : '';
   const f = sf(c.stateSlug);
-  const prem55 = 1200 + Math.floor(Math.random() * 1200);
-  const nhCost = 8000 + Math.floor(Math.random() * 5000);
-  const alCost = 4000 + Math.floor(Math.random() * 3000);
-  const hcCost = 4500 + Math.floor(Math.random() * 2500);
+  const cc = careCosts(c.stateSlug, c), lp = ltcPartner(c.stateSlug);
+  const nhCost = usd(cc.v.nursingHomeSemiPrivate), alCost = usd(cc.v.assistedLiving), hcCost = usd(cc.v.homeCareMonthly);
+  const nhArea = cc.scope.nursingHomeSemiPrivate === 'metro' ? `the ${cc.area} area` : `${stName} (statewide; no separate ${c.name} figure)`;
   ltcEntries.push({
     stateSlug: c.stateSlug, state: stName, stateAbbr: c.stateAbbr,
     citySlug: c.slug, city: c.name,
     h1: `Long-Term Care Insurance in ${c.name}, ${c.stateAbbr} (2026)`,
-    titleHook: `$${nhCost}/mo nursing home`,
-    metaHook: `nursing home $${nhCost}/mo, LTC premium $${prem55}/yr`,
-    stateSpecificOpening: `<p>Nursing home care in the ${c.name}, ${c.stateAbbr} area averages about $${nhCost}/month in 2026, while assisted living sits near $${alCost}/month and in-home care runs $${hcCost}/month. A ${c.name} resident who buys traditional LTC coverage at 55 should expect premiums near $${prem55}/year — and the ${f.medicaidProgram || stName + ' Medicaid'} 5-year lookback still applies if care is ever paid through Medicaid.</p>`,
+    titleHook: `Nursing Home ${nhCost}/mo ${cc.tag('nursingHomeSemiPrivate')}`,
+    metaHook: `nursing home ${nhCost}/mo ${cc.tag('nursingHomeSemiPrivate')}, LTC insurance prices`,
+    stateSpecificOpening: `<p>The CareScout 2025 median for a semi-private nursing home room in ${nhArea} is ${nhCost}/month; assisted living is ${alCost}/month and in-home care (44 hours a week) ${hcCost}/month. For insurance prices, ${LTC_PREM_SENT}. The ${f.medicaidProgram || stName + ' Medicaid'} 5-year lookback applies if care is ever paid through Medicaid.</p>`,
     localContext: [
-      { label: 'Local nursing home (avg)', value: `$${nhCost}/mo` },
-      { label: 'Local assisted living (avg)', value: `$${alCost}/mo` },
+      { label: `Nursing home (${cc.tag('nursingHomeSemiPrivate')})`, value: `${nhCost}/mo` },
+      { label: `Assisted living (${cc.tag('assistedLiving')})`, value: `${alCost}/mo` },
       { label: 'State Medicaid', value: f.medicaidProgram || `${stName} Medicaid` },
     ],
-    introText: `<p>Compare 2026 long-term care costs and insurance premiums for ${c.name}, ${c.stateAbbr}. Local nursing home rates cluster near $${nhCost}/month, which is usually the real driver of whether LTC insurance or Medicaid planning makes sense for your family.</p>`,
-    avgAnnualPremium: { age55: `$${prem55}`, age60: `$${prem55 + 800}`, age65: `$${prem55 + 2000}`, couple65: `$${prem55 + 3000}` },
-    avgLtcCosts: { nursingHome: `$${nhCost}/mo`, assistedLiving: `$${alCost}/mo`, homeCare: `$${hcCost}/mo` },
+    introText: `<p>Compare 2026 long-term care costs and insurance options for ${c.name}, ${c.stateAbbr}. Nursing home rates (${nhCost}/month, ${cc.label('nursingHomeSemiPrivate')}) are usually the real driver of whether LTC insurance or Medicaid planning makes sense for your family.</p>`,
+    premiumRows: LTC_PREM_ROWS,
+    avgLtcCosts: { nursingHome: `${nhCost}/mo`, assistedLiving: `${alCost}/mo`, homeCare: `${hcCost}/mo` },
+    ltcCostScope: `nursing home: ${cc.label('nursingHomeSemiPrivate')}; assisted living: ${cc.label('assistedLiving')}; home care: ${cc.label('homeCareMonthly')}`,
     coverageOptions: [
-      { type: 'Traditional LTC Insurance', description: 'Standalone policy covering nursing home, assisted living, and home care', avgPremium: `$${prem55 + 1500}/year`, pros: ['Lower premium', 'Comprehensive coverage'], cons: ['Premiums may increase', 'Use it or lose it'] },
+      { type: 'Traditional LTC Insurance', description: 'Standalone policy covering nursing home, assisted living, and home care', avgPremium: 'See the AALTCI sample prices above', pros: ['Lower premium', 'Comprehensive coverage'], cons: ['Premiums may increase', 'Use it or lose it'] },
       { type: 'Hybrid Life/LTC Policy', description: 'Life insurance policy with long-term care benefits', avgPremium: 'Lump sum or annual premium', pros: ['Fixed premiums', 'Death benefit if LTC unused'], cons: ['Higher upfront cost', 'Less LTC flexibility'] },
     ],
-    partnershipProgram: { available: true, description: `${stName} participates in the Long-Term Care Partnership Program, available to ${c.name} residents.` },
-    medicaidSpendDown: { assetLimit: '$2,000 individual', lookbackPeriod: '5 years', description: `${f.medicaidProgram || stName + ' Medicaid'}'s spend-down process applies to ${c.name} residents seeking long-term care coverage through Medicaid.` },
+    partnershipProgram: { available: lp.yes, description: lp.description },
+    medicaidSpendDown: { assetLimit: LTC_ASSET, lookbackPeriod: '5 years', description: `${f.medicaidProgram || stName + ' Medicaid'}'s spend-down process applies to ${c.name} residents seeking long-term care coverage through Medicaid.` },
     planningSteps: [
       { step: 1, title: 'Assess your risk', description: 'Consider family history, health status, and likelihood of needing long-term care.' },
-      { step: 2, title: 'Evaluate local costs', description: `Research care costs in the ${c.name} area — nursing homes average $${nhCost}/mo and assisted living averages $${alCost}/mo.` },
+      { step: 2, title: 'Evaluate local costs', description: `Check care costs near ${c.name}: CareScout's 2025 medians are ${nhCost}/mo for a semi-private nursing home room and ${alCost}/mo for assisted living.` },
       { step: 3, title: 'Compare policies', description: 'Get quotes from multiple insurers and compare benefits, elimination periods, and inflation protection.' },
       { step: 4, title: 'Consider alternatives', description: 'Evaluate hybrid policies, self-insurance, and Medicaid planning as alternatives.' },
     ],
     faqs: [
-      { question: `How much does long-term care cost in ${c.name}, ${c.stateAbbr}?`, answer: `In the ${c.name} area, nursing home care averages $${nhCost}/month, assisted living averages $${alCost}/month, and home care averages $${hcCost}/month.` },
-      { question: `What is the best age to buy long-term care insurance in ${c.name}?`, answer: `The ideal age to buy LTC insurance is typically 55-65. A 55-year-old in ${c.name} might pay around $${prem55}/year, while waiting until 65 could cost $${prem55 + 2000}/year.` },
+      { question: `How much does long-term care cost in ${c.name}, ${c.stateAbbr}?`, answer: `CareScout's 2025 medians are ${nhCost}/month for a semi-private nursing home room (${cc.label('nursingHomeSemiPrivate')}), ${alCost}/month for assisted living and ${hcCost}/month for 44 hours a week of home care.` },
+      { question: `When is the best age to buy long-term care insurance?`, answer: `Many buyers shop in their mid-50s to early 60s, while they can still pass health screening. As a reference point, ${LTC_PREM_SENT}.` },
     ],
     sources: [
-      { title: 'AALTCI', url: 'https://www.aaltci.org' },
-      { title: 'Genworth Cost of Care', url: 'https://www.genworth.com/aging-and-you/finances/cost-of-care.html' },
+      srcRef('aaltci_2026'),
+      CARE_SRC,
+      srcRef('ltc_partnership'),
     ],
   });
 });
@@ -1172,8 +1355,8 @@ states.forEach(s => {
       { label: 'Insurance regulator (reverse mortgage complaints)', value: f.insuranceCommissioner || `${s.name} Department of Insurance` },
     ],
     introText: `<p>Find elder law resources for ${s.name} residents in 2026. This guide covers power of attorney rules, the ${f.countyTerm || 'county'} guardianship process, ${s.name} elder abuse reporting through APS${f.apsHotline ? ` (${f.apsHotline})` : ''}, reverse mortgage requirements, and local legal aid.</p>`,
-    poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${s.name} recognizes several types of power of attorney. A durable POA remains effective if the principal becomes incapacitated — the statutory form typically requires notarization and, in some ${s.name} institutions, witnesses.`, formUrl: '#' },
-    guardianship: { process: 'Court petition required', description: `In ${s.name}, guardianship is established through the probate or ${f.countyTerm || 'county'} court when an individual can no longer make decisions for themselves. Judges generally require less restrictive alternatives (durable POA, supported decision-making) to be ruled out first.`, courtUrl: '#' },
+    poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${s.name} recognizes several types of power of attorney. A durable POA remains effective if the principal becomes incapacitated — the statutory form typically requires notarization and, in some ${s.name} institutions, witnesses.` },
+    guardianship: { process: 'Court petition required', description: `In ${s.name}, guardianship is established through the probate or ${f.countyTerm || 'county'} court when an individual can no longer make decisions for themselves. Judges generally require less restrictive alternatives (durable POA, supported decision-making) to be ruled out first.` },
     estatePlanning: { description: `Estate planning in ${s.name} involves creating wills, trusts, and advance directives to protect your assets and wishes.`, requirements: ['Valid will must be signed and witnessed per ' + s.name + ' statute', 'Trusts require proper funding', 'Advance directives should name healthcare agents'] },
     elderAbuse: { reportingHotline: f.apsHotline || '1-800-677-1116', reportingUrl: 'https://eldercare.acl.gov', laws: `${s.name} has laws protecting seniors from physical, emotional, and financial abuse. Reports go to ${s.name} Adult Protective Services${f.apsHotline ? ` at ${f.apsHotline}` : ''} and can be made anonymously.` },
     reverseMortgage: { description: 'A Home Equity Conversion Mortgage (HECM) allows homeowners 62+ to borrow against home equity.', requirements: ['Age 62+', 'Primary residence', 'Sufficient equity', 'HUD counseling required'], warnings: ['Reduces inheritance', 'Fees can be high', 'Must maintain home and pay taxes/insurance', 'Non-borrowing spouse protections vary — confirm with the HUD counselor'] },
@@ -1188,7 +1371,7 @@ states.forEach(s => {
     sources: [
       { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
       { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org/findlawyer' },
-      { title: `${s.name} Adult Protective Services`, url: '#' },
+      { title: `${s.name} Adult Protective Services (via ${LINKS.aps.title})`, url: LINKS.aps.url },
     ],
   });
 });
@@ -1207,26 +1390,27 @@ cities.forEach(c => {
     localContext: [
       { label: 'APS reporting', value: f.apsHotline || '1-800-677-1116 (Eldercare Locator)' },
       { label: 'Local court', value: `${c.name}/${f.countyTerm || 'county'} probate court` },
-      { label: 'Typical attorney fee', value: '$200–$500/hour in the ' + c.name + ' area' },
+      { label: 'Find an elder law attorney', value: 'NAELA directory or the state bar referral service' },
     ],
     introText: `<p>Find elder law attorneys, legal aid, and senior protections in ${c.name}, ${c.stateAbbr}. Get guidance on power of attorney, estate planning, and elder abuse reporting — with direct phone numbers for the offices that handle each issue in the ${c.name} area.</p>`,
-    poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${stName} recognizes several types of power of attorney. ${c.name} residents can establish a durable POA that remains effective if the principal becomes incapacitated.`, formUrl: '#' },
-    guardianship: { process: 'Court petition required', description: `Guardianship in ${c.name} is established through ${stName}'s ${f.countyTerm || 'county'} probate court when an individual can no longer make decisions for themselves.`, courtUrl: '#' },
+    poaLaws: { types: ['Financial Power of Attorney', 'Healthcare Power of Attorney', 'Durable Power of Attorney'], description: `${stName} recognizes several types of power of attorney. ${c.name} residents can establish a durable POA that remains effective if the principal becomes incapacitated.` },
+    guardianship: { process: 'Court petition required', description: `Guardianship in ${c.name} is established through ${stName}'s ${f.countyTerm || 'county'} probate court when an individual can no longer make decisions for themselves.` },
     estatePlanning: { description: `Estate planning for ${c.name} residents follows ${stName} law and involves creating wills, trusts, and advance directives.`, requirements: ['Valid will must be signed and witnessed per ' + stName + ' law', 'Trusts require proper funding', 'Advance directives should name healthcare agents'] },
     elderAbuse: { reportingHotline: f.apsHotline || '1-800-677-1116', reportingUrl: 'https://eldercare.acl.gov', laws: `${stName} has laws protecting ${c.name} seniors from physical, emotional, and financial abuse. Reports go to ${stName} APS${f.apsHotline ? ` at ${f.apsHotline}` : ''}.` },
     reverseMortgage: { description: `A Home Equity Conversion Mortgage (HECM) allows ${c.name} homeowners 62+ to borrow against home equity.`, requirements: ['Age 62+', 'Primary residence', 'Sufficient equity', 'HUD counseling required'], warnings: ['Reduces inheritance', 'Fees can be high', 'Must maintain home and pay taxes/insurance'] },
     legalAidOrgs: [
-      { name: `${c.name} Legal Aid Society`, phone: '(via Eldercare Locator 1-800-677-1116)', services: `Free legal help for low-income seniors in the ${c.name} area` },
+      { name: `Legal aid for ${c.name} seniors`, phone: '(via Eldercare Locator 1-800-677-1116)', services: `Older Americans Act legal help for people 60+ in the ${c.name} area, arranged through the Area Agency on Aging` },
       { name: 'Eldercare Locator', phone: '1-800-677-1116', url: 'https://eldercare.acl.gov', services: `Connects ${c.name} seniors with local legal resources` },
     ],
     faqs: [
-      { question: `How do I find an elder law attorney in ${c.name}?`, answer: `Search the National Academy of Elder Law Attorneys directory for attorneys in the ${c.name}, ${c.stateAbbr} area. You can also contact ${c.name} Legal Aid for free consultations if you qualify.` },
+      { question: `How do I find an elder law attorney in ${c.name}?`, answer: `Search the National Academy of Elder Law Attorneys directory for attorneys in the ${c.name}, ${c.stateAbbr} area. Seniors 60+ can also ask the Area Agency on Aging about free legal help.` },
       { question: `Where do I report elder abuse in ${c.name}?`, answer: `Call ${stName} Adult Protective Services${f.apsHotline ? ` at ${f.apsHotline}` : ''} or the Eldercare Locator at 1-800-677-1116. For emergencies in ${c.name}, call 911.` },
-      { question: `How much does an elder law attorney cost in ${c.name}?`, answer: `Elder law attorneys in the ${c.name} area typically charge $200-$500/hour. Many offer free initial consultations. Low-income seniors may qualify for free legal aid through the ${c.name} Legal Aid Society.` },
+      { question: `How much does an elder law attorney cost in ${c.name}?`, answer: `Fees vary by attorney and task: some charge by the hour and others a flat fee for documents like a will or power of attorney, so ask for a written fee quote before you start. Seniors 60+ can ask the Area Agency on Aging (Eldercare Locator, 1-800-677-1116) about free legal help funded under the Older Americans Act.` },
     ],
     sources: [
       { title: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
       { title: 'National Academy of Elder Law Attorneys', url: 'https://www.naela.org/findlawyer' },
+      { title: `${stName} Adult Protective Services (via ${LINKS.aps.title})`, url: LINKS.aps.url },
     ],
   });
 });
@@ -1296,12 +1480,12 @@ write('provider-directory.json', pdEntries);
 
 // ---- ENGINE 14: Authority Pages (standalone) ----
 write('authority-page.json', [
-  { slug: 'about', h1: 'About Senior Benefits Care Finder', title: 'About Us', metaDescription: 'Senior Benefits Care Finder is an independent publication founded by Paul Paradis to help seniors, veterans, and families understand Medicare, Medicaid, Social Security, and senior care in plain English.', introText: '<p>Senior Benefits Care Finder is an independent publication founded and operated by Paul Paradis. We write plain-English guides to Medicare, Medicaid, Social Security, VA benefits, and senior care &mdash; not a call center, not a government agency, not a sales team.</p>', sections: [{ heading: 'Why This Site Exists', content: '<p>Senior Benefits Care Finder exists because the programs that matter most to older Americans &mdash; Medicare, Medicaid, Social Security, VA benefits, long-term care &mdash; are some of the hardest things to read about online. Official pages are accurate but dense. Agent-run sites push you toward a phone call before they answer your question. Forums give you outdated advice from strangers.</p><p>We sit in a different spot: read the primary sources, write the plain-English version, link back to the official page, and keep it current. No call center, no lead forms, no sales script.</p>' }, { heading: "What We Are and What We Aren't", content: "<p>We are a small, independent publisher of educational guides about senior benefits and care. We are not a government agency, a licensed insurance agency, a law firm, a financial planning firm, a medical practice, or an enrollment service. We don't enroll anyone in anything and we don't file paperwork on anyone's behalf.</p><p>When a question goes past general education, we say so and point readers to the right place: 1-800-MEDICARE, SSA, the VA, the State Health Insurance Assistance Program (SHIP), or the Eldercare Locator at 1-800-677-1116.</p>" }, { heading: 'How Our Content Gets Made', content: "<p>One person publishes here. Paul researches, writes, and maintains the guides. The workflow is simple: start with primary sources (CMS, SSA, VA, state Medicaid agencies, the Genworth Cost of Care Survey, BLS), write the plain-English version with dated dollar figures, use AI tools to help draft and cross-check across states, and review every page before it goes live. Every claim that matters links back to the official source so readers can verify.</p>" }, { heading: 'Independence and Disclosure', content: "<p>The site is supported by display ads and, in some places, affiliate links. Affiliate or sponsored links are disclosed. No advertiser pays to change what's written in a guide, and no company on the site gets editorial favors in exchange for a commercial relationship.</p>" }, { heading: 'From the Founder', content: "<p>I started this site because my own family needed it. When relatives were trying to sort out Medicare, Medicaid for a parent, and a VA pension for a surviving spouse, the internet was full of glossy pages that wanted a phone number before they'd answer a question. I wrote up what I learned in plain language, and other people kept asking for the notes.</p><p>I'm not a licensed agent or attorney. What I can do is read the source material carefully, write it up honestly, link back to the original, and keep it current. If something is wrong, tell me and I'll fix it.</p><p>&mdash; Paul Paradis, Founder</p>" }] },
-  { slug: 'privacy-policy', h1: 'Privacy Policy', title: 'Privacy Policy', metaDescription: 'Read the Senior Benefits Care Finder privacy policy to understand how we collect, use, and protect your information.', introText: '<p>Your privacy is important to us. This policy describes how Senior Benefits Care Finder collects and uses information.</p>', policyContent: '<h3>Information We Collect</h3><p>We collect anonymous usage data through analytics tools to improve our content. We do not collect personally identifiable information unless you voluntarily provide it through contact forms.</p><h3>How We Use Information</h3><p>Usage data helps us understand which content is most helpful and how to improve our guides. We never sell personal information to third parties.</p><h3>Cookies</h3><p>We use cookies to improve your browsing experience and analyze site traffic. You can manage cookie preferences through your browser settings.</p><h3>Third-Party Links</h3><p>Our guides contain links to government agencies, organizations, and service providers. We are not responsible for the privacy practices of external sites.</p><h3>Contact</h3><p>If you have questions about this privacy policy, please contact us through our website.</p>' },
-  { slug: 'terms-of-use', h1: 'Terms of Use', title: 'Terms of Use', metaDescription: 'Review the terms of use for Senior Benefits Care Finder.', introText: '<p>By using Senior Benefits Care Finder, you agree to the following terms.</p>', policyContent: '<h3>Disclaimer</h3><p>The information provided on Senior Benefits Care Finder is for general informational purposes only. It should not be considered legal, financial, or medical advice. Always consult with qualified professionals before making decisions about benefits enrollment, care options, or financial planning.</p><h3>Accuracy</h3><p>We strive to keep all information accurate and up to date, but program details, eligibility requirements, and costs can change. We encourage you to verify information with official sources.</p><h3>Use of Content</h3><p>All content on this site is protected by copyright. You may not reproduce, distribute, or modify our content without permission.</p>' },
-  { slug: 'contact', h1: 'Contact Us', title: 'Contact Us', metaDescription: 'Email Senior Benefits Care Finder with questions, corrections, or partnership inquiries. Small independent publication — not a government agency, not a crisis line, not an enrollment service.', introText: "<p>We're a small independent publication. Email is the best way to reach us &mdash; and we want to be upfront about what we can and can't help with before you hit send.</p>", sections: [{ heading: 'How to Reach Us', content: "<p>Senior Benefits Care Finder is run by a small team led by founder Paul Paradis. Email is the only way we take inquiries. We don't have a call center and we don't publish a phone number, because we're not licensed to give benefits, legal, or medical advice and we don't want anyone to think they're calling one.</p><p>For general questions, corrections, or feedback: <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a>. For advertising and partnership inquiries: <a href='mailto:advertise@seniorbenefitscarefinder.com'>advertise@seniorbenefitscarefinder.com</a>.</p><p>Because this is a small independent team, please give us 2&ndash;3 business days to reply. We are not available 24/7, and this is not a crisis or emergency line. If this is an emergency, call 911. The 988 Suicide &amp; Crisis Lifeline is available 24/7 (call or text 988), and the Veterans Crisis Line is reachable by dialing 988 then pressing 1.</p>" }, { heading: "Who We Are and Aren't", content: "<p>Senior Benefits Care Finder is an independent publication. We are <strong>not</strong> a government agency and have no affiliation with Medicare, Medicaid, the Social Security Administration, or the Department of Veterans Affairs. We are <strong>not</strong> a licensed insurance agency, law firm, financial planning firm, or medical practice. We <strong>cannot</strong> enroll you in a program, file a claim, appeal a denial, or give advice specific to your situation. We don't sell your contact information or pass your questions to third-party agents.</p>" }, { heading: 'What We Can Help With', content: '<p>Corrections or updates to our guides (dates, dollar figures, broken links, eligibility rules). General questions about how a program works or where to find the official source. Feedback on what\'s confusing or missing. Suggestions for topics or states we should cover. Press, partnership, or advertising inquiries.</p>' }, { heading: "What We Can't Help With", content: "<p>These aren't the right place to email us. You'll get a faster, better answer from the authoritative resources below: medical diagnosis or treatment (please talk to a clinician or call 911 in an emergency); individual legal advice (a licensed elder law attorney is the right call); enrolling in Medicare, Medicaid, Social Security, or VA benefits (we can't submit paperwork); appealing a coverage decision (your plan, the issuing agency, or a licensed professional can help \u2014 your State Health Insurance Assistance Program offers free Medicare counseling); finding a local provider on your behalf (try the Eldercare Locator).</p>" }, { heading: 'Authoritative Resources', content: "<p><strong>Medicare:</strong> 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048, or <a href='https://www.medicare.gov' rel='noopener'>medicare.gov</a>. Free local counseling through your <a href='https://www.shiphelp.org' rel='noopener'>State Health Insurance Assistance Program (SHIP)</a>.</p><p><strong>Social Security:</strong> 1-800-772-1213, TTY 1-800-325-0778, or <a href='https://www.ssa.gov' rel='noopener'>ssa.gov</a>.</p><p><strong>Veterans Affairs:</strong> 1-800-827-1000 or <a href='https://www.va.gov' rel='noopener'>va.gov</a>. <strong>Veterans Crisis Line:</strong> dial 988 then press 1, or text 838255.</p><p><strong>Eldercare Locator</strong> (finding local services for an older adult): 1-800-677-1116 or <a href='https://eldercare.acl.gov' rel='noopener'>eldercare.acl.gov</a>.</p><p><strong>Medicaid:</strong> Each state runs its own program. Start at <a href='https://www.medicaid.gov' rel='noopener'>medicaid.gov</a> and follow the link to your state agency.</p>" }] },
-  { slug: 'how-we-research', h1: 'How We Research Our Guides', title: 'Our Research Methodology', metaDescription: 'Learn how Senior Benefits Care Finder researches and verifies information in our senior benefits guides.', introText: '<p>Accuracy and reliability are the foundation of every guide we publish. Here is how we research and verify our content.</p>', sections: [{ heading: 'Official Sources', content: '<p>We source information primarily from government agencies including CMS (Medicare/Medicaid), SSA (Social Security), VA (Veterans Affairs), and state departments of health and social services.</p>' }, { heading: 'Industry Data', content: '<p>For cost data, we reference the Genworth Cost of Care Survey, AALTCI reports, and Bureau of Labor Statistics data.</p>' }, { heading: 'Regular Updates', content: '<p>Our guides are reviewed and updated to reflect current-year eligibility rules, benefit amounts, and program changes.</p>' }] },
-  { slug: 'editorial-policy', h1: 'Editorial Policy', title: 'Editorial Policy', metaDescription: 'Editorial standards for Senior Benefits Care Finder: independence, plain-English accuracy, human review of AI-assisted drafts, affiliate disclosure, and a fast-correction policy.', introText: '<p>How Senior Benefits Care Finder decides what to publish, how we handle AI tools, how we disclose relationships, and how we fix things when we get them wrong.</p>', sections: [{ heading: 'Who Writes This', content: "<p>Senior Benefits Care Finder is an independent publication founded and operated by <a href='/author/paul-paradis/'>Paul Paradis</a>. One person's name is on the work. Paul is not a licensed insurance agent, attorney, financial planner, or medical professional \u2014 he's a publisher focused on plain-English guidance. Every guide is published under his byline, and when something is wrong, the responsibility for fixing it sits with him.</p>" }, { heading: 'Independence', content: "<p>Our editorial content is written independently of our advertisers and affiliate partners. No advertiser or partner gets to change what a guide says about their product, their category, or a competitor. We do not accept paid placements inside guides; ads are labeled as ads, and affiliate or sponsored links are disclosed. Government programs are never pitched as if they were commercial products \u2014 they're explained using the relevant official source. If a commercial relationship ever conflicts with what's most accurate or most helpful for the reader, the reader wins.</p>" }, { heading: 'Expertise and How Content Gets Made', content: "<p>We want to be plain about how the guides are written. Primary sources come first: Medicare.gov, SSA.gov, VA.gov, state Medicaid agencies, the Genworth Cost of Care Survey, BLS data, and peer-reviewed research when it applies. We use AI tools to help organize data, draft passages, and cross-check consistency across states and topics; a human reviews every page before it's published, and the byline on every page is a human. Rules that qualify in government language get rewritten into the way real people talk about them, with links back to the primary source so readers can verify. When a question requires a licensed professional, we say so and point readers to the right resource.</p>" }, { heading: 'Disclosure', content: '<p>This site is supported by display advertising and, in some places, affiliate links to third-party services. Where a link is affiliate or sponsored, we label it. We may earn a commission when readers use those links, at no extra cost to the reader. Commissions do not change the editorial content of a guide. We are not affiliated with Medicare, Medicaid, the Social Security Administration, the VA, or any state or federal agency.</p>' }, { heading: 'Corrections', content: "<p>We get things wrong sometimes, and when that happens we fix them. Found an error? Email <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a> with the page and what's off. Include a source if you have one. Verified corrections are usually made within a few business days, and material updates get a dated 'Updated' badge on the page. Program rules, income limits, and dollar figures change often \u2014 if a number looks stale, check the linked government source and please tell us so we can update it here.</p>" }] },
+  {"slug": "about", "h1": "About Senior Benefits Care Finder", "title": "About Us", "metaDescription": "Senior Benefits Care Finder is an independent site run by one person, Paul Paradis, with plain-English guides to Medicare, Medicaid, SNAP, Social Security, VA benefits and senior care.", "introText": "<p>Senior Benefits Care Finder is an independent site founded and run by Paul Paradis. It publishes plain-English guides to Medicare, Medicaid, SNAP, Social Security, VA benefits and senior care. It is not a call center, a government agency or a sales team.</p>", "sections": [{"heading": "Why This Site Exists", "content": "<p>The programs that matter most to older Americans &mdash; Medicare, Medicaid, Social Security, SNAP, VA benefits, long-term care &mdash; are some of the hardest things to read about online. Official pages are accurate but dense. Agent-run sites push you toward a phone call before they answer your question. Forums give you outdated advice from strangers.</p><p>This site tries to sit in a different spot: read the primary sources, write the plain-English version, link back to the official page, and keep the figures current. No call center, no lead forms, no sales script.</p>"}, {"heading": "What This Site Is and Isn't", "content": "<p>Senior Benefits Care Finder is a one-person publisher of educational guides. It is not a government agency, a licensed insurance agency, a law firm, a financial planning firm, a medical practice, or an enrollment service. It doesn't enroll anyone in anything or file paperwork on anyone's behalf. No doctor, lawyer, or licensed agent reviews the guides.</p><p>When a question goes past general education, the guides say so and point readers to the right place: 1-800-MEDICARE, SSA, the VA, the State Health Insurance Assistance Program (SHIP), or the Eldercare Locator at 1-800-677-1116.</p>"}, {"heading": "How the Guides Get Made", "content": "<p>One person publishes here. Paul researches, writes, and maintains the guides, with help from AI tools for drafting and for checking that figures match across thousands of state and city pages. Figures come from primary and published sources: CMS and Medicare.gov, SSA, USDA (for SNAP), the VA, HHS poverty guidelines, state agencies, and, for care costs, the CareScout (formerly Genworth) 2025 Cost of Care Survey. Each dollar figure is labeled with the year it applies to. The details are on <a href='/how-we-research/'>How We Research</a>.</p><p>Not every page is perfect. In November 2026 a review found outdated SNAP and Part D figures and cost estimates that were not tied to a published survey; those were replaced with sourced figures, and the changes are listed in the corrections log on the <a href='/fact-checking/'>fact-checking page</a>.</p>"}, {"heading": "Independence and Disclosure", "content": "<p>Some links to commercial services are affiliate or sponsored links, and they are labeled. The site may also show display ads. No advertiser pays to change what a guide says, and there are no paid placements inside guides. See <a href='/transparency/'>Transparency</a> for details.</p>"}, {"heading": "From the Founder", "content": "<p>I started this site because my own family needed it. When relatives were trying to sort out Medicare, Medicaid for a parent, and a VA pension for a surviving spouse, the internet was full of glossy pages that wanted a phone number before they'd answer a question. I wrote up what I learned in plain language, and other people kept asking for the notes.</p><p>I'm not a licensed agent or attorney. What I can do is read the source material carefully, write it up honestly, link back to the original, and keep it current. If something is wrong, email me at <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a> and I'll fix it.</p><p>&mdash; Paul Paradis, Founder</p>"}]},
+  {"slug": "privacy-policy", "h1": "Privacy Policy", "title": "Privacy Policy", "metaDescription": "How Senior Benefits Care Finder handles your information: Google Analytics, cookies and ads, AI chat messages sent to OpenAI, email, and your choices.", "introText": "<p>This policy explains what information Senior Benefits Care Finder (seniorbenefitscarefinder.com) collects, why, who else handles it, and the choices you have. The site is run by one person, Paul Paradis. Questions: <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a>.</p>", "policyContent": "<h3>The short version</h3><p>The site has no accounts, no sign-up forms and no contact forms. It uses Google Analytics to count visits, may show ads that use cookies, and sends AI chat messages to OpenAI to generate answers. Personal information is never sold.</p><h3>Analytics (Google Analytics 4)</h3><p>Every page loads Google Analytics 4. It sets cookies and collects information such as the pages you view, how you arrived (for example a search engine), your browser and device type, and an approximate location derived from your IP address. This is used only to see which guides are useful and what needs fixing. Google processes this data under its own terms; see <a href='https://policies.google.com/technologies/partner-sites' rel='noopener'>how Google uses information from sites that use its services</a>. You can block it with your browser's cookie settings or the <a href='https://tools.google.com/dlpage/gaoptout' rel='noopener'>Google Analytics opt-out add-on</a>.</p><h3>Advertising cookies</h3><p>The site may show ads served by Google (for example Google AdSense). When ads are shown, third-party vendors, including Google, use cookies to serve ads based on your prior visits to this and other websites. Google's advertising cookies let it and its partners serve ads based on those visits. You can opt out of personalized advertising in <a href='https://adssettings.google.com' rel='noopener'>Google Ads Settings</a>, and opt out of other vendors' personalized ads at <a href='https://www.aboutads.info/choices/' rel='noopener'>aboutads.info</a>. Where the law requires it, you will be asked for consent before these cookies are used.</p><h3>AI chat</h3><p>When you use the <a href='/chat'>AI guide</a>, the messages in that conversation (your questions and the guide's earlier answers) are sent from your browser to this site's server function and then to OpenAI's API to generate a reply. The site does not save chat conversations in a database and does not ask for your name. OpenAI handles API data under its own policies; it says API data is not used to train its models by default and may be kept for up to 30 days to monitor for abuse (see <a href='https://openai.com/enterprise-privacy/' rel='noopener'>OpenAI's API data commitments</a>). The hosting provider (Netlify) may keep short-lived technical logs of requests. Please don't type your Social Security number, Medicare number, bank details, or health records into the chat.</p><h3>Email</h3><p>If you email the site, your email address and message are used only to reply and, if you report an error, to fix it. They are not added to a mailing list or shared, except with the email provider that delivers them.</p><h3>Links to other sites</h3><p>Guides link to government agencies, nonprofits and some companies. Those sites have their own privacy practices. Some commercial links may be affiliate links, which can tell the company that you arrived from this site.</p><h3>Your choices and rights</h3><p>You can browse without the chat, block or delete cookies in your browser, and use the opt-outs above. Depending on where you live (for example California, Virginia, Colorado or the EU/UK), you may have rights to know, access, correct or delete personal information. Because the site does not keep accounts or chat logs, there is usually nothing tied to your name; for anything you have emailed, write to <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a> and it will be handled within 30 days. The site does not sell personal information.</p><h3>Children</h3><p>The site is written for adults and does not knowingly collect information from children under 13.</p><h3>Changes</h3><p>If this policy changes, the date at the top of this page changes with it.</p>"},
+  {"slug": "terms-of-use", "h1": "Terms of Use", "title": "Terms of Use", "metaDescription": "Terms for using Senior Benefits Care Finder: information only, no professional advice, AI chat limits, links and affiliate terms, liability limits, and contact.", "introText": "<p>By using Senior Benefits Care Finder (seniorbenefitscarefinder.com), you agree to these terms. If you don't agree, please don't use the site.</p>", "policyContent": "<h3>Information only, not advice</h3><p>Everything on this site, including the AI chat, is general educational information. It is not legal, financial, tax, medical, or insurance advice, and it does not create any professional relationship. The site is run by one person who is not a doctor, lawyer, licensed insurance agent or financial advisor. Before you make a decision about coverage, benefits, care or money, confirm the details with the agency that runs the program or a licensed professional.</p><h3>Accuracy and dates</h3><p>Benefit amounts, income limits and program rules change, often every year. Figures on this site are labeled with the year they apply to and linked to their source where possible, but they may be out of date or wrong for your situation, state or county. Always check the official source. If you find an error, please report it to <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a>.</p><h3>AI chat</h3><p>The AI guide is an automated tool that uses a third-party AI model (OpenAI). Its answers can be incomplete, out of date or simply wrong, even when they sound confident. It cannot check your eligibility, enroll you, or file anything for you. Don't rely on it for emergencies or for decisions without checking an official source, and don't enter sensitive personal information. Don't use the chat to send unlawful, abusive or automated requests. The chat may be changed, limited or turned off at any time.</p><h3>Links, affiliates and ads</h3><p>The site links to government, nonprofit and commercial websites that it does not control and is not responsible for. Some commercial links are affiliate or sponsored links; if you use them the site may earn a commission at no extra cost to you. The site may also show ads. A link or an ad is not an endorsement or a guarantee of any product, provider or outcome.</p><h3>No guarantees</h3><p>The site is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;, without warranties of any kind, express or implied, including accuracy, completeness, fitness for a particular purpose or uninterrupted availability.</p><h3>Limitation of liability</h3><p>To the fullest extent the law allows, Senior Benefits Care Finder and its owner are not liable for any direct, indirect, incidental, consequential or other damages arising from your use of the site, the AI chat, or any linked site, including decisions made based on information found here. Some places do not allow certain limits on liability, so parts of this section may not apply to you.</p><h3>Use of content</h3><p>The guides are protected by copyright. You may read, print and share links to them for personal, non-commercial use. Please don't copy, republish or scrape the content without permission. Government figures and documents quoted on the site remain public information.</p><h3>Changes to these terms</h3><p>These terms may be updated; the date at the top of this page shows the latest version. Continuing to use the site after a change means you accept the updated terms.</p><h3>Contact</h3><p>Questions about these terms: <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a>.</p>"},
+  { slug: 'contact', h1: 'Contact Us', title: 'Contact Us', metaDescription: 'Email Senior Benefits Care Finder with questions, corrections, or partnership inquiries. A one-person independent site, not a government agency, crisis line, or enrollment service.', introText: "<p>Senior Benefits Care Finder is run by one person, Paul Paradis. Email is the best way to reach me &mdash; and I want to be upfront about what I can and can't help with before you hit send.</p>", sections: [{ heading: 'How to Reach Us', content: "<p>Senior Benefits Care Finder is run by Paul Paradis on his own; there is no staff or team. Email is the only way to reach the site. There is no call center or phone number, because the site isn't licensed to give benefits, legal, or medical advice and nobody should think they're calling one.</p><p>For general questions, corrections, or feedback: <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a>. For advertising and partnership inquiries: <a href='mailto:advertise@seniorbenefitscarefinder.com'>advertise@seniorbenefitscarefinder.com</a>.</p><p>I read every email myself, so please allow 2&ndash;3 business days for a reply. I'm not available 24/7, and this is not a crisis or emergency line. If this is an emergency, call 911. The 988 Suicide &amp; Crisis Lifeline is available 24/7 (call or text 988), and the Veterans Crisis Line is reachable by dialing 988 then pressing 1.</p>" }, { heading: "Who We Are and Aren't", content: "<p>Senior Benefits Care Finder is an independent publication. We are <strong>not</strong> a government agency and have no affiliation with Medicare, Medicaid, the Social Security Administration, or the Department of Veterans Affairs. We are <strong>not</strong> a licensed insurance agency, law firm, financial planning firm, or medical practice. We <strong>cannot</strong> enroll you in a program, file a claim, appeal a denial, or give advice specific to your situation. We don't sell your contact information or pass your questions to third-party agents.</p>" }, { heading: 'What We Can Help With', content: '<p>Corrections or updates to our guides (dates, dollar figures, broken links, eligibility rules). General questions about how a program works or where to find the official source. Feedback on what\'s confusing or missing. Suggestions for topics or states we should cover. Press, partnership, or advertising inquiries.</p>' }, { heading: "What We Can't Help With", content: "<p>These aren't the right place to email us. You'll get a faster, better answer from the authoritative resources below: medical diagnosis or treatment (please talk to a clinician or call 911 in an emergency); individual legal advice (a licensed elder law attorney is the right call); enrolling in Medicare, Medicaid, Social Security, or VA benefits (we can't submit paperwork); appealing a coverage decision (your plan, the issuing agency, or a licensed professional can help \u2014 your State Health Insurance Assistance Program offers free Medicare counseling); finding a local provider on your behalf (try the Eldercare Locator).</p>" }, { heading: 'Authoritative Resources', content: "<p><strong>Medicare:</strong> 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048, or <a href='https://www.medicare.gov' rel='noopener'>medicare.gov</a>. Free local counseling through your <a href='https://www.shiphelp.org' rel='noopener'>State Health Insurance Assistance Program (SHIP)</a>.</p><p><strong>Social Security:</strong> 1-800-772-1213, TTY 1-800-325-0778, or <a href='https://www.ssa.gov' rel='noopener'>ssa.gov</a>.</p><p><strong>Veterans Affairs:</strong> 1-800-827-1000 or <a href='https://www.va.gov' rel='noopener'>va.gov</a>. <strong>Veterans Crisis Line:</strong> dial 988 then press 1, or text 838255.</p><p><strong>Eldercare Locator</strong> (finding local services for an older adult): 1-800-677-1116 or <a href='https://eldercare.acl.gov' rel='noopener'>eldercare.acl.gov</a>.</p><p><strong>Medicaid:</strong> Each state runs its own program. Start at <a href='https://www.medicaid.gov' rel='noopener'>medicaid.gov</a> and follow the link to your state agency.</p>" }] },
+  {"slug": "how-we-research", "h1": "How We Research Our Guides", "title": "Our Research Methodology", "metaDescription": "Exactly where the figures on Senior Benefits Care Finder come from: the CMS, SSA, USDA, VA, HHS and CareScout tables used, when they are checked, and what is labeled when no local figure exists.", "introText": "<p>This page lists where the numbers on this site come from, when they are checked, and what happens when no local figure exists. It is written by Paul Paradis, who researches and maintains the guides on his own. (For how errors are handled, see <a href='/fact-checking/'>Fact-Checking</a>; for the full source list, see <a href='/sources-methodology/'>Sources &amp; Methodology</a>.)</p>", "sections": [{"heading": "Medicare figures", "content": "<p>Premiums, deductibles and Part D limits come from the CMS annual fact sheet on <a href='https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles' rel='noopener'>Medicare Parts A and B premiums and deductibles</a> and Medicare.gov's <a href='https://www.medicare.gov/health-drug-plans/part-d/basics/costs' rel='noopener'>Part D costs</a> page. For 2026 that means a $202.90 Part B premium, a $283 Part B deductible, a $1,736 Part A deductible, a $615 maximum Part D deductible and a $2,100 cap on out-of-pocket drug costs (the coverage gap ended in 2025). Medicare Savings Program and Extra Help limits come from Medicare.gov and the CMS low-income subsidy memo. Plan counts and average premiums come from CMS landscape files and press releases and are labeled national when no state figure is published.</p>"}, {"heading": "SNAP figures", "content": "<p>SNAP income limits, maximum benefits and deductions come from USDA's fiscal-year tables, currently the <a href='https://www.fna.usda.gov/snap/recipient/eligibility' rel='noopener'>FY2027 eligibility standards</a> (October 1, 2026 to September 30, 2027). State rules on broad-based categorical eligibility &mdash; whether a state drops the asset test or raises the gross income limit &mdash; come from USDA's <a href='https://www.fna.usda.gov/snap/broad-based-categorical-eligibility' rel='noopener'>BBCE chart</a>, checked against the state agency where its page loads. Each state's SNAP agency comes from the <a href='https://www.fna.usda.gov/snap/state-directory' rel='noopener'>USDA state directory</a>. SNAP figures are rechecked every October when the new fiscal year starts.</p>"}, {"heading": "Social Security, SSI and Medicaid", "content": "<p>SSI payment rates and the cost-of-living adjustment come from SSA's annual COLA fact sheet; average benefits by state come from SSA's annual statistical tables, labeled with their year. State SSI supplements are described from SSA's state-by-state summaries. Medicaid expansion status comes from KFF's tracker. Spousal-impoverishment figures come from CMS informational bulletins. Medicaid income limits for people 65+ vary by state and program, so pages say so and point to the state agency instead of guessing.</p>"}, {"heading": "VA benefits", "content": "<p>VA pension and Aid &amp; Attendance amounts come from the VA's <a href='https://www.va.gov/pension/veterans-pension-rates/' rel='noopener'>pension rate tables</a>, currently the rates effective December 1, 2025 (for example, up to $2,424 a month for a single veteran with Aid &amp; Attendance).</p>"}, {"heading": "Care costs and insurance prices", "content": "<p>Assisted living, nursing home, home care and adult day costs come from the <a href='https://www.carescout.com/cost-of-care' rel='noopener'>CareScout (formerly Genworth) 2025 Cost of Care Survey</a>. When CareScout publishes a figure for a metro area, the city page uses it and names the area. When it doesn't, the page uses the state median and says so, for example &ldquo;CareScout publishes no separate figure for this city; the statewide median is &hellip;&rdquo;. If no state figure exists either, the page says &ldquo;Not published&rdquo; rather than estimating. Long-term care insurance prices are sample prices from the American Association for Long-Term Care Insurance's 2026 price index.</p>"}, {"heading": "How the data is kept consistent", "content": "<p>The site has thousands of state and city pages, so figures are kept in one sourced data file, with each number tied to its source and retrieval date, and the pages are built from it. AI tools help draft text and check that pages match the data file; Paul reviews the sources and the changes himself. No outside expert reviews the pages. When an older page still carries a figure that doesn't match the current source, it is corrected and logged on the <a href='/fact-checking/'>fact-checking page</a>.</p>"}, {"heading": "When figures are checked", "content": "<p>Medicare and Social Security figures are checked each October&ndash;November when CMS and SSA publish the next year's numbers; SNAP figures each October; VA rates each December; care costs when CareScout publishes a new survey. Program changes in between, such as a state ending broad-based categorical eligibility, are updated when they are found.</p>"}]},
+  { slug: 'editorial-policy', h1: 'Editorial Policy', title: 'Editorial Policy', metaDescription: 'Editorial standards for Senior Benefits Care Finder: independence, plain-English accuracy, human review of AI-assisted drafts, affiliate disclosure, and a fast-correction policy.', introText: '<p>How Senior Benefits Care Finder decides what to publish, how we handle AI tools, how we disclose relationships, and how we fix things when we get them wrong.</p>', sections: [{ heading: 'Who Writes This', content: "<p>Senior Benefits Care Finder is an independent publication founded and operated by <a href='/author/paul-paradis/'>Paul Paradis</a>. One person's name is on the work. Paul is not a licensed insurance agent, attorney, financial planner, or medical professional \u2014 he's a publisher focused on plain-English guidance. Every guide is published under his byline, and when something is wrong, the responsibility for fixing it sits with him.</p>" }, { heading: 'Independence', content: "<p>Our editorial content is written independently of our advertisers and affiliate partners. No advertiser or partner gets to change what a guide says about their product, their category, or a competitor. We do not accept paid placements inside guides; ads are labeled as ads, and affiliate or sponsored links are disclosed. Government programs are never pitched as if they were commercial products \u2014 they're explained using the relevant official source. If a commercial relationship ever conflicts with what's most accurate or most helpful for the reader, the reader wins.</p>" }, { heading: 'Expertise and How Content Gets Made', content: "<p>We want to be plain about how the guides are written. Primary sources come first: Medicare.gov and CMS, SSA.gov, USDA (for SNAP), VA.gov, state agencies, and for care costs the CareScout (formerly Genworth) 2025 Cost of Care Survey. We use AI tools to help organize data, draft passages, and cross-check consistency across states and topics. Paul reviews the sources and the changes; no outside medical, legal or insurance expert reviews the pages. Rules that qualify in government language get rewritten into the way real people talk about them, with links back to the primary source so readers can verify. When a question requires a licensed professional, we say so and point readers to the right resource.</p>" }, { heading: 'Disclosure', content: '<p>This site is supported by display advertising and, in some places, affiliate links to third-party services. Where a link is affiliate or sponsored, we label it. We may earn a commission when readers use those links, at no extra cost to the reader. Commissions do not change the editorial content of a guide. We are not affiliated with Medicare, Medicaid, the Social Security Administration, the VA, or any state or federal agency.</p>' }, { heading: 'Corrections', content: "<p>We get things wrong sometimes, and when that happens we fix them. Found an error? Email <a href='mailto:contact@seniorbenefitscarefinder.com'>contact@seniorbenefitscarefinder.com</a> with the page and what's off. Include a source if you have one. Verified corrections are usually made within a few business days, and significant corrections are listed in the corrections log on the <a href='/fact-checking/'>fact-checking page</a>. Program rules, income limits, and dollar figures change often \u2014 if a number looks stale, check the linked government source and please tell us so we can update it here.</p>" }] },
   { slug: 'sitemap-guide', h1: 'Complete Benefits Guide Directory', title: 'All Benefits Guides', metaDescription: 'Browse all Senior Benefits Care Finder guides organized by topic and state.', introText: '<p>Find all of our benefits guides organized by category. Browse Medicare, Medicaid, assisted living, home care, and more for every state.</p>', sections: [{ heading: 'Medicare Guides', content: '<p>State-by-state Medicare plan comparisons, costs, and enrollment information.</p>' }, { heading: 'Medicaid Guides', content: '<p>Eligibility requirements, income limits, and application processes for every state.</p>' }, { heading: 'Senior Care Guides', content: '<p>Assisted living costs, home care rates, and provider directories.</p>' }, { heading: 'Financial Assistance', content: '<p>Low-income programs, prescription assistance, and veterans benefits.</p>' }] },
 ]);
 
