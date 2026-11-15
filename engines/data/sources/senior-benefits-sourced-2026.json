@@ -130,8 +130,8 @@
    "note": "medicaid.gov blocks scripted fetches; figures taken from the bulletin via search summary."
   },
   "carescout_state_releases": {
-   "title": "CareScout state releases, 2025 Cost of Care Survey (Business Wire, March 2, 2026), \"Change Since 2024\" column",
-   "url": "https://www.businesswire.com/news/home/20260302283881/en/CareScout-Releases-2025-Cost-of-Care-Survey-Results",
+   "title": "CareScout state releases, 2025 Cost of Care Survey (Business Wire release of March 2, 2026, as syndicated on FinancialContent), \"Change Since 2024\" column",
+   "url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-survey-results",
    "note": "Per-state release text read from the Business Wire copies on markets.financialcontent.com (careScoutReleaseUrl on each state), retrieved 2026-11-15. The release annual medians differ from the data-table medians the site shows; only the change percentages are used."
   },
   "va_survivors_pension_rates": {
