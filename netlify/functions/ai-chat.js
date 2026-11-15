@@ -47,8 +47,8 @@ exports.handler = async (event) => {
     };
   }
 
-  // The browser may only supply user turns. The system prompt is attached here
-  // and any system, developer, tool, or assistant role from the client is dropped.
+  // The browser supplies user and assistant turns. The system prompt is attached
+  // here and any system, developer, or tool role from the client is dropped.
   const built = buildModelMessages(body.messages);
   if (built.error) {
     return {
@@ -63,7 +63,7 @@ exports.handler = async (event) => {
     const postData = JSON.stringify({
       model: "gpt-4.1-mini",
       messages: built.messages,
-      temperature: 0.9,
+      temperature: 0.25,
       max_tokens: 1000,
     });
 

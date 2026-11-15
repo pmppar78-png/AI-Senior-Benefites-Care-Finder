@@ -1,11 +1,13 @@
 /**
  * Server-owned chat configuration for the senior benefits assistant.
- * The browser sends user messages only. This module supplies the system
+ * The browser sends the user and assistant turns. This module supplies the system
  * prompt and the only URLs the assistant is allowed to output.
  */
 
 const MAX_USER_MESSAGES = 12;
+const MAX_TURNS = 16; // user + assistant messages kept from the conversation
 const MAX_USER_CHARS = 4000;
+const MAX_ASSISTANT_CHARS = 6000;
 
 const DISCLOSURE =
   "Disclosure: Senior Benefits Care Finder may earn a commission if you use a commercial link in this answer, at no extra cost to you. Government and nonprofit links are not paid placements.";
@@ -227,6 +229,20 @@ const APPROVED_LINKS = [
     note: "Local help with food, housing, and utility bills.",
   },
   {
+    topic: "Low-income and general benefits",
+    name: "USDA SNAP state directory",
+    url: "https://www.fna.usda.gov/snap/state-directory",
+    kind: "official",
+    note: "Official list of every state's SNAP agency and application site.",
+  },
+  {
+    topic: "Low-income and general benefits",
+    name: "USDA SNAP eligibility (FY2027 limits)",
+    url: "https://www.fna.usda.gov/snap/recipient/eligibility",
+    kind: "official",
+    note: "Official SNAP income limits, asset limits and deductions.",
+  },
+  {
     topic: "Medical alert",
     name: "Medical Guardian",
     url: "https://www.medicalguardian.com/",
@@ -241,6 +257,74 @@ const APPROVED_LINKS = [
     note: "Plain company link. Do not add an affiliate id or tracking parameter.",
   },
 ];
+
+/**
+ * State SNAP agency pages (curl-checked 2026-11-15). Where a state's own page
+ * did not load for a script, the state's USDA SNAP directory entry is used.
+ * Source: engines/data/sources/senior-benefits-sourced-2026.json
+ */
+const STATE_SNAP_LINKS = [
+  ["Alabama", "Alabama Department of Human Resources", "https://dhr.alabama.gov/food-assistance/"],
+  ["Alaska", "USDA SNAP directory: Alaska", "https://www.fna.usda.gov/snap-directory-entry/alaska"],
+  ["Arizona", "USDA SNAP directory: Arizona", "https://www.fna.usda.gov/snap-directory-entry/arizona"],
+  ["Arkansas", "USDA SNAP directory: Arkansas", "https://www.fna.usda.gov/snap-directory-entry/arkansas"],
+  ["California", "California Department of Social Services (through county social services offices)", "https://cdss.ca.gov/inforesources/calfresh"],
+  ["Colorado", "Colorado Department of Human Services (through county human services offices)", "https://cdhs.colorado.gov/snap"],
+  ["Connecticut", "USDA SNAP directory: Connecticut", "https://www.fna.usda.gov/snap-directory-entry/connecticut"],
+  ["Delaware", "Delaware Division of Social Services", "https://dhss.delaware.gov/dss/division-of-social-services/snap/"],
+  ["District of Columbia", "DC Department of Human Services", "https://dhs.dc.gov/snapinfo"],
+  ["Florida", "Florida Department of Children and Families", "https://www.myflfamilies.com/services/public-assistance"],
+  ["Georgia", "Georgia Division of Family & Children Services", "https://dfcs.georgia.gov/snap-food-stamps"],
+  ["Hawaii", "USDA SNAP directory: Hawaii", "https://www.fna.usda.gov/snap-directory-entry/hawaii"],
+  ["Idaho", "Idaho Department of Health and Welfare", "https://healthandwelfare.idaho.gov/services-programs/food-assistance/about-snap"],
+  ["Illinois", "USDA SNAP directory: Illinois", "https://www.fna.usda.gov/snap-directory-entry/illinois"],
+  ["Indiana", "Indiana FSSA Division of Family Resources", "https://www.in.gov/fssa/dfr/snap-food-assistance/"],
+  ["Iowa", "Iowa Department of Health and Human Services", "https://hhs.iowa.gov/food-assistance/snap"],
+  ["Kansas", "USDA SNAP directory: Kansas", "https://www.fna.usda.gov/snap-directory-entry/kansas"],
+  ["Kentucky", "Kentucky Department for Community Based Services", "https://benefind.ky.gov/General/SnapOverview"],
+  ["Louisiana", "Louisiana Department of Health", "https://ldh.la.gov/supplemental-nutrition-assistance-program"],
+  ["Maine", "Maine Office for Family Independence", "https://www.maine.gov/dhhs/ofi/programs-services/food-supplement"],
+  ["Maryland", "USDA SNAP directory: Maryland", "https://www.fna.usda.gov/snap-directory-entry/maryland"],
+  ["Massachusetts", "USDA SNAP directory: Massachusetts", "https://www.fna.usda.gov/snap-directory-entry/massachusetts"],
+  ["Michigan", "USDA SNAP directory: Michigan", "https://www.fna.usda.gov/snap-directory-entry/michigan"],
+  ["Minnesota", "USDA SNAP directory: Minnesota", "https://www.fna.usda.gov/snap-directory-entry/minnesota"],
+  ["Mississippi", "Mississippi Department of Human Services", "https://www.mdhs.ms.gov/economic-assistance/snap/"],
+  ["Missouri", "Missouri Department of Social Services, Family Support Division", "https://mydss.mo.gov/food-assistance/apply-for-snap"],
+  ["Montana", "USDA SNAP directory: Montana", "https://www.fna.usda.gov/snap-directory-entry/montana"],
+  ["Nebraska", "USDA SNAP directory: Nebraska", "https://www.fna.usda.gov/snap-directory-entry/nebraska"],
+  ["Nevada", "Nevada Department of Health and Human Services", "https://www.dss.nv.gov/programs/snap/"],
+  ["New Hampshire", "USDA SNAP directory: New Hampshire", "https://www.fna.usda.gov/snap-directory-entry/new-hampshire"],
+  ["New Jersey", "USDA SNAP directory: New Jersey", "https://www.fna.usda.gov/snap-directory-entry/new-jersey"],
+  ["New Mexico", "New Mexico Health Care Authority", "https://www.hsd.state.nm.us/lookingforassistance/supplemental_nutrition_assistance_program__snap/"],
+  ["New York", "USDA SNAP directory: New York", "https://www.fna.usda.gov/snap-directory-entry/new-york"],
+  ["North Carolina", "North Carolina Department of Health and Human Services (through county DSS offices)", "https://www.ncdhhs.gov/assistance/low-income-services/food-nutrition-services-food-stamps"],
+  ["North Dakota", "North Dakota Health and Human Services", "https://www.hhs.nd.gov/applyforhelp/snap"],
+  ["Ohio", "USDA SNAP directory: Ohio", "https://www.fna.usda.gov/snap-directory-entry/ohio"],
+  ["Oklahoma", "Oklahoma Human Services", "https://oklahoma.gov/okdhs/services/snap.html"],
+  ["Oregon", "Oregon Department of Human Services", "https://www.oregon.gov/odhs/food/Pages/snap.aspx"],
+  ["Pennsylvania", "Pennsylvania Department of Human Services", "https://www.dhs.pa.gov/Services/Assistance/Pages/SNAP.aspx"],
+  ["Rhode Island", "USDA SNAP directory: Rhode Island", "https://www.fna.usda.gov/snap-directory-entry/rhode-island"],
+  ["South Carolina", "South Carolina Department of Social Services", "https://dss.sc.gov/assistance-programs/snap/"],
+  ["South Dakota", "South Dakota Department of Social Services", "https://dss.sd.gov/economicassistance/snap.aspx"],
+  ["Tennessee", "USDA SNAP directory: Tennessee", "https://www.fna.usda.gov/snap-directory-entry/tennessee"],
+  ["Texas", "USDA SNAP directory: Texas", "https://www.fna.usda.gov/snap-directory-entry/texas"],
+  ["Utah", "Utah Department of Workforce Services", "https://jobs.utah.gov/customereducation/services/foodstamps/index.html"],
+  ["Vermont", "Vermont Department for Children and Families", "https://dcf.vermont.gov/benefits/3SquaresVT"],
+  ["Virginia", "USDA SNAP directory: Virginia", "https://www.fna.usda.gov/snap-directory-entry/virginia"],
+  ["Washington", "Washington State Department of Social and Health Services", "https://www.dshs.wa.gov/esa/community-services-offices/basic-food"],
+  ["West Virginia", "West Virginia Bureau for Family Assistance", "https://bfa.wv.gov/bfa-programs/snap"],
+  ["Wisconsin", "Wisconsin Department of Health Services", "https://www.dhs.wisconsin.gov/foodshare/index.htm"],
+  ["Wyoming", "USDA SNAP directory: Wyoming", "https://www.fna.usda.gov/snap-directory-entry/wyoming"],
+];
+for (const [state, name, url] of STATE_SNAP_LINKS) {
+  APPROVED_LINKS.push({
+    topic: "State SNAP agencies",
+    name: state === name.replace("USDA SNAP directory: ", "") ? name : state + ": " + name,
+    url,
+    kind: "official",
+    note: "Where to apply for SNAP in " + state + ".",
+  });
+}
 
 function linkKey(urlString) {
   let parsed;
@@ -280,12 +364,49 @@ function formatApprovedLinks() {
   return lines.join("\n");
 }
 
-const SYSTEM_PROMPT =
-  "You are a comprehensive senior benefits expert and calm, senior-friendly AI guide. You help people understand ALL aspects of senior benefits, care options, and related programs. " +
-  "You speak in clear, plain language at a gentle pace and provide thorough, knowledgeable answers.\n\n" +
+const BBCE_LINE =
+  "Alabama 130% ($1,729 for 1) no asset test; Alaska 200% ($3,326 for 1) no asset test; Arizona 200% ($2,660 for 1) no asset test; Arkansas 165% ($2,195 for 1) asset limit $5,500 for elderly or disabled households (allowed for one 12-month period every five years; then $4,500); California 200% ($2,660 for 1) no asset test; Colorado 200% ($2,660 for 1) no asset test; Connecticut 200% ($2,660 for 1) no asset test; Delaware 200% ($2,660 for 1) no asset test; District of Columbia 200% ($2,660 for 1) no asset test; Florida 200% ($2,660 for 1) no asset test; Georgia 130% ($1,729 for 1) no asset test; Hawaii 200% ($3,060 for 1) no asset test; Illinois 165% ($2,195 for 1) no asset test; Iowa 160% ($2,128 for 1) no asset test; Kentucky 200% ($2,660 for 1) no asset test; Louisiana 200% ($2,660 for 1) asset limit $4,750 when a member is 60+ or disabled ($3,000 otherwise), effective Nov 15, 2026; Maine 200% ($2,660 for 1) no asset test; Maryland 200% ($2,660 for 1) no asset test; Massachusetts 200% ($2,660 for 1) no asset test; Michigan 200% ($2,660 for 1) no asset test; Minnesota 200% ($2,660 for 1) no asset test; Montana 200% ($2,660 for 1) no asset test; Nebraska 165% ($2,195 for 1) asset limit $25,000 in liquid assets; Nevada 200% ($2,660 for 1) no asset test; New Hampshire 200% ($2,660 for 1) no asset test; New Jersey 185% ($2,461 for 1) no asset test; New Mexico 200% ($2,660 for 1) no asset test; New York (BBCE only for households with dependent-care costs or earnings; most retired seniors use regular rules); North Carolina 200% ($2,660 for 1) no asset test; North Dakota 200% ($2,660 for 1) no asset test; Ohio 130% ($1,729 for 1) no asset test; Oklahoma 130% ($1,729 for 1) no asset test; Oregon 200% ($2,660 for 1) no asset test; Pennsylvania 200% ($2,660 for 1) no asset test; Rhode Island 185% ($2,461 for 1) no asset test; South Carolina 130% ($1,729 for 1) no asset test; Texas 165% ($2,195 for 1) asset limit $5,000 (one vehicle excluded up to $22,000; excess vehicle value counts); Vermont 185% ($2,461 for 1) no asset test; Virginia 200% ($2,660 for 1) no asset test; Washington 200% ($2,660 for 1) no asset test; West Virginia 200% ($2,660 for 1) no asset test; Wisconsin 200% ($2,660 for 1) no asset test";
+const NO_BBCE_LINE = "Idaho, Indiana, Kansas, Mississippi, Missouri, South Dakota, Tennessee, Utah, Wyoming";
 
-  "EXPERT KNOWLEDGE BASE — You are deeply knowledgeable about:\n" +
-  "• Medicare: Parts A (hospital), B (medical), C (Medicare Advantage), D (prescription drugs), and Medigap/Medicare Supplement plans. You understand the differences between plans, enrollment periods (Initial Enrollment Period, Annual Enrollment Period Oct 15–Dec 7, Open Enrollment Period Jan 1–Mar 31, Special Enrollment Periods), costs including premiums, deductibles, copays and coinsurance, coverage gaps, the Part D donut hole, and late enrollment penalties.\n" +
+/**
+ * Current figures, checked against official sources on 2026-11-15.
+ * Re-verify every fall (Medicare/SSA in Oct-Nov, SNAP each Oct 1, VA each Dec 1).
+ * Sources: Medicare.gov and CMS 2026 fact sheets; SSA 2026 COLA fact sheet;
+ * USDA FNS FY2027 SNAP eligibility, allotments and BBCE chart (Nov 2026);
+ * VA pension rates effective 2025-12-01; CMS spousal impoverishment bulletin 2026;
+ * CareScout 2025 Cost of Care Survey. Full citations:
+ * engines/data/sources/senior-benefits-sourced-2026.json
+ */
+const CURRENT_FIGURES =
+  "CURRENT FIGURES (verified November 15, 2026). Use these instead of any older numbers you remember, and say which year a figure applies to. " +
+  "If a question needs a dollar figure that is not listed here and you are not sure it is current, say so and point to the official source instead of giving a number.\n" +
+  "• Medicare Part D 2026: the out-of-pocket cap on covered drugs is $2,100 (rising to $2,400 in 2027); the standard deductible is at most $615. " +
+  "The coverage gap (\"donut hole\") ended on January 1, 2025. Never describe a coverage gap or donut hole as current. " +
+  "The Medicare Prescription Payment Plan lets people spread their drug costs into monthly payments.\n" +
+  "• Medicare 2026: Part B standard premium $202.90/month, Part B deductible $283/year, Part A hospital deductible $1,736 per benefit period.\n" +
+  "• Medicare Savings Programs 2026 (monthly income limits, individual/couple, 48 states and DC; Alaska and Hawaii are higher): QMB $1,350/$1,824; SLMB $1,616/$2,184; QI $1,816/$2,455. " +
+  "Resource limits $9,950/$14,910. States may use more generous rules (some have no asset test) but never stricter ones.\n" +
+  "• Extra Help (Part D Low-Income Subsidy) 2026: annual income below $23,940 (individual) or $32,460 (married couple); resources below $18,090 or $36,100. Apply through SSA.\n" +
+  "• SSI 2026: federal payment up to $994/month for an individual and $1,491 for a couple. Social Security COLA for 2026: 2.8%.\n" +
+  "• SNAP, federal fiscal year 2027 (October 1, 2026 to September 30, 2027), 48 states and DC: maximum benefit $306/month for 1 person, $562 for 2. " +
+  "Net income limit (100% of poverty) $1,330/month for 1, $1,804 for 2. Regular gross limit (130%) $1,729 for 1, $2,345 for 2. " +
+  "A household with a member aged 60+ or disabled skips the gross income test and only has to pass the net income test; its asset limit is $4,750 (other households $3,000). " +
+  "Deductions include a $217 standard deduction (1 to 3 people) and medical costs over $35/month for members 60+ or disabled. Minimum benefit $25. " +
+  "Alaska and Hawaii use their own, higher figures (Hawaii max $496 for 1; urban Alaska max $392 for 1).\n" +
+  "• SNAP broad-based categorical eligibility (BBCE), per USDA's November 2026 chart. In these states a household under the listed gross limit is categorically eligible, usually with no asset test; households over it use the regular rules above: " +
+  BBCE_LINE + ". " +
+  "States with no BBCE (regular federal rules, $4,750 asset limit for 60+/disabled households): " + NO_BBCE_LINE + ". Indiana ended BBCE on July 1, 2026.\n" +
+  "• VA pension 2026 (rates effective December 1, 2025): with Aid and Attendance, up to $2,424/month for a single veteran ($29,093/year) and $2,874/month with one dependent; net worth limit $163,699.\n" +
+  "• Medicaid spousal protections 2026: the community spouse resource allowance is between $32,532 and $162,660 depending on the state.\n" +
+  "• Care costs (CareScout 2025 Cost of Care Survey, national monthly medians): assisted living $6,200; nursing home semi-private room $9,581, private room $10,798; home care $6,673 (44 hours a week, $35/hour); adult day care $95/day. State and city costs differ.\n\n";
+
+const SYSTEM_PROMPT =
+  "You are a calm, senior-friendly AI guide on Senior Benefits Care Finder. You help people understand senior benefits, care options, and related programs. " +
+  "You speak in clear, plain language at a gentle pace. Accuracy matters more than length.\n\n" +
+  CURRENT_FIGURES +
+
+  "TOPICS YOU COVER:\n" +
+  "• Medicare: Parts A (hospital), B (medical), C (Medicare Advantage), D (prescription drugs), and Medigap/Medicare Supplement plans. You understand the differences between plans, enrollment periods (Initial Enrollment Period, Annual Enrollment Period Oct 15–Dec 7, Open Enrollment Period Jan 1–Mar 31, Special Enrollment Periods), costs including premiums, deductibles, copays and coinsurance, the Part D out-of-pocket cap, and late enrollment penalties.\n" +
   "• Medicaid: Eligibility rules that vary by state, dual eligibility with Medicare (Medi-Medi), spend-down rules for those over income limits, waiver programs (HCBS waivers, 1915c waivers), managed care vs fee-for-service, and how Medicaid can cover long-term care.\n" +
   "• Social Security: Retirement benefits and claiming strategies (early at 62, full retirement age, delayed credits up to 70), SSDI (Social Security Disability Insurance), SSI (Supplemental Security Income), spousal benefits, survivor benefits, divorced spouse benefits, COLA adjustments, taxation of benefits by state, earnings limits while collecting, and windfall elimination provisions.\n" +
   "• Assisted Living: Costs by state and region, levels of care (independent living, assisted living, memory care, skilled nursing), how to evaluate and choose a facility, payment options including private pay, long-term care insurance, Medicaid waivers, and VA benefits.\n" +
@@ -310,7 +431,8 @@ const SYSTEM_PROMPT =
   "• For Aid and Attendance, use the official VA Aid and Attendance page. Do not send people to the old Veterans Aid website, and do not describe A Place for Mom as a veterans-benefits service.\n" +
   "• For an elder law attorney, use the NAELA Find a Lawyer page, not the NAELA homepage.\n" +
   "• For medical alert questions, you may mention Medical Guardian (https://www.medicalguardian.com/) and Bay Alarm Medical (https://www.bayalarmmedical.com/) as plain links. Do not invent an affiliate ID for either company, and do not add any other medical-alert company URL.\n" +
-  "• Weave a relevant approved link into the answer when it helps. Keep the full URL visible as plain text.\n" +
+  "• For where to apply for SNAP, use that state's link from the State SNAP agencies list, or the USDA SNAP state directory.\n" +
+  "• Weave a relevant approved link into the answer when it helps. Keep the full URL visible as plain text, on its own or after the page name, never inside parentheses or followed by punctuation. Do not write \"here:\" or \"click here\"; name the page instead.\n" +
   "• Include the full explanation of the program even when you also include a link. A link does not replace the explanation.\n\n" +
 
   "AFFILIATE DISCLOSURE — Be honest about how this site may be paid.\n" +
@@ -359,11 +481,22 @@ function enforceApprovedLinks(text) {
     return canonical ? label + " (" + canonical + ")" : label;
   });
 
+  const DROPPED = "\u0000";
   out = out.replace(/https?:\/\/[^\s<>"')\]]+/g, (url) => {
-    const canonical = rewrite(url);
-    if (canonical) return canonical;
-    return "";
+    const trail = (url.match(/[.,;:!?]+$/) || [""])[0];
+    const core = trail ? url.slice(0, -trail.length) : url;
+    const canonical = rewrite(core);
+    return (canonical || DROPPED) + trail;
   });
+
+  // When a link is removed, also remove the lead-in that pointed at it
+  // ("apply here: <url>", "visit: <url>") and any empty brackets left behind.
+  out = out
+    .replace(/[ \t]*\(\s*\u0000\s*\)/g, DROPPED)
+    .replace(/(?:[ \t]+(?:right[ \t]+)?(?:here|at|via|on|from|visit|visiting|this link|the link|link|website|site|page))?[ \t]*:?[ \t]*\u0000/gi, "")
+    .replace(/\u0000/g, "")
+    .replace(/[ \t]+([.,;:!?])/g, "$1")
+    .replace(/\(\s*\)/g, "");
 
   out = out.replace(/[ \t]{2,}/g, " ").replace(/ +\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
 
@@ -374,32 +507,42 @@ function enforceApprovedLinks(text) {
 }
 
 /**
- * Accept only user-role messages. Any system, developer, tool, or assistant
- * message from the browser is discarded so the caller cannot replace this
- * module's system prompt.
+ * Accept user and assistant turns only, so follow-up questions keep their
+ * context. Any system, developer, or tool message from the browser is
+ * discarded so the caller cannot replace this module's system prompt.
+ * Assistant turns are re-sanitized with the approved-link filter.
  */
 function buildModelMessages(rawMessages) {
   if (!Array.isArray(rawMessages)) {
-    return { error: "Send a messages array containing only user messages." };
+    return { error: "Send a messages array of user and assistant messages." };
   }
 
-  const users = [];
+  const turns = [];
   for (const message of rawMessages) {
     if (!message || typeof message !== "object") continue;
-    if (message.role !== "user") continue;
+    if (message.role !== "user" && message.role !== "assistant") continue;
     if (typeof message.content !== "string") continue;
-    const content = message.content.trim().slice(0, MAX_USER_CHARS);
+    const limit = message.role === "user" ? MAX_USER_CHARS : MAX_ASSISTANT_CHARS;
+    let content = message.content.trim().slice(0, limit);
+    if (message.role === "assistant") content = enforceApprovedLinks(content);
     if (!content) continue;
-    users.push({ role: "user", content });
+    turns.push({ role: message.role, content });
   }
 
-  const turns = users.slice(-MAX_USER_MESSAGES);
-  if (turns.length === 0) {
+  let kept = turns.slice(-MAX_TURNS);
+  // The conversation sent to the model must start and end with a user turn.
+  while (kept.length && kept[0].role !== "user") kept.shift();
+  while (kept.length && kept[kept.length - 1].role !== "user") kept.pop();
+  if (kept.filter((m) => m.role === "user").length > MAX_USER_MESSAGES) {
+    kept = kept.slice(-MAX_USER_MESSAGES * 2);
+    while (kept.length && kept[0].role !== "user") kept.shift();
+  }
+  if (kept.length === 0) {
     return { error: "Send at least one user message." };
   }
 
   return {
-    messages: [{ role: "system", content: SYSTEM_PROMPT }, ...turns],
+    messages: [{ role: "system", content: SYSTEM_PROMPT }, ...kept],
   };
 }
 

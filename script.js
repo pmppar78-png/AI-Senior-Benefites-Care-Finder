@@ -2,8 +2,9 @@ const chatWindow = document.getElementById("chatWindow");
 const chatForm = document.getElementById("chatForm");
 const userInput = document.getElementById("userInput");
 
-// User turns only. The system prompt lives in the Netlify function.
-let userMessages = [];
+// Conversation history (user and assistant turns). The system prompt lives in
+// the Netlify function, which drops any other role.
+let chatHistory = [];
 
 const NON_SPONSORED_HOSTS = [
   "medicare.gov",
@@ -19,7 +20,8 @@ const NON_SPONSORED_HOSTS = [
   "rxassist.org",
   "needymeds.org",
   "acl.gov",
-  "aarp.org"
+  "aarp.org",
+  "usda.gov"
 ];
 
 function appendMessage(role, text) {
@@ -41,7 +43,25 @@ function linkify(text) {
   // First escape HTML entities in the text
   const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const urlRegex = /(https?:\/\/[^\s<>&]+)/g;
-  return escaped.replace(urlRegex, (url) => {
+  return escaped.replace(urlRegex, (match) => {
+    // Keep trailing punctuation and an unbalanced closing bracket out of the link.
+    let url = match;
+    let trail = "";
+    for (;;) {
+      const last = url.slice(-1);
+      if (/[.,;:!?'"]/.test(last)) {
+        trail = last + trail;
+        url = url.slice(0, -1);
+      } else if (last === ")" && (url.match(/\(/g) || []).length < (url.match(/\)/g) || []).length) {
+        trail = last + trail;
+        url = url.slice(0, -1);
+      } else if (last === "]" ) {
+        trail = last + trail;
+        url = url.slice(0, -1);
+      } else {
+        break;
+      }
+    }
     const safeUrl = url.replace(/&amp;/g, "&").replace(/"/g, "&quot;");
     // Extract a clean display name from the URL
     let displayName;
@@ -58,15 +78,15 @@ function linkify(text) {
     } catch (e) {
       displayName = safeUrl;
     }
-    const official = host && NON_SPONSORED_HOSTS.some((suffix) => host === suffix || host.endsWith("." + suffix));
+    const official = host && (host.endsWith(".gov") || NON_SPONSORED_HOSTS.some((suffix) => host === suffix || host.endsWith("." + suffix)));
     const rel = official ? "noopener noreferrer" : "noopener noreferrer sponsored";
-    return `<a href="${safeUrl}" target="_blank" rel="${rel}">${displayName}</a>`;
+    return `<a href="${safeUrl}" target="_blank" rel="${rel}">${displayName}</a>` + trail;
   });
 }
 
 async function sendMessage(message) {
   appendMessage("user", message);
-  userMessages.push({ role: "user", content: message });
+  chatHistory.push({ role: "user", content: message });
 
   const pendingRow = document.createElement("div");
   pendingRow.className = "message-row assistant";
@@ -83,13 +103,14 @@ async function sendMessage(message) {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ messages: userMessages })
+      body: JSON.stringify({ messages: chatHistory.slice(-16) })
     });
 
     const data = await response.json();
     const reply = data.reply || "Sorry, I didn’t receive a response. Please try again in a moment.";
 
     pendingBubble.innerHTML = linkify(reply);
+    if (data.reply) chatHistory.push({ role: "assistant", content: data.reply });
   } catch (err) {
     pendingBubble.textContent =
       "I ran into a technical issue reaching the AI service. Please try again in a moment.";
