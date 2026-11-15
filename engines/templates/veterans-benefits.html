@@ -55,7 +55,7 @@
     <!-- Section: Aid & Attendance -->
     <section class="content-section" id="aid-attendance">
       <h2>VA Aid &amp; Attendance Benefit</h2>
-      <p style="font-size:0.9em;">A&amp;A and Housebound benefit amounts are set by the VA and adjusted annually <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/aid-attendance-housebound/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov, verified April 2026]</a></sup>.</p>
+      <p style="font-size:0.9em;">A&amp;A and Housebound benefit amounts are set by the VA and adjusted annually <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/aid-attendance-housebound/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov]</a></sup>. Amounts on this page use the VA's maximum annual pension rates effective December 1, 2025.</p>
       {{#if aidAndAttendance}}
       <div class="stat-grid">
         <div class="stat-card">
@@ -77,7 +77,7 @@
     <!-- Section: VA Pension -->
     <section class="content-section" id="va-pension">
       <h2>VA Pension Program</h2>
-      <p style="font-size:0.9em;">Maximum Annual Pension Rates (MAPR) are published by the VA and updated annually with COLA adjustments <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/veterans-pension-rates/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov, verified April 2026]</a></sup>.</p>
+      <p style="font-size:0.9em;">Maximum Annual Pension Rates (MAPR) are published by the VA and updated each December with the Social Security COLA <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/veterans-pension-rates/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov pension rates, effective Dec 1, 2025]</a></sup>.</p>
       {{#if vaPension}}
       <div class="stat-grid">
         <div class="stat-card">
@@ -247,7 +247,6 @@
       <p>In addition to federal VA benefits, most states offer additional benefits for veterans including property tax exemptions, state veterans homes, education benefits, employment preferences, and hunting/fishing license discounts. Contact your state Department of Veterans Affairs to learn about all available programs.</p>
     </section>
 
-    {{> faq-section}}
 
     {{> cross-engine-links}}
 
@@ -257,6 +256,8 @@
 
     {{> city-links}}
     {{> state-index}}
+
+    {{> faq-section}}
   </main>
 
 {{> footer}}

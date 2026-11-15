@@ -634,3 +634,9 @@ textarea:focus-visible {
 .skip-link:focus {
   top: 0;
 }
+
+/* Readable default link colours on the dark background. :where() keeps
+   specificity at zero, so any page or component link style still wins. */
+:where(a) { color: #7dd3fc; }
+:where(a:visited) { color: #c4b5fd; }
+:where(.site-footer a, .footer-links a) { color: var(--text-muted); text-decoration: underline; }

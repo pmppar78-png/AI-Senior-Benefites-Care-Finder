@@ -55,7 +55,7 @@
     <section class="content-section" id="benefit-amounts">
       <h2>{{currentYear}} Social Security Benefit Amounts</h2>
 
-      <p style="font-size:0.9em;">Benefit amounts shown below reflect current SSA figures <sup style="font-size:0.7em;"><a href="https://www.ssa.gov/benefits/retirement/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[SSA.gov, verified April 2026]</a></sup>. Your individual benefit is calculated from your earnings record — use the SSA&rsquo;s personalized estimator at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener noreferrer">my Social Security</a> for an exact figure.</p>
+      <p style="font-size:0.9em;">Benefit amounts shown below reflect current SSA figures <sup style="font-size:0.7em;"><a href="https://www.ssa.gov/benefits/retirement/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[SSA.gov]</a></sup> and Social Security's 2026 COLA fact sheet. Your individual benefit is calculated from your earnings record — use the SSA&rsquo;s personalized estimator at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener noreferrer">my Social Security</a> for an exact figure.</p>
 
       <div class="stat-grid">
         <div class="stat-card">
@@ -135,12 +135,12 @@
       {{#if hasSsiSupplement}}
       <div class="info-box highlight">
         <h3>{{locationName}} SSI State Supplement</h3>
-        <p>{{locationName}} provides a state supplement of {{ssiSupplement}} on top of the federal SSI payment. This means eligible residents receive more than the federal SSI maximum.</p>
+        <p>{{ssiSupplement}}</p>
       </div>
       {{else}}
       <div class="info-box">
         <h3>State Supplement</h3>
-        <p>Check with {{locationName}}'s social services agency to learn about any state SSI supplements that may be available in addition to the federal payment.</p>
+        <p>{{ssiSupplement}}</p>
       </div>
       {{/if}}
     </section>
@@ -210,7 +210,7 @@
       {{/if}}
       <div class="info-box">
         <h3>Federal Taxation</h3>
-        <p>At the federal level, up to 85% of your Social Security benefits may be taxable depending on your combined income. Individuals with combined income above $25,000 and couples above $32,000 may owe taxes on benefits. <sup style="font-size:0.7em;"><a href="https://www.ssa.gov/benefits/retirement/planner/taxes.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[SSA.gov, verified April 2026]</a></sup></p>
+        <p>At the federal level, up to 85% of your Social Security benefits may be taxable depending on your combined income. Individuals with combined income above $25,000 and couples above $32,000 may owe taxes on benefits. <sup style="font-size:0.7em;"><a href="https://www.ssa.gov/benefits/retirement/planner/taxes.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[SSA.gov]</a></sup></p>
       </div>
     </section>
 
@@ -243,7 +243,6 @@
       <p>If you claim before FRA and continue working, benefits are temporarily reduced if your earnings exceed the annual exempt amount. However, these withheld benefits are not lost — they are recalculated into a higher monthly benefit once you reach FRA. After FRA, there is no earnings limit.</p>
     </section>
 
-    {{> faq-section}}
 
     {{> cross-engine-links}}
 
@@ -253,6 +252,8 @@
 
     {{> city-links}}
     {{> state-index}}
+
+    {{> faq-section}}
   </main>
 
 {{> footer}}
