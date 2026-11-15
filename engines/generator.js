@@ -271,6 +271,8 @@ class PageGenerator {
     // Truthful lastmod: generated pages use CONTENT_DATE; static pages use
     // their last git commit date (engines/data/lastmod.json).
     const generatedSet = new Set(this.generatedUrls.map(u => (u.endsWith('/') ? u : u + '/')));
+    // Build-time list for scripts/apply-sourced-facts.cjs (date sync skips engine pages). Not committed.
+    try { fs.writeFileSync(path.join(__dirname, 'data', '.generated-urls.json'), JSON.stringify([...generatedSet])); } catch (e) { /* optional */ }
 
     // Excluded build/runtime directories — must never appear in sitemap.
     const EXCLUDED_DIRS = new Set(['.netlify', 'node_modules', '.git', 'engines', 'scripts']);
