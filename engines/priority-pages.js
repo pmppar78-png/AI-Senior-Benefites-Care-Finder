@@ -35,7 +35,7 @@ const priorityPages = {
   '/medicare/california/los-angeles/': {
     cluster: 'losAngeles',
     title: 'Los Angeles Medicare Decisions 2026: Plans, Costs, Next Steps',
-    description: 'Decide what to do next with Los Angeles Medicare in 2026: compare 50 Advantage plans, Medigap, Part D, drug coverage, networks, and HICAP help.',
+    description: 'Decide what to do next with Los Angeles Medicare in 2026: compare Advantage plans, Medigap, Part D, drug coverage, networks, and HICAP help.',
     h1: 'Los Angeles Medicare Decisions for 2026',
     intro: '<p>This Los Angeles Medicare guide is built for the moment before a coverage decision: choosing between Original Medicare, Medigap, Medicare Advantage, and Part D. Start by checking your doctors, prescriptions, ZIP-code plan availability, and HICAP counseling options, then use the cost and enrollment sections below to decide what to compare next.</p>',
     actionIntro: 'Use these Los Angeles pages together when Medicare costs, Medi-Cal eligibility, drug expenses, and care needs affect the same household decision.',

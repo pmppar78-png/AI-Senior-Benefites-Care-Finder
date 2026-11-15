@@ -53,23 +53,23 @@
       <div class="stat-grid">
         <div class="stat-card">
           <span class="stat-value">{{avgMonthlyCost}}</span>
-          <span class="stat-label">Average Monthly Cost</span>
+          <span class="stat-label">Assisted Living (Median)</span>
         </div>
         <div class="stat-card">
-          <span class="stat-value">{{costRange.min}}</span>
-          <span class="stat-label">Low End</span>
+          <span class="stat-value">{{nursingHomeMonthly}}</span>
+          <span class="stat-label">Nursing Home (Semi-Private)</span>
         </div>
         <div class="stat-card">
-          <span class="stat-value">{{costRange.max}}</span>
-          <span class="stat-label">High End</span>
+          <span class="stat-value">{{homeCareMonthly}}</span>
+          <span class="stat-label">Home Care (44 hrs/wk)</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">{{nationalAvg}}</span>
-          <span class="stat-label">National Average</span>
+          <span class="stat-label">National AL Median</span>
         </div>
       </div>
 
-      <p>The cost of assisted living {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. {{currentYear}} data shows an average monthly cost of {{avgMonthlyCost}}, compared to the national average of {{nationalAvg}}. <sup style="font-size:0.7em;"><a href="https://www.genworth.com/aging-and-you/finances/cost-of-care.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Genworth Cost of Care Survey, verified April 2026]</a></sup></p>
+      <p>The cost of assisted living {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. The median monthly cost is {{avgMonthlyCost}} ({{costScope}}), compared with a national median of {{nationalAvg}}. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout Cost of Care Survey 2025]</a></sup></p>
 
       {{#if costTrend}}
       <div class="info-box">
@@ -87,7 +87,7 @@
         <table class="data-table">
           <thead>
             <tr>
-              <th>Care Level</th>
+              <th>Care Type</th>
               <th>Monthly Cost</th>
               <th>Description</th>
             </tr>
@@ -250,7 +250,7 @@
       </div>
       <p>{{{memoryCare.description}}}</p>
       {{else}}
-      <p>Memory care is a specialized form of assisted living designed for individuals with Alzheimer's disease, dementia, or other cognitive impairments. Memory care typically costs 20–40% more than standard assisted living due to enhanced staffing, security features, and specialized programming.</p>
+      <p>Memory care is a specialized form of assisted living designed for individuals with Alzheimer's disease, dementia, or other cognitive impairments. It usually costs more than standard assisted living because of extra staffing, security features and specialized programming; CareScout does not publish a separate memory care median, so ask each community for its memory care rate.</p>
       <p>Memory care communities {{#if city}}in {{city}}{{else}}in {{locationName}}{{/if}} provide secure environments with trained staff, structured activities designed for cognitive engagement, and personalized care plans.</p>
       {{/if}}
     </section>
@@ -269,13 +269,13 @@
         <li>
           <div class="step-content">
             <h4>Apply for VA Aid &amp; Attendance</h4>
-            <p>Veterans and surviving spouses may receive up to $2,431/month (2026 rates) through this benefit. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{locationName}} veterans benefits &rarr;</a></p>
+            <p>A wartime veteran who needs help with daily activities can receive VA pension with Aid &amp; Attendance of up to $2,424/month ($2,874 with a dependent) at the rates effective December 1, 2025, reduced by countable income; surviving spouses have lower limits. <a href="/veterans-benefits/{{stateSlug}}/" style="color:#38bdf8;">See {{locationName}} veterans benefits &rarr;</a></p>
           </div>
         </li>
         <li>
           <div class="step-content">
             <h4>Consider shared rooms</h4>
-            <p>Semi-private rooms cost $300–$800 less per month than private rooms — saving $3,600–$9,600 annually.</p>
+            <p>A shared room usually costs less per month than a private apartment; ask each community for both rates.</p>
           </div>
         </li>
         <li>
@@ -330,23 +330,23 @@
       <div class="stat-grid">
         <div class="stat-card">
           <span class="stat-value">{{avgMonthlyCost}}</span>
-          <span class="stat-label">{{locationName}} Average</span>
+          <span class="stat-label">{{locationName}} Median</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">{{nationalAvg}}</span>
-          <span class="stat-label">National Average</span>
+          <span class="stat-label">National Median</span>
         </div>
       </div>
       <h3>Key Cost Factors in {{locationName}}</h3>
       <ul>
-        <li><strong>Location within the state:</strong> Urban areas typically cost 15–30% more than rural communities</li>
-        <li><strong>Level of care needed:</strong> Basic care starts lower, but enhanced care for mobility or medical needs adds $500–$2,000/month</li>
-        <li><strong>Room type:</strong> Private rooms cost $300–$800 more per month than shared rooms</li>
-        <li><strong>Community amenities:</strong> Resort-style facilities with pools, salons, and restaurants charge premium rates</li>
-        <li><strong>Memory care add-on:</strong> Dementia or Alzheimer's care adds 20–40% to the base cost</li>
+        <li><strong>Location within the state:</strong> metro areas and rural counties can differ widely from the statewide median</li>
+        <li><strong>Level of care needed:</strong> many communities add tiered fees for help with bathing, mobility or medications</li>
+        <li><strong>Room type:</strong> private apartments cost more than shared rooms</li>
+        <li><strong>Community amenities:</strong> communities with more services and amenities charge higher base rates</li>
+        <li><strong>Memory care:</strong> dementia care units charge more than standard assisted living</li>
       </ul>
       <h3>Annual Cost Projection</h3>
-      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living. Many residents stay for 2&ndash;3 years on average, making long-term financial planning essential. Costs typically increase 3&ndash;5% annually, so factor in inflation when planning ahead. <sup style="font-size:0.7em;"><a href="https://www.genworth.com/aging-and-you/finances/cost-of-care.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Genworth, verified April 2026]</a></sup></p>
+      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living, before any extra care fees. Nationally, CareScout's assisted living median rose 5% from 2024 to 2025, so build yearly increases into a multi-year plan. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout 2025]</a></sup></p>
     </section>
 
     <!-- Section: Eligibility & Qualification -->
@@ -367,7 +367,6 @@
       <p>Assisted living may not be suitable for individuals who need continuous skilled nursing care, those with severe behavioral issues that put others at risk, or individuals who are completely bedridden and require medical equipment. In these cases, a nursing home, memory care facility, or home-based skilled nursing may be a better option. Consulting with a geriatric care manager or the family physician can help determine the most appropriate care setting.</p>
     </section>
 
-    {{> faq-section}}
 
     {{> cross-engine-links}}
 
@@ -377,6 +376,8 @@
 
     {{> city-links}}
     {{> state-index}}
+
+    {{> faq-section}}
   </main>
 
 {{> footer}}
