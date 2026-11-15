@@ -38,9 +38,9 @@
         <li><a href="#memory-care">Memory Care</a></li>
         <li><a href="#how-to-reduce">How to Reduce Costs</a></li>
         <li><a href="#cost-vs-national">Cost vs. National Average</a></li>
-        <li><a href="#nearby-facilities">Nearby Facilities</a></li>
-        <li><a href="#faq">Frequently Asked Questions</a></li>
+        {{#if nearbyFacilities}}<li><a href="#nearby-facilities">Nearby Facilities</a></li>{{/if}}
         <li><a href="#related-guides">Related Cost Guides</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
       </ol>
     </nav>
 
@@ -69,12 +69,12 @@
         </div>
       </div>
 
-      <p>The cost of assisted living {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} varies depending on the level of care needed, room type, facility amenities, and location. The median monthly cost is {{avgMonthlyCost}} ({{costScope}}), compared with a national median of {{nationalAvg}}. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout Cost of Care Survey 2025]</a></sup></p>
+      <p>The cost of assisted living in {{locationName}} varies depending on the level of care needed, room type, facility amenities, and location. The median monthly cost is {{avgMonthlyCost}} ({{costScope}}), compared with a national median of {{nationalAvg}}. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout Cost of Care Survey 2025]</a></sup></p>
 
       {{#if costTrend}}
       <div class="info-box">
         <h3>Cost Trend</h3>
-        <p>{{costTrend}}</p>
+        <p>{{{costTrend}}}</p>
       </div>
       {{/if}}
     </section>
@@ -346,7 +346,7 @@
         <li><strong>Memory care:</strong> dementia care units charge more than standard assisted living</li>
       </ul>
       <h3>Annual Cost Projection</h3>
-      <p>At the average monthly rate of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living, before any extra care fees. Nationally, CareScout's assisted living median rose 5% from 2024 to 2025, so build yearly increases into a multi-year plan. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout 2025]</a></sup></p>
+      <p>At the median monthly cost of {{avgMonthlyCost}}, families in {{locationName}} should budget approximately <strong>{{avgMonthlyCost}} &times; 12 months per year</strong> for assisted living, before any extra care fees. Nationally, CareScout's assisted living median rose 5% from 2024 to 2025, so build yearly increases into a multi-year plan. <sup style="font-size:0.7em;"><a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CareScout 2025]</a></sup></p>
     </section>
 
     <!-- Section: Eligibility & Qualification -->

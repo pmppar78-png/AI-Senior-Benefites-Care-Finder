@@ -128,6 +128,15 @@
    "publisher": "CMS",
    "retrieved": "2026-11-15",
    "note": "medicaid.gov blocks scripted fetches; figures taken from the bulletin via search summary."
+  },
+  "carescout_state_releases": {
+   "title": "CareScout state releases, 2025 Cost of Care Survey (Business Wire, March 2, 2026), \"Change Since 2024\" column",
+   "url": "https://www.businesswire.com/news/home/20260302283881/en/CareScout-Releases-2025-Cost-of-Care-Survey-Results",
+   "note": "Per-state release text read from the Business Wire copies on markets.financialcontent.com (careScoutReleaseUrl on each state), retrieved 2026-11-15. The release annual medians differ from the data-table medians the site shows; only the change percentages are used."
+  },
+  "va_survivors_pension_rates": {
+   "title": "VA, Current Survivors Pension benefit rates (effective Dec 1, 2025)",
+   "url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/"
   }
  },
  "federal": {
@@ -198,7 +207,18 @@
    "netWorthLimit": 163699,
    "source": [
     "va_pension_rates"
-   ]
+   ],
+   "survivorMapr": {
+    "basicNoDependents": 11699,
+    "housebound": 14298,
+    "aidAttendance": 18697,
+    "basicOneChild": 15311,
+    "houseboundOneChild": 17902,
+    "aidAttendanceOneChild": 22304,
+    "source": [
+     "va_survivors_pension_rates"
+    ]
+   }
   },
   "fpl2026": {
    "contiguous": {
@@ -367,7 +387,9 @@
     "skilledNursingHourly": null,
     "assistedLivingChangePct": -3,
     "homeCareChangePct": 12,
-    "nursingHomePrivateChangePct": null
+    "nursingHomePrivateChangePct": null,
+    "nursingHomeSemiPrivateChangePct": -8,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1907,
@@ -453,7 +475,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-alaska"
   },
   "AL": {
    "name": "Alabama",
@@ -465,9 +488,11 @@
     "homeCareHourly": 27,
     "adultDayMonthly": 1246,
     "skilledNursingHourly": 120,
-    "assistedLivingChangePct": -3,
+    "assistedLivingChangePct": -8,
     "homeCareChangePct": 8,
-    "nursingHomePrivateChangePct": 3
+    "nursingHomePrivateChangePct": 3,
+    "nursingHomeSemiPrivateChangePct": 2,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1920,
@@ -552,7 +577,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-alabama"
   },
   "AR": {
    "name": "Arkansas",
@@ -564,9 +590,11 @@
     "homeCareHourly": 25,
     "adultDayMonthly": 1647,
     "skilledNursingHourly": null,
-    "assistedLivingChangePct": -2,
+    "assistedLivingChangePct": -3,
     "homeCareChangePct": -4,
-    "nursingHomePrivateChangePct": 4
+    "nursingHomePrivateChangePct": 5,
+    "nursingHomeSemiPrivateChangePct": 4,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1852,
@@ -652,7 +680,8 @@
      ],
      "note": "Arkansas: elderly/disabled households 165%; others 130%."
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-arkansas"
   },
   "AZ": {
    "name": "Arizona",
@@ -664,9 +693,11 @@
     "homeCareHourly": 38,
     "adultDayMonthly": 2058,
     "skilledNursingHourly": 162,
-    "assistedLivingChangePct": -2,
+    "assistedLivingChangePct": -3,
     "homeCareChangePct": 9,
-    "nursingHomePrivateChangePct": 9
+    "nursingHomePrivateChangePct": 9,
+    "nursingHomeSemiPrivateChangePct": 10,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2020,
@@ -751,7 +782,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-arizona"
   },
   "CA": {
    "name": "California",
@@ -763,9 +795,11 @@
     "homeCareHourly": 40,
     "adultDayMonthly": 2037,
     "skilledNursingHourly": 110,
-    "assistedLivingChangePct": -5,
+    "assistedLivingChangePct": -6,
     "homeCareChangePct": 5,
-    "nursingHomePrivateChangePct": 0
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": 4,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1935,
@@ -850,7 +884,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-california"
   },
   "CO": {
    "name": "Colorado",
@@ -862,9 +897,11 @@
     "homeCareHourly": 42,
     "adultDayMonthly": 2275,
     "skilledNursingHourly": 140,
-    "assistedLivingChangePct": 12,
-    "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 5
+    "assistedLivingChangePct": 11,
+    "homeCareChangePct": -1,
+    "nursingHomePrivateChangePct": 5,
+    "nursingHomeSemiPrivateChangePct": 1,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2037,
@@ -949,7 +986,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-colorado"
   },
   "CT": {
    "name": "Connecticut",
@@ -961,9 +999,11 @@
     "homeCareHourly": 36,
     "adultDayMonthly": 2362,
     "skilledNursingHourly": null,
-    "assistedLivingChangePct": 2,
+    "assistedLivingChangePct": -3,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 1
+    "nursingHomePrivateChangePct": 1,
+    "nursingHomeSemiPrivateChangePct": 1,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2196,
@@ -1048,7 +1088,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-connecticut"
   },
   "DC": {
    "name": "District of Columbia",
@@ -1159,9 +1200,11 @@
     "homeCareHourly": 35,
     "adultDayMonthly": null,
     "skilledNursingHourly": 65,
-    "assistedLivingChangePct": -11,
+    "assistedLivingChangePct": -12,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 2
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": 2,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2171,
@@ -1248,7 +1291,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-delaware"
   },
   "FL": {
    "name": "Florida",
@@ -1260,9 +1304,11 @@
     "homeCareHourly": 32,
     "adultDayMonthly": 1625,
     "skilledNursingHourly": 80,
-    "assistedLivingChangePct": 5,
+    "assistedLivingChangePct": 3,
     "homeCareChangePct": 7,
-    "nursingHomePrivateChangePct": 5
+    "nursingHomePrivateChangePct": 5,
+    "nursingHomeSemiPrivateChangePct": 0,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1962,
@@ -1347,7 +1393,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-florida"
   },
   "GA": {
    "name": "Georgia",
@@ -1359,9 +1406,11 @@
     "homeCareHourly": 32,
     "adultDayMonthly": 1950,
     "skilledNursingHourly": 98,
-    "assistedLivingChangePct": 7,
-    "homeCareChangePct": 10,
-    "nursingHomePrivateChangePct": 0
+    "assistedLivingChangePct": 2,
+    "homeCareChangePct": 11,
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": 0,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1924,
@@ -1446,7 +1495,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-georgia"
   },
   "HI": {
    "name": "Hawaii",
@@ -1460,7 +1510,9 @@
     "skilledNursingHourly": 65,
     "assistedLivingChangePct": 7,
     "homeCareChangePct": -2,
-    "nursingHomePrivateChangePct": 0
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1981,
@@ -1545,7 +1597,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-hawaii"
   },
   "IA": {
    "name": "Iowa",
@@ -1557,9 +1610,11 @@
     "homeCareHourly": 41,
     "adultDayMonthly": 1614,
     "skilledNursingHourly": 180,
-    "assistedLivingChangePct": 4,
+    "assistedLivingChangePct": -2,
     "homeCareChangePct": 8,
-    "nursingHomePrivateChangePct": 4
+    "nursingHomePrivateChangePct": 4,
+    "nursingHomeSemiPrivateChangePct": 4,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1992,
@@ -1644,7 +1699,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-iowa"
   },
   "ID": {
    "name": "Idaho",
@@ -1656,9 +1712,11 @@
     "homeCareHourly": 39,
     "adultDayMonthly": null,
     "skilledNursingHourly": 70,
-    "assistedLivingChangePct": 13,
-    "homeCareChangePct": 18,
-    "nursingHomePrivateChangePct": 14
+    "assistedLivingChangePct": 8,
+    "homeCareChangePct": 17,
+    "nursingHomePrivateChangePct": 14,
+    "nursingHomeSemiPrivateChangePct": 4,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1951,
@@ -1735,7 +1793,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-idaho"
   },
   "IL": {
    "name": "Illinois",
@@ -1747,9 +1806,11 @@
     "homeCareHourly": 36,
     "adultDayMonthly": 1977,
     "skilledNursingHourly": 76,
-    "assistedLivingChangePct": 7,
+    "assistedLivingChangePct": 4,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 1
+    "nursingHomePrivateChangePct": 1,
+    "nursingHomeSemiPrivateChangePct": 5,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2005,
@@ -1834,7 +1895,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-illinois"
   },
   "IN": {
    "name": "Indiana",
@@ -1846,9 +1908,11 @@
     "homeCareHourly": 35,
     "adultDayMonthly": 2752,
     "skilledNursingHourly": 70,
-    "assistedLivingChangePct": 5,
-    "homeCareChangePct": 6,
-    "nursingHomePrivateChangePct": 0
+    "assistedLivingChangePct": 3,
+    "homeCareChangePct": 8,
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": 5,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2034,
@@ -1929,7 +1993,8 @@
      ],
      "note": "Indiana ended BBCE on July 1, 2026; federal asset limits ($4,750 with a member 60+ or disabled) apply."
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-indiana"
   },
   "KS": {
    "name": "Kansas",
@@ -1942,8 +2007,10 @@
     "adultDayMonthly": 4333,
     "skilledNursingHourly": 67,
     "assistedLivingChangePct": 0,
-    "homeCareChangePct": 6,
-    "nursingHomePrivateChangePct": 6
+    "homeCareChangePct": 5,
+    "nursingHomePrivateChangePct": 6,
+    "nursingHomeSemiPrivateChangePct": 12,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2055,
@@ -2022,7 +2089,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-kansas"
   },
   "KY": {
    "name": "Kentucky",
@@ -2034,9 +2102,11 @@
     "homeCareHourly": 33,
     "adultDayMonthly": 1907,
     "skilledNursingHourly": 150,
-    "assistedLivingChangePct": 13,
-    "homeCareChangePct": -3,
-    "nursingHomePrivateChangePct": 13
+    "assistedLivingChangePct": 8,
+    "homeCareChangePct": -4,
+    "nursingHomePrivateChangePct": 13,
+    "nursingHomeSemiPrivateChangePct": 11,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1866,
@@ -2121,7 +2191,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-kentucky"
   },
   "LA": {
    "name": "Louisiana",
@@ -2135,7 +2206,9 @@
     "skilledNursingHourly": null,
     "assistedLivingChangePct": 1,
     "homeCareChangePct": 18,
-    "nursingHomePrivateChangePct": 6
+    "nursingHomePrivateChangePct": 6,
+    "nursingHomeSemiPrivateChangePct": 2,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1818,
@@ -2220,7 +2293,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-louisiana"
   },
   "MA": {
    "name": "Massachusetts",
@@ -2232,9 +2306,11 @@
     "homeCareHourly": 40,
     "adultDayMonthly": 2427,
     "skilledNursingHourly": 110,
-    "assistedLivingChangePct": 6,
+    "assistedLivingChangePct": 5,
     "homeCareChangePct": 5,
-    "nursingHomePrivateChangePct": 2
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": 0,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2084,
@@ -2321,7 +2397,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-massachusetts"
   },
   "MD": {
    "name": "Maryland",
@@ -2335,7 +2412,9 @@
     "skilledNursingHourly": 85,
     "assistedLivingChangePct": 1,
     "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 0
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2140,
@@ -2422,7 +2501,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-maryland"
   },
   "ME": {
    "name": "Maine",
@@ -2434,9 +2514,11 @@
     "homeCareHourly": 45,
     "adultDayMonthly": 2492,
     "skilledNursingHourly": 125,
-    "assistedLivingChangePct": 3,
-    "homeCareChangePct": 5,
-    "nursingHomePrivateChangePct": 7
+    "assistedLivingChangePct": -15,
+    "homeCareChangePct": 3,
+    "nursingHomePrivateChangePct": 7,
+    "nursingHomeSemiPrivateChangePct": 8,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1889,
@@ -2523,7 +2605,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-maine"
   },
   "MI": {
    "name": "Michigan",
@@ -2535,9 +2618,11 @@
     "homeCareHourly": 35,
     "adultDayMonthly": 3250,
     "skilledNursingHourly": 64,
-    "assistedLivingChangePct": -4,
-    "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 3
+    "assistedLivingChangePct": -5,
+    "homeCareChangePct": 2,
+    "nursingHomePrivateChangePct": 3,
+    "nursingHomeSemiPrivateChangePct": 6,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2066,
@@ -2622,7 +2707,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-michigan"
   },
   "MN": {
    "name": "Minnesota",
@@ -2634,9 +2720,11 @@
     "homeCareHourly": 44,
     "adultDayMonthly": 2600,
     "skilledNursingHourly": 124,
-    "assistedLivingChangePct": 13,
-    "homeCareChangePct": 5,
-    "nursingHomePrivateChangePct": -2
+    "assistedLivingChangePct": 11,
+    "homeCareChangePct": 6,
+    "nursingHomePrivateChangePct": -1,
+    "nursingHomeSemiPrivateChangePct": -13,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2095,
@@ -2721,7 +2809,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-minnesota"
   },
   "MO": {
    "name": "Missouri",
@@ -2733,9 +2822,11 @@
     "homeCareHourly": 33,
     "adultDayMonthly": 2058,
     "skilledNursingHourly": 95,
-    "assistedLivingChangePct": 5,
+    "assistedLivingChangePct": 3,
     "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 6
+    "nursingHomePrivateChangePct": 6,
+    "nursingHomeSemiPrivateChangePct": 6,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1937,
@@ -2814,7 +2905,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-missouri"
   },
   "MS": {
    "name": "Mississippi",
@@ -2826,9 +2918,11 @@
     "homeCareHourly": 24,
     "adultDayMonthly": 1365,
     "skilledNursingHourly": 43,
-    "assistedLivingChangePct": -2,
+    "assistedLivingChangePct": -4,
     "homeCareChangePct": -4,
-    "nursingHomePrivateChangePct": 0
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": -1,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1814,
@@ -2905,7 +2999,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-mississippi"
   },
   "MT": {
    "name": "Montana",
@@ -2919,7 +3014,9 @@
     "skilledNursingHourly": 74,
     "assistedLivingChangePct": -1,
     "homeCareChangePct": -5,
-    "nursingHomePrivateChangePct": 2
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": -1,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1887,
@@ -3006,7 +3103,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-montana"
   },
   "NC": {
    "name": "North Carolina",
@@ -3018,9 +3116,11 @@
     "homeCareHourly": 30,
     "adultDayMonthly": 1831,
     "skilledNursingHourly": 130,
-    "assistedLivingChangePct": 2,
+    "assistedLivingChangePct": -2,
     "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 9
+    "nursingHomePrivateChangePct": 9,
+    "nursingHomeSemiPrivateChangePct": 10,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1980,
@@ -3105,7 +3205,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-north-carolina"
   },
   "ND": {
    "name": "North Dakota",
@@ -3119,7 +3220,9 @@
     "skilledNursingHourly": 85,
     "assistedLivingChangePct": -11,
     "homeCareChangePct": -15,
-    "nursingHomePrivateChangePct": 27
+    "nursingHomePrivateChangePct": 27,
+    "nursingHomeSemiPrivateChangePct": 30,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1929,
@@ -3204,7 +3307,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-north-dakota"
   },
   "NE": {
    "name": "Nebraska",
@@ -3216,9 +3320,11 @@
     "homeCareHourly": 36,
     "adultDayMonthly": 3521,
     "skilledNursingHourly": 62,
-    "assistedLivingChangePct": 24,
+    "assistedLivingChangePct": 19,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": -8
+    "nursingHomePrivateChangePct": -8,
+    "nursingHomeSemiPrivateChangePct": 0,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2011,
@@ -3303,7 +3409,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-nebraska"
   },
   "NH": {
    "name": "New Hampshire",
@@ -3317,7 +3424,9 @@
     "skilledNursingHourly": 195,
     "assistedLivingChangePct": 8,
     "homeCareChangePct": 5,
-    "nursingHomePrivateChangePct": 2
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": -2,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2184,
@@ -3402,7 +3511,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-new-hampshire"
   },
   "NJ": {
    "name": "New Jersey",
@@ -3414,9 +3524,11 @@
     "homeCareHourly": 38,
     "adultDayMonthly": 2167,
     "skilledNursingHourly": 105,
-    "assistedLivingChangePct": 2,
+    "assistedLivingChangePct": -1,
     "homeCareChangePct": 6,
-    "nursingHomePrivateChangePct": 1
+    "nursingHomePrivateChangePct": 1,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2190,
@@ -3503,7 +3615,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-new-jersey"
   },
   "NM": {
    "name": "New Mexico",
@@ -3517,7 +3630,9 @@
     "skilledNursingHourly": 105,
     "assistedLivingChangePct": -3,
     "homeCareChangePct": 7,
-    "nursingHomePrivateChangePct": -1
+    "nursingHomePrivateChangePct": -1,
+    "nursingHomeSemiPrivateChangePct": -7,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1865,
@@ -3602,7 +3717,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-new-mexico"
   },
   "NV": {
    "name": "Nevada",
@@ -3614,9 +3730,11 @@
     "homeCareHourly": 37,
     "adultDayMonthly": 1733,
     "skilledNursingHourly": 100,
-    "assistedLivingChangePct": 2,
-    "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 13
+    "assistedLivingChangePct": 1,
+    "homeCareChangePct": 1,
+    "nursingHomePrivateChangePct": 13,
+    "nursingHomeSemiPrivateChangePct": 5,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1906,
@@ -3702,7 +3820,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-nevada"
   },
   "NY": {
    "name": "New York",
@@ -3714,9 +3833,11 @@
     "homeCareHourly": 35,
     "adultDayMonthly": 3120,
     "skilledNursingHourly": 120,
-    "assistedLivingChangePct": 13,
-    "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 7
+    "assistedLivingChangePct": 9,
+    "homeCareChangePct": 2,
+    "nursingHomePrivateChangePct": 8,
+    "nursingHomeSemiPrivateChangePct": 5,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2018,
@@ -3804,7 +3925,8 @@
      ],
      "note": "New York BBCE covers households with dependent-care expenses (200%) or earned income (150%); other households, including most retired seniors, use regular federal rules."
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-new-york"
   },
   "OH": {
    "name": "Ohio",
@@ -3816,9 +3938,11 @@
     "homeCareHourly": 34,
     "adultDayMonthly": 1798,
     "skilledNursingHourly": 100,
-    "assistedLivingChangePct": 11,
+    "assistedLivingChangePct": 9,
     "homeCareChangePct": 6,
-    "nursingHomePrivateChangePct": 4
+    "nursingHomePrivateChangePct": 4,
+    "nursingHomeSemiPrivateChangePct": 2,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1923,
@@ -3903,7 +4027,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-ohio"
   },
   "OK": {
    "name": "Oklahoma",
@@ -3915,9 +4040,11 @@
     "homeCareHourly": 33,
     "adultDayMonthly": 1993,
     "skilledNursingHourly": 86,
-    "assistedLivingChangePct": 28,
+    "assistedLivingChangePct": 25,
     "homeCareChangePct": -6,
-    "nursingHomePrivateChangePct": 2
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": 9,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1922,
@@ -4002,7 +4129,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-oklahoma"
   },
   "OR": {
    "name": "Oregon",
@@ -4016,7 +4144,9 @@
     "skilledNursingHourly": 105,
     "assistedLivingChangePct": -6,
     "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 8
+    "nursingHomePrivateChangePct": 8,
+    "nursingHomeSemiPrivateChangePct": 6,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1990,
@@ -4101,7 +4231,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-oregon"
   },
   "PA": {
    "name": "Pennsylvania",
@@ -4113,9 +4244,11 @@
     "homeCareHourly": 34,
     "adultDayMonthly": 2535,
     "skilledNursingHourly": 71,
-    "assistedLivingChangePct": 6,
+    "assistedLivingChangePct": 4,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 6
+    "nursingHomePrivateChangePct": 6,
+    "nursingHomeSemiPrivateChangePct": 1,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2052,
@@ -4202,7 +4335,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-pennsylvania"
   },
   "RI": {
    "name": "Rhode Island",
@@ -4216,7 +4350,9 @@
     "skilledNursingHourly": 78,
     "assistedLivingChangePct": 11,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 5
+    "nursingHomePrivateChangePct": 5,
+    "nursingHomeSemiPrivateChangePct": 6,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2050,
@@ -4303,7 +4439,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-rhode-island"
   },
   "SC": {
    "name": "South Carolina",
@@ -4316,8 +4453,10 @@
     "adultDayMonthly": 1560,
     "skilledNursingHourly": 73,
     "assistedLivingChangePct": 3,
-    "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 1
+    "homeCareChangePct": 5,
+    "nursingHomePrivateChangePct": 1,
+    "nursingHomeSemiPrivateChangePct": 1,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1996,
@@ -4402,7 +4541,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-south-carolina"
   },
   "SD": {
    "name": "South Dakota",
@@ -4415,8 +4555,10 @@
     "adultDayMonthly": null,
     "skilledNursingHourly": 92,
     "assistedLivingChangePct": 13,
-    "homeCareChangePct": 0,
-    "nursingHomePrivateChangePct": 9
+    "homeCareChangePct": 1,
+    "nursingHomePrivateChangePct": 9,
+    "nursingHomeSemiPrivateChangePct": 7,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1919,
@@ -4493,7 +4635,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-south-dakota"
   },
   "TN": {
    "name": "Tennessee",
@@ -4505,9 +4648,11 @@
     "homeCareHourly": 31,
     "adultDayMonthly": 1733,
     "skilledNursingHourly": 79,
-    "assistedLivingChangePct": 9,
+    "assistedLivingChangePct": 4,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 2
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1958,
@@ -4584,7 +4729,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-tennessee"
   },
   "TX": {
    "name": "Texas",
@@ -4596,9 +4742,11 @@
     "homeCareHourly": 30,
     "adultDayMonthly": 1950,
     "skilledNursingHourly": 90,
-    "assistedLivingChangePct": 8,
+    "assistedLivingChangePct": 7,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 7
+    "nursingHomePrivateChangePct": 7,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1932,
@@ -4683,7 +4831,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-texas"
   },
   "UT": {
    "name": "Utah",
@@ -4695,9 +4844,11 @@
     "homeCareHourly": 39,
     "adultDayMonthly": 3033,
     "skilledNursingHourly": 135,
-    "assistedLivingChangePct": 17,
+    "assistedLivingChangePct": 12,
     "homeCareChangePct": 3,
-    "nursingHomePrivateChangePct": 0
+    "nursingHomePrivateChangePct": 0,
+    "nursingHomeSemiPrivateChangePct": 4,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2065,
@@ -4774,7 +4925,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-utah"
   },
   "VA": {
    "name": "Virginia",
@@ -4788,7 +4940,9 @@
     "skilledNursingHourly": 90,
     "assistedLivingChangePct": 7,
     "homeCareChangePct": 6,
-    "nursingHomePrivateChangePct": 19
+    "nursingHomePrivateChangePct": 19,
+    "nursingHomeSemiPrivateChangePct": 18,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2064,
@@ -4873,7 +5027,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-virginia"
   },
   "VT": {
    "name": "Vermont",
@@ -4886,8 +5041,10 @@
     "adultDayMonthly": null,
     "skilledNursingHourly": 153,
     "assistedLivingChangePct": 9,
-    "homeCareChangePct": 2,
-    "nursingHomePrivateChangePct": 2
+    "homeCareChangePct": 3,
+    "nursingHomePrivateChangePct": 2,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2040,
@@ -4974,7 +5131,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-vermont"
   },
   "WA": {
    "name": "Washington",
@@ -4986,9 +5144,11 @@
     "homeCareHourly": 45,
     "adultDayMonthly": 5395,
     "skilledNursingHourly": 73,
-    "assistedLivingChangePct": 9,
-    "homeCareChangePct": 5,
-    "nursingHomePrivateChangePct": 15
+    "assistedLivingChangePct": 8,
+    "homeCareChangePct": 6,
+    "nursingHomePrivateChangePct": 15,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2099,
@@ -5073,7 +5233,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-washington"
   },
   "WI": {
    "name": "Wisconsin",
@@ -5085,9 +5246,11 @@
     "homeCareHourly": 36,
     "adultDayMonthly": 1517,
     "skilledNursingHourly": 90,
-    "assistedLivingChangePct": 6,
-    "homeCareChangePct": -3,
-    "nursingHomePrivateChangePct": 9
+    "assistedLivingChangePct": 2,
+    "homeCareChangePct": -2,
+    "nursingHomePrivateChangePct": 9,
+    "nursingHomeSemiPrivateChangePct": 6,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2028,
@@ -5174,7 +5337,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-wisconsin"
   },
   "WV": {
    "name": "West Virginia",
@@ -5188,7 +5352,9 @@
     "skilledNursingHourly": 125,
     "assistedLivingChangePct": 13,
     "homeCareChangePct": 7,
-    "nursingHomePrivateChangePct": 3
+    "nursingHomePrivateChangePct": 3,
+    "nursingHomeSemiPrivateChangePct": 3,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 1898,
@@ -5275,7 +5441,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-west-virginia"
   },
   "WY": {
    "name": "Wyoming",
@@ -5289,7 +5456,9 @@
     "skilledNursingHourly": 207,
     "assistedLivingChangePct": 13,
     "homeCareChangePct": 53,
-    "nursingHomePrivateChangePct": 6
+    "nursingHomePrivateChangePct": 6,
+    "nursingHomeSemiPrivateChangePct": 0,
+    "changeSource": "carescout_state_releases"
    },
    "socialSecurityDec2024": {
     "avgRetiredWorker": 2024,
@@ -5366,7 +5535,8 @@
       "usda_bbce_nov2026"
      ]
     }
-   }
+   },
+   "careScoutReleaseUrl": "https://markets.financialcontent.com/stocks/article/bizwire-2026-3-2-carescout-releases-2025-cost-of-care-data-for-wyoming"
   }
  },
  "cities": {
