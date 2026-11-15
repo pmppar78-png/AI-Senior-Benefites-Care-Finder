@@ -2,7 +2,7 @@
 directory = "netlify/functions"
 
 [build]
-command = "node engines/seed-data.js && node engines/generator.js"
+command = "node engines/seed-data.js && node engines/generator.js && node scripts/add-static-city-links.cjs"
 publish = "."
 
 [build.processing.html]
@@ -327,6 +327,24 @@ pretty_urls = true
   from = "/providers/wyoming/*"
   to = "/providers/nursing-homes/wyoming/:splat"
   status = 301
+
+# Legacy /provider-directory/ URLs (old engine id used as a path; GSC 404s).
+# Single-hop 301 to the matching state provider page / providers hub.
+[[redirects]]
+  from = "/provider-directory"
+  to = "/providers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/provider-directory/"
+  to = "/providers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/provider-directory/*"
+  to = "/providers/nursing-homes/:splat"
+  status = 301
+  force = true
 
 # Redirect double-slash legacy provider URLs caused by missing providerType
 [[redirects]]
