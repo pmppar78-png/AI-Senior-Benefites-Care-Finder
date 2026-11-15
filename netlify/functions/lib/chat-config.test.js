@@ -96,4 +96,22 @@ assert.ok(officialOnly.includes("https://www.medicare.gov/"));
 assert.ok(!/not-on-the-list/.test(officialOnly));
 assert.ok(!/may earn a commission/i.test(officialOnly));
 
+// Regression (Phase 1 re-audit, Nov 15, 2026): MSP, full Medicaid and SSI
+// mean automatic Extra Help (Medicare.gov); SLMB band for $1,400/month.
+assert.ok(/get Extra Help automatically and do not need to apply separately/.test(SYSTEM_PROMPT));
+assert.ok(/QMB, SLMB or QI/.test(SYSTEM_PROMPT) && /full-benefit Medicaid/.test(SYSTEM_PROMPT) && /SSI get Extra Help/.test(SYSTEM_PROMPT));
+assert.ok(/\$1,400\/month for one person falls in the SLMB band/.test(SYSTEM_PROMPT));
+assert.ok(SYSTEM_PROMPT.includes("https://www.medicare.gov/basics/costs/help/drug-costs"));
+assert.ok(!/\[(official|nonprofit|commercial)\]/.test(SYSTEM_PROMPT));
+// Bare approved addresses become clickable https URLs; link-type tags are removed.
+assert.strictEqual(
+  enforceApprovedLinks("See Medicare.gov/health-drug-plans/part-d [official] for details."),
+  "See https://www.medicare.gov/health-drug-plans/part-d for details."
+);
+assert.strictEqual(
+  enforceApprovedLinks("Apply at https://www.ssa.gov/medicare/part-d-extra-help (type: official)."),
+  "Apply at https://www.ssa.gov/medicare/part-d-extra-help."
+);
+assert.strictEqual(enforceApprovedLinks("Not approved: foo.example.com/bar."), "Not approved: foo.example.com/bar.");
+
 console.log("chat-config tests passed (" + APPROVED_LINKS.length + " approved links)");

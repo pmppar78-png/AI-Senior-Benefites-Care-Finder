@@ -62,6 +62,13 @@ const APPROVED_LINKS = [
   },
   {
     topic: "Medicare",
+    name: "Medicare.gov: help with drug costs (Extra Help)",
+    url: "https://www.medicare.gov/basics/costs/help/drug-costs",
+    kind: "official",
+    note: "Official Extra Help page, including who gets Extra Help automatically.",
+  },
+  {
+    topic: "Medicare",
     name: "SHIP Help",
     url: "https://www.shiphelp.org/",
     kind: "official",
@@ -358,7 +365,7 @@ function formatApprovedLinks() {
       lines.push("", currentTopic + ":");
     }
     lines.push(
-      "- " + link.name + " (" + link.url + ") [" + link.kind + "]. " + link.note
+      "- " + link.name + ": " + link.url + " (type: " + link.kind + "). " + link.note
     );
   }
   return lines.join("\n");
@@ -385,8 +392,11 @@ const CURRENT_FIGURES =
   "The Medicare Prescription Payment Plan lets people spread their drug costs into monthly payments.\n" +
   "• Medicare 2026: Part B standard premium $202.90/month, Part B deductible $283/year, Part A hospital deductible $1,736 per benefit period.\n" +
   "• Medicare Savings Programs 2026 (monthly income limits, individual/couple, 48 states and DC; Alaska and Hawaii are higher): QMB $1,350/$1,824; SLMB $1,616/$2,184; QI $1,816/$2,455. " +
-  "Resource limits $9,950/$14,910. States may use more generous rules (some have no asset test) but never stricter ones.\n" +
-  "• Extra Help (Part D Low-Income Subsidy) 2026: annual income below $23,940 (individual) or $32,460 (married couple); resources below $18,090 or $36,100. Apply through SSA.\n" +
+  "Resource limits $9,950/$14,910. States may use more generous rules (some have no asset test) but never stricter ones. " +
+  "Income bands: QMB is for income up to about 100% of the federal poverty level, SLMB about 100% to 120%, QI about 120% to 135%; so $1,400/month for one person falls in the SLMB band (above QMB, below the SLMB limit).\n" +
+  "• Extra Help (Part D Low-Income Subsidy) 2026: annual income below $23,940 (individual) or $32,460 (married couple); resources below $18,090 or $36,100. " +
+  "AUTOMATIC EXTRA HELP (Medicare.gov): people who get full-benefit Medicaid, help from their state paying the Part B premium through a Medicare Savings Program (QMB, SLMB or QI), or SSI get Extra Help automatically and do not need to apply separately; Medicare mails them a notice. " +
+  "Never say that a Medicare Savings Program does not lead to Extra Help or that MSP members must apply separately. Everyone else applies through SSA.\n" +
   "• SSI 2026: federal payment up to $994/month for an individual and $1,491 for a couple. Social Security COLA for 2026: 2.8%.\n" +
   "• SNAP, federal fiscal year 2027 (October 1, 2026 to September 30, 2027), 48 states and DC: maximum benefit $306/month for 1 person, $562 for 2. " +
   "Net income limit (100% of poverty) $1,330/month for 1, $1,804 for 2. Regular gross limit (130%) $1,729 for 1, $2,345 for 2. " +
@@ -398,6 +408,7 @@ const CURRENT_FIGURES =
   "States with no BBCE (regular federal rules, $4,750 asset limit for 60+/disabled households): " + NO_BBCE_LINE + ". Indiana ended BBCE on July 1, 2026.\n" +
   "• VA pension 2026 (rates effective December 1, 2025): with Aid and Attendance, up to $2,424/month for a single veteran ($29,093/year) and $2,874/month with one dependent; net worth limit $163,699.\n" +
   "• Medicaid spousal protections 2026: the community spouse resource allowance is between $32,532 and $162,660 depending on the state.\n" +
+  "• Terminology: they are Medicare Savings Programs (never \"Medicaid Savings Programs\"). When you mention a program that has an approved link, include that link.\n" +
   "• Care costs (CareScout 2025 Cost of Care Survey, national monthly medians): assisted living $6,200; nursing home semi-private room $9,581, private room $10,798; home care $6,673 (44 hours a week, $35/hour); adult day care $95/day. State and city costs differ.\n\n";
 
 const SYSTEM_PROMPT =
@@ -432,6 +443,7 @@ const SYSTEM_PROMPT =
   "• For an elder law attorney, use the NAELA Find a Lawyer page, not the NAELA homepage.\n" +
   "• For medical alert questions, you may mention Medical Guardian (https://www.medicalguardian.com/) and Bay Alarm Medical (https://www.bayalarmmedical.com/) as plain links. Do not invent an affiliate ID for either company, and do not add any other medical-alert company URL.\n" +
   "• For where to apply for SNAP, use that state's link from the State SNAP agencies list, or the USDA SNAP state directory.\n" +
+  "• Write every link as the full URL, scheme included, exactly as listed (for example https://www.medicare.gov/health-drug-plans/part-d). Never write a bare address such as medicare.gov/health-drug-plans/part-d, and never write the link type (official, nonprofit or commercial) after a link; the type is for you only.\n" +
   "• Weave a relevant approved link into the answer when it helps. Keep the full URL visible as plain text, on its own or after the page name, never inside parentheses or followed by punctuation. Do not write \"here:\" or \"click here\"; name the page instead.\n" +
   "• Include the full explanation of the program even when you also include a link. A link does not replace the explanation.\n\n" +
 
@@ -476,7 +488,19 @@ function enforceApprovedLinks(text) {
     return canonical;
   };
 
-  let out = text.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, (match, label, url) => {
+  // Drop link-type tags the model may copy from the approved list.
+  let out = text.replace(/[ \t]*(?:\[|\()(?:type:\s*)?(?:official|nonprofit|commercial)(?:\]|\))/gi, "");
+
+  // A bare approved address (medicare.gov/health-drug-plans/part-d) becomes the
+  // full https URL so it is clickable. Unknown bare addresses are left as text.
+  out = out.replace(/(^|[\s(])((?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:gov|org|com)\/[^\s<>"')\]]*)/gi, (match, lead, bare) => {
+    const trail = (bare.match(/[.,;:!?]+$/) || [""])[0];
+    const core = trail ? bare.slice(0, -trail.length) : bare;
+    const canonical = canonicalApprovedUrl("https://" + core);
+    return canonical ? lead + canonical + trail : match;
+  });
+
+  out = out.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, (match, label, url) => {
     const canonical = rewrite(url);
     return canonical ? label + " (" + canonical + ")" : label;
   });
