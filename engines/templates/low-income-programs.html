@@ -59,13 +59,14 @@
       <div class="stat-grid">
         <div class="stat-card">
           <span class="stat-value">{{snapInfo.maxBenefit}}</span>
-          <span class="stat-label">Maximum Monthly Benefit</span>
+          <span class="stat-label">Maximum Monthly Benefit (Oct 2026–Sept 2027)</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">{{snapInfo.incomeLimitIndividual}}</span>
           <span class="stat-label">Income Limit (Individual)</span>
         </div>
       </div>
+      {{#if snapInfo.rule}}<p>{{snapInfo.rule}} <sup style="font-size:0.7em;"><a href="https://www.fna.usda.gov/snap/broad-based-categorical-eligibility" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[USDA BBCE chart, Nov 2026]</a></sup> <sup style="font-size:0.7em;"><a href="https://www.fna.usda.gov/snap/recipient/eligibility" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[USDA SNAP eligibility, FY2027]</a></sup></p>{{/if}}
       {{#if snapInfo.applicationUrl}}
       <p><a href="{{snapInfo.applicationUrl}}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8;">Apply for SNAP in {{locationName}} →</a></p>
       {{/if}}
@@ -75,7 +76,7 @@
       <div class="info-box">
         <h3>Senior-Specific SNAP Benefits</h3>
         <ul>
-          <li>Seniors 60+ can apply through simplified processes in many states</li>
+          <li>Households with a member 60+ or disabled skip the gross income test under regular rules (they still need to pass the net income test)</li>
           <li>Medical expenses over $35/month can be deducted from income calculations</li>
           <li>Many food banks and pantries specifically serve seniors</li>
           <li>Restaurant Meals Program available in some areas for homeless, disabled, or elderly SNAP recipients</li>
@@ -218,7 +219,6 @@
       <p>Maintain copies of every application, supporting document, and correspondence related to your benefit applications. Note confirmation numbers, submission dates, and contact names. If a claim is denied, having thorough records makes the appeals process much smoother.</p>
     </section>
 
-    {{> faq-section}}
 
     {{> cross-engine-links}}
 
@@ -228,6 +228,8 @@
 
     {{> city-links}}
     {{> state-index}}
+
+    {{> faq-section}}
   </main>
 
 {{> footer}}
