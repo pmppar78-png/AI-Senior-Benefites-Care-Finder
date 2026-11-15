@@ -39,7 +39,7 @@
     <section class="content-section" id="overview">
       <h2>{{providerTypeLabel}} {{#if city}}in {{city}}, {{stateAbbr}}{{else}}in {{locationName}}{{/if}}</h2>
 
-      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} requires careful research. This guide explains the quality ratings, costs, and services you should evaluate — and points you to the authoritative first-party tools that list every licensed facility currently operating in your area. For accurate, current facility information (including names, addresses, star ratings, and inspection history), we recommend using Medicare.gov Care Compare directly <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov, verified April 2026]</a></sup>.</p>
+      <p>Finding the right {{providerTypeLabel}} {{#if city}}in {{city}}, {{locationName}}{{else}}in {{locationName}}{{/if}} requires careful research. This guide explains the quality ratings, costs, and services you should evaluate — and points you to the authoritative first-party tools that list every licensed facility currently operating in your area. For accurate, current facility information (including names, addresses, star ratings, and inspection history), we recommend using Medicare.gov Care Compare directly <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov]</a></sup>.</p>
     </section>
 
     <!-- Section: Find Real Providers (replaces fake provider cards) -->
@@ -211,7 +211,7 @@
       </ul>
       {{else}}
       <ul>
-        <li><strong>Medicare:</strong> Covers skilled nursing facility stays (up to 100 days) after a qualifying hospital stay <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/coverage/skilled-nursing-facility-snf-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov, verified April 2026]</a></sup></li>
+        <li><strong>Medicare:</strong> Covers skilled nursing facility stays (up to 100 days) after a qualifying hospital stay <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/coverage/skilled-nursing-facility-snf-care" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov]</a></sup></li>
         <li><strong>Medicaid:</strong> Covers nursing home care for eligible low-income seniors <sup style="font-size:0.7em;"><a href="https://www.medicaid.gov/medicaid/long-term-services-supports/institutional-long-term-care/nursing-facilities/index.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicaid.gov]</a></sup></li>
         <li><strong>Long-term care insurance:</strong> Policies may cover facility care after meeting benefit triggers</li>
         <li><strong>VA benefits:</strong> Aid &amp; Attendance and VA nursing home care for eligible veterans <sup style="font-size:0.7em;"><a href="https://www.va.gov/pension/aid-attendance-housebound/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[VA.gov]</a></sup></li>
@@ -238,7 +238,6 @@
       <p>Medicare's Care Compare tool at <a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">Medicare.gov</a> allows you to compare nursing homes, home health agencies, hospice providers, and other care facilities side by side. The tool shows quality ratings, inspection results, staffing data, and health deficiencies. While no rating system is perfect, this free tool provides a valuable starting point for evaluating facilities in your area.</p>
     </section>
 
-    {{> faq-section}}
 
     {{> cross-engine-links}}
 
@@ -248,6 +247,8 @@
 
     {{> city-links}}
     {{> state-index}}
+
+    {{> faq-section}}
   </main>
 
 {{> footer}}

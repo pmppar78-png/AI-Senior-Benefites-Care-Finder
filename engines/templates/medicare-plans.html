@@ -69,13 +69,13 @@
           <span class="stat-label">Part D Drug Plans</span>
         </div>
       </div>
-      <p style="font-size:0.85em;color:var(--muted,#94a3b8);margin-top:-0.5rem;">Plan counts sourced from the CMS Medicare Plan Finder <sup style="font-size:0.8em;"><a href="https://www.medicare.gov/plan-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov, verified April 2026]</a></sup>.</p>
+      <p style="font-size:0.85em;color:var(--muted,#94a3b8);margin-top:-0.5rem;">Plan counts: CMS CY2026 Medicare Advantage and Part D Landscape file (non-SNP Advantage plans; stand-alone Part D plans). {{planCountScope}} <sup style="font-size:0.8em;"><a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/benefits-data" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CMS landscape data]</a></sup> Check the plans sold at your ZIP code on <a href="https://www.medicare.gov/plan-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">Medicare.gov Plan Finder</a>.</p>
 
       <h3>Medicare Advantage (Part C)</h3>
       <p>Medicare Advantage plans in {{locationName}} are offered by private insurance companies approved by Medicare. These plans cover everything Original Medicare covers and often include additional benefits like vision, dental, hearing, and prescription drugs. Plans may use HMO, PPO, or other network structures.</p>
 
       <h3>Medigap (Medicare Supplement)</h3>
-      <p>Medigap plans in {{locationName}} help pay for costs that Original Medicare doesn't cover, such as copayments, coinsurance, and deductibles. These plans are sold by private insurance companies and are standardized by the federal government (Plans A through N).</p>
+      <p>Medigap plans in {{locationName}} help pay for costs that Original Medicare doesn't cover, such as copayments, coinsurance, and deductibles. These plans are sold by private insurance companies and are standardized by the federal government (Plans A through N; Massachusetts, Minnesota and Wisconsin standardize their own).</p>
 
       <h3>Part D (Prescription Drug Coverage)</h3>
       <p>Medicare Part D plans provide prescription drug coverage. In {{locationName}}, multiple Part D plans are available with varying formularies, premiums, and pharmacy networks. If you take regular medications, comparing Part D plans for your specific prescriptions is essential.</p>
@@ -90,8 +90,8 @@
           <thead>
             <tr>
               <th>Plan Type</th>
-              <th>Avg. Monthly Premium</th>
-              <th>National Avg.</th>
+              <th>{{locationName}} Premium</th>
+              <th>National</th>
               <th>Notes</th>
             </tr>
           </thead>
@@ -99,29 +99,29 @@
             <tr>
               <td>Medicare Advantage</td>
               <td class="highlight-cell">{{avgPremiumMA}}</td>
-              <td>$18.50/mo</td>
+              <td>$14.00/mo projected average</td>
               <td>Many $0 premium plans available</td>
             </tr>
             <tr>
               <td>Medigap Plan G</td>
               <td class="highlight-cell">{{avgPremiumMedigap}}</td>
-              <td>$150–$200/mo</td>
-              <td>Most popular Medigap plan</td>
+              <td>No federal average published</td>
+              <td>Priced by age, ZIP and insurer</td>
             </tr>
             <tr>
               <td>Part D Drug Plan</td>
               <td class="highlight-cell">{{avgPremiumPartD}}</td>
-              <td>$33/mo</td>
+              <td>$34.50/mo projected average</td>
               <td>Varies by formulary</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:0.85em;color:var(--muted,#94a3b8);">National averages sourced from CMS published premium benchmarks <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/plan-compare/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov Plan Compare, verified April 2026]</a></sup>.</p>
+      <p style="font-size:0.85em;color:var(--muted,#94a3b8);">State figures are medians of 2026 plan premiums from the CMS landscape file. National figures are CMS's projected 2026 average monthly premiums (Advantage: $14.00; stand-alone Part D: $34.50) <sup style="font-size:0.7em;"><a href="https://www.cms.gov/newsroom/press-releases/medicare-advantage-medicare-prescription-drug-programs-expected-remain-stable-2026" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CMS press release, Sept 2025]</a></sup>.</p>
 
       <div class="info-box highlight">
         <h3>Part B Premium ({{currentYear}})</h3>
-        <p>The standard Medicare Part B premium is the same nationwide. Higher-income beneficiaries may pay Income-Related Monthly Adjustment Amounts (IRMAA). Part A is premium-free for most people who paid Medicare taxes for 10+ years. <sup style="font-size:0.7em;"><a href="https://www.cms.gov/medicare" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[CMS.gov, verified April 2026]</a></sup></p>
+        <p>The standard Medicare Part B premium is $202.90/month in 2026 and is the same nationwide. Higher-income beneficiaries may pay Income-Related Monthly Adjustment Amounts (IRMAA). Part A is premium-free for most people who paid Medicare taxes for 10+ years. <sup style="font-size:0.7em;"><a href="https://www.medicare.gov/basics/costs/medicare-costs" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">[Medicare.gov costs, checked Nov 2026]</a></sup></p>
       </div>
     </section>
 
@@ -306,8 +306,8 @@
         <p>Original Medicare does not cover dental, vision, hearing aids, or long-term care. Medicare Advantage plans may include some of these benefits, but coverage varies significantly. Without supplemental coverage, you could face substantial out-of-pocket costs for common services seniors need.</p>
       </div>
       <div class="info-box">
-        <h3>Ignoring the Part D Coverage Gap</h3>
-        <p>Medicare Part D has a coverage gap (sometimes called the "donut hole") where you pay a larger share of drug costs after you and your plan have spent a combined amount on covered drugs. While the gap has been significantly reduced in recent years, understanding how your medications interact with this threshold helps you plan financially.</p>
+        <h3>Relying on Old Part D Rules</h3>
+        <p>The Part D coverage gap ("donut hole") ended in 2025. In 2026, out-of-pocket spending on covered drugs is capped at $2,100 (rising to $2,400 in 2027), and the standard deductible is up to $615. If large costs come early in the year, the Medicare Prescription Payment Plan lets you spread them into monthly payments. Old guides that still describe the gap give the wrong picture.</p>
       </div>
       <div class="info-box">
         <h3>Not Considering Total Costs</h3>
@@ -315,7 +315,6 @@
       </div>
     </section>
 
-    {{> faq-section}}
 
     {{> cross-engine-links}}
 
@@ -325,6 +324,8 @@
 
     {{> city-links}}
     {{> state-index}}
+
+    {{> faq-section}}
   </main>
 
 {{> footer}}
